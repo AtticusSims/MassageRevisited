@@ -1,0 +1,5 @@
+{
+  "spread_id": "spread_008",
+  "ocr_raw": "and how?\nthat puck e:IVII\nin vaoce\nall banc\nthie\nion\nuthers\nadv\nresciza\n... nichrse\n\"The\nA. N. Whitehead",
+  "ocr_structured": "DISPLAY_TEXT: and how?\n\nBODY_TEXT: NONE\n\nQUOTATIONS: \"Theo... that... it was in... all banc... the... ad... re sciz... nichrse... u\nA. N. Whitehead\n\nCAPTIONS: NONE\n\nPAGE_NUMBERS: NONE"
+}

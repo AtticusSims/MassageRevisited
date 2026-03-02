@@ -1,0 +1,5 @@
+{
+  "spread_id": "spread_001",
+  "ocr_raw": "marshall\nmcluhan\nquantin fin\nthe medium is the MASSAGE\nAN INVENTO-\nRY OF\nEFFECTS\nproduced by jerome ag\ned by omer gel",
+  "ocr_structured": "DISPLAY_TEXT: marshall McLuhan Quentin Fiore\nDISPLAY_TEXT: the medium is the MASSAGE AN INVENTO- RY OF EFFECTS\nCAPTIONS: presented by jeremy heaglom\nCAPTIONS: ed by omer gel"
+}

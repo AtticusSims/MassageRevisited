@@ -1,0 +1,5 @@
+{
+  "spread_id": "spread_004",
+  "ocr_raw": "\"all media\nwork us over\ncompletely\"\nmarshall mcluhan",
+  "ocr_structured": "DISPLAY_TEXT: \"all media work us over completely\"\n\nBODY_TEXT: NONE\n\nQUOTATIONS: \"all media work us over completely\" marshall McLuhan\n\nCAPTIONS: NONE\n\nPAGE_NUMBERS: NONE"
+}

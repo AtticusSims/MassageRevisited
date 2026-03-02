@@ -1,0 +1,5 @@
+{
+  "spread_id": "spread_005",
+  "ocr_raw": "Good Morning!",
+  "ocr_structured": "DISPLAY_TEXT: Good Morning!\n\nBODY_TEXT: NONE\n\nQUOTATIONS: NONE\n\nCAPTIONS: NONE\n\nPAGE_NUMBERS: NONE"
+}

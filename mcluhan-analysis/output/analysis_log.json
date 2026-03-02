@@ -1,6 +1,25 @@
 {
-  "log_entries": [],
+  "log_entries": [
+    {
+      "timestamp": "2026-03-02T12:00:00",
+      "action": "batch_1_complete",
+      "spreads": [
+        "spread_001",
+        "spread_002",
+        "spread_003",
+        "spread_004",
+        "spread_005",
+        "spread_006",
+        "spread_007",
+        "spread_008",
+        "spread_009",
+        "spread_010"
+      ],
+      "pass": 1,
+      "notes": "First batch of 10 spreads analyzed. OCR via Qwen2.5-VL-7B, analysis by Claude Opus. Molmo2-8B descriptions pending."
+    }
+  ],
   "current_pass": 1,
-  "spreads_analyzed": 0,
+  "spreads_analyzed": 10,
   "total_spreads": 85
 }
