@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>McLuhan Analysis Viewer</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+  <!-- Header -->
+  <header>
+    <h1>The Medium is the Massage — Analysis</h1>
+    <div class="header-center">
+      <button class="nav-btn" id="prevBtn" onclick="navigate(-1)">&larr; Prev</button>
+      <select id="spreadSelect" onchange="loadSpread(this.value)">
+        {% for item in nav_items %}
+        <option value="{{ item.id }}"
+                data-analyzed="{{ item.analyzed|lower }}"
+                {% if loop.first %}selected{% endif %}>
+          {{ item.id }} (p{{ item.pdf_page }}){% if item.book_pages %} [{{ item.book_pages|join('-') }}]{% endif %}{% if not item.analyzed %} ●{% endif %}
+        </option>
+        {% endfor %}
+      </select>
+      <button class="nav-btn" id="nextBtn" onclick="navigate(1)">Next &rarr;</button>
+      <span class="spread-label" id="spreadLabel">spread_001</span>
+      <span class="book-pages-label" id="bookPagesLabel"></span>
+    </div>
+    <div class="header-right">
+      <span id="progressText">{{ total_analyzed }}/{{ total_pages }} analyzed</span>
+      <div class="progress-bar">
+        <div class="fill" style="width: {{ (total_analyzed / total_pages * 100)|round(1) }}%"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <div class="main-panels">
+    <!-- Left: Image -->
+    <div class="image-panel">
+      <img id="spreadImage" src="" alt="Spread image">
+    </div>
+    <!-- Right: Analysis -->
+    <div class="analysis-panel" id="analysisPanel">
+      <div class="placeholder" id="analysisPlaceholder">Select a spread to view analysis</div>
+      <div id="analysisContent" style="display:none;"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const NAV_ITEMS = {{ nav_items|tojson }};
+let currentIndex = 0;
+
+function navigate(delta) {
+  const newIndex = currentIndex + delta;
+  if (newIndex >= 0 && newIndex < NAV_ITEMS.length) {
+    currentIndex = newIndex;
+    const sel = document.getElementById('spreadSelect');
+    sel.selectedIndex = currentIndex;
+    loadSpread(NAV_ITEMS[currentIndex].id);
+  }
+}
+
+function loadSpread(spreadId) {
+  currentIndex = NAV_ITEMS.findIndex(n => n.id === spreadId);
+  const item = NAV_ITEMS[currentIndex];
+
+  // Update nav
+  document.getElementById('prevBtn').disabled = currentIndex === 0;
+  document.getElementById('nextBtn').disabled = currentIndex === NAV_ITEMS.length - 1;
+  document.getElementById('spreadLabel').textContent = spreadId;
+
+  const bp = item.book_pages;
+  document.getElementById('bookPagesLabel').textContent =
+    bp && bp.length ? `Book pages ${bp.join('–')}` : '';
+
+  // Load image
+  document.getElementById('spreadImage').src = `/rendered/${spreadId}.png`;
+
+  // Load analysis
+  if (item.analyzed) {
+    fetch(`/api/spread/${spreadId}`)
+      .then(r => r.json())
+      .then(data => {
+        if (data) {
+          renderAnalysis(data);
+        } else {
+          showPlaceholder('No analysis data found');
+        }
+      });
+  } else {
+    showPlaceholder('Not yet analyzed');
+  }
+}
+
+function showPlaceholder(msg) {
+  document.getElementById('analysisPlaceholder').textContent = msg;
+  document.getElementById('analysisPlaceholder').style.display = 'flex';
+  document.getElementById('analysisContent').style.display = 'none';
+}
+
+function renderAnalysis(s) {
+  document.getElementById('analysisPlaceholder').style.display = 'none';
+  const el = document.getElementById('analysisContent');
+  el.style.display = 'block';
+
+  let html = '';
+
+  // === Identification ===
+  html += `<div class="section">
+    <div class="section-header">Identification</div>
+    <span class="section-badge ${s.section}">${s.section.replace('_',' ')}</span>
+    <span class="tag spread-type">${s.spread_type.replace(/_/g,' ')}</span>
+    <span class="tag orientation">${s.orientation.replace(/_/g,' ')}</span>
+    ${s.text.page_numbers_visible.length ? `<div class="field" style="margin-top:6px"><span class="field-label">Visible page numbers</span><div class="field-value">${s.text.page_numbers_visible.join(', ')}</div></div>` : ''}
+  </div>`;
+
+  // === Text ===
+  html += `<div class="section">
+    <div class="section-header">Text</div>`;
+  if (s.text.display_text) {
+    html += `<div class="field"><span class="field-label">Display Text</span>
+      <div class="field-value" style="font-size:18px;font-weight:700;color:#fff;">${esc(s.text.display_text)}</div></div>`;
+  }
+  if (s.text.body_text) {
+    html += `<div class="field"><span class="field-label">Body Text</span>
+      <div class="field-value body-text">${esc(s.text.body_text)}</div></div>`;
+  }
+  if (s.text.captions && s.text.captions.length) {
+    html += `<div class="field"><span class="field-label">Captions</span>
+      <div class="field-value">${s.text.captions.map(c => esc(c)).join('<br>')}</div></div>`;
+  }
+  if (!s.text.body_text && !s.text.display_text) {
+    html += `<div class="field-value" style="color:var(--text-muted);font-style:italic;">No text content</div>`;
+  }
+  html += `</div>`;
+
+  // === Quotations ===
+  if (s.quotations && s.quotations.length) {
+    html += `<div class="section">
+      <div class="section-header">Quotations</div>`;
+    for (const q of s.quotations) {
+      html += `<div class="card">
+        <div class="quote-text">"${esc(q.text)}"</div>
+        <div class="card-field"><strong>${esc(q.author)}</strong> — ${esc(q.author_context)}</div>
+        ${q.source_work ? `<div class="card-field">Source: <em>${esc(q.source_work)}</em></div>` : ''}
+        <div class="card-field"><strong>Function:</strong> ${esc(q.relationship_to_argument)}</div>
+        <div class="card-field"><strong>Visual treatment:</strong> ${esc(q.visual_treatment)}</div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  // === Images ===
+  if (s.images && s.images.length) {
+    html += `<div class="section">
+      <div class="section-header">Images</div>`;
+    for (const img of s.images) {
+      html += `<div class="card">
+        <div class="card-title">${esc(img.position)} · ${esc(img.scale)}</div>
+        <div class="card-field"><strong>Subject:</strong> ${esc(img.subject)}</div>
+        <div class="card-field"><strong>Source type:</strong> <span class="tag">${esc(img.source_type)}</span></div>
+        ${img.source_credit ? `<div class="card-field"><strong>Credit:</strong> ${esc(img.source_credit)}</div>` : ''}
+        ${img.estimated_date ? `<div class="card-field"><strong>Date:</strong> ${esc(img.estimated_date)}</div>` : ''}
+        <div class="card-field"><strong>Composition:</strong> ${esc(img.composition)}</div>
+        <div class="card-field"><strong>Relationship to text:</strong> ${esc(img.relationship_to_text)}</div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  // === Design ===
+  html += `<div class="section">
+    <div class="section-header">Design</div>
+    <div class="field"><span class="field-label">Layout</span>
+      <div class="field-value">${esc(s.design.layout_description)}</div></div>`;
+  if (s.design.typography) {
+    const t = s.design.typography;
+    if (t.body_font_style) {
+      html += `<div class="field"><span class="field-label">Body Typography</span>
+        <div class="field-value">${esc(t.body_font_style)}</div></div>`;
+    }
+    if (t.display_font_style) {
+      html += `<div class="field"><span class="field-label">Display Typography</span>
+        <div class="field-value">${esc(t.display_font_style)}</div></div>`;
+    }
+    if (t.special_treatments && t.special_treatments.length) {
+      html += `<div class="field"><span class="field-label">Special Treatments</span>
+        <div class="field-value">${t.special_treatments.map(s => '• ' + esc(s)).join('<br>')}</div></div>`;
+    }
+  }
+  html += `<div class="field"><span class="field-label">Color & Tone</span>
+    <div class="field-value">${esc(s.design.color_and_tone)}</div></div>`;
+  html += `<div class="field">
+    <span class="tag">${s.design.white_space} white space</span>
+    <span class="tag">${s.design.visual_density} density</span></div>`;
+  html += `<div class="field"><span class="field-label">Left–Right Relationship</span>
+    <div class="field-value">${esc(s.design.left_right_relationship)}</div></div>`;
+  html += `</div>`;
+
+  // === RHETORIC (highlighted) ===
+  html += `<div class="section rhetoric">
+    <div class="section-header">Rhetoric</div>
+    <div class="field"><span class="field-label">Argument</span>
+      <div class="field-value" style="font-size:15px;color:#fff;font-weight:500;">${esc(s.rhetoric.argument)}</div></div>
+    <div class="field"><span class="field-label">Rhetorical Strategy</span>
+      <div class="field-value" style="font-size:14px;">${esc(s.rhetoric.rhetorical_strategy)}</div></div>
+    <div class="field"><span class="field-label">Design Enacts Argument</span>
+      <div>${s.rhetoric.design_enacts_argument ? '<span class="badge-yes">YES</span>' : '<span class="badge-no">NO</span>'}</div>
+      ${s.rhetoric.design_argument_description ? `<div class="field-value" style="margin-top:6px;font-size:14px;color:#e8c878;">${esc(s.rhetoric.design_argument_description)}</div>` : ''}
+    </div>
+    <div class="field"><span class="field-label">Reader Experience</span>
+      <div class="field-value">${esc(s.rhetoric.reader_experience)}</div></div>
+    <div class="field"><span class="field-label">McLuhan Concepts</span>
+      <div>${(s.rhetoric.mcluhan_concepts||[]).map(c => `<span class="tag mcluhan">${c.replace(/_/g,' ')}</span>`).join('')}</div></div>
+    ${s.rhetoric.multi_spread_patterns ? `<div class="field"><span class="field-label">Multi-Spread Patterns</span><div class="field-value">${esc(s.rhetoric.multi_spread_patterns)}</div></div>` : ''}
+  </div>`;
+
+  // === Themes ===
+  html += `<div class="section">
+    <div class="section-header">Themes</div>
+    <div class="field"><span class="field-label">Original Themes</span>
+      <div>${(s.themes.original_themes||[]).map(t => `<span class="tag theme">${esc(t)}</span>`).join('')}</div></div>
+    <div class="field"><span class="field-label">Contemporary Domains</span>
+      <div>${(s.themes.contemporary_domain_candidates||[]).map(d => `<span class="tag domain">${d.replace(/_/g,' ')}</span>`).join('') || '<span style="color:var(--text-muted);font-style:italic;">None</span>'}</div></div>
+    <div class="field"><span class="field-label">Movement Mapping</span>
+      <div>${(s.themes.movement_mapping||[]).map(m => `<span class="tag movement">${m.replace(/_/g,' ')}</span>`).join('') || '<span style="color:var(--text-muted);font-style:italic;">None</span>'}</div></div>
+    <div class="field"><span class="field-label">Mapping Rationale</span>
+      <div class="field-value">${esc(s.themes.mapping_rationale)}</div></div>
+  </div>`;
+
+  // === Progression ===
+  html += `<div class="section">
+    <div class="section-header">Progression</div>
+    <div class="field">
+      <span class="tag pace">${(s.progression.pace_shift||'').replace(/_/g,' ')}</span>
+      <span class="tag function">${(s.progression.thematic_function||'').replace(/_/g,' ')}</span>
+    </div>
+    <div class="field"><span class="field-label">Relationship to Previous</span>
+      <div class="field-value">${esc(s.progression.relationship_to_previous)}</div></div>
+    <div class="field"><span class="field-label">Relationship to Next</span>
+      <div class="field-value">${esc(s.progression.relationship_to_next)}</div></div>
+  </div>`;
+
+  // === Notes ===
+  if (s.notes) {
+    html += `<div class="section">
+      <div class="section-header">Notes</div>
+      <div class="notes-box">${esc(s.notes)}</div>
+    </div>`;
+  }
+
+  el.innerHTML = html;
+}
+
+function esc(str) {
+  if (!str) return '';
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  loadSpread(NAV_ITEMS[0].id);
+});
+</script>
+</body>
+</html>
