@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>McLuhan Analysis — Review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <!-- Header -->
+  <header>
+    <h1>The Medium is the Massage — Review</h1>
+    <div class="header-center">
+      <button class="nav-btn" id="prevBtn" onclick="navigate(-1)">&larr;</button>
+      <select id="spreadSelect" onchange="loadSpread(this.value)"></select>
+      <button class="nav-btn" id="nextBtn" onclick="navigate(1)">&rarr;</button>
+      <span class="spread-label" id="spreadLabel">spread_001</span>
+      <span class="book-pages-label" id="bookPagesLabel"></span>
+    </div>
+    <div class="header-right">
+      <span class="review-stat approved" id="statApproved">0 ✓</span>
+      <span class="review-stat flagged" id="statFlagged">0 ⚑</span>
+      <span class="review-stat pending" id="statPending">0 pending</span>
+      <div class="progress-bar" style="margin-top:4px">
+        <div class="fill" id="progressFill" style="width: 0%"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tabs -->
+  <div class="tab-bar">
+    <button class="tab active" data-tab="analysis" onclick="switchTab('analysis')">Analysis</button>
+    <button class="tab" data-tab="visual" onclick="switchTab('visual')">Visual Analysis</button>
+    <div class="tab-spacer"></div>
+    <div class="review-controls" id="reviewControls">
+      <button class="review-btn approve" id="btnApprove" onclick="setReview('approved')">✓ Approve</button>
+      <button class="review-btn flag" id="btnFlag" onclick="setReview('flagged')">⚑ Flag</button>
+      <button class="review-btn reset" id="btnReset" onclick="setReview('pending')">Reset</button>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main-panels">
+    <!-- Left: Image with zoom -->
+    <div class="image-panel" id="imagePanel">
+      <div class="image-wrapper" id="imageWrapper">
+        <img id="spreadImage" src="" alt="Spread image" draggable="false">
+      </div>
+      <div class="zoom-controls">
+        <button onclick="zoomIn()" title="Zoom in (+)">+</button>
+        <button onclick="zoomReset()" title="Reset zoom (0)">1:1</button>
+        <button onclick="zoomOut()" title="Zoom out (-)">−</button>
+        <span class="zoom-level" id="zoomLevel">100%</span>
+      </div>
+    </div>
+
+    <!-- Right: Content (tabs) -->
+    <div class="analysis-panel" id="analysisPanel">
+      <!-- Analysis tab -->
+      <div id="tabAnalysis" class="tab-content active">
+        <div class="placeholder" id="analysisPlaceholder">Select a spread to view analysis</div>
+        <div id="analysisContent" style="display:none;"></div>
+      </div>
+      <!-- Visual Analysis tab -->
+      <div id="tabVisual" class="tab-content" style="display:none;">
+        <div id="visualContent">
+          <div class="placeholder">Loading visual analysis data...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ========== State ==========
+let NAV_ITEMS = [];
+let currentIndex = 0;
+let currentSpreadData = null;
+let currentReviewStatus = 'pending';
+
+// ========== Zoom State ==========
+let zoomScale = 1;
+let isPanning = false;
+let panStart = { x: 0, y: 0 };
+let panOffset = { x: 0, y: 0 };
+
+const ZOOM_MIN = 0.5;
+const ZOOM_MAX = 5;
+const ZOOM_STEP = 0.25;
+
+const REVIEW_KEY = 'mcluhan_review';
+
+// ========== Init ==========
+async function init() {
+  try {
+    const resp = await fetch('data/index.json');
+    const index = await resp.json();
+    NAV_ITEMS = index.spreads;
+    populateNav();
+    updateReviewStats();
+    loadSpread(NAV_ITEMS[0].id);
+  } catch (e) {
+    console.error('Failed to load index:', e);
+    document.getElementById('analysisPlaceholder').textContent = 'Failed to load data. Make sure data/index.json exists.';
+  }
+}
+
+function populateNav() {
+  const sel = document.getElementById('spreadSelect');
+  sel.innerHTML = '';
+  for (let i = 0; i < NAV_ITEMS.length; i++) {
+    const item = NAV_ITEMS[i];
+    const opt = document.createElement('option');
+    opt.value = item.id;
+    opt.dataset.analyzed = String(item.analyzed);
+    const review = getReviewStatus(item.id);
+    let label = `${item.id} (p${item.pdf_page})`;
+    if (item.book_pages && item.book_pages.length) label += ` [${item.book_pages.join('-')}]`;
+    if (review === 'approved') label += ' ✓';
+    else if (review === 'flagged') label += ' ⚑';
+    else if (!item.analyzed) label += ' ●';
+    opt.textContent = label;
+    if (i === 0) opt.selected = true;
+    sel.appendChild(opt);
+  }
+}
+
+// ========== Navigation ==========
+function navigate(delta) {
+  const newIndex = currentIndex + delta;
+  if (newIndex >= 0 && newIndex < NAV_ITEMS.length) {
+    currentIndex = newIndex;
+    document.getElementById('spreadSelect').selectedIndex = currentIndex;
+    loadSpread(NAV_ITEMS[currentIndex].id);
+  }
+}
+
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelector(`.tab[data-tab="${tab}"]`).classList.add('active');
+  document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+  if (tab === 'analysis') {
+    document.getElementById('tabAnalysis').style.display = 'block';
+  } else if (tab === 'visual') {
+    document.getElementById('tabVisual').style.display = 'block';
+    if (currentSpreadData) renderVisual(currentSpreadData);
+  }
+}
+
+async function loadSpread(spreadId) {
+  currentIndex = NAV_ITEMS.findIndex(n => n.id === spreadId);
+  const item = NAV_ITEMS[currentIndex];
+
+  document.getElementById('prevBtn').disabled = currentIndex === 0;
+  document.getElementById('nextBtn').disabled = currentIndex === NAV_ITEMS.length - 1;
+  document.getElementById('spreadSelect').value = spreadId;
+  document.getElementById('spreadLabel').textContent = spreadId;
+  const bp = item.book_pages;
+  document.getElementById('bookPagesLabel').textContent =
+    bp && bp.length ? `Book pages ${bp.join('\u2013')}` : '';
+
+  // Load image
+  document.getElementById('spreadImage').src = `images/${spreadId}.jpg`;
+  zoomReset();
+
+  // Load spread data (analysis + OCR + visual merged)
+  try {
+    const resp = await fetch(`data/${spreadId}.json`);
+    if (resp.ok) {
+      currentSpreadData = await resp.json();
+      if (currentSpreadData.analysis) {
+        renderAnalysis(currentSpreadData.analysis);
+      } else {
+        showPlaceholder('No analysis data found');
+      }
+      // Always update visual tab content (even if hidden)
+      renderVisual(currentSpreadData);
+    } else {
+      currentSpreadData = null;
+      showPlaceholder(item.analyzed ? 'Data file not found' : 'Not yet analyzed');
+      document.getElementById('visualContent').innerHTML =
+        '<div class="placeholder">Not yet analyzed</div>';
+    }
+  } catch (e) {
+    currentSpreadData = null;
+    showPlaceholder('Error loading data');
+    document.getElementById('visualContent').innerHTML =
+      '<div class="placeholder">Error loading data</div>';
+  }
+
+  // Load review status
+  currentReviewStatus = getReviewStatus(spreadId);
+  updateReviewUI(currentReviewStatus);
+}
+
+// ========== Review (localStorage) ==========
+function getReviewData() {
+  try {
+    return JSON.parse(localStorage.getItem(REVIEW_KEY) || '{}');
+  } catch { return {}; }
+}
+
+function getReviewStatus(spreadId) {
+  const data = getReviewData();
+  return (data[spreadId] && data[spreadId].status) || 'pending';
+}
+
+function setReview(status) {
+  const spreadId = NAV_ITEMS[currentIndex].id;
+  const data = getReviewData();
+  data[spreadId] = { status };
+  localStorage.setItem(REVIEW_KEY, JSON.stringify(data));
+  currentReviewStatus = status;
+  updateReviewUI(status);
+  updateNavOption(currentIndex, status);
+  updateReviewStats();
+}
+
+function updateReviewUI(status) {
+  document.getElementById('btnApprove').classList.toggle('active', status === 'approved');
+  document.getElementById('btnFlag').classList.toggle('active', status === 'flagged');
+}
+
+function updateNavOption(index, status) {
+  const opt = document.getElementById('spreadSelect').options[index];
+  if (!opt) return;
+  let label = opt.textContent.replace(/ [✓⚑●]$/, '');
+  if (status === 'approved') label += ' ✓';
+  else if (status === 'flagged') label += ' ⚑';
+  opt.textContent = label;
+}
+
+function updateReviewStats() {
+  const data = getReviewData();
+  let approved = 0, flagged = 0;
+  const analyzed = NAV_ITEMS.filter(n => n.analyzed).length;
+  for (const item of NAV_ITEMS) {
+    const s = (data[item.id] && data[item.id].status) || 'pending';
+    if (s === 'approved') approved++;
+    if (s === 'flagged') flagged++;
+  }
+  const pending = analyzed - approved - flagged;
+  document.getElementById('statApproved').textContent = `${approved} ✓`;
+  document.getElementById('statFlagged').textContent = `${flagged} ⚑`;
+  document.getElementById('statPending').textContent = `${Math.max(0, pending)} pending`;
+  document.getElementById('progressFill').style.width =
+    `${NAV_ITEMS.length > 0 ? (analyzed / NAV_ITEMS.length * 100).toFixed(1) : 0}%`;
+}
+
+// ========== Visual Analysis Rendering ==========
+function renderVisual(data) {
+  const el = document.getElementById('visualContent');
+
+  if (!data || (!data.visual && !data.ocr)) {
+    el.innerHTML = '<div class="placeholder">No visual analysis data available for this spread</div>';
+    return;
+  }
+
+  let html = '';
+
+  // Image Description
+  if (data.visual && data.visual.image_description) {
+    html += `<div class="section">
+      <div class="section-header">Image Description</div>
+      <div class="vlm-meta">
+        <span class="tag vlm-model">${esc(data.visual.model || 'qwen3-vl')}</span>
+        ${data.visual.image_description_time ? `<span class="vlm-time">${data.visual.image_description_time}s</span>` : ''}
+      </div>
+      <div class="visual-text">${esc(data.visual.image_description)}</div>
+    </div>`;
+  }
+
+  // Layout Analysis
+  if (data.visual && data.visual.layout_analysis) {
+    html += `<div class="section">
+      <div class="section-header">Layout Analysis</div>
+      <div class="vlm-meta">
+        <span class="tag vlm-model">${esc(data.visual.model || 'qwen3-vl')}</span>
+        ${data.visual.layout_analysis_time ? `<span class="vlm-time">${data.visual.layout_analysis_time}s</span>` : ''}
+      </div>
+      <div class="visual-text">${esc(data.visual.layout_analysis)}</div>
+    </div>`;
+  }
+
+  // Collapsible OCR
+  if (data.ocr) {
+    html += `<div class="section">
+      <div class="section-header collapsible-header" onclick="toggleCollapsible(this)">
+        <span>OCR Extraction (Qwen3-VL)</span>
+        <span class="collapse-arrow">▸</span>
+      </div>
+      <div class="collapsible-body" style="display:none;">`;
+
+    if (data.ocr.ocr_raw) {
+      html += `<div class="ocr-subsection">
+        <div class="ocr-subsection-header">Raw OCR
+          <span class="vlm-time">${data.ocr.ocr_raw_time || '?'}s · ${data.ocr.ocr_raw.length} chars</span>
+        </div>
+        <pre class="ocr-text">${esc(data.ocr.ocr_raw) || '<em>empty</em>'}</pre>
+      </div>`;
+    }
+
+    if (data.ocr.ocr_structured) {
+      html += `<div class="ocr-subsection">
+        <div class="ocr-subsection-header">Structured OCR
+          <span class="vlm-time">${data.ocr.ocr_structured_time || '?'}s</span>
+        </div>
+        <pre class="ocr-text">${esc(data.ocr.ocr_structured) || '<em>empty</em>'}</pre>
+      </div>`;
+    }
+
+    html += `</div></div>`;
+  }
+
+  if (!html) {
+    html = '<div class="placeholder">No visual analysis data available</div>';
+  }
+
+  el.innerHTML = html;
+}
+
+function toggleCollapsible(header) {
+  const body = header.nextElementSibling;
+  const arrow = header.querySelector('.collapse-arrow');
+  if (body.style.display === 'none') {
+    body.style.display = 'block';
+    arrow.textContent = '▾';
+  } else {
+    body.style.display = 'none';
+    arrow.textContent = '▸';
+  }
+}
+
+// ========== Analysis Rendering ==========
+function showPlaceholder(msg) {
+  document.getElementById('analysisPlaceholder').textContent = msg;
+  document.getElementById('analysisPlaceholder').style.display = 'flex';
+  document.getElementById('analysisContent').style.display = 'none';
+}
+
+function renderAnalysis(s) {
+  document.getElementById('analysisPlaceholder').style.display = 'none';
+  const el = document.getElementById('analysisContent');
+  el.style.display = 'block';
+
+  let html = '';
+
+  // Identification
+  html += `<div class="section">
+    <div class="section-header">Identification</div>
+    <span class="section-badge ${s.section}">${s.section.replace('_',' ')}</span>
+    <span class="tag spread-type">${s.spread_type.replace(/_/g,' ')}</span>
+    <span class="tag orientation">${s.orientation.replace(/_/g,' ')}</span>
+    ${s.text.page_numbers_visible.length ? `<div class="field" style="margin-top:6px"><span class="field-label">Visible page numbers</span><div class="field-value">${s.text.page_numbers_visible.join(', ')}</div></div>` : ''}
+  </div>`;
+
+  // Text
+  html += `<div class="section"><div class="section-header">Text</div>`;
+  if (s.text.display_text) {
+    html += `<div class="field"><span class="field-label">Display Text</span>
+      <div class="field-value" style="font-size:18px;font-weight:700;color:#fff;">${esc(s.text.display_text)}</div></div>`;
+  }
+  if (s.text.body_text) {
+    html += `<div class="field"><span class="field-label">Body Text</span>
+      <div class="field-value body-text">${esc(s.text.body_text)}</div></div>`;
+  }
+  if (s.text.captions && s.text.captions.length) {
+    html += `<div class="field"><span class="field-label">Captions</span>
+      <div class="field-value">${s.text.captions.map(c => esc(c)).join('<br>')}</div></div>`;
+  }
+  if (!s.text.body_text && !s.text.display_text) {
+    html += `<div class="field-value" style="color:var(--text-muted);font-style:italic;">No text content</div>`;
+  }
+  html += `</div>`;
+
+  // Quotations
+  if (s.quotations && s.quotations.length) {
+    html += `<div class="section"><div class="section-header">Quotations</div>`;
+    for (const q of s.quotations) {
+      html += `<div class="card">
+        <div class="quote-text">\u201C${esc(q.text)}\u201D</div>
+        <div class="card-field"><strong>${esc(q.author)}</strong> \u2014 ${esc(q.author_context)}</div>
+        ${q.source_work ? `<div class="card-field">Source: <em>${esc(q.source_work)}</em></div>` : ''}
+        <div class="card-field"><strong>Function:</strong> ${esc(q.relationship_to_argument)}</div>
+        <div class="card-field"><strong>Visual treatment:</strong> ${esc(q.visual_treatment)}</div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Images
+  if (s.images && s.images.length) {
+    html += `<div class="section"><div class="section-header">Images</div>`;
+    for (const img of s.images) {
+      html += `<div class="card">
+        <div class="card-title">${esc(img.position)} \u00B7 ${esc(img.scale)}</div>
+        <div class="card-field"><strong>Subject:</strong> ${esc(img.subject)}</div>
+        <div class="card-field"><strong>Source type:</strong> <span class="tag">${esc(img.source_type)}</span></div>
+        ${img.source_credit ? `<div class="card-field"><strong>Credit:</strong> ${esc(img.source_credit)}</div>` : ''}
+        ${img.estimated_date ? `<div class="card-field"><strong>Date:</strong> ${esc(img.estimated_date)}</div>` : ''}
+        <div class="card-field"><strong>Composition:</strong> ${esc(img.composition)}</div>
+        <div class="card-field"><strong>Relationship to text:</strong> ${esc(img.relationship_to_text)}</div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Design
+  html += `<div class="section"><div class="section-header">Design</div>
+    <div class="field"><span class="field-label">Layout</span>
+      <div class="field-value">${esc(s.design.layout_description)}</div></div>`;
+  if (s.design.typography) {
+    const t = s.design.typography;
+    if (t.body_font_style) {
+      html += `<div class="field"><span class="field-label">Body Typography</span>
+        <div class="field-value">${esc(t.body_font_style)}</div></div>`;
+    }
+    if (t.display_font_style) {
+      html += `<div class="field"><span class="field-label">Display Typography</span>
+        <div class="field-value">${esc(t.display_font_style)}</div></div>`;
+    }
+    if (t.special_treatments && t.special_treatments.length) {
+      html += `<div class="field"><span class="field-label">Special Treatments</span>
+        <div class="field-value">${t.special_treatments.map(s => '\u2022 ' + esc(s)).join('<br>')}</div></div>`;
+    }
+  }
+  html += `<div class="field"><span class="field-label">Color & Tone</span>
+    <div class="field-value">${esc(s.design.color_and_tone)}</div></div>`;
+  html += `<div class="field">
+    <span class="tag">${s.design.white_space} white space</span>
+    <span class="tag">${s.design.visual_density} density</span></div>`;
+  html += `<div class="field"><span class="field-label">Left\u2013Right Relationship</span>
+    <div class="field-value">${esc(s.design.left_right_relationship)}</div></div>`;
+  html += `</div>`;
+
+  // Rhetoric
+  html += `<div class="section rhetoric">
+    <div class="section-header">Rhetoric</div>
+    <div class="field"><span class="field-label">Argument</span>
+      <div class="field-value" style="font-size:15px;color:#fff;font-weight:500;">${esc(s.rhetoric.argument)}</div></div>
+    <div class="field"><span class="field-label">Rhetorical Strategy</span>
+      <div class="field-value" style="font-size:14px;">${esc(s.rhetoric.rhetorical_strategy)}</div></div>
+    <div class="field"><span class="field-label">Design Enacts Argument</span>
+      <div>${s.rhetoric.design_enacts_argument ? '<span class="badge-yes">YES</span>' : '<span class="badge-no">NO</span>'}</div>
+      ${s.rhetoric.design_argument_description ? `<div class="field-value" style="margin-top:6px;font-size:14px;color:#e8c878;">${esc(s.rhetoric.design_argument_description)}</div>` : ''}
+    </div>
+    <div class="field"><span class="field-label">Reader Experience</span>
+      <div class="field-value">${esc(s.rhetoric.reader_experience)}</div></div>
+    <div class="field"><span class="field-label">McLuhan Concepts</span>
+      <div>${(s.rhetoric.mcluhan_concepts||[]).map(c => `<span class="tag mcluhan">${c.replace(/_/g,' ')}</span>`).join('')}</div></div>
+  </div>`;
+
+  // Themes
+  html += `<div class="section"><div class="section-header">Themes</div>
+    <div class="field"><span class="field-label">Original Themes</span>
+      <div>${(s.themes.original_themes||[]).map(t => `<span class="tag theme">${esc(t)}</span>`).join('')}</div></div>
+    <div class="field"><span class="field-label">Contemporary Domains</span>
+      <div>${(s.themes.contemporary_domain_candidates||[]).map(d => `<span class="tag domain">${d.replace(/_/g,' ')}</span>`).join('') || '<span style="color:var(--text-muted);font-style:italic;">None</span>'}</div></div>
+    <div class="field"><span class="field-label">Movement Mapping</span>
+      <div>${(s.themes.movement_mapping||[]).map(m => `<span class="tag movement">${m.replace(/_/g,' ')}</span>`).join('') || '<span style="color:var(--text-muted);font-style:italic;">None</span>'}</div></div>
+    <div class="field"><span class="field-label">Mapping Rationale</span>
+      <div class="field-value">${esc(s.themes.mapping_rationale)}</div></div>
+  </div>`;
+
+  // Progression
+  html += `<div class="section"><div class="section-header">Progression</div>
+    <div class="field">
+      <span class="tag pace">${(s.progression.pace_shift||'').replace(/_/g,' ')}</span>
+      <span class="tag function">${(s.progression.thematic_function||'').replace(/_/g,' ')}</span>
+    </div>
+    <div class="field"><span class="field-label">Relationship to Previous</span>
+      <div class="field-value">${esc(s.progression.relationship_to_previous)}</div></div>
+    <div class="field"><span class="field-label">Relationship to Next</span>
+      <div class="field-value">${esc(s.progression.relationship_to_next)}</div></div>
+  </div>`;
+
+  // Notes
+  if (s.notes) {
+    html += `<div class="section"><div class="section-header">Notes</div>
+      <div class="notes-box">${esc(s.notes)}</div>
+    </div>`;
+  }
+
+  el.innerHTML = html;
+}
+
+function esc(str) {
+  if (!str) return '';
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+// ========== Image Zoom ==========
+function zoomIn() {
+  zoomScale = Math.min(ZOOM_MAX, zoomScale + ZOOM_STEP);
+  applyZoom();
+}
+
+function zoomOut() {
+  zoomScale = Math.max(ZOOM_MIN, zoomScale - ZOOM_STEP);
+  applyZoom();
+}
+
+function zoomReset() {
+  zoomScale = 1;
+  panOffset = { x: 0, y: 0 };
+  applyZoom();
+}
+
+function applyZoom() {
+  const img = document.getElementById('spreadImage');
+  img.style.transform = `translate(${panOffset.x}px, ${panOffset.y}px) scale(${zoomScale})`;
+  document.getElementById('zoomLevel').textContent = `${Math.round(zoomScale * 100)}%`;
+  // Show/hide cursor style based on zoom level
+  const wrapper = document.getElementById('imageWrapper');
+  wrapper.style.cursor = zoomScale > 1 ? 'grab' : 'default';
+}
+
+// Mouse wheel zoom
+document.addEventListener('DOMContentLoaded', () => {
+  const wrapper = document.getElementById('imageWrapper');
+
+  wrapper.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? -ZOOM_STEP : ZOOM_STEP;
+    zoomScale = Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, zoomScale + delta));
+    // Reset pan if zooming back to 1x
+    if (zoomScale <= 1) panOffset = { x: 0, y: 0 };
+    applyZoom();
+  }, { passive: false });
+
+  // Click to toggle zoom
+  wrapper.addEventListener('click', (e) => {
+    if (isPanning) return;
+    if (zoomScale === 1) {
+      zoomScale = 2;
+      // Zoom toward click position
+      const rect = wrapper.getBoundingClientRect();
+      const cx = e.clientX - rect.left - rect.width / 2;
+      const cy = e.clientY - rect.top - rect.height / 2;
+      panOffset = { x: -cx * 0.5, y: -cy * 0.5 };
+    } else {
+      zoomScale = 1;
+      panOffset = { x: 0, y: 0 };
+    }
+    applyZoom();
+  });
+
+  // Pan/drag when zoomed
+  let dragStarted = false;
+  wrapper.addEventListener('mousedown', (e) => {
+    if (zoomScale <= 1) return;
+    isPanning = false;
+    dragStarted = true;
+    panStart = { x: e.clientX - panOffset.x, y: e.clientY - panOffset.y };
+    wrapper.style.cursor = 'grabbing';
+    e.preventDefault();
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!dragStarted) return;
+    isPanning = true;
+    panOffset = { x: e.clientX - panStart.x, y: e.clientY - panStart.y };
+    applyZoom();
+  });
+
+  document.addEventListener('mouseup', () => {
+    if (dragStarted) {
+      dragStarted = false;
+      const wrapper = document.getElementById('imageWrapper');
+      wrapper.style.cursor = zoomScale > 1 ? 'grab' : 'default';
+      // Reset isPanning after a tick so click handler can check it
+      setTimeout(() => { isPanning = false; }, 10);
+    }
+  });
+});
+
+// ========== Keyboard Shortcuts ==========
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft' || e.key === 'a') navigate(-1);
+  if (e.key === 'ArrowRight' || e.key === 'd') navigate(1);
+  if (e.key === '1') switchTab('analysis');
+  if (e.key === '2') switchTab('visual');
+  if (e.key === 'y') setReview('approved');
+  if (e.key === 'f') setReview('flagged');
+  if (e.key === '+' || e.key === '=') zoomIn();
+  if (e.key === '-') zoomOut();
+  if (e.key === '0') zoomReset();
+});
+
+// ========== Start ==========
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

@@ -253,21 +253,105 @@
 
 ---
 
-## Cumulative Statistics (End of Session 4)
+## Session 5 — 2026-03-02, ~17:00 (Static Site & Visual Analysis)
+
+**Commit:** *(pending)*
+
+### Objectives
+- Convert Flask viewer to a static site deployable on GitHub Pages
+- Replace OCR Compare tab with Visual Analysis tab (Qwen3-VL image descriptions + layout analysis)
+- Add image zoom functionality
+- Simplify review workflow (remove notes textarea, use localStorage)
+- Generate compressed JPEG images for web delivery
+
+### Work Completed
+
+1. **Qwen3-VL visual analysis generation**
+   - Created `source/generate_visual_analysis.py` — generates image descriptions and layout analysis for each spread using Qwen3-VL via Ollama
+   - Reuses prompts from `compare_qwen_versions.py` (IMAGE_DESCRIBE_PROMPT, LAYOUT_PROMPT)
+   - Generated 10 files: `output/vlm_extractions/spread_NNN_visual_qwen3.json`
+   - Each file contains: `image_description`, `layout_analysis`, timing metadata, model name
+   - Typical generation time: 10-20s per task per spread
+
+2. **Static site build script**
+   - Created `source/build_static_site.py` — generates `docs/` directory at repo root
+   - Four build steps:
+     1. Load analysis database, build `data/index.json` with navigation metadata
+     2. Merge analysis + OCR + visual analysis into per-spread JSON files (`data/spread_NNN.json`)
+     3. Compress rendered PNGs → JPEG quality 85 (`images/spread_NNN.jpg`)
+     4. Copy static HTML and CSS from `viewer/`
+   - Image compression results: 85 images, 77.6MB PNG → 19.1MB JPEG (25% of original)
+   - Supports `--no-images` flag for faster rebuilds, `--clean` for fresh builds
+
+3. **Static HTML viewer (pure client-side)**
+   - Created `viewer/static_viewer.html` — complete rewrite removing all Jinja2 and Flask dependencies
+   - Data loading via `fetch()` API: `data/index.json` on init, `data/spread_NNN.json` per spread
+   - **Two tabs:**
+     - **Analysis** — full structured analysis rendering (all 9 schema sections)
+     - **Visual Analysis** — image description, layout analysis, collapsible OCR extraction (Qwen3 only)
+   - **Image zoom:** scroll wheel (cursor-centered), click toggle (1x↔2x), drag-to-pan when zoomed, keyboard (+/-/0), zoom controls bar
+   - **Review:** localStorage-based (key `mcluhan_review`), approve/flag/reset buttons, no notes textarea
+   - **Keyboard shortcuts:** arrow keys (nav), 1/2 (tabs), y/f (review), +/-/0 (zoom)
+   - Unanalyzed spreads show "Not yet analyzed" placeholder in both tabs
+
+4. **Static CSS**
+   - Created `viewer/static_style.css` — standalone dark theme CSS
+   - Removed: `.review-notes`, `.ocr-compare`, `.ocr-col`, `.ocr-col-header` (Qwen2.5 comparison UI)
+   - Added: `.image-wrapper`, `.zoom-controls`, `.visual-text`, `.vlm-meta`, `.collapsible-header`, `.ocr-subsection`
+   - Image panel restructured with flex-direction: column for zoom controls bar
+
+5. **Build output**
+   - `docs/` directory: 98 files, 19.2MB total
+     - `index.html` + `style.css` (viewer)
+     - `data/`: 11 JSON files (1 index + 10 spread data)
+     - `images/`: 85 JPEG images (all spreads, including unanalyzed)
+   - Verified locally via `python -m http.server 8000 --directory docs`
+
+6. **Bug fixes during testing**
+   - Fixed `db.get("entries", [])` → `db.get("spreads", [])` in build script (database uses "spreads" key)
+   - Fixed dropdown select not syncing when `loadSpread()` called directly
+   - Fixed visual tab not clearing content when navigating to unanalyzed spreads
+
+### Technical Decisions
+- **Static over Flask:** GitHub Pages requires static files. All dynamic rendering moved to client-side JavaScript, all API endpoints replaced with static JSON file fetches.
+- **JPEG quality 85:** Produces ~25% of PNG file size while maintaining readability for close review. All 85 images tracked in git (19.1MB total — acceptable for GitHub).
+- **localStorage for review:** Simpler than a server-side JSON file for a static deployment. Review state is per-browser, which is acceptable for a single-reviewer workflow.
+- **Visual Analysis tab replaces OCR Compare:** Qwen2.5-VL is no longer part of the pipeline. The new tab surfaces Qwen3-VL's image description and layout analysis — more useful for analytical review than side-by-side OCR comparison.
+- **Collapsible OCR:** Raw and structured OCR hidden behind a collapsible header to keep the Visual Analysis tab focused on interpretive content.
+
+### Architecture Change
+
+**Before (Session 4):**
+```
+User → Flask (localhost:5001) → Jinja2 templates → reads JSON + PNG files from output/rendered/
+```
+
+**After (Session 5):**
+```
+User → GitHub Pages (static) → fetch() → docs/data/*.json + docs/images/*.jpg
+Build: python source/build_static_site.py → generates docs/ from output/ + rendered/
+```
+
+---
+
+## Cumulative Statistics (End of Session 5)
 
 | Metric | Value |
 |--------|-------|
-| Total commits | 4 |
+| Total commits | 5 |
 | Spreads analyzed | 10 of 85 (11.8%) |
-| OCR extractions (Qwen2.5) | 10 |
+| OCR extractions (Qwen2.5) | 10 (archived, no longer in pipeline) |
 | OCR extractions (Qwen3) | 10 |
+| Visual analysis (Qwen3) | 10 (image description + layout analysis) |
 | VLM models evaluated | 3 (Qwen2.5-VL, Qwen3-VL, Molmo2-8B) |
-| Molmo image descriptions | 2 (spreads 005, 007) |
+| Active VLM pipeline | Qwen3-VL only |
 | Schema version | 1.1 |
 | Gold standard samples | 2 (spreads 008, 011) |
 | Review status | 0 approved, 0 flagged, 10 pending |
-| Code files | 7 Python scripts, 1 HTML template, 1 CSS file |
+| Code files | 9 Python scripts, 2 HTML files, 2 CSS files |
 | Documentation files | 6 markdown documents + 1 PDF |
+| Static site | 98 files, 19.2MB (docs/) |
+| Deployment target | GitHub Pages (main branch, /docs folder) |
 
 ---
 
@@ -286,12 +370,19 @@
 | `source/run_molmo_conda.py` | Session 2 | Session 3 | Molmo execution wrapper for conda env |
 | `source/phase_b_methodology.md` | Session 3 | Session 3 | Detailed analysis methodology |
 | `source/compare_qwen_versions.py` | Session 4 | Session 4 | Qwen 2.5 vs 3 comparison script |
-| `viewer/app.py` | Session 1 | Session 4 | Flask web viewer (review endpoints added) |
-| `viewer/templates/viewer.html` | Session 1 | Session 4 | Viewer UI (tabs, OCR compare, review controls) |
-| `viewer/static/style.css` | Session 1 | Session 4 | Dark theme CSS (review UI styles added) |
+| `source/generate_visual_analysis.py` | Session 5 | Session 5 | Qwen3-VL visual analysis generation |
+| `source/build_static_site.py` | Session 5 | Session 5 | Static site build script |
+| `viewer/app.py` | Session 1 | Session 4 | Flask web viewer (retained for local dev) |
+| `viewer/templates/viewer.html` | Session 1 | Session 4 | Flask viewer UI (retained for local dev) |
+| `viewer/static/style.css` | Session 1 | Session 4 | Flask viewer CSS (retained for local dev) |
+| `viewer/static_viewer.html` | Session 5 | Session 5 | Static HTML viewer (GitHub Pages) |
+| `viewer/static_style.css` | Session 5 | Session 5 | Static CSS (GitHub Pages) |
 | `output/analysis_database.json` | Session 1 | Session 3 | Main structured analysis (10 entries) |
 | `output/review_status.json` | Session 4 | Session 4 | Review approve/flag/pending tracking |
-| `output/vlm_extractions/*.json` | Session 2 | Session 4 | OCR extraction files (20 total: 10 per model) |
+| `output/vlm_extractions/*_ocr.json` | Session 2 | Session 2 | Qwen2.5-VL OCR (10 files, archived) |
+| `output/vlm_extractions/*_ocr_qwen3.json` | Session 4 | Session 4 | Qwen3-VL OCR (10 files) |
+| `output/vlm_extractions/*_visual_qwen3.json` | Session 5 | Session 5 | Qwen3-VL visual analysis (10 files) |
+| `docs/` (generated) | Session 5 | Session 5 | Static site (98 files, 19.2MB) |
 
 ---
 

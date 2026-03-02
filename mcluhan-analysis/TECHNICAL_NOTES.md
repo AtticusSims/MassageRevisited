@@ -28,9 +28,9 @@
 ### Model Inventory
 | Model | Size | Interface | Primary Use |
 |-------|------|-----------|-------------|
-| Qwen2.5-VL-7B | 6.0 GB | Ollama (`qwen2.5vl:7b`) | OCR (deprecated as primary) |
-| Qwen3-VL | 6.1 GB | Ollama (`qwen3-vl`) | OCR + image description (current primary) |
-| Molmo2-8B | ~16 GB | HuggingFace Transformers | Image description (secondary) |
+| Qwen2.5-VL-7B | 6.0 GB | Ollama (`qwen2.5vl:7b`) | OCR (archived — replaced by Qwen3-VL) |
+| Qwen3-VL | 6.1 GB | Ollama (`qwen3-vl`) | OCR + image description + layout analysis (sole VLM) |
+| Molmo2-8B | ~16 GB | HuggingFace Transformers | Image description (archived — inconsistent quality) |
 | Claude Opus 4.6 | Cloud | Claude Code CLI | Interpretive analysis, orchestration |
 
 ---
@@ -278,20 +278,85 @@ Key packages:
 
 ---
 
-## 7. Reproducibility Notes
+## 7. Static Site Architecture (GitHub Pages)
 
-### 7.1 Model Versioning
+### 7.1 Overview
+
+The review viewer was converted from a Flask server-rendered application to a pure static site deployable on GitHub Pages. All dynamic rendering was moved to client-side JavaScript.
+
+**Build pipeline:**
+```
+source data (output/, rendered/)
+  → python source/build_static_site.py
+  → docs/ (static site root)
+    ├── index.html          # Single-page viewer (client-side JS)
+    ├── style.css           # Dark theme CSS
+    ├── data/
+    │   ├── index.json      # Navigation metadata (85 spreads)
+    │   └── spread_NNN.json # Merged analysis + OCR + visual per spread
+    └── images/
+        └── spread_NNN.jpg  # Compressed JPEGs (quality 85)
+```
+
+### 7.2 Data Merging Strategy
+
+Each `spread_NNN.json` file merges three data sources:
+- **Analysis**: from `output/analysis_database.json` (the `spreads` array)
+- **OCR**: from `output/vlm_extractions/spread_NNN_ocr_qwen3.json` (raw + structured)
+- **Visual**: from `output/vlm_extractions/spread_NNN_visual_qwen3.json` (image description + layout analysis)
+
+Only spreads with at least one data source present get a data file generated.
+
+### 7.3 Image Compression
+
+| Metric | Value |
+|--------|-------|
+| Source format | PNG (200 DPI renders) |
+| Output format | JPEG (quality 85, optimized) |
+| Total images | 85 |
+| Source size | 77.6 MB |
+| Compressed size | 19.1 MB |
+| Compression ratio | 25% of original |
+| Average per image | 225 KB |
+
+Pillow handles RGBA → RGB conversion (JPEG doesn't support alpha channel).
+Build script skips re-compression if JPEG is newer than PNG source.
+
+### 7.4 Client-Side Review
+
+Review state is stored in `localStorage` under key `mcluhan_review`:
+```json
+{
+  "spread_001": {"status": "approved"},
+  "spread_005": {"status": "flagged"}
+}
+```
+
+Review counts (approved/flagged/pending) are computed on page load from localStorage. This replaces the server-side `review_status.json` approach used in the Flask viewer.
+
+### 7.5 Deployment
+
+- **Platform:** GitHub Pages
+- **Source:** `main` branch, `/docs` folder
+- **Paths:** All asset references are relative (no leading `/`)
+- **Configuration:** GitHub repo Settings → Pages → Source: main, /docs
+
+---
+
+## 8. Reproducibility Notes
+
+### 8.1 Model Versioning
 - Qwen2.5-VL-7B: Ollama tag `qwen2.5vl:7b` (pulled 2026-03-02)
 - Qwen3-VL: Ollama tag `qwen3-vl` (pulled 2026-03-02, 6.1 GB)
 - Molmo2-8B: HuggingFace `allenai/Molmo2-8B` (specific commit hash in cache: `e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b`)
 
-### 7.2 Non-Determinism
+### 8.2 Non-Determinism
 - VLM outputs are non-deterministic even at `temperature=0.1`
 - Qwen3-VL occasionally returns empty responses for the same image on different runs
 - Retry logic mitigates but does not eliminate this issue
 - All outputs are saved with timestamps for audit trail
 
-### 7.3 Human-AI Interaction Model
+### 8.3 Human-AI Interaction Model
 The pipeline uses a layered human-AI collaboration:
 1. **Automated:** PDF rendering, VLM inference, web serving
 2. **AI-assisted:** OCR post-processing, text categorization, initial analysis drafting

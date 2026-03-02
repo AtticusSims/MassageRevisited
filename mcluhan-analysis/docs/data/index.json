@@ -1,0 +1,534 @@
+{
+  "total_pages": 85,
+  "total_analyzed": 10,
+  "schema_version": "1.1",
+  "spreads": [
+    {
+      "id": "spread_001",
+      "pdf_page": 1,
+      "book_pages": [],
+      "analyzed": true
+    },
+    {
+      "id": "spread_002",
+      "pdf_page": 2,
+      "book_pages": [],
+      "analyzed": true
+    },
+    {
+      "id": "spread_003",
+      "pdf_page": 3,
+      "book_pages": [],
+      "analyzed": true
+    },
+    {
+      "id": "spread_004",
+      "pdf_page": 4,
+      "book_pages": [],
+      "analyzed": true
+    },
+    {
+      "id": "spread_005",
+      "pdf_page": 5,
+      "book_pages": [
+        1
+      ],
+      "analyzed": true
+    },
+    {
+      "id": "spread_006",
+      "pdf_page": 6,
+      "book_pages": [
+        2,
+        3
+      ],
+      "analyzed": true
+    },
+    {
+      "id": "spread_007",
+      "pdf_page": 7,
+      "book_pages": [
+        4,
+        5
+      ],
+      "analyzed": true
+    },
+    {
+      "id": "spread_008",
+      "pdf_page": 8,
+      "book_pages": [
+        6,
+        7
+      ],
+      "analyzed": true
+    },
+    {
+      "id": "spread_009",
+      "pdf_page": 9,
+      "book_pages": [
+        8,
+        9
+      ],
+      "analyzed": true
+    },
+    {
+      "id": "spread_010",
+      "pdf_page": 10,
+      "book_pages": [
+        10,
+        11
+      ],
+      "analyzed": true
+    },
+    {
+      "id": "spread_011",
+      "pdf_page": 11,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_012",
+      "pdf_page": 12,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_013",
+      "pdf_page": 13,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_014",
+      "pdf_page": 14,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_015",
+      "pdf_page": 15,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_016",
+      "pdf_page": 16,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_017",
+      "pdf_page": 17,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_018",
+      "pdf_page": 18,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_019",
+      "pdf_page": 19,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_020",
+      "pdf_page": 20,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_021",
+      "pdf_page": 21,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_022",
+      "pdf_page": 22,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_023",
+      "pdf_page": 23,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_024",
+      "pdf_page": 24,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_025",
+      "pdf_page": 25,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_026",
+      "pdf_page": 26,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_027",
+      "pdf_page": 27,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_028",
+      "pdf_page": 28,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_029",
+      "pdf_page": 29,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_030",
+      "pdf_page": 30,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_031",
+      "pdf_page": 31,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_032",
+      "pdf_page": 32,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_033",
+      "pdf_page": 33,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_034",
+      "pdf_page": 34,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_035",
+      "pdf_page": 35,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_036",
+      "pdf_page": 36,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_037",
+      "pdf_page": 37,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_038",
+      "pdf_page": 38,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_039",
+      "pdf_page": 39,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_040",
+      "pdf_page": 40,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_041",
+      "pdf_page": 41,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_042",
+      "pdf_page": 42,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_043",
+      "pdf_page": 43,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_044",
+      "pdf_page": 44,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_045",
+      "pdf_page": 45,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_046",
+      "pdf_page": 46,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_047",
+      "pdf_page": 47,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_048",
+      "pdf_page": 48,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_049",
+      "pdf_page": 49,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_050",
+      "pdf_page": 50,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_051",
+      "pdf_page": 51,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_052",
+      "pdf_page": 52,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_053",
+      "pdf_page": 53,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_054",
+      "pdf_page": 54,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_055",
+      "pdf_page": 55,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_056",
+      "pdf_page": 56,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_057",
+      "pdf_page": 57,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_058",
+      "pdf_page": 58,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_059",
+      "pdf_page": 59,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_060",
+      "pdf_page": 60,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_061",
+      "pdf_page": 61,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_062",
+      "pdf_page": 62,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_063",
+      "pdf_page": 63,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_064",
+      "pdf_page": 64,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_065",
+      "pdf_page": 65,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_066",
+      "pdf_page": 66,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_067",
+      "pdf_page": 67,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_068",
+      "pdf_page": 68,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_069",
+      "pdf_page": 69,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_070",
+      "pdf_page": 70,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_071",
+      "pdf_page": 71,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_072",
+      "pdf_page": 72,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_073",
+      "pdf_page": 73,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_074",
+      "pdf_page": 74,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_075",
+      "pdf_page": 75,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_076",
+      "pdf_page": 76,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_077",
+      "pdf_page": 77,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_078",
+      "pdf_page": 78,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_079",
+      "pdf_page": 79,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_080",
+      "pdf_page": 80,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_081",
+      "pdf_page": 81,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_082",
+      "pdf_page": 82,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_083",
+      "pdf_page": 83,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_084",
+      "pdf_page": 84,
+      "book_pages": [],
+      "analyzed": false
+    },
+    {
+      "id": "spread_085",
+      "pdf_page": 85,
+      "book_pages": [],
+      "analyzed": false
+    }
+  ]
+}

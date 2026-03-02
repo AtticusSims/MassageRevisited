@@ -3,6 +3,7 @@
 Structured analysis of Marshall McLuhan & Quentin Fiore's *The Medium is the Massage: An Inventory of Effects* (1967) — producing a page-by-page database for creating a contemporary AI-era companion book.
 
 **Status:** Phase B (analysis) — Batch 1 complete (spreads 001-010 of 85)
+**Live viewer:** [GitHub Pages](https://atticussims.github.io/MassageRevisited/) (static site, hosted from `docs/`)
 
 ---
 
@@ -22,15 +23,23 @@ Every spread receives a structured JSON entry covering identification, text, quo
 ## Quick Start
 
 ```bash
-# Start the review viewer
+# Build the static site (requires Pillow for image compression)
+pip install Pillow
+python source/build_static_site.py
+
+# Serve locally and open in browser
+python -m http.server 8000 --directory docs
+# Open http://localhost:8000
+
+# Or use the Flask viewer for development
 python viewer/app.py
 # Open http://localhost:5001
 
 # Run OCR on a single spread (requires Ollama with qwen3-vl)
 python source/vlm_tools.py ocr rendered/spread_009.png
 
-# Run Molmo description (requires conda env 'molmo')
-conda run -n molmo python source/run_molmo_conda.py describe rendered/spread_007.png
+# Generate visual analysis for all spreads
+python source/generate_visual_analysis.py
 ```
 
 ---
@@ -39,6 +48,15 @@ conda run -n molmo python source/run_molmo_conda.py describe rendered/spread_007
 
 ```
 mcluhan-analysis/
+├── docs/                            # Static site for GitHub Pages (generated)
+│   ├── index.html                   # Single-page viewer (client-side JS)
+│   ├── style.css                    # Dark theme CSS
+│   ├── data/                        # JSON data files
+│   │   ├── index.json               # Navigation metadata (85 spreads)
+│   │   └── spread_NNN.json          # Per-spread merged data (10 files)
+│   └── images/                      # Compressed JPEGs (85 files, ~19 MB)
+│       └── spread_NNN.jpg
+│
 ├── source/                          # Source materials, schemas, and scripts
 │   ├── analysis_schema_v1.1.json    # JSON Schema defining entry structure
 │   ├── claude_code_analysis_instructions.md  # Analysis methodology
@@ -47,26 +65,31 @@ mcluhan-analysis/
 │   ├── sample_entry_spread_008.json # Gold standard: typography spread
 │   ├── sample_entry_spread_011.json # Gold standard: surveillance spread
 │   ├── vlm_tools.py                 # VLM utilities (OCR, description, layout)
-│   ├── run_molmo_conda.py           # Molmo2-8B execution wrapper
-│   ├── compare_qwen_versions.py     # Model comparison tool
+│   ├── generate_visual_analysis.py  # Qwen3-VL visual analysis generation
+│   ├── build_static_site.py         # Static site build script
 │   ├── build_batch_001_010.py       # Batch 1 analysis script
+│   ├── compare_qwen_versions.py     # Model comparison tool
+│   ├── run_molmo_conda.py           # Molmo2-8B execution wrapper
 │   └── *.pdf                        # Source PDF (not tracked in git)
 │
 ├── output/                          # Generated analysis data
 │   ├── analysis_database.json       # Main structured database (10 entries)
 │   ├── review_status.json           # Approve/flag/pending tracking
-│   └── vlm_extractions/             # VLM OCR outputs
-│       ├── spread_*_ocr.json        # Qwen2.5-VL extractions (10 files)
-│       ├── spread_*_ocr_qwen3.json  # Qwen3-VL extractions (10 files)
+│   └── vlm_extractions/             # VLM outputs
+│       ├── spread_*_ocr.json        # Qwen2.5-VL OCR (10 files, archived)
+│       ├── spread_*_ocr_qwen3.json  # Qwen3-VL OCR (10 files)
+│       ├── spread_*_visual_qwen3.json # Qwen3-VL visual analysis (10 files)
 │       └── qwen_version_comparison.json  # Model comparison data
 │
 ├── rendered/                        # Rendered book pages (PNG, 200 DPI)
 │   └── spread_001.png ... spread_065.png
 │
-├── viewer/                          # Flask web review interface
-│   ├── app.py                       # Server with API endpoints
-│   ├── templates/viewer.html        # Tabbed viewer UI
-│   └── static/style.css             # Dark theme styles
+├── viewer/                          # Web review interface
+│   ├── static_viewer.html           # Static viewer (→ docs/index.html)
+│   ├── static_style.css             # Static CSS (→ docs/style.css)
+│   ├── app.py                       # Flask server (local development)
+│   ├── templates/viewer.html        # Flask viewer UI
+│   └── static/style.css             # Flask viewer CSS
 │
 ├── ContextDocs/                     # Theoretical framework documents
 │   ├── framework_v3.md              # Complete intellectual architecture
@@ -116,23 +139,30 @@ This project maintains several documentation files for research and reproducibil
 
 ## Key Technical Decisions
 
-1. **Qwen3-VL over Qwen2.5-VL:** Dramatic OCR quality improvement on dense serif text outweighs 2-7x speed penalty. See [`TECHNICAL_NOTES.md`](TECHNICAL_NOTES.md) for evaluation data.
+1. **Qwen3-VL as sole VLM:** Handles OCR, image description, and layout analysis. Dramatic quality improvement over Qwen2.5-VL on dense serif text outweighs 2-7x speed penalty. Molmo2-8B archived due to inconsistent results. See [`TECHNICAL_NOTES.md`](TECHNICAL_NOTES.md) for evaluation data.
 
-2. **Three-model architecture:** Qwen3-VL (OCR primary), Molmo2-8B (image description secondary), Claude Opus 4.6 (interpretive analysis). Each model handles what it does best.
+2. **Two-model architecture:** Qwen3-VL (all VLM tasks — OCR, image description, layout analysis) + Claude Opus 4.6 (interpretive analysis, orchestration). Simplified from original three-model approach.
 
-3. **Human-in-the-loop review:** Approve/flag/pending workflow ensures no analysis enters the downstream pipeline without human verification. See the web viewer at `localhost:5001`.
+3. **Static site deployment:** GitHub Pages serves the review viewer from `docs/`. Build script merges analysis + OCR + visual data into per-spread JSON files, compresses PNGs to JPEG. No server required.
 
-4. **Rhetoric as primary analytical layer:** The `design_enacts_argument` field is the most important in the schema — capturing how McLuhan & Fiore's design performs their argument, not just illustrates it.
+4. **Human-in-the-loop review:** Approve/flag/pending workflow ensures no analysis enters the downstream pipeline without human verification. Review state stored in browser localStorage.
+
+5. **Rhetoric as primary analytical layer:** The `design_enacts_argument` field is the most important in the schema — capturing how McLuhan & Fiore's design performs their argument, not just illustrates it.
 
 ---
 
 ## Requirements
 
+**For building the static site:**
 - Python 3.10+
-- Flask
-- PyMuPDF (fitz)
+- Pillow (image compression)
+
+**For running VLM analysis:**
 - Ollama with `qwen3-vl` model
-- (Optional) Conda environment `molmo` with HuggingFace Transformers 4.57.1 for Molmo2-8B
+- PyMuPDF (fitz) for PDF rendering
+
+**For local Flask development (optional):**
+- Flask
 
 ---
 
