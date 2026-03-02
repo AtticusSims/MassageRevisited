@@ -156,7 +156,7 @@ def _load_molmo():
     _molmo_model = AutoModelForImageTextToText.from_pretrained(
         MOLMO_MODEL_ID,
         trust_remote_code=True,
-        torch_dtype=torch.bfloat16,
+        dtype=torch.bfloat16,
         device_map="auto",
     )
 
