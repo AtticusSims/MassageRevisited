@@ -1,0 +1,86 @@
+{
+  "id": "spread_020",
+  "analysis": {
+    "id": "spread_020",
+    "pdf_page": 20,
+    "book_pages": [
+      30,
+      31
+    ],
+    "section": "body",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "The wheel",
+      "display_text": "",
+      "captions": [
+        "The wheel"
+      ],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "right_page",
+        "subject": "### 1. Photograph of the Foot’s Heel  \n**1. What does it depict?**  \nA highly detailed black-and-white close-up of a human foot’s heel area, viewed from a side profile. The image focuses on the rounded, curved structure of the heel, with visible skin texture (fine lines, pores, and subtle creases), and a vertical seam or fold dividing the heel into two halves. The foot’s skin shows natural ridges and contours, emphasizing the anatomical shape of the heel bone and surrounding tissue. The background is solid black, isolating the foot as the sole subject.  \n\n**2. Where is it positioned on the page?**  \nThe photograph spans both pages of the spread (left and right pages), occupying the central area. It is centered horizontally and vertically across the spread, with no inset or marginal placement.  \n\n**3. What is the visual style?**  \nA high-contrast black-and-white photograph with fine grain texture, characteristic of older photographic prints or analog photography.  \n\n**4. Describe the composition:**  \n- **Framing**: Tight close-up, cropped to focus exclusively on the heel and adjacent foot tissue (no background elements beyond the black backdrop).  \n- **Angle**: Side profile (the foot is viewed from the side, revealing the heel’s curvature and the vertical division line).  \n- **Contrast**: Extreme high contrast between the light tones of the foot (highlighted by the photograph’s lighting) and the solid black background, emphasizing the foot’s contours.  \n- **Key visual qualities**: Fine details of skin texture (e.g., subtle ridges, pores, and natural folds), the smooth, rounded shape of the heel, and the vertical seam that splits the heel into two symmetrical halves. The image has a grainy, textured appearance typical of film photography.  \n\n**5. Approximately how much of the page does it occupy?**  \nThe photograph occupies approximately 90–95% of the combined spread (left and right pages), with minimal negative space. The text “The wheel” (a textual element, excluded",
+        "source_type": "advertisement",
+        "source_credit": "Peter Moore",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is dominated by a **large, high-contrast black-and-white photograph** of a wheel (likely a close-up of a vehicle tire or similar circular object). The image occupies nearly the entire spread, with a subtle vertical crease or division running through its center (suggesting a physical book spread). The text “*The wheel*” is positioned in the **top-right corner**, acting as a small, minimalist caption. Spatially, the layout is **image-centric**: the photograph dominates the visual field, while the text is relegated to a corner, creating a clear hierarchy where the image is the primary focus. The space is divided such that the image fills most of the spread, with the text occupying a tiny fraction of the top-right quadrant.  \n\n\n### 2. TYPOGRAPHY  \nOnly one text element is visible: “*The wheel*” in the top-right corner.  \n- **Typeface**: Sans-serif (clean, modern, and unadorned, typical of minimalist design).  \n- **Size/Weight**: Small display text (not body text), with a **light weight** (not bold).  \n- **Color/Reversal**: White text on a black background, making it **reversed** (high-contrast for readability against the dark backdrop).  \n- **Role**: Serves as a title or caption, emphasizing the subject of the image without overwhelming it.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (sharp black-and-white separation between light and dark areas in the photograph). The wheel’s texture (e.g., ridges, grooves) is defined by stark tonal shifts.  \n- **Tone**: **Predominantly dark** (the background is black, and the image’s shadows dominate). While the wheel has bright highlights, the overall mood is dark due to the black backdrop and the image’s tonal range.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Sparse** (minimal empty space). The photograph occupies most of the spread, leaving little negative space. The black background is the “white space” (negative space), but it is **not empty**—it is the canvas for the image",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "sparse",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "Brief textual element: 'The wheel'",
+      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
+      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "visual_rhetoric"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "The wheel",
+    "ocr_raw_time": 3.2,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: The wheel  \nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 3.8,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### 1. Photograph of the Foot’s Heel  \n**1. What does it depict?**  \nA highly detailed black-and-white close-up of a human foot’s heel area, viewed from a side profile. The image focuses on the rounded, curved structure of the heel, with visible skin texture (fine lines, pores, and subtle creases), and a vertical seam or fold dividing the heel into two halves. The foot’s skin shows natural ridges and contours, emphasizing the anatomical shape of the heel bone and surrounding tissue. The background is solid black, isolating the foot as the sole subject.  \n\n**2. Where is it positioned on the page?**  \nThe photograph spans both pages of the spread (left and right pages), occupying the central area. It is centered horizontally and vertically across the spread, with no inset or marginal placement.  \n\n**3. What is the visual style?**  \nA high-contrast black-and-white photograph with fine grain texture, characteristic of older photographic prints or analog photography.  \n\n**4. Describe the composition:**  \n- **Framing**: Tight close-up, cropped to focus exclusively on the heel and adjacent foot tissue (no background elements beyond the black backdrop).  \n- **Angle**: Side profile (the foot is viewed from the side, revealing the heel’s curvature and the vertical division line).  \n- **Contrast**: Extreme high contrast between the light tones of the foot (highlighted by the photograph’s lighting) and the solid black background, emphasizing the foot’s contours.  \n- **Key visual qualities**: Fine details of skin texture (e.g., subtle ridges, pores, and natural folds), the smooth, rounded shape of the heel, and the vertical seam that splits the heel into two symmetrical halves. The image has a grainy, textured appearance typical of film photography.  \n\n**5. Approximately how much of the page does it occupy?**  \nThe photograph occupies approximately 90–95% of the combined spread (left and right pages), with minimal negative space. The text “The wheel” (a textual element, excluded per instructions) appears in the top-right corner of the right page, but the photograph itself dominates the visual field.  \n\n---  \n*Note: The only visual/pictorial element in this spread is the photograph of the foot’s heel. Textual elements (e.g., “The wheel”) are excluded per the query’s instructions.*",
+    "image_description_time": 9.3,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is dominated by a **large, high-contrast black-and-white photograph** of a wheel (likely a close-up of a vehicle tire or similar circular object). The image occupies nearly the entire spread, with a subtle vertical crease or division running through its center (suggesting a physical book spread). The text “*The wheel*” is positioned in the **top-right corner**, acting as a small, minimalist caption. Spatially, the layout is **image-centric**: the photograph dominates the visual field, while the text is relegated to a corner, creating a clear hierarchy where the image is the primary focus. The space is divided such that the image fills most of the spread, with the text occupying a tiny fraction of the top-right quadrant.  \n\n\n### 2. TYPOGRAPHY  \nOnly one text element is visible: “*The wheel*” in the top-right corner.  \n- **Typeface**: Sans-serif (clean, modern, and unadorned, typical of minimalist design).  \n- **Size/Weight**: Small display text (not body text), with a **light weight** (not bold).  \n- **Color/Reversal**: White text on a black background, making it **reversed** (high-contrast for readability against the dark backdrop).  \n- **Role**: Serves as a title or caption, emphasizing the subject of the image without overwhelming it.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (sharp black-and-white separation between light and dark areas in the photograph). The wheel’s texture (e.g., ridges, grooves) is defined by stark tonal shifts.  \n- **Tone**: **Predominantly dark** (the background is black, and the image’s shadows dominate). While the wheel has bright highlights, the overall mood is dark due to the black backdrop and the image’s tonal range.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Sparse** (minimal empty space). The photograph occupies most of the spread, leaving little negative space. The black background is the “white space” (negative space), but it is **not empty**—it is the canvas for the image. The text’s small size further reduces the perceived “empty” areas.  \n- **Effect**: The sparse white space reinforces the image’s dominance, creating a tight, focused composition.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- The image is **continuation**: The left and right halves of the photograph form a single, cohesive view of the wheel (e.g., the left side shows the wheel’s edge, the right side shows its rounded surface). There is no mirror or stark contrast between left and right; instead, they flow into one another.  \n- The text (“*The wheel*”) is placed on the **right side**, aligning with the spread’s right margin. This creates a subtle visual balance: the image’s left half (more textured) and right half (smoother) are unified, while the text anchors the right edge.  \n- Overall, the left-right relationship is **unified** (the image flows across the spread) with a minor emphasis on the right (via the text).  \n\n\n### 6. OVERALL FEEL  \n- **Mood/Energy**: **Minimal, calm, and contemplative**. The high-contrast black-and-white photography, tight focus on the wheel’s texture, and sparse typography create a sense of precision and stillness. There is no chaos or aggression—instead, the design feels deliberate, almost meditative, inviting the viewer to study the wheel’s details.  \n- **Key Qualities**: The stark simplicity, lack of clutter, and focus on a single subject (the wheel) evoke a **minimalist aesthetic** that prioritizes form and texture over narrative or emotion. The mood is quiet and introspective, emphasizing the object’s physicality rather than its function.",
+    "layout_analysis_time": 12.7,
+    "model": "qwen3-vl"
+  }
+}

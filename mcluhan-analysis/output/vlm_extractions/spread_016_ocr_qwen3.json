@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_016",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:26:48",
+  "ocr_raw": "your\ngovernment\nNose-counting, a cherished part of the eighteenth-century fragmentation proc-ess, has rapidly become a cumbers-ome and ineffectual form of social assessment in an environment of in-stant electric speeds. The public, in the sense of a great consensus of separate and distinct viewpoints, is finished. To-day, the mass audience (the successor to the \"public\") can be used as a cre-ative, participating force. It is, instead, merely given packages of passive en-tertainment. Politics offers yesterday's answers to today's questions. A new form of \"politics\" is emerging, and in ways we haven't yet noticed. The living room has become a voting booth. Participation via television in Freedom Marches, in war, revolution, pollution, and other events is changing everything.\n22",
+  "ocr_structured": "DISPLAY_TEXT: your government  \nBODY_TEXT: Nose-counting, a cherished part of the eighteenth-century fragmentation proc- ess, has rapidly become a cumber- some and ineffectual form of social assessment in an environment of in- stant electric speeds. The public, in the sense of a great consensus of separate and distinct viewpoints, is finished. To- day, the mass audience (the successor to the \"public\") can be used as a cre- ative, participating force. It is, instead, merely given packages of passive en- tertainment. Politics offers yesterday's answers to today's questions.  \nA new form of \"politics\" is emerging, and in ways we haven't yet noticed. The living room has become a voting booth. Participation via television in Freedom Marches, in war, revolution, pollution, and other events is changing everything.  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: 22",
+  "ocr_raw_time": 16.2,
+  "ocr_structured_time": 8.9
+}

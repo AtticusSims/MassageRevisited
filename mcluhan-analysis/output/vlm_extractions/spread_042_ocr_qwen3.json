@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_042",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:41:46",
+  "ocr_raw": "The past went that-a-way. When faced with a totally new situation, we tend always to attach ourselves to the objects, to the flavor of the most recent past.\nWe look at the present through a rear-view mirror. We march backwards into the future. Suburbia lives imaginatively in Bonanza-land.",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: The past went that-a-way. When faced with a totally new situation, we tend always to attach ourselves to the objects, to the flavor of the most recent past. We look at the present through a rear-view mirror. We march backwards into the future. Suburbia lives imaginatively in Bonanza-land.  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 4.1,
+  "ocr_structured_time": 4.9
+}

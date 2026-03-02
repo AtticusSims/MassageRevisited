@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_073",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:58:24",
+  "ocr_raw": "you\ncan\nget away\nwith\n\"The biggest and best woman in the world,\" an 82-foot-long, 20-foot-high sculpture, in Moderns Museet, Stockholm. You can walk around in her.\nThe Balinese say: \"We have no art. We do everything as well as we can.\" Museum curator: \"I wouldn't be seen dead with a living work of art.\" A. K. Coomaraswamy: \"We are proud of our museums where we display a way of living that we have made impossible.\"\nThe Establishment pays homage to four anti-environmental lads. British Prime Minister Wilson visits the Cavern Club in Liverpool where the Beatles got their start. The museum has become a storehouse of human values, a cultural bloodbank.",
+  "ocr_structured": "DISPLAY_TEXT: you can get away with  \nBODY_TEXT: The Establishment pays homage to four anti-environmental lads. British Prime Minister Wilson visits the Cavern Club in Liverpool where the Beatles got their start. The museum has become a storehouse of human values, a cultural bloodbank.  \nQUOTATIONS: The Balinese say: \"We have no art. We do everything as well as we can.\" Museum curator: \"I wouldn't be seen dead with a living work of art.\" A. K. Coomaraswamy: \"We are proud of our museums where we display a way of living that we have made impossible.\"  \nCAPTIONS: \"The biggest and best woman in the world,\" an 82-foot-long, 20-foot-high sculpture, in Moderns Museet, Stockholm. You can walk around in her.  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 11.7,
+  "ocr_structured_time": 11.0
+}

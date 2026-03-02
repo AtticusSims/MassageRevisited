@@ -1,0 +1,84 @@
+{
+  "id": "spread_033",
+  "analysis": {
+    "id": "spread_033",
+    "pdf_page": 33,
+    "book_pages": [
+      56,
+      57
+    ],
+    "section": "body",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "right_page",
+        "subject": "### Visual Element Analysis (Book Spread Image)  \n\n#### 1. **Photograph (Primary Visual Element)**  \n- **What it depicts**: A motion-blurred, circular object with light reflections. The image appears to be a close-up of a reflective surface (e.g., a lens, mirror, or metallic object) distorted by movement or a long exposure. Lighter tones dominate the center, while darker tones radiate outward, creating a sense of depth and fluidity. The blur suggests rapid motion or a deliberate photographic technique to evoke dynamism.  \n- **Position**: Occupies the **top portion of both pages**, spanning the entire width of the spread (full bleed across the top). It sits above the text blocks on the left and right pages.  \n- **Visual style**: **Black and white photograph** with a high-contrast, motion-blurred aesthetic.  \n- **Composition**:  \n  - **Framing**: Tight close-up on the circular shape, with no visible background (the blur obscures context).  \n  - **Angle**: Directly facing the circular object, emphasizing its form.  \n  - **Contrast**: Extreme contrast between the bright center (light reflections) and dark edges (shadows), creating a stark visual hierarchy.  \n  - **Key visual qualities**: Motion blur dominates, lending a sense of speed or fluidity; the circular shape is the focal point, with light and dark gradients guiding the eye.  \n- **Page occupation**: Approximately **1/3 to 1/2 of the page height**, covering the full width of the spread.  \n\n#### 2. **Other Elements**  \n- **No additional photographs, illustrations, or graphic symbols** are present. The rest of the spread consists solely of **text/typography** (which is not a visual/pictorial element per the query’s scope).  \n\n---  \n\n### Summary of Visual Elements  \nThe only visual/pictorial element is the **motion-blurred black-and-white photograph** at the top of the spread. It is a high-contrast, close-up shot of a circular reflective object, spanning both pages and dominating the upper third of the spread. All ot",
+        "source_type": "illustration",
+        "source_credit": "Peter Moore",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread features a **top-heavy layout**: a large, blurred black-and-white photograph dominates the upper portion, spanning both pages. Below the image, text is divided into **two vertical columns** (left and right pages), creating a clear visual hierarchy. The space is split into:  \n- **Upper section**: Full-width photographic image (abstract, with motion blur).  \n- **Lower section**: Two text columns (left and right), each containing dense body text.  \nThis division emphasizes the image as a focal point, while the text occupies the remaining space in a balanced, symmetrical manner.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Only **small body text** is visible (no display text, headlines, or captions).  \n- **Font style**: Serif typeface (e.g., Times New Roman or similar), identifiable by subtle serifs on characters.  \n- **Weight/contrast**: Normal weight (not bold or light), ensuring readability against the dark background.  \n- **Color scheme**: **White-on-black** (reversed), creating high contrast for legibility.  \n- **Hierarchy**: No typographic hierarchy (e.g., no larger fonts for emphasis), as the text is uniform in size and weight.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (black background vs. white text; dark tones in the photograph vs. light highlights).  \n- **Tone**: **Predominantly dark** (black background dominates the text area), with the photograph adding subtle light/dark variations. The overall mood is stark and graphic due to the extreme contrast.  \n\n\n### 4. WHITE SPACE  \n- **Text area**: **Sparse** (text fills most of the lower section, with minimal empty space between lines/columns).  \n- **Image area**: **Moderate** (the photograph contains light/dark gradients, creating organic \"white space\" within the blurred texture).  \n- **Overall**: White space is **moderate**—the text is dense but not packed, while the image’s abstract nature introduces intentional negative space.  \n\n\n### 5. LEFT-RIGHT RELAT",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "Visual/typographic spread — argument conveyed through imagery and design rather than prose.",
+      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
+      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "visual_rhetoric"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "illustrates",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "",
+    "ocr_raw_time": 23.2,
+    "ocr_structured": "",
+    "ocr_structured_time": 23.2,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element Analysis (Book Spread Image)  \n\n#### 1. **Photograph (Primary Visual Element)**  \n- **What it depicts**: A motion-blurred, circular object with light reflections. The image appears to be a close-up of a reflective surface (e.g., a lens, mirror, or metallic object) distorted by movement or a long exposure. Lighter tones dominate the center, while darker tones radiate outward, creating a sense of depth and fluidity. The blur suggests rapid motion or a deliberate photographic technique to evoke dynamism.  \n- **Position**: Occupies the **top portion of both pages**, spanning the entire width of the spread (full bleed across the top). It sits above the text blocks on the left and right pages.  \n- **Visual style**: **Black and white photograph** with a high-contrast, motion-blurred aesthetic.  \n- **Composition**:  \n  - **Framing**: Tight close-up on the circular shape, with no visible background (the blur obscures context).  \n  - **Angle**: Directly facing the circular object, emphasizing its form.  \n  - **Contrast**: Extreme contrast between the bright center (light reflections) and dark edges (shadows), creating a stark visual hierarchy.  \n  - **Key visual qualities**: Motion blur dominates, lending a sense of speed or fluidity; the circular shape is the focal point, with light and dark gradients guiding the eye.  \n- **Page occupation**: Approximately **1/3 to 1/2 of the page height**, covering the full width of the spread.  \n\n#### 2. **Other Elements**  \n- **No additional photographs, illustrations, or graphic symbols** are present. The rest of the spread consists solely of **text/typography** (which is not a visual/pictorial element per the query’s scope).  \n\n---  \n\n### Summary of Visual Elements  \nThe only visual/pictorial element is the **motion-blurred black-and-white photograph** at the top of the spread. It is a high-contrast, close-up shot of a circular reflective object, spanning both pages and dominating the upper third of the spread. All other content is textual (not analyzed here per the query’s instructions).",
+    "image_description_time": 8.0,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread features a **top-heavy layout**: a large, blurred black-and-white photograph dominates the upper portion, spanning both pages. Below the image, text is divided into **two vertical columns** (left and right pages), creating a clear visual hierarchy. The space is split into:  \n- **Upper section**: Full-width photographic image (abstract, with motion blur).  \n- **Lower section**: Two text columns (left and right), each containing dense body text.  \nThis division emphasizes the image as a focal point, while the text occupies the remaining space in a balanced, symmetrical manner.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Only **small body text** is visible (no display text, headlines, or captions).  \n- **Font style**: Serif typeface (e.g., Times New Roman or similar), identifiable by subtle serifs on characters.  \n- **Weight/contrast**: Normal weight (not bold or light), ensuring readability against the dark background.  \n- **Color scheme**: **White-on-black** (reversed), creating high contrast for legibility.  \n- **Hierarchy**: No typographic hierarchy (e.g., no larger fonts for emphasis), as the text is uniform in size and weight.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (black background vs. white text; dark tones in the photograph vs. light highlights).  \n- **Tone**: **Predominantly dark** (black background dominates the text area), with the photograph adding subtle light/dark variations. The overall mood is stark and graphic due to the extreme contrast.  \n\n\n### 4. WHITE SPACE  \n- **Text area**: **Sparse** (text fills most of the lower section, with minimal empty space between lines/columns).  \n- **Image area**: **Moderate** (the photograph contains light/dark gradients, creating organic \"white space\" within the blurred texture).  \n- **Overall**: White space is **moderate**—the text is dense but not packed, while the image’s abstract nature introduces intentional negative space.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Symmetry**: The left and right text columns are **mirror-like** (same width, same text style, and parallel alignment).  \n- **Flow**: Text flows **continuationally** (each page’s text continues the narrative, with no abrupt breaks between columns).  \n- **Balance**: The layout feels **unified**—the image anchors both columns, and the text’s symmetrical placement reinforces cohesion.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Minimalist and contemplative**. The high contrast, black background, and abstract photograph create a stark, intellectual atmosphere.  \n- **Tone**: Not chaotic (due to clean typography and balanced layout) or aggressive (text is calm, not confrontational). Instead, it feels **academic and introspective**, inviting the reader to engage with the text’s content while being visually drawn to the photograph’s ambiguity.  \n- **Energy**: **Controlled tension**—the blurred image adds depth without overwhelming the text, resulting in a calm yet thought-provoking experience.",
+    "layout_analysis_time": 12.8,
+    "model": "qwen3-vl"
+  }
+}

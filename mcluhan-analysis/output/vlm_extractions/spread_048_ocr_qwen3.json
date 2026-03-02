@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_048",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:43:16",
+  "ocr_raw": "The Fairmount Water Works in Philadelphia, Penna. We impose the form of the old on the content of the new. The malady lingers on.\nnment",
+  "ocr_structured": "DISPLAY_TEXT: nment\nBODY_TEXT: NONE\nQUOTATIONS: NONE\nCAPTIONS: The Fairmount Water Works in Philadelphia, Penna. We impose the form of the old on the content of the new. The malady lingers on.\nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 5.5,
+  "ocr_structured_time": 6.9
+}

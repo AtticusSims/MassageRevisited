@@ -1,0 +1,94 @@
+{
+  "id": "spread_040",
+  "analysis": {
+    "id": "spread_040",
+    "pdf_page": 40,
+    "book_pages": [
+      70,
+      71
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "70\n102\n\"It isn't that I don't like current events.\nThere have just been so many of them lately.\"\nPoot Day",
+      "display_text": "",
+      "captions": [
+        "Poot Day"
+      ],
+      "page_numbers_visible": [
+        "70"
+      ]
+    },
+    "quotations": [
+      {
+        "text": "\"It isn't that I don't like current events. There have just been so many of them lately.\"",
+        "attribution": "unattributed",
+        "context": "inline"
+      }
+    ],
+    "images": [
+      {
+        "position": "spanning_spread",
+        "subject": "### Left Page Visual Element (Illustration)  \n1. **Depiction**: A black-and-white cartoon illustration of two women walking in a hallway toward the left. The woman on the left wears a short black skirt, knee-high socks, and a long-sleeved top, holding a book. The woman on the right wears a plaid skirt, patterned stockings, and a short-sleeved top, also holding a book. Behind them, an open door labeled “102” reveals three people exiting: a woman in a short skirt, a man in a shirt and pants, and another man in a shirt and pants. Vertical lines beneath the two foreground women suggest rain or motion. The artist’s signature “Poot Day” appears in the bottom-right corner of the illustration.  \n\n2. **Position**: Occupies the entire left page (full-page illustration, no inset).  \n\n3. **Visual Style**: Black-and-white line drawing (cartoon/illustration) with minimal shading and bold outlines.  \n\n4. **Composition**: Side-view perspective of a hallway. Framed by the hallway walls, with linear perspective guiding the eye toward the door. High contrast (bold black lines on white background) emphasizes the figures. Vertical lines under the women’s feet add dynamic movement. Minimal detail focuses on the figures’ postures and the door’s label.  \n\n5. **Page Occupation**: Approximately 100% of the left page (full-page illustration).  \n\n\n### Right Page Visual Element (Photograph)  \n1. **Depiction**: A black-and-white photograph of a nighttime aerial view of a winding road (highway) with multiple lanes. The road curves through a dark landscape, with cars visible on the road (some as small, distinct shapes). The road is illuminated, contrasting sharply with the dark surroundings, and small lights (e.g., streetlights or car headlights) are scattered along the road and in the distance.  \n\n2. **Position**: Occupies the entire right page (full-bleed photograph, no inset).  \n\n3. **Visual Style**: Black-and-white photograph with a grainy texture typical of older film photography.  \n\n4. **Com",
+        "source_type": "illustration",
+        "source_credit": "Robert J. Day",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two equal columns. The **left column** contains a black-and-white comic strip (with characters walking) and a caption below it. The **right column** is occupied entirely by a black-and-white photograph of a winding nighttime road with people. The caption text sits at the bottom of the left column, directly beneath the comic. The page number “70” is centered at the top of the spread, anchoring the layout. The division is clean and balanced, with the comic occupying the upper-left portion and the photograph filling the entire right half.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text**: The caption (“It isn’t that I don’t like current events...”) is small, serif-style text (likely a standard font like Times New Roman), with normal weight. It is positioned below the comic, creating a clear visual hierarchy.  \n- **Page number**: “70” is small, sans-serif, and centered at the top—minimalist and functional.  \n- **Comic signature**: “Poot Day” (a handwritten-style signature) appears in the comic panel, adding a subtle, personal touch.  \n- **No large display text**: The spread relies on small body text and the comic’s visual storytelling, with no bold or oversized typography.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: Both sections are **high-contrast black-and-white**. The comic uses sharp, bold lines on a white background, while the photograph relies on stark light/dark contrasts (e.g., the illuminated road against the dark night).  \n- **Tone**: The comic has a **light, calm tone** (simple, everyday scene), while the photograph has a **dark, dynamic tone** (winding road, nighttime energy). Together, they create a dual-tone effect: serene on the left, intense on the right.  \n\n\n### 4. WHITE SPACE  \n- **Left column**: **Moderate white space** exists around the comic panel and between the comic and the caption. The comic itself is dense with lines, but the white background of the panel provides breathing room.  \n",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "70\n102\n\"It isn't that I don't like current events.",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Brief encounter — the reader absorbs the spread quickly before moving forward.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "media_ecology"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "steady",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "70\n102\n\"It isn't that I don't like current events.\nThere have just been so many of them lately.\"\nPoot Day",
+    "ocr_raw_time": 7.3,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"It isn't that I don't like current events. There have just been so many of them lately.\"  \nCAPTIONS: Poot Day  \nPAGE_NUMBERS: 70",
+    "ocr_structured_time": 10.8,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Left Page Visual Element (Illustration)  \n1. **Depiction**: A black-and-white cartoon illustration of two women walking in a hallway toward the left. The woman on the left wears a short black skirt, knee-high socks, and a long-sleeved top, holding a book. The woman on the right wears a plaid skirt, patterned stockings, and a short-sleeved top, also holding a book. Behind them, an open door labeled “102” reveals three people exiting: a woman in a short skirt, a man in a shirt and pants, and another man in a shirt and pants. Vertical lines beneath the two foreground women suggest rain or motion. The artist’s signature “Poot Day” appears in the bottom-right corner of the illustration.  \n\n2. **Position**: Occupies the entire left page (full-page illustration, no inset).  \n\n3. **Visual Style**: Black-and-white line drawing (cartoon/illustration) with minimal shading and bold outlines.  \n\n4. **Composition**: Side-view perspective of a hallway. Framed by the hallway walls, with linear perspective guiding the eye toward the door. High contrast (bold black lines on white background) emphasizes the figures. Vertical lines under the women’s feet add dynamic movement. Minimal detail focuses on the figures’ postures and the door’s label.  \n\n5. **Page Occupation**: Approximately 100% of the left page (full-page illustration).  \n\n\n### Right Page Visual Element (Photograph)  \n1. **Depiction**: A black-and-white photograph of a nighttime aerial view of a winding road (highway) with multiple lanes. The road curves through a dark landscape, with cars visible on the road (some as small, distinct shapes). The road is illuminated, contrasting sharply with the dark surroundings, and small lights (e.g., streetlights or car headlights) are scattered along the road and in the distance.  \n\n2. **Position**: Occupies the entire right page (full-bleed photograph, no inset).  \n\n3. **Visual Style**: Black-and-white photograph with a grainy texture typical of older film photography.  \n\n4. **Composition**: Aerial perspective (top-down view) emphasizing the road’s curvature. High contrast (dark background vs. lighter road and lights) creates dramatic depth. The road forms a winding line that draws the eye through the frame, while the grainy texture adds visual texture. The photograph’s stark contrast and curved composition evoke motion and isolation.  \n\n5. **Page Occupation**: Approximately 100% of the right page (full-bleed photograph).",
+    "image_description_time": 12.5,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two equal columns. The **left column** contains a black-and-white comic strip (with characters walking) and a caption below it. The **right column** is occupied entirely by a black-and-white photograph of a winding nighttime road with people. The caption text sits at the bottom of the left column, directly beneath the comic. The page number “70” is centered at the top of the spread, anchoring the layout. The division is clean and balanced, with the comic occupying the upper-left portion and the photograph filling the entire right half.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text**: The caption (“It isn’t that I don’t like current events...”) is small, serif-style text (likely a standard font like Times New Roman), with normal weight. It is positioned below the comic, creating a clear visual hierarchy.  \n- **Page number**: “70” is small, sans-serif, and centered at the top—minimalist and functional.  \n- **Comic signature**: “Poot Day” (a handwritten-style signature) appears in the comic panel, adding a subtle, personal touch.  \n- **No large display text**: The spread relies on small body text and the comic’s visual storytelling, with no bold or oversized typography.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: Both sections are **high-contrast black-and-white**. The comic uses sharp, bold lines on a white background, while the photograph relies on stark light/dark contrasts (e.g., the illuminated road against the dark night).  \n- **Tone**: The comic has a **light, calm tone** (simple, everyday scene), while the photograph has a **dark, dynamic tone** (winding road, nighttime energy). Together, they create a dual-tone effect: serene on the left, intense on the right.  \n\n\n### 4. WHITE SPACE  \n- **Left column**: **Moderate white space** exists around the comic panel and between the comic and the caption. The comic itself is dense with lines, but the white background of the panel provides breathing room.  \n- **Right column**: **Minimal white space** due to the photograph’s dense, dark composition (the road and people fill most of the frame).  \n- **Overall**: The spread balances moderate white space (left) with minimal white space (right), creating a dynamic tension between the two sections.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \nThe left and right sections **contrast sharply** but share thematic resonance:  \n- **Medium**: The comic is illustrative (cartoonish, narrative-driven), while the photograph is photographic (realistic, dynamic).  \n- **Tone**: The comic is light and calm; the photograph is dark and energetic.  \n- **Theme**: Both depict people in motion, linking to the caption’s theme of “current events.”  \n- **Relationship**: They are **mirror-like**—each reflects a different facet of the same idea (e.g., the comic’s simplicity vs. the photo’s complexity), creating a dialogue between illustration and reality.  \n\n\n### 6. OVERALL FEEL  \nThe visual mood is **chaotic yet contemplative**. The comic’s calm, everyday scene contrasts with the photograph’s dense, winding road, which evokes a sense of urgency or overload (reinforced by the caption’s message about “too many current events”). The high contrast and dense imagery create a feeling of **overwhelming energy**, while the comic’s simplicity adds a layer of reflective calm. The spread feels **urgent but thoughtful**, blending the mundane with the overwhelming to underscore the caption’s irony.",
+    "layout_analysis_time": 13.0,
+    "model": "qwen3-vl"
+  }
+}

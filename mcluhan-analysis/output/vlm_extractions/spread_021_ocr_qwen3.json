@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_021",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:28:35",
+  "ocr_raw": "...is an extension of the foot\nSOUTH PL",
+  "ocr_structured": "DISPLAY_TEXT: SOUTH PL  \nBODY_TEXT: ...is an extension of the foot  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 6.8,
+  "ocr_structured_time": 7.5
+}

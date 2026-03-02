@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_078",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T18:00:25",
+  "ocr_raw": "146\n\"Keep in Circulation the Rumor that GOD is Alive\"\nThe Newtonian God—the God who made a clock-like universe, wound it, and withdrew—died a long time ago. This is what Nietzsche meant and this is the God who is being observed.\nAnyone who is looking around for a simulated icon of the deity in Newtonian guise might well be disappointed. The phrase \"God is dead\" applies aptly, correctly, validly to the Newtonian universe which is dead. The groundrule of that universe, upon which so much of our Western world is built, has dissolved.\n\"Only the hand that erases can write the true thing.\"\n—Meister Eckhardt",
+  "ocr_structured": "DISPLAY_TEXT: Keep in Circulation the Rumor that GOD is Alive  \nBODY_TEXT: The Newtonian God—the God who made a clock-like universe, wound it, and withdrew—died a long time ago. This is what Nietzsche meant and this is the God who is being observed.  \nAnyone who is looking around for a simulated icon of the deity in Newtonian guise might well be disappointed. The phrase \"God is dead\" applies aptly, correctly, validly to the Newtonian universe which is dead. The groundrule of that universe, upon which so much of our Western world is built, has dissolved.  \nQUOTATIONS: \"Only the hand that erases can write the true thing.\" —Meister Eckhardt  \nCAPTIONS: NONE  \nPAGE_NUMBERS: 146",
+  "ocr_raw_time": 12.6,
+  "ocr_structured_time": 9.1
+}

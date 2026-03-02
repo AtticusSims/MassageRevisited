@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_026",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:29:47",
+  "ocr_raw": "\"Now for the evidence,\" said the King, \"and then the sentence.\"\n\"No!\" said the Queen, \"first the sentence, and then the evidence!\"\n\"Nonsense!\" cried Alice, so loudly that everybody jumped, \"the idea of having the sentence first!\"",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"Now for the evidence,\" said the King, \"and then the sentence.\"  \n\"No!\" said the Queen, \"first the sentence, and then the evidence!\"  \n\"Nonsense!\" cried Alice, so loudly that everybody jumped, \"the idea of having the sentence first!\"  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 5.8,
+  "ocr_structured_time": 22.0
+}

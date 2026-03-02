@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_056",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:47:03",
+  "ocr_raw": "Amherst seniors walk out on graduation address by Secretary of Defense Robert McNamara. June, 1966.\nEDUCATION",
+  "ocr_structured": "DISPLAY_TEXT: EDUCATION\nBODY_TEXT: NONE\nQUOTATIONS: NONE\nCAPTIONS: Amherst seniors walk out on graduation address by Secretary of Defense Robert McNamara. June, 1966.\nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 9.7,
+  "ocr_structured_time": 5.1
+}

@@ -1,0 +1,84 @@
+{
+  "id": "spread_030",
+  "analysis": {
+    "id": "spread_030",
+    "pdf_page": 30,
+    "book_pages": [
+      50,
+      51
+    ],
+    "section": "body",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### Visual Elements in the Book Spread  \n\n#### 1. **Right Page: Printed Text Image (Historical Book Page)**  \n- **What it depicts**: A page from a historical printed book, featuring dense Latin text in a Gothic or early Renaissance typeface. The text is arranged in vertical columns with justified alignment, typical of early printed books (e.g., no paragraph breaks, continuous text flow, and traditional book margins). The text includes ligatures (e.g., \"ff,\" \"fl\") and archaic letterforms (e.g., long \"s,\" \"þ\" for \"th\"), characteristic of 15th–16th century printing.  \n- **Position**: Right page, full bleed (occupies the entire right side of the spread, spanning from top to bottom).  \n- **Visual style**: Black-and-white printed text illustration (a reproduction of a historical printed page, not a photograph).  \n- **Composition**:  \n  - Framing: The entire right page is filled with text, with no borders or additional graphics.  \n  - Angle: Straight-on (no perspective or angle distortion).  \n  - Contrast: High contrast between black ink and white paper, emphasizing the text’s density.  \n  - Key visual qualities: Dense text layout, vertical columns, traditional book typography (serif typeface, justified text), and minimal white space.  \n- **Page occupation**: 100% of the right page.  \n\n\n#### 2. **Left Page: Typography (Text as Visual Element)**  \n- **What it depicts**: Text (typography) with the repeated phrase *“Printing, a ditto device”* in a modern serif font. The text is arranged vertically, with multiple instances of the phrase in varying sizes (some larger, some smaller), and additional body text in a smaller font size. The phrase appears in bold, larger typeface at the top, followed by smaller, standard-sized text for the body.  \n- **Position**: Left page, spanning the left side of the spread (text is arranged vertically, with the phrase repeated multiple times).  \n- **Visual style**: Modern typography (serif font, black text on white background).  \n- **Composition*",
+        "source_type": "illustration",
+        "source_credit": "The Pierpont Morgan Library",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is divided into **two vertical columns**:  \n- **Left column**: Dominated by text. The text is left-aligned, with repeated instances of the title *“Printing, a ditto device”* stacked vertically (creating a rhythmic, almost hypnotic visual pattern). Below the title repetitions, there is a block of body text (discussing the historical impact of printing).  \n- **Right column**: Features a high-resolution scan of an old printed text (likely a historical manuscript or early printed book). This image occupies the entire right half of the spread, with no additional text or white space.  \nThe space is split cleanly into text (left) and image (right), with the text column acting as a “commentary” and the image column as a “visual example.” The division is stark, emphasizing the contrast between modern analysis and historical artifact.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**:  \n  - **Title text** (*“Printing, a ditto device”*): Appears in a **larger serif font** (likely bold or semi-bold for emphasis), repeated multiple times in the left column.  \n  - **Body text**: Smaller, **serif font** (standard book typography), with normal weight. It is left-aligned and dense, with minimal line spacing.  \n  - **Right-column image**: Historical printed text in a **small, dense serif font** (typical of early printing presses), with no modern typographic adjustments.  \n- **Color/contrast**: All text is **black on white** (normal, not reversed). The left column’s text is modern and legible, while the right column’s text is a historical artifact (no typographic “reversal” or inversion).  \n- **Font style**: All visible text uses **serif fonts** (traditional for printed books), with no sans-serif elements. The left column’s title is larger than the body text, creating a clear visual hierarchy.  \n\n\n### 3. CONTRAST & TONE  \n- **Predominant tone**: **Light background (white) with dark text (black)**. The entire spread uses a **high-contrast** scheme (text i",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "Visual/typographic spread — argument conveyed through imagery and design rather than prose.",
+      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
+      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "visual_rhetoric"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "illustrates",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "",
+    "ocr_raw_time": 23.2,
+    "ocr_structured": "",
+    "ocr_structured_time": 23.2,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Elements in the Book Spread  \n\n#### 1. **Right Page: Printed Text Image (Historical Book Page)**  \n- **What it depicts**: A page from a historical printed book, featuring dense Latin text in a Gothic or early Renaissance typeface. The text is arranged in vertical columns with justified alignment, typical of early printed books (e.g., no paragraph breaks, continuous text flow, and traditional book margins). The text includes ligatures (e.g., \"ff,\" \"fl\") and archaic letterforms (e.g., long \"s,\" \"þ\" for \"th\"), characteristic of 15th–16th century printing.  \n- **Position**: Right page, full bleed (occupies the entire right side of the spread, spanning from top to bottom).  \n- **Visual style**: Black-and-white printed text illustration (a reproduction of a historical printed page, not a photograph).  \n- **Composition**:  \n  - Framing: The entire right page is filled with text, with no borders or additional graphics.  \n  - Angle: Straight-on (no perspective or angle distortion).  \n  - Contrast: High contrast between black ink and white paper, emphasizing the text’s density.  \n  - Key visual qualities: Dense text layout, vertical columns, traditional book typography (serif typeface, justified text), and minimal white space.  \n- **Page occupation**: 100% of the right page.  \n\n\n#### 2. **Left Page: Typography (Text as Visual Element)**  \n- **What it depicts**: Text (typography) with the repeated phrase *“Printing, a ditto device”* in a modern serif font. The text is arranged vertically, with multiple instances of the phrase in varying sizes (some larger, some smaller), and additional body text in a smaller font size. The phrase appears in bold, larger typeface at the top, followed by smaller, standard-sized text for the body.  \n- **Position**: Left page, spanning the left side of the spread (text is arranged vertically, with the phrase repeated multiple times).  \n- **Visual style**: Modern typography (serif font, black text on white background).  \n- **Composition**:  \n  - Framing: The left page is dominated by text, with minimal white space around the text blocks.  \n  - Angle: Straight-on (no perspective or angle distortion).  \n  - Contrast: High contrast between black text and white background, making the text highly legible.  \n  - Key visual qualities: Vertical arrangement of text, varying font sizes (bold for headings, standard for body), and alignment to the left. The repetition of *“Printing, a ditto device”* creates a rhythmic visual pattern.  \n- **Page occupation**: Approximately 80–90% of the left page (with small margins of white space around the text blocks).  \n\n\n### Summary of Visual Elements  \n- The **right page** contains a full-bleed reproduction of a historical printed book page (a visual element).  \n- The **left page** consists entirely of typography (text as a visual element), with no photographs or illustrations beyond the typographic design.  \n\nNo other visual elements (e.g., photographs, icons, or graphics) are present in the spread. The typography on the left page functions as a visual design element through its scale, weight, color, and arrangement, while the right page’s printed text image serves as a historical visual reference.",
+    "image_description_time": 17.9,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is divided into **two vertical columns**:  \n- **Left column**: Dominated by text. The text is left-aligned, with repeated instances of the title *“Printing, a ditto device”* stacked vertically (creating a rhythmic, almost hypnotic visual pattern). Below the title repetitions, there is a block of body text (discussing the historical impact of printing).  \n- **Right column**: Features a high-resolution scan of an old printed text (likely a historical manuscript or early printed book). This image occupies the entire right half of the spread, with no additional text or white space.  \nThe space is split cleanly into text (left) and image (right), with the text column acting as a “commentary” and the image column as a “visual example.” The division is stark, emphasizing the contrast between modern analysis and historical artifact.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**:  \n  - **Title text** (*“Printing, a ditto device”*): Appears in a **larger serif font** (likely bold or semi-bold for emphasis), repeated multiple times in the left column.  \n  - **Body text**: Smaller, **serif font** (standard book typography), with normal weight. It is left-aligned and dense, with minimal line spacing.  \n  - **Right-column image**: Historical printed text in a **small, dense serif font** (typical of early printing presses), with no modern typographic adjustments.  \n- **Color/contrast**: All text is **black on white** (normal, not reversed). The left column’s text is modern and legible, while the right column’s text is a historical artifact (no typographic “reversal” or inversion).  \n- **Font style**: All visible text uses **serif fonts** (traditional for printed books), with no sans-serif elements. The left column’s title is larger than the body text, creating a clear visual hierarchy.  \n\n\n### 3. CONTRAST & TONE  \n- **Predominant tone**: **Light background (white) with dark text (black)**. The entire spread uses a **high-contrast** scheme (text is sharply defined against the background), consistent with traditional book design.  \n- **Tone**: The contrast is functional (for readability) and academic, emphasizing the seriousness of the subject matter. The right-column image, being a scan of a historical print, reinforces this high-contrast, scholarly tone.  \n\n\n### 4. WHITE SPACE  \n- **Within columns**:  \n  - **Left column**: Minimal white space between lines of text (dense body text and repeated titles). The margins (between the text and the right image) are **moderate** (enough to separate the text from the image but not excessive).  \n  - **Right column**: No white space within the image (it is a dense block of historical text).  \n- **Overall**: The spread has **moderate white space** (primarily in the margins between text and image), but the content itself is **dense** (text-heavy, with little empty space within the columns). This creates a focused, academic feel rather than a sparse or airy layout.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Contrast**. The left column (modern text) and right column (historical print) are in direct opposition:  \n  - The left is a *commentary* on printing (analyzing its cultural impact).  \n  - The right is a *visual example* of printing (a historical artifact).  \n- **Not unified or mirrored**: The left is a contemporary analysis, while the right is a historical artifact. They do not mirror each other (e.g., no visual echo) or continue a narrative (e.g., no sequential flow). Instead, they **contrast** to highlight the relationship between theory and practice.  \n\n\n### 6. OVERALL FEEL  \n- **Visual mood**: **Calm, academic, and methodical**. The repetition of the title creates a rhythmic, almost meditative quality, while the dense text and historical image convey scholarly seriousness.  \n- **Energy**: Not chaotic or overwhelming—instead, it feels **focused and intentional**. The repetition of the title is a deliberate design choice (emphasizing the topic), and the high-contrast, text-heavy layout reflects the academic nature of the content.  \n- **Emotional tone**: **Serious and reflective**. The spread invites the reader to consider the historical significance of printing, with the visual layout reinforcing the gravity of the subject.  \n\nIn summary, the spread uses a clean, high-contrast layout to balance modern analysis with historical context, creating a scholarly, methodical, and visually cohesive design.",
+    "layout_analysis_time": 13.4,
+    "model": "qwen3-vl"
+  }
+}

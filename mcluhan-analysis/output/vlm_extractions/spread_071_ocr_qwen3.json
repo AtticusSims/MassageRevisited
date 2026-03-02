@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_071",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:57:55",
+  "ocr_raw": "Art",
+  "ocr_structured": "DISPLAY_TEXT: Art\nBODY_TEXT: NONE\nQUOTATIONS: NONE\nCAPTIONS: NONE\nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 4.1,
+  "ocr_structured_time": 4.6
+}

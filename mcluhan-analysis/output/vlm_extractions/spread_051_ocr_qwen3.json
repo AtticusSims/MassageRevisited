@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_051",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:45:26",
+  "ocr_raw": "92\nSneed Martin, Larson E. Whipsnade, Chester Snavely, A. Pismo Clam, J. P. Pinkerton Snoop-ington, Mahatma Kane Jeeves—he was always the man on the flying trapeze. On the stage, on the silver screen, all through his life, he swung between the ridiculous and the sublime, using humor as a probe.\nHumor as a system of communications and as a probe of our environment—of what’s really going on—affords us our most appealing anti-environ-mental tool. It does not deal in theory, but in imme-diate experience, and is often the best",
+  "ocr_structured": "",
+  "ocr_raw_time": 23.5,
+  "ocr_structured_time": 23.0
+}

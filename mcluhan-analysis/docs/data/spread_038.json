@@ -1,0 +1,88 @@
+{
+  "id": "spread_038",
+  "analysis": {
+    "id": "spread_038",
+    "pdf_page": 38,
+    "book_pages": [
+      66,
+      67
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "The new electronic interdependence recreates the world in the image of a global village.",
+      "display_text": "",
+      "captions": [
+        "The new electronic interdependence recreates the world in the image of a global village."
+      ],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "right_page",
+        "subject": "### 1. Depiction  \nThe image depicts a dense gathering of people, predominantly women, engaged in what appears to be a communal ritual or cultural performance. Key details include:  \n- **Individuals**: Multiple figures with dark skin tones, some wearing necklaces (e.g., a woman in the upper right with layered beaded necklaces), and others adorned with head wraps or braided hairstyles. One central figure (upper center) has arms raised, holding a vertical object (possibly a staff or pole).  \n- **Setting**: An indoor or sheltered space with hanging fabrics (e.g., draped cloth in the upper left) and natural elements (e.g., woven materials or foliage in the upper right).  \n- **Action**: The group is closely clustered, suggesting participation in a dance, ceremony, or social gathering. Body language (e.g., raised arms, focused postures) implies collective engagement.  \n\n\n### 2. Position on the Page  \nThe photograph spans **both pages** of the spread (left and right), functioning as a **full-bleed image** that covers the entire visual area of the spread. It is not inset or limited to one page.  \n\n\n### 3. Visual Style  \nThe image is a **black and white photograph** with high contrast, characteristic of traditional photographic techniques (e.g., film photography with strong tonal separation). It lacks color, relying on grayscale gradients to define form and texture.  \n\n\n### 4. Composition  \n- **Framing**: A medium shot that captures the group from a slightly low angle, positioning the viewer within the scene to emphasize immersion. The frame is tightly cropped, with no significant negative space, emphasizing the density of the gathering.  \n- **Angle**: Slightly low-angle perspective, directing attention upward toward the central figure and creating a sense of dynamism.  \n- **Contrast**: Stark black-and-white contrast highlights textures (e.g., skin, fabric, and hair), with deep shadows defining forms and bright highlights accentuating key details (e.g., the raised arms of th",
+        "source_type": "illustration",
+        "source_credit": "N. R. Farbman, for Time, Inc.",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe visual layout prioritizes the **photograph** as the dominant element, occupying the majority of the spread (centered or slightly left-aligned). The **text** is positioned in the **top-right corner**, creating a clear visual hierarchy where the image commands attention, and the text serves as a secondary, contextual element. The space is divided into two primary zones: the large, immersive photograph (filling most of the page) and the small text block (a narrow strip in the upper right). This arrangement emphasizes the image’s narrative weight while using the text to frame its thematic context.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Type**: A short caption (“The new electronic interdependence recreates the world in the image of a global village”) is visible.  \n- **Size & Weight**: It is **small body text** (not display text), with a **regular (light) weight**—no bolding.  \n- **Font Style**: The typeface is **sans-serif** (clean, modern, with no serifs), typical of mid-20th-century editorial design.  \n- **Color & Orientation**: The text is **black on white** (standard for printed pages), not reversed (white on black). It is oriented normally (not upside-down or mirrored).  \n\n\n### 3. CONTRAST & TONE  \n- **Image Tone**: The photograph is **high-contrast black-and-white**, with stark shadows and highlights (e.g., deep blacks in the background, bright highlights on skin/objects). This creates a dramatic, almost theatrical mood.  \n- **Overall Spread**: The spread has **high contrast** due to the photograph’s tonal range and the text’s black-on-white simplicity. The image’s darkness (relative to the page’s white background) amplifies this contrast, making the visual feel dynamic and intense.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Sparse** (minimal empty space). The photograph dominates the page, leaving only narrow margins around the text and the edges of the page. The text itself is small, so the white space is limited to the areas *not* occupi",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "Brief textual element: 'The new electronic interdependence recreates the world in the image of a global ...'",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Brief encounter — the reader absorbs the spread quickly before moving forward.",
+      "mcluhan_concepts": [
+        "electric_age",
+        "global_village"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "electric_technology",
+        "tribal_culture"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "The new electronic interdependence recreates the world in the image of a global village.",
+    "ocr_raw_time": 3.6,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: The new electronic interdependence recreates the world in the image of a global village.  \nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 4.1,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### 1. Depiction  \nThe image depicts a dense gathering of people, predominantly women, engaged in what appears to be a communal ritual or cultural performance. Key details include:  \n- **Individuals**: Multiple figures with dark skin tones, some wearing necklaces (e.g., a woman in the upper right with layered beaded necklaces), and others adorned with head wraps or braided hairstyles. One central figure (upper center) has arms raised, holding a vertical object (possibly a staff or pole).  \n- **Setting**: An indoor or sheltered space with hanging fabrics (e.g., draped cloth in the upper left) and natural elements (e.g., woven materials or foliage in the upper right).  \n- **Action**: The group is closely clustered, suggesting participation in a dance, ceremony, or social gathering. Body language (e.g., raised arms, focused postures) implies collective engagement.  \n\n\n### 2. Position on the Page  \nThe photograph spans **both pages** of the spread (left and right), functioning as a **full-bleed image** that covers the entire visual area of the spread. It is not inset or limited to one page.  \n\n\n### 3. Visual Style  \nThe image is a **black and white photograph** with high contrast, characteristic of traditional photographic techniques (e.g., film photography with strong tonal separation). It lacks color, relying on grayscale gradients to define form and texture.  \n\n\n### 4. Composition  \n- **Framing**: A medium shot that captures the group from a slightly low angle, positioning the viewer within the scene to emphasize immersion. The frame is tightly cropped, with no significant negative space, emphasizing the density of the gathering.  \n- **Angle**: Slightly low-angle perspective, directing attention upward toward the central figure and creating a sense of dynamism.  \n- **Contrast**: Stark black-and-white contrast highlights textures (e.g., skin, fabric, and hair), with deep shadows defining forms and bright highlights accentuating key details (e.g., the raised arms of the central figure).  \n- **Key Visual Qualities**: The composition is crowded and intimate, with overlapping figures and layered elements (e.g., hanging fabrics in the background) creating depth. The focus is drawn to the central figure’s raised arms, while the surrounding group’s postures and attire (e.g., beaded necklaces, head wraps) reinforce cultural context.  \n\n\n### 5. Page Occupation  \nThe photograph occupies **100% of the visual space** on the spread, as it is a full-bleed image covering both left and right pages. There are no other visual elements (e.g., illustrations, graphics) present in the spread beyond this photograph.  \n\n*(Note: The text in the top-right corner is excluded per the query’s instructions, which focus solely on visual/pictorial elements.)*",
+    "image_description_time": 9.0,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe visual layout prioritizes the **photograph** as the dominant element, occupying the majority of the spread (centered or slightly left-aligned). The **text** is positioned in the **top-right corner**, creating a clear visual hierarchy where the image commands attention, and the text serves as a secondary, contextual element. The space is divided into two primary zones: the large, immersive photograph (filling most of the page) and the small text block (a narrow strip in the upper right). This arrangement emphasizes the image’s narrative weight while using the text to frame its thematic context.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Type**: A short caption (“The new electronic interdependence recreates the world in the image of a global village”) is visible.  \n- **Size & Weight**: It is **small body text** (not display text), with a **regular (light) weight**—no bolding.  \n- **Font Style**: The typeface is **sans-serif** (clean, modern, with no serifs), typical of mid-20th-century editorial design.  \n- **Color & Orientation**: The text is **black on white** (standard for printed pages), not reversed (white on black). It is oriented normally (not upside-down or mirrored).  \n\n\n### 3. CONTRAST & TONE  \n- **Image Tone**: The photograph is **high-contrast black-and-white**, with stark shadows and highlights (e.g., deep blacks in the background, bright highlights on skin/objects). This creates a dramatic, almost theatrical mood.  \n- **Overall Spread**: The spread has **high contrast** due to the photograph’s tonal range and the text’s black-on-white simplicity. The image’s darkness (relative to the page’s white background) amplifies this contrast, making the visual feel dynamic and intense.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Sparse** (minimal empty space). The photograph dominates the page, leaving only narrow margins around the text and the edges of the page. The text itself is small, so the white space is limited to the areas *not* occupied by the image or text.  \n- **Density**: The layout is **packed**—the image and text fill most of the page, with little room for visual breathing room. This density reinforces the photograph’s immersive, crowded feel.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Contrast**. The left side (or center) is dominated by the photograph (a dense, human-centric scene), while the right side (top-right corner) holds the text. The image and text occupy distinct spatial zones, with no mirroring or unification—they are visually and thematically separate. The image’s energy contrasts with the text’s conceptual tone, creating a dialogue between visual and textual elements.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/Energy**: **Chaotic yet purposeful**. The photograph’s crowded composition (people in close proximity, expressive gestures) and high-contrast black-and-white tones evoke a sense of urgency, community, or ritualistic intensity. The text’s theme (“global village”) adds a layer of conceptual weight, but the visual chaos (dense figures, dramatic lighting) dominates, creating an **overwhelming, dynamic energy**—not calm or minimal, but deeply engaged with the subject matter. The spread feels urgent, almost documentary-like, reflecting the era’s fascination with technological interconnectedness (echoed in the text’s “global village” reference).",
+    "layout_analysis_time": 12.4,
+    "model": "qwen3-vl"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "spread_042",
+  "analysis": {
+    "id": "spread_042",
+    "pdf_page": 42,
+    "book_pages": [
+      74,
+      75
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "The past went that-a-way. When faced with a totally new situation, we tend always to attach ourselves to the objects, to the flavor of the most recent past. We look at the present through a rear-view mirror. We march backwards into the future. Suburbia lives imaginatively in Bonanza-land.",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "right_page",
+        "subject": "### Visual Element 1: Rear-View Mirror with Stagecoach Silhouette  \n1. **Depicts**: A black silhouette of a horse-drawn stagecoach (two horses, a driver, and a covered wagon with visible wheels) reflected in a rear-view mirror. The mirror is mounted inside a vehicle, with the vehicle’s interior (e.g., dashboard, steering column) partially visible below the mirror.  \n2. **Position**: Centered at the top of the two-page spread, spanning both left and right pages (full bleed across the top).  \n3. **Visual Style**: Black and white graphic symbol (the silhouette is a stylized, non-photographic cut-out or illustration).  \n4. **Composition**:  \n   - **Framing**: The mirror acts as a rectangular frame, with the stagecoach silhouette centered within it.  \n   - **Angle**: Viewed from inside the vehicle, looking upward at the mirror.  \n   - **Contrast**: Extreme high contrast between the solid black silhouette and the bright white background of the mirror.  \n   - **Key Visual Qualities**: The silhouette is sharp and minimalist, with no shading or texture, emphasizing the stagecoach as a symbolic representation of the past. The mirror’s thin black border defines its edges, and the vehicle’s interior below is dark, creating a layered effect (past reflected in the mirror, present in the vehicle).  \n5. **Page Occupation**: Approximately 1/3 of the total page height (spanning the top of both pages).  \n\n\n### Visual Element 2: Car Interior and Road Scene  \n1. **Depicts**: The interior of a vehicle (dashboard, steering wheel, and headliner) and a blurred road ahead with streaks of light from oncoming car headlights. The road is a two-lane highway with motion blur, suggesting speed.  \n2. **Position**: Occupies the lower half of the two-page spread, spanning both left and right pages (below the rear-view mirror).  \n3. **Visual Style**: Black and white photograph (with intentional motion blur to convey movement).  \n4. **Composition**:  \n   - **Framing**: The vehicle’s interior is in the ",
+        "source_type": "illustration",
+        "source_credit": "Photo—Peter Moore",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two primary sections:  \n- **Top section**: A single, centered rearview mirror image dominates the upper half. This mirror contains a black-and-white silhouette of a horse-drawn carriage (representing the past).  \n- **Bottom section**: Split into two **symmetrical vertical panels** (left and right). Each panel shows a blurred, motion-blurred view of a car’s interior (representing the present), with headlights creating stark light contrasts.  \n- **Text placement**: Small blocks of text sit at the **bottom corners**—left text for the left panel, right text for the right panel. The mirror image bridges the top and bottom sections, creating a visual hierarchy where the mirror anchors the spread.  \n\nThe space is structured to emphasize **contrast between past (mirror) and present (lower panels)**, with the mirror acting as a unifying focal point.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Two blocks of **small body text** (no large display text).  \n- **Font style**: Likely **serif** (common in book design for readability), with a **normal weight** (not bold).  \n- **Color/contrast**: Text is **black on white** (standard for printed books), with no reversed (white-on-black) text.  \n- **Hierarchy**: The text is uniform in size and weight, with no emphasis on “display” text—reinforcing the spread’s contemplative tone.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly dark** in the lower panels (blurred car interiors), but the mirror image features a **bright white background** with stark black silhouettes.  \n- **Contrast**: **High contrast** throughout—sharp black-and-white divisions in the mirror (silhouette vs. white sky) and blurred car panels (dark background vs. bright headlights). This creates visual tension between the static past (mirror) and dynamic present (cars).  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Dense** white space. The mirror’s bright white background, the blurred car panels’ nega",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "The past went that-a-way.",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "war_and_violence"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "steady",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "The past went that-a-way. When faced with a totally new situation, we tend always to attach ourselves to the objects, to the flavor of the most recent past.\nWe look at the present through a rear-view mirror. We march backwards into the future. Suburbia lives imaginatively in Bonanza-land.",
+    "ocr_raw_time": 4.1,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: The past went that-a-way. When faced with a totally new situation, we tend always to attach ourselves to the objects, to the flavor of the most recent past. We look at the present through a rear-view mirror. We march backwards into the future. Suburbia lives imaginatively in Bonanza-land.  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 4.9,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element 1: Rear-View Mirror with Stagecoach Silhouette  \n1. **Depicts**: A black silhouette of a horse-drawn stagecoach (two horses, a driver, and a covered wagon with visible wheels) reflected in a rear-view mirror. The mirror is mounted inside a vehicle, with the vehicle’s interior (e.g., dashboard, steering column) partially visible below the mirror.  \n2. **Position**: Centered at the top of the two-page spread, spanning both left and right pages (full bleed across the top).  \n3. **Visual Style**: Black and white graphic symbol (the silhouette is a stylized, non-photographic cut-out or illustration).  \n4. **Composition**:  \n   - **Framing**: The mirror acts as a rectangular frame, with the stagecoach silhouette centered within it.  \n   - **Angle**: Viewed from inside the vehicle, looking upward at the mirror.  \n   - **Contrast**: Extreme high contrast between the solid black silhouette and the bright white background of the mirror.  \n   - **Key Visual Qualities**: The silhouette is sharp and minimalist, with no shading or texture, emphasizing the stagecoach as a symbolic representation of the past. The mirror’s thin black border defines its edges, and the vehicle’s interior below is dark, creating a layered effect (past reflected in the mirror, present in the vehicle).  \n5. **Page Occupation**: Approximately 1/3 of the total page height (spanning the top of both pages).  \n\n\n### Visual Element 2: Car Interior and Road Scene  \n1. **Depicts**: The interior of a vehicle (dashboard, steering wheel, and headliner) and a blurred road ahead with streaks of light from oncoming car headlights. The road is a two-lane highway with motion blur, suggesting speed.  \n2. **Position**: Occupies the lower half of the two-page spread, spanning both left and right pages (below the rear-view mirror).  \n3. **Visual Style**: Black and white photograph (with intentional motion blur to convey movement).  \n4. **Composition**:  \n   - **Framing**: The vehicle’s interior is in the foreground (dark, with subtle light reflections), while the road and headlights dominate the background.  \n   - **Angle**: Shot from the driver’s perspective, looking forward through the windshield.  \n   - **Contrast**: Low contrast in the vehicle’s interior (dark tones) versus the lighter, blurred road and headlights (creating a sense of speed).  \n   - **Key Visual Qualities**: Motion blur on the headlights and road creates a dynamic, almost dreamlike quality, emphasizing the “present” as a fleeting moment. The dark interior contrasts with the bright, streaked road, guiding the eye toward the forward motion.  \n5. **Page Occupation**: Approximately 2/3 of the total page height (occupying the lower portion of the spread).  \n\n\n### Summary of Visual Elements  \n- **Rear-View Mirror with Stagecoach Silhouette**: A graphic symbol (not a photograph) positioned at the top of the spread, spanning both pages. It uses high contrast and minimalism to symbolize the past.  \n- **Car Interior and Road Scene**: A black-and-white photograph occupying the lower half of the spread, using motion blur to convey the present.  \n\nNo other photographs or illustrations are present; the text is separate and not included in this analysis.",
+    "image_description_time": 13.4,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two primary sections:  \n- **Top section**: A single, centered rearview mirror image dominates the upper half. This mirror contains a black-and-white silhouette of a horse-drawn carriage (representing the past).  \n- **Bottom section**: Split into two **symmetrical vertical panels** (left and right). Each panel shows a blurred, motion-blurred view of a car’s interior (representing the present), with headlights creating stark light contrasts.  \n- **Text placement**: Small blocks of text sit at the **bottom corners**—left text for the left panel, right text for the right panel. The mirror image bridges the top and bottom sections, creating a visual hierarchy where the mirror anchors the spread.  \n\nThe space is structured to emphasize **contrast between past (mirror) and present (lower panels)**, with the mirror acting as a unifying focal point.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Two blocks of **small body text** (no large display text).  \n- **Font style**: Likely **serif** (common in book design for readability), with a **normal weight** (not bold).  \n- **Color/contrast**: Text is **black on white** (standard for printed books), with no reversed (white-on-black) text.  \n- **Hierarchy**: The text is uniform in size and weight, with no emphasis on “display” text—reinforcing the spread’s contemplative tone.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly dark** in the lower panels (blurred car interiors), but the mirror image features a **bright white background** with stark black silhouettes.  \n- **Contrast**: **High contrast** throughout—sharp black-and-white divisions in the mirror (silhouette vs. white sky) and blurred car panels (dark background vs. bright headlights). This creates visual tension between the static past (mirror) and dynamic present (cars).  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Dense** white space. The mirror’s bright white background, the blurred car panels’ negative space, and the small text blocks leave significant empty areas.  \n- **Role**: White space emphasizes the **silence of the past** (mirror) and the **motion of the present** (blurred cars), while also creating visual breathing room. The mirror’s white background is a dominant white space element, contrasting with the dark lower panels.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Mirror as unifier**: The rearview mirror spans both sides, visually connecting the left and right panels. It acts as a **central metaphor** for “looking back” at the past.  \n- **Symmetry vs. contrast**: The left and right lower panels are **symmetrical in composition** (blurred car views), but the text content differs (left: “The past went that-a-way…”, right: “We look at the present…”). This creates a **unified yet contrasting relationship**—the mirror ties the spread together, while the text and imagery highlight the tension between past and present.  \n- **Dominance**: The mirror **dominates the top half**, while the lower panels are balanced but secondary.  \n\n\n### 6. OVERALL FEEL  \n- **Mood**: **Contemplative and nostalgic**, with subtle tension. The blurred car imagery suggests motion and modernity, while the mirror’s static silhouette evokes nostalgia for the past.  \n- **Energy**: **Calm but layered**—the high contrast and motion blur create a sense of urgency (speed of the present), while the mirror’s stillness invites reflection (the weight of the past).  \n- **Tone**: Not aggressive or chaotic; instead, it feels **thoughtful and introspective**, inviting readers to consider how the past shapes the present. The black-and-white palette reinforces a timeless, almost melancholic mood.",
+    "layout_analysis_time": 12.8,
+    "model": "qwen3-vl"
+  }
+}

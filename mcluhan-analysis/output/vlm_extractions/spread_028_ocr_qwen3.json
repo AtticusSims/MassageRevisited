@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_028",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:31:40",
+  "ocr_raw": "...“as we begin, so shall we go”",
+  "ocr_structured": "DISPLAY_TEXT: AS, GO  \nBODY_TEXT: NONE  \nQUOTATIONS: ...\"as we begin, so shall we go\"  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 3.5,
+  "ocr_structured_time": 21.9
+}

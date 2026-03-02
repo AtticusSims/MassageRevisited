@@ -1,0 +1,97 @@
+{
+  "id": "spread_065",
+  "analysis": {
+    "id": "spread_065",
+    "pdf_page": 65,
+    "book_pages": [
+      120,
+      121
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "Listening to the simultaneous messages of Dublin, James Joyce released the greatest flood of oral linguistic music that was ever manipulated into art.\nJoyce is, in the \"Wake,\" making his own Altamira cave drawings of the entire history of the human mind, in terms of its basic gestures and postures during all the phases of human culture and technology. As his title indicates, he saw that the wake of human progress can disappear again into the night of sacral or auditory man. The Finn cycle of tribal institutions can return in the electric age, but if again, then let's make it a wake or awake or both. Joyce could see no advantage in our remaining locked up in each cultural cycle as in trance or dream. He discovered the means of living simultaneously in all cultural modes while quite conscious.",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": [
+        "120"
+      ]
+    },
+    "quotations": [
+      {
+        "text": "\"The prouts who will invent a writing there ultimately is the poeta, still more learned, who discovered the raiding there originally. That's the point of eschatology our book of kills reaches for now in soandsdo many counterpoint words. What can't be coded can be decoded if an ear aye seize what no eye ere grieved for. Now, the doctrine obtains, we have occasioning cause causing effects and affects occasionally recausing alter-effects.\"",
+        "attribution": "unattributed",
+        "context": "inline"
+      }
+    ],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### Visual Element Description:  \n\n#### 1. Photograph on the Right Page  \n- **What it depicts**: A high-contrast black-and-white photograph of a person’s **side profile**, focusing intensely on the **ear**, **nose**, and **mouth**. The ear is the central subject, rendered with sharp detail (visible ear canal, helix, and outer ear structure). The nose and mouth are partially visible, with the mouth slightly open. The background is completely dark, isolating the subject and emphasizing the ear’s contours.  \n- **Position**: Occupies the **entire right page** (full-bleed layout, spanning the full width and height of the right page).  \n- **Visual style**: Black-and-white photograph with dramatic lighting.  \n- **Composition**:  \n  - **Framing**: Tight close-up profile shot, cropped to focus on the ear and adjacent facial features.  \n  - **Angle**: Side profile (three-quarter view), angled to highlight the ear’s curvature and the transition from the ear to the nose/mouth.  \n  - **Contrast**: Extreme high-contrast (deep shadows on the background vs. bright highlights on the ear and face), creating a stark, almost sculptural effect.  \n  - **Key visual qualities**: The ear is the focal point, with sharp focus and detailed texture (e.g., the ear’s ridges and the skin’s surface). The dark background eliminates distractions, directing attention solely to the ear and adjacent features.  \n- **Page occupation**: Approximately **100% of the right page** (covers the entire right side of the spread).  \n\n#### Additional Notes:  \n- The **left page** contains only text (no photographs, illustrations, or graphic symbols).  \n- The page number “120” appears at the **top center of the left page** but is part of typography (not a pictorial element), so it is excluded from the visual element description.  \n\nNo other visual elements (e.g., illustrations, symbols) are present in this spread. The sole pictorial element is the black-and-white photograph on the right page.",
+        "source_type": "illustration",
+        "source_credit": "Photos—Peter Moore",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is divided **vertically** into two distinct sections:  \n- **Left side**: Text occupies the majority of the page, left-aligned in a single column. The text block is dense, with narrow margins and minimal spacing between paragraphs.  \n- **Right side**: A black-and-white photographic portrait of a person’s profile (focusing on the ear, nose, and mouth) fills the entire right page, creating a stark visual contrast with the text.  \n- **Page number** (“120”) is centered at the top, bridging the two sections.  \nThis layout establishes a clear **text-image dichotomy**, with the text explaining the subject of the image (James Joyce), creating a logical flow from content to visual representation.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: All visible text is **body text** (small, standard font size for printed books).  \n- **Font style**: Serif (e.g., Times New Roman or similar traditional book fonts), with **normal weight** (not bold or light).  \n- **Color/contrast**: Text is **black on white** (standard for printed books), with no reversed (white-on-black) or display text (e.g., headlines).  \n- **Quotation marks**: The quoted passage is integrated into the body text, using standard quotation marks (no special formatting).  \n- **Hierarchy**: No large display text; the entire spread relies on uniform body text to convey academic content.  \n\n\n### 3. CONTRAST & TONE  \n- **Text side**: **High contrast** (black text on white background), creating readability.  \n- **Image side**: **High contrast** (light tones on the ear against a dark background), emphasizing the portrait’s texture and depth.  \n- **Overall tone**: The spread is **dual-toned**—the text side is bright (white), while the image side is dark (black). This creates a visual tension between the intellectual (text) and sensory (image) elements. The tone is **serious and academic**, reinforced by the stark black-and-white aesthetic.  \n\n\n### 4. WHITE SPACE  \n- **Left page (text)**: **Mod",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "Listening to the simultaneous messages of Dublin, James Joyce released the greatest flood of oral linguistic music that was ever manipulated into art.",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Sustained reading — the reader engages with extended prose argument.",
+      "mcluhan_concepts": [
+        "electric_age",
+        "tribal"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "electric_technology",
+        "perception",
+        "space_and_time",
+        "tribal_culture",
+        "art_and_creativity"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "decelerating",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "120\n\nListening to the simultaneous messages of Dublin, James Joyce released the greatest flood of oral linguistic music that was ever manipulated into art.\n\n\"The prouts who will invent a writing there ultimately is the poeta, still more learned, who discovered the raiding there originally. That's the point of eschatology our book of kills reaches for now in soandsdo many counterpoint words. What can't be coded can be decoded if an ear aye seize what no eye ere grieved for. Now, the doctrine obtains, we have occasioning cause causing effects and affects occasionally recausing alter-effects.\n\nJoyce is, in the \"Wake,\" making his own Altamira cave drawings of the entire history of the human mind, in terms of its basic gestures and postures during all the phases of human culture and technology. As his title indicates, he saw that the wake of human progress can disappear again into the night of sacral or auditory man. The Finn cycle of tribal institutions can return in the electric age, but if again, then let's make it a wake or awake or both. Joyce could see no advantage in our remaining locked up in each cultural cycle as in trance or dream. He discovered the means of living simultaneously in all cultural modes while quite conscious.",
+    "ocr_raw_time": 11.3,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: Listening to the simultaneous messages of Dublin, James Joyce released the greatest flood of oral linguistic music that was ever manipulated into art.  \nJoyce is, in the \"Wake,\" making his own Altamira cave drawings of the entire history of the human mind, in terms of its basic gestures and postures during all the phases of human culture and technology. As his title indicates, he saw that the wake of human progress can disappear again into the night of sacral or auditory man. The Finn cycle of tribal institutions can return in the electric age, but if again, then let's make it a wake or awake or both. Joyce could see no advantage in our remaining locked up in each cultural cycle as in trance or dream. He discovered the means of living simultaneously in all cultural modes while quite conscious.  \nQUOTATIONS: \"The prouts who will invent a writing there ultimately is the poeta, still more learned, who discovered the raiding there originally. That's the point of eschatology our book of kills reaches for now in soandsdo many counterpoint words. What can't be coded can be decoded if an ear aye seize what no eye ere grieved for. Now, the doctrine obtains, we have occasioning cause causing effects and affects occasionally recausing alter-effects.\"  \nCAPTIONS: NONE  \nPAGE_NUMBERS: 120",
+    "ocr_structured_time": 17.2,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element Description:  \n\n#### 1. Photograph on the Right Page  \n- **What it depicts**: A high-contrast black-and-white photograph of a person’s **side profile**, focusing intensely on the **ear**, **nose**, and **mouth**. The ear is the central subject, rendered with sharp detail (visible ear canal, helix, and outer ear structure). The nose and mouth are partially visible, with the mouth slightly open. The background is completely dark, isolating the subject and emphasizing the ear’s contours.  \n- **Position**: Occupies the **entire right page** (full-bleed layout, spanning the full width and height of the right page).  \n- **Visual style**: Black-and-white photograph with dramatic lighting.  \n- **Composition**:  \n  - **Framing**: Tight close-up profile shot, cropped to focus on the ear and adjacent facial features.  \n  - **Angle**: Side profile (three-quarter view), angled to highlight the ear’s curvature and the transition from the ear to the nose/mouth.  \n  - **Contrast**: Extreme high-contrast (deep shadows on the background vs. bright highlights on the ear and face), creating a stark, almost sculptural effect.  \n  - **Key visual qualities**: The ear is the focal point, with sharp focus and detailed texture (e.g., the ear’s ridges and the skin’s surface). The dark background eliminates distractions, directing attention solely to the ear and adjacent features.  \n- **Page occupation**: Approximately **100% of the right page** (covers the entire right side of the spread).  \n\n#### Additional Notes:  \n- The **left page** contains only text (no photographs, illustrations, or graphic symbols).  \n- The page number “120” appears at the **top center of the left page** but is part of typography (not a pictorial element), so it is excluded from the visual element description.  \n\nNo other visual elements (e.g., illustrations, symbols) are present in this spread. The sole pictorial element is the black-and-white photograph on the right page.",
+    "image_description_time": 8.9,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is divided **vertically** into two distinct sections:  \n- **Left side**: Text occupies the majority of the page, left-aligned in a single column. The text block is dense, with narrow margins and minimal spacing between paragraphs.  \n- **Right side**: A black-and-white photographic portrait of a person’s profile (focusing on the ear, nose, and mouth) fills the entire right page, creating a stark visual contrast with the text.  \n- **Page number** (“120”) is centered at the top, bridging the two sections.  \nThis layout establishes a clear **text-image dichotomy**, with the text explaining the subject of the image (James Joyce), creating a logical flow from content to visual representation.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: All visible text is **body text** (small, standard font size for printed books).  \n- **Font style**: Serif (e.g., Times New Roman or similar traditional book fonts), with **normal weight** (not bold or light).  \n- **Color/contrast**: Text is **black on white** (standard for printed books), with no reversed (white-on-black) or display text (e.g., headlines).  \n- **Quotation marks**: The quoted passage is integrated into the body text, using standard quotation marks (no special formatting).  \n- **Hierarchy**: No large display text; the entire spread relies on uniform body text to convey academic content.  \n\n\n### 3. CONTRAST & TONE  \n- **Text side**: **High contrast** (black text on white background), creating readability.  \n- **Image side**: **High contrast** (light tones on the ear against a dark background), emphasizing the portrait’s texture and depth.  \n- **Overall tone**: The spread is **dual-toned**—the text side is bright (white), while the image side is dark (black). This creates a visual tension between the intellectual (text) and sensory (image) elements. The tone is **serious and academic**, reinforced by the stark black-and-white aesthetic.  \n\n\n### 4. WHITE SPACE  \n- **Left page (text)**: **Moderate white space**—paragraphs are closely spaced, but margins are narrow enough to avoid feeling “packed.” Line spacing is standard, allowing the text to flow without overwhelming the reader.  \n- **Right page (image)**: **Sparse white space**—the photograph dominates the page, with minimal empty space around it (the image fills the frame, leaving little room for margins).  \n- **Overall**: The spread balances density (text) and focus (image), with white space used sparingly to maintain visual cohesion.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \nThe left (text) and right (image) sections are **unified** and **continuation-based**:  \n- The text discusses James Joyce’s work, directly contextualizing the portrait on the right (which depicts Joyce).  \n- The relationship is **complementary**: the text explains the subject of the image, while the image visually anchors the text’s subject.  \n- It is **not mirror** (text and image do not reflect each other) or **contrast** (they are thematically aligned, not opposing). Instead, they work together to create a cohesive narrative about Joyce.  \n\n\n### 6. OVERALL FEEL  \nThe spread conveys a **serious, contemplative, and academic mood**:  \n- **Intellectual intensity**: The dense text and stark black-and-white image evoke a sense of scholarly depth.  \n- **Minimalist energy**: The lack of decorative elements (e.g., borders, color) and tight layout create a focused, almost meditative atmosphere.  \n- **Tone**: Not chaotic or overwhelming (text is readable, image is precise), but rather **calm and deliberate**—inviting the reader to engage deeply with the content.  \n\nIn summary, the spread uses a clean, high-contrast layout to balance intellectual rigor (text) with visual focus (image), resulting in a **thoughtful, academic, and visually striking** design.",
+    "layout_analysis_time": 12.3,
+    "model": "qwen3-vl"
+  }
+}

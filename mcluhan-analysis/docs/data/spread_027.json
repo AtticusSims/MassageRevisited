@@ -1,0 +1,91 @@
+{
+  "id": "spread_027",
+  "analysis": {
+    "id": "spread_027",
+    "pdf_page": 27,
+    "book_pages": [
+      44,
+      45
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "45\n\nThe dominant organ of sensory and social orientation in pre-alphabet societies was the ear— \"hearing was believing.\" The phonetic alphabet forced the magic world of the ear to yield to the neutral world of the eye. Man was given an eye for an ear.\n\nWestern history was shaped for some three thousand years by the introduction of the phonetic alphabet, a medium that depends solely on the eye for comprehension. The alphabet is a construct of fragmented bits and parts which have no semantic meaning in themselves, and which must be strung together in a line, bead-like, and in a prescribed order. Its use fostered and encouraged the habit of perceiving all environment in visual and spatial terms—particularly in terms of a space and of a time that are uniform, c,o,n,t,i,n,u,o,u,s and c-o-n-n-e-c-t-e-d. The line, the continuum —this sentence is a prime example—\n\n\"The eye—it cannot choose but see; we cannot bid the ear be still; our bodies feel, where'er they be, against or with our will.\" —Wordsworth\n\nbecame the organizing principle of life. \"As we begin, so shall we go.\" \"Rationality\" and logic came to depend on the presentation of connected and sequential facts or concepts.\n\nFor many people rationality has the connotation of uniformity and connectiveness. \"I don't follow you\" means \"I don't think what you're saying is rational.\"\n\nVisual space is uniform, continuous, and connected. The rational man in our Western culture is a visual man. The fact that most conscious experience has little \"visuality\" in it is lost on him. Rationality and visuality have long been interchangeable terms, but we do not live in a primarily visual world any more.\n\nThe fragmenting of activities, our habit of thinking in bits and parts—\"specialism\"—reflected the step-by-step linear departmentalizing process inherent in the technology of the alphabet.",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "left_page",
+        "subject": "### Visual Element Description  \n\n#### 1. **Graphic Symbol**  \n- **What it depicts**: A minimalist black-and-white line drawing consisting of two horizontal lines:  \n  - A **solid horizontal line** with evenly spaced vertical ticks (resembling a ruler or scale), extending across the width of the page.  \n  - A **dashed (dotted) horizontal line** positioned directly above the solid line, parallel to it.  \n  - The vertical ticks on the solid line are uniform in spacing and length, creating a structured, measurement-like appearance.  \n\n- **Position**: Located at the **bottom of the left page**, spanning the full width of the page (inset, not full-bleed). It sits below the Wordsworth quote and above the page’s bottom margin.  \n\n- **Visual style**: A **black-and-white graphic symbol** (not a photograph or illustration). It uses simple, clean lines with high contrast against the white page background.  \n\n- **Composition**:  \n  - **Framing**: The graphic is framed by the page’s margins, with the solid line and dashed line occupying the lower portion of the left page.  \n  - **Angle**: Both lines are horizontal, parallel to the page’s top and bottom edges.  \n  - **Contrast**: Stark black lines on a white background, emphasizing clarity and minimalism.  \n  - **Key visual qualities**: Geometric precision, repetition of vertical ticks, and parallel alignment of the solid and dashed lines create a sense of order and measurement.  \n\n- **Page occupancy**: Approximately **10–15% of the left page’s total area** (spanning the bottom third of the page’s height).  \n\n\n### Additional Notes  \n- **No photographs or illustrations** beyond this graphic symbol exist in the spread.  \n- **Typography** (text content) is excluded per the query’s instructions, but the graphic symbol is the sole visual/pictorial element.",
+        "source_type": "illustration",
+        "source_credit": "uncredited",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe page is divided into **two primary text columns** (left and right), with text occupying most of the vertical space. The left column contains the bulk of the narrative text, while the right column continues the discussion. At the bottom, a **visual element** (a ruler-like diagram with horizontal lines) sits in the lower-right quadrant, paired with a quote from Wordsworth in the lower-left. The layout is **asymmetrical but balanced**: text dominates the upper/middle sections, while the diagram and quote anchor the bottom. The vertical division between columns is clear, with no overlapping text, creating a structured, academic flow.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Primarily **body text** (standard paragraph text) and **quotation text** (Wordsworth’s quote).  \n- **Font style**: Likely **serif** (common in academic books for readability), with no bold or display text.  \n- **Size/weight**: Body text is medium-sized (typical for book pages), with the Wordsworth quote in a slightly smaller font. No large display text or reversed (white-on-black) text is present.  \n- **Hierarchy**: The main narrative text is uniform in weight, while the Wordsworth quote and the “c,o,n,t,i,n,u,o,u,s”/“c-o-n-n-e-c-t-e-d” examples are visually distinct (smaller size, possibly italicized) to emphasize their role as illustrative examples.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly light** (white background, black text).  \n- **Contrast**: **High contrast** (black text on white background), typical of traditional print design. No reversed text or low-contrast elements are present. The visual hierarchy relies on font size and spacing, not color inversion.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. There is sufficient empty space between text blocks (e.g., between paragraphs, around the Wordsworth quote) to avoid visual clutter. The page is not sparse (which would feel empty) nor packed (which would feel overwhelming).  \n- **Function*",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "45\n\nThe dominant organ of sensory and social orientation in pre-alphabet societies was the ear— \"hearing was believing.\" The phonetic alphabet forced the magic world of the ear to yield to the neutral world of the eye.",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Sustained reading — the reader engages with extended prose argument.",
+      "mcluhan_concepts": [
+        "visual_space",
+        "sensory_ratio",
+        "environment"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "media_as_environment",
+        "fragmentation_vs_unification",
+        "perception",
+        "space_and_time",
+        "print_culture",
+        "art_and_creativity"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "decelerating",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "45\n\nThe dominant organ of sensory and social orientation in pre-alphabet societies was the ear— \"hearing was believing.\" The phonetic alphabet forced the magic world of the ear to yield to the neutral world of the eye. Man was given an eye for an ear.\n\nWestern history was shaped for some three thousand years by the introduction of the phonetic alphabet, a medium that depends solely on the eye for comprehension. The alphabet is a construct of fragmented bits and parts which have no semantic meaning in themselves, and which must be strung together in a line, bead-like, and in a prescribed order. Its use fostered and encouraged the habit of perceiving all environment in visual and spatial terms—particularly in terms of a space and of a time that are uniform, c,o,n,t,i,n,u,o,u,s and c-o-n-n-e-c-t-e-d. The line, the continuum —this sentence is a prime example—\n\n\"The eye—it cannot choose but see; we cannot bid the ear be still; our bodies feel, where'er they be, against or with our will.\" —Wordsworth\n\nbecame the organizing principle of life. \"As we begin, so shall we go.\" \"Rationality\" and logic came to depend on the presentation of connected and sequential facts or concepts.\n\nFor many people rationality has the connotation of uniformity and connectiveness. \"I don't follow you\" means \"I don't think what you're saying is rational.\"\n\nVisual space is uniform, continuous, and connected. The rational man in our Western culture is a visual man. The fact that most conscious experience has little \"visuality\" in it is lost on him. Rationality and visuality have long been interchangeable terms, but we do not live in a primarily visual world any more.\n\nThe fragmenting of activities, our habit of thinking in bits and parts—\"specialism\"—reflected the step-by-step linear departmentalizing process inherent in the technology of the alphabet.",
+    "ocr_raw_time": 17.3,
+    "ocr_structured": "",
+    "ocr_structured_time": 23.3,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element Description  \n\n#### 1. **Graphic Symbol**  \n- **What it depicts**: A minimalist black-and-white line drawing consisting of two horizontal lines:  \n  - A **solid horizontal line** with evenly spaced vertical ticks (resembling a ruler or scale), extending across the width of the page.  \n  - A **dashed (dotted) horizontal line** positioned directly above the solid line, parallel to it.  \n  - The vertical ticks on the solid line are uniform in spacing and length, creating a structured, measurement-like appearance.  \n\n- **Position**: Located at the **bottom of the left page**, spanning the full width of the page (inset, not full-bleed). It sits below the Wordsworth quote and above the page’s bottom margin.  \n\n- **Visual style**: A **black-and-white graphic symbol** (not a photograph or illustration). It uses simple, clean lines with high contrast against the white page background.  \n\n- **Composition**:  \n  - **Framing**: The graphic is framed by the page’s margins, with the solid line and dashed line occupying the lower portion of the left page.  \n  - **Angle**: Both lines are horizontal, parallel to the page’s top and bottom edges.  \n  - **Contrast**: Stark black lines on a white background, emphasizing clarity and minimalism.  \n  - **Key visual qualities**: Geometric precision, repetition of vertical ticks, and parallel alignment of the solid and dashed lines create a sense of order and measurement.  \n\n- **Page occupancy**: Approximately **10–15% of the left page’s total area** (spanning the bottom third of the page’s height).  \n\n\n### Additional Notes  \n- **No photographs or illustrations** beyond this graphic symbol exist in the spread.  \n- **Typography** (text content) is excluded per the query’s instructions, but the graphic symbol is the sole visual/pictorial element.",
+    "image_description_time": 11.0,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe page is divided into **two primary text columns** (left and right), with text occupying most of the vertical space. The left column contains the bulk of the narrative text, while the right column continues the discussion. At the bottom, a **visual element** (a ruler-like diagram with horizontal lines) sits in the lower-right quadrant, paired with a quote from Wordsworth in the lower-left. The layout is **asymmetrical but balanced**: text dominates the upper/middle sections, while the diagram and quote anchor the bottom. The vertical division between columns is clear, with no overlapping text, creating a structured, academic flow.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Primarily **body text** (standard paragraph text) and **quotation text** (Wordsworth’s quote).  \n- **Font style**: Likely **serif** (common in academic books for readability), with no bold or display text.  \n- **Size/weight**: Body text is medium-sized (typical for book pages), with the Wordsworth quote in a slightly smaller font. No large display text or reversed (white-on-black) text is present.  \n- **Hierarchy**: The main narrative text is uniform in weight, while the Wordsworth quote and the “c,o,n,t,i,n,u,o,u,s”/“c-o-n-n-e-c-t-e-d” examples are visually distinct (smaller size, possibly italicized) to emphasize their role as illustrative examples.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly light** (white background, black text).  \n- **Contrast**: **High contrast** (black text on white background), typical of traditional print design. No reversed text or low-contrast elements are present. The visual hierarchy relies on font size and spacing, not color inversion.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. There is sufficient empty space between text blocks (e.g., between paragraphs, around the Wordsworth quote) to avoid visual clutter. The page is not sparse (which would feel empty) nor packed (which would feel overwhelming).  \n- **Function**: White space guides the reader’s eye through the text, emphasizing the logical flow of ideas (e.g., the space between the left and right columns creates a visual “breathing room” for the reader).  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Continuation**. The left and right columns are parallel in structure, with the left column introducing concepts (e.g., “pre-alphabet societies”) and the right column expanding on them (e.g., “rationality and logic”). The Wordsworth quote (left) and the diagram (right) mirror each other thematically (both addressing sensory/visual experience), but the text flow is linear (left-to-right), not mirrored or one-dominated.  \n- **Balance**: The left column has slightly more text, but the right column’s content is equally substantial, creating a balanced, scholarly rhythm.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Calm, academic, and orderly**. The clean layout, high-contrast typography, and moderate white space evoke a sense of intellectual calm—typical of a scholarly book. The absence of bold graphics or aggressive design elements reinforces a **minimalist, thoughtful tone**, aligning with the text’s focus on language, history, and perception. The diagram at the bottom adds subtle visual interest without disrupting the page’s serene flow.  \n\nThis spread reflects a traditional academic book design: prioritizing readability, logical structure, and a restrained visual language to support complex ideas.",
+    "layout_analysis_time": 9.5,
+    "model": "qwen3-vl"
+  }
+}

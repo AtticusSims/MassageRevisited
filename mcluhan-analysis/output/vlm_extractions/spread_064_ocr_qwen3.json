@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_064",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:52:47",
+  "ocr_raw": "you\nyou\nyou\nyou\nyou\n\"Speak that I may see you.\"\nElectrically-recorded voiceprints, like fingerprints, are now being accepted as evidence by some courts.\nFive people were asked to say \"you.\"",
+  "ocr_structured": "",
+  "ocr_raw_time": 23.8,
+  "ocr_structured_time": 23.3
+}

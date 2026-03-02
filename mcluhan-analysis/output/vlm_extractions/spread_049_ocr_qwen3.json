@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_049",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:44:07",
+  "ocr_raw": "89\nThe poet, the artist, the sleuth—whomever sharpens our perception tends to be antisocial; rarely \"well-adjusted,\" he cannot go along with currents and trends. A strange bond often exists among antisocial types in their power to see environments as they really are. This need to interface, to confront environments with a certain antisocial power, is manifest in the famous story, \"The Emperor's New Clothes.\" \"Well-adjusted\" courtiers, having vested interests, saw the Emperor as beautifully appointed. The \"antisocial\" brat, unaccustomed to the old environment, clearly saw that the Emperor \"ain't got nothin' on.\" The new environment was clearly visible to him.",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: The poet, the artist, the sleuth—whoeversharpens our perception tends to be antisocial; rarely \"well-adjusted,\" he cannot go along with currents and trends. A strange bond often exists among antisocial types in their power to see environments as they really are. This need to interface, to confront environments with a certain antisocial power, is manifest in the famous story, \"The Emperor's New Clothes.\" \"Well-adjusted\" courtiers, having vested interests, saw the Emperor as beautifully appointed. The \"antisocial\" brat, unaccustomed to the old environment, clearly saw that the Emperor \"ain't got nothin' on.\" The new environment was clearly visible to him.  \nQUOTATIONS: \"ain't got nothin' on.\"  \nCAPTIONS: NONE  \nPAGE_NUMBERS: 89",
+  "ocr_raw_time": 14.1,
+  "ocr_structured_time": 13.4
+}

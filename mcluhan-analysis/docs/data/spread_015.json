@@ -1,0 +1,96 @@
+{
+  "id": "spread_015",
+  "analysis": {
+    "id": "spread_015",
+    "pdf_page": 15,
+    "book_pages": [
+      20,
+      21
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "\"Jobs\" represent a relatively recent pattern of work. From the fifteenth century to the twentieth century, there is a steady progress of fragmentation of the stages of work that constitute \"mechanization\" and \"specialism.\" These procedures cannot serve for survival or sanity in this new time. Under conditions of electric circuitry, all the fragmented job patterns tend to blend once more into involving and demanding roles or forms of work that more and more resemble teaching, learning, and \"human\" service, in the older sense of dedicated loyalty. Unhappily, many well-intentioned political reform programs that aim at the alleviation of suffering caused by unemployment betray an ignorance of the true nature of media-influence.",
+      "display_text": "your job",
+      "captions": [],
+      "page_numbers_visible": [
+        "20"
+      ]
+    },
+    "quotations": [
+      {
+        "text": "\"When this circuit learns your job, what are you going to do?\" \"Come into my parlor,\" said the computer to the specialist.",
+        "attribution": "unattributed",
+        "context": "inline"
+      }
+    ],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### Visual Elements in the Book Spread  \n\n#### 1. **Small Inset Image on the Left Page**  \n- **What it depicts**: A close - up black - and - white photograph of an electronic circuit board. It shows intricate details of tiny components such as resistors, capacitors, or integrated circuits, densely packed together. The image focuses on the fine, technical elements typical of circuitry.  \n- **Position**: Inset on the left page, located in the upper left quadrant, above the main text block.  \n- **Visual style**: Black - and - white photograph (macro photography).  \n- **Composition**: Tight crop emphasizing the circuit’s complexity. High contrast between dark components and the lighter background of the circuit board. The angle is a direct close - up, highlighting the minute details of the electronic parts.  \n- **Page occupation**: Approximately 5–10% of the left page.  \n\n\n#### 2. **Full - Bleed Image on the Right Page**  \n- **What it depicts**: A repeating pattern of human noses in profile view, arranged in a grid. Each nose is a black - and - white photograph showing the side of the nose with visible nostrils, the bridge of the nose, and the contours of the nose. The noses are tiled to create a continuous, repetitive pattern across the page.  \n- **Position**: Full bleed on the right page, covering the entire right side of the spread.  \n- **Visual style**: Black - and - white photograph (or a manipulated photographic image, likely a digital collage or repeated photograph).  \n- **Composition**: Grid layout with rows and columns of profile noses. The angle is consistent (side view), creating a uniform pattern. High contrast between the dark noses and the lighter background (which has subtle texture or white areas). The image has a hypnotic, repetitive quality due to the grid structure.  \n- **Page occupation**: 100% of the right page.",
+        "source_type": "advertisement",
+        "source_credit": "The Advertising Council, Inc.",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two distinct sections:  \n- **Left side**: Dominated by text. The title *“your job”* sits at the top, followed by a column of body text (with a small, abstract graphic—possibly a circuit board—positioned above the main text block).  \n- **Right side**: Occupied by a high-contrast black-and-white photograph of repeated human profiles (noses/foreheads), arranged in a grid.  \nThe text and image are **side-by-side**, with clear visual separation. The text block is left-aligned with generous margins, while the image fills the right half of the page, creating a balanced yet distinct division between textual and visual elements.  \n\n\n### 2. TYPOGRAPHY  \n- **Title**: *“your job”* is large, bold, and **sans-serif** (lowercase, modern display font), drawing immediate attention.  \n- **Body text**: Smaller, **serif** (e.g., Times New Roman), regular weight, and black-on-white (standard book typography).  \n- **Other text**: Quotations and smaller captions (e.g., *“Come into my parlor...”*) use the same serif body font, maintaining consistency.  \n- **Contrast**: Text is **high-contrast** (black on white), while the image uses stark black-and-white tones. No reversed (white-on-black) text appears.  \n\n\n### 3. CONTRAST & TONE  \n- **Text side**: Light (white background) with high contrast (black text), creating clarity and readability.  \n- **Image side**: Dark (predominantly black-and-white) with **high contrast** (sharp edges, deep shadows, and bright highlights in the grid of profiles).  \n- **Overall tone**: The spread is **dual-toned**—the text side feels clean and analytical, while the image side feels stark and mechanical. The high contrast in both elements reinforces a sense of precision and tension.  \n\n\n### 4. WHITE SPACE  \n- **Text side**: **Moderate to dense** white space. The text block is left-aligned with ample margins on the right, top, and bottom, allowing the text to breathe.  \n- **Image side**: Minima",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": "Large display typography",
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "your job \"Jobs\" represent a relatively recent pattern of work.",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
+      "mcluhan_concepts": [
+        "pattern_recognition"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "electric_technology",
+        "fragmentation_vs_unification",
+        "education",
+        "perception",
+        "space_and_time"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "steady",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "your job\n\n\"When this circuit learns your job, what are you going to do?\"\n\n\"Jobs\" represent a relatively recent pattern of work. From the fifteenth century to the twentieth century, there is a steady progress of fragmentation of the stages of work that constitute \"mechanization\" and \"specialism.\" These procedures cannot serve for survival or sanity in this new time.\n\nUnder conditions of electric circuitry, all the fragmented job patterns tend to blend once more into involving and demanding roles or forms of work that more and more resemble teaching, learning, and \"human\" service, in the older sense of dedicated loyalty.\n\nUnhappily, many well-intentioned political reform programs that aim at the alleviation of suffering caused by unemployment betray an ignorance of the true nature of media-influence.\n\n\"Come into my parlor,\" said the computer to the specialist.\n\n20",
+    "ocr_raw_time": 14.3,
+    "ocr_structured": "DISPLAY_TEXT: your job  \nBODY_TEXT: \"Jobs\" represent a relatively recent pattern of work. From the fifteenth century to the twentieth century, there is a steady progress of fragmentation of the stages of work that constitute \"mechanization\" and \"specialism.\" These procedures cannot serve for survival or sanity in this new time. Under conditions of electric circuitry, all the fragmented job patterns tend to blend once more into involving and demanding roles or forms of work that more and more resemble teaching, learning, and \"human\" service, in the older sense of dedicated loyalty. Unhappily, many well-intentioned political reform programs that aim at the alleviation of suffering caused by unemployment betray an ignorance of the true nature of media-influence.  \nQUOTATIONS: \"When this circuit learns your job, what are you going to do?\" \"Come into my parlor,\" said the computer to the specialist.  \nCAPTIONS: NONE  \nPAGE_NUMBERS: 20",
+    "ocr_structured_time": 10.6,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Elements in the Book Spread  \n\n#### 1. **Small Inset Image on the Left Page**  \n- **What it depicts**: A close - up black - and - white photograph of an electronic circuit board. It shows intricate details of tiny components such as resistors, capacitors, or integrated circuits, densely packed together. The image focuses on the fine, technical elements typical of circuitry.  \n- **Position**: Inset on the left page, located in the upper left quadrant, above the main text block.  \n- **Visual style**: Black - and - white photograph (macro photography).  \n- **Composition**: Tight crop emphasizing the circuit’s complexity. High contrast between dark components and the lighter background of the circuit board. The angle is a direct close - up, highlighting the minute details of the electronic parts.  \n- **Page occupation**: Approximately 5–10% of the left page.  \n\n\n#### 2. **Full - Bleed Image on the Right Page**  \n- **What it depicts**: A repeating pattern of human noses in profile view, arranged in a grid. Each nose is a black - and - white photograph showing the side of the nose with visible nostrils, the bridge of the nose, and the contours of the nose. The noses are tiled to create a continuous, repetitive pattern across the page.  \n- **Position**: Full bleed on the right page, covering the entire right side of the spread.  \n- **Visual style**: Black - and - white photograph (or a manipulated photographic image, likely a digital collage or repeated photograph).  \n- **Composition**: Grid layout with rows and columns of profile noses. The angle is consistent (side view), creating a uniform pattern. High contrast between the dark noses and the lighter background (which has subtle texture or white areas). The image has a hypnotic, repetitive quality due to the grid structure.  \n- **Page occupation**: 100% of the right page.",
+    "image_description_time": 12.0,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two distinct sections:  \n- **Left side**: Dominated by text. The title *“your job”* sits at the top, followed by a column of body text (with a small, abstract graphic—possibly a circuit board—positioned above the main text block).  \n- **Right side**: Occupied by a high-contrast black-and-white photograph of repeated human profiles (noses/foreheads), arranged in a grid.  \nThe text and image are **side-by-side**, with clear visual separation. The text block is left-aligned with generous margins, while the image fills the right half of the page, creating a balanced yet distinct division between textual and visual elements.  \n\n\n### 2. TYPOGRAPHY  \n- **Title**: *“your job”* is large, bold, and **sans-serif** (lowercase, modern display font), drawing immediate attention.  \n- **Body text**: Smaller, **serif** (e.g., Times New Roman), regular weight, and black-on-white (standard book typography).  \n- **Other text**: Quotations and smaller captions (e.g., *“Come into my parlor...”*) use the same serif body font, maintaining consistency.  \n- **Contrast**: Text is **high-contrast** (black on white), while the image uses stark black-and-white tones. No reversed (white-on-black) text appears.  \n\n\n### 3. CONTRAST & TONE  \n- **Text side**: Light (white background) with high contrast (black text), creating clarity and readability.  \n- **Image side**: Dark (predominantly black-and-white) with **high contrast** (sharp edges, deep shadows, and bright highlights in the grid of profiles).  \n- **Overall tone**: The spread is **dual-toned**—the text side feels clean and analytical, while the image side feels stark and mechanical. The high contrast in both elements reinforces a sense of precision and tension.  \n\n\n### 4. WHITE SPACE  \n- **Text side**: **Moderate to dense** white space. The text block is left-aligned with ample margins on the right, top, and bottom, allowing the text to breathe.  \n- **Image side**: Minimal white space *within* the image (the grid of profiles is tightly packed), but the image itself is bordered by the page’s edge, creating a clean separation from the text.  \n- **Overall**: White space is **moderate**—sufficient to balance the dense text and image without feeling sparse or overwhelming. It enhances the spread’s structured, intentional feel.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Contrast**: The left (text) and right (image) are **thematically linked but visually distinct**. The text discusses the fragmentation of work, while the image’s grid of repetitive profiles visually echoes this theme (e.g., “mechanization” and “specialism” mentioned in the text).  \n- **Relationship type**: **Contrast with unity**—the text explains the concept, and the image *visually embodies* it. The left side (informational) and right side (symbolic) work together to reinforce the spread’s message, rather than competing or mirroring each other.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Minimal, analytical, and tense**. The clean typography, high-contrast image, and structured layout create a calm, intellectual atmosphere. However, the grid of repetitive profiles introduces a subtle sense of monotony or mechanical rigidity, aligning with the text’s critique of fragmented work.  \n- **Key impressions**: The spread feels **controlled yet urgent**—the white space and typography convey order, while the image’s repetition hints at the “mechanization” the text critiques. It avoids chaos or overwhelming energy, instead offering a focused, thought-provoking visual experience.",
+    "layout_analysis_time": 12.5,
+    "model": "qwen3-vl"
+  }
+}

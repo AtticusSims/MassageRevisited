@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_060",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:48:28",
+  "ocr_raw": "BANG!\n\nThe ear favors no particular \"point of view.\" We are enveloped by sound. It forms a seamless web around us. We say, \"Music shall fill the air.\" We never say, \"Music shall fill a particular segment of the air.\"\n\nWe hear sounds from everywhere, without ever having to focus. Sounds come from \"above,\" from \"below,\" from in \"front\" of us, from \"behind\" us, from our \"right,\" from our \"left.\" We can't shut out sound automatically. We simply are not equipped with earlids. Where a visual space is an organized continuum of a uniformed connected kind, the ear world is a world of simultaneous relationships.",
+  "ocr_structured": "DISPLAY_TEXT: BANG!\n\nBODY_TEXT: The ear favors no particular \"point of view.\" We are enveloped by sound. It forms a seamless web around us. We say, \"Music shall fill the air.\" We never say, \"Music shall fill a particular segment of the air.\"\n\nWe hear sounds from everywhere, without ever having to focus. Sounds come from \"above,\" from \"below,\" from \"in \"front\" of us, from \"behind\" us, from our \"right,\" from our \"left.\" We can't shut out sound automatically. We simply are not equipped with earlids. Where a visual space is an organized continuum of a uniformed connected kind, the ear world is a world of simultaneous relationships.\n\nQUOTATIONS: NONE\n\nCAPTIONS: NONE\n\nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 13.3,
+  "ocr_structured_time": 9.5
+}

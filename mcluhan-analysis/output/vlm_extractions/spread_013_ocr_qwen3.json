@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_013",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:24:08",
+  "ocr_raw": "your\nneighborhood\nElectric circuitry has overthrown the regime of \"time\" and \"space\" and pours upon us instantly and continuously the concerns of all other men. It has reconstituted dialogue on a global scale. Its message is Total Change, ending psychic, social, economic, and political parochialism. The old civic, state, and national groupings have become unworkable. Nothing can be further from the spirit of the new technology than \"a place for everything and everything in its place.\" You can't go home again.\n16",
+  "ocr_structured": "DISPLAY_TEXT: your neighborhood  \nBODY_TEXT: Electric circuitry has overthrown the regime of \"time\" and \"space\" and pours upon us instantly and continuously the concerns of all other men. It has reconstituted dialogue on a global scale. Its message is Total Change, ending psychic, social, economic, and political parochialism. The old civic, state, and national groupings have become unworkable. Nothing can be further from the spirit of the new technology than \"a place for everything and everything in its place.\" You can't go home again.  \nQUOTATIONS: \"time\", \"space\", \"a place for everything and everything in its place.\"  \nCAPTIONS: NONE  \nPAGE_NUMBERS: 16",
+  "ocr_raw_time": 7.9,
+  "ocr_structured_time": 8.3
+}

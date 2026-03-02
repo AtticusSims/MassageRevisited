@@ -1,0 +1,100 @@
+{
+  "id": "spread_076",
+  "analysis": {
+    "id": "spread_076",
+    "pdf_page": 76,
+    "book_pages": [
+      142,
+      143
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "The environment as a processor of information is propaganda. Propaganda ends where dialogue begins. You must talk to the media, not to the programmer. To talk to the programmer is like complaining to a hot dog vendor at a ballpark about how badly your favorite team is playing.",
+      "display_text": "\"The west shall shake the east awake... while ye have the night for morn...\"",
+      "captions": [
+        "\" 'See Dick. See Dick protest. Protest, Dick! Protest!'\""
+      ],
+      "page_numbers_visible": [
+        "142"
+      ]
+    },
+    "quotations": [
+      {
+        "text": "The west shall shake the east awake... while ye have the night for morn...",
+        "attribution": "James Joyce",
+        "context": "inline"
+      },
+      {
+        "text": "The west shall shake the east awake... while ye have the night for morn...",
+        "attribution": "James Joyce",
+        "context": "inline"
+      }
+    ],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### Left Page Visual Element: Cartoon Illustration  \n1. **Depicts**: A woman with long dark hair, wearing a long-sleeved top and pants, sits on a bed. She holds a child (with short dark hair) on her lap, who is looking at a book titled *“DICK AND JANE”* (the book’s cover features bold, capitalized lettering). The room includes: a hanging spherical lamp (with a chain and textured surface), a bookshelf with multiple upright books, a potted plant (in a pot with visible leaves), a large bag (on the bed), and a plate with food (likely a sandwich or similar item). The artist’s signature *“Matt Groening”* appears at the bottom right of the illustration.  \n2. **Position**: Inset on the lower half of the left page (below the text block).  \n3. **Visual Style**: Black and white ink illustration (comic strip style), with clean lines and minimal shading.  \n4. **Composition**: Eye-level perspective, central focus on the woman and child. Moderate contrast between black ink and white paper. The book title is a focal point due to bold lettering. Room elements (lamp, bookshelf, plant, bag, plate) are arranged around the central figures, creating a domestic scene.  \n5. **Size**: Approximately 50–60% of the left page.  \n\n\n### Right Page Visual Element: Black and White Photograph  \n1. **Depicts**: A large plume of smoke or fire, with swirling, chaotic patterns, against a dark background. The smoke dominates the frame, with no visible background details beyond the smoke itself.  \n2. **Position**: Full bleed on the right page (occupies the entire right side of the spread).  \n3. **Visual Style**: Black and white photograph with high contrast.  \n4. **Composition**: Close-up/medium shot focusing on the smoke’s texture and movement. High contrast between the bright smoke and dark background creates a stark, dramatic visual. The smoke fills the frame, emphasizing its dynamic, swirling nature.  \n5. **Size**: 100% of the right page.",
+        "source_type": "illustration",
+        "source_credit": "Mort Gerberg",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided into two equal columns** (left and right).  \n- **Left column**: Text occupies the top portion, followed by a black-and-white cartoon illustration below it. The text block is centered above the cartoon, which sits on a bed with a woman and child.  \n- **Right column**: A large, high-contrast black-and-white photograph dominates the space, filling most of the column.  \n- **Division**: The layout is starkly split—text/illustration on the left, photography on the right—with no overlapping elements. The cartoon’s placement (below the text) creates a clear visual hierarchy: text → illustration. The right column’s photo is the sole visual element, emphasizing its dominance.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text**: Small, serif font (e.g., Times New Roman) in normal weight. This is the main text discussing “propaganda” and the environment.  \n- **Quotes**:  \n  - James Joyce’s quote (“The west shall shake the east awake…”) uses a smaller serif font, likely italicized, positioned at the top of the right column.  \n  - The cartoon caption (“See Dick. See Dick protest. Protest, Dick! Protest!”) uses a small, sans-serif font (possibly bold) for emphasis.  \n- **Page number**: “142” appears at the top center in a tiny serif font.  \n- **Style**: Primarily serif for body text (traditional, formal), sans-serif for the cartoon caption (modern, punchy). No reversed text (white on black) is used.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** dominates the right column (dark background vs. bright smoke), while the left column has **medium contrast** (shades of gray in the cartoon).  \n- **Tone**: The right column’s photograph conveys **dramatic tension** (smoke suggests chaos or conflict), while the left column’s cartoon feels **calm and domestic**. The overall spread balances these tones, creating a sense of *clash* between the two sides.  \n\n\n### 4. WHITE SPACE  \n- **Left column**: **Moderate white space**—the ",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": "Large display typography",
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "\"The west shall shake the east awake...",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
+      "mcluhan_concepts": [
+        "environment"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "media_as_environment",
+        "information"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "steady",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "142\nThe environment as a processor of information is propaganda. Propaganda ends where dialogue begins. You must talk to the media, not to the programmer. To talk to the programmer is like complaining to a hot dog vendor at a ballpark about how badly your favorite team is playing.\nDICK AND JAR\n\"See Dick. See Dick protest. Protest, Dick! Protest!\"\nMatt Geer\n\"The west shall shake the east awake... while ye have the night for morn...\" -James Joyce",
+    "ocr_raw_time": 15.8,
+    "ocr_structured": "DISPLAY_TEXT: \"The west shall shake the east awake... while ye have the night for morn...\"  \n\nBODY_TEXT: The environment as a processor of information is propaganda. Propaganda ends where dialogue begins. You must talk to the media, not to the programmer. To talk to the programmer is like complaining to a hot dog vendor at a ballpark about how badly your favorite team is playing.  \n\nQUOTATIONS: \"The west shall shake the east awake... while ye have the night for morn...\" -James Joyce  \n\nCAPTIONS: \" 'See Dick. See Dick protest. Protest, Dick! Protest!'\"  \n\nPAGE_NUMBERS: 142",
+    "ocr_structured_time": 8.0,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Left Page Visual Element: Cartoon Illustration  \n1. **Depicts**: A woman with long dark hair, wearing a long-sleeved top and pants, sits on a bed. She holds a child (with short dark hair) on her lap, who is looking at a book titled *“DICK AND JANE”* (the book’s cover features bold, capitalized lettering). The room includes: a hanging spherical lamp (with a chain and textured surface), a bookshelf with multiple upright books, a potted plant (in a pot with visible leaves), a large bag (on the bed), and a plate with food (likely a sandwich or similar item). The artist’s signature *“Matt Groening”* appears at the bottom right of the illustration.  \n2. **Position**: Inset on the lower half of the left page (below the text block).  \n3. **Visual Style**: Black and white ink illustration (comic strip style), with clean lines and minimal shading.  \n4. **Composition**: Eye-level perspective, central focus on the woman and child. Moderate contrast between black ink and white paper. The book title is a focal point due to bold lettering. Room elements (lamp, bookshelf, plant, bag, plate) are arranged around the central figures, creating a domestic scene.  \n5. **Size**: Approximately 50–60% of the left page.  \n\n\n### Right Page Visual Element: Black and White Photograph  \n1. **Depicts**: A large plume of smoke or fire, with swirling, chaotic patterns, against a dark background. The smoke dominates the frame, with no visible background details beyond the smoke itself.  \n2. **Position**: Full bleed on the right page (occupies the entire right side of the spread).  \n3. **Visual Style**: Black and white photograph with high contrast.  \n4. **Composition**: Close-up/medium shot focusing on the smoke’s texture and movement. High contrast between the bright smoke and dark background creates a stark, dramatic visual. The smoke fills the frame, emphasizing its dynamic, swirling nature.  \n5. **Size**: 100% of the right page.",
+    "image_description_time": 16.7,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided into two equal columns** (left and right).  \n- **Left column**: Text occupies the top portion, followed by a black-and-white cartoon illustration below it. The text block is centered above the cartoon, which sits on a bed with a woman and child.  \n- **Right column**: A large, high-contrast black-and-white photograph dominates the space, filling most of the column.  \n- **Division**: The layout is starkly split—text/illustration on the left, photography on the right—with no overlapping elements. The cartoon’s placement (below the text) creates a clear visual hierarchy: text → illustration. The right column’s photo is the sole visual element, emphasizing its dominance.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text**: Small, serif font (e.g., Times New Roman) in normal weight. This is the main text discussing “propaganda” and the environment.  \n- **Quotes**:  \n  - James Joyce’s quote (“The west shall shake the east awake…”) uses a smaller serif font, likely italicized, positioned at the top of the right column.  \n  - The cartoon caption (“See Dick. See Dick protest. Protest, Dick! Protest!”) uses a small, sans-serif font (possibly bold) for emphasis.  \n- **Page number**: “142” appears at the top center in a tiny serif font.  \n- **Style**: Primarily serif for body text (traditional, formal), sans-serif for the cartoon caption (modern, punchy). No reversed text (white on black) is used.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** dominates the right column (dark background vs. bright smoke), while the left column has **medium contrast** (shades of gray in the cartoon).  \n- **Tone**: The right column’s photograph conveys **dramatic tension** (smoke suggests chaos or conflict), while the left column’s cartoon feels **calm and domestic**. The overall spread balances these tones, creating a sense of *clash* between the two sides.  \n\n\n### 4. WHITE SPACE  \n- **Left column**: **Moderate white space**—the cartoon has subtle negative space (e.g., around the bed, plant), but the text block is dense.  \n- **Right column**: **Dense white space**—the dark background surrounding the smoke creates a stark, empty void, emphasizing the photograph’s isolation.  \n- **Overall**: The spread uses white space to *contrast* the left (text-heavy, less empty) and right (image-heavy, more empty), reinforcing the thematic divide.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Contrast**: The left and right columns **mirror each other in theme but oppose in execution**.  \n  - Left: Text + cartoon (illustrative, conversational, domestic).  \n  - Right: Photograph (photographic, dramatic, abstract).  \n- **Relationship**: They are **contrasting**—text vs. image, calm vs. chaotic, intellectual vs. visceral. Neither dominates the other; instead, they *complement* through tension.  \n\n\n### 6. OVERALL FEEL  \n- **Mood**: **Tense and dichotomous**. The left side feels *calm and reflective* (a quiet moment of reading), while the right side feels *aggressive and urgent* (smoke implies conflict or upheaval).  \n- **Energy**: **Chaotic yet controlled**—the spread’s visual split mirrors the text’s theme (propaganda vs. dialogue), creating a sense of *conflict* between order (left) and chaos (right). The black-and-white palette amplifies this tension, making the spread feel *overwhelming* in its duality.",
+    "layout_analysis_time": 9.2,
+    "model": "qwen3-vl"
+  }
+}

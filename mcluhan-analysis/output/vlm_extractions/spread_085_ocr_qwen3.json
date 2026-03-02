@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_085",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T18:06:20",
+  "ocr_raw": "\"It is the business\nof the future\nto be dangerous.\"\n— A. N. Whitehead",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"It is the business of the future to be dangerous.\" – A. N. Whitehead  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 11.3,
+  "ocr_structured_time": 4.8
+}

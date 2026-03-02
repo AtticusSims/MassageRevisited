@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_058",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:47:29",
+  "ocr_raw": "107\n\"The hell of it is those punks pump over fifteen billion dollars into the economy every year.\"\nDrawing by Lorenz; © 1966 The New Yorker Magazine, Inc.",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"The hell of it is those punks pump over fifteen billion dollars into the economy every year.\"  \nCAPTIONS: Drawing by Lorenz; © 1966 The New Yorker Magazine, Inc.  \nPAGE_NUMBERS: 107",
+  "ocr_raw_time": 6.6,
+  "ocr_structured_time": 6.8
+}

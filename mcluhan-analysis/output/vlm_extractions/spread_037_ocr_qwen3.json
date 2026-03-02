@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_037",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:39:41",
+  "ocr_raw": "Solid integrated circuit enlarged several hundred times.",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: Solid integrated circuit enlarged several hundred times.  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 3.2,
+  "ocr_structured_time": 4.7
+}

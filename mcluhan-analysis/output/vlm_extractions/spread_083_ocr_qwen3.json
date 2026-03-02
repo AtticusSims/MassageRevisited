@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_083",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T18:04:29",
+  "ocr_raw": "Alan Dunn\n\n\"You see, Dad, Professor McLuhan says the environment that man creates becomes his medium for defining his role in it. The invention of type created linear, or sequential, thought, separating thought from action. Now, with TV and folk singing, thought and action are closer and social involvement is greater. We again live in a village. Get it?\"\n\nDrawing by Alan Dunn; © 1966 The New Yorker Magazine, Inc.",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"You see, Dad, Professor McLuhan says the environment that man creates becomes his medium for defining his role in it. The invention of type created linear, or sequential, thought, separating thought from action. Now, with TV and folk singing, thought and action are closer and social involvement is greater. We again live in a village. Get it?\"  \nCAPTIONS: Drawing by Alan Dunn; © 1966 The New Yorker Magazine, Inc.  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 16.8,
+  "ocr_structured_time": 7.8
+}

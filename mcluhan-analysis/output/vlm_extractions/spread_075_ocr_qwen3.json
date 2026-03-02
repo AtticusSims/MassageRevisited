@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_075",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:58:56",
+  "ocr_raw": "\"Did you happen to meet any soldiers,\nmy dear, as you came through the woods?\"",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: \"Did you happen to meet any soldiers, my dear, as you came through the woods?\"  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 3.4,
+  "ocr_structured_time": 6.6
+}

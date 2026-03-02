@@ -1,0 +1,84 @@
+{
+  "id": "spread_022",
+  "analysis": {
+    "id": "spread_022",
+    "pdf_page": 22,
+    "book_pages": [
+      34,
+      35
+    ],
+    "section": "body",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "",
+      "display_text": "the book",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "spanning_spread",
+        "subject": "### Visual Element 1: Left Thumb Photograph  \n1. **Depicts**: A close - up photograph of the tip of a human thumb. It shows the nail (with a slightly rounded shape), the skin texture with visible wrinkles (including a prominent crease near the nail), and the side of the thumb. The thumb is positioned as if it is pointing toward the center of the spread (toward the right page).  \n2. **Position**: Left page of the two - page spread (occupies the left side of the spread).  \n3. **Visual Style**: Black and white photograph.  \n4. **Composition**:  \n   - **Framing**: Tight crop, focusing exclusively on the thumb’s tip and part of the finger.  \n   - **Angle**: Side view, with the thumb oriented horizontally.  \n   - **Contrast**: High contrast due to the black - and - white format, emphasizing the texture of the skin (wrinkles, creases) and the soft shadow cast by the thumb on the white background.  \n   - **Key Visual Qualities**: The detailed texture of the skin (wrinkles, creases), the shape of the nail, and the stark contrast between the thumb and the white background.  \n5. **Page Occupation**: Approximately 1/2 of the left page (the thumb image dominates the left side of the spread).  \n\n\n### Visual Element 2: Right Thumb Photograph  \n1. **Depicts**: A close - up photograph of the tip of a human thumb. It shows the nail (with a slightly rounded shape), the skin texture with visible wrinkles (including a prominent crease near the nail), and the side of the thumb. The thumb is positioned as if it is pointing toward the center of the spread (toward the left page).  \n2. **Position**: Right page of the two - page spread (occupies the right side of the spread).  \n3. **Visual Style**: Black and white photograph.  \n4. **Composition**:  \n   - **Framing**: Tight crop, focusing exclusively on the thumb’s tip and part of the finger.  \n   - **Angle**: Side view, with the thumb oriented horizontally.  \n   - **Contrast**: High contrast due to the black - and - white format, emphasizing ",
+        "source_type": "illustration",
+        "source_credit": "Peter Moore",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \n- **Text**: Positioned at the **top center**, occupying a small, prominent area.  \n- **Images**: Two thumbs (left and right) occupy the **left and right edges**, respectively.  \n- **Space Division**: The layout is divided into three zones:  \n  - *Top*: Text (\"the book\").  \n  - *Middle*: A large expanse of **white space** (the dominant visual element).  \n  - *Bottom*: The thumbs, anchored to the left and right margins.  \n  The thumbs frame the central white space, creating a balanced yet sparse composition.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Type**: Only the phrase *\"the book\"* is visible (no body text or captions).  \n- **Font Style**: **Sans-serif** (clean, modern, with no serifs).  \n- **Weight/Size**: **Bold** and **large** (display text, not body text).  \n- **Color**: **Black on white** (standard, high-contrast readability).  \n- **Case**: All lowercase (e.g., \"the\" and \"book\" are both lowercase, though \"book\" may appear slightly emphasized).  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly light** (white background dominates, with grayscale thumbs).  \n- **Contrast**:  \n  - *Text*: **High contrast** (black text on white background).  \n  - *Images*: **Moderate contrast** (grayscale thumbs against white background; subtle shading, not stark black/white).  \n  Overall, the design relies on *textual contrast* (black-on-white) rather than dramatic tonal shifts in the imagery.  \n\n\n### 4. WHITE SPACE  \n- **Density**: **Dense** (the majority of the spread is empty white space).  \n- **Role**: The white space acts as a \"negative space\" buffer, emphasizing the minimalism of the text and thumbs. It creates visual breathing room and draws focus to the central elements (text and thumbs).  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Contrast** (thumbs are positioned on opposite sides, facing each other).  \n  - The left thumb points *right*, and the right thumb points *left*, creating a subtle visual dialogue.  \n  - While not mirrore",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": "Large display typography",
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "Brief textual element: 'the book'",
+      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
+      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "print_culture"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "punctuates",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "the\nbook",
+    "ocr_raw_time": 3.2,
+    "ocr_structured": "DISPLAY_TEXT: the book\nBODY_TEXT: NONE\nQUOTATIONS: NONE\nCAPTIONS: NONE\nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 3.4,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element 1: Left Thumb Photograph  \n1. **Depicts**: A close - up photograph of the tip of a human thumb. It shows the nail (with a slightly rounded shape), the skin texture with visible wrinkles (including a prominent crease near the nail), and the side of the thumb. The thumb is positioned as if it is pointing toward the center of the spread (toward the right page).  \n2. **Position**: Left page of the two - page spread (occupies the left side of the spread).  \n3. **Visual Style**: Black and white photograph.  \n4. **Composition**:  \n   - **Framing**: Tight crop, focusing exclusively on the thumb’s tip and part of the finger.  \n   - **Angle**: Side view, with the thumb oriented horizontally.  \n   - **Contrast**: High contrast due to the black - and - white format, emphasizing the texture of the skin (wrinkles, creases) and the soft shadow cast by the thumb on the white background.  \n   - **Key Visual Qualities**: The detailed texture of the skin (wrinkles, creases), the shape of the nail, and the stark contrast between the thumb and the white background.  \n5. **Page Occupation**: Approximately 1/2 of the left page (the thumb image dominates the left side of the spread).  \n\n\n### Visual Element 2: Right Thumb Photograph  \n1. **Depicts**: A close - up photograph of the tip of a human thumb. It shows the nail (with a slightly rounded shape), the skin texture with visible wrinkles (including a prominent crease near the nail), and the side of the thumb. The thumb is positioned as if it is pointing toward the center of the spread (toward the left page).  \n2. **Position**: Right page of the two - page spread (occupies the right side of the spread).  \n3. **Visual Style**: Black and white photograph.  \n4. **Composition**:  \n   - **Framing**: Tight crop, focusing exclusively on the thumb’s tip and part of the finger.  \n   - **Angle**: Side view, with the thumb oriented horizontally.  \n   - **Contrast**: High contrast due to the black - and - white format, emphasizing the texture of the skin (wrinkles, creases) and the soft shadow cast by the thumb on the white background.  \n   - **Key Visual Qualities**: The detailed texture of the skin (wrinkles, creases), the shape of the nail, and the stark contrast between the thumb and the white background.  \n5. **Page Occupation**: Approximately 1/2 of the right page (the thumb image dominates the right side of the spread).  \n\n\n### Additional Notes  \n- **Background**: The entire spread features a plain white background, which serves to isolate and emphasize the thumbs as the primary visual elements.  \n- **No Other Visual Elements**: There are no illustrations, graphic symbols, or additional photographs beyond the two thumbs. The text “the book” at the top is excluded per the instructions (focusing only on visual/pictorial elements).",
+    "image_description_time": 14.8,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \n- **Text**: Positioned at the **top center**, occupying a small, prominent area.  \n- **Images**: Two thumbs (left and right) occupy the **left and right edges**, respectively.  \n- **Space Division**: The layout is divided into three zones:  \n  - *Top*: Text (\"the book\").  \n  - *Middle*: A large expanse of **white space** (the dominant visual element).  \n  - *Bottom*: The thumbs, anchored to the left and right margins.  \n  The thumbs frame the central white space, creating a balanced yet sparse composition.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Type**: Only the phrase *\"the book\"* is visible (no body text or captions).  \n- **Font Style**: **Sans-serif** (clean, modern, with no serifs).  \n- **Weight/Size**: **Bold** and **large** (display text, not body text).  \n- **Color**: **Black on white** (standard, high-contrast readability).  \n- **Case**: All lowercase (e.g., \"the\" and \"book\" are both lowercase, though \"book\" may appear slightly emphasized).  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly light** (white background dominates, with grayscale thumbs).  \n- **Contrast**:  \n  - *Text*: **High contrast** (black text on white background).  \n  - *Images*: **Moderate contrast** (grayscale thumbs against white background; subtle shading, not stark black/white).  \n  Overall, the design relies on *textual contrast* (black-on-white) rather than dramatic tonal shifts in the imagery.  \n\n\n### 4. WHITE SPACE  \n- **Density**: **Dense** (the majority of the spread is empty white space).  \n- **Role**: The white space acts as a \"negative space\" buffer, emphasizing the minimalism of the text and thumbs. It creates visual breathing room and draws focus to the central elements (text and thumbs).  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Contrast** (thumbs are positioned on opposite sides, facing each other).  \n  - The left thumb points *right*, and the right thumb points *left*, creating a subtle visual dialogue.  \n  - While not mirrored (e.g., no exact symmetry), the thumbs’ opposing directions and placement on the margins create a sense of balance and tension.  \n  - This is not \"unified\" (they are distinct elements) nor \"one dominates\" (both are equally weighted). Instead, they *contrast* through direction and positioning.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/Energy**: **Calm, minimalist, contemplative**.  \n  - The stark black-and-white palette, sparse typography, and abundant white space evoke serenity and simplicity.  \n  - There is no chaos or aggression—instead, the design feels intentional, quiet, and focused on the relationship between text and image.  \n  - The thumbs’ gentle, almost meditative positioning (facing each other) reinforces a sense of calm introspection.  \n\n\nThis spread exemplifies **minimalist design**—prioritizing negative space, restrained typography, and subtle visual tension to create a serene, thought-provoking aesthetic.",
+    "layout_analysis_time": 12.1,
+    "model": "qwen3-vl"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_019",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:28:14",
+  "ocr_raw": "[No text detected in the image.]",
+  "ocr_structured": "DISPLAY_TEXT: NONE\nBODY_TEXT: NONE\nQUOTATIONS: NONE\nCAPTIONS: NONE\nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 3.4,
+  "ocr_structured_time": 3.1
+}

@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_057",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:47:16",
+  "ocr_raw": "\"Because something is happening\nBut you don't know what it is\nDo you, Mister Jones?\"\n—Bob Dylan",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"Because something is happening But you don't know what it is Do you, Mister Jones?\" —Bob Dylan  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 6.3,
+  "ocr_structured_time": 6.8
+}

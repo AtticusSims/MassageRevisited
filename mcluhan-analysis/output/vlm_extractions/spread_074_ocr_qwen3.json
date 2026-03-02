@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_074",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:58:46",
+  "ocr_raw": "some\nlike\nit\ncold.\n\nLights, camera, no action.\nHollywood is host to\nPremier Khrushchev.\n\nReal, total war has become information war. It is\nbeing fought by subtle electric informational media\n—under cold conditions, and constantly. The cold\nwar is the real war front—a surround—involving\neverybody—all the time—everywhere. Whenever\nhot wars are necessary these days, we conduct\nthem in the backyards of the world with the old\ntechnologies. These wars are happenings, tragic\ngames. It is no longer convenient, or suitable, to\nuse the latest technologies for fighting our wars,\nbecause the latest technologies have rendered\nwar meaningless. The hydrogen bomb is history’s\nexclamation point. It ends an age-long sentence of\nmanifest violence!\n\nsome\nlike\nit\nhot,\n\n138",
+  "ocr_structured": "DISPLAY_TEXT: \nsome like it cold.\nsome like it hot,\n\nBODY_TEXT: \nReal, total war has become information war. It is being fought by subtle electric informational media —under cold conditions, and constantly. The cold war is the real war front—a surround—involving everybody—all the time—everywhere. Whenever hot wars are necessary these days, we conduct them in the backyards of the world with the old technologies. These wars are happenings, tragic games. It is no longer convenient, or suitable, to use the latest technologies for fighting our wars, because the latest technologies have rendered war meaningless. The hydrogen bomb is history’s exclamation point. It ends an age-long sentence of manifest violence!\n\nQUOTATIONS: \nNONE\n\nCAPTIONS: \nLights, camera, no action. Hollywood is host to Premier Khrushchev.\n\nPAGE_NUMBERS: \n138",
+  "ocr_raw_time": 10.4,
+  "ocr_structured_time": 11.8
+}

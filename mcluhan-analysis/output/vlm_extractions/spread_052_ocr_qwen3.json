@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_052",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:45:39",
+  "ocr_raw": "Our official culture is striving to force the new media to do the work of the old. These are difficult times because we are witnessing a clash of cataclysmic proportions between two great technologies. We approach the new with the psychological conditioning and sensory responses of the old. This clash naturally occurs in\ntransitional periods. In late medieval art, for instance, we saw the fear of the new print technology expressed in the theme The Dance of Death. Today, similar fears are expressed in the Theater of the Absurd. Both represent a common failure: the attempt to do a job demanded by the new environment with the tools of the old.",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: Our official culture is striving to force the new media to do the work of the old. These are difficult times because we are witnessing a clash of cataclysmic proportions between two great technologies. We approach the new with the psychological conditioning and sensory responses of the old. This clash naturally occurs in transitional periods. In late medieval art, for instance, we saw the fear of the new print technology expressed in the theme The Dance of Death. Today, similar fears are expressed in the Theater of the Absurd. Both represent a common failure: the attempt to do a job demanded by the new environment with the tools of the old.  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 7.1,
+  "ocr_structured_time": 6.1
+}

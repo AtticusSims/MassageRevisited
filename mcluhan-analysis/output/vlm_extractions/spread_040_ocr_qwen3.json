@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_040",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:41:18",
+  "ocr_raw": "70\n102\n\"It isn't that I don't like current events.\nThere have just been so many of them lately.\"\nPoot Day",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"It isn't that I don't like current events. There have just been so many of them lately.\"  \nCAPTIONS: Poot Day  \nPAGE_NUMBERS: 70",
+  "ocr_raw_time": 7.3,
+  "ocr_structured_time": 10.8
+}

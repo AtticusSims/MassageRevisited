@@ -1,0 +1,91 @@
+{
+  "id": "spread_026",
+  "analysis": {
+    "id": "spread_026",
+    "pdf_page": 26,
+    "book_pages": [
+      42,
+      43
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "\"Now for the evidence,\" said the King, \"and then the sentence.\"\n\"No!\" said the Queen, \"first the sentence, and then the evidence!\"\n\"Nonsense!\" cried Alice, so loudly that everybody jumped, \"the idea of having the sentence first!\"",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [
+      {
+        "text": "\"Now for the evidence,\" said the King, \"and then the sentence.\"\n\"No!\" said the Queen, \"first the sentence, and then the evidence!\"\n\"Nonsense!\" cried Alice, so loudly that everybody jumped, \"the idea of having the sentence first!\"",
+        "attribution": "unattributed",
+        "context": "inline"
+      }
+    ],
+    "images": [
+      {
+        "position": "spanning_spread",
+        "subject": "### Visual Element 1: Profile of a Person (Alice)  \n1. **Depicts**: A side profile of a person with long, wavy hair, facing right. The hair is rendered with fine, detailed lines and subtle shading to convey texture and volume. The face is in profile, showing the side of the head, ear, and neck.  \n2. **Position**: Left side of the spread (left page), positioned to the left of the text block, occupying the left portion of the left page.  \n3. **Visual Style**: Black and white hand-drawn illustration with detailed linework and subtle shading.  \n4. **Composition**: Profile view (side angle). The hair dominates the composition, with lines creating a sense of volume. Contrast is moderate (hair has more shading than the face). Key visual qualities: long hair with intricate line work, profile of the face, and orientation facing right.  \n5. **Page Occupation**: Approximately 30% of the left page.  \n\n\n### Visual Element 2: Illustrated Character (King)  \n1. **Depicts**: A humanoid figure wearing a large, ornate crown with spade patterns (the crown features spade symbols, like those on playing cards), a high ruffled collar, a robe with spade motifs and decorative patterns (including a heart symbol on the chest), holding a small flower in the right hand, and gesturing with the left hand. The figure has exaggerated facial features: large eyes, a mustache, and an open mouth.  \n2. **Position**: Right side of the spread (right page), positioned to the right of the text block, occupying the right portion of the right page.  \n3. **Visual Style**: Black and white hand-drawn illustration with bold outlines and detailed linework for clothing and accessories.  \n4. **Composition**: Frontal perspective but facing left (toward the profile). The crown is large, with spade symbols; the robe has intricate patterns. Angle is a three-quarter view, but the face is frontal. Contrast is high due to black and white, with bold outlines. Key visual qualities: exaggerated facial features, detailed patter",
+        "source_type": "illustration",
+        "source_credit": "uncredited",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe page is **divided vertically**: text occupies the **left half**, while the illustration (a stylized Queen of Hearts figure) dominates the **right half**. The text is left-aligned in a single column, with dialogue bubbles and narrative text stacked vertically. The image is positioned to the right of the text, creating a clear visual hierarchy where text explains the scene and the illustration visually embodies the dialogue. The space is balanced but leans toward the image’s prominence due to its size and detailed linework.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: All visible text is **body text** (narrative/dialogue), with no large display text.  \n- **Font style**: The text uses a **handwritten/script-like serif font** (e.g., cursive or decorative serif), common in illustrated children’s books to evoke whimsy.  \n- **Weight/contrast**: Text is **medium-weight** (not bold or light), with consistent black-on-white contrast.  \n- **Layout**: Text is left-aligned, with line breaks matching the narrative flow (e.g., dialogue tags like *“No!”* are visually distinct).  \n\n\n### 3. CONTRAST & TONE  \n- **Predominant tone**: **Light** (white background) with **high contrast** (black text/illustration).  \n- **Visual impact**: The stark black-and-white palette creates sharp definition, emphasizing the illustration’s details (e.g., the Queen’s ornate crown, floral details) and the text’s readability.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The text block has ample white space around it (e.g., margins, spacing between lines), while the illustration’s right-side placement leaves room for the image to breathe.  \n- **Effect**: White space separates text and image, preventing visual clutter while maintaining a cohesive flow. It feels intentional, not sparse or packed.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Dynamic**: The text and image form a **complementary, unified relationship**. The text *narrates* the scene (e.g., Alice’s protest), whi",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "\"Now for the evidence,\" said the King, \"and then the sentence.\"\n\"No!\" said the Queen, \"first the sentence, and then the evidence!\"\n\"Nonsense!\" cried Alice, so loudly that everybody jumped, \"the idea of having the sentence first!\".",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "perception",
+        "technology_and_body"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "steady",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "\"Now for the evidence,\" said the King, \"and then the sentence.\"\n\"No!\" said the Queen, \"first the sentence, and then the evidence!\"\n\"Nonsense!\" cried Alice, so loudly that everybody jumped, \"the idea of having the sentence first!\"",
+    "ocr_raw_time": 5.8,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"Now for the evidence,\" said the King, \"and then the sentence.\"  \n\"No!\" said the Queen, \"first the sentence, and then the evidence!\"  \n\"Nonsense!\" cried Alice, so loudly that everybody jumped, \"the idea of having the sentence first!\"  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 22.0,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element 1: Profile of a Person (Alice)  \n1. **Depicts**: A side profile of a person with long, wavy hair, facing right. The hair is rendered with fine, detailed lines and subtle shading to convey texture and volume. The face is in profile, showing the side of the head, ear, and neck.  \n2. **Position**: Left side of the spread (left page), positioned to the left of the text block, occupying the left portion of the left page.  \n3. **Visual Style**: Black and white hand-drawn illustration with detailed linework and subtle shading.  \n4. **Composition**: Profile view (side angle). The hair dominates the composition, with lines creating a sense of volume. Contrast is moderate (hair has more shading than the face). Key visual qualities: long hair with intricate line work, profile of the face, and orientation facing right.  \n5. **Page Occupation**: Approximately 30% of the left page.  \n\n\n### Visual Element 2: Illustrated Character (King)  \n1. **Depicts**: A humanoid figure wearing a large, ornate crown with spade patterns (the crown features spade symbols, like those on playing cards), a high ruffled collar, a robe with spade motifs and decorative patterns (including a heart symbol on the chest), holding a small flower in the right hand, and gesturing with the left hand. The figure has exaggerated facial features: large eyes, a mustache, and an open mouth.  \n2. **Position**: Right side of the spread (right page), positioned to the right of the text block, occupying the right portion of the right page.  \n3. **Visual Style**: Black and white hand-drawn illustration with bold outlines and detailed linework for clothing and accessories.  \n4. **Composition**: Frontal perspective but facing left (toward the profile). The crown is large, with spade symbols; the robe has intricate patterns. Angle is a three-quarter view, but the face is frontal. Contrast is high due to black and white, with bold outlines. Key visual qualities: exaggerated facial features, detailed patterns on clothing, flower in hand, and crown with spade designs.  \n5. **Page Occupation**: Approximately 70% of the right page.  \n\n\n### Summary of Visual Elements  \n- **Profile of Alice**: A side-profile illustration of a person with long hair, positioned on the left page.  \n- **King Figure**: A detailed, cartoonish character with spade-themed attire, positioned on the right page.  \n\nNo photographs or additional graphic symbols are present; the spread consists solely of these two hand-drawn illustrations.",
+    "image_description_time": 17.6,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe page is **divided vertically**: text occupies the **left half**, while the illustration (a stylized Queen of Hearts figure) dominates the **right half**. The text is left-aligned in a single column, with dialogue bubbles and narrative text stacked vertically. The image is positioned to the right of the text, creating a clear visual hierarchy where text explains the scene and the illustration visually embodies the dialogue. The space is balanced but leans toward the image’s prominence due to its size and detailed linework.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: All visible text is **body text** (narrative/dialogue), with no large display text.  \n- **Font style**: The text uses a **handwritten/script-like serif font** (e.g., cursive or decorative serif), common in illustrated children’s books to evoke whimsy.  \n- **Weight/contrast**: Text is **medium-weight** (not bold or light), with consistent black-on-white contrast.  \n- **Layout**: Text is left-aligned, with line breaks matching the narrative flow (e.g., dialogue tags like *“No!”* are visually distinct).  \n\n\n### 3. CONTRAST & TONE  \n- **Predominant tone**: **Light** (white background) with **high contrast** (black text/illustration).  \n- **Visual impact**: The stark black-and-white palette creates sharp definition, emphasizing the illustration’s details (e.g., the Queen’s ornate crown, floral details) and the text’s readability.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The text block has ample white space around it (e.g., margins, spacing between lines), while the illustration’s right-side placement leaves room for the image to breathe.  \n- **Effect**: White space separates text and image, preventing visual clutter while maintaining a cohesive flow. It feels intentional, not sparse or packed.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Dynamic**: The text and image form a **complementary, unified relationship**. The text *narrates* the scene (e.g., Alice’s protest), while the illustration *visually embodies* the Queen’s exaggerated reaction.  \n- **Balance**: Neither dominates; text drives the narrative, and the image reinforces it. This mirrors the story’s playful tension (e.g., the King/Queen’s debate over “evidence vs. sentence”).  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Whimsical, chaotic, and energetic**. The hand-drawn style, exaggerated character features (e.g., the Queen’s large head, expressive face), and Alice’s shouted “Nonsense!” evoke the absurdity of *Alice in Wonderland*.  \n- **Tone**: Not calm or minimal—instead, it feels **overwhelmingly lively**, with high contrast and dynamic linework creating a sense of urgency (e.g., Alice’s shout “so loudly that everybody jumped”). This aligns with the story’s surreal, rule-defying logic.",
+    "layout_analysis_time": 9.0,
+    "model": "qwen3-vl"
+  }
+}

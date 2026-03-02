@@ -1,0 +1,86 @@
+{
+  "id": "spread_047",
+  "analysis": {
+    "id": "spread_047",
+    "pdf_page": 47,
+    "book_pages": [
+      84,
+      85
+    ],
+    "section": "body",
+    "spread_type": "text_only",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "Environments are invisible. Their groundrules, pervasive structure, and overall patterns elude easy perception.",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "The book spread image contains **no photographs, illustrations, graphic symbols, or other visual/pictorial elements**. It consists solely of typographic text on a plain white background.  \n\n### Description of Typography as a Visual Element:  \n1. **Scale**: The text is set in a standard book type size (approximately 10–12 points), typical for printed book text, ensuring readability at typical reading distances.  \n2. **Weight**: The font weight is regular (normal), not bold or light, prioritizing legibility over stylistic emphasis.  \n3. **Color**: Black text on a white background creates high contrast, optimizing visual clarity for printed material.  \n4. **Position**: The text is positioned at the top of the page, left-aligned (a common layout choice for book spreads), with the text block spanning the full width of the page (not centered).  \n5. **Letterforms as Visual Design**: The typeface appears to be a serif font (common in book typography), with clear, legible letterforms designed for comfortable reading. Spacing (kerning and leading) follows standard book design conventions, ensuring a smooth reading flow. The text is presented as a single paragraph with punctuation and sentence structure typical of prose, emphasizing the textual content without additional visual embellishment.  \n\nIn summary, the spread relies entirely on typographic design as its visual element, with no illustrative or photographic components.",
+        "source_type": "illustration",
+        "source_credit": "uncredited",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe text is **centered at the top** of the page, occupying a narrow horizontal band. There are **no images**—the spread is purely text-based. The space is divided into two distinct zones: the upper third (occupied by text) and the lower two-thirds (dominated by empty white space). The layout is starkly minimal, with text positioned to create a sense of visual weightlessness, leaving the majority of the page unoccupied.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Only **body text** is visible (no display text, headlines, or captions).  \n- **Font style**: Appears to be a **serif font** (e.g., Times New Roman or similar), though the low resolution makes precise identification difficult.  \n- **Weight/Style**: **Normal weight** (not bold or light), with standard typographic hierarchy.  \n- **Color/Contrast**: **Black text on white background** (standard, non-reversed contrast).  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly light** (white background dominates).  \n- **Contrast**: **High contrast** (black text against white background creates sharp visual separation).  \n\n\n### 4. WHITE SPACE  \nThe spread features **dense white space**—the majority of the page is empty, with text confined to a small, top-centered area. This creates a sense of openness and minimalism, emphasizing the text’s isolation.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \nSince the spread contains **only text** (no images, columns, or asymmetrical elements), the left-right relationship is **unified**. The centered text acts as a single focal point, with no visual tension or opposition between left and right sides.  \n\n\n### 6. OVERALL FEEL  \nThe spread evokes a **calm, minimalist, and contemplative mood**. The sparse text, high-contrast black-on-white palette, and abundant white space create a serene, uncluttered atmosphere—ideal for reflecting on the text’s philosophical content (e.g., the idea of “invisible environments”). It feels **restrained, thoughtful, and understated**,",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "contrast"
+    },
+    "rhetoric": {
+      "argument": "Environments are invisible.",
+      "rhetorical_strategy": "Discursive prose — the argument unfolds through sustained written exposition.",
+      "design_enacts_argument": false,
+      "design_argument_description": "",
+      "reader_experience": "Brief encounter — the reader absorbs the spread quickly before moving forward.",
+      "mcluhan_concepts": [
+        "pattern_recognition",
+        "environment"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "media_as_environment",
+        "perception"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "steady",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "Environments are invisible. Their groundrules, pervasive structure, and overall patterns elude easy perception.",
+    "ocr_raw_time": 5.6,
+    "ocr_structured": "DISPLAY_TEXT: NONE\nBODY_TEXT: Environments are invisible. Their groundrules, pervasive structure, and overall patterns elude easy perception.\nQUOTATIONS: NONE\nCAPTIONS: NONE\nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 3.3,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "The book spread image contains **no photographs, illustrations, graphic symbols, or other visual/pictorial elements**. It consists solely of typographic text on a plain white background.  \n\n### Description of Typography as a Visual Element:  \n1. **Scale**: The text is set in a standard book type size (approximately 10–12 points), typical for printed book text, ensuring readability at typical reading distances.  \n2. **Weight**: The font weight is regular (normal), not bold or light, prioritizing legibility over stylistic emphasis.  \n3. **Color**: Black text on a white background creates high contrast, optimizing visual clarity for printed material.  \n4. **Position**: The text is positioned at the top of the page, left-aligned (a common layout choice for book spreads), with the text block spanning the full width of the page (not centered).  \n5. **Letterforms as Visual Design**: The typeface appears to be a serif font (common in book typography), with clear, legible letterforms designed for comfortable reading. Spacing (kerning and leading) follows standard book design conventions, ensuring a smooth reading flow. The text is presented as a single paragraph with punctuation and sentence structure typical of prose, emphasizing the textual content without additional visual embellishment.  \n\nIn summary, the spread relies entirely on typographic design as its visual element, with no illustrative or photographic components.",
+    "image_description_time": 8.3,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe text is **centered at the top** of the page, occupying a narrow horizontal band. There are **no images**—the spread is purely text-based. The space is divided into two distinct zones: the upper third (occupied by text) and the lower two-thirds (dominated by empty white space). The layout is starkly minimal, with text positioned to create a sense of visual weightlessness, leaving the majority of the page unoccupied.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Only **body text** is visible (no display text, headlines, or captions).  \n- **Font style**: Appears to be a **serif font** (e.g., Times New Roman or similar), though the low resolution makes precise identification difficult.  \n- **Weight/Style**: **Normal weight** (not bold or light), with standard typographic hierarchy.  \n- **Color/Contrast**: **Black text on white background** (standard, non-reversed contrast).  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly light** (white background dominates).  \n- **Contrast**: **High contrast** (black text against white background creates sharp visual separation).  \n\n\n### 4. WHITE SPACE  \nThe spread features **dense white space**—the majority of the page is empty, with text confined to a small, top-centered area. This creates a sense of openness and minimalism, emphasizing the text’s isolation.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \nSince the spread contains **only text** (no images, columns, or asymmetrical elements), the left-right relationship is **unified**. The centered text acts as a single focal point, with no visual tension or opposition between left and right sides.  \n\n\n### 6. OVERALL FEEL  \nThe spread evokes a **calm, minimalist, and contemplative mood**. The sparse text, high-contrast black-on-white palette, and abundant white space create a serene, uncluttered atmosphere—ideal for reflecting on the text’s philosophical content (e.g., the idea of “invisible environments”). It feels **restrained, thoughtful, and understated**, avoiding aggression or chaos.",
+    "layout_analysis_time": 6.7,
+    "model": "qwen3-vl"
+  }
+}

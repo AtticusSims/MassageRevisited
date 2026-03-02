@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_044",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:42:38",
+  "ocr_raw": "The stars are so big,\nThe Earth is so small,\nStay as you are.\nLOVE\nthe results are startling and effective. The peren-\nnial quest for involvement, fill-in, takes many forms.",
+  "ocr_structured": "DISPLAY_TEXT: LOVE\nThe stars are so big,\nThe Earth is so small,\nStay as you are.\n\nBODY_TEXT: the results are startling and effective. The peren-\nnial quest for involvement, fill-in, takes many forms.\n\nQUOTATIONS: NONE\n\nCAPTIONS: NONE\n\nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 21.4,
+  "ocr_structured_time": 18.6
+}

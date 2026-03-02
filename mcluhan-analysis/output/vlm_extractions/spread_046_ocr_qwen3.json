@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_046",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:42:55",
+  "ocr_raw": "enviro",
+  "ocr_structured": "DISPLAY_TEXT: enviro\nBODY_TEXT: NONE\nQUOTATIONS: NONE\nCAPTIONS: NONE\nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 3.3,
+  "ocr_structured_time": 2.9
+}

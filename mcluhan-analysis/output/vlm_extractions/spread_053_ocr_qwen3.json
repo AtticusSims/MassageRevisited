@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_053",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:45:47",
+  "ocr_raw": "\"The thing of it is, we must live with the living.\" —Montaigne",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"The thing of it is, we must live with the living.\" —Montaigne  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 3.9,
+  "ocr_structured_time": 3.7
+}

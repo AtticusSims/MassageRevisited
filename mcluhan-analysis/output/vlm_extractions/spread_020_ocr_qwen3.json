@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_020",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:28:21",
+  "ocr_raw": "The wheel",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: The wheel  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 3.2,
+  "ocr_structured_time": 3.8
+}

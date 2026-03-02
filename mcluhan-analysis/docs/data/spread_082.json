@@ -1,0 +1,92 @@
+{
+  "id": "spread_082",
+  "analysis": {
+    "id": "spread_082",
+    "pdf_page": 82,
+    "book_pages": [
+      154,
+      155
+    ],
+    "section": "body",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": [
+        "154"
+      ]
+    },
+    "quotations": [
+      {
+        "text": "\"I—I hardly know, sir, just at present—at least I know who I was when I got up this morning, but I think I must have been changed several times since then.\"",
+        "attribution": "unattributed",
+        "context": "inline"
+      }
+    ],
+    "images": [
+      {
+        "position": "spanning_spread",
+        "subject": "### 1. **What does it depict?**  \nThe image depicts a dense, stylized crowd of **20+ human figures** (all male, based on attire and hair) rendered as simple line drawings. Each figure has a **number inside their head** (e.g., 5, 7, 8, 11, 12, 13, 15, 18, 19, 20, 21, 22, 23, 24, 26, 28, 29, 30, 35, 36, 37, 38, 39, 40, 45, 48, 49). All figures wear suits (some with ties), and their heads are uniformly shaped with minimal facial detail (no eyes, noses, or mouths). The figures are tightly packed, creating a chaotic, overlapping group. There are no additional objects, scenes, or events beyond the crowd.  \n\n\n### 2. **Position on the page**  \nThe illustration is on the **right page** of the spread (the left page contains text). It spans the **entire right page**, from top to bottom and left to right, with no inset or partial bleed. The page number “154” appears at the top center of the page (above the illustration), but this is typography, not part of the visual element.  \n\n\n### 3. **Visual style**  \nIt is a **black-and-white line illustration** with a minimalist, graphic style. The artwork uses **thin, clean outlines** to define figures and numbers, with no shading, gradients, or color. The style is reminiscent of comic book or graphic novel art, emphasizing simplicity and clarity over realism.  \n\n\n### 4. **Composition**  \n- **Framing**: The illustration is unframed, filling the entire right page.  \n- **Angle**: Figures are depicted from a **frontal perspective**, facing the viewer directly.  \n- **Contrast**: High contrast between **black ink lines** and the **white background**. The numbers (bold, black text) are centrally placed in each head, creating a strong focal point for each figure.  \n- **Key visual qualities**:  \n  - **Density**: Figures are tightly clustered, with little negative space between them.  \n  - **Uniformity**: All figures wear suits (some with ties), but subtle variations exist (e.g., hair shape, tie patterns).  \n  - **Hierarchy**: Numbers dominate th",
+        "source_type": "illustration",
+        "source_credit": "uncredited",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe page is **clearly divided into two vertical sections**:  \n- **Text** occupies the **left third** of the page, presented as a single paragraph (left-aligned, with no additional margins).  \n- **Image** dominates the **right two-thirds**, featuring a dense cluster of numbered human figures.  \nThe layout is **balanced but asymmetric**: text is confined to the left, while the illustration sprawls across the right, creating a visual “weight” shift toward the image. The space is split into distinct zones (text vs. image) with no overlapping elements, emphasizing a **text-image dichotomy**.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Only **body text** is visible (the quoted narrative). There is no display text (e.g., headlines, titles).  \n- **Font style**: Serif (e.g., Times New Roman or similar traditional book fonts), with **standard weight** (neither bold nor light).  \n- **Contrast**: Black text on white background (normal contrast, not reversed).  \n- **Size**: Small body text (typical for book paragraphs), with no emphasis on size variation.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: Predominantly **light** (white background), with **high contrast** between black text/illustration and white space.  \n- **Visual contrast**: Extreme (black-on-white), making text and figures sharply defined. The tone is **neutral** (no emotional warmth or darkness), but the high contrast creates visual intensity.  \n\n\n### 4. WHITE SPACE  \n- **Overall**: **Moderate** white space.  \n  - Left side: Sufficient space around the text block (but no large margins).  \n  - Right side: The illustration is **dense** (minimal internal white space), but the page’s right edge has a small margin.  \n- **Key observation**: White space is **not sparse** (text has room) but **not dense** (illustration is packed). The balance leans toward the image’s density, with text having “breathing room.”  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Contrast**: The left (text) and right (image) **mi",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "Visual/typographic spread — argument conveyed through imagery and design rather than prose.",
+      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
+      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "visual_rhetoric"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "illustrates",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "",
+    "ocr_raw_time": 23.1,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"I—I hardly know, sir, just at present—at least I know who I was when I got up this morning, but I think I must have been changed several times since then.\"  \nCAPTIONS: NONE  \nPAGE_NUMBERS: 154",
+    "ocr_structured_time": 7.3,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### 1. **What does it depict?**  \nThe image depicts a dense, stylized crowd of **20+ human figures** (all male, based on attire and hair) rendered as simple line drawings. Each figure has a **number inside their head** (e.g., 5, 7, 8, 11, 12, 13, 15, 18, 19, 20, 21, 22, 23, 24, 26, 28, 29, 30, 35, 36, 37, 38, 39, 40, 45, 48, 49). All figures wear suits (some with ties), and their heads are uniformly shaped with minimal facial detail (no eyes, noses, or mouths). The figures are tightly packed, creating a chaotic, overlapping group. There are no additional objects, scenes, or events beyond the crowd.  \n\n\n### 2. **Position on the page**  \nThe illustration is on the **right page** of the spread (the left page contains text). It spans the **entire right page**, from top to bottom and left to right, with no inset or partial bleed. The page number “154” appears at the top center of the page (above the illustration), but this is typography, not part of the visual element.  \n\n\n### 3. **Visual style**  \nIt is a **black-and-white line illustration** with a minimalist, graphic style. The artwork uses **thin, clean outlines** to define figures and numbers, with no shading, gradients, or color. The style is reminiscent of comic book or graphic novel art, emphasizing simplicity and clarity over realism.  \n\n\n### 4. **Composition**  \n- **Framing**: The illustration is unframed, filling the entire right page.  \n- **Angle**: Figures are depicted from a **frontal perspective**, facing the viewer directly.  \n- **Contrast**: High contrast between **black ink lines** and the **white background**. The numbers (bold, black text) are centrally placed in each head, creating a strong focal point for each figure.  \n- **Key visual qualities**:  \n  - **Density**: Figures are tightly clustered, with little negative space between them.  \n  - **Uniformity**: All figures wear suits (some with ties), but subtle variations exist (e.g., hair shape, tie patterns).  \n  - **Hierarchy**: Numbers dominate the visual hierarchy, as they are large, bold, and centered in each head.  \n  - **Movement**: The overlapping arrangement suggests a sense of motion or crowding, though the figures themselves are static.  \n\n\n### 5. **Approximate page occupation**  \nThe illustration occupies **nearly 100% of the right page’s visual space**. The text on the left page is separate and does not overlap with the illustration. The illustration is the sole dominant visual element on the right page.",
+    "image_description_time": 8.5,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe page is **clearly divided into two vertical sections**:  \n- **Text** occupies the **left third** of the page, presented as a single paragraph (left-aligned, with no additional margins).  \n- **Image** dominates the **right two-thirds**, featuring a dense cluster of numbered human figures.  \nThe layout is **balanced but asymmetric**: text is confined to the left, while the illustration sprawls across the right, creating a visual “weight” shift toward the image. The space is split into distinct zones (text vs. image) with no overlapping elements, emphasizing a **text-image dichotomy**.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Only **body text** is visible (the quoted narrative). There is no display text (e.g., headlines, titles).  \n- **Font style**: Serif (e.g., Times New Roman or similar traditional book fonts), with **standard weight** (neither bold nor light).  \n- **Contrast**: Black text on white background (normal contrast, not reversed).  \n- **Size**: Small body text (typical for book paragraphs), with no emphasis on size variation.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: Predominantly **light** (white background), with **high contrast** between black text/illustration and white space.  \n- **Visual contrast**: Extreme (black-on-white), making text and figures sharply defined. The tone is **neutral** (no emotional warmth or darkness), but the high contrast creates visual intensity.  \n\n\n### 4. WHITE SPACE  \n- **Overall**: **Moderate** white space.  \n  - Left side: Sufficient space around the text block (but no large margins).  \n  - Right side: The illustration is **dense** (minimal internal white space), but the page’s right edge has a small margin.  \n- **Key observation**: White space is **not sparse** (text has room) but **not dense** (illustration is packed). The balance leans toward the image’s density, with text having “breathing room.”  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Contrast**: The left (text) and right (image) **mirror each other thematically but not visually**.  \n  - Text: A **narrative quote** (confessional, disorienting: *“I think I must have been changed several times since then”*).  \n  - Image: A **crowded, numbered group** (suggesting identity confusion or anonymity).  \n- **Dynamic**: The text *explains* the image’s meaning, while the image *visually embodies* the quote’s theme. They are **complementary but distinct**—text is verbal, image is visual—creating a **contrast-driven relationship** (narrative vs. visual, word vs. form).  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Chaotic and overwhelming**.  \n  - The dense cluster of numbered figures (no clear focal point) creates visual clutter.  \n  - The quote’s content (*“changed several times”*) pairs with the image to evoke **disorientation** (e.g., identity loss, existential confusion).  \n- **Tone**: Not calm or minimal—**aggressive in its density** (too many figures, no negative space to calm the eye). The black-and-white starkness amplifies the sense of unease.  \n\n---  \n*Summary*: This spread uses a **text-image split** to juxtapose narrative and visual chaos. High contrast, moderate white space, and a dense illustration create a **disorienting, overwhelming mood** that mirrors the quote’s theme of identity fragmentation.",
+    "layout_analysis_time": 9.8,
+    "model": "qwen3-vl"
+  }
+}

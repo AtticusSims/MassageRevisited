@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_076",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:59:20",
+  "ocr_raw": "142\nThe environment as a processor of information is propaganda. Propaganda ends where dialogue begins. You must talk to the media, not to the programmer. To talk to the programmer is like complaining to a hot dog vendor at a ballpark about how badly your favorite team is playing.\nDICK AND JAR\n\"See Dick. See Dick protest. Protest, Dick! Protest!\"\nMatt Geer\n\"The west shall shake the east awake... while ye have the night for morn...\" -James Joyce",
+  "ocr_structured": "DISPLAY_TEXT: \"The west shall shake the east awake... while ye have the night for morn...\"  \n\nBODY_TEXT: The environment as a processor of information is propaganda. Propaganda ends where dialogue begins. You must talk to the media, not to the programmer. To talk to the programmer is like complaining to a hot dog vendor at a ballpark about how badly your favorite team is playing.  \n\nQUOTATIONS: \"The west shall shake the east awake... while ye have the night for morn...\" -James Joyce  \n\nCAPTIONS: \" 'See Dick. See Dick protest. Protest, Dick! Protest!'\"  \n\nPAGE_NUMBERS: 142",
+  "ocr_raw_time": 15.8,
+  "ocr_structured_time": 8.0
+}

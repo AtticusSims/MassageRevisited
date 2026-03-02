@@ -1,0 +1,88 @@
+{
+  "id": "spread_060",
+  "analysis": {
+    "id": "spread_060",
+    "pdf_page": 60,
+    "book_pages": [
+      110,
+      111
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "The ear favors no particular \"point of view.\" We are enveloped by sound. It forms a seamless web around us. We say, \"Music shall fill the air.\" We never say, \"Music shall fill a particular segment of the air.\"\n\nWe hear sounds from everywhere, without ever having to focus. Sounds come from \"above,\" from \"below,\" from \"in \"front\" of us, from \"behind\" us, from our \"right,\" from our \"left.\" We can't shut out sound automatically. We simply are not equipped with earlids. Where a visual space is an organized continuum of a uniformed connected kind, the ear world is a world of simultaneous relationships.",
+      "display_text": "BANG!",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### Visual Element 1: Comic-Style \"BANG\" Illustration (Left Page)  \n\n1. **What it depicts**:  \n   A stylized comic book sound effect graphic. It features the word **\"BANG\"** in large, bold, blocky letterforms with a 3D effect (shading to create depth). Surrounding the text are sharp, angular lines radiating outward (resembling spikes or rays) and halftone dots (small circular dots) in varying densities to create shading and texture. The design visually represents a loud noise or explosion.  \n\n2. **Position**:  \n   Occupies the **entire left page**, spanning from top to bottom and left to right (full bleed on the left page). It is centered on the left page, with no inset or partial coverage.  \n\n3. **Visual style**:  \n   Black and white **illustration** in the style of classic comic book art (e.g., mid-20th century American comics).  \n\n4. **Composition**:  \n   - **Framing**: The \"BANG\" text is the central focal point, with radiating lines and halftone dots extending outward to frame the word.  \n   - **Angle**: The radiating lines emanate from the text in all directions (top, bottom, left, right), creating a dynamic, explosive feel.  \n   - **Contrast**: High contrast (solid black lines and halftone dots against a white background) emphasizes the graphic’s energy.  \n   - **Key visual qualities**: Bold typography, sharp angular lines, halftone shading (varying dot density for depth), and a sense of motion/explosion.  \n\n5. **Page occupation**:  \n   Approximately **90–95%** of the left page’s area (dominating the entire left side).  \n\n\n### Additional Notes on the Spread  \n- The **right page** contains only text (no photographs, illustrations, or graphic symbols).  \n- **No other visual elements** exist in the spread (e.g., no inset images, logos, or decorative borders beyond the \"BANG\" illustration).",
+        "source_type": "illustration",
+        "source_credit": "uncredited",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two distinct zones:  \n- **Left side**: Dominated by a large, dynamic comic-style graphic of the word *“BANG!”* with radiating black-and-white halftone lines and dots. This visual element occupies the majority of the left half, creating a bold, explosive focal point.  \n- **Right side**: Contains a column of body text, aligned to the right edge. The text is positioned to contrast with the graphic, with ample white space separating it from the image.  \nThe space is split into a **visual (image) left** and **textual (body text) right**, with the graphic’s energy visually “spilling” toward the text, creating a cohesive narrative flow.  \n\n\n### 2. TYPOGRAPHY  \n- **Display text**: The word *“BANG!”* is rendered in **large, bold, uppercase sans-serif lettering** (typical of comic book “impact” fonts). It dominates the left side with high visual weight.  \n- **Body text**: Smaller, **serif typeface** (e.g., Times New Roman) in regular weight. It is black on white, with standard line spacing and paragraph structure.  \n- **Hierarchy**: The display text (*“BANG!”*) is clearly prioritized for immediate visual impact, while the body text provides explanatory context. No reversed (white-on-black) text is used.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The graphic uses stark black-and-white halftone patterns (dots and sharp lines) against a white background, while the body text is black on white.  \n- **Tone**: **Stark and bold**. The black-and-white palette, combined with the explosive graphic, creates a visually aggressive and unambiguous tone. The halftone dots add texture without reducing contrast.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The spread has sufficient white space to separate the graphic and text, but it is not sparse or dense.  \n  - The graphic itself contains internal white space (e.g., the white areas within the “BANG!” explosion), while the text colum",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": "Large display typography",
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "BANG! The ear favors no particular \"point of view.\" We are enveloped by sound. It forms a seamless web around us. We say, \"Music shall fill the air.\" We never say, \"Music shall fill a particular segme...",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
+      "mcluhan_concepts": [
+        "visual_space"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "fragmentation_vs_unification",
+        "perception",
+        "space_and_time",
+        "art_and_creativity",
+        "automation"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "steady",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "BANG!\n\nThe ear favors no particular \"point of view.\" We are enveloped by sound. It forms a seamless web around us. We say, \"Music shall fill the air.\" We never say, \"Music shall fill a particular segment of the air.\"\n\nWe hear sounds from everywhere, without ever having to focus. Sounds come from \"above,\" from \"below,\" from in \"front\" of us, from \"behind\" us, from our \"right,\" from our \"left.\" We can't shut out sound automatically. We simply are not equipped with earlids. Where a visual space is an organized continuum of a uniformed connected kind, the ear world is a world of simultaneous relationships.",
+    "ocr_raw_time": 13.3,
+    "ocr_structured": "DISPLAY_TEXT: BANG!\n\nBODY_TEXT: The ear favors no particular \"point of view.\" We are enveloped by sound. It forms a seamless web around us. We say, \"Music shall fill the air.\" We never say, \"Music shall fill a particular segment of the air.\"\n\nWe hear sounds from everywhere, without ever having to focus. Sounds come from \"above,\" from \"below,\" from \"in \"front\" of us, from \"behind\" us, from our \"right,\" from our \"left.\" We can't shut out sound automatically. We simply are not equipped with earlids. Where a visual space is an organized continuum of a uniformed connected kind, the ear world is a world of simultaneous relationships.\n\nQUOTATIONS: NONE\n\nCAPTIONS: NONE\n\nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 9.5,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element 1: Comic-Style \"BANG\" Illustration (Left Page)  \n\n1. **What it depicts**:  \n   A stylized comic book sound effect graphic. It features the word **\"BANG\"** in large, bold, blocky letterforms with a 3D effect (shading to create depth). Surrounding the text are sharp, angular lines radiating outward (resembling spikes or rays) and halftone dots (small circular dots) in varying densities to create shading and texture. The design visually represents a loud noise or explosion.  \n\n2. **Position**:  \n   Occupies the **entire left page**, spanning from top to bottom and left to right (full bleed on the left page). It is centered on the left page, with no inset or partial coverage.  \n\n3. **Visual style**:  \n   Black and white **illustration** in the style of classic comic book art (e.g., mid-20th century American comics).  \n\n4. **Composition**:  \n   - **Framing**: The \"BANG\" text is the central focal point, with radiating lines and halftone dots extending outward to frame the word.  \n   - **Angle**: The radiating lines emanate from the text in all directions (top, bottom, left, right), creating a dynamic, explosive feel.  \n   - **Contrast**: High contrast (solid black lines and halftone dots against a white background) emphasizes the graphic’s energy.  \n   - **Key visual qualities**: Bold typography, sharp angular lines, halftone shading (varying dot density for depth), and a sense of motion/explosion.  \n\n5. **Page occupation**:  \n   Approximately **90–95%** of the left page’s area (dominating the entire left side).  \n\n\n### Additional Notes on the Spread  \n- The **right page** contains only text (no photographs, illustrations, or graphic symbols).  \n- **No other visual elements** exist in the spread (e.g., no inset images, logos, or decorative borders beyond the \"BANG\" illustration).",
+    "image_description_time": 8.1,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two distinct zones:  \n- **Left side**: Dominated by a large, dynamic comic-style graphic of the word *“BANG!”* with radiating black-and-white halftone lines and dots. This visual element occupies the majority of the left half, creating a bold, explosive focal point.  \n- **Right side**: Contains a column of body text, aligned to the right edge. The text is positioned to contrast with the graphic, with ample white space separating it from the image.  \nThe space is split into a **visual (image) left** and **textual (body text) right**, with the graphic’s energy visually “spilling” toward the text, creating a cohesive narrative flow.  \n\n\n### 2. TYPOGRAPHY  \n- **Display text**: The word *“BANG!”* is rendered in **large, bold, uppercase sans-serif lettering** (typical of comic book “impact” fonts). It dominates the left side with high visual weight.  \n- **Body text**: Smaller, **serif typeface** (e.g., Times New Roman) in regular weight. It is black on white, with standard line spacing and paragraph structure.  \n- **Hierarchy**: The display text (*“BANG!”*) is clearly prioritized for immediate visual impact, while the body text provides explanatory context. No reversed (white-on-black) text is used.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The graphic uses stark black-and-white halftone patterns (dots and sharp lines) against a white background, while the body text is black on white.  \n- **Tone**: **Stark and bold**. The black-and-white palette, combined with the explosive graphic, creates a visually aggressive and unambiguous tone. The halftone dots add texture without reducing contrast.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The spread has sufficient white space to separate the graphic and text, but it is not sparse or dense.  \n  - The graphic itself contains internal white space (e.g., the white areas within the “BANG!” explosion), while the text column has white space to its right and top/bottom.  \n  - This balance prevents visual clutter while maintaining focus on the graphic and text.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Continuation**. The left-side graphic (*“BANG!”*) visually embodies the auditory theme described in the right-side text (e.g., “sound envelops us,” “simultaneous relationships”).  \n- **Dynamic**: The graphic’s energy *extends* toward the text, creating a seamless link between the visual metaphor and the written explanation. The layout is not mirrored (left/right symmetry) but rather **complementary**—image and text work together to reinforce the theme of sound’s omnipresence.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Aggressive, chaotic, and overwhelming**.  \n  - The *“BANG!”* graphic is inherently explosive (sharp lines, radiating energy), while the text’s content (“sound envelops us,” “simultaneous relationships”) reinforces a sense of sensory immersion.  \n  - High contrast, bold typography, and the graphic’s chaotic composition create a **visually intense** experience that mirrors the “shock” of sound described in the text.  \n  - This is **not calm or minimal**—it is deliberately overwhelming, matching the book’s exploration of sound as a pervasive, uncontainable force.",
+    "layout_analysis_time": 11.2,
+    "model": "qwen3-vl"
+  }
+}

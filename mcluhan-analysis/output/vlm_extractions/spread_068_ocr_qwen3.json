@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_068",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:56:02",
+  "ocr_raw": "The television generation is a grim bunch. It is much more serious than children of any other period —when they were frivolous, more whimsical. The television child is more earnest, more dedicated.\nMost often the few seconds sandwiched between the hours of viewing—the \"commercials\"—reflect a truer understanding of the medium. There simply is no time for the narrative form, borrowed from earlier print technology. The story line must be abandoned. Up until very recently, television commercials were regarded as simply a bastard form, or vulgar folk art. They are influencing contemporary literature. Vide \"In Cold Blood,\" for instance.",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: The television generation is a grim bunch. It is much more serious than children of any other period —when they were frivolous, more whimsical. The television child is more earnest, more dedicated. Most often the few seconds sandwiched between the hours of viewing—the \"commercials\"—reflect a truer understanding of the medium. There simply is no time for the narrative form, borrowed from earlier print technology. The story line must be abandoned. Up until very recently, television commercials were regarded as simply a bastard form, or vulgar folk art. They are influencing contemporary literature. Vide \"In Cold Blood,\" for instance.  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 5.9,
+  "ocr_structured_time": 12.7
+}

@@ -1,0 +1,90 @@
+{
+  "id": "spread_028",
+  "analysis": {
+    "id": "spread_028",
+    "pdf_page": 28,
+    "book_pages": [
+      46,
+      47
+    ],
+    "section": "body",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "",
+      "display_text": "AS, GO",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [
+      {
+        "text": "...\"as we begin, so shall we go\"",
+        "attribution": "unattributed",
+        "context": "inline"
+      }
+    ],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### 1. **Photograph (Primary Visual Element)**  \n- **What it depicts**: A black-and-white photograph of numerous military aircraft (likely bombers) arranged in tight rows on an airfield or industrial airbase. Visible details include:  \n  - Multiple aircraft with distinct fuselages, wings, cockpits, and tail sections.  \n  - Ladders leading to the aircraft’s cockpits.  \n  - Large, curved hangar-like structures in the background (suggesting an airfield or aircraft manufacturing facility).  \n  - Irregular black splatter marks or damage across the image (appearing as intentional graphic elements or signs of aging/photographic wear).  \n  - Industrial equipment and vehicles in the background, partially obscured by the aircraft.  \n\n- **Position on the page**: Full-bleed, spanning the entire page (occupying the main visual space of the spread).  \n\n- **Visual style**: Black-and-white historical photograph with visible grain, texture, and signs of aging (e.g., faded areas, scratches). The splatter marks are integrated into the photograph as part of its visual composition.  \n\n- **Composition**:  \n  - **Framing**: Wide-angle, high-angle perspective (looking down on the aircraft).  \n  - **Angle**: Elevated viewpoint, emphasizing the orderly rows of planes and the scale of the airfield.  \n  - **Contrast**: High contrast between light (aircraft surfaces, sky) and dark (shadows, hangar structures, splatter marks).  \n  - **Key visual qualities**: Repetitive geometric patterns of aircraft fuselages, layered depth from foreground to background, and chaotic texture from the splatter marks. The photograph’s grain and wear add a gritty, historical feel.  \n\n- **Page occupation**: Approximately 95–100% of the page (the photograph dominates the spread, with only a narrow strip of text at the bottom excluded per instructions).  \n\n\n### 2. **Graphic Elements Within the Photograph**  \n- **Splatter marks**: Irregular black shapes scattered across the photograph (e.g., near the top-right, center, ",
+        "source_type": "graphic",
+        "source_credit": "General Dynamics, Convair Div.",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **dominated by a large black-and-white photograph** occupying the top 80–90% of the space, depicting a dense array of military aircraft (likely bombers) in a hangar or airfield setting. The **text** (“...‘as we begin, so shall we go’”) is positioned as a **horizontal band at the bottom**, spanning the full width of the spread. The space is divided into two distinct zones:  \n- **Visual (image)**: The photograph fills most of the frame, with aircraft arranged in tight rows (left-to-right flow).  \n- **Textual (quote)**: A solid black strip at the bottom, anchoring the visual narrative.  \nThis division creates a clear hierarchy: the image commands attention, while the text serves as a thematic anchor.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Only one visible text element—the quote at the bottom.  \n- **Size/weight**: The quote is **large display text** (prominent, designed to be read easily). It appears **bold** (for emphasis) and uses a **sans-serif font** (clean, modern, and legible).  \n- **Color/contrast**: The text is **white on black** (reversed), creating high contrast against the dark background of the text strip. There is no small body text or serif font present.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** dominates the spread. The photograph features stark black-and-white tonal shifts (e.g., shadows on aircraft, bright highlights on metal surfaces), while the text strip uses extreme contrast (white text on black).  \n- **Tone**: The overall tone is **stark, serious, and historical**—evoking a wartime or industrial context. The high contrast amplifies a sense of urgency or gravity.  \n\n\n### 4. WHITE SPACE  \n- **Empty space**: **Minimal to none**. The photograph is densely packed with aircraft (no large gaps), and the text strip is a solid black band with no negative space. The spread feels **packed**—every inch is occupied by visual or textual elements.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- The layout f",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": "Large display typography",
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "Brief textual element: 'AS, GO'",
+      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
+      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "visual_rhetoric"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "punctuates",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "...“as we begin, so shall we go”",
+    "ocr_raw_time": 3.5,
+    "ocr_structured": "DISPLAY_TEXT: AS, GO  \nBODY_TEXT: NONE  \nQUOTATIONS: ...\"as we begin, so shall we go\"  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 21.9,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### 1. **Photograph (Primary Visual Element)**  \n- **What it depicts**: A black-and-white photograph of numerous military aircraft (likely bombers) arranged in tight rows on an airfield or industrial airbase. Visible details include:  \n  - Multiple aircraft with distinct fuselages, wings, cockpits, and tail sections.  \n  - Ladders leading to the aircraft’s cockpits.  \n  - Large, curved hangar-like structures in the background (suggesting an airfield or aircraft manufacturing facility).  \n  - Irregular black splatter marks or damage across the image (appearing as intentional graphic elements or signs of aging/photographic wear).  \n  - Industrial equipment and vehicles in the background, partially obscured by the aircraft.  \n\n- **Position on the page**: Full-bleed, spanning the entire page (occupying the main visual space of the spread).  \n\n- **Visual style**: Black-and-white historical photograph with visible grain, texture, and signs of aging (e.g., faded areas, scratches). The splatter marks are integrated into the photograph as part of its visual composition.  \n\n- **Composition**:  \n  - **Framing**: Wide-angle, high-angle perspective (looking down on the aircraft).  \n  - **Angle**: Elevated viewpoint, emphasizing the orderly rows of planes and the scale of the airfield.  \n  - **Contrast**: High contrast between light (aircraft surfaces, sky) and dark (shadows, hangar structures, splatter marks).  \n  - **Key visual qualities**: Repetitive geometric patterns of aircraft fuselages, layered depth from foreground to background, and chaotic texture from the splatter marks. The photograph’s grain and wear add a gritty, historical feel.  \n\n- **Page occupation**: Approximately 95–100% of the page (the photograph dominates the spread, with only a narrow strip of text at the bottom excluded per instructions).  \n\n\n### 2. **Graphic Elements Within the Photograph**  \n- **Splatter marks**: Irregular black shapes scattered across the photograph (e.g., near the top-right, center, and bottom-left). These appear as intentional graphic elements or artifacts of the photograph’s age, adding a fragmented, almost abstract layer to the historical imagery.  \n- **Textural details**: Visible grain, scratches, and faded areas in the photograph, contributing to its vintage aesthetic. These elements emphasize the photograph’s historical context (likely from a wartime or early-mid-20th-century setting).  \n\n\n### 3. **Background Structures**  \n- **Hangar-like structures**: Large, curved industrial buildings in the background, partially obscured by the aircraft. These structures have a smooth, rounded shape and are rendered in grayscale, blending with the aircraft’s silhouettes.  \n- **Industrial equipment**: Vehicles, scaffolding, and other machinery visible in the background, reinforcing the airfield’s functional, operational context.  \n\n\n### 4. **Aircraft Details**  \n- **Fuselages**: Smooth, rounded shapes with visible panel lines and markings (e.g., small insignias or identification numbers).  \n- **Wings and tails**: Distinctive shapes with visible structural details (e.g., wing flaps, tail fins).  \n- **Cockpits**: Small, enclosed sections with visible windows and ladders leading to them.  \n- **Ladders**: Metal structures attached to the aircraft, used for access to cockpits.  \n\n\n### 5. **Overall Visual Impact**  \nThe photograph’s composition balances order (repetitive rows of aircraft) with chaos (splatter marks, grain), creating a dynamic tension between industrial precision and historical imperfection. The high-contrast black-and-white format emphasizes the photograph’s age and gravity, while the full-bleed layout immerses the viewer in the scene’s scale and context.",
+    "image_description_time": 11.5,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **dominated by a large black-and-white photograph** occupying the top 80–90% of the space, depicting a dense array of military aircraft (likely bombers) in a hangar or airfield setting. The **text** (“...‘as we begin, so shall we go’”) is positioned as a **horizontal band at the bottom**, spanning the full width of the spread. The space is divided into two distinct zones:  \n- **Visual (image)**: The photograph fills most of the frame, with aircraft arranged in tight rows (left-to-right flow).  \n- **Textual (quote)**: A solid black strip at the bottom, anchoring the visual narrative.  \nThis division creates a clear hierarchy: the image commands attention, while the text serves as a thematic anchor.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Only one visible text element—the quote at the bottom.  \n- **Size/weight**: The quote is **large display text** (prominent, designed to be read easily). It appears **bold** (for emphasis) and uses a **sans-serif font** (clean, modern, and legible).  \n- **Color/contrast**: The text is **white on black** (reversed), creating high contrast against the dark background of the text strip. There is no small body text or serif font present.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** dominates the spread. The photograph features stark black-and-white tonal shifts (e.g., shadows on aircraft, bright highlights on metal surfaces), while the text strip uses extreme contrast (white text on black).  \n- **Tone**: The overall tone is **stark, serious, and historical**—evoking a wartime or industrial context. The high contrast amplifies a sense of urgency or gravity.  \n\n\n### 4. WHITE SPACE  \n- **Empty space**: **Minimal to none**. The photograph is densely packed with aircraft (no large gaps), and the text strip is a solid black band with no negative space. The spread feels **packed**—every inch is occupied by visual or textual elements.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- The layout follows a **unified horizontal flow**: The photograph’s composition (aircraft lined left-to-right) and the text strip (horizontal quote) align with the natural left-to-right reading direction. There is **no mirror or contrast**—the image and text work together to extend the visual narrative (e.g., the quote reinforces the image’s theme of resolve). The relationship is **continuation**—the text logically follows the image’s story.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Resolute, intense, and determined**. The black-and-white photography, dense composition, and motivational quote (“as we begin, so shall we go”) evoke a wartime or industrial-era urgency. It is **not calm or chaotic**—instead, it feels **aggressive in purpose** (driven by resolve) but **controlled** (through the clean typography and structured layout). The mood is **overwhelming in its seriousness**, emphasizing commitment and forward momentum.",
+    "layout_analysis_time": 10.3,
+    "model": "qwen3-vl"
+  }
+}

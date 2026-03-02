@@ -1,0 +1,89 @@
+{
+  "id": "spread_052",
+  "analysis": {
+    "id": "spread_052",
+    "pdf_page": 52,
+    "book_pages": [
+      94,
+      95
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "Our official culture is striving to force the new media to do the work of the old. These are difficult times because we are witnessing a clash of cataclysmic proportions between two great technologies. We approach the new with the psychological conditioning and sensory responses of the old. This clash naturally occurs in transitional periods. In late medieval art, for instance, we saw the fear of the new print technology expressed in the theme The Dance of Death. Today, similar fears are expressed in the Theater of the Absurd. Both represent a common failure: the attempt to do a job demanded by the new environment with the tools of the old.",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### Visual Element Description  \n\n#### 1. **Silhouette Illustration (Top of the Spread)**  \n- **What it depicts**: A horizontal line of seven human silhouettes connected by holding hands, walking along the top edge of a dark, cliff-like structure. From left to right:  \n  - Figure 1: A person wearing a cap, holding a camera (or similar object) in one hand and gripping the hand of the next figure.  \n  - Figure 2: A person in a long, flowing dress (reminiscent of historical or traditional attire), holding hands with Figures 1 and 3.  \n  - Figure 3: A person carrying a bag or satchel, holding hands with Figures 2 and 4.  \n  - Figure 4: A person in a military or work uniform (e.g., pants, boots), holding hands with Figures 3 and 5.  \n  - Figure 5: A person in a long dress (similar to Figure 2), holding hands with Figures 4 and 6.  \n  - Figure 6: A person in a cloak or robe, holding hands with Figures 5 and 7.  \n  - Figure 7: A person holding a large flag (or banner) in one hand and a scythe (or similar tool) in the other.  \n  The figures form a continuous chain, suggesting unity or collective movement. The dark structure beneath them resembles a cliff or ledge, with the silhouettes positioned along its top edge.  \n\n- **Position on the page**: Spans the **top of both pages** (left and right), occupying the upper portion of the spread. It is a full-bleed element, extending across the entire width of the two-page layout.  \n\n- **Visual style**: A **black-and-white graphic illustration** using stark silhouettes. The style is minimalist, with no internal details or shading—only solid black shapes against a white background.  \n\n- **Composition**:  \n  - **Framing**: The silhouettes are framed by the top edge of the page, with the dark cliff structure below them creating a strong visual boundary. The figures are arranged in a horizontal line, emphasizing movement from left to right.  \n  - **Angle**: The figures are depicted in side profile, walking along the cliff’s edge. The cli",
+        "source_type": "illustration",
+        "source_credit": "Janus Films",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \n- **Text Placement**: Text is split into two vertical columns, one on the left page and one on the right page, positioned below the central image.  \n- **Image Placement**: The black-and-white silhouette illustration dominates the top half of the spread, spanning both pages horizontally. It depicts a line of figures holding hands, with one figure holding a scythe (suggesting themes of death or transition).  \n- **Space Division**: The spread is vertically divided into two distinct zones: the **top half** is occupied by the full-width image, while the **bottom half** is split into two text columns (left and right). The image acts as a unifying visual header, with text serving as the explanatory body.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Types**: Only **body text** is visible (no display text or headlines).  \n- **Font Style**: Serif typeface (e.g., Times New Roman or similar traditional serif), with **light weight** (not bold).  \n- **Color & Contrast**: Text is **white on a black background**, creating a reversed (negative) contrast. This is typical of print design for readability in dark areas.  \n- **Size**: Small, standard body text size (not oversized or display-oriented).  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The image uses stark black silhouettes against a white background, while the text uses white text against a black background. This creates a visually jarring yet cohesive contrast between the two sections.  \n- **Tone**: Predominantly **dark** in the text areas (black background), but the image introduces **lightness** (white background) to balance the spread. The overall tone is **serious and dramatic**, amplified by the high-contrast visual language.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Sparse in the text columns** (dense text with minimal gaps between lines), but **moderate to dense in the image** (the white background of the silhouette illustration provides significant negative space around th",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "Our official culture is striving to force the new media to do the work of the old.",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
+      "mcluhan_concepts": [
+        "sensory_ratio",
+        "environment"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "media_as_environment",
+        "anxiety",
+        "space_and_time",
+        "print_culture",
+        "art_and_creativity"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "steady",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "Our official culture is striving to force the new media to do the work of the old. These are difficult times because we are witnessing a clash of cataclysmic proportions between two great technologies. We approach the new with the psychological conditioning and sensory responses of the old. This clash naturally occurs in\ntransitional periods. In late medieval art, for instance, we saw the fear of the new print technology expressed in the theme The Dance of Death. Today, similar fears are expressed in the Theater of the Absurd. Both represent a common failure: the attempt to do a job demanded by the new environment with the tools of the old.",
+    "ocr_raw_time": 7.1,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: Our official culture is striving to force the new media to do the work of the old. These are difficult times because we are witnessing a clash of cataclysmic proportions between two great technologies. We approach the new with the psychological conditioning and sensory responses of the old. This clash naturally occurs in transitional periods. In late medieval art, for instance, we saw the fear of the new print technology expressed in the theme The Dance of Death. Today, similar fears are expressed in the Theater of the Absurd. Both represent a common failure: the attempt to do a job demanded by the new environment with the tools of the old.  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 6.1,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element Description  \n\n#### 1. **Silhouette Illustration (Top of the Spread)**  \n- **What it depicts**: A horizontal line of seven human silhouettes connected by holding hands, walking along the top edge of a dark, cliff-like structure. From left to right:  \n  - Figure 1: A person wearing a cap, holding a camera (or similar object) in one hand and gripping the hand of the next figure.  \n  - Figure 2: A person in a long, flowing dress (reminiscent of historical or traditional attire), holding hands with Figures 1 and 3.  \n  - Figure 3: A person carrying a bag or satchel, holding hands with Figures 2 and 4.  \n  - Figure 4: A person in a military or work uniform (e.g., pants, boots), holding hands with Figures 3 and 5.  \n  - Figure 5: A person in a long dress (similar to Figure 2), holding hands with Figures 4 and 6.  \n  - Figure 6: A person in a cloak or robe, holding hands with Figures 5 and 7.  \n  - Figure 7: A person holding a large flag (or banner) in one hand and a scythe (or similar tool) in the other.  \n  The figures form a continuous chain, suggesting unity or collective movement. The dark structure beneath them resembles a cliff or ledge, with the silhouettes positioned along its top edge.  \n\n- **Position on the page**: Spans the **top of both pages** (left and right), occupying the upper portion of the spread. It is a full-bleed element, extending across the entire width of the two-page layout.  \n\n- **Visual style**: A **black-and-white graphic illustration** using stark silhouettes. The style is minimalist, with no internal details or shading—only solid black shapes against a white background.  \n\n- **Composition**:  \n  - **Framing**: The silhouettes are framed by the top edge of the page, with the dark cliff structure below them creating a strong visual boundary. The figures are arranged in a horizontal line, emphasizing movement from left to right.  \n  - **Angle**: The figures are depicted in side profile, walking along the cliff’s edge. The cliff itself is a horizontal line, so the angle is level with the figures.  \n  - **Contrast**: Extreme high contrast between the solid black silhouettes and the white background. The dark cliff below is a uniform black shape, creating a sharp visual separation between the figures and the background.  \n  - **Key visual qualities**: The chain of hands creates a continuous, unbroken line, suggesting connection or collaboration. The symbolic objects (camera, flag, scythe) imply themes of technology, tradition, or labor. The simplicity of the silhouettes emphasizes form and gesture over detail.  \n\n- **Page occupation**: Approximately **1/3 to 1/4 of the page height**, spanning the entire width of the two-page spread. It dominates the top portion of the layout, with the text blocks positioned below it on each page.  \n\n---  \n\n### Additional Notes  \n- **No other photographs or illustrations** are present in the spread. The text is the only other visual element, but the query specifies focusing *only* on non-text visual elements.  \n- The silhouette illustration is the sole pictorial element, serving as a central visual metaphor for the text’s themes (e.g., cultural clash, technological transition).",
+    "image_description_time": 9.8,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \n- **Text Placement**: Text is split into two vertical columns, one on the left page and one on the right page, positioned below the central image.  \n- **Image Placement**: The black-and-white silhouette illustration dominates the top half of the spread, spanning both pages horizontally. It depicts a line of figures holding hands, with one figure holding a scythe (suggesting themes of death or transition).  \n- **Space Division**: The spread is vertically divided into two distinct zones: the **top half** is occupied by the full-width image, while the **bottom half** is split into two text columns (left and right). The image acts as a unifying visual header, with text serving as the explanatory body.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Types**: Only **body text** is visible (no display text or headlines).  \n- **Font Style**: Serif typeface (e.g., Times New Roman or similar traditional serif), with **light weight** (not bold).  \n- **Color & Contrast**: Text is **white on a black background**, creating a reversed (negative) contrast. This is typical of print design for readability in dark areas.  \n- **Size**: Small, standard body text size (not oversized or display-oriented).  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The image uses stark black silhouettes against a white background, while the text uses white text against a black background. This creates a visually jarring yet cohesive contrast between the two sections.  \n- **Tone**: Predominantly **dark** in the text areas (black background), but the image introduces **lightness** (white background) to balance the spread. The overall tone is **serious and dramatic**, amplified by the high-contrast visual language.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Sparse in the text columns** (dense text with minimal gaps between lines), but **moderate to dense in the image** (the white background of the silhouette illustration provides significant negative space around the figures).  \n- **Effect**: The text areas feel tightly packed, while the image’s white space emphasizes the silhouettes’ movement and tension. The spread avoids excessive emptiness, prioritizing visual density to convey urgency.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Unified** by the central image, which spans both pages. The text columns are separate but thematically linked (both discuss the “clash of technologies” mentioned in the text). The image’s continuity across the spread creates a sense of cohesion, while the text’s left/right split mirrors the visual tension of the silhouettes (e.g., the line of figures moving toward the edge of the cliff).  \n- **Dynamic**: The left and right text sections **contrast** in content (left focuses on the “clash of technologies,” right on historical parallels) but **continue** the same narrative thread, reinforcing the spread’s thematic unity.  \n\n\n### 6. OVERALL FEEL  \n- **Visual Mood**: **Tense, chaotic, and urgent**. The silhouettes’ strained postures (e.g., the figure with the scythe, the line of people holding hands) evoke struggle and transition. The high-contrast black-and-white palette amplifies this tension, while the dense text reinforces the “clash of technologies” theme.  \n- **Energy**: **Overwhelming** due to the stark visual language and the text’s focus on societal conflict. The spread feels **aggressive** in its urgency, mirroring the “catclysmic proportions” described in the text. It avoids calmness or minimalism, instead prioritizing dramatic intensity to reflect the “difficult times” discussed.",
+    "layout_analysis_time": 10.4,
+    "model": "qwen3-vl"
+  }
+}

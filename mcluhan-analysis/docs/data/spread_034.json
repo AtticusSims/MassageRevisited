@@ -1,0 +1,84 @@
+{
+  "id": "spread_034",
+  "analysis": {
+    "id": "spread_034",
+    "pdf_page": 34,
+    "book_pages": [
+      58,
+      59
+    ],
+    "section": "body",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "[No text detected in the image.]",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "right_page",
+        "subject": "### Visual Element Description  \n\n#### 1. What does it depict?  \nThe image depicts a **close-up of alternating vertical black and white stripes**, resembling a zebra crossing or a striped surface (e.g., painted road markings or fabric). The white stripes feature **irregular dark markings**—including small spots, streaks, and areas of apparent wear or damage (e.g., chipped paint, stains, or discoloration). There are no people, animals, or additional objects; the focus is solely on the striped pattern and its textural imperfections.  \n\n#### 2. Position on the page  \nThe visual element **spans both pages of the spread** (full-bleed), covering the entire width of the left and right pages without margins or inset. It is centered across the two-page spread, with no visible separation between the left and right sides of the image.  \n\n#### 3. Visual style  \nIt is a **black and white photograph** with a **grainy texture**, suggesting a vintage or historical photographic process (e.g., film photography with visible grain or a low-resolution scan). The image lacks color, relying entirely on tonal contrast between black and white.  \n\n#### 4. Composition  \n- **Framing**: Tight crop, focusing exclusively on the stripes with no background elements visible.  \n- **Angle**: Straight-on, parallel to the stripes (no tilt or perspective distortion).  \n- **Contrast**: High contrast between solid black and white areas, emphasizing the sharp edges of the stripes.  \n- **Key visual qualities**: Repetitive vertical pattern with consistent spacing between stripes; the white stripes exhibit irregular dark markings (e.g., scattered spots, uneven streaks) that create a textured, worn appearance. The monochromatic palette (black and white) dominates, with no other colors or gradients.  \n\n#### 5. Page occupation  \nThe image **occupies 100% of the spread** (both left and right pages), as it is a full-bleed photograph with no margins or text interruptions. It fills the entire visual space of the two-",
+        "source_type": "advertisement",
+        "source_credit": "Chas Moore, Black Star",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread features **alternating vertical black and white stripes** that dominate the page. Text is positioned within the **white stripes** (as the black stripes are solid, non-text areas), while the striped pattern itself functions as the primary visual element. Space is divided into **equal-width vertical columns**: black (empty, non-text) and white (text-bearing). This creates a rhythmic, segmented layout where text and visual space are interwoven through the striped structure.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Type**: Small body text (e.g., paragraph text) is visible on the white stripes, likely integrated into the pattern.  \n- **Font Style**: Serif typeface (common in book design for readability) is probable, though the image’s graininess makes precise identification difficult.  \n- **Weight/Contrast**: Normal weight (not bold), with text appearing **dark on white** (normal contrast, not reversed). The dark spots on white stripes suggest text is embedded within the pattern.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (sharp black vs. white), creating visual tension.  \n- **Tone**: Neither predominantly dark nor light—equal emphasis on both tones. The stark contrast drives the layout’s energy.  \n\n\n### 4. WHITE SPACE  \nWhite space is **moderate**. The white stripes are evenly distributed, providing balance without being sparse (too little) or dense (too much). The white stripes act as intentional “text containers,” ensuring the space is purposefully structured rather than overwhelming.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \nThe vertical stripes create a **continuation effect**: each stripe extends uniformly across the page, with no mirror or contrast between left and right. The pattern is consistent from edge to edge, emphasizing uniformity and rhythm.  \n\n\n### 6. OVERALL FEEL  \nThe layout feels **aggressive and dynamic** due to high contrast and vertical lines, yet **minimal in structure**. The texture (dark spots on wh",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "Brief textual element: '[No text detected in the image.]'",
+      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
+      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "visual_rhetoric"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "[No text detected in the image.]",
+    "ocr_raw_time": 2.9,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 4.4,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element Description  \n\n#### 1. What does it depict?  \nThe image depicts a **close-up of alternating vertical black and white stripes**, resembling a zebra crossing or a striped surface (e.g., painted road markings or fabric). The white stripes feature **irregular dark markings**—including small spots, streaks, and areas of apparent wear or damage (e.g., chipped paint, stains, or discoloration). There are no people, animals, or additional objects; the focus is solely on the striped pattern and its textural imperfections.  \n\n#### 2. Position on the page  \nThe visual element **spans both pages of the spread** (full-bleed), covering the entire width of the left and right pages without margins or inset. It is centered across the two-page spread, with no visible separation between the left and right sides of the image.  \n\n#### 3. Visual style  \nIt is a **black and white photograph** with a **grainy texture**, suggesting a vintage or historical photographic process (e.g., film photography with visible grain or a low-resolution scan). The image lacks color, relying entirely on tonal contrast between black and white.  \n\n#### 4. Composition  \n- **Framing**: Tight crop, focusing exclusively on the stripes with no background elements visible.  \n- **Angle**: Straight-on, parallel to the stripes (no tilt or perspective distortion).  \n- **Contrast**: High contrast between solid black and white areas, emphasizing the sharp edges of the stripes.  \n- **Key visual qualities**: Repetitive vertical pattern with consistent spacing between stripes; the white stripes exhibit irregular dark markings (e.g., scattered spots, uneven streaks) that create a textured, worn appearance. The monochromatic palette (black and white) dominates, with no other colors or gradients.  \n\n#### 5. Page occupation  \nThe image **occupies 100% of the spread** (both left and right pages), as it is a full-bleed photograph with no margins or text interruptions. It fills the entire visual space of the two-page spread.",
+    "image_description_time": 9.9,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread features **alternating vertical black and white stripes** that dominate the page. Text is positioned within the **white stripes** (as the black stripes are solid, non-text areas), while the striped pattern itself functions as the primary visual element. Space is divided into **equal-width vertical columns**: black (empty, non-text) and white (text-bearing). This creates a rhythmic, segmented layout where text and visual space are interwoven through the striped structure.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Type**: Small body text (e.g., paragraph text) is visible on the white stripes, likely integrated into the pattern.  \n- **Font Style**: Serif typeface (common in book design for readability) is probable, though the image’s graininess makes precise identification difficult.  \n- **Weight/Contrast**: Normal weight (not bold), with text appearing **dark on white** (normal contrast, not reversed). The dark spots on white stripes suggest text is embedded within the pattern.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (sharp black vs. white), creating visual tension.  \n- **Tone**: Neither predominantly dark nor light—equal emphasis on both tones. The stark contrast drives the layout’s energy.  \n\n\n### 4. WHITE SPACE  \nWhite space is **moderate**. The white stripes are evenly distributed, providing balance without being sparse (too little) or dense (too much). The white stripes act as intentional “text containers,” ensuring the space is purposefully structured rather than overwhelming.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \nThe vertical stripes create a **continuation effect**: each stripe extends uniformly across the page, with no mirror or contrast between left and right. The pattern is consistent from edge to edge, emphasizing uniformity and rhythm.  \n\n\n### 6. OVERALL FEEL  \nThe layout feels **aggressive and dynamic** due to high contrast and vertical lines, yet **minimal in structure**. The texture (dark spots on white stripes) adds a subtle chaotic element, balancing order with energy. It avoids calmness (too soft) or overwhelming chaos (too disordered), instead evoking a sense of controlled tension.",
+    "layout_analysis_time": 13.3,
+    "model": "qwen3-vl"
+  }
+}

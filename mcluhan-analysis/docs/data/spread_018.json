@@ -1,0 +1,90 @@
+{
+  "id": "spread_018",
+  "analysis": {
+    "id": "spread_018",
+    "pdf_page": 18,
+    "book_pages": [
+      26,
+      27
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "All media work us over completely. They are so pervasive in their personal, political, economic, aesthetic, psychological, moral, ethical, and social consequences that they leave no part of us untouched, unaffected, unaltered. The medium is the massage. Any understanding of social and cultural change is impossible without a knowledge of the way media work as environments.",
+      "display_text": "All\nmedia\nare\nextensions\nof\nsome\nhuman\nfaculty—\npsychic\nor\nphysical.",
+      "captions": [],
+      "page_numbers_visible": [
+        "26"
+      ]
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "spanning_spread",
+        "subject": "### Visual Element Analysis: Book Spread Image  \n\n#### 1. Photograph on the Right Page  \n- **What it depicts**: A close - up black - and - white photograph of a human thumb. The image focuses on the thumb’s nail (with visible texture and slight irregularities) and the surrounding skin, which shows fine wrinkles and creases. The thumb is positioned against a dark, indistinct background (likely a fabric or surface), with no other objects or people in the frame.  \n- **Position**: Occupies the entire right page (full - bleed on the right page), with no inset or partial coverage.  \n- **Visual style**: Black - and - white photograph (not an illustration or graphic symbol; it is a photographic capture).  \n- **Composition**:  \n  - **Framing**: Tight close - up, isolating the thumb as the sole subject. The frame crops the thumb to emphasize its texture and form, with the background blurred or darkened to draw focus to the thumb.  \n  - **Angle**: Slightly low - angle perspective, which accentuates the thumb’s curvature and the nail’s position.  \n  - **Contrast**: High contrast between the light - toned skin of the thumb and the dark background, creating a stark visual separation.  \n  - **Key visual qualities**: Grainy texture (indicative of film photography), detailed rendering of skin texture (wrinkles, pores), and a shallow depth of field that keeps the thumb in sharp focus while softening the background.  \n- **Page occupation**: Approximately 100% of the right page (full - bleed).  \n\n#### Additional Notes  \n- The left page contains only text (no photographs, illustrations, or graphic symbols), so it is excluded from the visual element description.  \n- The page number “26” at the top center is typographic text and not a visual/pictorial element, so it is not included in the analysis.",
+        "source_type": "illustration",
+        "source_credit": "Peter Moore",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe page is **vertically divided** into two distinct sections:  \n- **Left side**: Text occupies the majority of the left half, aligned to the left margin with a clean, block-like structure.  \n- **Right side**: A large, high-contrast black-and-white photograph of a finger (or similar body part) dominates the right half, filling most of the space.  \nThe division is stark and symmetrical, with text and image occupying roughly equal horizontal space. The text block is tightly packed, while the image’s composition (a close-up of a textured surface) creates a visual “weight” that balances the textual content.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text**: Small, standard serif font (e.g., Times New Roman or similar) for the main paragraph. It is **light weight** (not bold) and set in **normal (non-reversed) black-on-white**.  \n- **Highlighted text**: A separate section (“All media are extensions of some human faculty—psychic or physical”) uses **larger, bold type** (likely sans-serif or a bold serif variant) with each word on a new line. This creates a typographic “callout” for emphasis.  \n- **Page number**: Small, centered at the top (26), in a standard serif font.  \nThe contrast between the subtle body text and the bold, spaced-out highlighted text guides the reader’s eye to the key conceptual statement.  \n\n\n### 3. CONTRAST & TONE  \n- **Text side**: **High contrast** (black text on white background), creating clarity and readability.  \n- **Image side**: **High contrast** in grayscale (shades of black, white, and gray), emphasizing texture and depth in the photograph.  \n- **Overall tone**: The image’s stark, clinical black-and-white aesthetic (with deep shadows) contrasts with the text’s clean, academic tone. The spread feels **serious and analytical**, with no softening of edges or muted tones.  \n\n\n### 4. WHITE SPACE  \n- **Left side**: Moderate white space surrounds the text block (margins on the top, bottom, and right), preventing visual clutter ",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": "Large display typography",
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "All\nmedia\nare\nextensions\nof\nsome\nhuman\nfaculty—\npsychic\nor\nphysical.",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
+      "mcluhan_concepts": [
+        "medium_is_the_message",
+        "environment"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "media_as_environment",
+        "perception",
+        "art_and_creativity",
+        "technology_and_body"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "steady",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "26\n\nAll media work us over completely. They are so pervasive in their personal, political, economic, aesthetic, psychological, moral, ethical, and social consequences that they leave no part of us untouched, unaffected, unaltered. The medium is the massage. Any understanding of social and cultural change is impossible without a knowledge of the way media work as environments.\n\nAll\n\nmedia\n\nare\n\nextensions\n\nof\n\nsome\n\nhuman\n\nfaculty—\n\npsychic\n\nor\n\nphysical.",
+    "ocr_raw_time": 10.2,
+    "ocr_structured": "DISPLAY_TEXT: \nAll\nmedia\nare\nextensions\nof\nsome\nhuman\nfaculty—\npsychic\nor\nphysical.\n\nBODY_TEXT: \nAll media work us over completely. They are so pervasive in their personal, political, economic, aesthetic, psychological, moral, ethical, and social consequences that they leave no part of us untouched, unaffected, unaltered. The medium is the massage. Any understanding of social and cultural change is impossible without a knowledge of the way media work as environments.\n\nQUOTATIONS: NONE\n\nCAPTIONS: NONE\n\nPAGE_NUMBERS: 26",
+    "ocr_structured_time": 9.2,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element Analysis: Book Spread Image  \n\n#### 1. Photograph on the Right Page  \n- **What it depicts**: A close - up black - and - white photograph of a human thumb. The image focuses on the thumb’s nail (with visible texture and slight irregularities) and the surrounding skin, which shows fine wrinkles and creases. The thumb is positioned against a dark, indistinct background (likely a fabric or surface), with no other objects or people in the frame.  \n- **Position**: Occupies the entire right page (full - bleed on the right page), with no inset or partial coverage.  \n- **Visual style**: Black - and - white photograph (not an illustration or graphic symbol; it is a photographic capture).  \n- **Composition**:  \n  - **Framing**: Tight close - up, isolating the thumb as the sole subject. The frame crops the thumb to emphasize its texture and form, with the background blurred or darkened to draw focus to the thumb.  \n  - **Angle**: Slightly low - angle perspective, which accentuates the thumb’s curvature and the nail’s position.  \n  - **Contrast**: High contrast between the light - toned skin of the thumb and the dark background, creating a stark visual separation.  \n  - **Key visual qualities**: Grainy texture (indicative of film photography), detailed rendering of skin texture (wrinkles, pores), and a shallow depth of field that keeps the thumb in sharp focus while softening the background.  \n- **Page occupation**: Approximately 100% of the right page (full - bleed).  \n\n#### Additional Notes  \n- The left page contains only text (no photographs, illustrations, or graphic symbols), so it is excluded from the visual element description.  \n- The page number “26” at the top center is typographic text and not a visual/pictorial element, so it is not included in the analysis.",
+    "image_description_time": 8.4,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe page is **vertically divided** into two distinct sections:  \n- **Left side**: Text occupies the majority of the left half, aligned to the left margin with a clean, block-like structure.  \n- **Right side**: A large, high-contrast black-and-white photograph of a finger (or similar body part) dominates the right half, filling most of the space.  \nThe division is stark and symmetrical, with text and image occupying roughly equal horizontal space. The text block is tightly packed, while the image’s composition (a close-up of a textured surface) creates a visual “weight” that balances the textual content.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text**: Small, standard serif font (e.g., Times New Roman or similar) for the main paragraph. It is **light weight** (not bold) and set in **normal (non-reversed) black-on-white**.  \n- **Highlighted text**: A separate section (“All media are extensions of some human faculty—psychic or physical”) uses **larger, bold type** (likely sans-serif or a bold serif variant) with each word on a new line. This creates a typographic “callout” for emphasis.  \n- **Page number**: Small, centered at the top (26), in a standard serif font.  \nThe contrast between the subtle body text and the bold, spaced-out highlighted text guides the reader’s eye to the key conceptual statement.  \n\n\n### 3. CONTRAST & TONE  \n- **Text side**: **High contrast** (black text on white background), creating clarity and readability.  \n- **Image side**: **High contrast** in grayscale (shades of black, white, and gray), emphasizing texture and depth in the photograph.  \n- **Overall tone**: The image’s stark, clinical black-and-white aesthetic (with deep shadows) contrasts with the text’s clean, academic tone. The spread feels **serious and analytical**, with no softening of edges or muted tones.  \n\n\n### 4. WHITE SPACE  \n- **Left side**: Moderate white space surrounds the text block (margins on the top, bottom, and right), preventing visual clutter while maintaining focus on the text.  \n- **Right side**: Sparse white space, as the photograph fills most of the area. The image’s tight cropping leaves minimal negative space.  \nOverall, the layout is **moderate in white space**—enough to separate text and image but not so much as to feel empty. The balance leans toward **textual density** on the left, offset by the image’s visual weight on the right.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \nThe left (text) and right (image) sections form a **contrast relationship**:  \n- The text is **explanatory** (discussing media as “extensions of human faculty”), while the image is **metaphorical** (a close-up of a finger, suggesting physical or psychic extension).  \n- They are **complementary**: The text contextualizes the image, and the image visually reinforces the text’s abstract concept.  \nThis duality creates a **unified narrative**—text and image work together to convey the book’s theme, rather than competing or mirroring each other.  \n\n\n### 6. OVERALL FEEL  \nThe spread evokes a **calm, authoritative mood**. The clean typography, high-contrast image, and academic tone create a sense of **intellectual rigor**. The black-and-white photograph’s clinical precision (and the text’s serious subject matter) avoid chaos or aggression, instead fostering a **minimalist, focused energy**. The layout feels intentional and purposeful, guiding the reader to engage deeply with the content.",
+    "layout_analysis_time": 12.6,
+    "model": "qwen3-vl"
+  }
+}

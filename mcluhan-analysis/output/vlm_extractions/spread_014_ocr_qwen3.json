@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_014",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:25:35",
+  "ocr_raw": "",
+  "ocr_structured": "DISPLAY_TEXT: your education  \nBODY_TEXT: There is a world of difference between the modern home environment and the grated electric information and the classroom. Today's television child is attuned to up-to-the-minute \"adult\" news—inflation, war, taxes, crime, bathing beauties—and is bewildered when he enters the nine-teenth-century educational estab- lishment where the information is scarce but ordered and structured by frag- mented, classified patterns, subjects, and schedules. It is naturally an en- vironment much like any factory set-up with its inventories and assembly lines. The \"child\" was an invention of the seventeenth century; he did not exist in, say, Shakespeare's day. He had, up until that time, been merged in the adult world and there was nothing that could be called childhood in our sense. Today's child is growing up absurd, be- cause he lives in two worlds, and neither of them inclines him to grow up. Grow- ing up—that is our new work, and it is not sufficient. More instruction will not suffice.  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: 18",
+  "ocr_raw_time": 23.2,
+  "ocr_structured_time": 16.1
+}

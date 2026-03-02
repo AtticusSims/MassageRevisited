@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_080",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T18:02:14",
+  "ocr_raw": "\"I must have been delirious, for I even sought amusement in speculating upon the relative velocities of their several descents toward the foam below.\"\n\nIn his amusement born of rational detachment of his own situation, Poe's mariner in \"The Descent into the Maelstrom\" staved off disaster by understanding the action of the whirlpool. His insight offers a possible stratagem for understanding our predicament, our electrically-configured whirl.",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: In his amusement born of rational detachment of his own situation, Poe's mariner in \"The Descent into the Maelstrom\" staved off disaster by understanding the action of the whirlpool. His insight offers a possible stratagem for understanding our predicament, our electrically-configured whirl.  \nQUOTATIONS: \"I must have been delirious, for I even sought amusement in speculating upon the relative velocities of their several descents toward the foam below.\"  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 8.3,
+  "ocr_structured_time": 7.5
+}

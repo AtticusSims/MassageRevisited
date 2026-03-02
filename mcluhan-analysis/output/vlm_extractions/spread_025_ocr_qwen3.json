@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_025",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:29:19",
+  "ocr_raw": "electric circuitry,\n\nan extension of\n\nthe\n\ncentral\n\nnervous\n\nsystem\n\n41\n\nMedia, by altering the environment, evoke in us unique ratios of sense perceptions. The extension of any one sense alters the way we think and act— the way we perceive the world. When these ratios change, men change.",
+  "ocr_structured": "DISPLAY_TEXT: \nelectric circuitry,\nan extension of\nthe\ncentral\nnervous\nsystem\nmen change.\n\nBODY_TEXT: \nMedia, by altering the environment, evoke in us unique ratios of sense perceptions. The extension of any one sense alters the way we think and act— the way we perceive the world. When these ratios change,\n\nQUOTATIONS: NONE\n\nCAPTIONS: NONE\n\nPAGE_NUMBERS: 41",
+  "ocr_raw_time": 11.2,
+  "ocr_structured_time": 8.0
+}

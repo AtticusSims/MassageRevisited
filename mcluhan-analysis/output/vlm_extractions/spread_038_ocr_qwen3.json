@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_038",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:39:49",
+  "ocr_raw": "The new electronic interdependence recreates the world in the image of a global village.",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: The new electronic interdependence recreates the world in the image of a global village.  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 3.6,
+  "ocr_structured_time": 4.1
+}

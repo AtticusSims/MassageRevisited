@@ -1,0 +1,84 @@
+{
+  "id": "spread_019",
+  "analysis": {
+    "id": "spread_019",
+    "pdf_page": 19,
+    "book_pages": [
+      28,
+      29
+    ],
+    "section": "body",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "[No text detected in the image.]",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "right_page",
+        "subject": "### Visual Element Description  \n\n#### 1. **What does it depict?**  \nThe image is a **black-and-white photograph** depicting a close-up of the **big toes (hallux) and second toes** of a human foot. The toes are positioned in a natural, slightly parted arrangement, with visible details including:  \n- **Skin texture**: Wrinkled, creased skin with fine lines and subtle shadows, emphasizing the natural contours of the toes.  \n- **Nails**: The toenails are visible, with the big toes showing slightly rounded, natural nail shapes; the second toes have shorter, more tapered nails.  \n- **Anatomical details**: The skin around the toes (e.g., the area between the toes) is visible, with soft shadows and highlights defining the form. The photograph captures the toes in a relaxed, static pose, with no visible footwear or external objects.  \n\n#### 2. **Position on the page**  \nThe photograph **spans both the left and right pages** of the book spread (full-bleed), covering the entire spread without visible margins or interruptions. It is centered and dominates the visual field of the spread.  \n\n#### 3. **Visual style**  \nThis is a **black-and-white photograph** with a **grainy texture**, characteristic of traditional film photography. The medium is photographic (not illustrative or symbolic), with no digital manipulation evident in the grain or tonal range.  \n\n#### 4. **Composition**  \n- **Framing**: A tight, close-up frame that isolates the toes, eliminating background context (e.g., no visible foot, shoe, or environment).  \n- **Angle**: A direct, slightly low-angle perspective that emphasizes the texture and contours of the toes, with light falling from above to create subtle shadows in the crevices between toes.  \n- **Contrast**: High contrast due to the black-and-white medium, with bright highlights on the skin and nails and deep shadows in the folds of the skin.  \n- **Key visual qualities**: The photograph’s grainy texture, the play of light on the skin (creating a sense of de",
+        "source_type": "advertisement",
+        "source_credit": "Peter Moore",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is a **vertical diptych** (two-page layout), with the image split into left and right panels. The left page contains the left half of the toe image, and the right page contains the right half. The image dominates the layout, occupying nearly all space, with a thin vertical line serving as a subtle divider between the two pages. Text (if present) would likely be placed in the **margins** (e.g., top/bottom of each page) to complement the visual, but the image itself is the primary focus, with no visible text in the provided image. The space is divided to emphasize the continuity of the subject (the toes) across the spread.  \n\n---\n\n### 2. TYPOGRAPHY  \nNo visible text appears in the provided image. However, in a typical book spread, text would likely include:  \n- **Body text** (small font size) placed in margins, possibly using a **serif font** (e.g., Times New Roman) for readability.  \n- If text were visible, it would likely be in **normal weight** (not bold/light) and oriented normally (not reversed).  \nSince the image is text-free, typography is not directly observable here, but the layout suggests minimal text to avoid overwhelming the visual focus.  \n\n---\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (black-and-white photography), with sharp transitions between light (highlights on the toes) and dark (shadows) areas.  \n- **Tone**: Predominantly **monochromatic** with a stark, clinical feel. The image emphasizes texture and form through dramatic lighting, creating a sense of depth and detail.  \n\n---\n\n### 4. WHITE SPACE  \n**Sparse**—the image is a tight close-up with the toes filling most of the frame. There is minimal empty space, as the composition focuses entirely on the subject, leaving no room for negative space or visual breathing room.  \n\n---\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n**Continuation**—the left and right panels are seamless extensions of the same subject (the toes), creating a fluid visual flow from ",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "sparse",
+      "left_right_relationship": "contrast"
+    },
+    "rhetoric": {
+      "argument": "Brief textual element: '[No text detected in the image.]'",
+      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
+      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "visual_rhetoric"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "[No text detected in the image.]",
+    "ocr_raw_time": 3.4,
+    "ocr_structured": "DISPLAY_TEXT: NONE\nBODY_TEXT: NONE\nQUOTATIONS: NONE\nCAPTIONS: NONE\nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 3.1,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element Description  \n\n#### 1. **What does it depict?**  \nThe image is a **black-and-white photograph** depicting a close-up of the **big toes (hallux) and second toes** of a human foot. The toes are positioned in a natural, slightly parted arrangement, with visible details including:  \n- **Skin texture**: Wrinkled, creased skin with fine lines and subtle shadows, emphasizing the natural contours of the toes.  \n- **Nails**: The toenails are visible, with the big toes showing slightly rounded, natural nail shapes; the second toes have shorter, more tapered nails.  \n- **Anatomical details**: The skin around the toes (e.g., the area between the toes) is visible, with soft shadows and highlights defining the form. The photograph captures the toes in a relaxed, static pose, with no visible footwear or external objects.  \n\n#### 2. **Position on the page**  \nThe photograph **spans both the left and right pages** of the book spread (full-bleed), covering the entire spread without visible margins or interruptions. It is centered and dominates the visual field of the spread.  \n\n#### 3. **Visual style**  \nThis is a **black-and-white photograph** with a **grainy texture**, characteristic of traditional film photography. The medium is photographic (not illustrative or symbolic), with no digital manipulation evident in the grain or tonal range.  \n\n#### 4. **Composition**  \n- **Framing**: A tight, close-up frame that isolates the toes, eliminating background context (e.g., no visible foot, shoe, or environment).  \n- **Angle**: A direct, slightly low-angle perspective that emphasizes the texture and contours of the toes, with light falling from above to create subtle shadows in the crevices between toes.  \n- **Contrast**: High contrast due to the black-and-white medium, with bright highlights on the skin and nails and deep shadows in the folds of the skin.  \n- **Key visual qualities**: The photograph’s grainy texture, the play of light on the skin (creating a sense of depth), and the natural, unposed arrangement of the toes. The image has a documentary or anthropological feel, focusing on the physical details of the human body.  \n\n#### 5. **Page occupation**  \nThe photograph **occupies 100% of the book spread**, covering both the left and right pages entirely. There are no visible margins, borders, or other elements interrupting the image.  \n\n---  \n*Note: No text or typography is present in the visual element described; the focus is solely on the photographic content.*",
+    "image_description_time": 11.1,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is a **vertical diptych** (two-page layout), with the image split into left and right panels. The left page contains the left half of the toe image, and the right page contains the right half. The image dominates the layout, occupying nearly all space, with a thin vertical line serving as a subtle divider between the two pages. Text (if present) would likely be placed in the **margins** (e.g., top/bottom of each page) to complement the visual, but the image itself is the primary focus, with no visible text in the provided image. The space is divided to emphasize the continuity of the subject (the toes) across the spread.  \n\n---\n\n### 2. TYPOGRAPHY  \nNo visible text appears in the provided image. However, in a typical book spread, text would likely include:  \n- **Body text** (small font size) placed in margins, possibly using a **serif font** (e.g., Times New Roman) for readability.  \n- If text were visible, it would likely be in **normal weight** (not bold/light) and oriented normally (not reversed).  \nSince the image is text-free, typography is not directly observable here, but the layout suggests minimal text to avoid overwhelming the visual focus.  \n\n---\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (black-and-white photography), with sharp transitions between light (highlights on the toes) and dark (shadows) areas.  \n- **Tone**: Predominantly **monochromatic** with a stark, clinical feel. The image emphasizes texture and form through dramatic lighting, creating a sense of depth and detail.  \n\n---\n\n### 4. WHITE SPACE  \n**Sparse**—the image is a tight close-up with the toes filling most of the frame. There is minimal empty space, as the composition focuses entirely on the subject, leaving no room for negative space or visual breathing room.  \n\n---\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n**Continuation**—the left and right panels are seamless extensions of the same subject (the toes), creating a fluid visual flow from left to right. The vertical divider is subtle, ensuring the viewer perceives the image as a unified whole rather than two separate parts.  \n\n---\n\n### 6. OVERALL FEEL  \n**Minimal and intimate**, with a **stark, clinical energy**. The high-contrast black-and-white photography, close-up perspective, and lack of additional elements create a focused, almost aggressive mood. The image feels personal and detailed, evoking a sense of vulnerability or precision, while the minimalism emphasizes",
+    "layout_analysis_time": 23.5,
+    "model": "qwen3-vl"
+  }
+}

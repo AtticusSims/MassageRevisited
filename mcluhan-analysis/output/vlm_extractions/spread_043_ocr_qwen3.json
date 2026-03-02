@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_043",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:41:58",
+  "ocr_raw": "When\ninformation\nis\nbrushed\nagainst\ninformation...",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: When information is brushed against information...  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 5.9,
+  "ocr_structured_time": 6.9
+}

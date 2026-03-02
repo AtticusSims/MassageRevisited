@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_018",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:28:07",
+  "ocr_raw": "26\n\nAll media work us over completely. They are so pervasive in their personal, political, economic, aesthetic, psychological, moral, ethical, and social consequences that they leave no part of us untouched, unaffected, unaltered. The medium is the massage. Any understanding of social and cultural change is impossible without a knowledge of the way media work as environments.\n\nAll\n\nmedia\n\nare\n\nextensions\n\nof\n\nsome\n\nhuman\n\nfaculty—\n\npsychic\n\nor\n\nphysical.",
+  "ocr_structured": "DISPLAY_TEXT: \nAll\nmedia\nare\nextensions\nof\nsome\nhuman\nfaculty—\npsychic\nor\nphysical.\n\nBODY_TEXT: \nAll media work us over completely. They are so pervasive in their personal, political, economic, aesthetic, psychological, moral, ethical, and social consequences that they leave no part of us untouched, unaffected, unaltered. The medium is the massage. Any understanding of social and cultural change is impossible without a knowledge of the way media work as environments.\n\nQUOTATIONS: NONE\n\nCAPTIONS: NONE\n\nPAGE_NUMBERS: 26",
+  "ocr_raw_time": 10.2,
+  "ocr_structured_time": 9.2
+}

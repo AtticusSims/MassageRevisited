@@ -1,0 +1,91 @@
+{
+  "id": "spread_011",
+  "analysis": {
+    "id": "spread_011",
+    "pdf_page": 11,
+    "book_pages": [
+      12,
+      13
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "How much do you make? Have you ever contemplated suicide? Are you now or have you ever been...? Are you aware of the fact....? I have here before me.... Electrical information devices for universal, tyrannical womb-to-tomb surveillance are causing a very serious dilemma between our claim to privacy and the community's need to know. The older, traditional ideas of private, isolated thoughts and actions—the patterns of mechanistic technologies—are very seriously threatened by new methods of instantaneous electric information retrieval, by the electrically computerized dossier bank—that one big gossip column that is unforgiving, unforgettable and from which there is no redemption, no erasure of early \"mistakes.\" We have already reached a point where remedial control, born out of knowledge of media and their total effects on all of us, must be exerted. How shall the new environment be programmed now that we have become so involved with each other, now that aM of us have become the unwitting work force for social change? What's that buzzzzzzzzzzzzzzzzzzzzzzzzzzzzz?",
+      "display_text": "you",
+      "captions": [],
+      "page_numbers_visible": [
+        "12"
+      ]
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### Visual Elements in the Book Spread  \n\n#### 1. **Fingerprint Image (Left Page)**  \n- **What it depicts**: A grayscale (black-and-white) close-up of a human fingerprint, showing distinct ridges, valleys, and the unique pattern of a thumbprint.  \n- **Position**: Inset on the left page, positioned near the top-left corner, adjacent to the text block. It does not span the page and is contained within the text’s left margin.  \n- **Visual style**: Black-and-white photograph (or a printed representation of a fingerprint, mimicking photographic detail).  \n- **Composition**: Tight framing on the fingerprint, centered within the inset. High contrast between dark ridges and light background emphasizes the texture. The image is cropped to focus solely on the fingerprint, with no surrounding context.  \n- **Page occupation**: Approximately 1/10th of the left page (small, contained within the text’s left margin).  \n\n\n#### 2. **Concentric Circles Graphic (Right Page)**  \n- **What it depicts**: A series of alternating black-and-white concentric circles (rings) radiating outward from a central point. The innermost ring is a small white circle, followed by a black ring, then a white ring, and so on, creating a target-like or bullseye pattern.  \n- **Position**: Full bleed on the right page, covering the entire page with no margins or whitespace.  \n- **Visual style**: Abstract graphic symbol (not a photograph; created as a deliberate design element).  \n- **Composition**: Radial symmetry, centered on the page. High contrast between black and white creates a hypnotic, optical-illusion effect. The circles are evenly spaced, with consistent width, and the design is oriented straight-on (no angle).  \n- **Page occupation**: 100% of the right page (full bleed, spanning the entire page).  \n\n\n### Summary of Visual Elements  \n- The left page contains a **small inset fingerprint photograph** (1/10th of the page).  \n- The right page features a **full-bleed concentric circles graphic** (100% of t",
+        "source_type": "illustration",
+        "source_credit": "uncredited",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two primary sections:  \n- **Left side**: A column of text dominates, aligned to the left. A small fingerprint image sits near the top-left of the text block, acting as a subtle visual anchor.  \n- **Right side**: A large, bold graphic of concentric black-and-white circles (reminiscent of a target or ripple pattern) occupies the majority of the space, centered on the right.  \nThe layout creates a stark **text-image dichotomy**: the left is verbal (discursive), while the right is visual (symbolic). The text column is framed by white space on its left and top/bottom edges, while the graphic fills the right half with minimal negative space.  \n\n\n### 2. TYPOGRAPHY  \n- **Display text**: The word *“you”* at the top is large, bold, and **sans-serif** (e.g., Helvetica or similar), creating a stark focal point.  \n- **Body text**: Smaller, **serif** (e.g., Times New Roman), in standard weight (not bold), and **black on white** (normal orientation, not reversed).  \n- **Page number**: “12” at the bottom is small, serif, and black on white, consistent with body text.  \nThe typography hierarchy emphasizes *“you”* as a thematic hook, while the body text’s serif font conveys formality and seriousness.  \n\n\n### 3. CONTRAST & TONE  \n- **Predominant tone**: **Light** (white background dominates), with **high contrast** between black text/graphic and white space.  \n- **Graphic contrast**: The concentric circles use pure black-and-white, creating extreme visual tension (no gray tones).  \n- **Text contrast**: Black text on white background ensures readability but amplifies the page’s stark, minimalist aesthetic.  \nThe overall tone is **clinical yet urgent**—the high contrast mirrors the text’s themes of surveillance and societal control.  \n\n\n### 4. WHITE SPACE  \n- **Moderate white space**: The left text column has generous margins (top/bottom/left), allowing the text to breathe. The right side’s graphic is a solid block, ",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": "Large display typography",
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "you How much do you make.",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Sustained reading — the reader engages with extended prose argument.",
+      "mcluhan_concepts": [
+        "pattern_recognition",
+        "environment"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "media_as_environment",
+        "electric_technology",
+        "war_and_violence",
+        "automation",
+        "information"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "decelerating",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "you\n\nHow much do you make? Have you ever contemplated suicide? Are you now or have you ever been....? Are you aware of the fact....? I have here before me.... Electrical information devices for universal, tyrannical womb-to-tomb surveillance are causing a very serious dilemma between our claim to privacy and the community's need to know. The older, traditional ideas of private, isolated thoughts and actions—the patterns of mechanistic technologies—are very seriously threatened by new methods of instantaneous electric information retrieval, by the electrically computerized dossier bank—that one big gossip column that is unforgiving, unforgettable and from which there is no redemption, no erasure of early \"mistakes.\" We have already reached a point where remedial control, born out of knowledge of media and their total effects on all of us, must be exerted. How shall the new environment be programmed now that we have become so involved with each other, now that aM of us have become the unwitting work force for social change? What's that buzzzzzzzzzzzzzzzzzzzzzzzzzzzzz?\n\n12",
+    "ocr_raw_time": 14.6,
+    "ocr_structured": "DISPLAY_TEXT: you  \nBODY_TEXT: How much do you make? Have you ever contemplated suicide? Are you now or have you ever been...? Are you aware of the fact....? I have here before me.... Electrical information devices for universal, tyrannical womb-to-tomb surveillance are causing a very serious dilemma between our claim to privacy and the community's need to know. The older, traditional ideas of private, isolated thoughts and actions—the patterns of mechanistic technologies—are very seriously threatened by new methods of instantaneous electric information retrieval, by the electrically computerized dossier bank—that one big gossip column that is unforgiving, unforgettable and from which there is no redemption, no erasure of early \"mistakes.\" We have already reached a point where remedial control, born out of knowledge of media and their total effects on all of us, must be exerted. How shall the new environment be programmed now that we have become so involved with each other, now that aM of us have become the unwitting work force for social change? What's that buzzzzzzzzzzzzzzzzzzzzzzzzzzzzz?  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: 12",
+    "ocr_structured_time": 6.5,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Elements in the Book Spread  \n\n#### 1. **Fingerprint Image (Left Page)**  \n- **What it depicts**: A grayscale (black-and-white) close-up of a human fingerprint, showing distinct ridges, valleys, and the unique pattern of a thumbprint.  \n- **Position**: Inset on the left page, positioned near the top-left corner, adjacent to the text block. It does not span the page and is contained within the text’s left margin.  \n- **Visual style**: Black-and-white photograph (or a printed representation of a fingerprint, mimicking photographic detail).  \n- **Composition**: Tight framing on the fingerprint, centered within the inset. High contrast between dark ridges and light background emphasizes the texture. The image is cropped to focus solely on the fingerprint, with no surrounding context.  \n- **Page occupation**: Approximately 1/10th of the left page (small, contained within the text’s left margin).  \n\n\n#### 2. **Concentric Circles Graphic (Right Page)**  \n- **What it depicts**: A series of alternating black-and-white concentric circles (rings) radiating outward from a central point. The innermost ring is a small white circle, followed by a black ring, then a white ring, and so on, creating a target-like or bullseye pattern.  \n- **Position**: Full bleed on the right page, covering the entire page with no margins or whitespace.  \n- **Visual style**: Abstract graphic symbol (not a photograph; created as a deliberate design element).  \n- **Composition**: Radial symmetry, centered on the page. High contrast between black and white creates a hypnotic, optical-illusion effect. The circles are evenly spaced, with consistent width, and the design is oriented straight-on (no angle).  \n- **Page occupation**: 100% of the right page (full bleed, spanning the entire page).  \n\n\n### Summary of Visual Elements  \n- The left page contains a **small inset fingerprint photograph** (1/10th of the page).  \n- The right page features a **full-bleed concentric circles graphic** (100% of the page).  \n- No other visual elements (e.g., photographs, illustrations, or symbols) are present beyond these two. The text and typography (e.g., the word “you,” page number “12”) are excluded per the instructions.",
+    "image_description_time": 9.4,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two primary sections:  \n- **Left side**: A column of text dominates, aligned to the left. A small fingerprint image sits near the top-left of the text block, acting as a subtle visual anchor.  \n- **Right side**: A large, bold graphic of concentric black-and-white circles (reminiscent of a target or ripple pattern) occupies the majority of the space, centered on the right.  \nThe layout creates a stark **text-image dichotomy**: the left is verbal (discursive), while the right is visual (symbolic). The text column is framed by white space on its left and top/bottom edges, while the graphic fills the right half with minimal negative space.  \n\n\n### 2. TYPOGRAPHY  \n- **Display text**: The word *“you”* at the top is large, bold, and **sans-serif** (e.g., Helvetica or similar), creating a stark focal point.  \n- **Body text**: Smaller, **serif** (e.g., Times New Roman), in standard weight (not bold), and **black on white** (normal orientation, not reversed).  \n- **Page number**: “12” at the bottom is small, serif, and black on white, consistent with body text.  \nThe typography hierarchy emphasizes *“you”* as a thematic hook, while the body text’s serif font conveys formality and seriousness.  \n\n\n### 3. CONTRAST & TONE  \n- **Predominant tone**: **Light** (white background dominates), with **high contrast** between black text/graphic and white space.  \n- **Graphic contrast**: The concentric circles use pure black-and-white, creating extreme visual tension (no gray tones).  \n- **Text contrast**: Black text on white background ensures readability but amplifies the page’s stark, minimalist aesthetic.  \nThe overall tone is **clinical yet urgent**—the high contrast mirrors the text’s themes of surveillance and societal control.  \n\n\n### 4. WHITE SPACE  \n- **Moderate white space**: The left text column has generous margins (top/bottom/left), allowing the text to breathe. The right side’s graphic is a solid block, but the page’s overall layout avoids being “packed” or “sparse.”  \n- **Key balance**: White space separates the text and graphic, preventing visual clutter while emphasizing their distinct roles (verbal vs. visual). The fingerprint image adds a tiny, intentional “breather” within the text block.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Contrast**: The left (text) is verbal, introspective, and critical (questions about privacy, surveillance), while the right (graphic) is visual, symbolic, and aggressive (target-like circles).  \n- **Unification**: The graphic *mirrors the text’s theme*—the concentric circles evoke surveillance, data collection, or societal “targets.” This creates a **thematic synergy**: the text’s urgency is amplified by the graphic’s oppressive visual language.  \n- **No mirror/continuation**: The left and right are distinct but complementary, not mirrored or sequentially linked.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Overwhelming yet minimal**. The stark black-and-white palette and high-contrast graphic create tension, while the clean layout (no clutter) keeps it restrained.  \n- **Emotional resonance**: The text’s themes (privacy, surveillance, societal control) paired with the graphic’s “target” imagery evoke **chaos, anxiety, or unease**—as if the reader is being watched. The trailing “buzzzzzzzzzzzzzzzzzzzzzzzzz” at the end adds a layer of auditory chaos, reinforcing the sense of being overwhelmed by modern technology.  \n- **Visual energy**: Minimalist but **aggressive**—the graphic’s repetition and the text’s urgent tone combine to create a sense of inescapable scrutiny, making the spread feel both calm in its simplicity and chaotic in its implications.",
+    "layout_analysis_time": 11.7,
+    "model": "qwen3-vl"
+  }
+}

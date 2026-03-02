@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_077",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T18:00:04",
+  "ocr_raw": "Laotze:\nThirty spokes are made one by holes in a hub,\nBy vacancies joining them for a wheel’s use;\nThe use of clay in molding pitchers\nComes from the hollow of its absence;\nDoors, windows, in a house,\nAre used for their emptiness;\nThus we are helped by what is not,\nTo use what is.\n\nElectric circuitry is Orientalizing the West. The\ncontained, the distinct, the separate—our Western\nlegacy—are being replaced by the flowing, the\nunified, the fused.\n\n“The west shall shake the east awake …\nwhile ye have the night for morn …”",
+  "ocr_structured": "DISPLAY_TEXT: Laotze:  \nBODY_TEXT: Thirty spokes are made one by holes in a hub,  \nBy vacancies joining them for a wheel’s use;  \nThe use of clay in molding pitchers  \nComes from the hollow of its absence;  \nDoors, windows, in a house,  \nAre used for their emptiness;  \nThus we are helped by what is not,  \nTo use what is.  \nElectric circuitry is Orientalizing the West. The  \ncontained, the distinct, the separate—our Western  \nlegacy—are being replaced by the flowing, the  \nunified, the fused.  \nQUOTATIONS: \"The west shall shake the east awake …  \nwhile ye have the night for morn …\"  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 9.0,
+  "ocr_structured_time": 11.6
+}

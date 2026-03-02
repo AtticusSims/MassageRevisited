@@ -1,0 +1,94 @@
+{
+  "id": "spread_085",
+  "analysis": {
+    "id": "spread_085",
+    "pdf_page": 85,
+    "book_pages": [
+      160
+    ],
+    "section": "back_matter",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "\"It is the business\nof the future\nto be dangerous.\"\n— A. N. Whitehead",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [
+      {
+        "text": "It is the business of the future to be dangerous.",
+        "attribution": "A. N. Whitehead",
+        "context": "inline"
+      },
+      {
+        "text": "It is the business of the future to be dangerous.",
+        "attribution": "A. N. Whitehead",
+        "context": "inline"
+      }
+    ],
+    "images": [
+      {
+        "position": "left_page",
+        "subject": "### Visual Element Analysis (Focusing on Pictorial Elements Only)  \n\n#### 1. **Primary Visual Element: Black-and-White Photograph**  \n- **What it depicts**: A high-contrast black-and-white photograph of a celestial or astronomical scene. On the **left side**, a large, irregularly shaped object (resembling a moon or planet) dominates, with a textured surface showing light and dark patches (suggesting craters, terrain, or surface features). On the **right side**, a vertical structure with horizontal lines and a repeating pattern (resembling a grid, spectrogram, or scientific scan) extends from the top to the bottom. The background is a deep black, implying space.  \n- **Position on the page**: Occupies the **left page** of a book spread (implied by the layout). The photograph spans the left side of the page, with the text block positioned at the bottom.  \n- **Visual style**: A **black-and-white photograph** with scientific or astronomical context (e.g., satellite imagery or observational data).  \n- **Composition**:  \n  - **Framing**: The dark background (space) frames the left side of the celestial object and the right side of the grid structure, creating a stark contrast.  \n  - **Angle**: A side view, showing the celestial object and grid structure in profile.  \n  - **Contrast**: Extreme high contrast between bright (white/light gray) areas of the celestial object and grid, and the deep black background.  \n  - **Key visual qualities**: The celestial object’s textured surface (with varying shades of gray to depict depth/relief) and the grid’s repetitive, linear pattern (with subtle variations in tone to suggest data or structure).  \n- **Page occupation**: Approximately **80–90%** of the page, with the text block at the bottom occupying the remaining 10–20%.  \n\n#### 2. **Additional Visual Element: Text Block (Excluded per Instructions)**  \n*Note: The query specifies \"NOT the text — only the visual/pictorial elements,\" so text is omitted here. If text were included, it w",
+        "source_type": "advertisement",
+        "source_credit": "Wide World Photos, Inc.",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is dominated by a **high-contrast black-and-white photographic image** that occupies most of the space. The image is visually split: the *left side* features a lighter, irregularly textured shape (e.g., a rock or cloud-like form), while the *right side* displays a vertical, striped pattern (suggesting water or a grid). The **text** (a quote and author attribution) is positioned in the *lower-left quadrant*, below the image. This creates a clear division: the image dominates the upper/middle space, while text anchors the lower-left corner. The spatial relationship emphasizes the image as the primary visual anchor, with text serving as a secondary, contextual element.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Types**: Two distinct text layers are visible:  \n  - *Display text*: The quote (“It is the business of the future to be dangerous.”) is larger, bold, and serves as the focal textual element.  \n  - *Body text*: The author attribution (“— A. N. Whitehead”) is smaller, lighter in weight, and subordinate to the quote.  \n- **Font Style**: Serif typeface (common in traditional book design for readability and formality).  \n- **Weight & Color**: Both text layers are **reversed** (white on black), ensuring legibility against the dark background. The quote is likely bold, while the author’s name uses a lighter weight.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: Predominantly **dark** (black background), with stark **high contrast** between the light elements of the image (e.g., the textured left shape, striped right pattern) and the dark backdrop.  \n- **Visual Impact**: The high contrast amplifies the drama of the image, making the textures (e.g., the waterfall-like stripes) feel dynamic and urgent. The dark tone reinforces the quote’s theme of danger.  \n\n\n### 4. WHITE SPACE  \nThe spread has **sparse white space**. The image and text occupy most of the page, leaving minimal empty areas. The “white space” here is the *negative space* (dark backgr",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "contrast"
+    },
+    "rhetoric": {
+      "argument": "Brief textual element: '\"It is the business\nof the future\nto be dangerous.\"\n— A. N. Whitehead'",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Brief encounter — the reader absorbs the spread quickly before moving forward.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "media_ecology"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "\"It is the business\nof the future\nto be dangerous.\"\n— A. N. Whitehead",
+    "ocr_raw_time": 11.3,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"It is the business of the future to be dangerous.\" – A. N. Whitehead  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 4.8,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element Analysis (Focusing on Pictorial Elements Only)  \n\n#### 1. **Primary Visual Element: Black-and-White Photograph**  \n- **What it depicts**: A high-contrast black-and-white photograph of a celestial or astronomical scene. On the **left side**, a large, irregularly shaped object (resembling a moon or planet) dominates, with a textured surface showing light and dark patches (suggesting craters, terrain, or surface features). On the **right side**, a vertical structure with horizontal lines and a repeating pattern (resembling a grid, spectrogram, or scientific scan) extends from the top to the bottom. The background is a deep black, implying space.  \n- **Position on the page**: Occupies the **left page** of a book spread (implied by the layout). The photograph spans the left side of the page, with the text block positioned at the bottom.  \n- **Visual style**: A **black-and-white photograph** with scientific or astronomical context (e.g., satellite imagery or observational data).  \n- **Composition**:  \n  - **Framing**: The dark background (space) frames the left side of the celestial object and the right side of the grid structure, creating a stark contrast.  \n  - **Angle**: A side view, showing the celestial object and grid structure in profile.  \n  - **Contrast**: Extreme high contrast between bright (white/light gray) areas of the celestial object and grid, and the deep black background.  \n  - **Key visual qualities**: The celestial object’s textured surface (with varying shades of gray to depict depth/relief) and the grid’s repetitive, linear pattern (with subtle variations in tone to suggest data or structure).  \n- **Page occupation**: Approximately **80–90%** of the page, with the text block at the bottom occupying the remaining 10–20%.  \n\n#### 2. **Additional Visual Element: Text Block (Excluded per Instructions)**  \n*Note: The query specifies \"NOT the text — only the visual/pictorial elements,\" so text is omitted here. If text were included, it would be described as typography (e.g., serif font, white text on black background, centered at the bottom), but this is not required.*  \n\n---  \n**Summary**: The spread features a single dominant black-and-white photograph of an astronomical scene, with a celestial object on the left and a grid-like structure on the right, set against a dark space background. The photograph’s high contrast, textured details, and scientific framing dominate the visual field.",
+    "image_description_time": 9.5,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is dominated by a **high-contrast black-and-white photographic image** that occupies most of the space. The image is visually split: the *left side* features a lighter, irregularly textured shape (e.g., a rock or cloud-like form), while the *right side* displays a vertical, striped pattern (suggesting water or a grid). The **text** (a quote and author attribution) is positioned in the *lower-left quadrant*, below the image. This creates a clear division: the image dominates the upper/middle space, while text anchors the lower-left corner. The spatial relationship emphasizes the image as the primary visual anchor, with text serving as a secondary, contextual element.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Types**: Two distinct text layers are visible:  \n  - *Display text*: The quote (“It is the business of the future to be dangerous.”) is larger, bold, and serves as the focal textual element.  \n  - *Body text*: The author attribution (“— A. N. Whitehead”) is smaller, lighter in weight, and subordinate to the quote.  \n- **Font Style**: Serif typeface (common in traditional book design for readability and formality).  \n- **Weight & Color**: Both text layers are **reversed** (white on black), ensuring legibility against the dark background. The quote is likely bold, while the author’s name uses a lighter weight.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: Predominantly **dark** (black background), with stark **high contrast** between the light elements of the image (e.g., the textured left shape, striped right pattern) and the dark backdrop.  \n- **Visual Impact**: The high contrast amplifies the drama of the image, making the textures (e.g., the waterfall-like stripes) feel dynamic and urgent. The dark tone reinforces the quote’s theme of danger.  \n\n\n### 4. WHITE SPACE  \nThe spread has **sparse white space**. The image and text occupy most of the page, leaving minimal empty areas. The “white space” here is the *negative space* (dark background around the image/text), which is not traditional “white” space but rather the absence of visual elements. This scarcity of empty space creates a dense, immersive feel, emphasizing the image and text as the sole focal points.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \nThe left and right sides of the image are **contrasted**:  \n- *Left*: Lighter, irregular texture + text (anchoring the lower-left).  \n- *Right*: Darker, vertical striped pattern (visually dominant in texture).  \nThis creates a **contrast relationship**—the left side is anchored by text and lighter imagery, while the right side’s dense, striped pattern draws the eye upward. The text’s placement on the left reinforces this visual tension.  \n\n\n### 6. OVERALL FEEL  \nThe spread evokes a **dramatic, urgent, and ominous mood**. The high-contrast black-and-white image feels dynamic (like a waterfall or turbulent force), while the quote’s theme (“dangerous future”) adds psychological weight. The sparse white space and reversed typography intensify the sense of tension, making the spread feel **aggressive** (due to the stark contrasts) and **chaotic** (from the image’s textured energy). The overall energy is one of urgency and unease, aligning with the quote’s message.",
+    "layout_analysis_time": 13.5,
+    "model": "qwen3-vl"
+  }
+}

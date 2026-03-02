@@ -1,0 +1,86 @@
+{
+  "id": "spread_070",
+  "analysis": {
+    "id": "spread_070",
+    "pdf_page": 70,
+    "book_pages": [
+      130,
+      131
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "131\n\nMovies are better than ever!\n\nHollywood is often a fomenter of anti-colonialist revolutions.\n\nfrom\n\nVARIETY\n\nthe show business paper:\n\n\"Ice Boxes Sabotage Colonialism\"\n\nSukarno: \"The motion picture industry has provided a window on the world, and the colonized nations have looked through that window and have seen the things of which they have been deprived. It is perhaps not generally realized that a refrigerator can be a revolutionary symbol—to a people who have no refrigerators. A motor car owned by a worker in one country can be a symbol of revolt to a people deprived of even the necessities of life...[Hollywood] helped to build up the sense of deprivation of man's birthright, and that sense of deprivation has played a large part in the national revolutions of postwar Asia.\"",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### 1. Photograph on the Left Page  \n**1. What does it depict?**  \nA black-and-white photograph of an urban street scene featuring:  \n- **Foreground**: Three men wearing white hard hats (one helmet displays “OS” in visible lettering). The closest man points downward with his right hand, wearing a light-colored shirt and dark pants.  \n- **Midground**: A crowd of people gathered near a building, with some individuals standing and others walking.  \n- **Background**: A tall building with a vertical sign reading “CARVER” in bold, capital letters. Above this sign, a traffic light is mounted on the building. Below the “CARVER” sign, a smaller horizontal sign reads “SUSPENSE! EXCITEMENT! SUSAN HAYWARD ‘BACK STREET’ AND ‘DAMN THE DEFIANT’”. The scene is set during daylight, with strong shadows indicating sunlight.  \n\n**2. Position**  \nLeft page, full bleed (occupies the entire left side of the page).  \n\n**3. Visual style**  \nBlack-and-white photograph with high contrast (sharp shadows and highlights).  \n\n**4. Composition**  \n- **Framing**: Eye-level, slightly low angle to emphasize the building and street.  \n- **Angle**: Captures the scene from street level, creating depth with the foreground figures and background building.  \n- **Contrast**: High contrast between light (sky, building facade) and dark (shadows, street) areas.  \n- **Key visual qualities**: The vertical “CARVER” sign dominates the upper portion, while the foreground figures (pointing man, helmeted workers) draw attention. The traffic light and smaller sign add horizontal balance to the vertical sign.  \n\n**5. Page occupation**  \n100% of the left page.  \n\n\n### 2. Graphic Symbol (Logo) on the Right Page  \n**1. What does it depict?**  \nA stylized logo for *VARIETY*, featuring the word “VARIETY” in a bold, custom typeface with a distinctive curved underline beneath the text. The letterforms are thick, sans-serif, with the “V” having an angular shape and the “Y” ending in a sharp point.  \n\n**2. Position**  \nRight pa",
+        "source_type": "graphic",
+        "source_credit": "Variety",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two distinct sections:  \n- **Left side**: A full-bleed black-and-white photograph dominates the space. It depicts a street scene with helmeted individuals (likely protesters or demonstrators) and a building with a prominent “CARVER” sign. The image fills the entire left half of the page, creating a dense, visual focal point.  \n- **Right side**: Text occupies the right half, organized into a column. The text is structured hierarchically: a headline, a subheading (“from *VARIETY*”), and a body article. The space is divided cleanly between the image (left) and text (right), with no overlap. The text column is narrower than the image, emphasizing the visual-textual contrast.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**:  \n  - **Display text**: The *VARIETY* logo is large, bold, and stylized (custom sans-serif with a distinctive, curved design), serving as a prominent header.  \n  - **Headline**: “Movies are better than ever!” is small, sans-serif, and understated.  \n  - **Body text**: The main article (including Sukarno’s quote) uses a standard serif font (e.g., Times New Roman-style), with normal weight and moderate size.  \n  - **Subheading**: “Ice Boxes Sabotage Colonialism” is smaller than the *VARIETY* logo but larger than body text, likely bold for emphasis.  \n- **Font choices**: Serif for body text (traditional, formal), sans-serif for the headline (modern, understated), and a custom display font for *VARIETY* (eye-catching, brand-specific).  \n- **Weight/contrast**: Body text is light (normal weight), while *VARIETY* is bold. No reversed (white-on-black) text; all text is black on white.  \n\n\n### 3. CONTRAST & TONE  \n- **Image**: High contrast (black-and-white photography with sharp shadows/highlights, emphasizing the gritty, historical tone of the scene).  \n- **Text**: High contrast (black text on white background, ensuring readability).  \n- **Overall tone**: The spread is **high-contrast**—both vis",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "131\n\nMovies are better than ever.",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "perception",
+        "war_and_violence",
+        "art_and_creativity"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "steady",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "131\n\nMovies are better than ever!\n\nHollywood is often a fomenter of anti-colonialist revolutions.\n\nfrom\n\nVARIETY\n\nthe show business paper:\n\n\"Ice Boxes Sabotage Colonialism\"\n\nSukarno: \"The motion picture industry has provided a window on the world, and the colonized nations have looked through that window and have seen the things of which they have been deprived. It is perhaps not generally realized that a refrigerator can be a revolutionary symbol—to a people who have no refrigerators. A motor car owned by a worker in one country can be a symbol of revolt to a people deprived of even the necessities of life...[Hollywood] helped to build up the sense of deprivation of man's birthright, and that sense of deprivation has played a large part in the national revolutions of postwar Asia.\"",
+    "ocr_raw_time": 15.5,
+    "ocr_structured": "",
+    "ocr_structured_time": 23.0,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### 1. Photograph on the Left Page  \n**1. What does it depict?**  \nA black-and-white photograph of an urban street scene featuring:  \n- **Foreground**: Three men wearing white hard hats (one helmet displays “OS” in visible lettering). The closest man points downward with his right hand, wearing a light-colored shirt and dark pants.  \n- **Midground**: A crowd of people gathered near a building, with some individuals standing and others walking.  \n- **Background**: A tall building with a vertical sign reading “CARVER” in bold, capital letters. Above this sign, a traffic light is mounted on the building. Below the “CARVER” sign, a smaller horizontal sign reads “SUSPENSE! EXCITEMENT! SUSAN HAYWARD ‘BACK STREET’ AND ‘DAMN THE DEFIANT’”. The scene is set during daylight, with strong shadows indicating sunlight.  \n\n**2. Position**  \nLeft page, full bleed (occupies the entire left side of the page).  \n\n**3. Visual style**  \nBlack-and-white photograph with high contrast (sharp shadows and highlights).  \n\n**4. Composition**  \n- **Framing**: Eye-level, slightly low angle to emphasize the building and street.  \n- **Angle**: Captures the scene from street level, creating depth with the foreground figures and background building.  \n- **Contrast**: High contrast between light (sky, building facade) and dark (shadows, street) areas.  \n- **Key visual qualities**: The vertical “CARVER” sign dominates the upper portion, while the foreground figures (pointing man, helmeted workers) draw attention. The traffic light and smaller sign add horizontal balance to the vertical sign.  \n\n**5. Page occupation**  \n100% of the left page.  \n\n\n### 2. Graphic Symbol (Logo) on the Right Page  \n**1. What does it depict?**  \nA stylized logo for *VARIETY*, featuring the word “VARIETY” in a bold, custom typeface with a distinctive curved underline beneath the text. The letterforms are thick, sans-serif, with the “V” having an angular shape and the “Y” ending in a sharp point.  \n\n**2. Position**  \nRight page, positioned above the text “from VARIETY the show business paper” (centered or near the top of the right page).  \n\n**3. Visual style**  \nGraphic symbol (typography-based logo) with high contrast (black on white background).  \n\n**4. Composition**  \n- **Framing**: The logo is a standalone visual element, centered to draw attention.  \n- **Angle**: Horizontal alignment with the text below.  \n- **Contrast**: Bold black letterforms against a white background, with the curved underline adding dynamic movement.  \n- **Key visual qualities**: Clean, modern design with thick strokes and a unique underline, emphasizing the publication’s identity.  \n\n**5. Page occupation**  \nApproximately 1/4 to 1/3 of the right page (a prominent but non-full-page element).",
+    "image_description_time": 16.4,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two distinct sections:  \n- **Left side**: A full-bleed black-and-white photograph dominates the space. It depicts a street scene with helmeted individuals (likely protesters or demonstrators) and a building with a prominent “CARVER” sign. The image fills the entire left half of the page, creating a dense, visual focal point.  \n- **Right side**: Text occupies the right half, organized into a column. The text is structured hierarchically: a headline, a subheading (“from *VARIETY*”), and a body article. The space is divided cleanly between the image (left) and text (right), with no overlap. The text column is narrower than the image, emphasizing the visual-textual contrast.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**:  \n  - **Display text**: The *VARIETY* logo is large, bold, and stylized (custom sans-serif with a distinctive, curved design), serving as a prominent header.  \n  - **Headline**: “Movies are better than ever!” is small, sans-serif, and understated.  \n  - **Body text**: The main article (including Sukarno’s quote) uses a standard serif font (e.g., Times New Roman-style), with normal weight and moderate size.  \n  - **Subheading**: “Ice Boxes Sabotage Colonialism” is smaller than the *VARIETY* logo but larger than body text, likely bold for emphasis.  \n- **Font choices**: Serif for body text (traditional, formal), sans-serif for the headline (modern, understated), and a custom display font for *VARIETY* (eye-catching, brand-specific).  \n- **Weight/contrast**: Body text is light (normal weight), while *VARIETY* is bold. No reversed (white-on-black) text; all text is black on white.  \n\n\n### 3. CONTRAST & TONE  \n- **Image**: High contrast (black-and-white photography with sharp shadows/highlights, emphasizing the gritty, historical tone of the scene).  \n- **Text**: High contrast (black text on white background, ensuring readability).  \n- **Overall tone**: The spread is **high-contrast**—both visually (photo) and typographically (text). The black-and-white photo and stark text create a serious, urgent mood.  \n\n\n### 4. WHITE SPACE  \n- **Moderate white space**: The text column has ample white space around the text block (e.g., margins on the right and top/bottom of the text), but the left side (photo) is densely packed. The white space is not sparse (no excessive empty areas) but also not dense (the text is not cramped). It balances readability with visual weight.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Contrast**: The left (image) and right (text) sections are **distinct and complementary**. The photo visually contextualizes the text’s theme (anti-colonialism, protest), while the text explains the historical/political context. They do not mirror each other (e.g., no visual echo of the text in the image) but work together to tell a cohesive story.  \n- **Dynamic relationship**: The image’s tension (helmeted figures, crowd) contrasts with the text’s analytical tone, creating a dialogue between visual narrative and written argument.  \n\n\n### 6. OVERALL FEEL  \n- **Visual mood**: **Serious, urgent, and historically grounded**. The black-and-white photo conveys a sense of historical gravity (likely from the mid-20th century), while the text’s focus on anti-colonialism and Hollywood’s role adds intellectual weight.  \n- **Energy**: Not chaotic or overwhelming—instead, it feels **calmly authoritative**. The clean layout, high contrast, and focused content create a sense of purpose, inviting readers to engage with the political narrative. The photo’s tension (protest imagery) balances the text’s measured tone, resulting in a mood that is **engaged but restrained**.",
+    "layout_analysis_time": 12.4,
+    "model": "qwen3-vl"
+  }
+}

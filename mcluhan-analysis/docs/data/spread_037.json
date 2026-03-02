@@ -1,0 +1,86 @@
+{
+  "id": "spread_037",
+  "analysis": {
+    "id": "spread_037",
+    "pdf_page": 37,
+    "book_pages": [
+      64,
+      65
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "Solid integrated circuit enlarged several hundred times.",
+      "display_text": "",
+      "captions": [
+        "Solid integrated circuit enlarged several hundred times."
+      ],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "right_page",
+        "subject": "### Visual Element Description: Photograph of the Solid Integrated Circuit  \n\n#### 1. What does it depict?  \nThe photograph depicts a **solid integrated circuit (IC)** magnified several hundred times. The IC is a small, square-shaped component with a dense network of **white, maze-like circuit traces** (thin, interconnected lines) on a **dark, rectangular background**. The IC is positioned against a **large, curved, textured surface** that dominates the frame. This surface has a **gradient from light (left side) to dark (right side)**, with the left side exhibiting a grainy, metallic texture (suggesting a magnified view of a semiconductor substrate or wafer) and the right side appearing smoother and darker. There are no people or additional objects; the focus is solely on the IC and its surrounding textured background.  \n\n#### 2. Position on the page  \nThe photograph **spans both pages** (left and right) as a **full-bleed image**. It covers the entire spread, with the text (not part of the visual element) placed in the top-right corner of the right page. The IC is centered within the curved surface, with the left side of the surface (brighter, textured) occupying the left half of the spread and the right side (darker, smoother) occupying the right half.  \n\n#### 3. Visual style  \nIt is a **black and white photograph** with a **grainy texture**, characteristic of microphotography or magnified images from early electronic technology. The graininess is most pronounced in the left side of the background, adding a tactile, almost photographic “noise” to the image.  \n\n#### 4. Composition  \n- **Framing**: A close-up, direct perspective of the IC against the curved background. The curved surface creates a smooth, organic frame that guides the eye toward the IC.  \n- **Angle**: Slightly angled (due to the curved surface), but primarily direct, emphasizing the IC’s intricate details.  \n- **Contrast**: High contrast between the **bright, textured left background** (with visible ",
+        "source_type": "advertisement",
+        "source_credit": "Radio Corporation of America",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \n- **Text placement**: The caption *\"Solid integrated circuit enlarged several hundred times.\"* sits in the **top-right corner**, anchored to the dark background.  \n- **Image placement**: The main visual (a magnified solid integrated circuit) dominates the spread, occupying the **central and left portions** of the layout. It features a curved, textured background with a small, intricate square (the circuit) positioned near the center-left.  \n- **Space division**: The layout is **asymmetrical**, with the image occupying ~80% of the visual space and the text relegated to a narrow strip in the top-right. The dark background creates a stark separation between the image and text, emphasizing the image as the focal point.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Only **body text** is visible (the caption), with no display text or headings.  \n- **Font style**: Sans-serif (common in technical/technical publications for readability).  \n- **Weight/Style**: Bold (for legibility against the dark background) and **reversed** (white text on black).  \n- **Size**: Small, consistent with caption text in book spreads.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly dark** (the background is nearly black, with the image’s lighter areas creating subtle gradients).  \n- **Contrast**: **High contrast** throughout:  \n  - Between the light/white circuit details and the dark background.  \n  - Between the white caption text and the black background.  \n  - Within the image itself (e.g., the circuit’s intricate lines vs. the textured background).  \n\n\n### 4. WHITE SPACE  \n- **Empty space**: **Dense** (in design terms, \"white space\" refers to *negative space*). The layout is dominated by the black background, which surrounds the image and text, creating a sense of depth and focus on the central visual. The image itself has minimal empty space (it’s a dense, textured composition), but the *overall layout* has abundant negative space (the black areas).  \n\n\n### ",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "contrast"
+    },
+    "rhetoric": {
+      "argument": "Brief textual element: 'Solid integrated circuit enlarged several hundred times.'",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Brief encounter — the reader absorbs the spread quickly before moving forward.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "space_and_time"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "Solid integrated circuit enlarged several hundred times.",
+    "ocr_raw_time": 3.2,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: Solid integrated circuit enlarged several hundred times.  \nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 4.7,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element Description: Photograph of the Solid Integrated Circuit  \n\n#### 1. What does it depict?  \nThe photograph depicts a **solid integrated circuit (IC)** magnified several hundred times. The IC is a small, square-shaped component with a dense network of **white, maze-like circuit traces** (thin, interconnected lines) on a **dark, rectangular background**. The IC is positioned against a **large, curved, textured surface** that dominates the frame. This surface has a **gradient from light (left side) to dark (right side)**, with the left side exhibiting a grainy, metallic texture (suggesting a magnified view of a semiconductor substrate or wafer) and the right side appearing smoother and darker. There are no people or additional objects; the focus is solely on the IC and its surrounding textured background.  \n\n#### 2. Position on the page  \nThe photograph **spans both pages** (left and right) as a **full-bleed image**. It covers the entire spread, with the text (not part of the visual element) placed in the top-right corner of the right page. The IC is centered within the curved surface, with the left side of the surface (brighter, textured) occupying the left half of the spread and the right side (darker, smoother) occupying the right half.  \n\n#### 3. Visual style  \nIt is a **black and white photograph** with a **grainy texture**, characteristic of microphotography or magnified images from early electronic technology. The graininess is most pronounced in the left side of the background, adding a tactile, almost photographic “noise” to the image.  \n\n#### 4. Composition  \n- **Framing**: A close-up, direct perspective of the IC against the curved background. The curved surface creates a smooth, organic frame that guides the eye toward the IC.  \n- **Angle**: Slightly angled (due to the curved surface), but primarily direct, emphasizing the IC’s intricate details.  \n- **Contrast**: High contrast between the **bright, textured left background** (with visible grain) and the **dark, smooth right background**. The IC’s white circuit traces sharply contrast against its dark square, making the traces stand out.  \n- **Key visual qualities**:  \n  - The IC’s **intricate, maze-like circuit traces** (sharp, precise lines).  \n  - The **grainy texture** of the left background (suggesting magnification of a microscopic surface).  \n  - The **smooth gradient** from light to dark across the curved surface, creating a visual flow.  \n  - The **curved shape** of the background, which adds depth and context to the IC’s placement.  \n\n#### 5. Page occupation  \nThe photograph occupies **nearly 100% of the spread** (both left and right pages), making it a **full-bleed image**. The text (in the top-right corner of the right page) is a minor element, so the photograph is the dominant visual element, taking up approximately **95–100% of the page area**.",
+    "image_description_time": 16.6,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \n- **Text placement**: The caption *\"Solid integrated circuit enlarged several hundred times.\"* sits in the **top-right corner**, anchored to the dark background.  \n- **Image placement**: The main visual (a magnified solid integrated circuit) dominates the spread, occupying the **central and left portions** of the layout. It features a curved, textured background with a small, intricate square (the circuit) positioned near the center-left.  \n- **Space division**: The layout is **asymmetrical**, with the image occupying ~80% of the visual space and the text relegated to a narrow strip in the top-right. The dark background creates a stark separation between the image and text, emphasizing the image as the focal point.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Only **body text** is visible (the caption), with no display text or headings.  \n- **Font style**: Sans-serif (common in technical/technical publications for readability).  \n- **Weight/Style**: Bold (for legibility against the dark background) and **reversed** (white text on black).  \n- **Size**: Small, consistent with caption text in book spreads.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly dark** (the background is nearly black, with the image’s lighter areas creating subtle gradients).  \n- **Contrast**: **High contrast** throughout:  \n  - Between the light/white circuit details and the dark background.  \n  - Between the white caption text and the black background.  \n  - Within the image itself (e.g., the circuit’s intricate lines vs. the textured background).  \n\n\n### 4. WHITE SPACE  \n- **Empty space**: **Dense** (in design terms, \"white space\" refers to *negative space*). The layout is dominated by the black background, which surrounds the image and text, creating a sense of depth and focus on the central visual. The image itself has minimal empty space (it’s a dense, textured composition), but the *overall layout* has abundant negative space (the black areas).  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Contrast**. The image (left/center) is the primary visual, while the text (top-right) acts as a secondary, contextual element. The left side is visually \"heavy\" (the circuit’s intricate details), while the right side is \"light\" (the sparse text and dark background). This creates a **visual tension** between the detailed image and the minimalist text.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Minimal, calm, and technical**. The high-contrast black-and-white palette, clean layout, and focus on a precise technical subject (the integrated circuit) evoke a sense of precision and order. There is no chaos or aggression—instead, the design feels **clinical, methodical, and restrained**, aligning with the subject matter (a scientific/technical illustration).",
+    "layout_analysis_time": 13.7,
+    "model": "qwen3-vl"
+  }
+}

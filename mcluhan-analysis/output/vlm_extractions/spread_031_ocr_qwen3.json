@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_031",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:34:09",
+  "ocr_raw": "The Renaissance Legacy.\nThe Vanishing Point = Self-Effacement,\nThe Detached Observer.\nNo Involvement!\nThe viewer of Renaissance art is systematically placed outside the frame of experience. A piazza for everything and everything in its piazza.\nThe instantaneous world of electric informational media involves all of us, all at once. No detachment or frame is possible.",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: The Renaissance Legacy.  \nThe Vanishing Point = Self-Effacement,  \nThe Detached Observer.  \nNo Involvement!  \n\nThe viewer of Renaissance art is systematically  \nplaced outside the frame of experience. A piazza  \nfor everything and everything in its piazza.  \n\nThe instantaneous world of electric informational  \nmedia involves all of us, all at once. No detachment  \nor frame is possible.  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 6.1,
+  "ocr_structured_time": 10.1
+}

@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_059",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:47:42",
+  "ocr_raw": "\"History as she is harped. Rite words in rote order.\"",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"History as she is harped. Rite words in rote order.\"  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 6.3,
+  "ocr_structured_time": 6.8
+}

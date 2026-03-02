@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_045",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:42:49",
+  "ocr_raw": "In the name of “progress,” our official culture is striving to force the new media to do the work of the old.",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: In the name of \"progress,\" our official culture is striving to force the new media to do the work of the old.  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 4.3,
+  "ocr_structured_time": 6.1
+}

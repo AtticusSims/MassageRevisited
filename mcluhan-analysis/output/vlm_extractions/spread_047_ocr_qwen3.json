@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_047",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:43:04",
+  "ocr_raw": "Environments are invisible. Their groundrules, pervasive structure, and overall patterns elude easy perception.",
+  "ocr_structured": "DISPLAY_TEXT: NONE\nBODY_TEXT: Environments are invisible. Their groundrules, pervasive structure, and overall patterns elude easy perception.\nQUOTATIONS: NONE\nCAPTIONS: NONE\nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 5.6,
+  "ocr_structured_time": 3.3
+}

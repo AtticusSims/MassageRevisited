@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_012",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:23:52",
+  "ocr_raw": "your family\nThe family circle has widened. The worldpool of information fathered by electric media—movies, Telstar, flight-far surpasses any possible influence mom and dad can now bring to bear. Character no longer is shaped by only two earnest, fumbling experts. Now all the world's a sage.\n14",
+  "ocr_structured": "DISPLAY_TEXT: your family  \nBODY_TEXT: The family circle has widened. The worldpool of information fathered by electric media—movies, Telstar, flight-far surpasses any possible influence mom and dad can now bring to bear. Character no longer is shaped by only two earnest, fumbling experts. Now all the world's a sage.  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: 14",
+  "ocr_raw_time": 7.4,
+  "ocr_structured_time": 5.1
+}

@@ -1,0 +1,86 @@
+{
+  "id": "spread_056",
+  "analysis": {
+    "id": "spread_056",
+    "pdf_page": 56,
+    "book_pages": [
+      102,
+      103
+    ],
+    "section": "body",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "",
+      "display_text": "EDUCATION",
+      "captions": [
+        "Amherst seniors walk out on graduation address by Secretary of Defense Robert McNamara. June, 1966."
+      ],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "right_page",
+        "subject": "### 1. Black and White Photograph  \n**1. What does it depict?**  \nA group of young men in academic regalia (dark gowns with attached hoods, some wearing caps) walking out of a graduation ceremony. The scene includes a dense crowd of onlookers: some in formal attire (suits, ties), others in academic dress. In the background, a brick building with trees and a structure with a flag (likely a university building) is visible. The action shows students exiting the event, suggesting a protest or walkout during a speech.  \n\n**2. Where is it positioned?**  \nFull bleed across the top of the spread, spanning both left and right pages.  \n\n**3. Visual style**  \nBlack and white photograph with high contrast, capturing a candid, documentary-style moment.  \n\n**4. Composition**  \n- **Framing**: Shot from a slightly low angle, focusing on the crowd’s movement. The foreground shows the backs of heads of onlookers, the midground features students in gowns walking, and the background includes more attendees and architectural elements.  \n- **Angle**: Eye-level to slightly low, emphasizing the students’ movement.  \n- **Contrast**: Strong contrast between dark gowns/suits and lighter areas (e.g., sky, building).  \n- **Key visual qualities**: Dynamic, with a sense of motion; the density of people creates a chaotic yet purposeful atmosphere. Some figures are in sharp focus, while others are blurred to highlight the action.  \n\n**5. Page occupation**  \nApproximately 66% of the page (top two-thirds).  \n\n\n### 2. \"EDUCATION\" Graphic Symbol  \n**1. What does it depict?**  \nThe word \"EDUCATION\" rendered in large, bold, sans-serif typeface. The letters are split into \"ED\" (left) and \"UCATION\" (right), but the design integrates them into a single cohesive unit. The text has a textured or slightly distressed appearance, with subtle shadows or embossed effects on some letters.  \n\n**2. Where is it positioned?**  \nPositioned at the bottom of the spread, spanning both pages (full bleed across the bottom). ",
+        "source_type": "graphic",
+        "source_credit": "Wide World Photos, Inc.",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is divided into **two primary zones**:  \n- **Top section (image)**: A black-and-white photograph dominates the upper two-thirds, depicting a crowd of people (likely students) protesting during a graduation event. The photo is dense with figures, filling the frame without significant negative space.  \n- **Bottom section (text)**: Text is split into two parts:  \n  - A **small, left-aligned caption** beneath the photo, providing context (“Amherst seniors walk out on graduation address by Secretary of Defense Robert McNamara. June, 1966.”).  \n  - A **large, bold title** (“EDUCATION”) positioned in the bottom-right corner, spanning the width of the spread.  \n\nThe space is structured as **image (top) + text (bottom)**, with the text further divided into left (caption) and right (title) to create visual balance. The photo’s density contrasts with the sparse text area, emphasizing the image as the focal point.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text (caption)**:  \n  - *Size*: Small (typical of newspaper-style captions).  \n  - *Font*: Serif (e.g., Times New Roman), suggesting traditional print design.  \n  - *Weight*: Light (normal weight, not bold).  \n  - *Color*: Black on white (standard for print).  \n- **Display text (“EDUCATION”)**:  \n  - *Size*: Large, dominant (occupies significant visual space).  \n  - *Font*: Sans-serif (blocky, geometric letterforms; likely a bold, modern typeface like Helvetica or a custom variant).  \n  - *Weight*: Bold (high-impact, commanding attention).  \n  - *Color*: Black on white (consistent with the caption, but larger scale).  \n\nThe typography creates a **hierarchy**: the caption provides context, while “EDUCATION” acts as a thematic anchor. The serif body text contrasts with the bold, sans-serif display text, emphasizing the latter’s importance.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The photograph uses stark black-and-white tonal ranges (shadows vs. highlights), while",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": "Large display typography",
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "contrast"
+    },
+    "rhetoric": {
+      "argument": "Brief textual element: 'EDUCATION'",
+      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
+      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "education"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "punctuates",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "Amherst seniors walk out on graduation address by Secretary of Defense Robert McNamara. June, 1966.\nEDUCATION",
+    "ocr_raw_time": 9.7,
+    "ocr_structured": "DISPLAY_TEXT: EDUCATION\nBODY_TEXT: NONE\nQUOTATIONS: NONE\nCAPTIONS: Amherst seniors walk out on graduation address by Secretary of Defense Robert McNamara. June, 1966.\nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 5.1,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### 1. Black and White Photograph  \n**1. What does it depict?**  \nA group of young men in academic regalia (dark gowns with attached hoods, some wearing caps) walking out of a graduation ceremony. The scene includes a dense crowd of onlookers: some in formal attire (suits, ties), others in academic dress. In the background, a brick building with trees and a structure with a flag (likely a university building) is visible. The action shows students exiting the event, suggesting a protest or walkout during a speech.  \n\n**2. Where is it positioned?**  \nFull bleed across the top of the spread, spanning both left and right pages.  \n\n**3. Visual style**  \nBlack and white photograph with high contrast, capturing a candid, documentary-style moment.  \n\n**4. Composition**  \n- **Framing**: Shot from a slightly low angle, focusing on the crowd’s movement. The foreground shows the backs of heads of onlookers, the midground features students in gowns walking, and the background includes more attendees and architectural elements.  \n- **Angle**: Eye-level to slightly low, emphasizing the students’ movement.  \n- **Contrast**: Strong contrast between dark gowns/suits and lighter areas (e.g., sky, building).  \n- **Key visual qualities**: Dynamic, with a sense of motion; the density of people creates a chaotic yet purposeful atmosphere. Some figures are in sharp focus, while others are blurred to highlight the action.  \n\n**5. Page occupation**  \nApproximately 66% of the page (top two-thirds).  \n\n\n### 2. \"EDUCATION\" Graphic Symbol  \n**1. What does it depict?**  \nThe word \"EDUCATION\" rendered in large, bold, sans-serif typeface. The letters are split into \"ED\" (left) and \"UCATION\" (right), but the design integrates them into a single cohesive unit. The text has a textured or slightly distressed appearance, with subtle shadows or embossed effects on some letters.  \n\n**2. Where is it positioned?**  \nPositioned at the bottom of the spread, spanning both pages (full bleed across the bottom).  \n\n**3. Visual style**  \nGraphic symbol (typographic design), black on white background.  \n\n**4. Composition**  \n- **Framing**: Centered horizontally across the bottom. The text is bold and blocky, with thick strokes and minimal spacing between letters.  \n- **Angle**: Flat, horizontal alignment.  \n- **Contrast**: High contrast between black text and white background, emphasizing the text’s prominence.  \n- **Key visual qualities**: The texture (e.g., halftone or distressed effect) adds tactile depth, while the heavy weight of the font creates a bold, authoritative presence.  \n\n**5. Page occupation**  \nApproximately 33% of the page (bottom third).",
+    "image_description_time": 18.7,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is divided into **two primary zones**:  \n- **Top section (image)**: A black-and-white photograph dominates the upper two-thirds, depicting a crowd of people (likely students) protesting during a graduation event. The photo is dense with figures, filling the frame without significant negative space.  \n- **Bottom section (text)**: Text is split into two parts:  \n  - A **small, left-aligned caption** beneath the photo, providing context (“Amherst seniors walk out on graduation address by Secretary of Defense Robert McNamara. June, 1966.”).  \n  - A **large, bold title** (“EDUCATION”) positioned in the bottom-right corner, spanning the width of the spread.  \n\nThe space is structured as **image (top) + text (bottom)**, with the text further divided into left (caption) and right (title) to create visual balance. The photo’s density contrasts with the sparse text area, emphasizing the image as the focal point.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text (caption)**:  \n  - *Size*: Small (typical of newspaper-style captions).  \n  - *Font*: Serif (e.g., Times New Roman), suggesting traditional print design.  \n  - *Weight*: Light (normal weight, not bold).  \n  - *Color*: Black on white (standard for print).  \n- **Display text (“EDUCATION”)**:  \n  - *Size*: Large, dominant (occupies significant visual space).  \n  - *Font*: Sans-serif (blocky, geometric letterforms; likely a bold, modern typeface like Helvetica or a custom variant).  \n  - *Weight*: Bold (high-impact, commanding attention).  \n  - *Color*: Black on white (consistent with the caption, but larger scale).  \n\nThe typography creates a **hierarchy**: the caption provides context, while “EDUCATION” acts as a thematic anchor. The serif body text contrasts with the bold, sans-serif display text, emphasizing the latter’s importance.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The photograph uses stark black-and-white tonal ranges (shadows vs. highlights), while the text relies on black-on-white contrast.  \n- **Tone**: Predominantly **dark** in the photograph (due to the black-and-white format and shadowy crowd), but the text area is **light** (white background). The overall tone is **neutral but intense**, driven by the photograph’s high-contrast imagery and the bold text.  \n\n\n### 4. WHITE SPACE  \n- **Image area**: **Packed** (no significant negative space; the photograph is dense with people).  \n- **Text area**: **Moderate** white space. The caption is small, leaving ample white space around it, while “EDUCATION” is positioned to allow breathing room on the right. The spread avoids clutter, using white space to frame the text and image.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Caption** (left): Positioned beneath the photo, it provides contextual detail and anchors the left side.  \n- **“EDUCATION”** (right): Dominates the right side, visually balancing the caption.  \n- **Relationship**: **Contrast** (left = informational caption; right = thematic title). The two text elements are **separate but complementary**, with the caption explaining the image and “EDUCATION” framing the broader context.  \n\n\n### 6. OVERALL FEEL  \nThe spread conveys an **aggressive, chaotic, and tense mood**. The photograph’s depiction of a protest (students walking out of a graduation ceremony) suggests unrest, while the high-contrast black-and-white format amplifies the drama. The bold, sans-serif “EDUCATION” title adds urgency, and the dense crowd in the photo creates a sense of urgency and conflict. The design feels **overwhelming** due to the protest’s intensity, but the clean typography and white space prevent it from being chaotic. The mood is **political and confrontational**, reflecting the historical context (likely related to anti-war protests during the Vietnam War era).",
+    "layout_analysis_time": 13.0,
+    "model": "qwen3-vl"
+  }
+}

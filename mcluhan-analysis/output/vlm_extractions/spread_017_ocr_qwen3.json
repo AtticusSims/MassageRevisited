@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_017",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:27:48",
+  "ocr_raw": "\"the others\"\n\nThe shock of recognition! In an electric information environment, minority groups can no longer be contained—ignored. Too many people know too much about each other. Our new environment compels commitment and participation. We have become irrevocably involved with, and responsible for, each other.\n\n24\n\nthere is absolutely no inevitability as long as there is a willingness to contemplate what is happening",
+  "ocr_structured": "DISPLAY_TEXT: \n\"the others\"\nthere is absolutely no inevitability as long as there is a willingness to contemplate what is happening\n\nBODY_TEXT: \nThe shock of recognition! In an electric information environment, minority groups can no longer be contained—ignored. Too many people know too much about each other. Our new environment compels commitment and participation. We have become irrevocably involved with, and responsible for, each other.\n\nQUOTATIONS: \nNONE\n\nCAPTIONS: \nNONE\n\nPAGE_NUMBERS: \n24",
+  "ocr_raw_time": 7.9,
+  "ocr_structured_time": 6.5
+}

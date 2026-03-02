@@ -1,6 +1,6 @@
 {
   "total_pages": 85,
-  "total_analyzed": 10,
+  "total_analyzed": 85,
   "schema_version": "1.1",
   "spreads": [
     {
@@ -83,452 +83,676 @@
     {
       "id": "spread_011",
       "pdf_page": 11,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        12,
+        13
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_012",
       "pdf_page": 12,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        14,
+        15
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_013",
       "pdf_page": 13,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        16,
+        17
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_014",
       "pdf_page": 14,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        18,
+        19
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_015",
       "pdf_page": 15,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        20,
+        21
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_016",
       "pdf_page": 16,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        22,
+        23
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_017",
       "pdf_page": 17,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        24,
+        25
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_018",
       "pdf_page": 18,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        26,
+        27
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_019",
       "pdf_page": 19,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        28,
+        29
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_020",
       "pdf_page": 20,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        30,
+        31
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_021",
       "pdf_page": 21,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        32,
+        33
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_022",
       "pdf_page": 22,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        34,
+        35
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_023",
       "pdf_page": 23,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        36,
+        37
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_024",
       "pdf_page": 24,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        38,
+        39
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_025",
       "pdf_page": 25,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        40,
+        41
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_026",
       "pdf_page": 26,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        42,
+        43
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_027",
       "pdf_page": 27,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        44,
+        45
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_028",
       "pdf_page": 28,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        46,
+        47
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_029",
       "pdf_page": 29,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        48,
+        49
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_030",
       "pdf_page": 30,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        50,
+        51
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_031",
       "pdf_page": 31,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        52,
+        53
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_032",
       "pdf_page": 32,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        54,
+        55
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_033",
       "pdf_page": 33,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        56,
+        57
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_034",
       "pdf_page": 34,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        58,
+        59
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_035",
       "pdf_page": 35,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        60,
+        61
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_036",
       "pdf_page": 36,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        62,
+        63
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_037",
       "pdf_page": 37,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        64,
+        65
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_038",
       "pdf_page": 38,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        66,
+        67
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_039",
       "pdf_page": 39,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        68,
+        69
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_040",
       "pdf_page": 40,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        70,
+        71
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_041",
       "pdf_page": 41,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        72,
+        73
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_042",
       "pdf_page": 42,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        74,
+        75
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_043",
       "pdf_page": 43,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        76,
+        77
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_044",
       "pdf_page": 44,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        78,
+        79
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_045",
       "pdf_page": 45,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        80,
+        81
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_046",
       "pdf_page": 46,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        82,
+        83
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_047",
       "pdf_page": 47,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        84,
+        85
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_048",
       "pdf_page": 48,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        86,
+        87
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_049",
       "pdf_page": 49,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        88,
+        89
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_050",
       "pdf_page": 50,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        90,
+        91
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_051",
       "pdf_page": 51,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        92,
+        93
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_052",
       "pdf_page": 52,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        94,
+        95
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_053",
       "pdf_page": 53,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        96,
+        97
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_054",
       "pdf_page": 54,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        98,
+        99
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_055",
       "pdf_page": 55,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        100,
+        101
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_056",
       "pdf_page": 56,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        102,
+        103
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_057",
       "pdf_page": 57,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        104,
+        105
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_058",
       "pdf_page": 58,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        106,
+        107
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_059",
       "pdf_page": 59,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        108,
+        109
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_060",
       "pdf_page": 60,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        110,
+        111
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_061",
       "pdf_page": 61,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        112,
+        113
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_062",
       "pdf_page": 62,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        114,
+        115
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_063",
       "pdf_page": 63,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        116,
+        117
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_064",
       "pdf_page": 64,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        118,
+        119
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_065",
       "pdf_page": 65,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        120,
+        121
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_066",
       "pdf_page": 66,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        122,
+        123
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_067",
       "pdf_page": 67,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        124,
+        125
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_068",
       "pdf_page": 68,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        126,
+        127
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_069",
       "pdf_page": 69,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        128,
+        129
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_070",
       "pdf_page": 70,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        130,
+        131
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_071",
       "pdf_page": 71,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        132,
+        133
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_072",
       "pdf_page": 72,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        134,
+        135
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_073",
       "pdf_page": 73,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        136,
+        137
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_074",
       "pdf_page": 74,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        138,
+        139
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_075",
       "pdf_page": 75,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        140,
+        141
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_076",
       "pdf_page": 76,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        142,
+        143
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_077",
       "pdf_page": 77,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        144,
+        145
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_078",
       "pdf_page": 78,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        146,
+        147
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_079",
       "pdf_page": 79,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        148,
+        149
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_080",
       "pdf_page": 80,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        150,
+        151
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_081",
       "pdf_page": 81,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        152,
+        153
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_082",
       "pdf_page": 82,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        154,
+        155
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_083",
       "pdf_page": 83,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        156,
+        157
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_084",
       "pdf_page": 84,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        158,
+        159
+      ],
+      "analyzed": true
     },
     {
       "id": "spread_085",
       "pdf_page": 85,
-      "book_pages": [],
-      "analyzed": false
+      "book_pages": [
+        160
+      ],
+      "analyzed": true
     }
   ]
 }

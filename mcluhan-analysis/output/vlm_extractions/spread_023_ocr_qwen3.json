@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_023",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:28:48",
+  "ocr_raw": "is an extension of the eye...",
+  "ocr_structured": "DISPLAY_TEXT: is an extension of the eye...\nBODY_TEXT: NONE\nQUOTATIONS: NONE\nCAPTIONS: NONE\nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 3.3,
+  "ocr_structured_time": 3.5
+}

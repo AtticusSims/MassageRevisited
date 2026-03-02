@@ -1,0 +1,84 @@
+{
+  "id": "spread_066",
+  "analysis": {
+    "id": "spread_066",
+    "pdf_page": 66,
+    "book_pages": [
+      122,
+      123
+    ],
+    "section": "body",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### Visual Element Description  \n\n#### 1. Copyright Symbol (©)  \n- **What it depicts**: A circular graphic symbol with a capital \"C\" enclosed within the circle. This is the universal symbol for copyright, representing ownership of intellectual property.  \n- **Position**: Located on the **left page**, near the top of the page, positioned above the text block. It is an **inset element** (not spanning the page or overlapping with text).  \n- **Visual style**: A **black and white graphic symbol** rendered with bold, solid black lines on a white background. It is a minimalist line art design.  \n- **Composition**:  \n  - The symbol consists of a thick black circular outline with a thick black \"C\" centered inside.  \n  - The \"C\" is formed by a single continuous line that curves to create the letter shape, with no additional elements or shading.  \n  - The composition is highly **minimalistic**, with **high contrast** between the black symbol and white page, ensuring clarity and prominence.  \n  - The framing is simple: the circle encloses the \"C\" as the central focus, with no background details or gradients.  \n- **Page occupation**: Approximately **1/4 of the left page’s area** (visually prominent but not covering the entire page).  \n\n#### Additional Note on Typography (if applicable):  \nThe right page contains only text (no photographs, illustrations, or graphic symbols). However, the user’s instruction specifies focusing on **visual/pictorial elements** (not text). Since the copyright symbol is the sole visual element, no further typography description is required. The page number “123” at the top right is a typographic element but is not a “photograph, illustration, graphic symbol, or visual element” in the context of the query (it is part of the page layout, not a standalone visual element).  \n\n**Summary**: The only visual element in the spread is the copyright symbol (©) on the left page, described above. The right page contains no additional visual elements beyond text.",
+        "source_type": "illustration",
+        "source_credit": "uncredited",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe page is divided into **two vertical columns** (left and right), with a large copyright symbol (©) positioned at the **top-left corner**. The left column contains the primary text discussing the historical evolution of authorship and copyright, while the right column features shorter text about xerography and “ditto device” concepts. The copyright symbol acts as a visual anchor on the left, with text blocks filling the remaining space. The layout is structured but asymmetrical: the left column is denser with content, while the right column has more concise, fragmented text. The space between columns (gutter) is narrow, creating a tight, two-column flow.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: All visible text is **small body text** (no large display text or headings).  \n- **Font style**: Serif typeface (e.g., Times New Roman or similar academic fonts), with **normal weight** (not bold or light).  \n- **Hierarchy**: No typographic hierarchy (e.g., bold/italic for emphasis); all text is uniform in size and weight. The copyright symbol is a graphic element, not text.  \n- **Color**: Black text on white background (standard print convention).  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: Predominantly **light** (white background, black text).  \n- **Contrast**: **High contrast** (black text against white background), typical of print design for readability.  \n- **Reversal**: No reversed text (white on black); all text is black on white.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The text blocks are dense but not packed—there is sufficient space around the copyright symbol (top-left) and between columns to avoid visual clutter. The gutter (space between columns) is narrow but not oppressive, balancing readability with a clean layout.  \n- **Effect**: White space is used to separate the two columns and highlight the copyright symbol, but it does not dominate the page.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Contrast wi",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "contrast"
+    },
+    "rhetoric": {
+      "argument": "Visual/typographic spread — argument conveyed through imagery and design rather than prose.",
+      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
+      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "visual_rhetoric"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "illustrates",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "",
+    "ocr_raw_time": 23.2,
+    "ocr_structured": "",
+    "ocr_structured_time": 7.4,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element Description  \n\n#### 1. Copyright Symbol (©)  \n- **What it depicts**: A circular graphic symbol with a capital \"C\" enclosed within the circle. This is the universal symbol for copyright, representing ownership of intellectual property.  \n- **Position**: Located on the **left page**, near the top of the page, positioned above the text block. It is an **inset element** (not spanning the page or overlapping with text).  \n- **Visual style**: A **black and white graphic symbol** rendered with bold, solid black lines on a white background. It is a minimalist line art design.  \n- **Composition**:  \n  - The symbol consists of a thick black circular outline with a thick black \"C\" centered inside.  \n  - The \"C\" is formed by a single continuous line that curves to create the letter shape, with no additional elements or shading.  \n  - The composition is highly **minimalistic**, with **high contrast** between the black symbol and white page, ensuring clarity and prominence.  \n  - The framing is simple: the circle encloses the \"C\" as the central focus, with no background details or gradients.  \n- **Page occupation**: Approximately **1/4 of the left page’s area** (visually prominent but not covering the entire page).  \n\n#### Additional Note on Typography (if applicable):  \nThe right page contains only text (no photographs, illustrations, or graphic symbols). However, the user’s instruction specifies focusing on **visual/pictorial elements** (not text). Since the copyright symbol is the sole visual element, no further typography description is required. The page number “123” at the top right is a typographic element but is not a “photograph, illustration, graphic symbol, or visual element” in the context of the query (it is part of the page layout, not a standalone visual element).  \n\n**Summary**: The only visual element in the spread is the copyright symbol (©) on the left page, described above. The right page contains no additional visual elements beyond text.",
+    "image_description_time": 17.0,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe page is divided into **two vertical columns** (left and right), with a large copyright symbol (©) positioned at the **top-left corner**. The left column contains the primary text discussing the historical evolution of authorship and copyright, while the right column features shorter text about xerography and “ditto device” concepts. The copyright symbol acts as a visual anchor on the left, with text blocks filling the remaining space. The layout is structured but asymmetrical: the left column is denser with content, while the right column has more concise, fragmented text. The space between columns (gutter) is narrow, creating a tight, two-column flow.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: All visible text is **small body text** (no large display text or headings).  \n- **Font style**: Serif typeface (e.g., Times New Roman or similar academic fonts), with **normal weight** (not bold or light).  \n- **Hierarchy**: No typographic hierarchy (e.g., bold/italic for emphasis); all text is uniform in size and weight. The copyright symbol is a graphic element, not text.  \n- **Color**: Black text on white background (standard print convention).  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: Predominantly **light** (white background, black text).  \n- **Contrast**: **High contrast** (black text against white background), typical of print design for readability.  \n- **Reversal**: No reversed text (white on black); all text is black on white.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The text blocks are dense but not packed—there is sufficient space around the copyright symbol (top-left) and between columns to avoid visual clutter. The gutter (space between columns) is narrow but not oppressive, balancing readability with a clean layout.  \n- **Effect**: White space is used to separate the two columns and highlight the copyright symbol, but it does not dominate the page.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Contrast with continuity**.  \n  - *Contrast*: The left column focuses on **historical context** (medieval authorship, printing’s impact), while the right column addresses **modern technology** (xerography, “instant publishing”).  \n  - *Continuity*: Both columns explore the theme of **authorship, publishing, and intellectual property**—the left explains origins, the right discusses contemporary implications.  \n- **Dominance**: Neither column dominates; they are balanced in visual weight (left column has more text, right column has shorter, punchier phrases).  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Calm, minimal, academic**.  \n  - The clean two-column layout, high-contrast black-on-white text, and lack of decorative elements create a **serene, scholarly tone**.  \n  - The dense text and technical content (e.g., “ditto device,” “xerography”) convey **intellectual rigor**, but the layout avoids chaos or aggression.  \n  - The copyright symbol adds a subtle visual anchor without disrupting the calm, academic atmosphere.  \n\nThis spread exemplifies a **typical academic book design**: functional, readable, and focused on conveying complex ideas through clear typography and balanced spatial organization.",
+    "layout_analysis_time": 9.7,
+    "model": "qwen3-vl"
+  }
+}

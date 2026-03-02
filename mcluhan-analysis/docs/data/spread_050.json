@@ -1,0 +1,84 @@
+{
+  "id": "spread_050",
+  "analysis": {
+    "id": "spread_050",
+    "pdf_page": 50,
+    "book_pages": [
+      90,
+      91
+    ],
+    "section": "body",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### Left Page Visual Element  \n1. **Depicts**: A close - up of a human hand, specifically showing the thumb and four fingers (index, middle, ring, pinky). The fingers are slightly curled, with visible skin texture, creases, and subtle nail details. The background is dark, creating a stark contrast with the hand.  \n2. **Position**: Occupies the left half of the spread (left page), spanning the entire vertical height of the left page.  \n3. **Visual Style**: Black and white photograph.  \n4. **Composition**: Tight close - up framing, with high contrast between light and dark areas. The hand is angled slightly from the side, emphasizing the profile of the fingers. Strong shadows accentuate the contours of the fingers and skin texture, while the dark background isolates the hand as the focal point.  \n5. **Page Occupation**: Approximately 50% of the left page (covers the full vertical extent of the left page).  \n\n\n### Right Page Visual Element  \n1. **Depicts**: A close - up of a person’s face, focusing on the nose, mouth, and part of the forehead. The person has a large, circular nose ring (a ring through the nose). The face shows wrinkles, and the person’s eyes are partially closed. The person is wearing a hat with a textured, mesh - like pattern (visible on the top of the head).  \n2. **Position**: Occupies the right half of the spread (right page), spanning the entire vertical height of the right page.  \n3. **Visual Style**: Black and white photograph.  \n4. **Composition**: Close - up framing, with high contrast and strong shadows. The angle is a profile view, emphasizing the nose and mouth. The hat’s textured pattern adds detail to the upper portion of the frame, while lighting creates deep shadows that highlight the contours of the face and the nose ring.  \n5. **Page Occupation**: Approximately 50% of the right page (covers the full vertical extent of the right page).  \n\n\n### Overall Spread Context  \n- **Unifying Element**: The left and right page elements are parts of",
+        "source_type": "advertisement",
+        "source_credit": "Photo—Peter Moore",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe book spread is **vertically divided** into two equal halves, with each page dedicated to a distinct photographic image. The left page features a close-up of a hand (fingers and thumb visible, likely interacting with an object), while the right page shows a close-up of a person’s face (notably with a large nose ring). The space is **strictly partitioned**—no text is visible in the provided image, so the layout focuses entirely on the visual division of the two photographic panels. The hand image occupies the left half, and the face image occupies the right half, creating a balanced yet contrasting split.  \n\n\n### 2. TYPOGRAPHY  \n**No visible text** appears in the provided image. The spread is purely visual (photographic), so typography (e.g., display text, body text, serif/sans-serif, weight, or color) is not present in the visual elements shown. If text were part of the spread (e.g., on the pages outside the image), it would likely be minimal or integrated into the design, but the image itself contains no textual elements.  \n\n\n### 3. CONTRAST & TONE  \nThe spread uses **high contrast** (sharp divisions between light and dark areas) typical of black-and-white photography. The left image features deep shadows on the hand, while the right image has stark shadows on the face (e.g., the nose ring casts a dramatic shadow). The **tone is predominantly dark**, with high-contrast highlights (e.g., the light on the hand’s fingers or the face’s cheek) creating a stark, dramatic effect. The overall mood is intensified by the lack of mid-tones, emphasizing texture and form.  \n\n\n### 4. WHITE SPACE  \n**White space is sparse**. The left and right panels are densely packed with visual elements: the hand fills most of the left page, and the face dominates the right. There are no significant empty areas (e.g., margins or negative space), as the images occupy nearly the entire spread. This minimal white space contributes to a tight, immersive visual exper",
+      "typography": {
+        "body_font_style": "Sans-serif text",
+        "display_font_style": null,
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "Visual/typographic spread — argument conveyed through imagery and design rather than prose.",
+      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
+      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "mcluhan_concepts": [
+        "media_ecology"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "visual_rhetoric"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "accelerating",
+      "thematic_function": "illustrates",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "",
+    "ocr_raw_time": 2.7,
+    "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+    "ocr_structured_time": 3.4,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Left Page Visual Element  \n1. **Depicts**: A close - up of a human hand, specifically showing the thumb and four fingers (index, middle, ring, pinky). The fingers are slightly curled, with visible skin texture, creases, and subtle nail details. The background is dark, creating a stark contrast with the hand.  \n2. **Position**: Occupies the left half of the spread (left page), spanning the entire vertical height of the left page.  \n3. **Visual Style**: Black and white photograph.  \n4. **Composition**: Tight close - up framing, with high contrast between light and dark areas. The hand is angled slightly from the side, emphasizing the profile of the fingers. Strong shadows accentuate the contours of the fingers and skin texture, while the dark background isolates the hand as the focal point.  \n5. **Page Occupation**: Approximately 50% of the left page (covers the full vertical extent of the left page).  \n\n\n### Right Page Visual Element  \n1. **Depicts**: A close - up of a person’s face, focusing on the nose, mouth, and part of the forehead. The person has a large, circular nose ring (a ring through the nose). The face shows wrinkles, and the person’s eyes are partially closed. The person is wearing a hat with a textured, mesh - like pattern (visible on the top of the head).  \n2. **Position**: Occupies the right half of the spread (right page), spanning the entire vertical height of the right page.  \n3. **Visual Style**: Black and white photograph.  \n4. **Composition**: Close - up framing, with high contrast and strong shadows. The angle is a profile view, emphasizing the nose and mouth. The hat’s textured pattern adds detail to the upper portion of the frame, while lighting creates deep shadows that highlight the contours of the face and the nose ring.  \n5. **Page Occupation**: Approximately 50% of the right page (covers the full vertical extent of the right page).  \n\n\n### Overall Spread Context  \n- **Unifying Element**: The left and right page elements are parts of a single black - and - white photograph split vertically across the two - page spread. The photograph’s composition is intentionally divided to create a diptych effect, with the hand on the left and the face on the right.  \n- **Visual Style Consistency**: Both halves share the same black - and - white photographic style, with high contrast, tight framing, and a focus on textural details (skin, fingers, hat mesh).  \n- **Page Occupation**: The entire photograph spans both pages, with each half occupying approximately 50% of its respective page (left and right).",
+    "image_description_time": 12.8,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe book spread is **vertically divided** into two equal halves, with each page dedicated to a distinct photographic image. The left page features a close-up of a hand (fingers and thumb visible, likely interacting with an object), while the right page shows a close-up of a person’s face (notably with a large nose ring). The space is **strictly partitioned**—no text is visible in the provided image, so the layout focuses entirely on the visual division of the two photographic panels. The hand image occupies the left half, and the face image occupies the right half, creating a balanced yet contrasting split.  \n\n\n### 2. TYPOGRAPHY  \n**No visible text** appears in the provided image. The spread is purely visual (photographic), so typography (e.g., display text, body text, serif/sans-serif, weight, or color) is not present in the visual elements shown. If text were part of the spread (e.g., on the pages outside the image), it would likely be minimal or integrated into the design, but the image itself contains no textual elements.  \n\n\n### 3. CONTRAST & TONE  \nThe spread uses **high contrast** (sharp divisions between light and dark areas) typical of black-and-white photography. The left image features deep shadows on the hand, while the right image has stark shadows on the face (e.g., the nose ring casts a dramatic shadow). The **tone is predominantly dark**, with high-contrast highlights (e.g., the light on the hand’s fingers or the face’s cheek) creating a stark, dramatic effect. The overall mood is intensified by the lack of mid-tones, emphasizing texture and form.  \n\n\n### 4. WHITE SPACE  \n**White space is sparse**. The left and right panels are densely packed with visual elements: the hand fills most of the left page, and the face dominates the right. There are no significant empty areas (e.g., margins or negative space), as the images occupy nearly the entire spread. This minimal white space contributes to a tight, immersive visual experience.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \nThe left and right images exhibit **contrast** rather than unity. The left panel focuses on a hand (action-oriented, tactile), while the right panel centers on a face (expression-oriented, introspective). The subjects are thematically and visually opposed—hand vs. face, movement vs. stillness—creating a dynamic tension. The split is not mirrored (e.g., no symmetry), but the vertical division emphasizes the contrast between the two elements.  \n\n\n### 6. OVERALL FEEL  \nThe spread conveys an **intense, dramatic, and slightly unsettling mood**. The high contrast, close-up framing, and serious expression on the face (with the nose ring) evoke aggression or introspection. The black-and-white palette amplifies the starkness, while the lack of white space and text creates a claustrophobic, immersive energy. The overall feel is **aggressive** (due to the sharp shadows and focused composition) and **minimal** (in terms of visual clutter), but with a raw, emotional undertone.",
+    "layout_analysis_time": 12.6,
+    "model": "qwen3-vl"
+  }
+}

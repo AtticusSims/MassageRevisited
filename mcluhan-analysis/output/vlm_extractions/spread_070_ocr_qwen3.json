@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_070",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:57:46",
+  "ocr_raw": "131\n\nMovies are better than ever!\n\nHollywood is often a fomenter of anti-colonialist revolutions.\n\nfrom\n\nVARIETY\n\nthe show business paper:\n\n\"Ice Boxes Sabotage Colonialism\"\n\nSukarno: \"The motion picture industry has provided a window on the world, and the colonized nations have looked through that window and have seen the things of which they have been deprived. It is perhaps not generally realized that a refrigerator can be a revolutionary symbol—to a people who have no refrigerators. A motor car owned by a worker in one country can be a symbol of revolt to a people deprived of even the necessities of life...[Hollywood] helped to build up the sense of deprivation of man's birthright, and that sense of deprivation has played a large part in the national revolutions of postwar Asia.\"",
+  "ocr_structured": "",
+  "ocr_raw_time": 15.5,
+  "ocr_structured_time": 23.0
+}

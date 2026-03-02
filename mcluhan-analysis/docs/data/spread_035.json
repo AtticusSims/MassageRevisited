@@ -1,0 +1,101 @@
+{
+  "id": "spread_035",
+  "analysis": {
+    "id": "spread_035",
+    "pdf_page": 35,
+    "book_pages": [
+      60,
+      61
+    ],
+    "section": "body",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "The idea of detention in a closed space as a form of human punitive corrective action seems to have come in very much in the thirteenth and fourteenth centuries—at the time perspective and pictorial space was developing in our Western world. The whole concept of enclosure as a means of constraint and as a means of classifying doesn't work as well in our electronic world. The new feeling that people have about guilt is not something that can be privately assigned to some individual, but is, rather, something shared by everybody, in some mysterious way. This feeling seems to be returning to our midst. In tribal societies we are told that it is a familiar reaction, when some hideous event occurs, for some people to say, \"How horrible it must be to feel like that,\" instead of blaming somebody for having done something horrible. This feeling is an aspect of the new mass culture we are moving into—a world of total involvement in which everybody is so profoundly involved with everybody else and in which nobody can really imagine what private guilt can be anymore.",
+      "display_text": "\"A cell for citters to cit in.\"",
+      "captions": [
+        "\"A cell for citters to cit in.\""
+      ],
+      "page_numbers_visible": [
+        "61"
+      ]
+    },
+    "quotations": [
+      {
+        "text": "\"How horrible it must be to feel like that,\"",
+        "attribution": "unattributed",
+        "context": "inline"
+      }
+    ],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "### Visual Element Description: Photograph on Left Page  \n\n#### 1. What does it depict?  \nA **close-up black-and-white photograph** of a dark-skinned hand gripping vertical bars (likely prison bars). The hand is positioned between two light-colored bars, with fingers wrapped around the bars and the thumb visible. The bars show visible wear: chipped paint, scratches, and uneven texture, suggesting age or frequent use. The background is a deep, almost black void, emphasizing the confinement of the space.  \n\n#### 2. Where is it positioned on the page?  \nIt spans the **entire left page** (full bleed), occupying the full width of the left side of the spread. The right page contains only text, so the photograph is isolated to the left page.  \n\n#### 3. What is the visual style?  \nA **black-and-white photograph** with high contrast. The monochromatic palette emphasizes texture, shadow, and the starkness of the scene.  \n\n#### 4. Describe the composition:  \n- **Framing**: Tight close-up, focusing exclusively on the hand and bars. The bars dominate the vertical axis, creating a grid-like structure that frames the hand.  \n- **Angle**: Shot from a slightly oblique side angle, highlighting the hand’s grip and the bars’ texture. The perspective draws the eye to the tension between the hand and the bars.  \n- **Contrast**: Extreme high contrast between the dark background (near-black) and the lighter bars/hand. The hand’s skin texture, shadows, and the bars’ worn surface are accentuated by this contrast.  \n- **Key visual qualities**: The hand’s physicality (knuckles, fingernails, skin texture) is prominent, conveying a sense of confinement and struggle. The bars’ chipped paint and uneven edges add realism and historical weight to the scene.  \n\n#### 5. Approximately how much of the page does it occupy?  \nIt occupies **100% of the left page** (full bleed), covering the entire width and height of the left side of the spread.  \n\n---  \n\n### Note on Other Elements  \nThe right page contain",
+        "source_type": "illustration",
+        "source_credit": "Chas Moore, Black Star",
+        "estimated_date": "c. 1960s",
+        "composition": "",
+        "scale": "full_spread",
+        "relationship_to_text": ""
+      }
+    ],
+    "design": {
+      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two primary sections:  \n- **Left side**: A full-bleed black-and-white photograph of a hand gripping prison bars (the image dominates this half of the page).  \n- **Right side**: A column of text (the main body of the page), with the page number “61” positioned at the top right, above the text.  \nThe image and text are arranged in a **classic book layout** (image on left, text on right), with the visual and textual elements clearly separated but thematically linked (the image illustrates the text’s discussion of detention). The space is structured to guide the reader’s eye from the image to the text, creating a logical flow.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**:  \n  - **Display text**: The caption *“A cell for citters to cit in.”* (likely a typo for *“citizens to sit in”*) appears as a smaller, italicized or bolded quote at the top of the text column.  \n  - **Body text**: The main paragraph is set in a **serif font** (e.g., Times New Roman), typical of traditional book typography. It is **small body text** (standard for printed books), with **normal weight** (not bold or light).  \n- **Color/contrast**: All text is **black on white**, so it is not reversed (white on black). The display text (caption) is slightly larger than the body text but still small-scale.  \n- **Font style**: Serif font (traditional, formal), with no unusual spacing or styling.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** in both the image and text. The photograph uses stark black-and-white tones (dark bars/background vs. lighter skin/hand), while the text uses high-contrast black-on-white.  \n- **Tone**: **Stark, oppressive, and serious**. The prison imagery (hand gripping bars) evokes confinement, and the black-and-white palette amplifies a sense of gravity. The text’s themes (detention, guilt, collective emotion) reinforce this tone.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**.  \n  - The image has",
+      "typography": {
+        "body_font_style": "Serif text",
+        "display_font_style": "Large display typography",
+        "special_treatments": []
+      },
+      "color_and_tone": "Black and white.",
+      "white_space": "sparse",
+      "visual_density": "dense",
+      "left_right_relationship": "mirror"
+    },
+    "rhetoric": {
+      "argument": "\"A cell for citters to cit in.\" The idea of detention in a closed space as a form of human punitive corrective action seems to have come in very much in the thirteenth and fourteenth centuries—at the time perspective and pictorial space was developing in our Western world.",
+      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Sustained reading — the reader engages with extended prose argument.",
+      "mcluhan_concepts": [
+        "electric_age",
+        "tribal",
+        "participation"
+      ]
+    },
+    "themes": {
+      "original_themes": [
+        "electric_technology",
+        "identity",
+        "perception",
+        "space_and_time",
+        "tribal_culture",
+        "technology_and_body"
+      ],
+      "contemporary_domain_candidates": [],
+      "movement_mapping": [],
+      "mapping_rationale": ""
+    },
+    "progression": {
+      "pace_shift": "decelerating",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "",
+      "relationship_to_next": ""
+    },
+    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+  },
+  "ocr": {
+    "ocr_raw": "61\n\"A cell for citters to cit in.\"\nThe idea of detention in a closed space as a form of human punitive corrective action seems to have come in very much in the thirteenth and fourteenth centuries—at the time perspective and pictorial space was developing in our Western world. The whole concept of enclosure as a means of constraint and as a means of classifying doesn't work as well in our electronic world. The new feeling that people have about guilt is not something that can be privately assigned to some individual, but is, rather, something shared by everybody, in some mysterious way. This feeling seems to be returning to our midst. In tribal societies we are told that it is a familiar reaction, when some hideous event occurs, for some people to say, \"How horrible it must be to feel like that,\" instead of blaming somebody for having done something horrible. This feeling is an aspect of the new mass culture we are moving into—a world of total involvement in which everybody is so profoundly involved with everybody else and in which nobody can really imagine what private guilt can be anymore.",
+    "ocr_raw_time": 10.1,
+    "ocr_structured": "DISPLAY_TEXT: \"A cell for citters to cit in.\"\n\nBODY_TEXT: The idea of detention in a closed space as a form of human punitive corrective action seems to have come in very much in the thirteenth and fourteenth centuries—at the time perspective and pictorial space was developing in our Western world. The whole concept of enclosure as a means of constraint and as a means of classifying doesn't work as well in our electronic world. The new feeling that people have about guilt is not something that can be privately assigned to some individual, but is, rather, something shared by everybody, in some mysterious way. This feeling seems to be returning to our midst. In tribal societies we are told that it is a familiar reaction, when some hideous event occurs, for some people to say, \"How horrible it must be to feel like that,\" instead of blaming somebody for having done something horrible. This feeling is an aspect of the new mass culture we are moving into—a world of total involvement in which everybody is so profoundly involved with everybody else and in which nobody can really imagine what private guilt can be anymore.\n\nQUOTATIONS: \"How horrible it must be to feel like that,\"\n\nCAPTIONS: \"A cell for citters to cit in.\"\n\nPAGE_NUMBERS: 61",
+    "ocr_structured_time": 19.7,
+    "model": "qwen3-vl"
+  },
+  "visual": {
+    "image_description": "### Visual Element Description: Photograph on Left Page  \n\n#### 1. What does it depict?  \nA **close-up black-and-white photograph** of a dark-skinned hand gripping vertical bars (likely prison bars). The hand is positioned between two light-colored bars, with fingers wrapped around the bars and the thumb visible. The bars show visible wear: chipped paint, scratches, and uneven texture, suggesting age or frequent use. The background is a deep, almost black void, emphasizing the confinement of the space.  \n\n#### 2. Where is it positioned on the page?  \nIt spans the **entire left page** (full bleed), occupying the full width of the left side of the spread. The right page contains only text, so the photograph is isolated to the left page.  \n\n#### 3. What is the visual style?  \nA **black-and-white photograph** with high contrast. The monochromatic palette emphasizes texture, shadow, and the starkness of the scene.  \n\n#### 4. Describe the composition:  \n- **Framing**: Tight close-up, focusing exclusively on the hand and bars. The bars dominate the vertical axis, creating a grid-like structure that frames the hand.  \n- **Angle**: Shot from a slightly oblique side angle, highlighting the hand’s grip and the bars’ texture. The perspective draws the eye to the tension between the hand and the bars.  \n- **Contrast**: Extreme high contrast between the dark background (near-black) and the lighter bars/hand. The hand’s skin texture, shadows, and the bars’ worn surface are accentuated by this contrast.  \n- **Key visual qualities**: The hand’s physicality (knuckles, fingernails, skin texture) is prominent, conveying a sense of confinement and struggle. The bars’ chipped paint and uneven edges add realism and historical weight to the scene.  \n\n#### 5. Approximately how much of the page does it occupy?  \nIt occupies **100% of the left page** (full bleed), covering the entire width and height of the left side of the spread.  \n\n---  \n\n### Note on Other Elements  \nThe right page contains **only text** (no photographs, illustrations, or graphic symbols). As per the instructions, text is excluded from the visual element description. The photograph is the sole pictorial element in this spread.",
+    "image_description_time": 9.0,
+    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two primary sections:  \n- **Left side**: A full-bleed black-and-white photograph of a hand gripping prison bars (the image dominates this half of the page).  \n- **Right side**: A column of text (the main body of the page), with the page number “61” positioned at the top right, above the text.  \nThe image and text are arranged in a **classic book layout** (image on left, text on right), with the visual and textual elements clearly separated but thematically linked (the image illustrates the text’s discussion of detention). The space is structured to guide the reader’s eye from the image to the text, creating a logical flow.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**:  \n  - **Display text**: The caption *“A cell for citters to cit in.”* (likely a typo for *“citizens to sit in”*) appears as a smaller, italicized or bolded quote at the top of the text column.  \n  - **Body text**: The main paragraph is set in a **serif font** (e.g., Times New Roman), typical of traditional book typography. It is **small body text** (standard for printed books), with **normal weight** (not bold or light).  \n- **Color/contrast**: All text is **black on white**, so it is not reversed (white on black). The display text (caption) is slightly larger than the body text but still small-scale.  \n- **Font style**: Serif font (traditional, formal), with no unusual spacing or styling.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** in both the image and text. The photograph uses stark black-and-white tones (dark bars/background vs. lighter skin/hand), while the text uses high-contrast black-on-white.  \n- **Tone**: **Stark, oppressive, and serious**. The prison imagery (hand gripping bars) evokes confinement, and the black-and-white palette amplifies a sense of gravity. The text’s themes (detention, guilt, collective emotion) reinforce this tone.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**.  \n  - The image has minimal white space (it is a tight, close-up shot with little negative space).  \n  - The text block has **moderate white space** around it (e.g., the page number “61” is set in a small margin at the top right, and the text itself is tightly spaced but not packed).  \n- **Effect**: The white space separates the image and text without overwhelming the page, allowing the content to feel balanced and readable.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Continuation** (not mirror, contrast, or one-dominates).  \n  - The image (left) **visually supports** the text (right): the prison bars directly illustrate the text’s discussion of detention.  \n  - The layout is **unified** by theme: the image’s oppressive imagery and the text’s exploration of guilt/confinement work together to create a cohesive narrative.  \n- **Flow**: The eye moves naturally from the image (hand gripping bars) to the text (explaining the concept of detention), creating a logical progression.  \n\n\n### 6. OVERALL FEEL  \n- **Visual mood/energy**: **Heavy, contemplative, and slightly aggressive**.  \n  - The prison imagery (hand gripping bars) conveys tension and confinement, while the black-and-white palette adds starkness.  \n  - The text’s themes (collective guilt, loss of private guilt) deepen the mood, making it feel **overwhelming** in its emotional weight.  \n- **Key notes**: Not calm or minimal (the subject matter is intense), but the clean layout and high-contrast design keep it **controlled** rather than chaotic. The spread feels **urgent**—it demands attention through its stark visuals and serious tone.",
+    "layout_analysis_time": 10.3,
+    "model": "qwen3-vl"
+  }
+}

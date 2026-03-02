@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_024",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T17:29:00",
+  "ocr_raw": "clothing,an extension of the skin...",
+  "ocr_structured": "DISPLAY_TEXT: clothing, an extension of the skin...  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 3.9,
+  "ocr_structured_time": 7.9
+}
