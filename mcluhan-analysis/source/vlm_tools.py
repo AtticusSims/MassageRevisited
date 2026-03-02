@@ -2,7 +2,7 @@
 VLM Tools for McLuhan Analysis Pipeline
 ========================================
 Two-model approach:
-  - Qwen2.5-VL-7B (via Ollama) for OCR / text extraction
+  - Qwen3-VL (via Ollama) for OCR / text extraction (upgraded from Qwen2.5-VL)
   - Molmo2-8B (via Transformers) for image description and layout analysis
 
 Usage:
@@ -23,7 +23,7 @@ from pathlib import Path
 
 # ── Ollama config ──
 OLLAMA_BASE = "http://localhost:11434"
-OLLAMA_MODEL = "qwen2.5vl:7b"
+OLLAMA_MODEL = "qwen3-vl"
 
 # ── Molmo config ──
 MOLMO_MODEL_ID = "allenai/Molmo2-8B"
@@ -82,7 +82,7 @@ def _ollama_chat(image_path: str, prompt: str) -> str:
 
 def run_ocr(image_path: str, prompt: str = None) -> str:
     """
-    Extract all text from an image using Qwen2.5-VL via Ollama.
+    Extract all text from an image using Qwen3-VL via Ollama.
     Returns the raw text extraction.
     """
     if prompt is None:
@@ -270,7 +270,7 @@ def analyze_spread(image_path: str, output_dir: str = None) -> dict:
     print(f"{'='*60}")
 
     # Step 1: OCR
-    print(f"  [1/3] Running OCR (Qwen2.5-VL)...")
+    print(f"  [1/3] Running OCR (Qwen3-VL)...")
     t0 = time.time()
     ocr_raw = run_ocr(image_path)
     ocr_structured = run_structured_ocr(image_path)

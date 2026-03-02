@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_004",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T16:16:30",
+  "ocr_raw": "\"all media work us over completely\"\nmarshall mcluhan\nGingko Press 1-58423-070-3",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: \"all media work us over completely\" marshall mcluhan  \nCAPTIONS: Gingko Press 1-58423-070-3  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 10.6,
+  "ocr_structured_time": 13.4
+}

@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_007",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T16:17:31",
+  "ocr_raw": "...the massage?",
+  "ocr_structured": "DISPLAY_TEXT: NONE  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: ...the massage?  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 3.3,
+  "ocr_structured_time": 5.9
+}

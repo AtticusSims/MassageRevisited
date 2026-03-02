@@ -312,3 +312,155 @@ header h1 {
   background: var(--accent);
   border-radius: 3px;
 }
+
+/* ===== Tab Bar ===== */
+.tab-bar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background: #181818;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  gap: 0;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+.tab:hover {
+  color: var(--text);
+}
+.tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.tab-spacer {
+  flex: 1;
+}
+
+.tab-content {
+  /* shown/hidden via JS display toggle */
+}
+
+/* ===== Review Controls ===== */
+.review-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0;
+}
+
+.review-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.15s;
+}
+.review-btn:hover {
+  background: #3a3a3a;
+  color: var(--text);
+}
+
+.review-btn.approve.active {
+  background: #1a3a1a;
+  color: var(--green);
+  border-color: var(--green);
+}
+.review-btn.flag.active {
+  background: #3a2a1a;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.review-notes {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 220px;
+  outline: none;
+}
+.review-notes:focus {
+  border-color: var(--accent-dim);
+}
+.review-notes::placeholder {
+  color: #666;
+}
+
+/* ===== Review Stats (header) ===== */
+.review-stat {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+.review-stat.approved { color: var(--green); }
+.review-stat.flagged { color: var(--accent); }
+.review-stat.pending { color: var(--text-muted); }
+
+/* ===== OCR Compare Layout ===== */
+.ocr-compare {
+  display: flex;
+  gap: 12px;
+}
+
+.ocr-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.ocr-col-header {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-bright);
+  padding: 6px 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ocr-time {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.ocr-text {
+  background: #1a1a1a;
+  border: 1px solid var(--border);
+  border-radius: 0 0 5px 5px;
+  padding: 10px 12px;
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 500px;
+  overflow-y: auto;
+  margin: 0;
+}
+.ocr-text em {
+  color: var(--text-muted);
+  font-style: italic;
+}

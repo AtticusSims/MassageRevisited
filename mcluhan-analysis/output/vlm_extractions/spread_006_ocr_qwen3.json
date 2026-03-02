@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_006",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T16:17:21",
+  "ocr_raw": "An Inventory of Effects\nProduced by Jerome Agel\nThe Medium is the Massage\nMarshall McLuhan\nQuentin Fiore\n© 1967 by Jerome Agel. Renewed © 1996 by Jerome Agel. All rights reserved.\nPublished in 2001 by Gingko Press. 5768 Paradise Drive, Suite J, Collier, CA 94825. (415) 924-9615. Fax (415) 924-9608. email: books@gingkobpress.com. http://www.gingkobpress.com.\nISBN: 1-58423-076-3\nPrinted in Germany by Cassel & Bosse",
+  "ocr_structured": "DISPLAY_TEXT:  \nAn Inventory of Effects  \nProduced by Jerome Agel  \nThe Medium is the Massage  \nMarshall McLuhan  \nQuentin Fiore  \n\nBODY_TEXT:  \n© 1967 by Jerome Agel. Renewed © 1996 by Jerome Agel. All rights reserved.  \nPublished in 2001 by Gingko Press 5768 Paradise Drive, Suite J, Collierville, TN 38017 (415) 924-9615. Fax (415) 924-9608 email: books@ginkopress.com http://www.ginkopress.com ISBN: 1-58423-076-3 Printed in Germany by Cassel & Bosse  \n\nQUOTATIONS: NONE  \n\nCAPTIONS: NONE  \n\nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 12.8,
+  "ocr_structured_time": 22.2
+}

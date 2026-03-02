@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_001",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T16:14:29",
+  "ocr_raw": "",
+  "ocr_structured": "DISPLAY_TEXT: marshall, mcluhan, quentin fiore, the medium is the MASSAGE, AN INVENTO- RY OF EFFECTS  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: produced by jerome agel  \nPAGE_NUMBERS: NONE",
+  "ocr_raw_time": 49.3,
+  "ocr_structured_time": 38.1
+}

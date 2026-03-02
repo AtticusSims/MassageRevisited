@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_005",
+  "model": "qwen3-vl",
+  "timestamp": "2026-03-02T16:16:46",
+  "ocr_raw": "Good Morning!\nDC Platinum\n3",
+  "ocr_structured": "DISPLAY_TEXT: Good Morning!  \nBODY_TEXT: NONE  \nQUOTATIONS: NONE  \nCAPTIONS: DC Palmers  \nPAGE_NUMBERS: 3",
+  "ocr_raw_time": 9.8,
+  "ocr_structured_time": 6.9
+}

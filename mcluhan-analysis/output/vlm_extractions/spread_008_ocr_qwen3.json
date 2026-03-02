@@ -1,0 +1,9 @@
+{
+  "spread_id": "spread_008",
+  "model": "qwen3-vl",
+  "ocr_raw": "and how!\n\"The major advances in civilization are processes that all but wreck the societies in which they occur.\"\n—A. N. Whitehead",
+  "ocr_raw_time": 64.8,
+  "ocr_structured": "DISPLAY_TEXT: and how!  \nBODY_TEXT: NONE  \nQUOTATIONS: \"The major advances in civil that all but wreck the society are processes ties in which they occur.\" —A. N. Whitehead  \nCAPTIONS: NONE  \nPAGE_NUMBERS: NONE",
+  "ocr_structured_time": 27.8,
+  "timestamp": "2026-03-02T16:19:21"
+}

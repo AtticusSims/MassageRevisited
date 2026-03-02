@@ -3,47 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>McLuhan Analysis Viewer</title>
+  <title>McLuhan Analysis — Review</title>
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 <div class="app">
   <!-- Header -->
   <header>
-    <h1>The Medium is the Massage — Analysis</h1>
+    <h1>The Medium is the Massage — Review</h1>
     <div class="header-center">
-      <button class="nav-btn" id="prevBtn" onclick="navigate(-1)">&larr; Prev</button>
+      <button class="nav-btn" id="prevBtn" onclick="navigate(-1)">&larr;</button>
       <select id="spreadSelect" onchange="loadSpread(this.value)">
         {% for item in nav_items %}
         <option value="{{ item.id }}"
                 data-analyzed="{{ item.analyzed|lower }}"
+                data-review="{{ item.review_status }}"
                 {% if loop.first %}selected{% endif %}>
-          {{ item.id }} (p{{ item.pdf_page }}){% if item.book_pages %} [{{ item.book_pages|join('-') }}]{% endif %}{% if not item.analyzed %} ●{% endif %}
+          {{ item.id }} (p{{ item.pdf_page }}){% if item.book_pages %} [{{ item.book_pages|join('-') }}]{% endif %}{% if item.review_status == 'approved' %} ✓{% elif item.review_status == 'flagged' %} ⚑{% elif not item.analyzed %} ●{% endif %}
         </option>
         {% endfor %}
       </select>
-      <button class="nav-btn" id="nextBtn" onclick="navigate(1)">Next &rarr;</button>
+      <button class="nav-btn" id="nextBtn" onclick="navigate(1)">&rarr;</button>
       <span class="spread-label" id="spreadLabel">spread_001</span>
       <span class="book-pages-label" id="bookPagesLabel"></span>
     </div>
     <div class="header-right">
-      <span id="progressText">{{ total_analyzed }}/{{ total_pages }} analyzed</span>
-      <div class="progress-bar">
+      <span class="review-stat approved">{{ review_counts.approved }} ✓</span>
+      <span class="review-stat flagged">{{ review_counts.flagged }} ⚑</span>
+      <span class="review-stat pending">{{ review_counts.pending }} pending</span>
+      <div class="progress-bar" style="margin-top:4px">
         <div class="fill" style="width: {{ (total_analyzed / total_pages * 100)|round(1) }}%"></div>
       </div>
     </div>
   </header>
 
+  <!-- Tabs -->
+  <div class="tab-bar">
+    <button class="tab active" data-tab="analysis" onclick="switchTab('analysis')">Analysis</button>
+    <button class="tab" data-tab="ocr" onclick="switchTab('ocr')">OCR Compare</button>
+    <div class="tab-spacer"></div>
+    <div class="review-controls" id="reviewControls">
+      <button class="review-btn approve" id="btnApprove" onclick="setReview('approved')">✓ Approve</button>
+      <button class="review-btn flag" id="btnFlag" onclick="setReview('flagged')">⚑ Flag</button>
+      <button class="review-btn reset" id="btnReset" onclick="setReview('pending')">Reset</button>
+      <input type="text" id="reviewNotes" placeholder="Review notes..." class="review-notes" onchange="saveNotes()">
+    </div>
+  </div>
+
   <!-- Main -->
   <div class="main-panels">
     <!-- Left: Image -->
-    <div class="image-panel">
+    <div class="image-panel" id="imagePanel">
       <img id="spreadImage" src="" alt="Spread image">
     </div>
-    <!-- Right: Analysis -->
+
+    <!-- Right: Content (tabs) -->
     <div class="analysis-panel" id="analysisPanel">
-      <div class="placeholder" id="analysisPlaceholder">Select a spread to view analysis</div>
-      <div id="analysisContent" style="display:none;"></div>
+      <!-- Analysis tab -->
+      <div id="tabAnalysis" class="tab-content active">
+        <div class="placeholder" id="analysisPlaceholder">Select a spread to view analysis</div>
+        <div id="analysisContent" style="display:none;"></div>
+      </div>
+      <!-- OCR tab -->
+      <div id="tabOcr" class="tab-content" style="display:none;">
+        <div id="ocrContent">
+          <div class="placeholder">Loading OCR data...</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -51,14 +77,27 @@
 <script>
 const NAV_ITEMS = {{ nav_items|tojson }};
 let currentIndex = 0;
+let currentOcr = null;
+let currentReview = null;
 
 function navigate(delta) {
   const newIndex = currentIndex + delta;
   if (newIndex >= 0 && newIndex < NAV_ITEMS.length) {
     currentIndex = newIndex;
-    const sel = document.getElementById('spreadSelect');
-    sel.selectedIndex = currentIndex;
+    document.getElementById('spreadSelect').selectedIndex = currentIndex;
     loadSpread(NAV_ITEMS[currentIndex].id);
+  }
+}
+
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelector(`.tab[data-tab="${tab}"]`).classList.add('active');
+  document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+  if (tab === 'analysis') {
+    document.getElementById('tabAnalysis').style.display = 'block';
+  } else if (tab === 'ocr') {
+    document.getElementById('tabOcr').style.display = 'block';
+    if (currentOcr) renderOcr(currentOcr);
   }
 }
 
@@ -66,16 +105,13 @@ function loadSpread(spreadId) {
   currentIndex = NAV_ITEMS.findIndex(n => n.id === spreadId);
   const item = NAV_ITEMS[currentIndex];
 
-  // Update nav
   document.getElementById('prevBtn').disabled = currentIndex === 0;
   document.getElementById('nextBtn').disabled = currentIndex === NAV_ITEMS.length - 1;
   document.getElementById('spreadLabel').textContent = spreadId;
-
   const bp = item.book_pages;
   document.getElementById('bookPagesLabel').textContent =
-    bp && bp.length ? `Book pages ${bp.join('–')}` : '';
+    bp && bp.length ? `Book pages ${bp.join('\u2013')}` : '';
 
-  // Load image
   document.getElementById('spreadImage').src = `/rendered/${spreadId}.png`;
 
   // Load analysis
@@ -83,17 +119,120 @@ function loadSpread(spreadId) {
     fetch(`/api/spread/${spreadId}`)
       .then(r => r.json())
       .then(data => {
-        if (data) {
-          renderAnalysis(data);
-        } else {
-          showPlaceholder('No analysis data found');
-        }
+        if (data) renderAnalysis(data);
+        else showPlaceholder('No analysis data found');
       });
   } else {
     showPlaceholder('Not yet analyzed');
   }
+
+  // Load OCR
+  fetch(`/api/ocr/${spreadId}`)
+    .then(r => r.json())
+    .then(data => { currentOcr = data; if (document.getElementById('tabOcr').style.display !== 'none') renderOcr(data); });
+
+  // Load review status
+  fetch(`/api/review/${spreadId}`)
+    .then(r => r.json())
+    .then(data => {
+      currentReview = data;
+      updateReviewUI(data);
+    });
 }
 
+function updateReviewUI(data) {
+  document.getElementById('reviewNotes').value = data.notes || '';
+  document.getElementById('btnApprove').classList.toggle('active', data.status === 'approved');
+  document.getElementById('btnFlag').classList.toggle('active', data.status === 'flagged');
+}
+
+function setReview(status) {
+  const spreadId = NAV_ITEMS[currentIndex].id;
+  const notes = document.getElementById('reviewNotes').value;
+  fetch(`/api/review/${spreadId}`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({status, notes}),
+  }).then(() => {
+    NAV_ITEMS[currentIndex].review_status = status;
+    currentReview = {status, notes};
+    updateReviewUI(currentReview);
+    // Update select option text
+    const opt = document.getElementById('spreadSelect').options[currentIndex];
+    let label = opt.textContent.replace(/ [✓⚑●]$/, '');
+    if (status === 'approved') label += ' ✓';
+    else if (status === 'flagged') label += ' ⚑';
+    opt.textContent = label;
+  });
+}
+
+function saveNotes() {
+  const spreadId = NAV_ITEMS[currentIndex].id;
+  const status = currentReview ? currentReview.status : 'pending';
+  const notes = document.getElementById('reviewNotes').value;
+  fetch(`/api/review/${spreadId}`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({status, notes}),
+  });
+}
+
+// ========== OCR Rendering ==========
+function renderOcr(data) {
+  const el = document.getElementById('ocrContent');
+  if (!data || (!data.qwen25 && !data.qwen3)) {
+    el.innerHTML = '<div class="placeholder">No OCR data available for this spread</div>';
+    return;
+  }
+
+  let html = '';
+
+  // Side-by-side raw OCR
+  html += `<div class="section"><div class="section-header">Raw OCR Extraction</div>
+    <div class="ocr-compare">`;
+
+  if (data.qwen25) {
+    const raw25 = data.qwen25.ocr_raw || data.qwen25.raw_extraction || '';
+    html += `<div class="ocr-col">
+      <div class="ocr-col-header">Qwen 2.5-VL <span class="ocr-time">${data.qwen25.ocr_raw_time || '?'}s · ${raw25.length}ch</span></div>
+      <pre class="ocr-text">${esc(raw25) || '<em>empty</em>'}</pre>
+    </div>`;
+  }
+
+  if (data.qwen3) {
+    html += `<div class="ocr-col">
+      <div class="ocr-col-header">Qwen3-VL <span class="ocr-time">${data.qwen3.ocr_raw_time || '?'}s · ${(data.qwen3.ocr_raw||'').length}ch</span></div>
+      <pre class="ocr-text">${esc(data.qwen3.ocr_raw) || '<em>empty</em>'}</pre>
+    </div>`;
+  }
+
+  html += `</div></div>`;
+
+  // Side-by-side structured OCR
+  html += `<div class="section"><div class="section-header">Structured OCR</div>
+    <div class="ocr-compare">`;
+
+  if (data.qwen25) {
+    const struct25 = data.qwen25.ocr_structured || data.qwen25.structured_extraction || '';
+    html += `<div class="ocr-col">
+      <div class="ocr-col-header">Qwen 2.5-VL <span class="ocr-time">${data.qwen25.ocr_structured_time || '?'}s</span></div>
+      <pre class="ocr-text">${esc(struct25) || '<em>empty</em>'}</pre>
+    </div>`;
+  }
+
+  if (data.qwen3) {
+    html += `<div class="ocr-col">
+      <div class="ocr-col-header">Qwen3-VL <span class="ocr-time">${data.qwen3.ocr_structured_time || '?'}s</span></div>
+      <pre class="ocr-text">${esc(data.qwen3.ocr_structured) || '<em>empty</em>'}</pre>
+    </div>`;
+  }
+
+  html += `</div></div>`;
+
+  el.innerHTML = html;
+}
+
+// ========== Analysis Rendering ==========
 function showPlaceholder(msg) {
   document.getElementById('analysisPlaceholder').textContent = msg;
   document.getElementById('analysisPlaceholder').style.display = 'flex';
@@ -107,7 +246,7 @@ function renderAnalysis(s) {
 
   let html = '';
 
-  // === Identification ===
+  // Identification
   html += `<div class="section">
     <div class="section-header">Identification</div>
     <span class="section-badge ${s.section}">${s.section.replace('_',' ')}</span>
@@ -116,9 +255,8 @@ function renderAnalysis(s) {
     ${s.text.page_numbers_visible.length ? `<div class="field" style="margin-top:6px"><span class="field-label">Visible page numbers</span><div class="field-value">${s.text.page_numbers_visible.join(', ')}</div></div>` : ''}
   </div>`;
 
-  // === Text ===
-  html += `<div class="section">
-    <div class="section-header">Text</div>`;
+  // Text
+  html += `<div class="section"><div class="section-header">Text</div>`;
   if (s.text.display_text) {
     html += `<div class="field"><span class="field-label">Display Text</span>
       <div class="field-value" style="font-size:18px;font-weight:700;color:#fff;">${esc(s.text.display_text)}</div></div>`;
@@ -136,14 +274,13 @@ function renderAnalysis(s) {
   }
   html += `</div>`;
 
-  // === Quotations ===
+  // Quotations
   if (s.quotations && s.quotations.length) {
-    html += `<div class="section">
-      <div class="section-header">Quotations</div>`;
+    html += `<div class="section"><div class="section-header">Quotations</div>`;
     for (const q of s.quotations) {
       html += `<div class="card">
-        <div class="quote-text">"${esc(q.text)}"</div>
-        <div class="card-field"><strong>${esc(q.author)}</strong> — ${esc(q.author_context)}</div>
+        <div class="quote-text">\u201C${esc(q.text)}\u201D</div>
+        <div class="card-field"><strong>${esc(q.author)}</strong> \u2014 ${esc(q.author_context)}</div>
         ${q.source_work ? `<div class="card-field">Source: <em>${esc(q.source_work)}</em></div>` : ''}
         <div class="card-field"><strong>Function:</strong> ${esc(q.relationship_to_argument)}</div>
         <div class="card-field"><strong>Visual treatment:</strong> ${esc(q.visual_treatment)}</div>
@@ -152,13 +289,12 @@ function renderAnalysis(s) {
     html += `</div>`;
   }
 
-  // === Images ===
+  // Images
   if (s.images && s.images.length) {
-    html += `<div class="section">
-      <div class="section-header">Images</div>`;
+    html += `<div class="section"><div class="section-header">Images</div>`;
     for (const img of s.images) {
       html += `<div class="card">
-        <div class="card-title">${esc(img.position)} · ${esc(img.scale)}</div>
+        <div class="card-title">${esc(img.position)} \u00B7 ${esc(img.scale)}</div>
         <div class="card-field"><strong>Subject:</strong> ${esc(img.subject)}</div>
         <div class="card-field"><strong>Source type:</strong> <span class="tag">${esc(img.source_type)}</span></div>
         ${img.source_credit ? `<div class="card-field"><strong>Credit:</strong> ${esc(img.source_credit)}</div>` : ''}
@@ -170,9 +306,8 @@ function renderAnalysis(s) {
     html += `</div>`;
   }
 
-  // === Design ===
-  html += `<div class="section">
-    <div class="section-header">Design</div>
+  // Design
+  html += `<div class="section"><div class="section-header">Design</div>
     <div class="field"><span class="field-label">Layout</span>
       <div class="field-value">${esc(s.design.layout_description)}</div></div>`;
   if (s.design.typography) {
@@ -187,7 +322,7 @@ function renderAnalysis(s) {
     }
     if (t.special_treatments && t.special_treatments.length) {
       html += `<div class="field"><span class="field-label">Special Treatments</span>
-        <div class="field-value">${t.special_treatments.map(s => '• ' + esc(s)).join('<br>')}</div></div>`;
+        <div class="field-value">${t.special_treatments.map(s => '\u2022 ' + esc(s)).join('<br>')}</div></div>`;
     }
   }
   html += `<div class="field"><span class="field-label">Color & Tone</span>
@@ -195,11 +330,11 @@ function renderAnalysis(s) {
   html += `<div class="field">
     <span class="tag">${s.design.white_space} white space</span>
     <span class="tag">${s.design.visual_density} density</span></div>`;
-  html += `<div class="field"><span class="field-label">Left–Right Relationship</span>
+  html += `<div class="field"><span class="field-label">Left\u2013Right Relationship</span>
     <div class="field-value">${esc(s.design.left_right_relationship)}</div></div>`;
   html += `</div>`;
 
-  // === RHETORIC (highlighted) ===
+  // Rhetoric
   html += `<div class="section rhetoric">
     <div class="section-header">Rhetoric</div>
     <div class="field"><span class="field-label">Argument</span>
@@ -214,12 +349,10 @@ function renderAnalysis(s) {
       <div class="field-value">${esc(s.rhetoric.reader_experience)}</div></div>
     <div class="field"><span class="field-label">McLuhan Concepts</span>
       <div>${(s.rhetoric.mcluhan_concepts||[]).map(c => `<span class="tag mcluhan">${c.replace(/_/g,' ')}</span>`).join('')}</div></div>
-    ${s.rhetoric.multi_spread_patterns ? `<div class="field"><span class="field-label">Multi-Spread Patterns</span><div class="field-value">${esc(s.rhetoric.multi_spread_patterns)}</div></div>` : ''}
   </div>`;
 
-  // === Themes ===
-  html += `<div class="section">
-    <div class="section-header">Themes</div>
+  // Themes
+  html += `<div class="section"><div class="section-header">Themes</div>
     <div class="field"><span class="field-label">Original Themes</span>
       <div>${(s.themes.original_themes||[]).map(t => `<span class="tag theme">${esc(t)}</span>`).join('')}</div></div>
     <div class="field"><span class="field-label">Contemporary Domains</span>
@@ -230,9 +363,8 @@ function renderAnalysis(s) {
       <div class="field-value">${esc(s.themes.mapping_rationale)}</div></div>
   </div>`;
 
-  // === Progression ===
-  html += `<div class="section">
-    <div class="section-header">Progression</div>
+  // Progression
+  html += `<div class="section"><div class="section-header">Progression</div>
     <div class="field">
       <span class="tag pace">${(s.progression.pace_shift||'').replace(/_/g,' ')}</span>
       <span class="tag function">${(s.progression.thematic_function||'').replace(/_/g,' ')}</span>
@@ -243,10 +375,9 @@ function renderAnalysis(s) {
       <div class="field-value">${esc(s.progression.relationship_to_next)}</div></div>
   </div>`;
 
-  // === Notes ===
+  // Notes
   if (s.notes) {
-    html += `<div class="section">
-      <div class="section-header">Notes</div>
+    html += `<div class="section"><div class="section-header">Notes</div>
       <div class="notes-box">${esc(s.notes)}</div>
     </div>`;
   }
@@ -261,7 +392,17 @@ function esc(str) {
   return d.innerHTML;
 }
 
-// Initialize
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft' || e.key === 'a') navigate(-1);
+  if (e.key === 'ArrowRight' || e.key === 'd') navigate(1);
+  if (e.key === '1') switchTab('analysis');
+  if (e.key === '2') switchTab('ocr');
+  if (e.key === 'y') setReview('approved');
+  if (e.key === 'f') setReview('flagged');
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   loadSpread(NAV_ITEMS[0].id);
 });
