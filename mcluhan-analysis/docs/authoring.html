@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Model is the Massage — Authoring Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
     /* ===== Reset & Variables ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -24,6 +27,11 @@
       --border: #444;
       --selected: rgba(232, 168, 56, 0.15);
       --selected-border: #e8a838;
+      /* Book fonts */
+      --font-display: 'Urbanist', sans-serif;
+      --font-body: 'Urbanist', sans-serif;
+      --font-caption: 'Cormorant Garamond', serif;
+      --font-graphic: 'Bebas Neue', 'Urbanist', sans-serif;
     }
     html, body {
       height: 100%; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -46,6 +54,9 @@
       background: var(--purple); color: #fff; white-space: nowrap;
     }
     .movement-badge.m1 { background: var(--blue); }
+    .movement-badge.m2 { background: #e67e22; }
+    .movement-badge.hinge { background: var(--red); }
+    .movement-badge.m3 { background: #27ae60; }
 
     .nav-btn {
       background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
@@ -56,7 +67,7 @@
 
     #spreadSelect {
       background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
-      padding: 4px 8px; border-radius: 4px; font-size: 13px; max-width: 280px;
+      padding: 4px 8px; border-radius: 4px; font-size: 13px; max-width: 320px;
     }
 
     .back-link {
@@ -69,37 +80,280 @@
     .main-content {
       display: flex; flex: 1; overflow: hidden;
     }
-    .image-panel {
-      width: 35%; min-width: 300px; display: flex; flex-direction: column;
-      border-right: 1px solid var(--border); background: var(--bg-panel);
+
+    /* ===== Left Panel: Spread Renderer ===== */
+    .render-panel {
+      width: 55%; min-width: 500px; display: flex; flex-direction: column;
+      border-right: 1px solid var(--border); background: #111;
     }
-    .image-panel-header {
+    .render-panel-header {
       padding: 8px 12px; border-bottom: 1px solid var(--border);
       font-size: 12px; color: var(--text-muted); display: flex; justify-content: space-between; align-items: center;
+      background: var(--bg-panel);
     }
-    .image-container {
-      flex: 1; display: flex; align-items: center; justify-content: center;
-      padding: 12px; overflow: auto; background: #111;
+    .render-tabs {
+      display: flex; gap: 2px;
     }
-    .image-container img {
-      max-width: 100%; max-height: 100%; object-fit: contain;
-      border: 1px solid var(--border);
+    .render-tab {
+      padding: 4px 12px; font-size: 11px; border-radius: 3px; cursor: pointer;
+      background: transparent; color: var(--text-muted); border: 1px solid transparent;
     }
-    .wireframe-container {
-      padding: 12px; border-top: 1px solid var(--border); background: var(--bg-panel);
-    }
-    .wireframe-container h3 {
-      font-size: 12px; color: var(--text-muted); margin-bottom: 8px;
-    }
-    .wireframe-svg {
-      width: 100%; background: #111; border: 1px solid var(--border); border-radius: 4px;
-      overflow: hidden;
-    }
-    .wireframe-svg svg { width: 100%; height: auto; }
+    .render-tab:hover { background: var(--bg-hover); }
+    .render-tab.active { background: var(--bg-card); color: var(--accent); border-color: var(--border); }
 
-    /* ===== Options Panel ===== */
+    .render-viewport {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      padding: 16px; overflow: auto;
+    }
+
+    /* ===== The Book Spread ===== */
+    .spread-frame {
+      width: 1120px; height: 700px;
+      background: #fff; color: #000;
+      position: relative; overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+      display: flex; flex-shrink: 0;
+      transform-origin: center center;
+    }
+    .spread-frame.tone-dark {
+      background: #0a0a0a; color: #fff;
+    }
+    .spread-frame.tone-mixed {
+      background: #f5f5f0; color: #1a1a1a;
+    }
+    .spread-page {
+      width: 50%; height: 100%; position: relative; overflow: hidden;
+    }
+    .spread-page.left { border-right: 1px solid rgba(0,0,0,0.08); }
+    .spread-page.right { border-left: 1px solid rgba(0,0,0,0.08); }
+
+    /* Gutter line */
+    .gutter-line {
+      position: absolute; top: 0; bottom: 0; left: 50%;
+      width: 2px; z-index: 10;
+    }
+    .gutter-line.visible {
+      background: rgba(0,0,0,0.1);
+    }
+    .gutter-line.bridged {
+      background: transparent;
+      border-left: 1px dashed rgba(0,0,0,0.06);
+    }
+
+    /* ===== Layout Type Templates ===== */
+
+    /* 1. full_bleed_typography */
+    .layout-full_bleed_typography .spread-page { display: flex; align-items: center; justify-content: center; }
+    .layout-full_bleed_typography .display-zone {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      display: flex; align-items: center; justify-content: center;
+      padding: 20px;
+    }
+    .layout-full_bleed_typography .body-zone {
+      position: absolute; bottom: 40px; right: 40px;
+      max-width: 45%; text-align: right;
+    }
+    .layout-full_bleed_typography .caption-zone {
+      position: absolute; bottom: 20px; right: 40px;
+      max-width: 40%; text-align: right;
+    }
+
+    /* 2. full_bleed_image */
+    .layout-full_bleed_image .image-zone {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: #888; display: flex; align-items: center; justify-content: center;
+    }
+    .layout-full_bleed_image .image-zone img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .layout-full_bleed_image .text-overlay {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 60px 50px;
+      background: linear-gradient(transparent 40%, rgba(0,0,0,0.7));
+    }
+    .layout-full_bleed_image .text-overlay .display-zone { color: #fff; }
+    .layout-full_bleed_image .text-overlay .body-zone { color: rgba(255,255,255,0.9); margin-top: 16px; }
+    .layout-full_bleed_image .text-overlay .caption-zone { color: rgba(255,255,255,0.7); margin-top: 12px; }
+
+    /* 3. split_asymmetric */
+    .layout-split_asymmetric { display: flex; }
+    .layout-split_asymmetric .spread-page.left {
+      display: flex; flex-direction: column; justify-content: center; padding: 50px 40px;
+    }
+    .layout-split_asymmetric .spread-page.right {
+      display: flex; align-items: center; justify-content: center;
+    }
+    .layout-split_asymmetric .image-zone {
+      width: 100%; height: 100%; background: #888;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .layout-split_asymmetric .image-zone img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+
+    /* 4. split_symmetric */
+    .layout-split_symmetric { display: flex; }
+    .layout-split_symmetric .spread-page {
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .layout-split_symmetric .spread-page.left { padding: 50px 40px; }
+    .layout-split_symmetric .spread-page.right {
+      display: flex; align-items: center; justify-content: center;
+    }
+    .layout-split_symmetric .image-zone {
+      width: 100%; height: 100%; background: #888;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .layout-split_symmetric .image-zone img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+
+    /* 5. text_dominant */
+    .layout-text_dominant .spread-page.left {
+      display: flex; flex-direction: column; justify-content: center; padding: 50px 40px;
+    }
+    .layout-text_dominant .spread-page.right {
+      display: flex; flex-direction: column; justify-content: space-between;
+      padding: 40px;
+    }
+    .layout-text_dominant .image-zone {
+      width: 100%; height: 35%; background: #888; border-radius: 2px;
+      display: flex; align-items: center; justify-content: center; overflow: hidden;
+    }
+    .layout-text_dominant .image-zone img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+
+    /* 6. image_dominant */
+    .layout-image_dominant .spread-page.left {
+      display: flex; align-items: center; justify-content: center;
+    }
+    .layout-image_dominant .spread-page.left .image-zone {
+      width: 100%; height: 100%; background: #888;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .layout-image_dominant .spread-page.left .image-zone img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .layout-image_dominant .spread-page.right {
+      display: flex; flex-direction: column; justify-content: center; padding: 50px 40px;
+    }
+
+    /* 7. text_over_image */
+    .layout-text_over_image .image-zone {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: #888; display: flex; align-items: center; justify-content: center;
+    }
+    .layout-text_over_image .image-zone img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .layout-text_over_image .text-overlay {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      padding: 60px;
+      text-align: center;
+    }
+
+    /* 8. minimal_sparse */
+    .layout-minimal_sparse .spread-page.left {
+      display: flex; align-items: center; justify-content: center; padding: 80px 60px;
+    }
+    .layout-minimal_sparse .spread-page.right {
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 80px 60px;
+    }
+
+    /* 9. dense_collage */
+    .layout-dense_collage .spread-page {
+      position: relative; overflow: hidden;
+    }
+    .layout-dense_collage .collage-element {
+      position: absolute;
+    }
+
+    /* 10. diagram_with_text */
+    .layout-diagram_with_text .spread-page.left {
+      display: flex; flex-direction: column; justify-content: center; padding: 40px;
+    }
+    .layout-diagram_with_text .spread-page.right {
+      display: flex; align-items: center; justify-content: center; padding: 40px;
+    }
+
+    /* ===== Typography in Spread ===== */
+    .spread-display-text {
+      font-family: var(--font-display);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+    }
+    .spread-display-text.scale-architectural { font-size: 72px; }
+    .spread-display-text.scale-monumental { font-size: 60px; }
+    .spread-display-text.scale-large { font-size: 48px; }
+    .spread-display-text.scale-medium { font-size: 36px; }
+    .spread-display-text.scale-small { font-size: 24px; }
+    .spread-display-text.scale-caption { font-size: 18px; }
+
+    .spread-body-text {
+      font-family: var(--font-body);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.65;
+      letter-spacing: 0.01em;
+    }
+
+    .spread-caption-text {
+      font-family: var(--font-caption);
+      font-weight: 400;
+      font-style: italic;
+      font-size: 13px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+    }
+
+    .spread-quotation-text {
+      font-family: var(--font-caption);
+      font-weight: 500;
+      font-style: italic;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .spread-graphic-text {
+      font-family: var(--font-graphic);
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    /* Color treatments */
+    .color-black_on_white { color: #000; }
+    .color-white_on_black { color: #fff; }
+    .color-reversed .spread-page.left { background: #000; color: #fff; }
+    .color-reversed .spread-page.right { background: #fff; color: #000; }
+    .color-mixed { }
+
+    /* Image placeholder */
+    .image-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-body); font-size: 11px; color: #999;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      background: repeating-linear-gradient(
+        45deg, #e8e8e8, #e8e8e8 10px, #f0f0f0 10px, #f0f0f0 20px
+      );
+    }
+    .tone-dark .image-placeholder {
+      background: repeating-linear-gradient(
+        45deg, #222, #222 10px, #2a2a2a 10px, #2a2a2a 20px
+      );
+      color: #555;
+    }
+
+    /* ===== Right Panel: Options ===== */
     .options-panel {
       flex: 1; display: flex; flex-direction: column; overflow: hidden;
+      min-width: 360px;
     }
     .options-header {
       padding: 12px 16px; border-bottom: 1px solid var(--border);
@@ -108,122 +362,173 @@
     .options-header h2 { font-size: 16px; color: var(--text-bright); }
     .theme-line { font-size: 13px; color: var(--accent); margin-top: 4px; }
     .options-scroll {
-      flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 16px;
+      flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px;
     }
 
     /* ===== Option Card ===== */
     .option-card {
       background: var(--bg-card); border: 2px solid var(--border); border-radius: 8px;
-      padding: 16px; cursor: pointer; transition: all 0.2s ease;
+      padding: 14px; cursor: pointer; transition: all 0.15s ease;
     }
     .option-card:hover { border-color: #666; background: #303030; }
     .option-card.selected { border-color: var(--selected-border); background: var(--selected); }
     .option-card.selected .option-header { color: var(--accent); }
+    .option-card.rendering { border-color: var(--blue); box-shadow: 0 0 0 1px var(--blue); }
 
     .option-header {
-      display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+      display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
     }
     .option-id {
-      width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
-      background: var(--bg); border-radius: 50%; font-weight: 700; font-size: 16px;
+      width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
+      background: var(--bg); border-radius: 50%; font-weight: 700; font-size: 14px;
       color: var(--text-muted); border: 2px solid var(--border); flex-shrink: 0;
     }
     .option-card.selected .option-id { border-color: var(--accent); color: var(--accent); }
-    .option-label { font-weight: 600; font-size: 14px; color: var(--text-bright); }
+    .option-card.rendering .option-id { border-color: var(--blue); color: var(--blue); }
+    .option-label { font-weight: 600; font-size: 13px; color: var(--text-bright); flex: 1; }
 
     .option-meta {
-      display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;
+      display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;
     }
     .meta-tag {
-      font-size: 11px; padding: 2px 8px; border-radius: 10px;
+      font-size: 10px; padding: 2px 7px; border-radius: 10px;
       background: var(--bg); color: var(--text-muted); border: 1px solid var(--border);
     }
     .meta-tag.strategy { color: var(--blue); border-color: var(--blue); }
     .meta-tag.voice { color: var(--purple); border-color: var(--purple); }
     .meta-tag.words { color: var(--green); border-color: var(--green); }
 
-    /* Text preview sections */
-    .text-section { margin-bottom: 10px; }
-    .text-section-label {
-      font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px;
-      color: var(--text-muted); margin-bottom: 4px;
+    /* Compact text preview in cards */
+    .text-preview {
+      font-size: 12px; line-height: 1.5; color: var(--text-muted);
+      max-height: 60px; overflow: hidden; position: relative;
     }
-    .display-text {
-      font-size: 18px; font-weight: 800; line-height: 1.2;
-      color: var(--text-bright); padding: 12px; background: var(--bg);
-      border-radius: 4px; white-space: pre-line; font-family: 'Arial Black', 'Impact', sans-serif;
+    .text-preview::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 20px; background: linear-gradient(transparent, var(--bg-card));
     }
-    .body-text {
-      font-size: 13px; line-height: 1.6; color: var(--text);
-      padding: 10px; background: var(--bg); border-radius: 4px;
-      white-space: pre-line; font-family: Georgia, 'Times New Roman', serif;
-    }
-    .caption-text {
-      font-size: 11px; color: var(--text-muted); font-style: italic;
-      padding: 8px 10px; background: var(--bg); border-radius: 4px;
-      border-left: 2px solid var(--accent-dim);
+    .option-card.selected .text-preview::after { background: linear-gradient(transparent, rgba(58,45,24,0.95)); }
+    .text-preview .display-preview {
+      font-family: var(--font-display); font-weight: 800; font-size: 14px;
+      color: var(--text-bright); margin-bottom: 4px;
     }
 
-    /* Quotations */
-    .quotation-block {
-      margin-top: 8px; padding: 8px 12px; background: rgba(88, 155, 213, 0.08);
+    /* Expanded text (when selected) */
+    .option-card.selected .text-preview,
+    .option-card.rendering .text-preview {
+      max-height: none;
+    }
+    .option-card.selected .text-preview::after,
+    .option-card.rendering .text-preview::after {
+      display: none;
+    }
+
+    /* Quotation in card */
+    .card-quotation {
+      margin-top: 6px; padding: 6px 10px; background: rgba(88, 155, 213, 0.08);
       border-left: 2px solid var(--blue); border-radius: 0 4px 4px 0;
+      font-size: 11px; font-style: italic; color: var(--text);
     }
-    .quotation-text { font-style: italic; font-size: 12px; color: var(--text); }
-    .quotation-attr { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+    .card-quotation-attr { font-size: 10px; color: var(--text-muted); margin-top: 2px; font-style: normal; }
 
-    /* Rationale */
-    .rationale {
-      margin-top: 12px; padding: 10px; background: rgba(168, 139, 235, 0.08);
+    /* Rationale (collapsed by default) */
+    .card-rationale {
+      margin-top: 8px; padding: 8px; background: rgba(168, 139, 235, 0.06);
       border-radius: 4px; border-left: 2px solid var(--purple);
+      font-size: 11px; line-height: 1.4; color: var(--text-muted);
+      display: none;
     }
-    .rationale-label {
-      font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px;
-      color: var(--purple); margin-bottom: 4px;
+    .option-card.selected .card-rationale,
+    .option-card.rendering .card-rationale {
+      display: block;
     }
-    .rationale-text { font-size: 12px; line-height: 1.5; color: var(--text-muted); }
 
-    /* ===== Design Spec Panel ===== */
-    .design-spec {
+    /* Action buttons in card */
+    .card-actions {
+      display: flex; gap: 6px; margin-top: 8px; align-items: center;
+    }
+    .card-btn {
+      font-size: 10px; padding: 3px 10px; border-radius: 3px; cursor: pointer;
+      border: 1px solid var(--border); background: var(--bg); color: var(--text-muted);
+    }
+    .card-btn:hover { background: var(--bg-hover); color: var(--text); }
+    .card-btn.render-btn { border-color: var(--blue); color: var(--blue); }
+    .card-btn.render-btn:hover { background: rgba(91,155,213,0.15); }
+    .card-btn.select-btn { border-color: var(--accent); color: var(--accent); }
+    .card-btn.select-btn:hover { background: rgba(232,168,56,0.15); }
+
+    /* ===== Design Spec (collapsed) ===== */
+    .design-spec-card {
       background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
-      padding: 16px; margin-top: 4px;
+      padding: 12px 14px;
     }
-    .design-spec h3 {
-      font-size: 14px; color: var(--text-bright); margin-bottom: 12px;
-      display: flex; align-items: center; gap: 8px;
+    .design-spec-header {
+      display: flex; align-items: center; gap: 8px; cursor: pointer;
+      font-size: 13px; color: var(--text-bright);
     }
-    .design-spec h3::before {
-      content: '\2b13'; font-size: 16px; color: var(--accent);
+    .design-spec-header::before {
+      content: '\25B6'; font-size: 10px; color: var(--accent); transition: transform 0.2s;
+    }
+    .design-spec-card.expanded .design-spec-header::before {
+      transform: rotate(90deg);
+    }
+    .design-spec-body {
+      display: none; margin-top: 10px;
+    }
+    .design-spec-card.expanded .design-spec-body {
+      display: block;
     }
     .spec-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
     }
-    .spec-item { }
     .spec-item-label {
-      font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px;
-      color: var(--text-muted); margin-bottom: 2px;
+      font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px;
+      color: var(--text-muted); margin-bottom: 1px;
     }
-    .spec-item-value { font-size: 13px; color: var(--text); }
+    .spec-item-value { font-size: 12px; color: var(--text); }
     .spec-rationale {
-      grid-column: 1 / -1; margin-top: 8px; padding: 8px 10px;
-      background: var(--bg); border-radius: 4px; font-size: 12px; color: var(--text-muted);
+      grid-column: 1 / -1; margin-top: 6px; padding: 6px 8px;
+      background: var(--bg); border-radius: 4px; font-size: 11px; color: var(--text-muted);
     }
+
+    /* ===== Image Alternatives Strip ===== */
+    .image-strip {
+      padding: 8px 12px; border-top: 1px solid var(--border); background: var(--bg-panel);
+      display: flex; gap: 8px; align-items: center; flex-shrink: 0;
+    }
+    .image-strip-label {
+      font-size: 10px; color: var(--text-muted); text-transform: uppercase;
+      letter-spacing: 0.5px; white-space: nowrap;
+    }
+    .image-strip-thumbs {
+      display: flex; gap: 6px; overflow-x: auto;
+    }
+    .image-thumb {
+      width: 80px; height: 50px; border-radius: 3px; overflow: hidden;
+      border: 2px solid transparent; cursor: pointer; flex-shrink: 0;
+      background: #333; display: flex; align-items: center; justify-content: center;
+      transition: border-color 0.15s;
+    }
+    .image-thumb:hover { border-color: var(--text-muted); }
+    .image-thumb.active { border-color: var(--accent); }
+    .image-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .image-thumb .no-img { font-size: 8px; color: var(--text-muted); }
 
     /* ===== Review Controls ===== */
     .review-controls {
-      padding: 12px 16px; border-top: 1px solid var(--border); background: #111;
-      display: flex; align-items: center; gap: 12px;
+      padding: 10px 16px; border-top: 1px solid var(--border); background: #111;
+      display: flex; align-items: center; gap: 10px;
     }
     .review-controls textarea {
       flex: 1; background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
-      padding: 8px; border-radius: 4px; font-size: 12px; resize: none; height: 36px;
+      padding: 6px 8px; border-radius: 4px; font-size: 12px; resize: none; height: 32px;
       font-family: inherit;
     }
     .review-controls textarea:focus { outline: none; border-color: var(--accent); }
     .review-controls textarea::placeholder { color: var(--text-muted); }
 
     .btn {
-      padding: 6px 16px; border-radius: 4px; font-size: 12px; cursor: pointer;
+      padding: 5px 14px; border-radius: 4px; font-size: 11px; cursor: pointer;
       border: 1px solid var(--border); background: var(--bg-card); color: var(--text);
     }
     .btn:hover { background: var(--bg-hover); }
@@ -233,10 +538,11 @@
 
     /* ===== Progress Bar ===== */
     .progress-bar {
-      display: flex; gap: 2px; padding: 8px 16px; background: #111; border-top: 1px solid var(--border);
+      display: flex; gap: 2px; padding: 6px 16px; background: #111; border-top: 1px solid var(--border);
+      flex-shrink: 0;
     }
     .progress-dot {
-      flex: 1; height: 4px; border-radius: 2px; background: var(--bg-card);
+      flex: 1; height: 3px; border-radius: 2px; background: var(--bg-card);
       cursor: pointer; transition: all 0.2s;
     }
     .progress-dot.current { background: var(--accent); }
@@ -245,31 +551,53 @@
 
     /* ===== Stats Banner ===== */
     .stats-banner {
-      display: flex; gap: 20px; padding: 8px 16px; background: var(--bg-panel);
-      border-bottom: 1px solid var(--border); font-size: 12px;
+      display: flex; gap: 16px; padding: 6px 16px; background: var(--bg-panel);
+      border-bottom: 1px solid var(--border); font-size: 11px; flex-shrink: 0;
     }
     .stat { display: flex; gap: 4px; }
     .stat-label { color: var(--text-muted); }
     .stat-value { color: var(--text-bright); font-weight: 600; }
 
-    /* ===== Responsive ===== */
-    @media (max-width: 900px) {
-      .main-content { flex-direction: column; }
-      .image-panel { width: 100%; min-width: 0; height: 40%; border-right: none; border-bottom: 1px solid var(--border); }
-      .spec-grid { grid-template-columns: 1fr; }
-    }
-
     /* ===== Scrollbar ===== */
-    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #555; }
 
     /* ===== Dependency flags ===== */
-    .dependency-flags { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
+    .dependency-flags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
     .dep-flag {
-      font-size: 10px; padding: 2px 6px; border-radius: 3px;
+      font-size: 9px; padding: 1px 5px; border-radius: 3px;
       background: rgba(231, 76, 60, 0.1); color: var(--red); border: 1px solid rgba(231, 76, 60, 0.3);
+    }
+
+    /* ===== Scale the spread to fit ===== */
+    .render-viewport { position: relative; }
+    .spread-scale-wrapper {
+      transform-origin: center center;
+    }
+
+    /* ===== Original Spread Image (toggle view) ===== */
+    .original-image-view {
+      display: none; width: 100%; height: 100%;
+      align-items: center; justify-content: center; padding: 12px;
+    }
+    .original-image-view.active { display: flex; }
+    .original-image-view img {
+      max-width: 100%; max-height: 100%; object-fit: contain;
+      border: 1px solid var(--border);
+    }
+    .rendered-view { display: flex; }
+    .rendered-view.hidden { display: none; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1100px) {
+      .render-panel { width: 50%; min-width: 400px; }
+    }
+    @media (max-width: 900px) {
+      .main-content { flex-direction: column; }
+      .render-panel { width: 100%; min-width: 0; height: 50%; border-right: none; border-bottom: 1px solid var(--border); }
+      .options-panel { min-width: 0; }
     }
   </style>
 </head>
@@ -290,17 +618,17 @@
       <span class="movement-badge" id="movementBadge"></span>
     </div>
     <div class="header-right">
-      <span id="selectionCount">0/20 selected</span>
-      <button class="btn export" onclick="exportSelections()">Export JSON</button>
+      <span id="selectionCount">0 selected</span>
+      <button class="btn export" onclick="exportSelections()">Export</button>
     </div>
   </header>
 
   <!-- Stats -->
-  <div class="stats-banner" id="statsBanner">
-    <div class="stat"><span class="stat-label">Spreads:</span><span class="stat-value" id="statSpreads">20</span></div>
-    <div class="stat"><span class="stat-label">Text Options:</span><span class="stat-value" id="statOptions">60</span></div>
+  <div class="stats-banner">
+    <div class="stat"><span class="stat-label">Spreads:</span><span class="stat-value" id="statSpreads">0</span></div>
+    <div class="stat"><span class="stat-label">Options:</span><span class="stat-value" id="statOptions">0</span></div>
     <div class="stat"><span class="stat-label">Words:</span><span class="stat-value" id="statWords">0</span></div>
-    <div class="stat"><span class="stat-label">Selected:</span><span class="stat-value" id="statSelected">0/20</span></div>
+    <div class="stat"><span class="stat-label">Selected:</span><span class="stat-value" id="statSelected">0</span></div>
   </div>
 
   <!-- Progress -->
@@ -309,18 +637,40 @@
   <!-- Main Content -->
   <div class="main-content">
 
-    <!-- Left: Image + Wireframe -->
-    <div class="image-panel">
-      <div class="image-panel-header">
-        <span>Original Spread</span>
-        <span id="imageInfo" style="font-size:11px;color:var(--text-muted)"></span>
+    <!-- Left: Spread Renderer -->
+    <div class="render-panel">
+      <div class="render-panel-header">
+        <div class="render-tabs">
+          <div class="render-tab active" data-view="rendered" onclick="switchView('rendered')">Rendered</div>
+          <div class="render-tab" data-view="original" onclick="switchView('original')">Original</div>
+          <div class="render-tab" data-view="wireframe" onclick="switchView('wireframe')">Wireframe</div>
+        </div>
+        <span id="renderInfo" style="font-size:10px;color:var(--text-muted)"></span>
       </div>
-      <div class="image-container">
-        <img id="spreadImage" src="" alt="Spread image" />
+      <div class="render-viewport" id="renderViewport">
+        <!-- Rendered spread -->
+        <div class="rendered-view" id="renderedView">
+          <div class="spread-scale-wrapper" id="spreadScaleWrapper">
+            <div class="spread-frame" id="spreadFrame">
+              <div class="gutter-line" id="gutterLine"></div>
+              <div class="spread-page left" id="pageLeft"></div>
+              <div class="spread-page right" id="pageRight"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Original image -->
+        <div class="original-image-view" id="originalView">
+          <img id="originalImage" src="" alt="Original spread" />
+        </div>
+        <!-- Wireframe -->
+        <div class="original-image-view" id="wireframeView">
+          <div id="wireframeSvg" style="width:100%;max-width:800px;"></div>
+        </div>
       </div>
-      <div class="wireframe-container">
-        <h3>Design Wireframe</h3>
-        <div class="wireframe-svg" id="wireframeSvg"></div>
+      <!-- Image alternatives strip -->
+      <div class="image-strip" id="imageStrip" style="display:none;">
+        <span class="image-strip-label">Images <span style="opacity:0.5">[&nbsp;]</span>:</span>
+        <div class="image-strip-thumbs" id="imageStripThumbs"></div>
       </div>
     </div>
 
@@ -332,14 +682,10 @@
           <div class="theme-line" id="themeLine"></div>
         </div>
       </div>
-      <div class="options-scroll" id="optionsScroll">
-        <!-- Populated by JS -->
-      </div>
-
-      <!-- Review Controls -->
+      <div class="options-scroll" id="optionsScroll"></div>
       <div class="review-controls">
-        <textarea id="reviewNotes" placeholder="Reviewer notes for this spread..." oninput="saveNotes()"></textarea>
-        <button class="btn primary" onclick="clearSelection()">Clear</button>
+        <textarea id="reviewNotes" placeholder="Reviewer notes..." oninput="saveNotes()"></textarea>
+        <button class="btn" onclick="clearSelection()">Clear</button>
       </div>
     </div>
   </div>
@@ -349,12 +695,15 @@
 <script>
 // ===== State =====
 let data = null;
+let imageMetadata = null; // loaded from image_metadata.json
 let currentIndex = 0;
-let selections = {};  // { spread_id: { text: option_id, design: spec_id, notes: string } }
+let currentRenderOption = null; // which option is rendered in the spread
+let currentImageIdx = 0; // which image option is shown (0-based)
+let selections = {};
+let currentView = 'rendered'; // 'rendered' | 'original' | 'wireframe'
 
-// Load from localStorage
 try {
-  const saved = localStorage.getItem('authoring_selections');
+  const saved = localStorage.getItem('authoring_selections_v2');
   if (saved) selections = JSON.parse(saved);
 } catch(e) {}
 
@@ -363,28 +712,32 @@ async function init() {
   try {
     const resp = await fetch('data/authoring_output.json');
     data = await resp.json();
+    // Load image metadata (optional — may not exist yet)
+    try {
+      const imgResp = await fetch('data/image_metadata.json');
+      if (imgResp.ok) imageMetadata = await imgResp.json();
+    } catch(e) { /* image metadata not available yet */ }
     buildUI();
     renderSpread(0);
+    window.addEventListener('resize', scaleSpread);
   } catch(e) {
     document.getElementById('optionsScroll').innerHTML =
-      '<div style="padding:40px;text-align:center;color:var(--red)">Failed to load authoring_output.json: ' + e.message + '</div>';
+      `<div style="padding:40px;text-align:center;color:var(--red)">Failed to load: ${e.message}</div>`;
   }
 }
 
 function buildUI() {
   const sel = document.getElementById('spreadSelect');
   sel.innerHTML = data.spreads.map((s, i) =>
-    `<option value="${i}">${s.spread_id} — ${s.theme || '(no theme)'}</option>`
+    `<option value="${i}">${s.spread_id} — ${truncate(s.theme || '(no theme)', 40)}</option>`
   ).join('');
 
-  // Progress dots
   const bar = document.getElementById('progressBar');
   bar.innerHTML = data.spreads.map((s, i) => {
     const cls = selections[s.spread_id]?.text ? 'reviewed' : '';
-    return `<div class="progress-dot ${cls}" data-idx="${i}" onclick="goToSpread(${i})" title="${s.spread_id}"></div>`;
+    return `<div class="progress-dot ${cls}" data-idx="${i}" onclick="goToSpread(${i})" title="${s.spread_id}: ${s.theme || ''}"></div>`;
   }).join('');
 
-  // Stats
   const totalWords = data.spreads.reduce((sum, s) =>
     sum + s.text_options.reduce((ws, o) => ws + (o.word_count || 0), 0), 0);
   document.getElementById('statSpreads').textContent = data.spreads.length;
@@ -396,9 +749,7 @@ function buildUI() {
 function updateSelectionCount() {
   const count = data.spreads.filter(s => selections[s.spread_id]?.text).length;
   document.getElementById('statSelected').textContent = `${count}/${data.spreads.length}`;
-  document.getElementById('selectionCount').textContent = `${count}/${data.spreads.length} selected`;
-
-  // Update progress dots
+  document.getElementById('selectionCount').textContent = `${count}/${data.spreads.length}`;
   data.spreads.forEach((s, i) => {
     const dot = document.querySelector(`.progress-dot[data-idx="${i}"]`);
     if (dot) {
@@ -412,16 +763,20 @@ function updateSelectionCount() {
 // ===== Navigation =====
 function navigate(dir) {
   const newIdx = currentIndex + dir;
-  if (newIdx >= 0 && newIdx < data.spreads.length) {
-    renderSpread(newIdx);
-  }
+  if (newIdx >= 0 && newIdx < data.spreads.length) renderSpread(newIdx);
 }
-
 function goToSpread(idx) {
   idx = parseInt(idx);
-  if (idx >= 0 && idx < data.spreads.length) {
-    renderSpread(idx);
-  }
+  if (idx >= 0 && idx < data.spreads.length) renderSpread(idx);
+}
+
+// ===== View Switching =====
+function switchView(view) {
+  currentView = view;
+  document.querySelectorAll('.render-tab').forEach(t => t.classList.toggle('active', t.dataset.view === view));
+  document.getElementById('renderedView').className = view === 'rendered' ? 'rendered-view' : 'rendered-view hidden';
+  document.getElementById('originalView').className = view === 'original' ? 'original-image-view active' : 'original-image-view';
+  document.getElementById('wireframeView').className = view === 'wireframe' ? 'original-image-view active' : 'original-image-view';
 }
 
 // ===== Render Spread =====
@@ -437,107 +792,124 @@ function renderSpread(idx) {
   document.getElementById('nextBtn').disabled = (idx === data.spreads.length - 1);
 
   const badge = document.getElementById('movementBadge');
-  const movementNames = {
-    'prologue': 'Prologue',
-    'movement_1_environment': 'M1: Environment',
-    'movement_2_acceleration': 'M2: Acceleration',
-    'hinge': 'The Hinge',
-    'movement_3_dreamscape': 'M3: Dreamscape'
+  const movementMap = {
+    'prologue': ['Prologue', ''],
+    'movement_1_environment': ['M1: Environment', ' m1'],
+    'movement_2_acceleration': ['M2: Acceleration', ' m2'],
+    'hinge': ['The Hinge', ' hinge'],
+    'movement_3_dreamscape': ['M3: Dreamscape', ' m3']
   };
-  badge.textContent = movementNames[spread.movement] || spread.movement;
-  badge.className = 'movement-badge' + (spread.movement === 'movement_1_environment' ? ' m1' : '');
+  const [mName, mClass] = movementMap[spread.movement] || [spread.movement, ''];
+  badge.textContent = mName;
+  badge.className = 'movement-badge' + mClass;
 
-  // Theme
   document.getElementById('themeLine').textContent = spread.theme || '';
 
-  // Image
-  const num = sid.replace('spread_', '');
-  document.getElementById('spreadImage').src = `spreads/${sid}.jpg`;
-  document.getElementById('imageInfo').textContent = `Spread ${num}`;
+  // Original image
+  document.getElementById('originalImage').src = `spreads/${sid}.jpg`;
 
   // Wireframe
   const wireDiv = document.getElementById('wireframeSvg');
   if (spread.design_specs?.length > 0 && spread.design_specs[0].svg_wireframe) {
     wireDiv.innerHTML = spread.design_specs[0].svg_wireframe;
   } else {
-    wireDiv.innerHTML = '<div style="padding:20px;text-align:center;color:var(--text-muted);font-size:12px">No wireframe</div>';
+    wireDiv.innerHTML = '<div style="padding:40px;text-align:center;color:var(--text-muted);font-size:12px">No wireframe</div>';
   }
 
-  // Text options
-  const scroll = document.getElementById('optionsScroll');
-  const selectedText = selections[sid]?.text || null;
+  // Determine which option to render
+  const selectedOpt = selections[sid]?.text || null;
+  currentRenderOption = selectedOpt || (spread.text_options.length > 0 ? spread.text_options[0].option_id : null);
 
+  // Build option cards
+  buildOptionCards(spread);
+
+  // Render the spread layout
+  if (currentRenderOption) {
+    renderSpreadLayout(spread, currentRenderOption);
+  }
+
+  // Image strip
+  populateImageStrip(sid);
+
+  // Notes
+  document.getElementById('reviewNotes').value = selections[sid]?.notes || '';
+  updateSelectionCount();
+
+  // Render info
+  document.getElementById('renderInfo').textContent = `${sid} | ${spread.movement}`;
+}
+
+// ===== Build Option Cards =====
+function buildOptionCards(spread) {
+  const sid = spread.spread_id;
+  const selectedText = selections[sid]?.text || null;
+  const scroll = document.getElementById('optionsScroll');
   let html = '';
 
-  // Text option cards
   spread.text_options.forEach(opt => {
     const isSelected = (opt.option_id === selectedText);
-    html += `<div class="option-card ${isSelected ? 'selected' : ''}" onclick="selectOption('${sid}', '${opt.option_id}')">`;
+    const isRendering = (opt.option_id === currentRenderOption);
+    let cls = 'option-card';
+    if (isSelected) cls += ' selected';
+    if (isRendering && !isSelected) cls += ' rendering';
+
+    html += `<div class="${cls}" onclick="handleCardClick('${sid}', '${opt.option_id}')">`;
     html += `<div class="option-header">`;
     html += `<div class="option-id">${opt.option_id.toUpperCase()}</div>`;
-    html += `<div class="option-label">${escHtml(opt.label)}</div>`;
+    html += `<div class="option-label">${esc(opt.label)}</div>`;
     html += `</div>`;
 
     // Meta tags
     html += `<div class="option-meta">`;
     if (opt.rhetorical_strategy) html += `<span class="meta-tag strategy">${opt.rhetorical_strategy}</span>`;
     if (opt.voice_register) html += `<span class="meta-tag voice">${opt.voice_register}</span>`;
-    html += `<span class="meta-tag words">${opt.word_count || 0} words</span>`;
+    html += `<span class="meta-tag words">${opt.word_count || 0}w</span>`;
     html += `</div>`;
 
-    // Display text
-    if (opt.display_text) {
-      html += `<div class="text-section">`;
-      html += `<div class="text-section-label">Display Text</div>`;
-      html += `<div class="display-text">${escHtml(opt.display_text)}</div>`;
-      html += `</div>`;
-    }
-
-    // Body text
-    if (opt.body_text) {
-      html += `<div class="text-section">`;
-      html += `<div class="text-section-label">Body Text</div>`;
-      html += `<div class="body-text">${escHtml(opt.body_text)}</div>`;
-      html += `</div>`;
-    }
-
-    // Caption
-    if (opt.caption_text) {
-      html += `<div class="text-section">`;
-      html += `<div class="text-section-label">Caption</div>`;
-      html += `<div class="caption-text">${escHtml(opt.caption_text)}</div>`;
-      html += `</div>`;
-    }
+    // Text preview
+    html += `<div class="text-preview">`;
+    if (opt.display_text) html += `<div class="display-preview">${esc(opt.display_text)}</div>`;
+    if (opt.body_text) html += `<div>${esc(opt.body_text)}</div>`;
+    if (opt.caption_text) html += `<div style="font-style:italic;color:var(--text-muted)">${esc(opt.caption_text)}</div>`;
+    html += `</div>`;
 
     // Quotations
     if (opt.quotations_used?.length > 0) {
       opt.quotations_used.forEach(q => {
-        html += `<div class="quotation-block">`;
-        html += `<div class="quotation-text">"${escHtml(q.text)}"</div>`;
-        html += `<div class="quotation-attr">— ${escHtml(q.attribution)}`;
-        if (q.source) html += `, <em>${escHtml(q.source)}</em>`;
-        html += `</div></div>`;
+        html += `<div class="card-quotation">"${esc(q.text)}"`;
+        html += `<div class="card-quotation-attr">— ${esc(q.attribution)}${q.source ? ', ' + esc(q.source) : ''}</div>`;
+        html += `</div>`;
       });
     }
 
     // Rationale
     if (opt.rationale) {
-      html += `<div class="rationale">`;
-      html += `<div class="rationale-label">Rationale</div>`;
-      html += `<div class="rationale-text">${escHtml(opt.rationale)}</div>`;
-      html += `</div>`;
+      html += `<div class="card-rationale">${esc(opt.rationale)}</div>`;
     }
 
-    html += `</div>`; // end option-card
+    // Action buttons
+    html += `<div class="card-actions">`;
+    if (!isRendering) {
+      html += `<button class="card-btn render-btn" onclick="event.stopPropagation(); viewOption('${sid}','${opt.option_id}')">View</button>`;
+    } else {
+      html += `<span style="font-size:10px;color:var(--blue)">Viewing</span>`;
+    }
+    if (!isSelected) {
+      html += `<button class="card-btn select-btn" onclick="event.stopPropagation(); selectOption('${sid}','${opt.option_id}')">Select</button>`;
+    } else {
+      html += `<span style="font-size:10px;color:var(--accent)">Selected</span>`;
+    }
+    html += `</div>`;
+
+    html += `</div>`;
   });
 
   // Design spec
   if (spread.design_specs?.length > 0) {
     const spec = spread.design_specs[0];
-    html += `<div class="design-spec">`;
-    html += `<h3>${escHtml(spec.label || 'Design Specification')}</h3>`;
-    html += `<div class="spec-grid">`;
-
+    html += `<div class="design-spec-card" id="designSpecCard">`;
+    html += `<div class="design-spec-header" onclick="toggleDesignSpec()">Design Specification: ${esc(spec.label || '')}</div>`;
+    html += `<div class="design-spec-body"><div class="spec-grid">`;
     if (spec.layout) {
       html += specItem('Layout', spec.layout.type?.replace(/_/g, ' '));
       html += specItem('Gutter', spec.layout.gutter_treatment);
@@ -552,54 +924,394 @@ function renderSpread(idx) {
       if (spec.typography.special_treatment) html += specItem('Special', spec.typography.special_treatment);
     }
     if (spec.image_direction) {
-      html += specItem('Image Approach', spec.image_direction.approach);
+      html += specItem('Image', spec.image_direction.approach);
       if (spec.image_direction.subject) html += specItem('Subject', spec.image_direction.subject);
       if (spec.image_direction.mood) html += specItem('Mood', spec.image_direction.mood);
-      if (spec.image_direction.bw_treatment) html += specItem('B&W Treatment', spec.image_direction.bw_treatment);
-      html += specItem('Scale', spec.image_direction.scale?.replace(/_/g, ' '));
     }
     html += specItem('Density', spec.density);
     html += specItem('Tone', spec.tone);
-
-    if (spec.rationale) {
-      html += `<div class="spec-rationale">${escHtml(spec.rationale)}</div>`;
-    }
-    html += `</div></div>`;
+    if (spec.rationale) html += `<div class="spec-rationale">${esc(spec.rationale)}</div>`;
+    html += `</div></div></div>`;
   }
 
-  // Dependency flags
+  // Dependencies
   if (spread.dependency_flags?.length > 0) {
     html += `<div class="dependency-flags">`;
-    html += `<span style="font-size:11px;color:var(--text-muted)">Dependencies:</span>`;
-    spread.dependency_flags.forEach(f => {
-      html += `<span class="dep-flag">${escHtml(f)}</span>`;
-    });
+    spread.dependency_flags.forEach(f => html += `<span class="dep-flag">${esc(f)}</span>`);
     html += `</div>`;
   }
 
   scroll.innerHTML = html;
   scroll.scrollTop = 0;
-
-  // Review notes
-  document.getElementById('reviewNotes').value = selections[sid]?.notes || '';
-
-  // Update progress
-  updateSelectionCount();
 }
 
-// ===== Selection =====
+// ===== Render Spread Layout =====
+function renderSpreadLayout(spread, optionId) {
+  const opt = spread.text_options.find(o => o.option_id === optionId);
+  if (!opt) return;
+
+  const spec = spread.design_specs?.[0];
+  const layoutType = spec?.layout?.type || 'split_asymmetric';
+  const tone = spec?.tone || 'light';
+  const colorTreatment = spec?.typography?.color_treatment || 'black_on_white';
+  const displayScale = spec?.typography?.display_scale || 'large';
+  const gutterTreatment = spec?.layout?.gutter_treatment || 'visible';
+  const imageApproach = spec?.image_direction?.approach || 'none';
+
+  const frame = document.getElementById('spreadFrame');
+  const left = document.getElementById('pageLeft');
+  const right = document.getElementById('pageRight');
+  const gutter = document.getElementById('gutterLine');
+
+  // Reset
+  frame.className = 'spread-frame';
+  left.className = 'spread-page left';
+  right.className = 'spread-page right';
+  left.innerHTML = '';
+  right.innerHTML = '';
+
+  // Tone
+  if (tone === 'dark') frame.classList.add('tone-dark');
+  else if (tone === 'mixed') frame.classList.add('tone-mixed');
+
+  // Layout class
+  frame.classList.add(`layout-${layoutType}`);
+
+  // Color treatment class
+  if (colorTreatment === 'reversed') frame.classList.add('color-reversed');
+
+  // Gutter
+  gutter.className = 'gutter-line ' + gutterTreatment;
+
+  // Build display text element
+  const displayEl = opt.display_text ? buildDisplayText(opt.display_text, displayScale, colorTreatment, tone) : '';
+  const bodyEl = opt.body_text ? buildBodyText(opt.body_text, colorTreatment, tone) : '';
+  const captionEl = opt.caption_text ? buildCaptionText(opt.caption_text, colorTreatment, tone) : '';
+
+  // Build quotation element (from first quotation if any)
+  let quoteEl = '';
+  if (opt.quotations_used?.length > 0) {
+    const q = opt.quotations_used[0];
+    quoteEl = buildQuotationText(q.text, q.attribution, q.source, colorTreatment, tone);
+  }
+
+  // Image element — use real image if available, otherwise placeholder
+  const needsImage = ['full_bleed_image', 'split_asymmetric', 'split_symmetric',
+    'text_dominant', 'image_dominant', 'text_over_image', 'dense_collage'].includes(layoutType)
+    && imageApproach !== 'typography_only' && imageApproach !== 'none';
+
+  const sid = spread.spread_id;
+  const imageSubject = spec?.image_direction?.subject || 'image';
+  const imgEl = needsImage ? buildImageElement(sid, imageSubject) : '';
+
+  // Layout-specific rendering
+  switch (layoutType) {
+    case 'full_bleed_typography':
+      left.innerHTML = `<div class="display-zone">${displayEl}</div>`;
+      right.innerHTML = `
+        <div class="display-zone">${''}</div>
+        ${bodyEl ? `<div class="body-zone">${bodyEl}</div>` : ''}
+        ${captionEl ? `<div class="caption-zone">${captionEl}</div>` : ''}
+      `;
+      // For full bleed typography, the display text should span both pages
+      // We split it roughly
+      if (opt.display_text) {
+        const words = opt.display_text.split(/\s+/);
+        const mid = Math.ceil(words.length / 2);
+        const leftWords = words.slice(0, mid).join(' ');
+        const rightWords = words.slice(mid).join(' ');
+        left.innerHTML = `<div class="display-zone">${buildDisplayText(leftWords, displayScale, colorTreatment, tone)}</div>`;
+        right.innerHTML = `
+          <div class="display-zone">${buildDisplayText(rightWords, displayScale, colorTreatment, tone)}</div>
+          ${bodyEl ? `<div class="body-zone">${bodyEl}</div>` : ''}
+          ${captionEl ? `<div class="caption-zone">${captionEl}</div>` : ''}
+        `;
+      }
+      break;
+
+    case 'full_bleed_image':
+      // Image spans both pages with text overlaid
+      const fullBleedUrl = getImageUrl(sid);
+      const fullBleedBg = fullBleedUrl
+        ? `<img src="${fullBleedUrl}" alt="${esc(imageSubject)}" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;" onerror="this.outerHTML='<div class=image-placeholder style=height:100%>${esc(imageSubject)}</div>'" />`
+        : `<div class="image-placeholder" style="height:100%">${esc(imageSubject)}</div>`;
+      frame.innerHTML = `
+        <div class="gutter-line ${gutterTreatment}" id="gutterLine"></div>
+        <div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;">
+          ${fullBleedBg}
+        </div>
+        <div class="text-overlay" style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;justify-content:flex-end;padding:60px 50px;background:linear-gradient(transparent 40%, rgba(0,0,0,0.65));">
+          <div class="display-zone">${buildDisplayText(opt.display_text || '', displayScale, 'white_on_black', 'dark')}</div>
+          ${bodyEl ? `<div class="body-zone" style="color:rgba(255,255,255,0.9);margin-top:16px">${buildBodyText(opt.body_text, 'white_on_black', 'dark')}</div>` : ''}
+          ${captionEl ? `<div class="caption-zone" style="color:rgba(255,255,255,0.7);margin-top:12px">${buildCaptionText(opt.caption_text, 'white_on_black', 'dark')}</div>` : ''}
+        </div>
+      `;
+      break;
+
+    case 'split_asymmetric':
+      left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;';
+      left.innerHTML = `
+        ${displayEl}
+        ${bodyEl ? `<div style="margin-top:24px">${bodyEl}</div>` : ''}
+        ${captionEl ? `<div style="margin-top:16px">${captionEl}</div>` : ''}
+        ${quoteEl ? `<div style="margin-top:20px">${quoteEl}</div>` : ''}
+      `;
+      right.innerHTML = imgEl || `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:40px">${quoteEl || displayEl}</div>`;
+      break;
+
+    case 'split_symmetric':
+      left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;';
+      left.innerHTML = `
+        ${displayEl}
+        ${bodyEl ? `<div style="margin-top:20px">${bodyEl}</div>` : ''}
+        ${captionEl ? `<div style="margin-top:12px">${captionEl}</div>` : ''}
+      `;
+      right.innerHTML = imgEl || `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:40px">${quoteEl || ''}</div>`;
+      break;
+
+    case 'text_dominant':
+      left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;';
+      left.innerHTML = `
+        ${displayEl}
+        ${bodyEl ? `<div style="margin-top:20px">${bodyEl}</div>` : ''}
+      `;
+      right.style.cssText = 'display:flex;flex-direction:column;justify-content:space-between;padding:40px;';
+      right.innerHTML = `
+        <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+          ${quoteEl || ''}
+          ${captionEl ? `<div style="margin-top:16px">${captionEl}</div>` : ''}
+        </div>
+        ${needsImage ? buildImageElement(sid, imageSubject, 'height:35%;margin-top:20px;border-radius:2px;overflow:hidden;flex-shrink:0;') : ''}
+      `;
+      break;
+
+    case 'image_dominant':
+      left.innerHTML = imgEl || buildImageElement(sid, 'image', 'height:100%');
+      right.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;';
+      right.innerHTML = `
+        ${displayEl}
+        ${bodyEl ? `<div style="margin-top:20px">${bodyEl}</div>` : ''}
+        ${captionEl ? `<div style="margin-top:16px">${captionEl}</div>` : ''}
+        ${quoteEl ? `<div style="margin-top:20px">${quoteEl}</div>` : ''}
+      `;
+      break;
+
+    case 'text_over_image':
+      const toiUrl = getImageUrl(sid);
+      const toiBg = toiUrl
+        ? `<img src="${toiUrl}" alt="${esc(imageSubject)}" style="width:100%;height:100%;object-fit:cover;" onerror="this.outerHTML='<div class=image-placeholder style=height:100%>${esc(imageSubject)}</div>'" />`
+        : `<div class="image-placeholder" style="height:100%">${esc(imageSubject)}</div>`;
+      frame.innerHTML = `
+        <div class="gutter-line ${gutterTreatment}" id="gutterLine"></div>
+        <div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;">
+          ${toiBg}
+        </div>
+        <div style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:80px;text-align:center;background:rgba(0,0,0,0.3);">
+          ${buildDisplayText(opt.display_text || '', displayScale, 'white_on_black', 'dark')}
+          ${opt.body_text ? `<div style="margin-top:24px;max-width:600px">${buildBodyText(opt.body_text, 'white_on_black', 'dark')}</div>` : ''}
+          ${opt.caption_text ? `<div style="margin-top:16px">${buildCaptionText(opt.caption_text, 'white_on_black', 'dark')}</div>` : ''}
+        </div>
+      `;
+      break;
+
+    case 'minimal_sparse':
+      left.style.cssText = 'display:flex;align-items:center;justify-content:center;padding:80px 60px;';
+      left.innerHTML = displayEl;
+      right.style.cssText = 'display:flex;flex-direction:column;justify-content:flex-end;padding:80px 60px;';
+      right.innerHTML = `
+        ${bodyEl || ''}
+        ${captionEl ? `<div style="margin-top:20px">${captionEl}</div>` : ''}
+        ${quoteEl ? `<div style="margin-top:24px">${quoteEl}</div>` : ''}
+      `;
+      break;
+
+    case 'dense_collage':
+      // Multiple overlapping elements
+      left.style.cssText = 'position:relative;overflow:hidden;';
+      left.innerHTML = `
+        ${needsImage ? `<div style="position:absolute;top:10%;left:5%;width:80%;height:60%;">${buildImageElement(sid, imageSubject, 'height:100%')}</div>` : ''}
+        <div style="position:absolute;bottom:10%;left:10%;right:10%;">${displayEl}</div>
+      `;
+      right.style.cssText = 'position:relative;overflow:hidden;padding:30px;display:flex;flex-direction:column;justify-content:center;';
+      right.innerHTML = `
+        ${bodyEl || ''}
+        ${quoteEl ? `<div style="margin-top:20px">${quoteEl}</div>` : ''}
+        ${captionEl ? `<div style="margin-top:16px">${captionEl}</div>` : ''}
+      `;
+      break;
+
+    case 'diagram_with_text':
+      left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:40px;';
+      left.innerHTML = `
+        ${displayEl}
+        ${bodyEl ? `<div style="margin-top:20px">${bodyEl}</div>` : ''}
+      `;
+      right.style.cssText = 'display:flex;align-items:center;justify-content:center;padding:40px;';
+      right.innerHTML = `
+        ${needsImage
+          ? `<div style="width:100%;height:80%;">${buildImageElement(sid, imageSubject, 'height:100%')}</div>`
+          : `<div style="text-align:center">${quoteEl || captionEl || ''}</div>`
+        }
+      `;
+      break;
+
+    default:
+      // Fallback: simple split
+      left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;';
+      left.innerHTML = `${displayEl}${bodyEl ? `<div style="margin-top:20px">${bodyEl}</div>` : ''}`;
+      right.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;';
+      right.innerHTML = `${captionEl || ''}${quoteEl ? `<div style="margin-top:16px">${quoteEl}</div>` : ''}`;
+  }
+
+  scaleSpread();
+}
+
+// ===== Image Strip & Selection =====
+function populateImageStrip(sid) {
+  const strip = document.getElementById('imageStrip');
+  const thumbs = document.getElementById('imageStripThumbs');
+
+  // Check if this spread has generated images
+  const meta = imageMetadata?.[sid];
+  if (!meta || meta.skipped || !meta.options?.length) {
+    strip.style.display = 'none';
+    currentImageIdx = 0;
+    return;
+  }
+
+  // Restore saved image selection
+  currentImageIdx = selections[sid]?.image ?? meta.selected ?? 0;
+  if (currentImageIdx >= meta.options.length) currentImageIdx = 0;
+
+  strip.style.display = 'flex';
+  let html = '';
+  meta.options.forEach((opt, i) => {
+    const active = (i === currentImageIdx) ? ' active' : '';
+    html += `<div class="image-thumb${active}" onclick="selectImage('${sid}', ${i})" title="Option ${i+1}: ${opt.source}">`;
+    html += `<img src="images/${opt.file}" alt="Option ${i+1}" onerror="this.parentElement.innerHTML='<span class=no-img>?</span>'" />`;
+    html += `</div>`;
+  });
+  thumbs.innerHTML = html;
+}
+
+function selectImage(sid, idx) {
+  currentImageIdx = idx;
+  if (!selections[sid]) selections[sid] = {};
+  selections[sid].image = idx;
+  saveSelections();
+
+  // Re-populate strip to update active state
+  populateImageStrip(sid);
+
+  // Re-render spread to show selected image
+  const spread = data.spreads[currentIndex];
+  if (currentRenderOption) {
+    renderSpreadLayout(spread, currentRenderOption);
+  }
+}
+
+function getImageUrl(sid) {
+  // Returns the URL for the currently selected image option, or null
+  const meta = imageMetadata?.[sid];
+  if (!meta || meta.skipped || !meta.options?.length) return null;
+  const idx = currentImageIdx < meta.options.length ? currentImageIdx : 0;
+  return `images/${meta.options[idx].file}`;
+}
+
+function buildImageElement(sid, subject, style) {
+  const url = getImageUrl(sid);
+  if (url) {
+    return `<div class="image-zone" ${style ? `style="${style}"` : ''}>
+      <img src="${url}" alt="${esc(subject || 'spread image')}" style="width:100%;height:100%;object-fit:cover;" onerror="this.outerHTML='<div class=image-placeholder>${esc(subject || 'image')}</div>'" />
+    </div>`;
+  }
+  return `<div class="image-zone" ${style ? `style="${style}"` : ''}><div class="image-placeholder">${esc(subject || 'image')}</div></div>`;
+}
+
+// ===== Typography Builders =====
+function buildDisplayText(text, scale, color, tone) {
+  if (!text) return '';
+  const scaleClass = `scale-${scale || 'large'}`;
+  const colorStyle = getTextColor(color, tone, 'display');
+  return `<div class="spread-display-text ${scaleClass}" style="${colorStyle}">${esc(text)}</div>`;
+}
+
+function buildBodyText(text, color, tone) {
+  if (!text) return '';
+  const colorStyle = getTextColor(color, tone, 'body');
+  return `<div class="spread-body-text" style="${colorStyle};white-space:pre-line">${esc(text)}</div>`;
+}
+
+function buildCaptionText(text, color, tone) {
+  if (!text) return '';
+  const colorStyle = getTextColor(color, tone, 'caption');
+  return `<div class="spread-caption-text" style="${colorStyle}">${esc(text)}</div>`;
+}
+
+function buildQuotationText(text, attr, source, color, tone) {
+  const colorStyle = getTextColor(color, tone, 'body');
+  let html = `<div style="border-left:3px solid ${tone === 'dark' ? '#555' : '#ccc'};padding-left:16px;">`;
+  html += `<div class="spread-quotation-text" style="${colorStyle}">"${esc(text)}"</div>`;
+  html += `<div class="spread-caption-text" style="margin-top:6px;${colorStyle}">— ${esc(attr)}`;
+  if (source) html += `, <em>${esc(source)}</em>`;
+  html += `</div></div>`;
+  return html;
+}
+
+function getTextColor(colorTreatment, tone, role) {
+  if (colorTreatment === 'white_on_black' || tone === 'dark') {
+    if (role === 'display') return 'color:#fff';
+    if (role === 'body') return 'color:rgba(255,255,255,0.88)';
+    return 'color:rgba(255,255,255,0.65)';
+  }
+  if (colorTreatment === 'black_on_white' || tone === 'light') {
+    if (role === 'display') return 'color:#000';
+    if (role === 'body') return 'color:rgba(0,0,0,0.78)';
+    return 'color:rgba(0,0,0,0.55)';
+  }
+  return '';
+}
+
+// ===== Scale spread to fit viewport =====
+function scaleSpread() {
+  const viewport = document.getElementById('renderViewport');
+  const wrapper = document.getElementById('spreadScaleWrapper');
+  if (!viewport || !wrapper) return;
+
+  const vw = viewport.clientWidth - 32;
+  const vh = viewport.clientHeight - 32;
+  const sw = 1120;
+  const sh = 700;
+  const scale = Math.min(vw / sw, vh / sh, 1);
+  wrapper.style.transform = `scale(${scale})`;
+}
+
+// ===== Interactions =====
+function handleCardClick(sid, optId) {
+  viewOption(sid, optId);
+}
+
+function viewOption(sid, optId) {
+  currentRenderOption = optId;
+  const spread = data.spreads[currentIndex];
+  buildOptionCards(spread);
+  renderSpreadLayout(spread, optId);
+  if (currentView !== 'rendered') switchView('rendered');
+}
+
 function selectOption(sid, optId) {
   if (!selections[sid]) selections[sid] = {};
-
-  // Toggle if same
   if (selections[sid].text === optId) {
     delete selections[sid].text;
   } else {
     selections[sid].text = optId;
   }
-
   saveSelections();
-  renderSpread(currentIndex);
+  currentRenderOption = optId;
+  const spread = data.spreads[currentIndex];
+  buildOptionCards(spread);
+  renderSpreadLayout(spread, optId);
+  updateSelectionCount();
 }
 
 function clearSelection() {
@@ -613,56 +1325,59 @@ function saveNotes() {
   const sid = data.spreads[currentIndex].spread_id;
   const notes = document.getElementById('reviewNotes').value.trim();
   if (!selections[sid]) selections[sid] = {};
-  if (notes) {
-    selections[sid].notes = notes;
-  } else {
-    delete selections[sid].notes;
-  }
+  if (notes) selections[sid].notes = notes;
+  else delete selections[sid].notes;
   saveSelections();
 }
 
 function saveSelections() {
-  localStorage.setItem('authoring_selections', JSON.stringify(selections));
+  localStorage.setItem('authoring_selections_v2', JSON.stringify(selections));
+}
+
+function toggleDesignSpec() {
+  document.getElementById('designSpecCard')?.classList.toggle('expanded');
 }
 
 // ===== Export =====
 function exportSelections() {
   const output = {
-    version: "1.0",
+    version: "2.0",
     exported: new Date().toISOString(),
     spread_range: data.spread_range,
+    total_spreads: data.spreads.length,
     selections: {}
   };
-
   data.spreads.forEach(s => {
     const sel = selections[s.spread_id];
-    if (sel) {
+    if (sel?.text) {
       output.selections[s.spread_id] = {
-        selected_text: sel.text || null,
+        selected_text: sel.text,
         selected_design: sel.design || null,
+        selected_image: sel.image || null,
         reviewer_notes: sel.notes || null
       };
     }
   });
-
   const blob = new Blob([JSON.stringify(output, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'authoring_selections_' + new Date().toISOString().slice(0,10) + '.json';
+  a.download = `authoring_selections_${new Date().toISOString().slice(0,10)}.json`;
   a.click();
   URL.revokeObjectURL(url);
 }
 
 // ===== Helpers =====
-function escHtml(str) {
+function esc(str) {
   if (!str) return '';
   return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
-
 function specItem(label, value) {
   if (!value) return '';
-  return `<div class="spec-item"><div class="spec-item-label">${label}</div><div class="spec-item-value">${escHtml(value)}</div></div>`;
+  return `<div><div class="spec-item-label">${label}</div><div class="spec-item-value">${esc(value)}</div></div>`;
+}
+function truncate(str, n) {
+  return str.length > n ? str.slice(0, n) + '...' : str;
 }
 
 // ===== Keyboard Nav =====
@@ -670,17 +1385,23 @@ document.addEventListener('keydown', e => {
   if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
   if (e.key === 'ArrowLeft') navigate(-1);
   if (e.key === 'ArrowRight') navigate(1);
-  if (e.key === 'a' || e.key === 'A') {
-    const sid = data.spreads[currentIndex].spread_id;
-    selectOption(sid, 'a');
+  const sid = data?.spreads[currentIndex]?.spread_id;
+  if (!sid) return;
+  if (e.key === '1' || e.key === 'a' || e.key === 'A') viewOption(sid, 'a');
+  if (e.key === '2' || e.key === 'b' || e.key === 'B') viewOption(sid, 'b');
+  if (e.key === '3' || e.key === 'c' || e.key === 'C') viewOption(sid, 'c');
+  if (e.key === 'Enter') {
+    if (currentRenderOption) selectOption(sid, currentRenderOption);
   }
-  if (e.key === 'b' || e.key === 'B') {
-    const sid = data.spreads[currentIndex].spread_id;
-    selectOption(sid, 'b');
-  }
-  if (e.key === 'c' || e.key === 'C') {
-    const sid = data.spreads[currentIndex].spread_id;
-    selectOption(sid, 'c');
+  // Image cycling with [ and ]
+  if (e.key === '[' || e.key === ']') {
+    const meta = imageMetadata?.[sid];
+    if (meta && !meta.skipped && meta.options?.length > 1) {
+      let newIdx = currentImageIdx + (e.key === ']' ? 1 : -1);
+      if (newIdx < 0) newIdx = meta.options.length - 1;
+      if (newIdx >= meta.options.length) newIdx = 0;
+      selectImage(sid, newIdx);
+    }
   }
 });
 

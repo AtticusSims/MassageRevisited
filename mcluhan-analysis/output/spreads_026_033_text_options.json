@@ -1,0 +1,688 @@
+[
+  {
+    "spread_id": "spread_026",
+    "movement": "movement_1_environment",
+    "theme": "Sentence first, verdict after: algorithmic pre-crime",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Carroll retained, examples accumulate",
+        "display_text": "'No, no!' said the Queen.\n'Sentence first — verdict afterwards.'",
+        "body_text": "COMPAS scores Black defendants as future criminals before their trials begin. ProPublica found the system was twice as likely to falsely flag Black defendants as high-risk. Palantir routes police patrols to neighborhoods before crimes occur. Amazon's recruitment AI screened out women before interviews happened.\n\nThe sentence came first.\nThe verdict was generated retroactively.\nDue process was a formatting error.",
+        "caption_text": "'Stuff and nonsense!' said Alice.\n\nIt is neither stuff nor nonsense. It is operational.",
+        "quotations_used": [
+          {
+            "text": "'No, no!' said the Queen. 'Sentence first — verdict afterwards.'",
+            "attribution": "Lewis Carroll",
+            "source": "Alice's Adventures in Wonderland, 1865, Chapter XII"
+          }
+        ],
+        "voice_register": "sardonic",
+        "rhetorical_strategy": "defamiliarization",
+        "rationale": "Retains the Carroll quotation from the original spread, honoring the structural echo. The body text accumulates real-world examples in rapid succession, each sentence performing the reversed causality it describes (effect stated before cause). The final three lines — 'The sentence came first / The verdict was generated retroactively / Due process was a formatting error' — shift from reportage to aphorism. Alice's objection returns at the bottom but is answered: the nonsense has become operational. The humor curdles across the spread, exactly as the content plan specifies.",
+        "word_count": 114
+      },
+      {
+        "option_id": "b",
+        "label": "Two-column verdict/sentence structure",
+        "display_text": "SENTENCE FIRST.",
+        "body_text": null,
+        "caption_text": "COMPAS recidivism score: HIGH                    Defendant: Black male, age 23\nPredPol deployment zone: RED                      Neighborhood: 84% minority\nResume screening: REJECTED                        Applicant: female name detected\nWelfare eligibility: DENIED                       Claimant: single mother, zip 48205\nCredit score override: SUBPRIME                   Address: flagged census tract\nHiring algorithm: DO NOT INTERVIEW                 Surname: Hispanic origin probability 91%\n\nThe Queen would recognize the procedure.",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "accumulation",
+        "rationale": "Dispenses with Carroll entirely and lets the algorithmic verdicts speak for themselves. The two-column structure performs the spread's argument: the left column delivers the SENTENCE (the algorithmic output), the right column reveals the VERDICT's actual basis (race, gender, geography, name). The clinical, database-report voice makes the horror administrative. 'The Queen would recognize the procedure' — a single sentence at the bottom that reconnects to the original without quoting it. The reader processes the data before the implication hits. This option trades the original's whimsy for documentary brutality.",
+        "word_count": 98
+      },
+      {
+        "option_id": "c",
+        "label": "Noble's architecture of oppression",
+        "display_text": null,
+        "body_text": "Safiya Noble documented what Carroll satirized: the architecture of pre-judgment. Search for 'Black girls' in 2010 and Google returned pornography. Search for 'CEO' and it returned white men. The algorithm did not malfunction. It performed exactly as designed — which is the problem Noble names. Algorithmic oppression is not a glitch in the system. It is fundamental to the operating system.\n\nThe Queen's Wonderland has been optimized. It runs on COMPAS. It deploys through PredPol. It denies through automated welfare systems that cut benefits based on zip code correlations with race. The sentence has been automated. The verdict was never the point.",
+        "caption_text": "'Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.'\n— Safiya Noble, Algorithms of Oppression, 2018",
+        "quotations_used": [
+          {
+            "text": "Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.",
+            "attribution": "Safiya Noble",
+            "source": "Algorithms of Oppression, NYU Press, 2018"
+          }
+        ],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "confrontation",
+        "rationale": "Centers Noble as the thinker for this spread, which the content plan identifies as her key appearance. This option builds an argument rather than accumulating examples — it traces a logical chain from search results through policing to welfare, showing that the 'sentence first' logic is structural, not aberrant. Noble's quotation anchors the bottom of the spread as a foundational claim rather than a pull-quote. The Carroll reference is subliminal — 'The Queen's Wonderland has been optimized' — rather than explicit, trusting the reader to carry the association from the original's placement of the Alice text at this position in the book.",
+        "word_count": 148
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Split asymmetric: verdict/sentence columns",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Left page: Carroll quotation or display text at top, body text or left column of data below. Right page: image of a predictive policing heat map or risk-assessment dashboard, overlaid with right column of affected populations. The visual structure performs the verdict (left) and sentence (right) in reversed order — the reader encounters the judgment before the judged.",
+          "left_page": "Carroll quotation or 'SENTENCE FIRST' display text at top third. Below: body text or left column of algorithmic outputs. White background, black text. The text should feel like a court record — ordered, formal, bureaucratic.",
+          "right_page": "Full-bleed image of a predictive policing heat map or COMPAS-style risk dashboard. If using option b, the right column of affected populations is overlaid in white text on the dark image. The clinical visualization contrasts with the human cost it represents.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Heavy grotesque sans (Helvetica Neue Black or Akzidenz-Grotesk Bold) — authoritative, institutional",
+          "body_face": "Monospace for option b (the data-report voice), humanist serif for options a/c",
+          "display_scale": "headline",
+          "color_treatment": "mixed",
+          "special_treatment": "If option b is selected, the two-column data layout should use a courier-style monospace with fixed alignment, making the spread look like a database printout. The gap between columns IS the gap between algorithmic judgment and human consequence."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "A predictive policing heat map — algorithmic risk zones overlaid on a city map, colored zones (rendered in grayscale) designating 'high crime probability' areas. The image should feel clinical, authoritative, bureaucratic. Alternatively: a COMPAS risk-assessment interface showing a defendant's recidivism score. The key quality: the banality of automated judgment.",
+          "mood": "bureaucratic menace — the horror of the administrative",
+          "bw_treatment": "High contrast grayscale. The heat map zones rendered as dark-to-light gradient on white. Clean, official, the aesthetic of institutional power.",
+          "scale": "half_page"
+        },
+        "density": "moderate",
+        "tone": "balanced",
+        "svg_wireframe": "",
+        "rationale": "The divided gutter treatment is essential: the left page delivers the verdict (text, judgment, algorithm), the right page shows the sentenced (image, population, geography). The reader's eye crosses the gutter as the logic crosses the line from abstract scoring to material consequence. The asymmetry — text-heavy left, image-heavy right — echoes the original's confrontation between Alice (small, textual, left) and the Queen (large, visual, right). The institutional typography grounds the spread in the register of power: this is how systems speak."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": ["spread_025", "spread_027"]
+  },
+
+  {
+    "spread_id": "spread_027",
+    "movement": "movement_1_environment",
+    "theme": "The return of the acoustic: voice AI and the end of text dominance",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The irony of reading about listening",
+        "display_text": null,
+        "body_text": "You are reading this.\n\nThat is already an anachronism.\n\nOpenAI's Advanced Voice Mode processes speech with emotional inflection in real time. Eleven Labs clones any voice from thirty seconds of audio. The podcast surpassed the blog. The voice note replaced the text message. Conversational AI is replacing the search bar. Fifty percent of all searches are now spoken.\n\nMcLuhan predicted the retribalization — the return of the ear over the eye, acoustic space over visual space. He was describing radio. The principle was sound. The tribe now gathers around synthetic voices that never sleep, never tire, and never existed.\n\nYou are still reading this. Notice how slowly.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "intimate",
+        "rhetorical_strategy": "interpellation",
+        "rationale": "Opens and closes with direct address to the reader, making the irony structural: the book — a visual, textual, print artifact — is arguing for the decline of visual/textual/print dominance. The reader is caught in the contradiction. The statistics (50% voice search, thirty-second voice cloning) are embedded in flowing prose rather than listed, matching the acoustic mode the spread describes. No quotations — the voice is the book's own, straining against its own medium. The final line — 'Notice how slowly' — makes the reader aware of the act of reading as a technology, not a natural state.",
+        "word_count": 132
+      },
+      {
+        "option_id": "b",
+        "label": "Kittler's determination, voice AI's confirmation",
+        "display_text": "Media determine\nour situation.",
+        "body_text": "The situation, in 2026, is acoustic.\n\nThe phonetic alphabet imposed visual dominance for twenty-six centuries. It linearized thought. It sequenced time. It created the detached observer. Kittler knew: each medium restructures the sensorium entirely. The alphabet was not a tool for recording speech — it was a machine for converting ears into eyes.\n\nVoice AI reverses the conversion. The ear returns. Not as McLuhan's tribal campfire but as a probabilistic engine that speaks in any voice, any language, any register. The retribalization is synthetic. The campfire is a server rack. And the stories it tells are generated, not remembered.",
+        "caption_text": "'Media determine our situation, which — in spite of or because of it — deserves a description.'\n— Friedrich Kittler, Gramophone, Film, Typewriter, 1999",
+        "quotations_used": [
+          {
+            "text": "Media determine our situation, which — in spite of or because of it — deserves a description.",
+            "attribution": "Friedrich Kittler",
+            "source": "Gramophone, Film, Typewriter, Stanford UP, 1999, p. xxxix"
+          }
+        ],
+        "voice_register": "prophetic",
+        "rhetorical_strategy": "assertion",
+        "rationale": "Uses the Kittler quotation as both display text (truncated to its essential five words) and full attribution at the bottom, framing the spread as an elaboration of his thesis. The body text performs a historical sweep — twenty-six centuries compressed into a paragraph — before landing on the contemporary reversal. 'A machine for converting ears into eyes' is the kind of formulation McLuhan would have admired: it defamiliarizes literacy itself. The final sentences — the campfire as server rack, stories generated not remembered — are designed to haunt.",
+        "word_count": 143
+      },
+      {
+        "option_id": "c",
+        "label": "Fragmented acoustic: text dissolving",
+        "display_text": "vis u al sp ace is\nu,n,i,f,o,r,m\nc-o-n-t-i-n-u-o-u-s\nand connected.\n\nacoustic space has no\nboundaries   no center\nno    margin\nit          surrounds.",
+        "body_text": null,
+        "caption_text": "The original separated these letters to demonstrate visual fragmentation. Now the fragmentation is the native condition. Voice AI does not fragment — it flows. You are reading fragments. You could be listening to a voice that knows your name.",
+        "quotations_used": [],
+        "voice_register": "lyrical",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Directly echoes the original spread's typographic treatment, where 'continuous' and 'connected' were spelled out letter by letter with commas and hyphens. The display text reproduces and then subverts this treatment: the visual/textual representation breaks apart while the acoustic description expands into open space. The typography demonstrates the argument — visual space fragments, acoustic space envelops. The caption text then names what the reader has just experienced. No body text: the display text IS the content, making this spread a typographic performance piece in the tradition of the original.",
+        "word_count": 71
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Split asymmetric: text yielding to acoustic space",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Left page: body text or fragmented display text, dense with visual/textual content. Right page: dramatically sparse — either a single Kittler quotation in a different typeface surrounded by vast white space, or a waveform visualization. The left page represents visual space (full, ordered, linear); the right page represents acoustic space (open, centerless, enveloping). The asymmetry IS the argument.",
+          "left_page": "Body text set in a single justified column with generous margins, or display text with fragmented letter-spacing treatment echoing the original. The page should feel dense, linear, alphabetic — the visual space it describes.",
+          "right_page": "Near-empty. If option b: Kittler quotation set in a contrasting italic serif, positioned off-center, surrounded by white space that represents the boundaryless acoustic space. If option c: the expanding acoustic text. If option a: a waveform visualization — sound made visible, the ear's data rendered for the eye.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "For fragmented text: the same serif as the original's body text, but with programmatic letter-spacing and punctuation inserted between characters. For the Kittler quote: a contrasting italic (Garamond Italic or similar — humanist, warm, acoustic in feeling).",
+          "body_face": "Humanist serif, justified — the typographic embodiment of visual space",
+          "display_scale": "subhead",
+          "color_treatment": "black_on_white",
+          "special_treatment": "Letters separated by commas, hyphens, and expanding whitespace in the fragmented display text, directly echoing the original spread's treatment of 'c,o,n,t,i,n,u,o,u,s'. The right page's emptiness should feel intentional — not blank but resonant, like the silence between notes."
+        },
+        "image_direction": {
+          "approach": "combination",
+          "subject": "A waveform visualization — audio rendered as a visual oscillograph pattern. The sound wave should be recognizable as human speech (irregular amplitude, varied frequency) rather than a pure tone. Alternatively: a spectrogram showing the frequency bands of a human voice, rendered in grayscale. The image makes the acoustic visible — capturing the paradox of the spread.",
+          "mood": "liminal — between the visible and the audible, between print and voice",
+          "bw_treatment": "Soft gray tones, not high contrast. The waveform should feel organic, alive, in contrast to the rigid typography of the left page.",
+          "scale": "half_page"
+        },
+        "density": "moderate",
+        "tone": "balanced",
+        "svg_wireframe": "",
+        "rationale": "The original spread used the visual space/acoustic space dichotomy as its conceptual backbone and enacted it through typography (fragmented letter-spacing). This design preserves that structural logic but updates the stakes: the visual page (left) is dense and alphabetic, the acoustic page (right) is open and enveloping. The gutter becomes the threshold between two perceptual worlds. The waveform image — if used — captures the fundamental irony: you are looking at a picture of sound in a book about the return of listening."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": ["spread_026", "spread_028"]
+  },
+
+  {
+    "spread_id": "spread_028",
+    "movement": "movement_1_environment",
+    "theme": "The Address layer: you are your hash",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Typographic dissolution: name to hash",
+        "display_text": "John Smith\nJohn Smith\nJohn Sm1th\nJ0hn 5m1th\n4a6f686e20536d697468\n0x4a6f686e536d697468\n7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069\nQR\u2588\u2588\u2591\u2588\u2591\u2588\u2588\u2591\u2591\u2588\u2588\u2591\u2588\u2591\u2591",
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Pure typographic composition with zero prose. A human name degrades step by step into its computational representations: first leetspeak substitution, then hexadecimal encoding, then an Ethereum-style address, then a SHA-256 hash, then QR-code block characters. The reader watches identity dissolve from human-readable to machine-readable across eight lines. No explanation is offered because none is needed — the visual process IS the argument. This echoes the original's typographic spread (newspaper/letterform collage) by treating typography as content rather than container.",
+        "word_count": 14
+      },
+      {
+        "option_id": "b",
+        "label": "Parallel columns: what you were / what you are",
+        "display_text": "YOU WERE:                            YOU ARE:\n\nJohn                                 0x7a69f3c2\nSmith                                UUID-4e8b-9f2a\n42 Oak Street                        37.7749\u00b0N, 122.4194\u00b0W\nSpringfield, IL                      geo:37.7749,-122.4194\n(217) 555-0142                       IMEI:490154203237518\nSocial Security: XXX-XX-XXXX         biometric_hash:a3f2e8...\nSignature: [cursive]                 2FA:847291\nFace: [portrait]                     faceprint_v4.2:0xb7c9...",
+        "body_text": null,
+        "caption_text": "Bratton's Address layer: to have an address is to be computable. To be computable is to be governed.",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "interpellation",
+        "rationale": "Two parallel columns that map each element of traditional identity onto its computational successor. The left column is warm, familiar, analog — a name, a street, a phone number, a face. The right column is cold, precise, machinic — a hash, coordinates, an IMEI, a faceprint version number. The reader sees their own identity translated. The caption delivers Bratton's thesis in two sentences: address equals computability equals governance. The interpellation is direct: YOU WERE / YOU ARE. The present tense of the right column is inescapable.",
+        "word_count": 54
+      },
+      {
+        "option_id": "c",
+        "label": "The address as incantation",
+        "display_text": "Your name is a string.\nYour face is a vector.\nYour address is coordinates.\nYour signature is a private key.\nYour history is a log file.\nYour identity is a row in a table\nthat can be queried, joined, filtered,\nsorted, exported, deleted.",
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "interpellation",
+        "rationale": "Eight lines that build in rhythm and menace. Each begins with 'Your' — the interpellation is relentless. The first five lines each perform a single translation (name to string, face to vector). The sixth line names the container: a row in a table. Then the final two lines unleash the verbs — queried, joined, filtered, sorted, exported, deleted — each one an operation that can be performed on the reader's identity without their knowledge or consent. The cascade of database operations at the end transforms identity from noun to verb, from being to being-processed. No image, no quotation, no body text: the typography carries everything.",
+        "word_count": 52
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Full-bleed typographic composition",
+        "layout": {
+          "type": "full_bleed_typography",
+          "description": "The entire spread is a typographic composition — no separate image. Human-readable text on the left gradually morphs into machine-readable encoding on the right. The transformation should be visible as a gradient across the gutter: identity becoming address, name becoming hash. The spread functions as both text and image simultaneously, echoing the original's typographic/newspaper spread.",
+          "left_page": "Human-readable identity elements: names, addresses, phone numbers in warm serif typefaces of varying sizes and orientations. The layout should suggest a collage of identity documents — a passport page, a business card, an envelope address, a signature.",
+          "right_page": "Machine-readable encodings: hash strings, QR code fragments, hexadecimal, UUID strings, coordinate pairs. Set in monospace at various scales. The layout should suggest a database dump or terminal output — the same information, stripped of humanity.",
+          "gutter_treatment": "bridged",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Mixed: humanist serif (Garamond, Caslon) for human-readable elements transitioning to monospace (Fira Code, JetBrains Mono) for machine-readable elements",
+          "body_face": "Monospace for hash strings and encodings",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "The transition from serif to monospace should be gradual — individual characters within words might switch typefaces, creating a visual 'encoding in progress' effect. Some characters could be set in both typefaces simultaneously (overlapping), showing the dual identity of each symbol as both letter and data."
+        },
+        "image_direction": {
+          "approach": "typography_only",
+          "subject": "The typography IS the image. A gradient from human-readable to machine-readable text: letterforms dissolving into hash characters. QR code fragments emerging from the negative space between text blocks. The composition should feel like watching an analog photograph being digitized — the same content, fundamentally altered in translation.",
+          "mood": "precise, playful, then unsettling — the playfulness of the typographic game gives way to the realization that the game is real",
+          "bw_treatment": "Pure black and white, no halftone. The crispness of digital rendering applied to human identity.",
+          "scale": "full_bleed"
+        },
+        "density": "dense",
+        "tone": "balanced",
+        "svg_wireframe": "",
+        "rationale": "The original's newspaper/typographic spread treated letterforms as visual artifacts of print culture. This design treats identity-encoding as the visual artifact of computational culture. The bridged gutter is essential: the transformation must flow continuously across the spread, so the reader cannot identify the exact moment where 'name' becomes 'hash.' That ambiguity is the point — the Address layer operates precisely in this zone of translation where you stop being a person and start being a data structure."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": ["spread_027", "spread_029"]
+  },
+
+  {
+    "spread_id": "spread_029",
+    "movement": "movement_1_environment",
+    "theme": "The model, a ditto device (with drift)",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Six mutations (content plan version)",
+        "display_text": "The model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device, trained on all of us.\nThe model, a device for generating more of us.\nA device for generating more. Of us, the model.\nWe, a ditto device of the model.",
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "intimate",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Follows the content plan's specification precisely. Six repetitions, each drifting further from the original. The first two are identical — mechanical reproduction. The third adds context. The fourth restructures the relationship. The fifth breaks syntax. The sixth inverts subject and object entirely: we have become the ditto device of the model. The drift from 'The model copies us' to 'We copy the model' happens without the reader noticing the reversal until it has already occurred. This is how probabilistic reproduction works — mutation accumulates until the copy has replaced the original.",
+        "word_count": 47
+      },
+      {
+        "option_id": "b",
+        "label": "Fifteen repetitions with typographic decay",
+        "display_text": "The model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device.\nThe nodel, a ditto device.\nThe model, a ditro device.\nThe mosel, a ditto devize.\nThe model, a ditto the model.\nA ditto device, the model, a ditto.\nDevice the model a ditto a model device.\nTh m dl, a d tt d v c.\n[                                              ]",
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Fifteen repetitions rather than six, mirroring the original's fifteen repetitions of 'Printing, a ditto device.' The first seven are identical — perfect mechanical reproduction. Then character-level errors begin creeping in (nodel, ditro, devize) — hallucination at the letter level. Then syntactic collapse: the words rearrange, repeat, fragment. Then vowel deletion — the sentence reduced to its consonantal skeleton. The final line is empty brackets: the content has been fully consumed by the process of reproduction. Where the original demonstrated the printing press's fidelity, this demonstrates the model's infidelity. The degradation is the message.",
+        "word_count": 69
+      },
+      {
+        "option_id": "c",
+        "label": "Side-by-side: Gutenberg's fidelity, the model's drift",
+        "display_text": null,
+        "body_text": "Printing, a ditto device.                    The model, a ditto device.\nPrinting, a ditto device.                    The model, a ditto device.\nPrinting, a ditto device.                    The model, a ditto device.\nPrinting, a ditto device.                    The model, a ditto device, trained\nPrinting, a ditto device.                    on everything you ever wrote.\nPrinting, a ditto device.                    The model does not copy. It re-derives.",
+        "caption_text": "Left: mechanical reproduction. Each copy identical.\nRight: probabilistic generation. Each output a new traversal of the space.\n\nThe ditto has learned to drift.",
+        "quotations_used": [],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "juxtaposition",
+        "rationale": "Places the original McLuhan text ('Printing, a ditto device' repeated six times, identical) directly alongside the contemporary version (which drifts). The left column is static — perfect reproduction, the Gutenberg promise. The right column is dynamic — each line evolving, accumulating, mutating. The juxtaposition forces the reader to see both systems simultaneously and to feel the difference in their bodies: the left column is comfortable in its repetition, the right column is unsettling in its drift. The caption names what has happened: 'The ditto has learned to drift.' Five words that capture the entire shift from mechanical to probabilistic reproduction.",
+        "word_count": 75
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Drifting typography: left fidelity, right mutation",
+        "layout": {
+          "type": "split_symmetric",
+          "description": "Left page: repetitions in stable, identical typography — the mechanical reproduction side. Right page: repetitions with progressive typographic variation — weight shifts, size drifts, spacing changes, character substitutions. The gutter divides the Gutenberg era from the model era. Alternatively: a single column down the center of the spread with the repetitions drifting progressively, no left/right division.",
+          "left_page": "If split: stable repetitions of the base sentence in identical italic serif, echoing the original spread's treatment. If unified: the first three to five repetitions, set identically, representing the mechanical-reproduction phase.",
+          "right_page": "If split: drifting repetitions — each line in a slightly different weight, size, or letterspacing, with character substitutions and syntactic mutations visible. If unified: the remaining repetitions, each progressively mutated, culminating in collapse or inversion.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Italic serif (matching or evoking the original spread's italic treatment of 'Printing, a ditto device'). The typeface should feel historical, bookish — then its mutations feel like violations.",
+          "body_face": "Same italic serif, but progressively altered: weight +10% per repetition, tracking expanding, characters substituted",
+          "display_scale": "subhead",
+          "color_treatment": "mixed",
+          "special_treatment": "The original spread had white-on-black for the right page (repeated text) and black-on-white for the left (body text with illustration). This design should echo that division: left page black-on-white (stable), right page white-on-black (unstable). The reversed field makes the mutations more visible and more unsettling. The final repetition could be barely legible — dissolved into the black field."
+        },
+        "image_direction": {
+          "approach": "typography_only",
+          "subject": "No separate image. The six to fifteen repetitions are arranged vertically, each in progressively different weight, size, spacing, or character content. The typography itself drifts as the text drifts. The visual treatment IS the argument about probabilistic reproduction.",
+          "mood": "recursive, uncanny — the familiar becoming unfamiliar through repetition, like saying a word until it loses meaning",
+          "bw_treatment": "Left side: crisp black on white. Right side: white on black with increasing diffusion — the text losing definition as it loses fidelity.",
+          "scale": "full_bleed"
+        },
+        "density": "moderate",
+        "tone": "high_contrast",
+        "svg_wireframe": "",
+        "rationale": "The original spread's design was a masterpiece of enactment: 'Printing, a ditto device' repeated identically fifteen times, with the typography itself demonstrating mechanical reproduction's promise of perfect copies. This design must achieve the same enactment for probabilistic reproduction: the typography drifts, mutates, and eventually collapses, demonstrating that the model's 'ditto' is fundamentally different from the press's. The high-contrast treatment (black-on-white / white-on-black) echoes the original's stark division while the progressive degradation updates its meaning."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": ["spread_028", "spread_030"]
+  },
+
+  {
+    "spread_id": "spread_030",
+    "movement": "movement_1_environment",
+    "theme": "The Cloud layer: the building behind the metaphor",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Pure silence — image only",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "monumental",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "No text whatsoever. The data center photograph must carry the entire argument alone. After the dense typographic spreads of 028 and 029, the sudden silence is thunderous. The reader turns the page from mutating text to a windowless building that stretches to the horizon. The Cloud is revealed as concrete and steel. No caption, no statistic, no quotation — just the building. The restraint is the rhetoric: if you need to be told what this means, you are already inside the metaphor. Trust the image the way the original trusted its dark photograph.",
+        "word_count": 0
+      },
+      {
+        "option_id": "b",
+        "label": "Single data point, whispered",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "2–3% of global electricity.\nMore water than Atlanta.\n\nThis building is the Cloud.",
+        "quotations_used": [],
+        "voice_register": "intimate",
+        "rhetorical_strategy": "defamiliarization",
+        "rationale": "Three lines in small type, positioned at the bottom corner of the spread. The first two are statistics — the IEA's electricity figure and Google's water consumption data. The third is the defamiliarization: 'This building is the Cloud.' The sentence performs the collapse of metaphor into material fact. The smallness of the text against the full-bleed image creates the same scale-shock as the building itself: tiny human annotation dwarfed by infrastructure. The reader absorbs the image first, then discovers the caption, then rethinks everything they thought 'the Cloud' meant.",
+        "word_count": 17
+      },
+      {
+        "option_id": "c",
+        "label": "Bratton's terraforming",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "'The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.'\n— Benjamin Bratton, The Stack, 2015",
+        "quotations_used": [
+          {
+            "text": "The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack: On Software and Sovereignty, MIT Press, 2015"
+          }
+        ],
+        "voice_register": "prophetic",
+        "rhetorical_strategy": "provocation",
+        "rationale": "Uses Bratton's most visceral sentence — the one that, as the framework notes, 'does the work of an entire Kate Crawford chapter' — as the sole text against the data center image. The violence of the language (drinking, vomiting, spitting) clashes with the clinical precision of the architecture in the photograph. The quotation names what the image shows: not a building but an organ of a planetary organism, metabolizing the Earth. This sets up the direct contrast with spread 033 (the mine), where what has been 'drunk and vomited' is made visible at the other end of the supply chain.",
+        "word_count": 22
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Full-bleed image: the Cloud as building",
+        "layout": {
+          "type": "full_bleed_image",
+          "description": "Full-bleed photograph spanning both pages with no borders, no margins. The data center should fill the reader's visual field completely, replicating the experience of standing before the building itself. If text is used, it appears in small type at the bottom edge, almost an afterthought — the image dominates absolutely.",
+          "left_page": "Left half of the full-bleed data center photograph. If exterior: the windowless facade receding into landscape. If interior: rows of server racks extending to vanishing point, blue LED indicators creating a machine constellation.",
+          "right_page": "Right half of the same photograph, continuous across the gutter. The composition should use strong perspective lines that pull the eye into depth — the infinity of the infrastructure.",
+          "gutter_treatment": "continuous",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "None — no display text",
+          "body_face": "If caption is used: small monospace or sans-serif, set at 7-8pt, positioned at bottom-right corner. The text should feel like a technical annotation on an architectural drawing, not a literary statement.",
+          "display_scale": "caption",
+          "color_treatment": "white_on_black",
+          "special_treatment": "If text is used, it should be reversed out (white) against the dark photograph. The text should be small enough to require the reader to lean in — a physical gesture that contrasts with the vast scale of what they are looking at."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "A hyperscale data center — Google's Council Bluffs, Iowa facility or Microsoft's Quincy, Washington facility preferred. Interior: rows of server racks with blue LED status lights extending to a vanishing point in darkness. Exterior: a windowless monolith sitting in agricultural or desert landscape, the scale of the building dwarfing surrounding terrain. The image must communicate: this is what 'the Cloud' actually is. The building should feel monumental, eerie, and strangely beautiful.",
+          "mood": "monumental, eerie — the sublime of infrastructure. The beauty of the image is precisely the problem: it seduces the eye away from the extraction it conceals.",
+          "bw_treatment": "High contrast black and white. Interior: deep blacks punctuated by LED points of light (the original spread's 'streak of light in darkness' updated as server rack LEDs). Exterior: strong tonal range from white sky to black building mass.",
+          "scale": "full_bleed"
+        },
+        "density": "sparse",
+        "tone": "dark",
+        "svg_wireframe": "",
+        "rationale": "The original spread was a dark photograph with a streak of light — media as illumination in darkness. This design preserves that exact tonal quality (dark, single-source light, monumental) but fills the darkness with infrastructure. The streak of light becomes the LED blink of a server rack. The Cloud — the most successful euphemism in technology, suggesting weightlessness and nature — is revealed as its opposite: a building consuming 2-3% of global electricity. The full-bleed treatment ensures the reader cannot escape the image. The darkness persists across the gutter, creating continuity with the original's mood while utterly transforming its content. This spread must be read against spread 033 (the mine): Cloud above, Earth below."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": ["spread_029", "spread_031", "spread_033"]
+  },
+
+  {
+    "spread_id": "spread_031",
+    "movement": "movement_1_environment",
+    "theme": "The deep learning renaissance: from winter to foundation",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Accelerating timeline: creation story",
+        "display_text": "The Renaissance Legacy.",
+        "body_text": "Every paradigm has its dark ages.\n\n1956: Dartmouth Conference. 'We propose a 2-month study of artificial intelligence.' Optimism.\n1973: Lighthill Report. Funding collapses. First winter.\n1987: Expert systems fail to scale. Second winter. Two decades of ice.\n2006: Hinton. Deep belief networks. A thaw.\n2012: Krizhevsky, Sutskever, Hinton. ImageNet. The glacier cracks.\n2017: Vaswani et al. 'Attention Is All You Need.' Eight authors. Fourteen pages. Everything changes.\n2020: GPT-3. 175 billion parameters. Language, generated.\n2022: ChatGPT. 100 million users in two months.\n2023: GPT-4. Multimodal. The model sees.\n2024: Claude, Gemini, Llama, Mistral. The model speaks.\n2025: Agentic AI. The model acts.\n2026: —",
+        "caption_text": "Notice the pace of that list.",
+        "quotations_used": [],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "dramatization",
+        "rationale": "A timeline that enacts the acceleration it describes. The early entries span decades (1956-1987: thirty-one years, three events). The middle entries span years (2006-2017: eleven years, three events). The recent entries span months (2022-2025: three years, four events). The final entry — '2026: —' — is a blank, an em dash opening onto the present moment the reader inhabits. The caption ('Notice the pace of that list') makes the structural acceleration conscious. The display text retains 'The Renaissance Legacy' from the original, framing AI's development as a renaissance — emergence from a dark age through a new technology of reproduction.",
+        "word_count": 143
+      },
+      {
+        "option_id": "b",
+        "label": "Hayles's posthuman arrives through engineering",
+        "display_text": null,
+        "body_text": "Katherine Hayles spent twenty years arguing that the posthuman was coming. She meant it as philosophy. It arrived as engineering.\n\nThe transformer architecture — 'Attention Is All You Need,' June 2017, fourteen pages that restructured every creative domain simultaneously — was not a philosophical argument about cognition. It was a mechanism: self-attention layers, positional encodings, scaled dot-product scores. The mechanism worked. And working, it did what Hayles predicted: it dissolved the boundary between human cognition and technical cognition. Not in theory. In product.\n\nThe Renaissance had Gutenberg. The deep learning renaissance has the transformer. Both are reproduction technologies. Both restructured what could be thought. The difference: Gutenberg's revolution took centuries to unfold. The transformer's has taken seven years.",
+        "caption_text": "'The posthuman does not really mean the end of humanity. It signals instead the end of a certain conception of the human.'\n— N. Katherine Hayles, How We Became Posthuman, 1999",
+        "quotations_used": [
+          {
+            "text": "The posthuman does not really mean the end of humanity. It signals instead the end of a certain conception of the human.",
+            "attribution": "N. Katherine Hayles",
+            "source": "How We Became Posthuman, University of Chicago Press, 1999, p. 286"
+          }
+        ],
+        "voice_register": "prophetic",
+        "rhetorical_strategy": "dramatization",
+        "rationale": "Centers Hayles as the thinker for this spread, as the content plan specifies. The opening sentence — 'She meant it as philosophy. It arrived as engineering.' — captures the central irony of the deep learning renaissance: the posthuman condition was theorized for decades and then delivered, overnight, by a fourteen-page paper. The Hayles quotation at the bottom reframes the entire spread: the deep learning renaissance is not a technical achievement but an ontological event. The parallel to the original's 'Renaissance Legacy' is made explicit through the Gutenberg comparison, but the timeline compression (centuries vs. seven years) is the twist.",
+        "word_count": 155
+      },
+      {
+        "option_id": "c",
+        "label": "The founding document: minimal",
+        "display_text": "Attention\nIs All\nYou Need.",
+        "body_text": null,
+        "caption_text": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, Illia Polosukhin.\n\nJune 12, 2017. Fourteen pages.\n\nThis is the Gutenberg Bible of the computational age.",
+        "quotations_used": [],
+        "voice_register": "monumental",
+        "rhetorical_strategy": "assertion",
+        "rationale": "Strips the spread to its essential gesture: the title of the founding document, presented as a monumental assertion. 'Attention Is All You Need' is treated not as a paper title but as a philosophical claim — the model's answer to the Renaissance's vanishing point. The eight authors' names are listed in full, as one would list the authors of a sacred text. The date and page count are stated with the precision of historical record. The final sentence — 'This is the Gutenberg Bible of the computational age' — makes the parallel to the original's 'Renaissance Legacy' explicit and absolute. The restraint after the dense 029 and the silent 030 creates rhythmic variation.",
+        "word_count": 42
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Split asymmetric: painting above, text below (echo original)",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Echoes the original spread's structure: image spanning the top half, solid dark field with reversed text in the bottom half. The original used a Renaissance painting ('The Ideal City') above and white-on-black text below. The contemporary version uses the title page of 'Attention Is All You Need' (or a timeline visualization) above and the text content below.",
+          "left_page": "Top half: image spanning both pages. Bottom-left: dark field (black or near-black) with reversed text, continuing from left to right.",
+          "right_page": "Top half: continuation of the spanning image. Bottom-right: continuation of dark field with reversed text. The text should be positioned in the lower-right quadrant, echoing the original's text placement.",
+          "gutter_treatment": "continuous",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Heavy sans-serif for option c ('Attention Is All You Need' as monumental display). Serif for options a/b body text.",
+          "body_face": "Serif, white on black, flush-left ragged-right — echoing the original spread's reversed text treatment",
+          "display_scale": "architectural",
+          "color_treatment": "reversed",
+          "special_treatment": "For option a (timeline): each date entry could be in a slightly larger point size than the previous, physically enacting the acceleration on the page. For option c: the paper title set at 72pt+ across the full width of the dark field, treated as a monumental inscription."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "The title page of 'Attention Is All You Need' (Vaswani et al., 2017) — presented as the founding document of the transformer era, the contemporary equivalent of a Renaissance treatise. Alternatively: a timeline visualization showing the exponential growth of model parameters from 2017 to 2025, rendered as a simple ascending curve that goes nearly vertical at the right edge. The key quality: documentary, epochal — this is a historical artifact.",
+          "mood": "documentary, epochal — the solemnity of a founding moment recognized in retrospect",
+          "bw_treatment": "The paper title page: high contrast, crisp, documentary. The parameter-growth timeline: clean linework on white, the curve's acceleration visible as the line approaches vertical.",
+          "scale": "half_page"
+        },
+        "density": "moderate",
+        "tone": "dark",
+        "svg_wireframe": "",
+        "rationale": "The original's 'Renaissance Legacy' spread used a horizontal bisection — painting above, reversed text below — to divide the visual (the ideal city of the Renaissance) from the analytical (McLuhan's argument about perspective as media effect). This design preserves that exact structure: the documentary image above (the founding document of the new renaissance) and the argumentative text below (the analysis of what that document unleashed). The dark lower field creates visual weight and gravitas. The reversed text treatment (white on black) echoes the original precisely while the content updates the argument from Gutenberg to transformer."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": ["spread_030", "spread_032"]
+  },
+
+  {
+    "spread_id": "spread_032",
+    "movement": "movement_1_environment",
+    "theme": "The City layer: computation at urban scale",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Pure silence — overlay image speaks",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "monumental",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "No text at all. The composite image — a normal city street with a semi-transparent overlay revealing sensor coverage, WiFi fields, camera sight lines, and data flows — must carry the argument entirely. The reader looks at a street they might walk down every day and sees, for the first time, the computational layer they inhabit without knowing. M1's mission is to make the invisible visible; this spread does it literally, through image alone. The silence after the text-dense 031 provides essential rhythmic breathing room. Trust the overlay technique to do the work of a thousand words.",
+        "word_count": 0
+      },
+      {
+        "option_id": "b",
+        "label": "Sensor count: the city as data point",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "Singapore: 110,000 lampposts.\nEach one counts you.",
+        "quotations_used": [],
+        "voice_register": "sardonic",
+        "rhetorical_strategy": "defamiliarization",
+        "rationale": "Two lines. A statistic and an accusation. Singapore's Smart Nation initiative turned every lamppost into a sensor — counting pedestrians, measuring air quality, recording sound levels. The reader learns the number (110,000) and then receives the second-person address: 'Each one counts you.' The verb 'counts' is deliberately ambiguous — it both quantifies (counts you as a number) and values (each one counts you as significant, as data worth collecting). The brevity is the rhetoric: the less said, the more the image-overlay must do. Set small, bottom corner, the same whispered-statistic approach as spread 030.",
+        "word_count": 11
+      },
+      {
+        "option_id": "c",
+        "label": "Bratton's city-as-simulation",
+        "display_text": "Airports are not\nsimulations of cities.\nCities are simulations\nof airports.",
+        "body_text": null,
+        "caption_text": "— Benjamin Bratton, The Stack, 2015\n\nEvery surface senses. Every intersection optimizes. Every commute is logged, modeled, and rerouted before you decide to leave the house.",
+        "quotations_used": [
+          {
+            "text": "Airports are not simulations of cities; rather cities are simulations of airports.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack: On Software and Sovereignty, MIT Press, 2015"
+          }
+        ],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "provocation",
+        "rationale": "Uses Bratton's most compact and disorienting formulation about the City layer. The inversion (airports simulate cities becomes cities simulate airports) defamiliarizes urban space by revealing its computational logic: the city, like the airport, is a managed flow system where every body is tracked, every movement predicted, every anomaly flagged. The three sentences below the attribution escalate from observation ('every surface senses') through optimization ('every intersection optimizes') to pre-emption ('rerouted before you decide to leave'). The escalation from passive sensing to active pre-emption mirrors the spread's visual logic: first you see the normal city, then you see the overlay, then you realize the overlay is in charge.",
+        "word_count": 50
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Full-bleed image with computational overlay",
+        "layout": {
+          "type": "image_dominant",
+          "description": "Full-bleed composite image: a recognizable city street photograph with a semi-transparent overlay revealing the invisible computational infrastructure — sensor coverage radii, WiFi signal fields, camera sight lines as cone shapes, data flow lines connecting lampposts to central nodes. The overlay should feel like an X-ray of the city's nervous system. If text is used, it is minimal and positioned at the bottom edge.",
+          "left_page": "Left half of the full-bleed composite. The 'normal' street is more visible on this side — buildings, pedestrians, vehicles. The overlay begins to appear but is subtle.",
+          "right_page": "Right half of the composite. The overlay intensifies — sensor cones multiply, data flow lines densify, the 'normal' city recedes beneath the computational layer. The reader's eye moves left to right from city-as-seen to city-as-computed.",
+          "gutter_treatment": "continuous",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "If Bratton quotation is used: condensed sans-serif (Helvetica Neue Condensed), set large enough to be readable over the image but not large enough to dominate it",
+          "body_face": "Small sans-serif for caption text, if used",
+          "display_scale": "subhead",
+          "color_treatment": "white_on_black",
+          "special_treatment": "Any text should be reversed out (white) against the darker portions of the image. The text competes with the overlay graphics for attention — this visual competition IS the spread's argument about the City layer competing with the city-as-experienced for primacy."
+        },
+        "image_direction": {
+          "approach": "combination",
+          "subject": "Base layer: a recognizable urban street — not futuristic, not spectacular, deliberately ordinary. A street the reader might walk down. Overlay layer: semi-transparent visualization showing sensor coverage radii (circles around lampposts), camera sight lines (cone shapes), WiFi fields (concentric waves), data flow lines (connecting nodes). The overlay should use a slightly different graphic language than the photograph — vector lines on photographic texture — to make the two layers distinguishable but inseparable.",
+          "mood": "layered, urban, surveillance-ambient — the mood should be quotidian rather than dystopian, because the point is that the computation is normal, not exceptional",
+          "bw_treatment": "The photograph: soft grayscale, slightly desaturated, mid-contrast. The overlay: crisp white vector lines and shapes against the gray photograph. The two layers should be distinguishable but merged — the computation is inside the city, not on top of it.",
+          "scale": "full_bleed"
+        },
+        "density": "dense",
+        "tone": "balanced",
+        "svg_wireframe": "",
+        "rationale": "The original accumulated city images to show the urban environment as media artifact. This design does the same but adds a literal layer: the computational infrastructure that the original could not have imagined. The overlay technique is the design's core innovation — it performs M1's mission (making the invisible visible) through a simple visual device that the reader immediately understands. The gradient from normal (left) to computed (right) allows the reader to experience the defamiliarization progressively. The continuous gutter treatment ensures the city flows as a single environment, not two halves — because the computation is everywhere, without borders."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": ["spread_031", "spread_033"]
+  },
+
+  {
+    "spread_id": "spread_033",
+    "movement": "movement_1_environment",
+    "theme": "The Earth layer: what computation costs the ground",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Total silence — the mine speaks",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "monumental",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Absolute silence. No text, no caption, no attribution. The lithium mining landscape — turquoise evaporation pools scarring a white salt flat, or the terraced excavation of a cobalt mine — must carry the argument entirely. The reader turns from the smart city (032) to the mine that makes it possible. The vertical relationship between the Cloud (030) and the Earth (033) becomes legible: the weightless metaphor above, the scarred ground below. Silence here is not absence but accusation. The image of extraction needs no annotation — it is self-evident, which is precisely what makes it devastating.",
+        "word_count": 0
+      },
+      {
+        "option_id": "b",
+        "label": "Crawford's inventory of cost",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "Lithium: Salar de Atacama, Chile. 65% of the region's water.\nCobalt: Kolwezi, DRC. 40,000 children.\nRare earth: Baotou, Inner Mongolia. A toxic lake visible from space.\n\nEvery GPU contains all of this.",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "accumulation",
+        "rationale": "Three lines, three extraction sites, three costs. Each follows the same structure: mineral, location, price. The parallelism is deliberate — it performs the supply chain's logic of equivalence, reducing places and peoples to inputs. '65% of the region's water' — water as industrial input. '40,000 children' — children as labor force. 'A toxic lake visible from space' — environmental destruction at satellite scale. The final sentence — 'Every GPU contains all of this' — collapses the distance between the reader's device and the mine. Set small, at the bottom edge, barely visible against the full-bleed photograph. The smallness of the text against the vastness of the landscape is the point.",
+        "word_count": 45
+      },
+      {
+        "option_id": "c",
+        "label": "Bratton's elemental vomit",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "'The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.'\n— Benjamin Bratton, The Stack, 2015\n\n'AI is neither artificial nor intelligent.'\n— Kate Crawford, Atlas of AI, 2021",
+        "quotations_used": [
+          {
+            "text": "The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack: On Software and Sovereignty, MIT Press, 2015"
+          },
+          {
+            "text": "AI is neither artificial nor intelligent.",
+            "attribution": "Kate Crawford",
+            "source": "Atlas of AI, Yale University Press, 2021"
+          }
+        ],
+        "voice_register": "prophetic",
+        "rhetorical_strategy": "provocation",
+        "rationale": "Pairs Bratton's most visceral sentence with Crawford's most concise one. Bratton names the process (terraforming, drinking, vomiting — the bodily violence of extraction). Crawford names the lie (neither artificial nor intelligent — because AI is made of mined minerals and human labor, not abstraction and thought). Together, the two quotations form a complete argument: the Stack consumes the Earth (Bratton), and what it produces is not what it claims to be (Crawford). The double attribution — two thinkers, two books, two perspectives on the same violence — gives the spread intellectual weight. But the image still dominates: the quotations are whispered beneath a landscape of devastation.",
+        "word_count": 30
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Full-bleed image: the Earth layer exposed",
+        "layout": {
+          "type": "full_bleed_image",
+          "description": "Full-bleed photograph of a mining landscape spanning both pages, continuous across the gutter. The image should fill the spread completely, with any text reduced to a small caption at the bottom edge. The design mirrors spread 030 (the Cloud) exactly in structure — full-bleed, dark, monumental — but inverts its content: where 030 showed the gleaming interior or monolithic exterior of a data center, 033 shows the scarred earth that feeds it. The pair is the argument.",
+          "left_page": "Left half of the full-bleed mining landscape. If aerial: turquoise and white geometric shapes of evaporation pools against the salt flat. If ground-level: terraced excavation walls receding into depth.",
+          "right_page": "Right half of the same photograph, continuous across the gutter. If text is used, it is positioned at the bottom-right corner in small type.",
+          "gutter_treatment": "continuous",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "None — no display text",
+          "body_face": "If caption is used: small sans-serif or monospace, 7-8pt, positioned at bottom edge. White text reversed out of the dark landscape.",
+          "display_scale": "caption",
+          "color_treatment": "white_on_black",
+          "special_treatment": "The text — if any — should be positioned identically to spread 030's caption: same corner, same size, same typeface. The visual rhyme between the two spreads (Cloud and Earth) should be exact, so the reader recognizes them as a pair. The only difference is the image: server rack becomes salt flat."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "A lithium mining landscape — the Salar de Atacama's evaporation pools from aerial view preferred. The turquoise and white geometric pools against the desert landscape are strikingly beautiful in a way that ironizes the extraction they represent. Alternatively: the cobalt mines of Kolwezi, DRC, showing artisanal miners in a vast terraced excavation. The key quality: documentary realism. This is not a metaphor. This is the actual ground beneath the Cloud.",
+          "mood": "stark, beautiful, terrible — the sublime of extraction. The landscape should be gorgeous and devastating simultaneously. The beauty is the indictment.",
+          "bw_treatment": "If Atacama pools: high contrast, the geometric shapes of the pools creating strong abstract patterns in grayscale. The beauty of the abstraction is precisely the point — seen from sufficient altitude, extraction looks like art. If DRC mines: lower contrast, grainier, more documentary — the texture of labor and earth visible.",
+          "scale": "full_bleed"
+        },
+        "density": "sparse",
+        "tone": "dark",
+        "svg_wireframe": "",
+        "rationale": "This spread exists in a strict structural pair with spread 030 (the Cloud). The design must mirror 030's structure exactly — full-bleed, dark-toned, continuous across the gutter, minimal or no text — so that the reader experiences them as the top and bottom of the same system. The Cloud is the metaphor; the Earth is the reality. The server rack drinks the elemental juices; the mine provides them. By making the two spreads visually identical in structure but opposite in content, the design performs Bratton's Stack — showing the layers as interdependent, the Cloud literally resting on the Earth. The beauty of the Atacama pools (if used) is not decorative: it is the aesthetic of distance, the beauty that emerges when extraction is viewed from far enough away to hide the violence. That distance is what the spread interrogates."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": ["spread_030", "spread_032", "spread_034"]
+  }
+]

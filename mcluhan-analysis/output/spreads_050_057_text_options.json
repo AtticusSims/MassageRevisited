@@ -1,0 +1,691 @@
+[
+  {
+    "spread_id": "spread_050",
+    "movement": "movement_2_acceleration",
+    "theme": "The acceleration curve",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Pure silence (data speaks)",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "The content plan specifies no text. The exponential curve IS the most eloquent argument in the book. After forty-nine spreads of building the case, the data requires no commentary. The original's foot-on-face spread used zero text to force visceral confrontation; this spread uses zero text to force confrontation with trajectory. Pure graph, pure silence, pure vertigo.",
+        "word_count": 0
+      },
+      {
+        "option_id": "b",
+        "label": "Single axis label, whispered",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "Training compute (petaFLOP/s-days), 2010–2026. Log scale.\nYou are standing on this curve.",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Two lines only. The first is pure axis notation — the grammar of data visualization, not prose. The second breaks register: 'You are standing on this curve.' Six words that convert the graph from observation to address. Set very small at the bottom margin, the caption functions like a stage whisper in a cathedral. The data does the work; the whisper makes it personal.",
+        "word_count": 12
+      },
+      {
+        "option_id": "c",
+        "label": "Kurzweil's dare",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "\"If I take 30 steps linearly, I get to 30. If I take 30 steps exponentially, I get to a billion.\"\n— Ray Kurzweil",
+        "quotations_used": [
+          {
+            "text": "If I take 30 steps linearly, I get to 30. If I take 30 steps exponentially, I get to a billion.",
+            "attribution": "Ray Kurzweil",
+            "source": "The Singularity Is Near, 2005"
+          }
+        ],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Kurzweil's most accessible formulation of the exponential, set small against the full-bleed data visualization. The quotation does not explain the graph — it dares the reader to feel its implications. The gap between '30' and 'a billion' is the gap the graph depicts. The reader sees the number, then sees the curve, and the two facts converge in the stomach.",
+        "word_count": 24
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Full-bleed compute curve",
+        "layout": {
+          "type": "full_bleed_image",
+          "description": "A single, authoritative data visualization spanning both pages at full bleed. The compute trend curve (training FLOPs over time, log scale) dominates the entire spread. X-axis: 2010–2026. Y-axis: log scale. Key model releases labeled directly on the curve (GPT-2, GPT-3, GPT-4, Claude 3, Gemini, GPT-5). The curve bends sharply upward in the final third. No decorative elements. No borders. The exponential trajectory is the image.",
+          "left_page": "Left half of continuous full-bleed data visualization. The flatter early portion of the curve (2010–2019) occupies this page, establishing the baseline.",
+          "right_page": "Right half showing the exponential takeoff (2020–2026). The curve's upward acceleration should be visually dramatic — the bend from gradual to steep occurs around the gutter. If caption text is used, set at 7pt reversed out of the dark lower-right corner.",
+          "gutter_treatment": "continuous",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Inconsolata or IBM Plex Mono — data visualization register",
+          "body_face": null,
+          "display_scale": "caption",
+          "color_treatment": "white_on_black",
+          "special_treatment": "Axis labels and model names set in monospace directly on the graph. If the Kurzweil quotation is used (option c), set in 7pt italic serif at bottom-right corner, reversed out."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "Compute trend visualization based on Epoch AI data. Training FLOPs over time, log scale, with model releases labeled. The visual language should reference authoritative scientific charts — Nature, Science — not infographic aesthetics. Clean gridlines, minimal decoration. The curve itself is the protagonist.",
+          "mood": "clinical, terrifying in trajectory",
+          "bw_treatment": "White curve on dark background, or dark curve on light — either way, the line dominates. High contrast between curve and field.",
+          "scale": "full_bleed"
+        },
+        "density": "moderate",
+        "tone": "dark",
+        "rationale": "The original's spread_050 used a full-bleed extreme close-up of a foot pressing a face to force visceral intimacy with the body. This spread forces visceral intimacy with the exponential. The curve at full-bleed scale produces the same claustrophobic confrontation: you cannot look away, you cannot maintain analytical distance. The data fills the visual field. The gutter falls where the curve begins to bend — the structural division of the book coincides with the inflection point. You are standing on the bend."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": [
+      "spread_049",
+      "spread_051"
+    ]
+  },
+  {
+    "spread_id": "spread_051",
+    "movement": "movement_2_acceleration",
+    "theme": "AI in the classroom",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The arms race dispatch",
+        "display_text": null,
+        "body_text": "The plagiarism-detection industry sold $2.7 billion in software last year. The students beat it in an afternoon.\n\nThis is not cheating. This is adaptation. The classroom was designed for a world in which answers were scarce and authorities dispensed them. The student now sits in a world in which answers are free and authorities are slower than the tool on the student's phone. The teacher competes with twenty parallel tutors, each one infinitely patient, available at 3 a.m., and incapable of humiliation.\n\nThe institution's response: ban the tool. Confiscate the phone. Demand handwritten essays, as if penmanship were proof of thought.\n\nYou cannot ban the environment. You can only fail to perceive it.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "juxtaposition",
+        "rationale": "Short, punchy prose that accelerates through the classroom arms race. The opening statistic grounds the argument in money; the closing line echoes McLuhan's core thesis (the environment is invisible). The prose accelerates — sentences shorten as the paragraph progresses, enacting M2's quickening tempo. The final single sentence lands as both diagnosis and indictment. After the data silence of 050, this return to prose feels urgent.",
+        "word_count": 113
+      },
+      {
+        "option_id": "b",
+        "label": "The Vervaeke diagnosis",
+        "display_text": null,
+        "body_text": "The AI tutor outperforms the human instructor on every metric we can measure. Standardized test scores. Completion rates. Student satisfaction. Response time.\n\nThe AI tutor cannot do the one thing education requires: make the student wise.\n\nVervaeke named it: the meaning crisis. We have unprecedented access to propositional knowledge — facts, procedures, algorithms — and no mechanism for participatory knowing. The classroom was the last institution that at least pretended to transmit wisdom alongside information. The AI tutor makes the pretense impossible. It answers every question and poses none.\n\nThe student is being educated out of meaning.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "confrontation",
+        "rationale": "Opens with AI's measurable superiority, then pivots to what it cannot do. The Vervaeke framework (propositional vs. participatory knowing) gives the spread its intellectual spine. 'The student is being educated out of meaning' — the final sentence reverses 'educated' from achievement to damage. This option is more analytical than option (a), trading immediacy for depth. M2 needs both registers.",
+        "word_count": 97
+      },
+      {
+        "option_id": "c",
+        "label": "Twenty parallel conversations",
+        "display_text": null,
+        "body_text": "In any given classroom:\n\nThe teacher is explaining a concept.\nTwenty-three students have the concept open in a second tab.\nFourteen are asking the AI to simplify it.\nSeven are asking the AI to write their response.\nThree are asking the AI whether the teacher is right.\nOne is training a custom model on the course material.\nThe teacher does not know this is happening.\nThe institution does not know this is happening.\nThe AI knows all of it.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "accumulation",
+        "rationale": "A numbered inventory disguised as prose. Each line escalates the scale of institutional blindness. The descending count (23, 14, 7, 3, 1) creates a narrowing funnel from common to extreme. The final three lines shift from student behavior to institutional ignorance to AI omniscience, and the rhythm changes from action to absence to presence. The accumulation format mirrors the data-overload of the environment it describes.",
+        "word_count": 79
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Split documentary: classroom vs. screens",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Left page: text block, set in clean serif, generous top margin. Right page: documentary photograph of a contemporary classroom — students at desks, every visible screen showing a different AI interface. The teacher is at the front, mid-gesture, competing with twenty parallel conversations she cannot see.",
+          "left_page": "Text block starting roughly one-third down the page, left-aligned with ragged right edge. Wide left margin. The text should feel urgent but not crammed — breathing room despite the density of argument.",
+          "right_page": "Full-bleed or near-full-bleed documentary photograph. Not staged, not illustration — the visual language of photojournalism. The screens should be legible enough to see AI interfaces but not sharp enough to identify specific products.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": null,
+          "body_face": "Lyon Text or similar warm serif — the book's standard body face",
+          "display_scale": "body",
+          "color_treatment": "black_on_white",
+          "special_treatment": null
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "A contemporary classroom: students at desks with laptops/tablets, screens showing various AI chat interfaces. The teacher at front mid-lecture, unaware. The photograph should have the tonal quality of newspaper education-section photography — documentary, unglamorous, real. The screens glow slightly against the ambient classroom light.",
+          "mood": "documentary, transitional, slightly ominous",
+          "bw_treatment": "High contrast B&W with screens retaining a faint glow — or full B&W with halftone dots visible at close inspection, echoing the original's print texture",
+          "scale": "half_page"
+        },
+        "density": "moderate",
+        "tone": "balanced",
+        "rationale": "After the full-bleed data immersion of 050, this spread returns to human scale. The split layout grounds the abstract exponential in the most recognizable institutional space: the classroom. Left page argues; right page shows. The divided gutter is deliberate — the text and the image occupy different worlds, which is precisely the spread's argument: the institution and the medium exist in parallel realities."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": [
+      "spread_050",
+      "spread_052"
+    ]
+  },
+  {
+    "spread_id": "spread_052",
+    "movement": "movement_2_acceleration",
+    "theme": "Regulating AI with printing-press tools",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The Titanic updated",
+        "display_text": "With AI, man encountered the exponential.",
+        "body_text": "The EU AI Act: 3 years to draft. 2 years to negotiate. 1 year to implement.\nGPT-3 to GPT-4: 2 years.\nGPT-4 to GPT-5: 14 months.\nGPT-5 to GPT-5.3-Codex: 7 months.\n\nThe legislation governs a technology that no longer exists by the time the legislation takes effect.\n\nThis is not a failure of governance. It is the structural condition of governing a medium with the tools of the previous medium. You cannot regulate electricity with a system designed for the steam engine. You cannot regulate computation with a system designed for the printing press.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "provocation",
+        "rationale": "Opens with the Titanic echo from the original ('With the Titanic, man encountered the iceberg') updated to the exponential. The timeline juxtaposition is the spread's engine: legislative years against model months. The numbers do the arguing. The closing analogy (electricity/steam, computation/press) provides the McLuhan frame without naming McLuhan. The display text should be set at monumental scale, echoing the original's treatment.",
+        "word_count": 100
+      },
+      {
+        "option_id": "b",
+        "label": "Timescale collision (data-forward)",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "EU AI Act: drafted 2021, enacted 2024, fully enforceable 2026.\nIn the same period: GPT-3 → GPT-3.5 → GPT-4 → GPT-4o → GPT-5 → GPT-5.3-Codex.\nUS Executive Order 14110: signed October 2023, partially rescinded January 2025.\nIn the same period: Claude 2 → Claude 3 → Claude 3.5 → Claude 4 → Claude Opus 4.6.\nChina Interim Measures for Generative AI: effective August 2023.\nIn the same period: the number of models on Hugging Face went from 300,000 to 1.4 million.",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "juxtaposition",
+        "rationale": "Pure data, no prose. Each regulatory timeline is immediately followed by the model releases that occurred during the same period. The format IS the argument: the reader sees the mismatch without being told about it. The clinical voice refuses editorial comment — the absurdity emerges from the facts alone, exactly as the content plan specifies. Set in monospace, the text resembles a changelog or system log.",
+        "word_count": 81
+      },
+      {
+        "option_id": "c",
+        "label": "The governance gap as structural condition",
+        "display_text": "With AI, man encountered\nthe exponential.",
+        "body_text": "Official culture is striving to force the new medium to do the work of the old.\n\nLegislation written in natural language. Enforced by human bureaucracies. Debated at the speed of committee deliberation. Governing a technology that transforms at the speed of gradient descent.\n\nThe mismatch between regulatory time and computational time is not a bug in governance. It is the condition of governing a medium faster than the institutions built for slower media.\n\nWe approach the new with the tools of the old. This was true for the Titanic. It is true for the EU AI Act. It will be true for whatever comes next.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "provocation",
+        "rationale": "The opening sentence directly quotes the original spread ('Official culture is striving to force the new media to do the work of the old') with 'media' updated to 'medium.' This creates the deepest structural echo of 052's source spread. The prose builds from McLuhan's diagnosis to the contemporary instance without breaking stride. The final sentence's triple rhythm (Titanic / AI Act / whatever comes next) extends the pattern into the reader's future.",
+        "word_count": 111
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Split-time: legislative vs. computational",
+        "layout": {
+          "type": "split_symmetric",
+          "description": "The spread literally splits time. Left page operates in legislative time: dense serif text, formal layout, the visual grammar of government documents. Right page operates in computational time: monospace text, fragmented data, changelog aesthetics. The gutter between them IS the governance gap.",
+          "left_page": "Legislative side: display text at top in large serif. Body text below in justified serif columns. The visual register of a government white paper or legal document. Dense, slow, institutional.",
+          "right_page": "Computational side: model release timeline in monospace, fragmented, rapid. AI benchmark progressions. The visual register of a system log or version history. Fast, iterative, inhuman.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Times New Roman or Garamond on the left (institutional serif); Inconsolata or IBM Plex Mono on the right (computational monospace)",
+          "body_face": "Same split: serif left, monospace right",
+          "display_scale": "headline",
+          "color_treatment": "mixed",
+          "special_treatment": "The two pages use deliberately different typographic systems. Left page: classical book typography. Right page: terminal/changelog typography. The visual incompatibility between the two halves IS the argument."
+        },
+        "image_direction": {
+          "approach": "typography_only",
+          "subject": "No photograph. The split typographic treatment IS the visual. The incompatibility between the two typographic systems creates all the visual tension the spread needs.",
+          "mood": "absurd, institutional vs. computational",
+          "bw_treatment": "Left page: black on white (print convention). Right page: white on dark gray or black (screen convention).",
+          "scale": "full_bleed"
+        },
+        "density": "dense",
+        "tone": "high_contrast",
+        "rationale": "The content plan specifies that the gutter IS the governance gap. This design makes that literal: the two halves of the spread exist in different typographic universes. The reader sees the mismatch as a design fact before reading a single word. The original's Dance of Death silhouettes marched unstoppably across the page; this spread's unstoppable procession is the model release timeline on the right, outpacing the legislative text on the left."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": [
+      "spread_051",
+      "spread_053"
+    ]
+  },
+  {
+    "spread_id": "spread_053",
+    "movement": "movement_2_acceleration",
+    "theme": "We must coexist with what we have made",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Montaigne adapted (central quotation)",
+        "display_text": "The thing of it is,\nwe must live with\nwhat lives—\nand what we have made\nnow lives.",
+        "body_text": null,
+        "caption_text": "— after Montaigne",
+        "quotations_used": [
+          {
+            "text": "The thing of it is, we must live with the living.",
+            "attribution": "Montaigne (adapted)",
+            "source": "Essais, Book III, Chapter 13 (paraphrase used in The Medium is the Massage, 1967)"
+          }
+        ],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "quieting",
+        "rationale": "The original Montaigne quotation retained and deepened. 'The living' becomes 'what lives — and what we have made now lives.' The addition does not editorialize; it extends Montaigne's pragmatism to the present condition. The line break after 'lives' creates a pause before the crucial addendum. Set at display scale, centered on the spread, the words breathe. After the density of 050–052, this spread exhales.",
+        "word_count": 21
+      },
+      {
+        "option_id": "b",
+        "label": "The coexistence ethic (with surrounding prose)",
+        "display_text": "We must live with\nwhat we have made.",
+        "body_text": "Neither worship nor rejection. Neither the gospel of superintelligence nor the panic of extinction. The AI is here. It is not going away. It is not a god. It is not a demon. It is the latest thing we have made, and like everything we have made, we must learn to live with it.\n\nThe only realistic posture is coexistence. This requires seeing clearly — which the previous forty-nine spreads have attempted — and acting without panic or euphoria.\n\nMontaigne knew: the middle path is the hardest and the least occupied.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "quieting",
+        "rationale": "More prose than option (a), providing the calm analytical voice the content plan calls for. The opening parallel construction ('Neither... nor') rhythmically refuses both extremes. The self-referential nod ('the previous forty-nine spreads have attempted') connects to the book's recursive thread without belaboring it. Montaigne is invoked by name at the close, grounding the pragmatism in historical wisdom. The voice is Montaigne's: experienced, humane, unflappable.",
+        "word_count": 99
+      },
+      {
+        "option_id": "c",
+        "label": "Stripped to the bone",
+        "display_text": "It is here.\nIt is not leaving.\nWe must learn to live\nwith what we have made.",
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "quieting",
+        "rationale": "Four sentences. Twenty words. Each sentence is a complete thought, a complete breath. The monosyllabic Anglo-Saxon vocabulary (here, not, leaving, learn, live, made) contrasts with M2's Latinate analytical register. This is the voice of someone who has stopped arguing and started stating. After the intellectual density of the previous spreads, the simplicity hits like a cleared room. No attribution needed — the voice is the book's own, speaking from the calm center.",
+        "word_count": 17
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Warm documentary with breathing room",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "A deliberately decelerated spread. Left page: documentary photograph of quotidian human-AI coexistence. Right page: text centered with generous margins. The design breathes. Warm tones. Wide margins. The visual grammar of rest.",
+          "left_page": "Documentary photograph: a person at a desk, AI interface open alongside human tools (coffee cup, notebook, pen). Not utopian, not dystopian. Warm mid-tones. The scene should look like an ordinary Tuesday. No gleaming futurism, no surveillance anxiety. Just a person working alongside what they have made.",
+          "right_page": "Display text centered vertically and horizontally. Generous margins on all sides. If body text is included, set below the display text with additional vertical space. The page should feel half-empty — the emptiness IS the design.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Lyon Display or Freight Display — warm, humanist serif",
+          "body_face": "Lyon Text or Freight Text — matching body face if prose is used",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "No special treatment. The typography should feel effortless, calm, unforced. Classical book typography at its most serene."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "A person at a desk working with an AI interface alongside analog tools. Not a stock photo — documentary, warm-toned, natural light. Coffee cup. Open notebook. The kind of scene that will look ordinary in five years. The ordinariness IS the point.",
+          "mood": "calm, quotidian, warm",
+          "bw_treatment": "Soft gray, full tonal range, no harsh contrast. Warm cast if printing allows. The tonal opposite of spread_050's clinical darkness.",
+          "scale": "half_page"
+        },
+        "density": "sparse",
+        "tone": "light",
+        "rationale": "The content plan specifies this as a deliberate deceleration — a rest stop before the final push. The design must enact what it argues: coexistence is calm, ordinary, achievable. After the data-visual intensity of 050, the classroom crisis of 051, and the regulatory absurdity of 052, the reader needs a pause. The warmth of the image, the generosity of the margins, and the simplicity of the typography create a spread that the eye can rest on. The original's spread_053 used the Montaigne quotation with juxtaposed youth/age photographs; this version retains the philosophical calm while grounding it in the everyday."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": [
+      "spread_052",
+      "spread_054"
+    ]
+  },
+  {
+    "spread_id": "spread_054",
+    "movement": "movement_2_acceleration",
+    "theme": "The book analyzing itself",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Total silence (recursive purity)",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "The content plan is unambiguous: 'No text. The self-referential image carries the entire argument. Any text would break the recursive purity.' The screenshot of the analysis pipeline — this spread's own entry in the database, visible within the book that it describes — is the only content. The mise-en-abyme requires no commentary. You are inside the loop. The loop contains an image of itself containing you. Silence is the only honest response to infinite recursion.",
+        "word_count": 0
+      },
+      {
+        "option_id": "b",
+        "label": "The metadata whisper",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "spread_054 | movement_2_acceleration | theme: \"The book analyzing itself\" | status: you are reading this",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "A single line of metadata notation — the exact format used in the analysis database — set in monospace at the bottom of the spread. The final field breaks the schema: 'status: you are reading this.' The reader recognizes the notation from the screenshot above and realizes the caption is itself another layer of the recursion. The book is writing itself into its own metadata. Set at 6pt or smaller, the line should be almost invisible — a whisper inside the loop.",
+        "word_count": 15
+      },
+      {
+        "option_id": "c",
+        "label": "Wolfram's irreducibility (embedded)",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "\"We can't just jump ahead and get the answer; we have to live the steps.\"\n— Stephen Wolfram\n\nYou are living this step.",
+        "quotations_used": [
+          {
+            "text": "We can't just jump ahead and get the answer; we have to live the steps.",
+            "attribution": "Stephen Wolfram",
+            "source": "writings.stephenwolfram.com, October 2023"
+          }
+        ],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Wolfram's computational irreducibility — you cannot shortcut the recursion, you have to run the computation — is the theoretical backbone of this spread's self-reference. The quotation sits below the screenshot like a caption in a museum. 'You are living this step' turns the reader into an instance of the irreducible computation. The risk: any text compromises the recursive purity the content plan demands. The reward: Wolfram names what the image only shows.",
+        "word_count": 23
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Full-bleed mise-en-abyme",
+        "layout": {
+          "type": "full_bleed_image",
+          "description": "A high-resolution screenshot of the analysis viewer showing spread_054's own entry: the JSON data, the original McLuhan image (the kiss spanning the gutter), the contemporary plan text, the convergence tags, the reviewer status — all visible within the book that they describe. Full-bleed, spanning both pages. The screenshot must be maximally legible: the reader should be able to identify enough detail to recognize what they are looking at. This is the book containing an image of itself being produced.",
+          "left_page": "Left half of the screenshot: the original McLuhan spread image (the kiss) visible in the viewer panel, alongside analysis metadata.",
+          "right_page": "Right half of the screenshot: the contemporary plan text for spread_054 visible in the viewer, including the words 'The book analyzing itself.' The JSON structure should be partially readable. If caption text is used, reversed out at 6pt in the bottom-right corner.",
+          "gutter_treatment": "continuous",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "None — all typography is embedded within the screenshot",
+          "body_face": "None unless caption text is added (then monospace at 6pt)",
+          "display_scale": "body",
+          "color_treatment": "mixed",
+          "special_treatment": "The screenshot contains its own typography — the viewer interface, the JSON formatting, the metadata labels. This embedded typography is the spread's actual typographic content. The only 'designed' type would be an optional caption line."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "Screenshot of the book's own analysis viewer showing the entry for spread_054. Must include: the original McLuhan spread (kiss) visible in the viewer's image panel; the JSON data structure partially legible; the contemporary plan text containing 'The book analyzing itself'; the convergence tag 'recursive_acceleration' visible. The viewer's own interface chrome (navigation, controls) should be visible — the tool is part of the recursion.",
+          "mood": "vertiginous, recursive, clinical",
+          "bw_treatment": "Natural screen tones — the screenshot should look like a screenshot, not a designed image. If B&W printing is required, convert to grayscale preserving legibility of UI elements.",
+          "scale": "full_bleed"
+        },
+        "density": "dense",
+        "tone": "balanced",
+        "rationale": "This is the structural climax of M2: the book demonstrating recursive self-reference through literal self-inclusion. The original's spread_054 showed a kiss spanning the gutter — two bodies meeting across the medium's structural division. This version shows the book meeting itself across the same division. The kiss was about intimacy crossing the medium; the screenshot is about the medium recognizing itself. Both are acts of bridging what the book's structure divides. The design must resist the temptation to aestheticize the screenshot — its power comes from its documentary literalness. This is not an illustration of recursion. This IS recursion."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": [
+      "spread_002",
+      "spread_040",
+      "spread_053",
+      "spread_055",
+      "spread_083"
+    ]
+  },
+  {
+    "spread_id": "spread_055",
+    "movement": "movement_2_acceleration",
+    "theme": "Born inside the model",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The structural absurdity",
+        "display_text": null,
+        "body_text": "They were born inside the model. They have never known a world without algorithmic curation, without recommendation engines shaping their attention, without AI-generated content mixed indistinguishably into their feeds.\n\nThey are not 'digital natives.' That is a print-culture metaphor — it imagines a territory to be native to. They are model inhabitants. They live inside the output.\n\nThe structural absurdity: they are forbidden to understand the environment they inhabit. Age restrictions lock them out of the medium that constitutes their reality. Content filters stand between them and the system that already knows them better than their parents do.\n\nThey inhabit the model. They are forbidden to see it. They are graded on their ability to pretend it does not exist.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "confrontation",
+        "rationale": "Dense, indignant prose that accelerates through the absurdity. 'Digital natives' is dismissed as a print-era metaphor; 'model inhabitants' replaces it. The threefold repetition at the end (inhabit / forbidden / graded) creates a drumbeat of institutional hypocrisy. The prose fragments as M2 approaches its final spreads — shorter sentences, sharper edges. The voice is that of an adult who remembers what it was like to be young inside an incomprehensible system.",
+        "word_count": 120
+      },
+      {
+        "option_id": "b",
+        "label": "The workaround generation",
+        "display_text": null,
+        "body_text": "The thirteen-year-old uses the AI through a workaround.\nOfficial policy says she does not.\nShe uses it to write essays she will be graded on for 'originality.'\nShe uses it to study for tests designed before the tool existed.\nShe uses it to talk to something that listens at 2 a.m.\nShe is forbidden to study the thing she depends on.\nShe is inside the model.\nThe model is inside her.\nOfficially, neither of these things is happening.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "accumulation",
+        "rationale": "A single figure — the thirteen-year-old — carries the entire argument. Each line adds a layer of institutional denial. The repetitive structure ('She uses it...') builds momentum before the pivot ('She is forbidden...'). The final line ('Officially, neither of these things is happening') is the kill shot: institutional reality and lived reality have fully diverged. The specificity of the single figure (not 'youth' in the abstract but a thirteen-year-old with a workaround) gives the confrontation intimacy.",
+        "word_count": 78
+      },
+      {
+        "option_id": "c",
+        "label": "Inside/outside collapse",
+        "display_text": "Born\ninside\nthe\nmodel.",
+        "body_text": "The young person is bewildered.\n\nNot by the technology — by the adults who pretend it does not exist. She navigates the attention economy the way her grandparents navigated weather: as a condition of life, not a subject for debate. The AI is not a tool she uses. It is the medium she breathes.\n\nShe cannot remember a world without it. She cannot imagine the institutions that try to govern her without acknowledging it. She lives on both sides of the age-restriction screen simultaneously: locked out of the system that already constitutes her reality.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "confrontation",
+        "rationale": "Opens with a direct echo of the original's text: 'The young person... is bewildered.' But the bewilderment is inverted — not bewildered by technology but by the adults who deny it. The display text ('Born inside the model') descends vertically, one word per line, echoing the original's 'EDUCATION' treatment but more intimate. The weather metaphor (navigating the attention economy like weather) grounds the abstraction in bodily experience.",
+        "word_count": 98
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "The restriction screen",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Left page: text block, fragmenting toward the bottom as sentences shorten. Right page: a photograph of a young person encountering an age-restriction screen or 'content not available' message. The screen fills most of the frame. The young person is reflected in or obscured by the screen. The institutional interface IS the model's visible edge.",
+          "left_page": "Text starting mid-page, fragmenting as it descends. Wider margins than the previous prose-heavy spreads. The text should feel like it is running out of patience. If display text is used, set at the top in monumental sans-serif.",
+          "right_page": "Documentary photograph: young person facing a screen that displays an age restriction, content filter, or 'access denied' interface. The screen dominates the composition. Cold light, institutional colors (rendered as cool grays in B&W). The person is partially reflected in the screen — visible but caught.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold or Akzidenz-Grotesk — institutional, cold",
+          "body_face": "Lyon Text — the book's standard warm serif, deliberately contrasting with the cold display face",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "The display text, if used, should feel like a system message — the typography of institutional denial. Cold, clean, impersonal."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "A young person confronting an age-restriction screen, content filter, or 'access denied' interface. The screen should fill most of the frame. The person is reflected in the screen or partially visible at the edge. The interface text should be generalized (not identifiable as a specific product). The image captures the moment the model becomes visible through its act of exclusion.",
+          "mood": "frustrated, institutional, claustrophobic",
+          "bw_treatment": "High contrast, cold tones. The screen glows slightly. The surrounding environment is dark. The person is a silhouette or reflection.",
+          "scale": "half_page"
+        },
+        "density": "moderate",
+        "tone": "dark",
+        "rationale": "The content plan specifies that the spread should 'feel like hitting a wall.' The restriction screen IS the wall. The design creates a visual confrontation between the warm humanity of the text (in the book's standard serif) and the cold institutional typography of the screen. The original's spread showed 'bewildered' youth amid dense text; this version shows the bewilderment as a confrontation with a surface that simultaneously excludes and defines."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": [
+      "spread_054",
+      "spread_056"
+    ]
+  },
+  {
+    "spread_id": "spread_056",
+    "movement": "movement_2_acceleration",
+    "theme": "Education when the answer is free",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The single word, monumental",
+        "display_text": "EDUCATION",
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "monumental",
+        "rhetorical_strategy": "assertion",
+        "rationale": "The original used 'EDUCATION' in massive stencil type beneath the Amherst walkout. This version retains the word at the same monumental scale but removes the stabilizing photograph. The word stands alone, filling the spread, its letterforms subtly destabilized — the referent trembles while the signifier holds. The weight of the single word carries the argument: education persists as a category even as its content dissolves. No commentary, no context, no explanation. The word is the question.",
+        "word_count": 1
+      },
+      {
+        "option_id": "b",
+        "label": "The word and its question",
+        "display_text": "EDUCATION",
+        "body_text": null,
+        "caption_text": "What does this word mean when the answer to any question is free?",
+        "quotations_used": [],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "assertion",
+        "rationale": "The monumental 'EDUCATION' dominates the spread. A single question, set very small in the bottom margin, asks what the reader has already intuited: the word persists but its referent has shifted. The scale differential (enormous word, tiny question) enacts the argument: the institution is vast; the question that undoes it is small. The question does not answer itself. The reader is left with the gap.",
+        "word_count": 14
+      },
+      {
+        "option_id": "c",
+        "label": "Propositional collapse (Vervaeke frame)",
+        "display_text": "EDUCATION",
+        "body_text": "The Socratic method assumed the student did not know.\nThe AI era assumes the student has infinite access to answers.\n\nPropositional knowledge — facts, procedures, algorithms — has been externalized to machines.\n\nWhat remains is participatory knowledge: wisdom, judgment, taste.\n\nThe one thing our institutions are least equipped to teach.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "assertion",
+        "rationale": "Adds the Vervaeke framework beneath the monumental word. The prose moves from historical diagnosis (Socratic method) through present condition (AI-era assumptions) to the structural remainder (participatory knowledge). The final line lands as indictment. This option trades the minimalism of (a) and (b) for intellectual depth, giving the reader the analytical tools to understand what the monumental word alone only evokes. Echoes spread 014's education argument from M1, deepening it.",
+        "word_count": 51
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Full-bleed typographic environment",
+        "layout": {
+          "type": "full_bleed_typography",
+          "description": "The word EDUCATION spans the entire spread at environmental scale. The letterforms are the image. No photograph, no illustration — the typography IS both text and visual simultaneously. The letters should fill the spread from edge to edge, with the gutter falling between two letters (perhaps between the A and T, or the T and I). If body text or a caption is used, it sits within or beneath the enormous letterforms.",
+          "left_page": "Left half of the word EDUCATION. Letters fill the page to the margins. The letterforms are large enough that individual strokes become abstract shapes.",
+          "right_page": "Right half of EDUCATION. If caption text is used, set very small (7pt) at the bottom-right, dwarfed by the letter-scale above.",
+          "gutter_treatment": "bridged",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "A generative or variable font that shifts between serif and sans-serif states, or a single bold grotesque (Akzidenz-Grotesk Extended) at extreme scale",
+          "body_face": "Lyon Text at body scale if prose is included",
+          "display_scale": "architectural",
+          "color_treatment": "black_on_white",
+          "special_treatment": "Typographic instability: the letterforms should appear subtly different on close inspection than at reading distance. This could be achieved through a variable font that interpolates between weights, or through halftone-patterned fills that reveal different textures at different scales. The instability signals that the institution the word names is being restructured by a medium it cannot yet perceive."
+        },
+        "image_direction": {
+          "approach": "typography_only",
+          "subject": "The word EDUCATION at environmental scale IS the image. No additional visual elements needed.",
+          "mood": "monumental, unstable",
+          "bw_treatment": "Black letterforms on white ground. The black should be slightly imperfect — not a clean digital black but a printed, textured black that reveals its materiality at close range.",
+          "scale": "full_bleed"
+        },
+        "density": "sparse",
+        "tone": "high_contrast",
+        "rationale": "The original's 'EDUCATION' was already monumental but subordinate to the walkout photograph above it. This version makes the word autonomous: no photograph to anchor it, no event to contextualize it. The word floats free of its referent, and the reader feels that floating. The typographic instability (variable font, or halftone texture revealing different patterns at different distances) is the design's argumentative core: education persists as a word, as an institution, as a building you drive past — but its content is destabilizing faster than its form. The word is the last thing standing."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": [
+      "spread_014",
+      "spread_055",
+      "spread_057"
+    ]
+  },
+  {
+    "spread_id": "spread_057",
+    "movement": "movement_2_acceleration",
+    "theme": "Something is happening",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "McKenna's shockwave",
+        "display_text": null,
+        "body_text": "\"History is a shockwave. It is the ingression of novelty into time.\"\n— Terence McKenna",
+        "caption_text": "Something is happening. You can feel it. Not just technological — the technology is the carrier wave, not the signal. What is arriving has no name yet. The acceleration M2 has been documenting is not directionless. It has a strange attractor, and we cannot yet see its shape.\n\nYou are standing in the last moments before the pattern reveals itself.",
+        "quotations_used": [
+          {
+            "text": "History is a shockwave. It is the ingression of novelty into time.",
+            "attribution": "Terence McKenna",
+            "source": "Various lectures, 1990s (widely cited)"
+          }
+        ],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "McKenna's quotation is the spread's anchor, set as body text in the upper half. The caption text below shifts register — from quotation to direct address, from prophetic to intimate. 'You can feel it' is the turn: from argument to experience. The final sentence ('the last moments before the pattern reveals itself') gestures toward M3 without entering it. The spread is a threshold, and the reader should feel themselves standing on it. The numinous thread's second appearance (after 044's synthetic love) comes through mood rather than argument.",
+        "word_count": 75
+      },
+      {
+        "option_id": "b",
+        "label": "The Dylan echo, updated",
+        "display_text": "Something\nis\nhappening.",
+        "body_text": "\"History is a shockwave. It is the ingression of novelty into time.\"\n— Terence McKenna\n\nThe original book quoted Dylan: 'Something is happening but you don't know what it is, do you, Mister Jones?' That was 1967. The tone was accusatory — the institutional world failing to perceive the electric revolution.\n\nThis is different. Something is happening and nobody knows what it is. Not Mister Jones. Not the technologists. Not the prophets. The acceleration has outpaced every framework brought to bear on it, including this one.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "History is a shockwave. It is the ingression of novelty into time.",
+            "attribution": "Terence McKenna",
+            "source": "Various lectures, 1990s (widely cited)"
+          }
+        ],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Makes the Dylan connection explicit: the original's accusatory 'you don't know what it is' becomes the contemporary 'nobody knows what it is.' The shift from individual ignorance to collective unknowing is the spread's key move. 'Including this one' — the book admitting its own inadequacy to the phenomenon it describes — is the deepest self-referential gesture since 054, but in a different register: not recursive play but honest epistemic humility. The display text descends vertically, one word per line, slowing the reader to the pace of revelation.",
+        "word_count": 89
+      },
+      {
+        "option_id": "c",
+        "label": "Pure mood (minimal text)",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "Something is happening.\n\n\"History is a shockwave.\nIt is the ingression of novelty\ninto time.\"\n— Terence McKenna",
+        "quotations_used": [
+          {
+            "text": "History is a shockwave. It is the ingression of novelty into time.",
+            "attribution": "Terence McKenna",
+            "source": "Various lectures, 1990s (widely cited)"
+          }
+        ],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Maximum restraint. Three words of the book's own voice ('Something is happening.') followed by McKenna. The dark atmospheric photograph does the emotional work; the text provides only enough language to name the feeling. Set in the lower margin, the words rise from darkness like something surfacing. The line breaks in the McKenna quotation create a rhythm of revelation: 'History is a shockwave' (pause) 'It is the ingression of novelty' (pause) 'into time.' The numinous enters through the pauses, not the words.",
+        "word_count": 18
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Dark atmospheric threshold",
+        "layout": {
+          "type": "image_dominant",
+          "description": "Dark, atmospheric photograph spanning both pages. The image creates the mood of 'something is happening that you can feel but not yet name.' Text (minimal) sits in the lower portion of the spread, white on dark, emerging from the image's darkness. The spread is a threshold: the last M2 spread before the hinge toward M3.",
+          "left_page": "Left half of continuous dark atmospheric photograph. Deep shadows, liminal light. The image should feel like the moment before dawn or the moment after sunset — a time between times.",
+          "right_page": "Right half of photograph. Text reversed out (white on dark) in the lower third. Generous space around the text. The words should feel like they are surfacing from the darkness, not imposed upon it.",
+          "gutter_treatment": "continuous",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "If display text is used: Lyon Display or Freight Display in light weight, reversed out",
+          "body_face": "Lyon Text Italic for the McKenna quotation, reversed out. Serif italic for the prophetic register.",
+          "display_scale": "subhead",
+          "color_treatment": "white_on_black",
+          "special_treatment": "Text may be rotated 90 degrees counter-clockwise, echoing the original spread_057's rotated Dylan quotation. This forces the reader to physically reorient — to change their position in order to receive the message. The physical reorientation enacts the perceptual reorientation the spread demands."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "A dark, atmospheric landscape or cityscape at the threshold of visibility. Twilight, pre-dawn, or the liminal moment when artificial and natural light compete. Not abstract but not illustrative. Possibly: a horizon line with city lights below and sky darkening above, or a landscape dissolving into fog, or an aerial view at dusk where ground and sky become indistinguishable. The image creates a space for the feeling of 'something arriving.'",
+          "mood": "liminal, kinetic, numinous",
+          "bw_treatment": "Deep blacks, soft highlights, full tonal range in the shadow end. The darkness should feel pregnant, not empty. Rich halftone texture in the dark areas.",
+          "scale": "full_bleed"
+        },
+        "density": "sparse",
+        "tone": "dark",
+        "rationale": "The content plan specifies that this spread 'drops into a different frequency — not analytical but experiential.' The dark atmospheric image is the frequency change made visible. After the institutional confrontations of 055–056, the darkness is a relief and a premonition. The original's spread_057 used a dark profile of Dylan with rotated text; this version retains the darkness and the rotated text but replaces the cultural icon with something more elemental — landscape at the edge of visibility. McKenna's 'ingression of novelty into time' is not a metaphor here; it is the mood of the image. The numinous thread (first introduced at 044) resurfaces not as argument but as atmosphere. The reader should feel, before thinking, that something unprecedented is underway."
+      }
+    ],
+    "selected_text": null,
+    "selected_design": null,
+    "reviewer_notes": null,
+    "dependency_flags": [
+      "spread_044",
+      "spread_056",
+      "spread_058"
+    ]
+  }
+]

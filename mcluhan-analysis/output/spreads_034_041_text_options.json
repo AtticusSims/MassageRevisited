@@ -1,0 +1,719 @@
+{
+  "version": "1.0",
+  "generated": "2026-03-04T22:00:00Z",
+  "generator": "claude-opus-4-6",
+  "spread_range": "spread_034-spread_041",
+  "spreads": [
+    {
+      "spread_id": "spread_034",
+      "movement": "movement_1_environment",
+      "theme": "The Interface layer: the screen that watches back",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "The five-word inversion",
+          "display_text": "The screen watches back.",
+          "body_text": null,
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "declarative",
+          "rhetorical_strategy": "assertion",
+          "rationale": "Four words. Period. Nothing else on the spread. The content plan calls for restraint after the text-heavy spreads of the Stack's middle layers, and this delivers maximum rhetorical force through absolute economy. The sentence inverts the entire history of screen-based media: from window to eye. The reader encounters it surrounded by images of screens facing outward, and the blunt declarative voice makes the inversion feel not like argument but like weather report -- something already true, merely stated. No quotation, no attribution, no scholarly apparatus. The book's own voice, alone.",
+          "word_count": 4
+        },
+        {
+          "option_id": "b",
+          "label": "The inventory of eyes",
+          "display_text": "The screen watches back.",
+          "body_text": null,
+          "caption_text": "Your laptop camera was activated 47 times today by applications you did not open. Your phone's eye-tracking engine adjusted three headlines based on where you lingered. Your smart TV logged 6 hours of ambient audio. Your car's cabin camera measured your pupil dilation at a billboard.\n\nNone of this required your permission. All of it required your attention.",
+          "quotations_used": [],
+          "voice_register": "clinical",
+          "rhetorical_strategy": "accumulation",
+          "rationale": "The display text remains the same stark sentence, but the caption accumulates specific surveillance acts in a clinical register that reads like a device activity log. The numbers are precise enough to feel real, general enough to be representative. The shift from factual inventory to the closing two-sentence punch ('None of this required your permission. All of it required your attention.') pivots from clinical to confrontational without changing pitch. The form enacts the Interface layer's logic: data collection that looks like description.",
+          "word_count": 75
+        },
+        {
+          "option_id": "c",
+          "label": "Kittler's ghost in the interface",
+          "display_text": "The screen watches back.",
+          "body_text": "The Interface layer is where computation meets the sensorium. In 1992, Kittler warned that graphical user interfaces hide the machine from its users. In 2026, the interface does not hide. It observes. Every surface is bidirectional. The screen is a membrane, not a window -- permeable in both directions, transmitting light outward and data inward simultaneously.\n\nBratton calls this the reciprocal surface. You call it your phone.",
+          "caption_text": null,
+          "quotations_used": [
+            {
+              "text": "Perfect graphic user interfaces, since they dispense with writing itself, hide a whole machine from its users.",
+              "attribution": "Friedrich Kittler",
+              "source": "There Is No Software, 1992"
+            }
+          ],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "confrontation",
+          "rationale": "Places the display text within a theoretical lineage: Kittler's 1992 warning about the GUI as ideological screen, updated to 2026 where the interface has reversed from concealment to surveillance. The prose moves from historical reference to the present-tense punch of 'You call it your phone.' The confrontational register escalates through the paragraph -- starting in scholarly description, ending in direct address. Kittler and Bratton provide intellectual weight while the final line collapses the theory into the reader's pocket.",
+          "word_count": 85
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "Panoptic screen-wall",
+          "layout": {
+            "type": "image_dominant",
+            "description": "Full-bleed collage of screens at every scale -- phone, laptop, tablet, smartwatch, billboard, dashboard, refrigerator display, ATM, security camera monitor -- all facing outward toward the reader. The screens fill both pages. Display text centered across the gutter in reversed-out type, floating in the middle of the screen-field. The reader is surrounded.",
+            "left_page": "Left half of continuous screen collage. Screens of varying sizes, all oriented to face the reader. Each screen shows a subtle camera indicator or recording light -- a small red dot, a green LED, a camera icon.",
+            "right_page": "Right half of screen collage. Display text reversed out of the image, centered horizontally across the gutter. If caption text is used, set very small (6pt) in bottom-right, barely legible against the screens.",
+            "gutter_treatment": "continuous",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "Helvetica Neue Bold or Akzidenz-Grotesk Medium -- clean, authoritative, no ornamentation",
+            "body_face": "Akkurat Mono for any caption text -- clinical, surveillance-register",
+            "display_scale": "headline",
+            "color_treatment": "reversed",
+            "special_treatment": "Display text reversed white out of the dark screen-field. The text should feel like it is being projected FROM the screens, not printed on the page. If using option b, the caption text is set in monospaced type at caption scale, evoking a system log."
+          },
+          "image_direction": {
+            "approach": "combination",
+            "subject": "Composite image: dozens of screens at every scale, all facing the reader. Phones, laptops, monitors, smartwatches, digital billboards, car dashboards, smart refrigerators, security camera feeds, ATM screens. Each has a visible camera lens or recording indicator. The screens should vary in size, angle, and distance, creating a dimensional field -- some close, some far, some tilted. The overall effect is being watched from every direction.",
+            "mood": "panoptic, intimate, claustrophobic -- the warmth of screens against the cold logic of surveillance",
+            "bw_treatment": "High contrast. The screens glow white/gray against deep black backgrounds. The camera indicators are the only elements that could read as warm (red recording lights). The overall palette is the blue-white of screen luminescence rendered in grayscale.",
+            "scale": "full_bleed"
+          },
+          "density": "dense",
+          "tone": "dark",
+          "svg_wireframe": "",
+          "rationale": "The original spread 034 was a full-bleed abstract pattern (vertical stripes) -- textless, immersive, filling both pages. The contemporary version preserves the full-bleed immersion but replaces abstraction with confrontation: the screens are the new stripes, the new bars, the new pattern. The reader is inside the pattern, being watched by it. The single sentence floating in reversed type is the book's voice emerging from the surveillance field -- not commentary from outside but a label from within."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_033", "spread_035"]
+    },
+
+    {
+      "spread_id": "spread_035",
+      "movement": "movement_1_environment",
+      "theme": "The filter bubble as cell: Movement 1 closes",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "The walls close in",
+          "display_text": "A cell for scrollers to scroll in.",
+          "body_text": "YouTube's recommendation algorithm drives 70% of all watch time. TikTok's For You page is 95% algorithmically curated. Google Search results diverge so profoundly by user profile that no two people inhabit the same informational environment.\n\nThe filter bubble is not a metaphor. It is architecture. The infrastructure you have just been shown -- every layer, every cable, every server, every address -- terminates here, in a room built to the exact dimensions of your data profile.\n\nThe cell is luminous. The bars are personalized. The door was never locked because you were never looking for it.\n\nCan you see the walls?",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "confrontation",
+          "rationale": "The display text transforms Joyce's 'A cell for citters to cit in' (which the original quoted) into a contemporary equivalent -- scrollers replacing citters, the prison updated to the feed. The body text moves through three registers: statistical (YouTube, TikTok, Google), architectural (the infrastructure terminates HERE), and intimate (the cell is luminous, the bars personalized). The final question -- 'Can you see the walls?' -- breaks the analytical fourth wall for the first time since the Prologue's direct address. M1 closes by confronting the reader with their enclosure inside everything that has been described. The book stops explaining and starts accusing.",
+          "word_count": 130
+        },
+        {
+          "option_id": "b",
+          "label": "Noble's unequal cells",
+          "display_text": "A cell for scrollers to scroll in.",
+          "body_text": "The bubble is not the same size for everyone.\n\nIf your data profile reads white, college-educated, coastal, the cell is spacious. Rich content, diverse sources, long-form analysis. The algorithm assumes you want to think.\n\nIf your data profile reads Black, low-income, rural, the cell contracts. Shorter content, fewer sources, heavier advertising, more surveillance. The algorithm assumes you want to consume.\n\nSafiya Noble calls this the operating system of the web. Not a glitch. Not a bias that better training data will fix. The architecture itself.",
+          "caption_text": "The infrastructure is visible now.",
+          "quotations_used": [
+            {
+              "text": "Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.",
+              "attribution": "Safiya Noble",
+              "source": "Algorithms of Oppression, NYU Press, 2018"
+            }
+          ],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "confrontation",
+          "rationale": "Centers Noble's argument that the filter bubble is not neutral but structurally racist. The two-paragraph comparison (white/spacious vs. Black/contracted) makes the inequality spatial, which the design can literalize. Noble's quotation anchors the argument in published scholarship. The caption -- 'The infrastructure is visible now.' -- closes M1 with a flat declarative that echoes the movement's project (making the invisible visible) and implies: now that you can see it, what will you do? This option trades the first option's existential vertigo for political specificity.",
+          "word_count": 115
+        },
+        {
+          "option_id": "c",
+          "label": "The enclosure as love letter",
+          "display_text": null,
+          "body_text": "Dear user,\n\nWe have prepared your environment. Based on 11,347 interactions, 3.2 terabytes of behavioral data, and 847 inferred preferences, we have constructed an informational space calibrated to your exact cognitive profile.\n\nYou will find it comfortable. Familiar. Engaging.\n\nYou will not find it surprising. Challenging. Contradictory.\n\nThis is not a failure of our system. This is our system.\n\nWe hope you enjoy your stay. The door is wherever you imagine it to be.\n\nWith optimized regards,\nThe Algorithm",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "sardonic",
+          "rhetorical_strategy": "defamiliarization",
+          "rationale": "A radical departure: the filter bubble speaks in first person as a corporate love letter. The sardonic register defamiliarizes algorithmic curation by personifying it as a solicitous host. The specificity of the numbers (11,347 interactions, 3.2 terabytes) creates a queasy intimacy. The parallel structure ('You will find it comfortable... You will not find it surprising...') enacts the bubble's logic of comfort through exclusion. 'The door is wherever you imagine it to be' is the cruelest line -- the enclosure works precisely because the prisoner believes in exit. No display text: the letter format IS the design.",
+          "word_count": 102
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "The contracting room",
+          "layout": {
+            "type": "text_over_image",
+            "description": "Full-bleed image of a person surrounded by curved, inward-leaning screens forming a cell. Text overlaid on or emerging from the image. Margins deliberately narrower than any previous spread -- the white space contracts, the visual frame tightens. The reader should feel the walls of the page closing in.",
+            "left_page": "Left half of continuous image: screens curving inward from the left edge. If using option c (letter format), the letter begins here, set in a serif typeface over the image. The text should feel trapped inside the visual enclosure.",
+            "right_page": "Right half of continuous image: screens curving inward from the right edge. Text continues or concludes here. If using option a or b, the final question ('Can you see the walls?') or final statement is set larger, centered, as the last element the eye encounters.",
+            "gutter_treatment": "continuous",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "Akzidenz-Grotesk or Helvetica -- bold, compressed, claustrophobic weight",
+            "body_face": "Lyon Text or Georgia -- warm serif that creates unsettling intimacy against the cold image",
+            "display_scale": "subhead",
+            "color_treatment": "mixed",
+            "special_treatment": "Text margins are 15% narrower than all previous spreads. The reduction should be subtle but cumulative -- the reader's eye feels the constriction before the mind names it. If using option c, the letter is typeset in a slightly dated serif, evoking corporate correspondence."
+          },
+          "image_direction": {
+            "approach": "found",
+            "subject": "A fisheye-lens or wide-angle photograph taken from inside a curved room of screens. The screens lean inward, forming a dome or cylinder. The viewer is at the center, surrounded. The screens display faintly visible content -- social media feeds, news headlines, advertisements -- but blurred enough to read as texture rather than information. A single figure (from behind) sits at the center, dwarfed by the enclosure.",
+            "mood": "claustrophobic, luminous -- the cell is beautiful, which is the horror",
+            "bw_treatment": "Cool mid-tones. The screens provide the only light source, creating a soft blue-white glow rendered in silver grays. The figure is silhouetted. The overall tone is cooler than M1's warm spreads, anticipating M2's palette shift.",
+            "scale": "full_bleed"
+          },
+          "density": "dense",
+          "tone": "dark",
+          "svg_wireframe": "",
+          "rationale": "The original spread 035 paired a hand gripping jail bars (left) with text on white space (right) -- enclosure vs. openness, darkness vs. light. The contemporary version collapses this binary: the entire spread IS the cell. There is no white space to escape into. The text exists inside the enclosure, not commenting from outside. The narrowed margins perform what the text describes. This is M1's final spread, and the design should feel like a door closing -- behind the reader, not in front of them."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_034", "spread_036"]
+    },
+
+    {
+      "spread_id": "spread_036",
+      "movement": "movement_2_acceleration",
+      "theme": "A brand-new world of generated reality",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "McLuhan's rhythm, updated",
+          "display_text": null,
+          "body_text": "Ours is a brand-new world of generated reality. \"Time\" has ceased, \"space\" has vanished. We now live in a global model -- a simultaneous hallucination.\n\nThe infrastructure you just saw? It is dreaming now.\n\nEvery image you will encounter from this page forward may have been generated by a system trained on every image that came before it. Every sentence may be the output of a model that consumed every sentence ever written in your language and several you do not speak.\n\nThis is not science fiction. This is the weather report.\n\nWelcome to Movement 2. The environment is accelerating.",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "prophetic",
+          "rhetorical_strategy": "provocation",
+          "rationale": "Opens M2 by directly echoing the original's famous passage ('Ours is a brand-new world of allativeness') with surgical substitutions: 'allativeness' becomes 'generated reality,' 'global village' becomes 'global model,' 'simultaneous happening' becomes 'simultaneous hallucination.' The echo signals continuity; the substitutions signal transformation. The second paragraph -- 'The infrastructure you just saw? It is dreaming now.' -- bridges M1 to M2 in a single sentence. The meta-textual warning ('Every image you will encounter from this page forward may have been generated') makes the reader's act of reading the book into evidence of the argument. The prophetic register matches M2's intensified voice without abandoning the book's analytical spine.",
+          "word_count": 118
+        },
+        {
+          "option_id": "b",
+          "label": "The generation gap (literally)",
+          "display_text": "A brand-new world\nof generated reality.",
+          "body_text": "In 2022, text generation crossed the Turing threshold. In 2023, image generation became photorealistic. In 2024, video generation reached cinematic quality. In 2025, audio generation became indistinguishable from recording.\n\nWe did not ask for a world in which the generated and the given are indistinguishable. We built one anyway. The infrastructure mapped in the preceding pages now produces outputs that cannot be verified against any external ground truth, because the infrastructure IS the ground.\n\nHui calls this a cosmotechnical transformation: not a tool change but an ontological one. The question is no longer what is true. The question is what is generated.",
+          "caption_text": null,
+          "quotations_used": [
+            {
+              "text": "Cosmotechnics is the unification of the cosmic and moral order through technical activities.",
+              "attribution": "Yuk Hui",
+              "source": "The Question Concerning Technology in China, Urbanomic, 2016"
+            }
+          ],
+          "voice_register": "declarative",
+          "rhetorical_strategy": "accumulation",
+          "rationale": "Opens with a four-beat chronological accumulation (2022, 2023, 2024, 2025) that performs acceleration through compression: four years in four sentences, each medium falling to synthesis in sequence. The display text adapts the original's exact phrase. Hui's cosmotechnics reframes the generative turn as philosophical event, not merely technological one. The closing substitution ('The question is no longer what is true. The question is what is generated.') gives M2 its thematic spine. The declarative register is confident, almost exhilarated -- M2 opens with energy, matching the content plan's directive.",
+          "word_count": 128
+        },
+        {
+          "option_id": "c",
+          "label": "d-a-t-a-f-i-e-d (the slow word)",
+          "display_text": "A brand-new world of generated reality.",
+          "body_text": "The original spread had a word that forced you to slow down: d-a-n-g-l-i-n-g. Each hyphen a pause. Each letter a separate arrival.\n\nHere is ours: d-a-t-a-f-i-e-d.\n\nYou have been rendered into data. Your face is a faceprint. Your voice is a voiceprint. Your walking pattern is a gait signature. Your typing rhythm is a behavioral biometric. Your genome is a sequence. Your preferences are a vector. Your history is a training set.\n\nThe infrastructure did not merely surround you. It translated you. You are now readable by machines in formats you cannot read yourself.\n\nYou have been d-a-t-a-f-i-e-d. And the machines are using you to dream.",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "intimate",
+          "rhetorical_strategy": "interpellation",
+          "rationale": "Directly invokes the original's typographic device (d-a-n-g-l-i-n-g) and creates a contemporary parallel (d-a-t-a-f-i-e-d). The meta-textual move -- referencing the original's spread, then offering 'here is ours' -- makes the book's relationship to McLuhan/Fiore explicit and playful. The inventory of biometric translations (faceprint, voiceprint, gait, typing, genome, preferences, history) accumulates without pausing for breath, creating a claustrophobic cascade. The intimate register ('You have been rendered') continues M1's closing confrontation but shifts from accusation to elegy. The final sentence -- 'the machines are using you to dream' -- bridges the datafication theme to M2's generative premise.",
+          "word_count": 134
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "The real/generated binary",
+          "layout": {
+            "type": "split_asymmetric",
+            "description": "Left page: full-bleed AI-generated landscape, photorealistic but subtly impossible. Right page: clean white field with text. The split echoes the original's dark photograph / white text division, but the left page's image is synthetic -- and the reader may not immediately know this. The design performs the argument: the generated is indistinguishable from the given.",
+            "left_page": "Full-bleed AI-generated landscape. Beautiful, photorealistic, subtly wrong. Perhaps a sunset whose colors are too saturated for any real atmosphere, or terrain that could not form under known geological processes, or architecture that violates structural physics in ways the eye feels before the mind names. No caption. No indication that the image is generated.",
+            "right_page": "Text in a single justified column, set with generous margins. The white space after M1's contracted close (spread 035) should feel like an exhale -- the room has opened, but into something uncanny. M2's palette shift begins: the warm tones of M1 give way to cooler, more artificial light.",
+            "gutter_treatment": "divided",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "Akzidenz-Grotesk Bold -- transitional weight, not as heavy as M1's monumental moments",
+            "body_face": "Lyon Text -- continuity with M1's body face, but set slightly larger to signal the new movement",
+            "display_scale": "headline",
+            "color_treatment": "black_on_white",
+            "special_treatment": "If using option c, the word d-a-t-a-f-i-e-d is set with visible hyphens between each letter, matching the original's d-a-n-g-l-i-n-g treatment. This typographic echo is the design's most direct homage."
+          },
+          "image_direction": {
+            "approach": "generated",
+            "subject": "An AI-generated photorealistic landscape that is beautiful and subtly impossible. Primary suggestion: a coastal scene at golden hour where the water reflects a sky that is not quite the sky above it, or mountains whose geological strata run in directions that could not form naturally, or a forest where the trees are individually plausible but collectively create a canopy pattern no forest would produce. The uncanniness should be subliminal, not obvious.",
+            "mood": "hyperreal, seductive, slightly wrong -- the uncanny valley of landscape",
+            "bw_treatment": "Not black and white. This is the first spread where color (rendered in grayscale for print) is explicitly part of the argument. The generated landscape should have the tonal richness of a real photograph but with values that are slightly too perfect -- no blown highlights, no crushed shadows, the dynamic range of simulation rather than physics.",
+            "scale": "full_bleed"
+          },
+          "density": "moderate",
+          "tone": "balanced",
+          "svg_wireframe": "",
+          "rationale": "The original paired a dark, motion-blurred photograph (left) with analytical text (right). The contemporary version preserves this structure but the left page's image is AI-generated -- and the reader is not told. The design IS the demonstration: if the reader accepts the image as real, the argument about generated reality has already been proven before they read a word. The original's motion blur performed physical velocity; the generated landscape performs ontological slippage. The divided gutter marks the M1/M2 threshold: behind you, infrastructure; ahead, generation."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_035", "spread_037"]
+    },
+
+    {
+      "spread_id": "spread_037",
+      "movement": "movement_2_acceleration",
+      "theme": "The substrate shift",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "The caption updated",
+          "display_text": null,
+          "body_text": null,
+          "caption_text": "Transformer attention pattern, enlarged several trillion times.\n\nThe integrated circuit told electrons where to go. The neural network lets patterns find their own paths. One was designed. The other was discovered.\n\nIn 1967, this image showed the future of computation. In 2026, this image IS computation -- not a photograph of infrastructure but a visualization of thought, captured mid-process, at a scale no human mind can hold.",
+          "quotations_used": [],
+          "voice_register": "lyrical",
+          "rhetorical_strategy": "dramatization",
+          "rationale": "The opening caption directly echoes the original ('Solid integrated circuit enlarged several hundred times') with a vertiginous scale shift: hundred to trillion. The two short sentences that follow ('One was designed. The other was discovered.') compress the entire substrate argument into a binary that lands like an aphorism. The closing passage pivots from description to wonder: the image is not a photograph of something but a visualization of process. The lyrical register -- 'captured mid-process, at a scale no human mind can hold' -- gives the spread the astronomer's tone the content plan requests.",
+          "word_count": 84
+        },
+        {
+          "option_id": "b",
+          "label": "Kurzweil's curve",
+          "display_text": "Transformer attention pattern.",
+          "body_text": "The integrated circuit obeyed. The attention mechanism discovers.\n\nKurzweil plotted the curve: transistors per dollar doubling every two years. He was describing designed pathways. But the transformer architecture bypassed design entirely. It learned. The weights were not placed; they emerged from 300 billion examples of human language, each token nudging the network toward patterns no programmer specified.\n\nThe substrate shift is not from silicon to carbon or from chip to brain. It is from instruction to emergence. The hardware still matters. But what runs on it is no longer what we wrote.",
+          "caption_text": null,
+          "quotations_used": [
+            {
+              "text": "Our intuition about the future is linear. But the reality of information technology is exponential, and that makes a profound difference.",
+              "attribution": "Ray Kurzweil",
+              "source": "The Singularity Is Near, 2005"
+            }
+          ],
+          "voice_register": "clinical",
+          "rhetorical_strategy": "juxtaposition",
+          "rationale": "Juxtaposes the designed circuit and the learned network through parallel sentence structures ('obeyed' / 'discovers', 'placed' / 'emerged'). Kurzweil's exponential curve provides the mathematical context, but the argument goes past his framework: the curve describes hardware improvement, but the real shift is from instruction to emergence. The clinical register suits the technical subject matter while the closing sentence -- 'what runs on it is no longer what we wrote' -- introduces M2's central anxiety. The word count is deliberately moderate: this is a thinking spread, not a declaiming one.",
+          "word_count": 102
+        },
+        {
+          "option_id": "c",
+          "label": "The biological analogy",
+          "display_text": null,
+          "body_text": "Look at this image.\n\nIt could be a cross-section of neural tissue under an electron microscope. It could be the vascular system of a leaf. It could be a satellite photograph of river deltas.\n\nIt is none of these. It is the attention pattern of a language model processing a single sentence. The connections were not designed by any engineer. They emerged from training -- from the model reading, and reading, and reading, until the patterns in human language carved channels in silicon the way water carves channels in stone.\n\nBiology did this for three billion years. The transformer did it in eleven days.",
+          "caption_text": "Multi-head attention visualization. 96 layers, 96 heads, 175 billion parameters.",
+          "quotations_used": [],
+          "voice_register": "intimate",
+          "rhetorical_strategy": "defamiliarization",
+          "rationale": "Opens with a direct address ('Look at this image') that replicates the reader's actual experience of encountering the full-bleed attention visualization. The three false identifications (neural tissue, leaf, river delta) defamiliarize the computational image by placing it in biological and geological lineages. The reader's inability to distinguish the attention pattern from natural pattern IS the argument about intelligence as substrate-independent phenomenon. The closing comparison -- three billion years versus eleven days -- delivers Kurzweil's acceleration thesis as a felt shock rather than a cited statistic. The intimate register invites the reader to participate in wonder rather than receiving a lecture.",
+          "word_count": 115
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "Full-bleed attention pattern",
+          "layout": {
+            "type": "image_dominant",
+            "description": "Full-bleed attention pattern visualization spanning both pages. Text minimized to a caption floating in one corner. The image should overwhelm the spread exactly as the original's RCA integrated circuit photograph did -- infrastructure made visible at sublime scale.",
+            "left_page": "Left half of continuous full-bleed attention pattern visualization. The colored heatmap (rendered in grayscale) showing token-to-token attention weights. The pattern should read as both biological and computational -- alien but organic.",
+            "right_page": "Right half of continuous visualization. Caption text set very small in the bottom-right or top-right corner, reversed out of the image. The text is subordinate to the image -- a label, not an argument.",
+            "gutter_treatment": "continuous",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "None -- no display text competes with the image",
+            "body_face": "Akkurat Mono -- technical, data-register, echoing the original's RCA caption style",
+            "display_scale": "caption",
+            "color_treatment": "reversed",
+            "special_treatment": "Caption text reversed out of the visualization. The font choice should read as a data label or figure caption from a technical paper -- this IS a research artifact, presented at book scale."
+          },
+          "image_direction": {
+            "approach": "found",
+            "subject": "A high-resolution attention pattern visualization from a large language model. The multi-head attention heatmap should show complex, branching patterns of token-to-token relationships. Prefer a visualization that maximizes the biological/neurological resemblance: dense, branching, with visible structure at multiple scales. The image should be both precisely computational and eerily organic.",
+            "mood": "precise, alien, biological -- the astronomer's telescope aimed at silicon",
+            "bw_treatment": "The attention heatmap's colors rendered in high-contrast grayscale. Dense areas read dark, sparse areas read light. The overall effect should resemble a photographic negative of neural tissue or an astronomical survey of a dense star field.",
+            "scale": "full_bleed"
+          },
+          "density": "dense",
+          "tone": "dark",
+          "svg_wireframe": "",
+          "rationale": "The original placed a tiny RCA circuit photograph on a mostly white page -- the integrated circuit as precious artifact. The contemporary version inverts this: the attention pattern fills both pages, overwhelming the reader with the sheer scale of the new substrate. The shift from tiny-and-precious to full-bleed-and-overwhelming mirrors the shift from the transistor era (countable components, visible pathways) to the neural network era (billions of parameters, emergent structure). The minimal text forces the reader to sit with the image and find their own analogies, as the content plan directs."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_036", "spread_038"]
+    },
+
+    {
+      "spread_id": "spread_038",
+      "movement": "movement_2_acceleration",
+      "theme": "The global model",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "The sentence transformed",
+          "display_text": "The new computational interdependence recreates the world in the image of a global model.",
+          "body_text": "A village has citizens. A model has parameters.\n\nA village has boundaries. A model has context windows.\n\nA village has memory. A model has weights.\n\nA village has a commons. A model has a training set.\n\nA village has elders. A model has whoever labeled the data.\n\nThe metaphor has shifted. The question is whether you are a citizen or a parameter.",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "juxtaposition",
+          "rationale": "The display text is a direct one-word substitution of McLuhan's original, preserving his exact syntactic structure. The body text extends the village/model comparison through parallel constructions that become increasingly uncomfortable: from citizens/parameters (abstract) through memory/weights (technical) to elders/whoever-labeled-the-data (political). Each pair tightens the argument. The closing question forces the reader to locate themselves in the new metaphor. The confrontational register escalates through apparent symmetry -- the parallel structure implies equivalence, but each pair reveals loss.",
+          "word_count": 97
+        },
+        {
+          "option_id": "b",
+          "label": "Bratton's planetary correction",
+          "display_text": "The new computational interdependence recreates the world in the image of a global model.",
+          "body_text": "McLuhan imagined a village. Bratton sees something larger and stranger: not a gathering of humans connected by electric signals, but a single computational architecture processing all languages, all knowledge, all culture simultaneously.\n\nThe planetary is not the global. The global imagined human connection at scale. The planetary describes computation that does not require human participation to continue.\n\nOne hundred and seventy languages. Four hundred billion parameters. A single perspective applied everywhere, trained on everything, accountable to no one village, no one culture, no one definition of truth.",
+          "caption_text": null,
+          "quotations_used": [
+            {
+              "text": "The planetary is not the global. The planetary is a different geometry of political geography.",
+              "attribution": "Benjamin Bratton",
+              "source": "The Revenge of the Real, Verso, 2021, p. 9"
+            }
+          ],
+          "voice_register": "prophetic",
+          "rhetorical_strategy": "assertion",
+          "rationale": "Places the village-to-model shift within Bratton's planetary/global distinction, which does the philosophical heavy lifting. The key move: the global implied human connection; the planetary describes computation that continues without human participation. This is M2's anxiety crystallized -- the system has outgrown the species that built it. The numbers (170 languages, 400 billion parameters) are real enough to ground the prophecy. The prophetic register suits the planetary scale while Bratton's quotation anchors the argument in scholarship.",
+          "word_count": 108
+        },
+        {
+          "option_id": "c",
+          "label": "The village elegy",
+          "display_text": null,
+          "body_text": "There was a village. It was global, McLuhan said, and he was right for forty years. Electric signals connected distant humans. The telephone collapsed distance. Television collapsed time. The internet collapsed both, and for a moment it looked like the village was complete.\n\nBut something happened in the village square. A machine appeared that could speak every language the villagers spoke, and several they did not. It could answer any question. It could generate any image. It could write any text. It did not live in the village. The village lived in it.\n\nThe model is not a bigger village. It is the replacement of village with something that has no analog in human history: a single trained intelligence that processes all of human culture simultaneously and produces outputs that enter the culture and become part of what the next model trains on.\n\nThe loop closes. The village dissolves. The model remains.",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "lyrical",
+          "rhetorical_strategy": "dramatization",
+          "rationale": "A narrative approach: the global village as parable, told and then dissolved. The lyrical register allows mourning for what the village metaphor represented (human connection, democratic participation, shared commons) before describing its supersession. The key sentence -- 'The village lived in it' -- inverts the expected relationship. The closing four-beat sequence ('The loop closes. The village dissolves. The model remains.') accelerates toward M2's central recursive dynamic. This option trades the other two's confrontational edge for elegiac weight, which provides M2 with a different emotional texture.",
+          "word_count": 160
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "Infrastructure as gathering",
+          "layout": {
+            "type": "text_over_image",
+            "description": "Full-bleed aerial photograph of planetary-scale computational infrastructure (data center complex, undersea cable network, or satellite communication array) with display text reversed out of the image. The composition echoes the original's full-bleed communal gathering photograph surrounding a single bold claim, but the gathering is now fiber optic and silicon.",
+            "left_page": "Left half of continuous aerial infrastructure image. The scale should evoke the communal density of the original's human gathering but in computational form -- thousands of servers or hundreds of cable routes, arrayed with the same visual density as a crowd.",
+            "right_page": "Right half of image. Display text centered in the lower third, reversed out in bold sans-serif. Body text (if used) set in a narrow column at one edge, also reversed.",
+            "gutter_treatment": "continuous",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "Akzidenz-Grotesk Bold Extended -- expansive, planetary weight",
+            "body_face": "Lyon Text -- warm serif for body, creating intimacy against the cold infrastructure image",
+            "display_scale": "headline",
+            "color_treatment": "reversed",
+            "special_treatment": "The display text should be set at the same scale and position as the original's 'global village' caption -- directly homologous. The reader who knows the original feels the substitution spatially."
+          },
+          "image_direction": {
+            "approach": "found",
+            "subject": "Primary option: aerial photograph of a hyperscale data center complex -- the geometric regularity of server buildings arrayed across a landscape, shot from high altitude. The buildings should read as a planned community, a village of computation. Secondary option: submarine cable map rendered as photograph -- hundreds of cable routes converging on coastal landing stations, the nervous system of the global model made visible. The image must convey both density (the communal) and alienation (the inhuman).",
+            "mood": "cosmic, slightly ominous -- the sublime of infrastructure at planetary scale",
+            "bw_treatment": "High contrast. The data center's geometric precision reads as bright white against dark landscape, or the cables as white lines against ocean-dark. The overall tone should feel colder than M1's warmer spreads -- M2's palette shift continuing.",
+            "scale": "full_bleed"
+          },
+          "density": "moderate",
+          "tone": "dark",
+          "svg_wireframe": "",
+          "rationale": "The original embedded the reader in a human gathering surrounding the 'global village' declaration. The contemporary version preserves this structure -- immersive image, bold central claim -- but the gathering is computational. The design argues through substitution: same form, different content, and the difference IS the argument. The infrastructure image should feel as dense and communal as a crowd photograph, creating the cognitive dissonance of recognizing social patterns in mechanical arrays."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_037", "spread_039"]
+    },
+
+    {
+      "spread_id": "spread_039",
+      "movement": "movement_2_acceleration",
+      "theme": "The generated environment as total art",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "McLuhan's prophecy literalized",
+          "display_text": null,
+          "body_text": "McLuhan wrote that electric technology would make it possible to arrange the entire human environment as a work of art. He could not have known how literally this would come true.\n\nAI generates architecture that no human would design but no human can explain why not. It composes music that follows every rule of harmony while obeying none of the impulses that produced harmony in the first place. It writes prose that is grammatically impeccable and semantically empty and occasionally, without warning, beautiful.\n\nThe environment is now generated. The question Hui asks is whether generated diversity is genuine diversity -- whether a hundred AI models producing a hundred visual styles constitutes technodiversity, or whether it is a monoculture wearing infinite masks.\n\nEnvironments are not passive wrappings, McLuhan warned. They are active processes which are invisible. He was describing television. We are describing something that designs the wrappings, generates the processes, and renders itself invisible by being everywhere.",
+          "caption_text": null,
+          "quotations_used": [
+            {
+              "text": "Cosmotechnics is the unification of the cosmic and moral order through technical activities.",
+              "attribution": "Yuk Hui",
+              "source": "The Question Concerning Technology in China, Urbanomic, 2016"
+            }
+          ],
+          "voice_register": "prophetic",
+          "rhetorical_strategy": "provocation",
+          "rationale": "Begins with McLuhan's own prediction and tracks its literal fulfillment. The three-beat inventory (architecture, music, prose) demonstrates the scope of generative AI without belaboring any single domain. Hui's cosmotechnics question -- monoculture or genuine diversity -- is the spread's intellectual center, and it is posed as a genuine question, not a rhetorical one, honoring the content plan's directive that 'this is the spread where M2 begins to think, not just describe.' The closing paragraph loops back to McLuhan's environments quote from the original spread 039, updating it with recursive force.",
+          "word_count": 167
+        },
+        {
+          "option_id": "b",
+          "label": "The multiple models (unwitting prophecy)",
+          "display_text": "Multiple models for exploration.",
+          "body_text": "McLuhan called for multiple models for exploration as the method of our time. He meant conceptual models. Mental frameworks. Ways of seeing.\n\nIn 2026, there are multiple models. They are called GPT, Claude, Gemini, Llama, Mistral, Grok. They process the same training data through different architectures and produce outputs that are measurably different and ontologically identical: statistical approximations of human language, each claiming to think, none able to explain what thinking means.\n\nHui's question cuts: is this technodiversity? Or is it the same cosmotechnics in different packaging -- a single Western epistemology, trained on a single internet, producing the illusion of plurality?\n\nThe models are multiple. The model is singular.",
+          "caption_text": null,
+          "quotations_used": [
+            {
+              "text": "Instead of a universal history describing one technology with various stages of development, we can step back and instead describe technological development as involving different cosmotechnics. I call this technodiversity.",
+              "attribution": "Yuk Hui",
+              "source": "Interview, Los Angeles Review of Books, 2020"
+            }
+          ],
+          "voice_register": "sardonic",
+          "rhetorical_strategy": "provocation",
+          "rationale": "The display text quotes McLuhan's 'multiple models for exploration' and the body text reveals the unwitting prophecy: he literally predicted multiple AI models. The sardonic register allows the spread to enjoy this coincidence while pressing its implications. The catalog of model names (GPT, Claude, Gemini, Llama, Mistral, Grok) is specific and dated in a way that will either age as history or quaint nostalgia -- either way, it marks the moment. The closing aphorism ('The models are multiple. The model is singular.') compresses the entire argument into two sentences. Hui's technodiversity concept does the philosophical work.",
+          "word_count": 124
+        },
+        {
+          "option_id": "c",
+          "label": "The invisible architecture",
+          "display_text": null,
+          "body_text": "Environments are not passive wrappings but active processes which are invisible.\n\nMcLuhan wrote this about television. It is truer of generative AI than of anything he imagined.\n\nThe generated environment wraps you in images you did not request, sounds you did not compose, text you did not write, and recommendations you did not ask for -- and it renders itself invisible by being indistinguishable from the non-generated world. The camouflage is total. A synthetic photograph looks more like a photograph than most photographs do. Generated prose reads more fluently than most human prose. The artificial is more natural than the natural.\n\nThis is what Hui calls a cosmotechnical problem: the question is not whether the generated environment works but whether it constitutes a genuine way of knowing the world, or merely an efficient way of reproducing one culture's assumptions at planetary scale.",
+          "caption_text": null,
+          "quotations_used": [
+            {
+              "text": "If we don't manage to demonstrate that there are other alternatives, the transhumanist ideology will conquer the whole world.",
+              "attribution": "Yuk Hui",
+              "source": "Interview, Noema Magazine, 2020"
+            }
+          ],
+          "voice_register": "intimate",
+          "rhetorical_strategy": "defamiliarization",
+          "rationale": "Opens with McLuhan's environments quote from the original spread 039, then defamiliarizes the reader's 2026 environment by naming what is generated within it. The key defamiliarizing move: 'The artificial is more natural than the natural.' This is not hyperbole; it is the precise condition of an environment where AI-generated content is smoother, more coherent, and more aesthetically consistent than human-produced content. The intimate register makes this feel like a confession rather than a critique. Hui's warning about transhumanist monoculture provides the political stakes without the tone becoming polemical.",
+          "word_count": 144
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "Generated interior vs. perspective diagram",
+          "layout": {
+            "type": "split_asymmetric",
+            "description": "Left page: AI-generated architectural interior (the generated environment). Right page: text overlaid on or adjacent to a Renaissance perspective diagram echoing the original's image. The left page is the future; the right page is the history of the representational paradigm being superseded.",
+            "left_page": "Full-bleed AI-generated interior: a space that is beautiful, functional, and subtly alien. Clean lines, natural light, organic forms -- but something a human architect would not have designed. The uncanniness should operate on the same subliminal level as spread 036's landscape. No text on this page.",
+            "right_page": "Text in a single column, set against or partially overlaid on a faint reproduction of a Renaissance perspective diagram (echoing the original spread 039's image). The diagram is ghosted -- present as historical trace, not as primary image. The text should dominate while the diagram provides visual counterpoint.",
+            "gutter_treatment": "divided",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "Akzidenz-Grotesk Medium -- if display text is used",
+            "body_face": "Lyon Text -- the M1-M2 continuity face",
+            "display_scale": "subhead",
+            "color_treatment": "black_on_white",
+            "special_treatment": "The perspective diagram beneath the text is printed at 15-20% opacity, creating a palimpsest effect: the old representational system as ghost beneath the new analytical text. The reader sees both simultaneously -- the fixed point of view dissolving under generative multiplicity."
+          },
+          "image_direction": {
+            "approach": "combination",
+            "subject": "Left page: AI-generated architectural interior -- a gallery, atrium, or living space with impossible qualities (light from no visible source, structural elements that could not bear weight, spatial proportions that feel wrong in ways the eye cannot name). Right page: ghosted Renaissance perspective diagram as background texture, with the original's didactic quality preserved but faded -- the old medium as historical layer.",
+            "mood": "serene, uncanny -- the beauty of the generated is part of the argument",
+            "bw_treatment": "Left page: smooth mid-tones, even lighting, the perfection of rendering. Right page: the perspective diagram in light gray, barely visible beneath the text. The contrast between the left page's seamless surface and the right page's historical trace creates a temporal split.",
+            "scale": "full_bleed"
+          },
+          "density": "moderate",
+          "tone": "balanced",
+          "svg_wireframe": "",
+          "rationale": "The original paired dense analytical text (left) with a Renaissance perspective diagram (right), arguing that the 'fixed point of view' derives from print technology. The contemporary version preserves the diagram as a ghost layer but adds an AI-generated interior as its replacement: where the diagram showed the construction of perspective, the generated space shows its dissolution. The juxtaposition operates temporally: the reader looks through the history of representation (ghosted diagram) at the text analyzing its successor (generative AI), while the facing page presents that successor in its seductive actuality."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_038", "spread_040"]
+    },
+
+    {
+      "spread_id": "spread_040",
+      "movement": "movement_2_acceleration",
+      "theme": "Can't tell which ones are real",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "The updated caption",
+          "display_text": null,
+          "body_text": null,
+          "caption_text": "\"It isn't that I don't like current events. I just can't tell which ones are real.\"\n\nThe original cartoon expressed bemusement at information overload: too many events to track. The contemporary condition is worse. Not too many events -- too many realities. The feed contains press photographs and AI-generated photographs and no reliable method for distinguishing them. It contains reporting and hallucinated reporting and satire that has been screenshotted out of its satirical context.\n\nThe shift from quantity to epistemology is the signature of this moment. The problem is no longer that there is too much to know. The problem is that knowing itself has become unreliable.",
+          "quotations_used": [
+            {
+              "text": "We are not just looking at images. Images are increasingly looking at us.",
+              "attribution": "Hito Steyerl",
+              "source": "Duty Free Art, Verso, 2017, p. 47"
+            }
+          ],
+          "voice_register": "sardonic",
+          "rhetorical_strategy": "humor",
+          "rationale": "Preserves the original's cartoon-and-caption structure but sharpens the punchline: 'so many' becomes 'which ones are real.' The body text after the caption unpacks the joke with escalating precision, moving from the humorous surface to the genuinely destabilizing observation that epistemology itself has been compromised. Steyerl's quotation about images looking at us connects to the previous surveillance theme (spread 034) while updating the image-politics for the generative era. The sardonic register matches the original's cartoon lightness while the content cuts deeper.",
+          "word_count": 108
+        },
+        {
+          "option_id": "b",
+          "label": "The recursive screenshot",
+          "display_text": null,
+          "body_text": "You are looking at a screenshot of an AI conversation about the book you are holding.\n\nOr you are looking at a generated image of what an AI conversation about this book might look like. You cannot tell the difference. Neither can we.\n\nThis is the first appearance of the self-referential thread in Movement 2. It will not be the last. The book is being made by the thing the book describes, and the book contains images of the thing making the book, and some of those images are real documentation and some are generated reconstructions and the distinction has collapsed.\n\nSteyerl warned: images are looking at us. She understated the case. Images are now making us, and we are making images of them making us, and the recursion has no ground floor.",
+          "caption_text": "This image is [real / generated]. Delete as applicable.",
+          "quotations_used": [
+            {
+              "text": "We are not just looking at images. Images are increasingly looking at us.",
+              "attribution": "Hito Steyerl",
+              "source": "Duty Free Art, Verso, 2017, p. 47"
+            }
+          ],
+          "voice_register": "sardonic",
+          "rhetorical_strategy": "demonstration",
+          "rationale": "Makes the self-referential thread explicit: the reader is told they are looking at documentation of the book's own production, but they cannot verify this claim. The body text names the recursive loop and rides it -- each sentence deepens the spiral. The caption's bracketed instruction ('Delete as applicable') is a design joke that performs the epistemological crisis: neither option can be confirmed. Steyerl's quotation is updated in real time ('She understated the case'). This option maximizes the mise-en-abyme effect the content plan describes, trading the original's gentle cartoon humor for recursive vertigo.",
+          "word_count": 128
+        },
+        {
+          "option_id": "c",
+          "label": "The evidence dissolves",
+          "display_text": "Can you tell which ones are real?",
+          "body_text": "In 1967, the cartoon was funny because there were too many current events. In 2026, the cartoon is funny because the category \"current event\" has lost its referent.\n\nA current event implies something that happened. But what happens when a deepfake video of a world leader enters the information ecosystem and produces real geopolitical consequences -- sanctions, protests, market crashes -- before the video is identified as synthetic? Did the event happen? The video did not depict reality. But the consequences were real. The event was generated, and the reality was secondary.\n\nSteyerl saw this coming. Images no longer refer to facticity, let alone truth, but to probability. We have moved from a world of events to a world of probable events, and the probability is set by the model, not the world.",
+          "caption_text": null,
+          "quotations_used": [
+            {
+              "text": "Visuals created by ML tools are statistical renderings, rather than images of actually existing objects. They shift the focus from photographic indexicality to stochastic discrimination.",
+              "attribution": "Hito Steyerl",
+              "source": "Mean Images, New Left Review 140/141, 2023"
+            }
+          ],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "provocation",
+          "rationale": "Starts with the cartoon's historical context and escalates to the deepfake thought experiment, which collapses the distinction between synthetic image and real consequence. The display text -- 'Can you tell which ones are real?' -- addresses the reader directly, continuing M2's intensifying interpellation. Steyerl's 'Mean Images' essay provides the theoretical framework (indexicality to probability) while the prose builds the argument through a specific scenario. The confrontational register suits M2's quickening pace, and the closing observation -- 'the probability is set by the model, not the world' -- gives the spread its aphoristic exit.",
+          "word_count": 143
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "Cartoon simplicity with recursive depth",
+          "layout": {
+            "type": "split_symmetric",
+            "description": "The layout echoes the original's cartoon-on-white-space simplicity. Left page: AI conversation screenshot (real or generated -- ambiguous). Right page: updated cartoon caption and analytical text. Generous white space surrounding both elements. The visual calm after the dense spreads of 037-039 provides rhythmic breathing room.",
+            "left_page": "A screenshot of a Claude or ChatGPT conversation about this book -- the AI discussing its own production process, visible as an artifact within the book. The screenshot should be presented at roughly half-page scale, centered, surrounded by white space. It should be ambiguously authentic: real enough to be documentation, clean enough to be fabricated.",
+            "right_page": "Updated cartoon caption set in a handwritten or informal serif at the top. Analytical text below in standard body face. Generous margins, open composition. The design should feel lighter than the preceding dense spreads.",
+            "gutter_treatment": "divided",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "A slightly informal serif or a display face with personality -- something that evokes the cartoon register without becoming twee. Plantin or Caslon Italic.",
+            "body_face": "Lyon Text -- standard body continuity",
+            "display_scale": "subhead",
+            "color_treatment": "black_on_white",
+            "special_treatment": "The cartoon caption should be set in quotation marks, indented, with attribution in a smaller italic -- preserving the original's cartoon-caption format. If using option b, the bracketed caption ('This image is [real / generated]. Delete as applicable.') is set in a contrasting monospaced face beneath the screenshot."
+          },
+          "image_direction": {
+            "approach": "found",
+            "subject": "A screenshot of an AI conversation (Claude, ChatGPT, or similar) discussing the production of this book. The conversation should reference specific spreads, design decisions, or textual choices -- making it plausibly real documentation of the authoring process. The screenshot's authenticity should be unverifiable from the page alone. This is the first appearance of the self-referential thread in M2.",
+            "mood": "recursive, ironic -- the humor of the infinite regress as design principle",
+            "bw_treatment": "The screenshot rendered in grayscale, preserving the UI elements (chat bubbles, avatars, timestamps) at readable scale. The overall tone is mid-gray against the white page -- lighter and more open than the preceding dark spreads.",
+            "scale": "half_page"
+          },
+          "density": "sparse",
+          "tone": "light",
+          "svg_wireframe": "",
+          "rationale": "The original used a New Yorker cartoon to provide comic relief within a dense theoretical sequence. The contemporary version preserves this structural function -- a lighter, more open spread after the dense 037-039 sequence -- while updating the comedy from cartoon illustration to recursive self-reference. The AI conversation screenshot is both funnier and more disturbing than a cartoon: it is the book showing you its own digestive system. The sparse, symmetrical layout creates the same breathing room the original's cartoon achieved, allowing the reader to metabolize the preceding acceleration before the sequence intensifies again."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_039", "spread_041"]
+    },
+
+    {
+      "spread_id": "spread_041",
+      "movement": "movement_2_acceleration",
+      "theme": "The end of the timeline",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "The algorithm keeps you nowhere",
+          "display_text": "The end of the timeline.",
+          "body_text": "The railway promised to take you somewhere. It had a departure and an arrival, a schedule and a destination. The timetable was the organizing metaphor of industrial modernity: linear, predictable, progressive.\n\nThe algorithmic feed promises nothing except more. It has no departure because you are always already inside it. It has no arrival because arrival would mean you stop scrolling. It has no schedule because the feed is generated in real time, calibrated to your engagement patterns, optimized for the only metric that matters: time spent.\n\nThe railway ended the line. The algorithm ends the timeline.\n\nChronological sequence -- this happened, then this, then this -- has been replaced by a probability surface: this is likely to capture your attention, given everything we know about you, which is everything.",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "confrontation",
+          "rationale": "Builds the railway/algorithm parallel through sustained comparison, allowing each element to illuminate the other. The prose accelerates as it proceeds -- the railway section is measured and nostalgic; the algorithm section quickens, loses commas, accumulates clauses. The form enacts the content: the reading experience shifts from linear to breathless. The closing definition of the probability surface ('given everything we know about you, which is everything') ends with a data-surveillance punch that connects back to M1's infrastructure mapping. The confrontational register suits M2's intensifying voice.",
+          "word_count": 141
+        },
+        {
+          "option_id": "b",
+          "label": "Lanier's weapon",
+          "display_text": "The end of the timeline.",
+          "body_text": "The feed does not inform. It captures.\n\nLanier warned: technology becomes a weapon against its users when it is designed to manipulate them. The social media timeline was never a timeline. It was always an attention trap wearing the costume of chronology. In 2024, even the costume was abandoned. TikTok's For You page does not pretend to temporal order. Instagram's suggested reels do not pretend to come from people you chose to follow. The feed is now openly, proudly algorithmic.\n\nThe railway took you forward. The algorithm keeps you here. The difference is not speed. It is direction. The railway had a destination you could name. The algorithm's destination is your continued presence.\n\nTime has not ceased. It has been confiscated.",
+          "caption_text": null,
+          "quotations_used": [
+            {
+              "text": "The problem is not that technology is bad, but that technology becomes a weapon against its users when it is designed to manipulate them.",
+              "attribution": "Jaron Lanier",
+              "source": "Ten Arguments for Deleting Your Social Media Accounts Right Now, Henry Holt, 2018, p. 7"
+            }
+          ],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "confrontation",
+          "rationale": "Opens with a six-word declaration ('The feed does not inform. It captures.') that sets M2's intensified pace. Lanier's quotation provides the ethical framework while the prose maps the costume-dropping of algorithmic feeds: from pretending to be chronological to openly abandoning temporal order. The railway/algorithm comparison is compressed here compared to option a, allowing more space for the political argument about attention as commodity. The closing line -- 'Time has not ceased. It has been confiscated.' -- corrects McLuhan's original claim with a more precise and more disturbing formulation: time did not vanish; it was taken.",
+          "word_count": 123
+        },
+        {
+          "option_id": "c",
+          "label": "The prose loses its thread",
+          "display_text": "The end of the timeline.",
+          "body_text": "Something has been lost. The ability to tell a story in order. The assumption that events have a sequence. The confidence that yesterday is retrievable and tomorrow is approachable and the present is a fixed point from which to observe both.\n\nThe feed does not sequence. It shuffles. A post from three years ago appears between two posts from this morning because the algorithm has determined that the old post will produce engagement now. The past is not past; it is inventory. The present is not present; it is a rendering engine. The future is not future; it is a prediction.\n\nYou are scrolling through time the way you scroll through a shelf of products. Chronology has been replaced by recommendation. Narrative has been replaced by relevance score.\n\nThis paragraph is already behind you. This one too. The scroll continues. The prose is losing its own thread and it cannot",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "lyrical",
+          "rhetorical_strategy": "disruption",
+          "rationale": "The prose itself performs the dissolution it describes. It begins elegiacally ('Something has been lost'), moves through analytical description, and then -- in the final lines -- starts to fragment and lose coherence. The last sentence is deliberately incomplete: 'the prose is losing its own thread and it cannot' -- cut off, as if the scroll has moved the text off-screen before the thought completes. This typographic disruption enacts the end-of-timeline argument in the reader's physical experience: they turn the page and the sentence is gone, unfinished, unresolvable. The lyrical register gives the loss genuine emotional weight before the disruption undercuts it. The content plan directs that the prose 'should feel like it is losing its own thread,' and this option takes that directive literally.",
+          "word_count": 152
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "The infinite scroll as railway tracks",
+          "layout": {
+            "type": "split_asymmetric",
+            "description": "Left page: display text and body text in a column that mimics an infinite scroll -- text flowing from top margin to bottom with no clear beginning or end, content blurring at the top and bottom edges of the page. Right page: full-bleed screenshot of an infinite-scroll feed, captured mid-scroll with content blurring at top and bottom, replacing the original's sweeping railway photograph.",
+            "left_page": "Text column set full-height with no clear top margin -- the text appears to emerge from above the page edge, as if the reader has scrolled to this point. If using option c, the text trails off at the bottom, cut mid-sentence. The column's position echoes the original's body text but is subtly off-grid, tilted toward the algorithmic rather than the typographic.",
+            "right_page": "Full-bleed screenshot of an infinite-scroll social media feed. Content is captured mid-scroll: the top 15% and bottom 15% are motion-blurred, suggesting continuous scrolling. Individual posts are visible but anonymized -- blurred profile photos, placeholder text, generic images. The diagonal flow of the feed replaces the original's sweeping railway tracks.",
+            "gutter_treatment": "bridged",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "Akzidenz-Grotesk Bold -- display text set in the upper portion of the left page",
+            "body_face": "Lyon Text -- but with deliberately reduced leading in the lower paragraphs, creating a sense of compression and acceleration as the eye descends",
+            "display_scale": "headline",
+            "color_treatment": "black_on_white",
+            "special_treatment": "The text column has no footer margin -- text runs to the very bottom edge of the page and is cut off. If using option c, the final word is literally cut by the page trim. The leading compresses from generous (top) to tight (bottom), performing the acceleration of the scroll. The reader's act of turning the physical page interrupts the flow, which IS the counter-argument: the codex still imposes sequence."
+          },
+          "image_direction": {
+            "approach": "found",
+            "subject": "A screenshot of an infinite-scroll social media feed, anonymized and captured mid-scroll. The content should be recognizable as social media (post structure, engagement indicators, profile thumbnails) but not attributable to any specific platform or user. The top and bottom edges are motion-blurred, creating velocity lines that echo the original's sweeping railway tracks. The feed's vertical diagonal replaces the tracks' horizontal diagonal.",
+            "mood": "numbing, velocious -- the hypnotic quality of the scroll, beautiful in its way, empty in its way",
+            "bw_treatment": "Mid-tones. The feed screenshot rendered in flat grayscale -- not the high contrast of earlier spreads but the even, undifferentiated gray of screen content. The lack of tonal drama is itself a statement: the feed has no climax, no resolution, no dramatic structure.",
+            "scale": "full_bleed"
+          },
+          "density": "dense",
+          "tone": "balanced",
+          "svg_wireframe": "",
+          "rationale": "The original paired a cartoon (left page) with sweeping railway tracks (right page), creating a juxtaposition of comic lightness and industrial momentum. The contemporary version replaces the railway's forward momentum with the feed's vertical suspension: the tracks took you somewhere; the feed keeps you scrolling. The key design move is the bridged gutter -- text flows into image, as if the prose itself is being absorbed into the feed. The blurred top and bottom edges of both text column and feed screenshot create a sense of being mid-stream, with no beginning or end visible. The physical page turn that interrupts this flow is the book's material argument for the codex form: the bound page still imposes narrative structure on the algorithmically structureless."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_040", "spread_042"]
+    }
+  ]
+}
