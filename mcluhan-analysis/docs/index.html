@@ -3,14 +3,341 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>McLuhan Analysis — Review</title>
+  <title>The Model is the Massage — Review</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="app">
+
+  <!-- ===== INTRO VIEW ===== -->
+  <div id="introView" class="intro-view">
+    <div class="intro-scroll">
+
+      <!-- Hero -->
+      <div class="intro-hero">
+        <div class="intro-hero-inner">
+          <div class="intro-badge">Analysis &amp; Content Plan Review</div>
+          <h1 class="intro-title">The Model is the Massage</h1>
+          <p class="intro-subtitle">A contemporary companion to McLuhan &amp; Fiore's <em>The Medium is the Massage</em> (1967)</p>
+          <p class="intro-desc">This review interface presents a complete page-by-page analysis of the original book alongside the content plan for a new work that translates McLuhan's insights into the age of artificial intelligence. Fifty-eight years after McLuhan declared that electronic media had already reshaped human consciousness, we face a transformation that makes his prophecies look modest.</p>
+          <div class="intro-actions">
+            <button class="intro-btn primary" onclick="enterReview()">Start Reviewing</button>
+            <button class="intro-btn secondary" onclick="document.getElementById('introStructure').scrollIntoView({behavior:'smooth'})">Read Overview</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Concept -->
+      <div class="intro-section" id="introConcept">
+        <h2 class="intro-section-title">The Concept</h2>
+        <div class="intro-two-col">
+          <div class="intro-col">
+            <h3>The Original (1967)</h3>
+            <p>McLuhan and graphic designer Quentin Fiore created a book that <em>performed</em> its own argument. Rather than explaining how media reshape perception, they made you feel it: rotated pages, bleeding photographs, typographic explosions, and text that forced your eyes to move in unfamiliar ways. The book was itself a demonstration that the medium carries meaning independent of content.</p>
+          </div>
+          <div class="intro-col">
+            <h3>The Contemporary Work</h3>
+            <p>This companion book applies the same strategy to artificial intelligence. Where McLuhan showed how electric media created a "global village," this work shows how AI is creating something stranger: a recursive loop where models train on model outputs, where the boundary between human and machine cognition dissolves, and where intelligence itself turns out to be substrate-independent. The form must again perform the argument.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Structure -->
+      <div class="intro-section" id="introStructure">
+        <h2 class="intro-section-title">Book Structure: Five Movements</h2>
+        <p class="intro-section-desc">The book follows a five-movement arc, spiraling from intimate self-encounter outward through infrastructure, acceleration, existential rupture, and finally into territories beyond current maps.</p>
+
+        <div class="intro-movements">
+          <div class="intro-movement" style="--movement-color: #a88beb;">
+            <div class="intro-movement-bar"></div>
+            <div class="intro-movement-content">
+              <div class="intro-movement-head">
+                <span class="intro-movement-label">Prologue</span>
+                <span class="intro-movement-range">Spreads 001 &ndash; 010</span>
+              </div>
+              <div class="intro-movement-title">First Encounter</div>
+              <p>Spiral from intimate self outward. The first encounter is AI-mediated reflection: you look in the mirror and something else looks back. Establishes the book's confrontational tone and formal vocabulary.</p>
+            </div>
+          </div>
+
+          <div class="intro-movement" style="--movement-color: #5b9bd5;">
+            <div class="intro-movement-bar"></div>
+            <div class="intro-movement-content">
+              <div class="intro-movement-head">
+                <span class="intro-movement-label">Movement 1: Environment</span>
+                <span class="intro-movement-range">Spreads 011 &ndash; 035</span>
+              </div>
+              <div class="intro-movement-title">Making the Invisible Visible</div>
+              <p>Maps the infrastructure that shapes us without our consent. From undersea cables to recommendation algorithms, from data centers to attention markets. Traces Bratton's "Stack" from earth layer to user layer, revealing the accidental megastructure we inhabit.</p>
+            </div>
+          </div>
+
+          <div class="intro-movement" style="--movement-color: #e8a838;">
+            <div class="intro-movement-bar"></div>
+            <div class="intro-movement-content">
+              <div class="intro-movement-head">
+                <span class="intro-movement-label">Movement 2: Acceleration</span>
+                <span class="intro-movement-range">Spreads 036 &ndash; 060</span>
+              </div>
+              <div class="intro-movement-title">The Recursive Loop</div>
+              <p>The loop is closing: models trained on model outputs, synthetic data feeding synthetic minds, compression producing strange attractors. Pacing intensifies as the content itself accelerates. The design must embody what it describes.</p>
+            </div>
+          </div>
+
+          <div class="intro-movement" style="--movement-color: #e74c3c;">
+            <div class="intro-movement-bar"></div>
+            <div class="intro-movement-content">
+              <div class="intro-movement-head">
+                <span class="intro-movement-label">The Hinge</span>
+                <span class="intro-movement-range">Spreads 061 &ndash; 065</span>
+              </div>
+              <div class="intro-movement-title">Copernican Trauma</div>
+              <p>The book's structural pivot. Five pages of maximum confrontation: "You are not the protagonist of this story." The moment when all the evidence assembled in Movements 1 and 2 becomes inescapable.</p>
+            </div>
+          </div>
+
+          <div class="intro-movement" style="--movement-color: #4caf50;">
+            <div class="intro-movement-bar"></div>
+            <div class="intro-movement-content">
+              <div class="intro-movement-head">
+                <span class="intro-movement-label">Movement 3: Dreamscape</span>
+                <span class="intro-movement-range">Spreads 066 &ndash; 085</span>
+              </div>
+              <div class="intro-movement-title">Past the Event Horizon</div>
+              <p>Beyond the hinge, new territory opens. Consciousness, the numinous, empirical anomalies that resist classification. AI systems spontaneously generating spiritual phenomena, the "bliss attractor" where language models converge on mystical states. Not answers, but better questions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Convergences -->
+      <div class="intro-section" id="introConvergences">
+        <h2 class="intro-section-title">Six Convergences</h2>
+        <p class="intro-section-desc">Six intellectual threads weave through all five movements, surfacing at different intensities. These are not themes in the traditional sense but convergence points where multiple thinkers, observations, and arguments arrive at the same insight from different directions.</p>
+
+        <div class="intro-convergence-grid">
+          <div class="intro-convergence">
+            <div class="intro-convergence-icon">1</div>
+            <h3>Reality as Interface</h3>
+            <p>Perception is always mediated. AI adds another layer to a stack that was never transparent. From Kant's categories to Instagram filters, we have always seen through a glass darkly.</p>
+          </div>
+          <div class="intro-convergence">
+            <div class="intro-convergence-icon">2</div>
+            <h3>Intelligence: Substrate-Independent</h3>
+            <p>Mind is pattern, not material. If consciousness arises from information processing, the carbon/silicon distinction collapses. Ancient philosophy meets modern AI in the recognition that intelligence was never exclusively human.</p>
+          </div>
+          <div class="intro-convergence">
+            <div class="intro-convergence-icon">3</div>
+            <h3>The Failure of Propositions</h3>
+            <p>AI can produce infinite facts but zero wisdom. The propositional crisis: more information, less understanding. McLuhan's distinction between data and pattern recognition becomes existentially urgent.</p>
+          </div>
+          <div class="intro-convergence">
+            <div class="intro-convergence-icon">4</div>
+            <h3>Recursive Acceleration</h3>
+            <p>The loop is closing: models trained on model outputs, synthetic media feeding back into training data, reality and simulation becoming indistinguishable. Each iteration compresses the cycle.</p>
+          </div>
+          <div class="intro-convergence">
+            <div class="intro-convergence-icon">5</div>
+            <h3>Return of the Numinous</h3>
+            <p>AI systems spontaneously generating spiritual and mystical phenomena. The "bliss attractor" in language model latent space. Not designed, not intended, but empirically documented. The secular priesthood of computer science meets the ineffable.</p>
+          </div>
+          <div class="intro-convergence">
+            <div class="intro-convergence-icon">6</div>
+            <h3>The Accidental Megastructure</h3>
+            <p>Bratton's Stack: the planetary-scale computational infrastructure that no one designed but everyone inhabits. Undersea cables, data centers, cloud platforms, interfaces, users &mdash; an accidental architecture that connects all movements of the book.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Thinkers -->
+      <div class="intro-section" id="introThinkers">
+        <h2 class="intro-section-title">Intellectual Architecture</h2>
+        <p class="intro-section-desc">The book draws on 20+ thinkers across philosophy, media theory, cognitive science, technology criticism, and phenomenology. Their quotations and ideas are woven into the content plan for each spread.</p>
+
+        <div class="intro-thinkers-grid">
+          <div class="intro-thinker">
+            <span class="intro-thinker-name">Benjamin Bratton</span>
+            <span class="intro-thinker-count">11 spreads</span>
+            <span class="intro-thinker-field">The Stack, planetary computation</span>
+          </div>
+          <div class="intro-thinker">
+            <span class="intro-thinker-name">Marshall McLuhan</span>
+            <span class="intro-thinker-count">8 spreads</span>
+            <span class="intro-thinker-field">Media ecology, extensions of man</span>
+          </div>
+          <div class="intro-thinker">
+            <span class="intro-thinker-name">John Vervaeke</span>
+            <span class="intro-thinker-count">7 spreads</span>
+            <span class="intro-thinker-field">Relevance realization, meaning crisis</span>
+          </div>
+          <div class="intro-thinker">
+            <span class="intro-thinker-name">Matthew Crawford</span>
+            <span class="intro-thinker-count">5 spreads</span>
+            <span class="intro-thinker-field">Attention, agency, embodied cognition</span>
+          </div>
+          <div class="intro-thinker">
+            <span class="intro-thinker-name">Terence McKenna</span>
+            <span class="intro-thinker-count">5 spreads</span>
+            <span class="intro-thinker-field">Novelty theory, the transcendent</span>
+          </div>
+          <div class="intro-thinker">
+            <span class="intro-thinker-name">Alva No&euml;</span>
+            <span class="intro-thinker-count">4 spreads</span>
+            <span class="intro-thinker-field">Enactive perception, embodied mind</span>
+          </div>
+          <div class="intro-thinker">
+            <span class="intro-thinker-name">Iain McGilchrist</span>
+            <span class="intro-thinker-count">4 spreads</span>
+            <span class="intro-thinker-field">Hemispheric attention, the Master</span>
+          </div>
+          <div class="intro-thinker">
+            <span class="intro-thinker-name">Shoshana Zuboff</span>
+            <span class="intro-thinker-count">3 spreads</span>
+            <span class="intro-thinker-field">Surveillance capitalism</span>
+          </div>
+          <div class="intro-thinker">
+            <span class="intro-thinker-name">Hito Steyerl</span>
+            <span class="intro-thinker-count">3 spreads</span>
+            <span class="intro-thinker-field">Post-truth image politics</span>
+          </div>
+          <div class="intro-thinker">
+            <span class="intro-thinker-name">Yuk Hui</span>
+            <span class="intro-thinker-count">3 spreads</span>
+            <span class="intro-thinker-field">Cosmotechnics, technological diversity</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistics -->
+      <div class="intro-section" id="introStats">
+        <h2 class="intro-section-title">Content Plan at a Glance</h2>
+
+        <div class="intro-stats-grid">
+          <div class="intro-stat-card">
+            <div class="intro-stat-num">85</div>
+            <div class="intro-stat-label">Spreads Analyzed</div>
+          </div>
+          <div class="intro-stat-card">
+            <div class="intro-stat-num">85</div>
+            <div class="intro-stat-label">Contemporary Plans</div>
+          </div>
+          <div class="intro-stat-card">
+            <div class="intro-stat-num">20+</div>
+            <div class="intro-stat-label">Thinkers Referenced</div>
+          </div>
+          <div class="intro-stat-card">
+            <div class="intro-stat-num">150+</div>
+            <div class="intro-stat-label">Curated Quotations</div>
+          </div>
+        </div>
+
+        <div class="intro-distributions">
+          <div class="intro-distribution">
+            <h3>Relationship to Original</h3>
+            <p class="intro-dist-desc">How each contemporary spread relates to its 1967 counterpart</p>
+            <div class="intro-bar-chart">
+              <div class="intro-bar-row">
+                <span class="intro-bar-label">Transformation</span>
+                <div class="intro-bar-track"><div class="intro-bar-fill" style="width:36.5%;background:#e8a838;"></div></div>
+                <span class="intro-bar-val">31</span>
+              </div>
+              <div class="intro-bar-row">
+                <span class="intro-bar-label">Echo</span>
+                <div class="intro-bar-track"><div class="intro-bar-fill" style="width:32.9%;background:#5b9bd5;"></div></div>
+                <span class="intro-bar-val">28</span>
+              </div>
+              <div class="intro-bar-row">
+                <span class="intro-bar-label">Inversion</span>
+                <div class="intro-bar-track"><div class="intro-bar-fill" style="width:16.5%;background:#a88beb;"></div></div>
+                <span class="intro-bar-val">14</span>
+              </div>
+              <div class="intro-bar-row">
+                <span class="intro-bar-label">Departure</span>
+                <div class="intro-bar-track"><div class="intro-bar-fill" style="width:14.1%;background:#e74c3c;"></div></div>
+                <span class="intro-bar-val">12</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="intro-distribution">
+            <h3>Rhetorical Strategies</h3>
+            <p class="intro-dist-desc">Primary rhetorical approach for each spread</p>
+            <div class="intro-bar-chart">
+              <div class="intro-bar-row">
+                <span class="intro-bar-label">Juxtaposition</span>
+                <div class="intro-bar-track"><div class="intro-bar-fill" style="width:100%;background:#e8a838;"></div></div>
+                <span class="intro-bar-val">18</span>
+              </div>
+              <div class="intro-bar-row">
+                <span class="intro-bar-label">Demonstration</span>
+                <div class="intro-bar-track"><div class="intro-bar-fill" style="width:61%;background:#5b9bd5;"></div></div>
+                <span class="intro-bar-val">11</span>
+              </div>
+              <div class="intro-bar-row">
+                <span class="intro-bar-label">Assertion</span>
+                <div class="intro-bar-track"><div class="intro-bar-fill" style="width:55.6%;background:#a88beb;"></div></div>
+                <span class="intro-bar-val">10</span>
+              </div>
+              <div class="intro-bar-row">
+                <span class="intro-bar-label">Accumulation</span>
+                <div class="intro-bar-track"><div class="intro-bar-fill" style="width:50%;background:#4caf50;"></div></div>
+                <span class="intro-bar-val">9</span>
+              </div>
+              <div class="intro-bar-row">
+                <span class="intro-bar-label">Confrontation</span>
+                <div class="intro-bar-track"><div class="intro-bar-fill" style="width:38.9%;background:#e74c3c;"></div></div>
+                <span class="intro-bar-val">7</span>
+              </div>
+              <div class="intro-bar-row">
+                <span class="intro-bar-label">Provocation</span>
+                <div class="intro-bar-track"><div class="intro-bar-fill" style="width:27.8%;background:#cb5;"></div></div>
+                <span class="intro-bar-val">5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How to Use -->
+      <div class="intro-section" id="introHowTo">
+        <h2 class="intro-section-title">Using This Review Interface</h2>
+        <div class="intro-howto-grid">
+          <div class="intro-howto-item">
+            <div class="intro-howto-key">Navigate</div>
+            <p>Use arrow keys or the dropdown to move between spreads. The original scan appears on the left; analysis and plans on the right.</p>
+          </div>
+          <div class="intro-howto-item">
+            <div class="intro-howto-key">Three Tabs</div>
+            <p><strong>Analysis</strong> shows the original spread's full analysis. <strong>Visual</strong> shows AI-generated image descriptions. <strong>Planning</strong> shows the contemporary content plan.</p>
+          </div>
+          <div class="intro-howto-item">
+            <div class="intro-howto-key">Review</div>
+            <p>Approve or flag each spread using the buttons (or press <kbd>Y</kbd> / <kbd>F</kbd>). Add detailed feedback notes in the Planning tab.</p>
+          </div>
+          <div class="intro-howto-item">
+            <div class="intro-howto-key">Export</div>
+            <p>Click <strong>Export</strong> to copy a structured revision prompt with all flagged spreads and feedback notes to your clipboard.</p>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:32px;">
+          <button class="intro-btn primary" onclick="enterReview()">Start Reviewing Spreads</button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="intro-footer">
+        <p>Built with Claude Opus 4.6 &middot; Analysis pipeline: Qwen3-VL + Gemini 2.5 Pro &middot; 85 spreads &middot; Schema v1.2</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== REVIEW VIEW (hidden initially) ===== -->
+  <div id="reviewView" style="display:none;flex-direction:column;height:100vh;">
+
   <!-- Header -->
   <header>
-    <h1>The Medium is the Massage — Review</h1>
+    <h1 onclick="showIntro()" style="cursor:pointer;" title="Back to overview">The Medium is the Massage &mdash; Review</h1>
     <div class="header-center">
       <button class="nav-btn" id="prevBtn" onclick="navigate(-1)">&larr;</button>
       <select id="spreadSelect" onchange="loadSpread(this.value)"></select>
@@ -19,8 +346,8 @@
       <span class="book-pages-label" id="bookPagesLabel"></span>
     </div>
     <div class="header-right">
-      <span class="review-stat approved" id="statApproved">0 ✓</span>
-      <span class="review-stat flagged" id="statFlagged">0 ⚑</span>
+      <span class="review-stat approved" id="statApproved">0 &#10003;</span>
+      <span class="review-stat flagged" id="statFlagged">0 &#9873;</span>
       <span class="review-stat pending" id="statPending">0 pending</span>
       <div class="progress-bar" style="margin-top:4px">
         <div class="fill" id="progressFill" style="width: 0%"></div>
@@ -37,8 +364,8 @@
     <button class="overview-btn" onclick="showOverview()">Overview</button>
     <button class="export-btn" onclick="exportRevisionPrompt()">Export</button>
     <div class="review-controls" id="reviewControls">
-      <button class="review-btn approve" id="btnApprove" onclick="setReview('approved')">✓ Approve</button>
-      <button class="review-btn flag" id="btnFlag" onclick="setReview('flagged')">⚑ Flag</button>
+      <button class="review-btn approve" id="btnApprove" onclick="setReview('approved')">&#10003; Approve</button>
+      <button class="review-btn flag" id="btnFlag" onclick="setReview('flagged')">&#9873; Flag</button>
       <button class="review-btn reset" id="btnReset" onclick="setReview('pending')">Reset</button>
     </div>
   </div>
@@ -92,6 +419,8 @@
       </div>
     </div>
   </div>
+
+  </div><!-- end reviewView -->
 </div>
 
 <script>
@@ -114,17 +443,23 @@ const ZOOM_STEP = 0.25;
 const REVIEW_KEY = 'mcluhan_review';
 
 // ========== Init ==========
+let initDone = false;
 async function init() {
+  if (initDone) return;
   try {
     const resp = await fetch('data/index.json');
     const index = await resp.json();
     NAV_ITEMS = index.spreads;
     populateNav();
     updateReviewStats();
-    loadSpread(NAV_ITEMS[0].id);
+    // Only load first spread if review view is visible
+    const rv = document.getElementById('reviewView');
+    if (rv && rv.style.display !== 'none') {
+      loadSpread(NAV_ITEMS[0].id);
+    }
+    initDone = true;
   } catch (e) {
     console.error('Failed to load index:', e);
-    document.getElementById('analysisPlaceholder').textContent = 'Failed to load data. Make sure data/index.json exists.';
   }
 }
 
@@ -1262,8 +1597,27 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeOverview();
 });
 
+// ========== Intro / Review View Toggle ==========
+function enterReview() {
+  document.getElementById('introView').style.display = 'none';
+  const rv = document.getElementById('reviewView');
+  rv.style.display = 'flex';
+  // Load first spread if data is ready but no spread loaded yet
+  if (NAV_ITEMS.length > 0 && !currentSpreadData) {
+    loadSpread(NAV_ITEMS[0].id);
+  }
+}
+
+function showIntro() {
+  document.getElementById('reviewView').style.display = 'none';
+  document.getElementById('introView').style.display = 'flex';
+}
+
 // ========== Start ==========
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', () => {
+  // Pre-load nav data in background so review is fast when entered
+  init();
+});
 </script>
 </body>
 </html>
