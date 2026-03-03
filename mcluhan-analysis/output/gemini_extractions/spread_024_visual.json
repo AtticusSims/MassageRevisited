@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_024",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:12:14.541698",
+  "generation_time_s": 20.9,
+  "images": [
+    {
+      "position": "top_half",
+      "subject": "A high-contrast, possibly solarized or negative black and white photograph of a person's torso and arms. The figure, likely male, is positioned horizontally as if swimming or flying, with both arms extended forward. The hands are splayed in a way that makes them resemble the webbed feet of a frog or amphibian. The head is turned in profile, looking away from the viewer.",
+      "source_type": "art_photograph",
+      "composition": "The figure is isolated against a stark white background. The photographic technique creates extreme contrast, reducing the body to a graphic shape of black and white tones. A thin vertical line bisects the image near the center, possibly an artifact of a montage or printing process.",
+      "scale": "half_page",
+      "estimated_date": "mid-20th century",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "far_social",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single, vertically oriented page. A single photograph is placed in the top third of the page, with a line of text directly above it. The bottom two-thirds of the page are left as empty white space, creating a very top-heavy and minimalist composition.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "A single line of sans-serif text, medium weight, lowercase, positioned above the image.",
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "The page is overwhelmingly white, creating a light and open tone. The photograph itself is very high-contrast black and white, providing a stark graphic focal point."
+    },
+    "white_space": "abundant",
+    "visual_density": "sparse",
+    "left_right_relationship": "not_applicable",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "The reader encounters a stark, minimalist page dominated by white space. A surreal, high-contrast photograph of a human figure with amphibian-like hands floats at the top, captioned by the phrase 'clothing, an extension of the skin...'. The effect is quiet and contemplative, forcing the reader to meditate on the strange image and the provocative redefinition of a common object."
+}

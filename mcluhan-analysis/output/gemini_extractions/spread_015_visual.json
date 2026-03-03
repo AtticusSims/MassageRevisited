@@ -1,0 +1,57 @@
+{
+  "spread_id": "spread_015",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:08:15.490518",
+  "generation_time_s": 28.7,
+  "images": [
+    {
+      "position": "inset_left",
+      "subject": "A small, high-contrast photograph of an electronic circuit board, showing intricate pathways and components.",
+      "source_type": "technical_diagram",
+      "composition": "A dense, detailed, top-down view of the circuit board, rendered in stark black and white. The complexity of the pattern verges on abstraction.",
+      "scale": "icon",
+      "estimated_date": "circa 1960s",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    },
+    {
+      "position": "right_page",
+      "subject": "A repeating grid pattern of a human nose seen in profile. The same close-up image of a nose is duplicated multiple times, filling the entire page.",
+      "source_type": "art_photograph",
+      "composition": "A full-bleed, high-contrast, grainy image creating a dense, textured pattern. All noses are identical and face to the right, suggesting uniformity and mechanical reproduction.",
+      "scale": "full_bleed",
+      "estimated_date": "circa 1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "intimate",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A strongly asymmetrical layout. The left page is dominated by white space, featuring a large headline at the top, a single column of text, and a small inset image. The right page is a dense, full-bleed photographic pattern, creating a stark visual contrast between the textual/informational left and the metaphorical/textural right.",
+    "typography": {
+      "body_font_style": "Serif, medium weight, regular size, set in a single column with a ragged right margin.",
+      "display_font_style": "Large, bold, lowercase sans-serif font for the headline 'your job'.",
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread is entirely in high-contrast black and white. The left page is predominantly light, while the right page is a dense, dark pattern."
+    },
+    "white_space": "moderate",
+    "visual_density": "moderate",
+    "left_right_relationship": "Juxtaposition. The left page presents a textual argument about the obsolescence of specialized jobs due to automation ('electric circuitry'). The right page provides a visual metaphor for this specialization and its dehumanizing, repetitive nature through the grid of identical noses, evoking the phrase 'keeping one's nose to the grindstone.'",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "The reader is presented with a starkly divided spread. On the left, the headline 'your job' introduces a textual argument about automation replacing specialized human labor, illustrated by a small circuit board. On the right, a full-bleed, repeating pattern of identical human noses in profile creates a powerful visual metaphor for mechanical, de-individualized work, evoking a feeling of unease and conformity."
+}

@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_054",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:28:02.033259",
+  "generation_time_s": 33.1,
+  "images": [
+    {
+      "position": "spanning_gutter",
+      "subject": "An extreme close-up black and white photograph of a man and a woman kissing. The man is on the left page, the woman on the right. Their lips are touching at the center, across the gutter. Both have their eyes closed. The shot is tightly framed on their faces in profile.",
+      "source_type": "art_photograph",
+      "composition": "The image is a tight, profile close-up, creating an intimate and voyeuristic feel. The composition is bisected by the book's gutter, which separates the two faces at their point of contact. The lighting is soft, with moderate contrast, modeling the features of the faces against a light, neutral background.",
+      "scale": "dominant",
+      "estimated_date": "circa 1950s-1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "intimate",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A single, large photograph dominates the spread, spanning both pages. It is centered vertically with white margins at the top and bottom. The book's physical gutter cuts directly through the center of the image where the couple's lips meet, separating the man on the left page from the woman on the right. There is no text of any kind on the spread.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": null,
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "moderate",
+      "dominant_tone": "balanced",
+      "description": "The photograph uses a full grayscale range, with soft lighting creating gentle shadows and highlights on the subjects' faces."
+    },
+    "white_space": "moderate",
+    "visual_density": "sparse",
+    "left_right_relationship": "The two pages form a single, unified composition that is simultaneously connected and divided. The man on the left and the woman on the right are joined by the kiss but separated by the physical gutter, creating a powerful visual tension between union and division.",
+    "information_value": {
+      "left_right": "balanced",
+      "top_bottom": "balanced",
+      "center_margin": "centered"
+    },
+    "compositional_framing": "mixed"
+  },
+  "spread_description": "The reader is confronted with a silent, full-spread, and intensely intimate close-up of a kiss. The lack of any text focuses all attention on the purely visual and emotional act. The book's physical gutter dramatically bisects the image, splitting the two faces at the very moment of their union, creating a visual tension between connection and separation."
+}

@@ -1,0 +1,146 @@
+{
+  "spread_id": "spread_063",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:33:17.920751",
+  "generation_time_s": 37.0,
+  "_array_response": [
+    {
+      "id": "spread_063",
+      "pdf_page": 63,
+      "book_pages": [
+        116,
+        117
+      ],
+      "section": "body",
+      "analyst": "vlm_assisted",
+      "analysis_method": "llm_primary_human_reviewed",
+      "spread_type": "text_with_specific_image",
+      "orientation": "landscape_spread",
+      "text": {
+        "body_text": "Most people find it difficult to understand purely verbal concepts. They suspect the ear; they don't trust it. In general we feel more secure when things are visible, when we can \"see for ourselves.\" We admonish children, for instance, to \"believe only half of what they see, and nothing of what they hear.\" All kinds of \"shorthand\" systems of notation have been developed to help us see what we hear.\n\nWe employ visual and spatial metaphors for a great many everyday expressions. We insist on employing visual metaphors even when we refer to purely psychological states, such as tendency and duration. For instance, we say thereafter when we really mean thenafter, always when we mean at all times. We are so visually biased that we call our wisest men visionaries, or seers!\n\nReminders—(relics of the past)—in a world of the PRINTED word-efforts to introduce an AUDITORY dimension onto the visual organization of the PAGE: all effect information, RHYTHM, inflection, pauses. Until recent years, these EFFECTS were quite elaborate—they allowed for all sorts of CHANGES of type faces. The NEWSPAPER layout provides more variety of AUDITORY effects from typography than the ordinary book page does.",
+        "display_text": "• ; : ? ! ‘ ’ — “ ”",
+        "captions": [
+          "117"
+        ],
+        "page_numbers_visible": [
+          117
+        ]
+      },
+      "quotations": [],
+      "images": [
+        {
+          "position": "left_page",
+          "subject": "A close-up, angled photograph of a spiral-bound notepad. The page is filled with handwritten shorthand script, a system for transcribing speech, which appears as a dense pattern of abstract curves and lines.",
+          "source_type": "art_photograph",
+          "source_credit": "Peter Moore",
+          "estimated_date": "c. 1960s",
+          "composition": "High-contrast black and white photograph. The notepad is set against a pure black background and shot from an oblique angle, creating strong diagonal lines. The focus is sharp on the texture of the paper and the ink of the script.",
+          "scale": "full_bleed",
+          "relationship_to_text": {
+            "primary_relation": "illustrates",
+            "barthes_mode": "anchorage",
+            "description": "The image provides a direct, concrete example of the '\"shorthand\" systems of notation' mentioned in the first paragraph of the text, which were 'developed to help us see what we hear.' It visually grounds the abstract argument about the bias towards sight over sound."
+          },
+          "interactive_meaning": {
+            "contact": "not_applicable",
+            "social_distance": "not_applicable",
+            "attitude_angle": "not_applicable"
+          }
+        },
+        {
+          "position": "inset_right",
+          "subject": "A series of punctuation marks, enlarged and arranged in a horizontal line: a bullet point, comma, semicolon, colon, question mark, exclamation mark, opening and closing single quotes, an em dash, and opening and closing double quotes.",
+          "source_type": "graphic_symbol",
+          "source_credit": null,
+          "estimated_date": null,
+          "composition": "A linear arrangement of typographic symbols, rendered in bold, solid black against the white page. They are scaled up significantly from their normal size, functioning as a graphic element rather than as part of a sentence.",
+          "scale": "small_inset",
+          "relationship_to_text": {
+            "primary_relation": "literalizes",
+            "barthes_mode": "relay",
+            "description": "This graphic directly literalizes the 'Reminders—(relics of the past)' discussed in the text directly below it. These punctuation marks are the specific examples of typography's 'efforts to introduce an AUDITORY dimension' (inflection, pauses) onto the silent, visual page."
+          },
+          "interactive_meaning": {
+            "contact": "not_applicable",
+            "social_distance": "not_applicable",
+            "attitude_angle": "not_applicable"
+          }
+        }
+      ],
+      "design": {
+        "layout_description": "The spread is starkly divided. The left page is a full-bleed, dark photographic image of shorthand script. The right page is set on a clean white background, containing three blocks of text separated by a graphic line of oversized punctuation marks.",
+        "typography": {
+          "body_font_style": "Serif, likely Times New Roman or a similar book face. Justified alignment in a single column.",
+          "display_font_style": "The punctuation marks are presented as large, bold, serif display graphics.",
+          "special_treatments": [
+            "Underlining for emphasis on multiple words in the first two paragraphs ('suspect', 'visible', 'see', 'hear', etc.).",
+            "Use of all caps for emphasis on key terms in the final paragraph ('PRINTED', 'AUDITORY', 'PAGE', etc.)."
+          ]
+        },
+        "color_and_tone": {
+          "contrast": "high",
+          "dominant_tone": "balanced",
+          "description": "The spread creates a powerful dichotomy between the full-bleed black of the left page and the stark white of the right page, resulting in maximum contrast."
+        },
+        "white_space": "moderate",
+        "visual_density": "moderate",
+        "left_right_relationship": "Juxtaposition and explanation. The left page presents a visual artifact (shorthand) as a kind of puzzle or exhibit. The right page provides the key, analyzing the cultural bias toward the visual and how print attempts to compensate for its lack of sound.",
+        "information_value": {
+          "left_right": "given_new",
+          "top_bottom": "ideal_real",
+          "center_margin": "distributed"
+        },
+        "compositional_framing": "strongly_framed"
+      },
+      "rhetoric": {
+        "argument": "Print-based, literate culture is profoundly biased toward the visual sense, distrusting the auditory. Typography, through elements like punctuation and layout, represents a historical effort to re-inject auditory qualities like rhythm, inflection, and pauses back into the silent, visual medium of the page.",
+        "rhetorical_strategy": {
+          "primary": "demonstration",
+          "secondary": [
+            "juxtaposition",
+            "assertion"
+          ]
+        },
+        "strategy_description": "The spread demonstrates its argument visually. It shows a system for making sound visible (shorthand) and then shows the tools print uses to mimic sound (punctuation). The juxtaposition of the full-bleed image and the analytical text forces the reader to toggle between seeing and reading, enacting the very sense-ratio conflict being described.",
+        "design_enacts_argument": true,
+        "design_argument_description": "The design enacts the argument by separating the visual 'evidence' (the shorthand photo) from the textual 'analysis'. The reader first sees the shorthand as a purely visual, silent pattern (an 'offer' in Kress & van Leeuwen's terms), then reads the text which explains its auditory origin. This forces the reader to experience the translation from sound to sight that is the core of the argument.",
+        "reader_experience": "Intellectual and analytical. The reader is positioned as a media analyst, first presented with visual data (the image) and then guided through an interpretation of it. The experience is one of dawning recognition as the text decodes the image's significance.",
+        "mcluhan_concepts": [
+          "visual_space",
+          "acoustic_space",
+          "print_culture",
+          "sense_ratios"
+        ],
+        "multi_spread_patterns": null,
+        "confidence": "high"
+      },
+      "themes": {
+        "original_themes": [
+          "visual_space",
+          "acoustic_space",
+          "print_culture",
+          "typography",
+          "perception",
+          "sense_ratios"
+        ],
+        "contemporary_domain_candidates": [
+          "post_literacy_and_language",
+          "attention_and_cognition"
+        ],
+        "movement_mapping": [
+          "movement_1_environment"
+        ],
+        "mapping_rationale": "The argument about print's visual bias and its attempts to incorporate auditory cues maps directly to contemporary discussions about digital media. The shift from text-based interfaces to voice interfaces (Siri, Alexa), the use of emojis to convey tone, and the rise of audio-first media like podcasts and Clubhouse all represent a modern re-balancing of the sense ratios away from the purely visual, echoing McLuhan's analysis of typography.",
+        "confidence": "high"
+      },
+      "progression": {
+        "pace_shift": "steady",
+        "thematic_function": "develops_theme",
+        "relationship_to_previous": "Continues the exploration of how different media engage and prioritize different human senses, a core theme of the book's middle section.",
+        "relationship_to_next": "This detailed analysis of the visual nature of print sets up a contrast with the more acoustic, all-at-once nature of electronic media, which is explored in subsequent spreads.",
+        "confidence": "high"
+      },
+      "notes": "The use of both underlining and all-caps for emphasis on the right page is itself a demonstration of the argument. Fiore and McLuhan are using the very 'AUDITORY effects' of typography that they are describing, making the text perform its own subject matter."
+    }
+  ]
+}

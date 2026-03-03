@@ -1,0 +1,102 @@
+{
+  "spread_id": "spread_047",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:25:06.161047",
+  "generation_time_s": 39.7,
+  "_array_response": [
+    {
+      "id": "spread_047",
+      "pdf_page": 47,
+      "book_pages": [
+        84,
+        85
+      ],
+      "section": "body",
+      "analyst": "multi",
+      "analysis_method": "vlm_assisted",
+      "spread_type": "typography_as_design",
+      "orientation": "landscape_spread",
+      "text": {
+        "body_text": "Environments are invisible. Their groundrules, pervasive structure, and overall patterns elude easy perception.",
+        "display_text": "Environments are invisible. Their groundrules, pervasive structure, and overall patterns elude easy perception.",
+        "captions": [],
+        "page_numbers_visible": []
+      },
+      "quotations": [],
+      "images": [],
+      "design": {
+        "layout_description": "The spread is almost entirely empty white space. A single, small line of serif text is placed at the very top edge of the spread, spanning the gutter. The overwhelming emptiness is the dominant design feature, forcing the reader's attention onto the act of perception itself.",
+        "typography": {
+          "body_font_style": "Small serif font, regular weight, single line.",
+          "display_font_style": null,
+          "special_treatments": [
+            "Extreme marginalization of text",
+            "Use of vast white space as primary design element"
+          ]
+        },
+        "color_and_tone": {
+          "contrast": "high",
+          "dominant_tone": "light",
+          "description": "The spread is composed of a tiny amount of black text on an overwhelmingly white background. The contrast is technically high, but the overall impression is one of lightness and emptiness."
+        },
+        "white_space": "abundant",
+        "visual_density": "sparse",
+        "left_right_relationship": "Unified. The single line of text runs across the gutter, treating the two pages as a single, continuous canvas. The vast white space also unifies the spread into one field.",
+        "information_value": {
+          "left_right": "balanced",
+          "top_bottom": "ideal_real",
+          "center_margin": "marginal"
+        },
+        "compositional_framing": "strongly_framed"
+      },
+      "rhetoric": {
+        "argument": "The environments created by media are total and pervasive, yet they are fundamentally invisible to those living within them. We fail to perceive the underlying structures and patterns that shape our reality and perception.",
+        "rhetorical_strategy": {
+          "primary": "demonstration",
+          "secondary": [
+            "quieting",
+            "assertion"
+          ]
+        },
+        "strategy_description": "The design directly demonstrates the argument. The vast white space represents the 'invisible environment,' and the tiny, marginalized text is the 'groundrule' that almost eludes perception. The reader experiences the concept of an invisible environment by looking at a page that is almost entirely 'nothing.'",
+        "design_enacts_argument": true,
+        "design_argument_description": "The spread performs its own argument. By rendering the page almost entirely blank, it forces the reader to confront a vast, empty 'environment.' The text, which states that environments are invisible, is itself tiny and pushed to the margin, almost eluding perception. The reader doesn't just read about the invisible environment; they experience it visually as the content of the spread.",
+        "reader_experience": "Contemplation, quiet, and a heightened awareness of the page itself. The reader's eye searches for content in a void, forcing them to consider the 'nothing' as the message. It is a moment of visual and conceptual silence that makes the argument palpable.",
+        "mcluhan_concepts": [
+          "environment_as_invisible",
+          "figure_ground",
+          "pattern_recognition"
+        ],
+        "multi_spread_patterns": "This spread is a key example of the book's rhythmic use of 'quieting.' It often appears after a series of visually dense or 'loud' spreads, providing a dramatic pause that forces the reader to shift from sensory processing to abstract contemplation.",
+        "confidence": "high"
+      },
+      "themes": {
+        "original_themes": [
+          "environment",
+          "invisibility",
+          "perception",
+          "figure_ground",
+          "pattern_recognition"
+        ],
+        "contemporary_domain_candidates": [
+          "ambient_intelligence",
+          "attention_and_cognition",
+          "algorithmic_identity"
+        ],
+        "movement_mapping": [
+          "movement_1_environment"
+        ],
+        "mapping_rationale": "McLuhan's concept of the invisible media environment is the direct ancestor of contemporary discussions about ambient computing, algorithmic infrastructures, and platform urbanism (Bratton's 'Stack'). Just as the electric environment was the invisible ground then, our software-sorted reality is the invisible ground now. The argument that its 'groundrules elude easy perception' maps perfectly to the opacity of the algorithms that shape our experience and identity.",
+        "confidence": "high"
+      },
+      "progression": {
+        "pace_shift": "rupture",
+        "thematic_function": "develops_theme",
+        "relationship_to_previous": "This spread provides a stark, quiet contrast to the preceding visually dense spread (spread_046, featuring a full-bleed photo of a crowd). It shifts the book's mode from observing the effects of media on people to contemplating the nature of the media environment itself.",
+        "relationship_to_next": "This spread acts as a conceptual key for the following pages. It primes the reader to start looking for the 'invisible' patterns and structures in the media and technologies that will be discussed, such as the telephone.",
+        "confidence": "high"
+      },
+      "notes": "This is one of the most famous and effective spreads in the book, serving as a perfect fusion of form and content. Its radical emptiness is a powerful rhetorical act."
+    }
+  ]
+}

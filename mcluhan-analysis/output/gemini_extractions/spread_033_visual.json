@@ -1,0 +1,47 @@
+{
+  "spread_id": "spread_033",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:17:24.603658",
+  "generation_time_s": 25.6,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "An abstracted, extreme close-up photograph of a human eye. The image is high-contrast black and white, showing the curved forms of the iris and a bright reflection on the cornea against the dark pupil. The overall effect is a fluid, organic, and somewhat disorienting pattern.",
+      "source_type": "art_photograph",
+      "composition": "Extreme close-up that renders the subject abstract. The image is characterized by soft focus, high contrast, and large, curving forms that span the entire spread. The lighting creates a bright, blown-out highlight against deep blacks, giving the image a liquid quality.",
+      "scale": "full_bleed",
+      "estimated_date": "circa 1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "intimate",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The entire spread is rotated 90 degrees counter-clockwise, forcing the reader to turn the book to view it. A single, full-bleed abstract photograph covers both pages. A block of text, also rotated, is overlaid on the lower portion of the image (the right side when oriented for reading), spanning the gutter.",
+    "typography": {
+      "body_font_style": "Serif, medium weight, justified in a single wide column.",
+      "display_font_style": null,
+      "special_treatments": [
+        "rotated text",
+        "text overlaid on image"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "dark",
+      "description": "The spread is dominated by the deep blacks and grays of the photograph, punctuated by a stark white highlight. The white text is reversed out of the dark image background."
+    },
+    "white_space": "none",
+    "visual_density": "moderate",
+    "left_right_relationship": "Unified. The spread is designed as a single, continuous canvas, with both the image and the text block flowing seamlessly across the gutter.",
+    "information_value": {
+      "left_right": "not_applicable",
+      "top_bottom": "not_applicable",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "This spread forces the reader to physically rotate the book to engage with it. A full-bleed, high-contrast, abstract photograph of a human eye serves as the background for a rotated block of text. The text discusses the shift from the linear 'visual space' of Western culture to the multi-dimensional 'acoustic space' of primitive and electric cultures, making the reader's physical re-orientation an enactment of the argument."
+}

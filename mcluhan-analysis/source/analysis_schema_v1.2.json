@@ -1,0 +1,596 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Medium is the Massage — Analysis Database (v1.2)",
+  "description": "Structured analysis of each spread in the original book. Each entry represents one PDF page, which typically contains a two-page spread (left + right book pages). Front matter and back matter may be single pages. v1.2 adds theoretically grounded controlled vocabularies (Kress & van Leeuwen, Barthes, Drucker), structured image-text relation fields, confidence indicators, and per-entry analyst metadata.",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "description": "Information about the source material and analysis run.",
+      "properties": {
+        "source_pdf": { "type": "string" },
+        "total_pdf_pages": { "type": "integer" },
+        "total_book_pages": { "type": "integer", "description": "The original's page count (160)." },
+        "analysis_date": { "type": "string", "format": "date" },
+        "analysis_model": { "type": "string", "description": "Model used for vision/analysis." },
+        "schema_version": { "type": "string" },
+        "schema_theoretical_basis": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Theoretical frameworks operationalized by this schema.",
+          "default": [
+            "Kress & van Leeuwen 2006 (visual grammar)",
+            "Barthes 1977; Martinec & Salway 2005 (image-text relations)",
+            "Drucker 2014 (performative design)",
+            "Bateman 2008; Hiippala 2015 (GeM framework)"
+          ]
+        }
+      }
+    },
+    "spreads": {
+      "type": "array",
+      "description": "One entry per PDF page, in order.",
+      "items": {
+        "type": "object",
+        "properties": {
+
+          "id": {
+            "type": "string",
+            "description": "Unique identifier. Format: 'spread_NNN' using zero-padded PDF page number.",
+            "examples": ["spread_001", "spread_041"]
+          },
+          "pdf_page": {
+            "type": "integer",
+            "description": "1-indexed PDF page number."
+          },
+          "book_pages": {
+            "type": "array",
+            "items": { "type": "integer" },
+            "description": "The original book page number(s) this PDF page covers. A spread contains two book pages (e.g., [62, 63]). Front/back matter may be a single page ([1]) or unnumbered ([])."
+          },
+          "section": {
+            "type": "string",
+            "enum": ["front_matter", "body", "back_matter"],
+            "description": "Position in the book's structure."
+          },
+
+          "analyst": {
+            "type": "string",
+            "description": "Identifier for the analyst (human name, model ID, or 'multi' for collaborative)."
+          },
+          "analysis_method": {
+            "type": "string",
+            "enum": ["human_only", "vlm_assisted", "llm_primary_human_reviewed", "multi_model"],
+            "description": "The human-AI collaboration mode used for this entry."
+          },
+
+          "spread_type": {
+            "type": "string",
+            "description": "The dominant compositional mode of this spread. Classification rules: 'image_dominant' = image occupies >=70% of spread area AND text is subordinate (captions, small overlaid text only). 'text_with_specific_image' = substantial text paragraph + image that makes a specific claim related to the text content. 'text_with_mood_image' = substantial text + image that establishes tone without specific referential content. 'typography_as_design' = text IS the visual content (no separate images; typographic form carries the argument). 'collage' = 3+ distinct visual elements from different sources combined on a single spread. 'symbol_or_graphic' = abstract or symbolic visual element dominates (no photographic content). 'quote_only' = attributed quotation with no body text by the authors. 'press_photo_with_title' = press photograph paired with a title or headline element. 'text_only' = body text with no images or display typography. 'rotated_page' = page requires physical rotation to read. 'credits_or_colophon' = credits, copyright, or colophon page. 'title_page' = title page of the book. 'other' = does not fit any of the above categories.",
+            "enum": [
+              "typography_as_design",
+              "image_dominant",
+              "text_with_mood_image",
+              "text_with_specific_image",
+              "collage",
+              "press_photo_with_title",
+              "symbol_or_graphic",
+              "quote_only",
+              "text_only",
+              "rotated_page",
+              "credits_or_colophon",
+              "title_page",
+              "other"
+            ]
+          },
+
+          "orientation": {
+            "type": "string",
+            "enum": ["landscape_spread", "portrait_single", "rotated"],
+            "description": "Physical orientation. Most body pages are landscape spreads. Some pages require the reader to rotate the book."
+          },
+
+          "text": {
+            "type": "object",
+            "description": "All text content on this spread.",
+            "properties": {
+              "body_text": {
+                "type": "string",
+                "description": "McLuhan's/Fiore's own prose. Transcribed verbatim. Empty string if no body text."
+              },
+              "display_text": {
+                "type": "string",
+                "description": "Text used as a typographic design element (e.g., giant 'and how!', section titles like 'EDUCATION'). May overlap with body_text if a phrase serves both functions."
+              },
+              "captions": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Image captions, photo credits visible on the page, or other small contextual text."
+              },
+              "page_numbers_visible": {
+                "type": "array",
+                "items": { "type": "integer" },
+                "description": "Page numbers actually printed on this spread, if visible."
+              }
+            }
+          },
+
+          "quotations": {
+            "type": "array",
+            "description": "Every quotation from a named author on this spread.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "The quoted text, verbatim."
+                },
+                "author": {
+                  "type": "string",
+                  "description": "Name as attributed on the page."
+                },
+                "author_context": {
+                  "type": "string",
+                  "description": "Brief identification: who this person is/was and why they're relevant here."
+                },
+                "source_work": {
+                  "type": ["string", "null"],
+                  "description": "If identifiable, the work the quote is drawn from."
+                },
+                "relationship_to_argument": {
+                  "type": "string",
+                  "description": "How the quote functions on this spread: does it set up the argument, provide authority, offer counterpoint, serve as epigraph, etc.?"
+                },
+                "visual_treatment": {
+                  "type": "string",
+                  "description": "How the quote is typographically presented: small italic, large display, overlaid on image, etc."
+                }
+              }
+            }
+          },
+
+          "images": {
+            "type": "array",
+            "description": "Every distinct image on this spread. Includes photographs, illustrations, graphic symbols, and reproductions. Does NOT include typography-as-design (that goes in text.display_text).",
+            "items": {
+              "type": "object",
+              "properties": {
+                "position": {
+                  "type": "string",
+                  "description": "Where on the spread: 'left_page', 'right_page', 'full_bleed', 'spanning_gutter', 'inset_left', 'inset_right', etc."
+                },
+                "subject": {
+                  "type": "string",
+                  "description": "What the image depicts. Be specific: identifiable people, events, objects, scenes."
+                },
+                "source_type": {
+                  "type": "string",
+                  "enum": [
+                    "press_photo",
+                    "art_photograph",
+                    "fine_art_reproduction",
+                    "editorial_cartoon",
+                    "illustration",
+                    "advertisement",
+                    "technical_diagram",
+                    "graphic_symbol",
+                    "historical_document",
+                    "film_still",
+                    "unknown"
+                  ]
+                },
+                "source_credit": {
+                  "type": ["string", "null"],
+                  "description": "Photographer/source as listed in the credits page (p.84 of PDF). Cross-reference with page number."
+                },
+                "estimated_date": {
+                  "type": ["string", "null"],
+                  "description": "Approximate date or era of the image, if determinable."
+                },
+                "composition": {
+                  "type": "string",
+                  "description": "Brief description of composition: framing, angle, contrast, key visual qualities."
+                },
+                "scale": {
+                  "type": "string",
+                  "enum": ["full_bleed", "dominant", "half_page", "quarter_page", "small_inset", "icon"],
+                  "description": "How much of the page area the image occupies."
+                },
+                "relationship_to_text": {
+                  "type": "object",
+                  "description": "How this image relates to the text on the spread, classified using Barthes' image-text relations and Martinec & Salway's extensions.",
+                  "properties": {
+                    "primary_relation": {
+                      "type": "string",
+                      "enum": [
+                        "illustrates",
+                        "amplifies",
+                        "literalizes",
+                        "contradicts",
+                        "ironizes",
+                        "provides_atmosphere",
+                        "serves_as_metaphor",
+                        "extends",
+                        "independent",
+                        "decorative"
+                      ],
+                      "description": "The dominant relationship between this image and the spread's text."
+                    },
+                    "barthes_mode": {
+                      "type": "string",
+                      "enum": ["anchorage", "relay", "neither"],
+                      "description": "Barthes' classification: does the text fix the image's meaning (anchorage), or do text and image contribute complementary information (relay)?"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Prose elaboration of the relationship. Required when primary_relation is 'contradicts', 'ironizes', 'literalizes', or 'serves_as_metaphor'."
+                    }
+                  }
+                },
+                "interactive_meaning": {
+                  "type": "object",
+                  "description": "Kress & van Leeuwen's interactive metafunction: the relationship between depicted participant and viewer.",
+                  "properties": {
+                    "contact": {
+                      "type": "string",
+                      "enum": ["demand", "offer", "not_applicable"],
+                      "description": "Does the depicted participant gaze at the viewer (demand) or not (offer)? Not applicable for abstract/symbolic images."
+                    },
+                    "social_distance": {
+                      "type": "string",
+                      "enum": ["intimate", "close_social", "far_social", "impersonal", "not_applicable"],
+                      "description": "Implied distance: intimate (face/head only), close social (head and shoulders), far social (full figure), impersonal (many figures or wide view)."
+                    },
+                    "attitude_angle": {
+                      "type": "string",
+                      "enum": ["frontal", "oblique", "overhead", "low_angle", "not_applicable"],
+                      "description": "Viewer's implied orientation: frontal (involvement), oblique (detachment), overhead (viewer power), low angle (depicted power)."
+                    }
+                  }
+                }
+              }
+            }
+          },
+
+          "design": {
+            "type": "object",
+            "description": "The visual design of the spread as a whole.",
+            "properties": {
+              "layout_description": {
+                "type": "string",
+                "description": "Prose description of the spatial arrangement: where text and images sit, how space is used, the relationship between left and right pages."
+              },
+              "typography": {
+                "type": "object",
+                "properties": {
+                  "body_font_style": {
+                    "type": "string",
+                    "description": "General description of body text typography: serif/sans, approximate size, weight, column width, justification."
+                  },
+                  "display_font_style": {
+                    "type": ["string", "null"],
+                    "description": "Typography of display/headline text if present: font style, approximate size relative to page, weight."
+                  },
+                  "special_treatments": {
+                    "type": "array",
+                    "items": { "type": "string" },
+                    "description": "Any unusual typographic choices: reversed text, rotated text, text overlaid on image, text as texture, letterspacing effects, etc."
+                  }
+                }
+              },
+              "color_and_tone": {
+                "type": "object",
+                "description": "The tonal quality of the spread. Since this is a black-and-white book, captures contrast level, dominant tone, and any notable tonal treatments.",
+                "properties": {
+                  "contrast": {
+                    "type": "string",
+                    "enum": ["high", "moderate", "low"],
+                    "description": "Degree of tonal contrast between darkest and lightest areas."
+                  },
+                  "dominant_tone": {
+                    "type": "string",
+                    "enum": ["dark", "light", "balanced"],
+                    "description": "Whether the spread reads as predominantly dark, predominantly light, or balanced."
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "Optional prose elaboration for unusual tonal treatments."
+                  }
+                }
+              },
+              "white_space": {
+                "type": "string",
+                "enum": ["abundant", "moderate", "minimal", "none"],
+                "description": "How much empty/breathing space exists on the spread. Percentage guidelines: abundant >= 40% of spread area is empty, moderate = 15-40%, minimal = 5-15%, none < 5%. These are visual estimates, not measurements."
+              },
+              "visual_density": {
+                "type": "string",
+                "enum": ["sparse", "moderate", "dense", "overwhelming"],
+                "description": "Overall information density of the spread. Percentage guidelines: sparse = few elements with generous spacing, moderate = balanced content-to-space ratio, dense = most of the spread occupied by content with little breathing room, overwhelming = every area filled with competing visual elements demanding simultaneous attention."
+              },
+              "left_right_relationship": {
+                "type": "string",
+                "description": "How the two pages of the spread relate to each other: mirror, contrast, continuation, call-and-response, independent, one dominates, etc."
+              },
+              "information_value": {
+                "type": "object",
+                "description": "Kress & van Leeuwen's information value: the meaning carried by spatial placement on the spread.",
+                "properties": {
+                  "left_right": {
+                    "type": "string",
+                    "enum": ["given_new", "new_given", "balanced", "single_page", "not_applicable"],
+                    "description": "Does the spread follow the conventional Given (left) / New (right) structure, reverse it, balance both sides equally, or operate as effectively a single page?"
+                  },
+                  "top_bottom": {
+                    "type": "string",
+                    "enum": ["ideal_real", "real_ideal", "balanced", "not_applicable"],
+                    "description": "Does the spread follow the Ideal (top) / Real (bottom) structure?"
+                  },
+                  "center_margin": {
+                    "type": "string",
+                    "enum": ["centered", "marginal", "distributed", "not_applicable"],
+                    "description": "Is there a dominant center with subordinate margins, or is information distributed?"
+                  }
+                }
+              },
+              "compositional_framing": {
+                "type": "string",
+                "enum": ["strongly_framed", "weakly_framed", "mixed"],
+                "description": "Kress & van Leeuwen's framing: how strongly elements on the spread are separated from one another. 'Strongly framed' = clear boundaries between elements (frames, white space, color breaks). 'Weakly framed' = elements flow into one another (overlaps, shared backgrounds, cross-gutter continuity). 'Mixed' = some elements framed, others flowing."
+              }
+            }
+          },
+
+          "rhetoric": {
+            "type": "object",
+            "description": "The rhetorical layer — what the spread DOES, not just what it contains. This is the most important section.",
+            "properties": {
+              "argument": {
+                "type": "string",
+                "description": "The core argument or claim being made on this spread, stated plainly. What is McLuhan saying here?"
+              },
+              "rhetorical_strategy": {
+                "type": "object",
+                "description": "How the argument is being made, classified using a controlled 15-term vocabulary.",
+                "properties": {
+                  "primary": {
+                    "type": "string",
+                    "enum": [
+                      "assertion",
+                      "confrontation",
+                      "juxtaposition",
+                      "accumulation",
+                      "disruption",
+                      "provocation",
+                      "invocation",
+                      "dramatization",
+                      "quieting",
+                      "sensory_overload",
+                      "humor",
+                      "demonstration",
+                      "interpellation",
+                      "defamiliarization",
+                      "call_and_response"
+                    ],
+                    "description": "The dominant rhetorical strategy on this spread."
+                  },
+                  "secondary": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "assertion",
+                        "confrontation",
+                        "juxtaposition",
+                        "accumulation",
+                        "disruption",
+                        "provocation",
+                        "invocation",
+                        "dramatization",
+                        "quieting",
+                        "sensory_overload",
+                        "humor",
+                        "demonstration",
+                        "interpellation",
+                        "defamiliarization",
+                        "call_and_response"
+                      ]
+                    },
+                    "maxItems": 2,
+                    "description": "Up to two secondary strategies operating simultaneously."
+                  }
+                }
+              },
+              "strategy_description": {
+                "type": "string",
+                "description": "Prose elaboration of how the rhetorical strategy operates on this spread. Required when primary strategy is 'confrontation', 'demonstration', 'interpellation', or 'defamiliarization'. Should name specific formal mechanisms."
+              },
+              "design_enacts_argument": {
+                "type": "boolean",
+                "description": "Does the visual design itself perform or embody the argument (e.g., a spread about speed that feels fast, a spread about fragmentation that is fragmented)?"
+              },
+              "design_argument_description": {
+                "type": ["string", "null"],
+                "description": "If design_enacts_argument is true, explain how. This is the most valuable analytical insight."
+              },
+              "reader_experience": {
+                "type": "string",
+                "description": "What is the intended effect on the reader? Disorientation, recognition, amusement, unease, exhilaration, confrontation, contemplation, etc."
+              },
+              "mcluhan_concepts": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "medium_is_the_message",
+                    "extensions_of_man",
+                    "global_village",
+                    "hot_and_cool",
+                    "rear_view_mirror",
+                    "figure_ground",
+                    "acoustic_space",
+                    "visual_space",
+                    "electric_age",
+                    "print_culture",
+                    "tribal",
+                    "pattern_recognition",
+                    "sense_ratios",
+                    "environment_as_invisible",
+                    "obsolescence_and_retrieval",
+                    "participation",
+                    "implosion",
+                    "anti_environment",
+                    "allatonceness"
+                  ]
+                },
+                "description": "Which McLuhan concepts are active on this spread. Select from the enumerated list."
+              },
+              "multi_spread_patterns": {
+                "type": ["string", "null"],
+                "description": "If this spread participates in a rhetorical pattern spanning multiple spreads (e.g., progressive density increase, dark/light alternation, thematic accumulation across 3+ spreads), describe the pattern and reference the spread IDs involved. Null if the spread operates independently."
+              },
+              "confidence": {
+                "type": "string",
+                "enum": ["high", "moderate", "low"],
+                "description": "Analyst's self-reported confidence in this section's analysis. 'high' = unambiguous, any competent analyst would agree. 'moderate' = reasonable alternatives exist. 'low' = best guess, significant uncertainty."
+              }
+            }
+          },
+
+          "themes": {
+            "type": "object",
+            "description": "Thematic tagging for mapping to contemporary domains.",
+            "properties": {
+              "original_themes": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Themes as they appear in the original. Free-text tags, but use consistent vocabulary across spreads. Examples: 'privacy', 'education', 'the child', 'speed', 'environment', 'technology_as_extension', 'authorship', 'electric_age', 'participation', 'obsolescence', etc."
+              },
+              "contemporary_domain_candidates": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "algorithmic_identity",
+                    "attention_and_cognition",
+                    "synthetic_media_and_post_truth",
+                    "ambient_intelligence",
+                    "post_literacy_and_language",
+                    "authorship_and_creativity",
+                    "surveillance_and_control",
+                    "public_private_collapse",
+                    "embodiment_and_disembodiment",
+                    "labor_and_value",
+                    "global_village_revisited",
+                    "agency_and_autonomy"
+                  ]
+                },
+                "description": "Which of the pre-defined contemporary thematic domains this spread maps to. A spread may map to multiple domains."
+              },
+              "movement_mapping": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "prologue",
+                    "movement_1_environment",
+                    "movement_2_acceleration",
+                    "hinge_m2_m3",
+                    "movement_3_dreamscape"
+                  ]
+                },
+                "description": "Which movement(s) in the contemporary book's three-movement structure this spread most naturally maps to. Based on the Theoretical Framework's Prologue + three-Movement architecture (Environment / Acceleration / Dreamscape). Most spreads will map to a single movement; some may bridge two (especially near structural transitions). This field works alongside contemporary_domain_candidates — domains indicate WHAT themes are active, movement_mapping indicates WHERE in the new book's arc they belong."
+              },
+              "mapping_rationale": {
+                "type": "string",
+                "description": "Brief explanation of why this spread maps to the indicated contemporary domains. What is the conceptual bridge?"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": ["high", "moderate", "low"],
+                "description": "Analyst's self-reported confidence in this section's analysis. 'high' = unambiguous, any competent analyst would agree. 'moderate' = reasonable alternatives exist. 'low' = best guess, significant uncertainty."
+              }
+            }
+          },
+
+          "progression": {
+            "type": "object",
+            "description": "How this spread relates to the sequence of the book.",
+            "properties": {
+              "pace_shift": {
+                "type": "string",
+                "enum": ["accelerating", "decelerating", "steady", "rupture"],
+                "description": "Does this spread speed up, slow down, maintain, or break the rhythm relative to the immediately preceding spread (spread N-1)? Consider: amount of text, number of visual elements, visual density, and demand on reader attention."
+              },
+              "thematic_function": {
+                "type": "string",
+                "enum": ["introduces_theme", "develops_theme", "layers_themes", "climax", "resolution", "transition", "coda", "interruption"],
+                "description": "What role this spread plays in the thematic arc."
+              },
+              "relationship_to_previous": {
+                "type": "string",
+                "description": "How this spread connects to the one before it: continuation, contrast, escalation, pivot, non sequitur, etc."
+              },
+              "relationship_to_next": {
+                "type": "string",
+                "description": "How this spread sets up the one after it."
+              },
+              "confidence": {
+                "type": "string",
+                "enum": ["high", "moderate", "low"],
+                "description": "Analyst's self-reported confidence in this section's analysis. 'high' = unambiguous, any competent analyst would agree. 'moderate' = reasonable alternatives exist. 'low' = best guess, significant uncertainty."
+              }
+            }
+          },
+
+          "notes": {
+            "type": "string",
+            "description": "Any additional observations that don't fit the above categories. OCR uncertainties, damaged/illegible areas, interesting details, cross-references to other spreads."
+          }
+        },
+        "required": ["id", "pdf_page", "book_pages", "section", "spread_type", "orientation", "text", "quotations", "images", "design", "rhetoric", "themes", "progression"]
+      }
+    },
+
+    "thematic_arc": {
+      "type": "object",
+      "description": "A summary analysis of the book's overall thematic structure, produced after all spreads are analyzed. Used to identify the original's implicit sections and map them to the contemporary book's Prologue + three-Movement architecture.",
+      "properties": {
+        "sections": {
+          "type": "array",
+          "description": "The book's implicit sections/movements (it has no formal chapters). Each section groups consecutive spreads that share a thematic focus.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string", "description": "A descriptive title for this section." },
+              "spread_range": { "type": "string", "description": "e.g., 'spread_006–spread_015'" },
+              "book_page_range": { "type": "string", "description": "e.g., '1–20'" },
+              "dominant_themes": { "type": "array", "items": { "type": "string" } },
+              "summary": { "type": "string", "description": "What this section accomplishes in the book's argument." },
+              "movement_correspondence": { "type": "string", "description": "Which movement in the contemporary book's structure (prologue, movement_1_environment, movement_2_acceleration, hinge_m2_m3, movement_3_dreamscape) this section most closely corresponds to." }
+            }
+          }
+        },
+        "overall_arc": {
+          "type": "string",
+          "description": "A narrative description of how the book moves from beginning to end: how themes are introduced, layered, and (non-)resolved."
+        },
+        "rhythm_pattern": {
+          "type": "string",
+          "description": "The visual/pacing rhythm of the book: where it's dense vs. sparse, fast vs. slow, loud vs. quiet."
+        },
+        "recurring_motifs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "motif": { "type": "string" },
+              "appearances": { "type": "array", "items": { "type": "string" }, "description": "Spread IDs where this motif appears." },
+              "function": { "type": "string", "description": "What this recurring element does across the book." }
+            }
+          }
+        }
+      }
+    }
+  }
+}

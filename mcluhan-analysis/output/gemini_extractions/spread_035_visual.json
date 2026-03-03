@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_035",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:18:40.152144",
+  "generation_time_s": 29.7,
+  "images": [
+    {
+      "position": "left_page",
+      "subject": "A close-up, high-contrast black and white photograph of a person's hand, likely a Black person's, tightly gripping two vertical white bars of a jail cell. The background is dark, implying the interior of the cell. A ring is visible on the person's pinky finger.",
+      "source_type": "press_photo",
+      "composition": "The image is a tight, intimate close-up, focusing entirely on the hand and the bars. The strong vertical lines of the bars structure the composition, while the high-contrast lighting emphasizes the texture of the skin and the worn surface of the bars.",
+      "scale": "full_bleed",
+      "estimated_date": "c. 1950s-1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "intimate",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is starkly divided by the gutter. The left page is a full-bleed, dark photographic image. The right page is almost entirely white space, containing a single, justified column of text on the right-hand side. This creates a powerful visual dichotomy between image and text, darkness and light, confinement and open space.",
+    "typography": {
+      "body_font_style": "Serif, medium weight, justified, set in a single column.",
+      "display_font_style": "The opening quote is set in the same serif typeface as the body, distinguished by quotation marks and surrounding white space.",
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread exhibits maximum contrast, with the full-bleed, dark photograph on the left directly opposing the stark white page with black text on the right."
+    },
+    "white_space": "abundant",
+    "visual_density": "moderate",
+    "left_right_relationship": "Juxtaposition and contrast. The left page presents a visceral, non-verbal image of physical confinement. The right page offers a detached, intellectual analysis of enclosure and guilt. The visual experience is separate from, yet commented upon by, the textual argument.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "A reader encounters a starkly divided spread that creates a powerful sense of juxtaposition. On the left, a visceral, full-bleed photograph of a hand gripping prison bars evokes the physical reality of confinement. On the right, a clean, text-only page offers a detached, intellectual analysis of enclosure and guilt, forcing a comparison between the felt experience and the abstract concept."
+}

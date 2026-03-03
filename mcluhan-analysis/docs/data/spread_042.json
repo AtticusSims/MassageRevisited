@@ -8,6 +8,8 @@
       75
     ],
     "section": "body",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
     "spread_type": "text_with_specific_image",
     "orientation": "landscape_spread",
     "text": {
@@ -25,47 +27,85 @@
         "source_credit": "Photo—Peter Moore",
         "estimated_date": "c. 1960s",
         "composition": "",
-        "scale": "full_spread",
-        "relationship_to_text": ""
+        "scale": "half_page",
+        "relationship_to_text": {
+          "primary_relation": "serves_as_metaphor",
+          "barthes_mode": "relay",
+          "description": ""
+        },
+        "interactive_meaning": {
+          "contact": "not_applicable",
+          "social_distance": "close_social",
+          "attitude_angle": "low_angle"
+        }
       }
     ],
     "design": {
       "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two primary sections:  \n- **Top section**: A single, centered rearview mirror image dominates the upper half. This mirror contains a black-and-white silhouette of a horse-drawn carriage (representing the past).  \n- **Bottom section**: Split into two **symmetrical vertical panels** (left and right). Each panel shows a blurred, motion-blurred view of a car’s interior (representing the present), with headlights creating stark light contrasts.  \n- **Text placement**: Small blocks of text sit at the **bottom corners**—left text for the left panel, right text for the right panel. The mirror image bridges the top and bottom sections, creating a visual hierarchy where the mirror anchors the spread.  \n\nThe space is structured to emphasize **contrast between past (mirror) and present (lower panels)**, with the mirror acting as a unifying focal point.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Two blocks of **small body text** (no large display text).  \n- **Font style**: Likely **serif** (common in book design for readability), with a **normal weight** (not bold).  \n- **Color/contrast**: Text is **black on white** (standard for printed books), with no reversed (white-on-black) text.  \n- **Hierarchy**: The text is uniform in size and weight, with no emphasis on “display” text—reinforcing the spread’s contemplative tone.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly dark** in the lower panels (blurred car interiors), but the mirror image features a **bright white background** with stark black silhouettes.  \n- **Contrast**: **High contrast** throughout—sharp black-and-white divisions in the mirror (silhouette vs. white sky) and blurred car panels (dark background vs. bright headlights). This creates visual tension between the static past (mirror) and dynamic present (cars).  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Dense** white space. The mirror’s bright white background, the blurred car panels’ nega",
       "typography": {
-        "body_font_style": "Serif text",
+        "body_font_style": "sans-serif",
         "display_font_style": null,
-        "special_treatments": []
+        "special_treatments": [
+          "reversed text (white on black)",
+          "text overlaid on image"
+        ]
       },
-      "color_and_tone": "Black and white.",
-      "white_space": "sparse",
-      "visual_density": "dense",
-      "left_right_relationship": "mirror"
+      "color_and_tone": {
+        "contrast": "high",
+        "dominant_tone": "dark",
+        "description": "High contrast black and white."
+      },
+      "white_space": "minimal",
+      "visual_density": "overwhelming",
+      "left_right_relationship": "mirror",
+      "information_value": {
+        "left_right": "given_new",
+        "top_bottom": "not_applicable",
+        "center_margin": "distributed"
+      },
+      "compositional_framing": "mixed"
     },
     "rhetoric": {
-      "argument": "The past went that-a-way.",
-      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "argument": "The rear-view mirror metaphor diagnoses humanity's most persistent cognitive failure regarding technology: we habitually perceive new media through the conceptual categories of old ones, perpetually looking backward while accelerating forward, which prevents us from perceiving the actual novel effects of current technologies.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": [
+          "demonstration"
+        ]
+      },
+      "strategy_description": "The spread juxtaposes elements through its combination of text and design. Secondary strategies of demonstration reinforce the primary approach.",
       "design_enacts_argument": true,
       "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
-      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
+      "reader_experience": "Sustained reading — the reader engages with extended prose argument.",
       "mcluhan_concepts": [
-        "media_ecology"
-      ]
+        "medium_is_the_message"
+      ],
+      "multi_spread_patterns": null,
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
+        "perception_and_senses",
         "war_and_violence"
       ],
-      "contemporary_domain_candidates": [],
-      "movement_mapping": [],
-      "mapping_rationale": ""
+      "contemporary_domain_candidates": [
+        "attention_and_cognition",
+        "synthetic_media_and_post_truth"
+      ],
+      "movement_mapping": [
+        "movement_2_acceleration"
+      ],
+      "mapping_rationale": "The information-collision aesthetic directly prefigures the algorithmic feed where unrelated content collides without hierarchy or context, and the speed of information flow makes sustained analysis impossible—meaning emerges from adjacency rather than argument.",
+      "confidence": "moderate"
     },
     "progression": {
       "pace_shift": "steady",
       "thematic_function": "develops_theme",
-      "relationship_to_previous": "",
-      "relationship_to_next": ""
+      "relationship_to_previous": "The information collage provides the experiential counterpart to the rear-view mirror diagnosis: this is what it feels like to be inside a media environment you cannot step outside of.",
+      "relationship_to_next": "The visual overload yields to a single word at massive scale—from information cacophony to typographic simplicity.",
+      "confidence": "moderate"
     },
-    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+    "notes": "The visual collage enacts the cognitive condition it describes: the reader cannot process all elements sequentially and must instead perceive the page as a simultaneous pattern. This shift from sequential to pattern perception is exactly what McLuhan argues electronic media force on consciousness."
   },
   "ocr": {
     "ocr_raw": "The past went that-a-way. When faced with a totally new situation, we tend always to attach ourselves to the objects, to the flavor of the most recent past.\nWe look at the present through a rear-view mirror. We march backwards into the future. Suburbia lives imaginatively in Bonanza-land.",
@@ -80,5 +120,69 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two primary sections:  \n- **Top section**: A single, centered rearview mirror image dominates the upper half. This mirror contains a black-and-white silhouette of a horse-drawn carriage (representing the past).  \n- **Bottom section**: Split into two **symmetrical vertical panels** (left and right). Each panel shows a blurred, motion-blurred view of a car’s interior (representing the present), with headlights creating stark light contrasts.  \n- **Text placement**: Small blocks of text sit at the **bottom corners**—left text for the left panel, right text for the right panel. The mirror image bridges the top and bottom sections, creating a visual hierarchy where the mirror anchors the spread.  \n\nThe space is structured to emphasize **contrast between past (mirror) and present (lower panels)**, with the mirror acting as a unifying focal point.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Two blocks of **small body text** (no large display text).  \n- **Font style**: Likely **serif** (common in book design for readability), with a **normal weight** (not bold).  \n- **Color/contrast**: Text is **black on white** (standard for printed books), with no reversed (white-on-black) text.  \n- **Hierarchy**: The text is uniform in size and weight, with no emphasis on “display” text—reinforcing the spread’s contemplative tone.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly dark** in the lower panels (blurred car interiors), but the mirror image features a **bright white background** with stark black silhouettes.  \n- **Contrast**: **High contrast** throughout—sharp black-and-white divisions in the mirror (silhouette vs. white sky) and blurred car panels (dark background vs. bright headlights). This creates visual tension between the static past (mirror) and dynamic present (cars).  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Dense** white space. The mirror’s bright white background, the blurred car panels’ negative space, and the small text blocks leave significant empty areas.  \n- **Role**: White space emphasizes the **silence of the past** (mirror) and the **motion of the present** (blurred cars), while also creating visual breathing room. The mirror’s white background is a dominant white space element, contrasting with the dark lower panels.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Mirror as unifier**: The rearview mirror spans both sides, visually connecting the left and right panels. It acts as a **central metaphor** for “looking back” at the past.  \n- **Symmetry vs. contrast**: The left and right lower panels are **symmetrical in composition** (blurred car views), but the text content differs (left: “The past went that-a-way…”, right: “We look at the present…”). This creates a **unified yet contrasting relationship**—the mirror ties the spread together, while the text and imagery highlight the tension between past and present.  \n- **Dominance**: The mirror **dominates the top half**, while the lower panels are balanced but secondary.  \n\n\n### 6. OVERALL FEEL  \n- **Mood**: **Contemplative and nostalgic**, with subtle tension. The blurred car imagery suggests motion and modernity, while the mirror’s static silhouette evokes nostalgia for the past.  \n- **Energy**: **Calm but layered**—the high contrast and motion blur create a sense of urgency (speed of the present), while the mirror’s stillness invites reflection (the weight of the past).  \n- **Tone**: Not aggressive or chaotic; instead, it feels **thoughtful and introspective**, inviting readers to consider how the past shapes the present. The black-and-white palette reinforces a timeless, almost melancholic mood.",
     "layout_analysis_time": 12.8,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_042",
+    "movement": "movement_2_acceleration",
+    "original_summary": {
+      "spread_type": "text_with_specific_image",
+      "section": "body",
+      "book_pages": [
+        74,
+        75
+      ],
+      "original_themes": [
+        "perception_and_senses",
+        "war_and_violence"
+      ],
+      "rhetorical_strategy": "accumulation",
+      "design_enacts_argument": true,
+      "design_argument_description": "Dense photo collage and crowd scenes accumulate visual information, creating a sensory overload that enacts the information saturation the book describes.",
+      "text_excerpt": ""
+    },
+    "contemporary_plan": {
+      "theme": "The past is now editable",
+      "argument": "The original's dense collage of images -- war, crowds, modernity in collision -- demonstrated information overload as lived experience. The update deepens the crisis: not just overload but unreliability. Deepfakes make the historical record editable. Public figures can be shown saying things they never said. Archived footage can be altered frame by frame. Hoffman's 'spacetime is doomed' applies at the cultural level: if perception was never veridical (Hoffman), and now the record of perception is also synthetic (Steyerl), then 'history' becomes a probability distribution rather than a fixed sequence of events.",
+      "text": {
+        "approach": "combination",
+        "description": "The editable past: deepfakes applied to history. Brief, fragmented text -- sentences that contradict each other, mimicking the unreliability they describe. Hoffman's fitness-beats-truth as the philosophical ground: we never perceived reality directly, and now the record of our perceptions is also synthetic.",
+        "voice_notes": "Destabilizing. The text itself should feel unreliable -- short passages that may or may not be accurate, forcing the reader to question the medium. The ground shifts."
+      },
+      "image": {
+        "approach": "found",
+        "subject": "A deepfake comparison diptych: a historical photograph on the left, a manipulated version on the right, with the differences almost imperceptible. Or: the same face delivering two contradictory statements, side by side. The uncanny valley of documentary evidence.",
+        "mood": "uncanny, archival",
+        "image_text_relationship": "demonstrates -- the paired images force the reader to look for differences, performing the new epistemic labor of verifying reality."
+      },
+      "rhetoric": {
+        "strategy": "accumulation",
+        "design_enacts": "The spread accumulates contradictory evidence: real and fake images, reliable and unreliable text, all presented at the same visual register. The design refuses to signal which is which, making the reader's inability to distinguish the argument itself."
+      },
+      "mapping": {
+        "relationship_to_original": "inversion",
+        "convergences": [
+          "reality_as_interface"
+        ],
+        "thinkers": [
+          "Steyerl",
+          "Hoffman"
+        ],
+        "quotations": [
+          {
+            "text": "Spacetime is doomed. What we call 'reality' is a user interface.",
+            "author": "Hoffman",
+            "source": "The Case Against Reality, Norton, 2019, p. 8",
+            "rationale": "If reality was always an interface, then editing the interface (deepfakes) is not a corruption of truth but a revelation of its structure."
+          }
+        ]
+      },
+      "dependencies": null
+    },
+    "paper_trace": "Hoffman fitness-beats-truth + Steyerl post-truth image. Deepfakes as the editable past.",
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

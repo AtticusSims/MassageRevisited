@@ -1,0 +1,47 @@
+{
+  "spread_id": "spread_048",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:25:32.252232",
+  "generation_time_s": 26.1,
+  "images": [
+    {
+      "position": "spanning_gutter",
+      "subject": "The Fairmount Water Works in Philadelphia, Pennsylvania. The image shows a series of neoclassical, Greek Revival style buildings at the edge of a river, with the Philadelphia Museum of Art visible on the wooded hill behind them.",
+      "source_type": "press_photo",
+      "composition": "A landscape photograph taken from across the water. The composition is horizontally layered, with the water, the water works, and the museum on the hill creating distinct bands. The image is a grainy, moderate-contrast black-and-white halftone print.",
+      "scale": "dominant",
+      "estimated_date": "mid-20th century",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "impersonal",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is vertically divided into three horizontal zones. The top half is occupied by a single photograph that spans the gutter. Below the photograph is a small, two-line caption. The bottom third of the spread is predominantly white space, anchored by a massive, cropped typographic fragment, 'nment', at the very bottom.",
+    "typography": {
+      "body_font_style": "A standard serif font is used for the two-line caption below the photograph.",
+      "display_font_style": "A massive, bold, black, lowercase sans-serif font is used for the word fragment 'nment'. The scale is so large that the letters are cropped by the bottom and right edges of the page, functioning as an abstract graphic form.",
+      "special_treatments": [
+        "Extreme scaling and cropping of display text",
+        "Display text completes a word ('environment') started on the previous spread"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "The spread combines a moderate-contrast halftone photograph with the stark, high-contrast black of the typography against a bright white background."
+    },
+    "white_space": "abundant",
+    "visual_density": "sparse",
+    "left_right_relationship": "Unified. The photograph spans the gutter, treating the two pages as a single canvas for the top visual element. The typographic element at the bottom also reads as a single, continuous form.",
+    "information_value": {
+      "left_right": "balanced",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "A reader encounters a stark, vertically organized spread. The top half is a photograph of neoclassical architecture, explained by a caption below it as an example of imposing old forms on new content. This historical image is contrasted with the bottom half, which is mostly white space containing the massive, cropped typographic fragment 'nment', completing a word from the previous page and forcing a conceptual leap from the specific architectural example to the abstract idea of 'environment'."
+}

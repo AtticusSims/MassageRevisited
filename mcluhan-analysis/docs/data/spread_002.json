@@ -5,61 +5,106 @@
     "pdf_page": 2,
     "book_pages": [],
     "section": "front_matter",
-    "spread_type": "text_only",
-    "orientation": "portrait_single",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
+    "spread_type": "text_with_specific_image",
+    "orientation": "landscape_spread",
     "text": {
-      "body_text": "The Medium is the Massage\nis a popular classic. a collide-o-scopic\njourney through the Marshall McLuhan-\nlooking glass. When first documented.\nMcLuhan's prophetic perceptions on life\nin the age of electronic information were\noften perplexing. Three decades later\nhis observations are disturbingly clear.\nremarkably accurate.\n\nMarshall McLuhan understood the\npower of the media long before those in\ncontrol did.\n\nThe Medium is the Massage presents\nsome of McLuhan's most amazing\ninsights and cognitive observations on\nthe global village: the rear-view mirror.\nthe invisible environment. the end of\nnature. and sensory impact set against\nthe everyday imagery of mass media.\nconsumer goods. the press. advertising.\nand the arts.\n\nFirst published in 1967 The Medium is\nthe Massage has sold more than one\nmillion copies worldwide.",
+      "body_text": "is a popular classic. a collide-o-scopic journey through the Marshall McLuhan- looking glass. When first documented. McLuhan’s prophetic perceptions on life in the age of electronic information were often perplexing. Three decades later his observations are disturbingly clear. remarkably accurate. Marshall McLuhan understood the power of the media long before those in control did. The Medium is the Massage presents some of McLuhan’s most amazing insights and cognitive observations on the global village: the rear-view mirror. the invisible environment. the end of nature. and sensory impact set against the everyday imagery of mass media. consumer goods. the press. advertising. and the arts. First published in 1967 The Medium is the Massage has sold more than one million copies worldwide.",
       "display_text": "The Medium is the Massage",
       "captions": [],
       "page_numbers_visible": []
     },
     "quotations": [],
-    "images": [],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "An abstract, blurry, warm-toned photograph used as a background texture. The colors are primarily reddish-brown and dark, with soft gradients of light. A dark, curved shape is vaguely visible on the left side, but the overall image is non-representational.",
+        "source_type": "art_photograph",
+        "composition": "Extremely shallow depth of field creating a soft, abstract color field. The composition is non-representational, focusing on color and light gradients from a warm reddish-brown to near black.",
+        "scale": "full_bleed",
+        "estimated_date": null,
+        "interactive_meaning": {
+          "contact": "not_applicable",
+          "social_distance": "not_applicable",
+          "attitude_angle": "not_applicable"
+        }
+      }
+    ],
     "design": {
-      "layout_description": "Narrow portrait format suggesting a dust jacket flap. White/cream text on a warm-toned photographic background (continuation of the blurred face motif from the cover). Text is arranged in a single column, left-aligned. Title at top in underlined style, body text below in three distinct paragraphs.",
+      "layout_description": "This is a single, portrait-oriented page, likely a back cover or dust jacket flap. White text is set in several left-aligned paragraphs over a full-bleed, abstract background image. The text block occupies the central vertical two-thirds of the page.",
       "typography": {
-        "body_font_style": "Serif, small-to-medium size, light weight. Text appears in white/cream against the warm background. Single column, approximately 60% of the page width.",
-        "display_font_style": "Title 'The Medium is the Massage' at top in slightly larger serif with underline treatment.",
+        "body_font_style": "Sans-serif, regular weight, white. The leading is open, enhancing readability against the textured background.",
+        "display_font_style": "The book title 'The Medium is the Massage' appears at the top and is slightly bolder than the body text, but is otherwise integrated into the text block.",
         "special_treatments": [
-          "White/cream text on photographic background — reversed out against the blurred face image",
-          "Title underlined in a style suggesting editorial/typeset convention"
+          "Text reversed out (white on color background)"
         ]
       },
-      "color_and_tone": "Warm amber background (continuing the cover's color field) with white text. Intimate, bookish atmosphere.",
-      "white_space": "moderate",
+      "color_and_tone": {
+        "contrast": "moderate",
+        "dominant_tone": "dark",
+        "description": "The page has a warm, atmospheric tone due to the reddish-brown and orange hues of the background image, which contrasts with the clean white text."
+      },
+      "white_space": "minimal",
       "visual_density": "moderate",
-      "left_right_relationship": "Single page — no left-right relationship."
+      "left_right_relationship": "This is a single portrait page, so there is no left-right relationship.",
+      "information_value": {
+        "left_right": "single_page",
+        "top_bottom": "ideal_real",
+        "center_margin": "centered"
+      },
+      "compositional_framing": "weakly_framed"
     },
     "rhetoric": {
-      "argument": "This is a framing text for the Gingko Press reissue, not McLuhan's own writing. It positions the book as prophetic — observations that were 'perplexing' in the 1960s are now 'disturbingly clear, remarkably accurate.' The dust jacket sells the book as both a cultural artifact and a still-relevant work of media theory.",
-      "rhetorical_strategy": "Appeal to prescience. The blurb establishes McLuhan's authority by emphasizing how his predictions came true. It uses the language of revelation: 'prophetic perceptions,' 'disturbingly clear.'",
-      "design_enacts_argument": false,
-      "design_argument_description": null,
-      "reader_experience": "Priming. The reader is told before entering the book that what follows will be relevant to their present moment. This creates a lens of contemporary application.",
+      "argument": "The blurb page performs an ironic self-demonstration: the publishing industry's conventional promotional apparatus (blurbs, marketing copy) frames McLuhan's radical critique of exactly such media packaging, creating a tension between the book's commercial form and its theoretical content.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": [
+          "demonstration"
+        ]
+      },
+      "strategy_description": "The spread juxtaposes elements through its combination of text and design. Secondary strategies of demonstration reinforce the primary approach.",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Sustained reading — the reader engages with extended prose argument.",
       "mcluhan_concepts": [
+        "medium_is_the_message",
+        "electric_age",
         "global_village",
+        "environment_as_invisible",
         "rear_view_mirror"
-      ]
+      ],
+      "multi_spread_patterns": "spreads_001_003:front_matter_sequence: Cover → blurb → credits form a three-spread institutional frame that the book's content will progressively undermine.",
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
-        "prophecy",
-        "media_theory",
-        "cultural_relevance"
+        "media_as_environment",
+        "electric_technology",
+        "consumer_culture",
+        "perception_and_senses",
+        "tribal_culture",
+        "art_and_creativity",
+        "information"
       ],
-      "contemporary_domain_candidates": [],
+      "contemporary_domain_candidates": [
+        "authorship_and_creativity",
+        "attention_and_cognition"
+      ],
       "movement_mapping": [
         "prologue"
       ],
-      "mapping_rationale": "Paratext that establishes the framing lens for the entire project. The dust jacket's claim that McLuhan's 'perplexing' observations are now 'disturbingly clear' is itself a template for the contemporary companion: what in the original felt speculative now reads as diagnostic. The catalog of McLuhan concepts ('the global village, the rear-view mirror, the invisible environment') provides the seed vocabulary the contemporary version must translate."
+      "mapping_rationale": "The tension between radical media theory and its commercial packaging directly parallels how platform economics (Amazon reviews, algorithmic recommendation, influencer marketing) frame and distribute critical thought about those very platforms.",
+      "confidence": "moderate"
     },
     "progression": {
-      "pace_shift": "steady",
-      "thematic_function": "introduces_theme",
-      "relationship_to_previous": "Continues the cover's warm color palette while shifting from visual impact to verbal explanation. The blurred face background maintains visual continuity.",
-      "relationship_to_next": "Paired with spread_003 (back flap) as a set of dust jacket texts framing the book."
+      "pace_shift": "decelerating",
+      "thematic_function": "develops_theme",
+      "relationship_to_previous": "The blurb page translates the cover's visual thesis into promotional language, creating an ironic tension: the book's radical content is packaged in the conventional form it critiques.",
+      "relationship_to_next": "Moves from commercial framing to institutional framing—publisher credits and copyright represent the legal/economic infrastructure that makes the book possible as a commodity.",
+      "confidence": "moderate"
     },
-    "notes": "This is a Gingko Press reissue dust jacket text, not from the original 1967 Bantam edition. The language 'Three decades later' places this text around 1996-2001. References to 'the global village, the rear-view mirror, the invisible environment, the end of nature' effectively catalog McLuhan's key concepts for a new readership."
+    "notes": "The blurb describes the book as a 'collide-o-scopic journey'—a neologism combining collide, kaleidoscope, and oscilloscope that itself enacts McLuhan's method of compressing multiple meanings into a single verbal image. The promotional language ironically demonstrates how media environments shape the reception of ideas about media environments.\n\n[Gemini visual description] The reader encounters a single page of summary text, likely a back cover or dust jacket flap, set against a warm, blurry, abstract background. The white sans-serif type feels clean and direct, while the background provides an atmospheric, slightly mysterious tone. The text serves as an introduction or sales pitch, explaining the book's premise and historical significance to a potential reader."
   },
   "ocr": {
     "ocr_raw": "The Medium is the Massage\nis a popular classic. a collide-o-scopic journey through the Marshall McLuhan- looking glass. When first documented. McLuhan’s prophetic perceptions on life in the age of electronic information were often perplexing. Three decades later his observations are disturbingly clear. remarkably accurate.\nMarshall McLuhan understood the power of the media long before those in control did.\nThe Medium is the Massage presents some of McLuhan’s most amazing insights and cognitive observations on the global village: the rear-view mirror. the invisible environment. the end of nature. and sensory impact set against the everyday imagery of mass media. consumer goods. the press. advertising. and the arts.\nFirst published in 1967 The Medium is the Massage has sold more than one million copies worldwide.",
@@ -74,5 +119,70 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe text dominates the visual field, with **no distinct images** (the background is a gradient, not a separate visual element). The layout is **text-centric**, with paragraphs stacked vertically. The text is left-aligned (standard for book spreads), and the background (a dark red-to-black gradient) fills the entire space, creating a layered effect where text sits *on top* of the gradient. Space is divided into **vertical sections** (each paragraph occupies a distinct horizontal band), with minimal separation between text blocks. The gradient background acts as a unified backdrop, while the text is the primary focal point.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**:  \n  - *Display text*: The title *\"The Medium is the Massage\"* (repeated at the top and mid-section) is larger, bold, and likely a **serif font** (common in academic/serious publications).  \n  - *Body text*: Paragraphs use a smaller, regular-weight serif font (consistent with traditional book typography).  \n- **Color & weight**: All text is **white on a dark background** (reversed), with the title being **bold** (for emphasis) and body text **light/regular** (for readability).  \n- **Font style**: Serif (e.g., Times New Roman or similar), which conveys formality and tradition—fitting for a scholarly work.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (bright white text against a dark gradient background). This ensures readability but also creates visual intensity.  \n- **Tone**: **Dark and serious**. The gradient (deep red to black) evokes urgency, depth, or intellectual weight, aligning with the book’s theme of media theory. The reversed text amplifies this mood, making the content feel authoritative and weighty.  \n\n\n### 4. WHITE SPACE  \n**Sparse**. The text is densely packed with minimal gaps between paragraphs or lines. The gradient background has no \"empty\" areas—every inch of space is either text or the gradient itself. This creates a **tight, focused layout** that prioritizes content over visual breathing room.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n**Left-dominated**. The text is left-aligned, with the right side occupied entirely by the gradient background. There is no visual \"mirror\" (e.g., text on both sides) or contrast between left/right elements—instead, the left side (text) *overpowers* the right side (background), creating a one-directional flow. The relationship is **unified** in that the text and background work together to emphasize the content, but the left side clearly dominates the visual hierarchy.  \n\n\n### 6. OVERALL FEEL  \n**Authoritative and intense**. The dark gradient, high-contrast text, and dense typography create a mood that is **intellectual, serious, and slightly overwhelming**—reflecting the book’s focus on complex media theory. The lack of white space and the reversed text add urgency, while the serif font and academic tone evoke calmness *within* the intensity. It feels like a **scholarly manifesto**—not calm or minimal, but deeply engaged with its subject matter.",
     "layout_analysis_time": 8.9,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_002",
+    "movement": "prologue",
+    "original_summary": {
+      "spread_type": "text_with_specific_image",
+      "section": "front_matter",
+      "book_pages": [],
+      "original_themes": [
+        "media_as_environment",
+        "electric_technology",
+        "consumer_culture",
+        "perception_and_senses",
+        "tribal_culture",
+        "art_and_creativity",
+        "information"
+      ],
+      "rhetorical_strategy": "juxtaposition",
+      "design_enacts_argument": true,
+      "design_argument_description": "The blurb page performs an ironic self-demonstration: the publishing industry's conventional promotional apparatus frames McLuhan's radical critique of exactly such media packaging.",
+      "text_excerpt": "is a popular classic. a collide-o-scopic journey through the Marshall McLuhan-looking glass."
+    },
+    "contemporary_plan": {
+      "theme": "The colophon as confession — AI provenance as first argument",
+      "argument": "The original's back cover/blurb page described the book in conventional promotional language — 'a collide-o-scopic journey' — creating an ironic tension between radical content and commercial packaging. The contemporary version replaces promotional copy with a provenance statement: a transparent declaration of how this book was made. Claude analyzed the original. Qwen3-VL performed OCR. A human author directed, edited, and wrote. The production pipeline is not hidden behind the colophon — it IS the colophon. This is the book's first substantive argument: the conditions of production are now the content. Crawford's insistence that 'AI is neither artificial nor intelligent' becomes operational here — the credits page reveals the extractive, collaborative, distributed process behind every AI-mediated artifact.",
+      "text": {
+        "approach": "combination",
+        "description": "Standard colophon elements (publisher, ISBN, copyright) alongside an explicit provenance statement listing AI systems involved (Claude for analysis and writing, Qwen3-VL for visual processing, Gemini for cross-validation). Below: a compact production pipeline diagram rendered as a flowchart. The statement should read as metadata, not manifesto — factual, transparent, slightly clinical.",
+        "voice_notes": "Matter-of-fact. The self-referential thread begins as bookkeeping, not philosophy. The radical gesture is the refusal to hide the machinery."
+      },
+      "image": {
+        "approach": "graphic_symbol",
+        "subject": "A small, clean flowchart diagram: PDF scan -> VLM extraction -> LLM analysis -> human editorial judgment -> content plan -> designed book. Each node labeled with the actual tool (Qwen3-VL, Claude, human). The diagram should echo the visual language of a software architecture diagram — boxes, arrows, monospaced labels — making the production pipeline legible as infrastructure.",
+        "mood": "clinical, transparent",
+        "image_text_relationship": "demonstrates"
+      },
+      "rhetoric": {
+        "strategy": "defamiliarization",
+        "design_enacts": "The credits page makes the invisible visible by placing the production pipeline where marketing copy conventionally goes. The reader expects a blurb and receives instead a diagram of the machinery that produced what they are holding. The defamiliarization operates through genre violation: colophon-as-argument."
+      },
+      "mapping": {
+        "relationship_to_original": "departure",
+        "convergences": [
+          "accidental_megastructure"
+        ],
+        "thinkers": [
+          "Crawford",
+          "Bratton"
+        ],
+        "quotations": [
+          {
+            "thinker": "Kate Crawford",
+            "text": "AI is neither artificial nor intelligent.",
+            "source": "Atlas of AI, Yale University Press, 2021"
+          }
+        ]
+      },
+      "dependencies": "The provenance statement seeds the self-referential thread that will surface explicitly at spread_035 (the 'you think you lead a private life' inversion) and the epilogue."
+    },
+    "paper_trace": "Crawford, Atlas of AI (2021) — the colophon reveals the material and computational infrastructure behind the supposedly immaterial 'AI book.'",
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

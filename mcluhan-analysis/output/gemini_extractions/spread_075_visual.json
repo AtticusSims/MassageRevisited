@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_075",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:39:32.469358",
+  "generation_time_s": 27.1,
+  "images": [
+    {
+      "position": "right_page",
+      "subject": "A chaotic battle scene rendered in a 19th-century illustrative style. Numerous soldiers in stylized, rounded armor and patterned trousers are entangled in a confused melee, falling over one another. Some lie on the ground, seemingly defeated, while others stumble amidst pikes and swords. The scene is dense with figures, creating a sense of comical disarray rather than brutal combat.",
+      "source_type": "illustration",
+      "composition": "A high-density, all-over composition with figures packed from edge to edge, creating a sense of chaos and confusion. The perspective is slightly elevated, looking down on the scene. It is a high-contrast black and white line drawing with detailed hatching.",
+      "scale": "dominant",
+      "estimated_date": "c. 1871",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "impersonal",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single right-hand page. A single, large illustration dominates the page, bleeding off the top and right edges, with a small margin on the left and a larger one at the bottom. A single line of quoted text is set within the bottom margin, centered beneath the image.",
+    "typography": {
+      "body_font_style": "The only text is a caption in a small, light, serif font.",
+      "display_font_style": null,
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "Stark black ink on a white paper background. The dense line work of the illustration creates a textured, visually busy feel, but is balanced by the negative space within the drawing."
+    },
+    "white_space": "minimal",
+    "visual_density": "dense",
+    "left_right_relationship": "This is a single page, not a two-page spread.",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "mixed"
+  },
+  "spread_description": "This right-hand page is dominated by a chaotic 19th-century illustration of soldiers tumbling over each other in a confused battle. The frenetic energy of the image is ironically contrasted by a single, calm line of quoted text at the bottom: '\"Did you happen to meet any soldiers, my dear, as you came through the woods?\"' The reader experiences a jarring juxtaposition between the visual evidence of conflict and the text's oblivious, detached inquiry."
+}

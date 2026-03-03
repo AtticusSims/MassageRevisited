@@ -1,0 +1,47 @@
+{
+  "spread_id": "spread_057",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:29:22.311164",
+  "generation_time_s": 24.5,
+  "images": [
+    {
+      "position": "left_page",
+      "subject": "A high-contrast, black-and-white, close-up photograph of a young Bob Dylan's face in profile, looking towards the left. The lighting is dramatic, casting the right side of his face and the background in deep shadow, while highlighting his nose, lips, and cheekbone. His dark, wavy hair is visible at the top.",
+      "source_type": "art_photograph",
+      "composition": "Extreme close-up profile shot using chiaroscuro lighting. The face is tightly framed, cropped at the top of the head and below the chin, creating an intimate and intense mood. The composition is defined by the stark line between light and shadow.",
+      "scale": "full_bleed",
+      "estimated_date": "circa 1965-1966",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "intimate",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is starkly divided by the gutter. The left page is a full-bleed, high-contrast photograph. The right page is a solid black field containing a single block of text rotated 90 degrees counter-clockwise, forcing the reader to turn the book to read.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "A single quotation set in a bold, white, sans-serif font against a black background. The type is medium-large and vertically oriented.",
+      "special_treatments": [
+        "rotated",
+        "reversed_out"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "dark",
+      "description": "The spread is entirely black and white, dominated by deep shadows on the left page and a solid black field on the right, creating a somber and confrontational tone."
+    },
+    "white_space": "none",
+    "visual_density": "sparse",
+    "left_right_relationship": "Call-and-response. The left page presents the silent, pensive speaker (Dylan), and the right page delivers his challenging words. There is a strong contrast between the photographic image on the left and the purely graphic, textual space on the right.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "not_applicable",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "A reader encounters a stark, high-contrast spread pairing a full-page, shadowy profile of Bob Dylan on the left with a solid black page on the right. To read the quotation from Dylan's 'Ballad of a Thin Man,' the reader must physically rotate the book, engaging them in a disorienting act that mirrors the quote's theme of confusion in the face of radical change. The overall experience is one of quiet intensity and direct, unsettling challenge."
+}

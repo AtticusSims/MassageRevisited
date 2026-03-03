@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_085",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:46:02.559668",
+  "generation_time_s": 36.9,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "An abstract, high-contrast black and white image, likely early satellite or radar imagery. The right side features a distorted, grid-like pattern of bright vertical and horizontal lines. The left side shows a bright, irregular, cloud-like form against a black void.",
+      "source_type": "press_photo",
+      "composition": "A vertically oriented, full-page photograph with a grainy, mediated texture. The composition is divided, with a structured, geometric pattern on the right contrasting with an organic, amorphous shape on the left. The overall tone is dark and mysterious.",
+      "scale": "full_bleed",
+      "estimated_date": "1960s",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single, portrait-oriented page. A full-bleed photograph covers the entire area. A four-line quotation is placed in the lower-left quadrant, reversed out of the dark background of the image.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "A serif font of moderate size, used for the quotation. It is not large-scale display type, but functions as the page's only textual focal point.",
+      "special_treatments": [
+        "Text reversed out (white on black)"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "dark",
+      "description": "The page is overwhelmingly dark, with stark white elements creating a high-contrast, dramatic effect. The image has the grainy quality of early electronic media."
+    },
+    "white_space": "none",
+    "visual_density": "moderate",
+    "left_right_relationship": "This is a single page, not a spread.",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "marginal"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "The book's final page presents a full-bleed, mysterious, and abstract technological photograph, possibly of a planetary surface or radar scan. Over this dark and grainy image, a quote from A. N. Whitehead is set in white text: \"It is the business of the future to be dangerous.\" The experience is somber and prophetic, leaving the reader with a sense of unease and the vast, perilous scale of the new electric age."
+}

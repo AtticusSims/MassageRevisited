@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_005",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:03:04.682503",
+  "generation_time_s": 23.5,
+  "images": [
+    {
+      "position": "top_half",
+      "subject": "An overhead view of a white porcelain toilet bowl. Floating in the water at the center is a small, dark object resembling a miniature television set. The object has a visible logo or text on its screen, possibly reading 'DC PROBE' or similar.",
+      "source_type": "art_photograph",
+      "composition": "A direct overhead shot, creating a flat, graphic, and circular composition dominated by the shape of the toilet bowl. The small, dark object serves as a central focal point. The image is a grainy, medium-contrast black and white photograph.",
+      "scale": "half_page",
+      "estimated_date": "circa 1960s",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "close_social",
+        "attitude_angle": "overhead"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single, portrait-oriented page. A line of display text, 'Good Morning!', is positioned at the top. Directly below it is a photograph occupying the upper portion of the page. The entire bottom half of the page is empty white space, creating a top-heavy and sparse composition.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "A single line of sans-serif text, medium weight, in title case. Positioned at the top of the page.",
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "moderate",
+      "dominant_tone": "light",
+      "description": "The page is predominantly white, creating a bright and clean feel that contrasts with the surreal subject matter of the photograph."
+    },
+    "white_space": "abundant",
+    "visual_density": "sparse",
+    "left_right_relationship": "This is a single page, so there is no left-right relationship.",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "The reader is greeted with a cheerful, conventional phrase, 'Good Morning!', at the top of a sparse white page. This greeting is immediately subverted by the photograph below it: a jarring, surreal image of a television set floating in a toilet bowl. The experience is one of dark, ironic humor, juxtaposing a mundane morning ritual with the intrusion of media into the most private and abject of spaces."
+}

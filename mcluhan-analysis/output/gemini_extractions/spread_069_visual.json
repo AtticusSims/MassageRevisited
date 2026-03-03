@@ -1,0 +1,57 @@
+{
+  "spread_id": "spread_069",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:36:35.671395",
+  "generation_time_s": 28.2,
+  "images": [
+    {
+      "position": "inset_left",
+      "subject": "An editorial cartoon showing a man and a woman slouched in armchairs, looking stunned or stupefied while watching a television. The room is dark, and their faces are illuminated by the glow of the unseen screen.",
+      "source_type": "editorial_cartoon",
+      "composition": "A single-panel cartoon with loose, expressive ink wash. The figures are centrally framed, with the surrounding darkness emphasizing their isolation and focus on the television set to their right.",
+      "scale": "quarter_page",
+      "estimated_date": "1965",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "close_social",
+        "attitude_angle": "frontal"
+      }
+    },
+    {
+      "position": "right_page",
+      "subject": "A black-and-white photograph of a movie theater marquee and vertical sign. The sign reads 'CARVER'. The marquee advertises a double feature: 'SUSPENSE ! EXCITEMENT ! SUSAN HAYWARD IN \"BACK STREET\" AND \"DAMN THE DEFIANT\"'. A traffic light is visible at the top right.",
+      "source_type": "press_photo",
+      "composition": "A slightly low-angle, oblique shot of the theater facade. The image is high-contrast, with deep blacks and bright whites, giving it a gritty, urban feel. The sign and marquee dominate the frame.",
+      "scale": "dominant",
+      "estimated_date": "c. 1962",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "impersonal",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is strongly divided by the gutter. The left page contains a block of prose at the top and an editorial cartoon with a caption at the bottom, separated by white space. The right page is almost entirely filled by a single, large photograph.",
+    "typography": {
+      "body_font_style": "A standard serif typeface, justified in a single column.",
+      "display_font_style": "The text on the movie marquee is a bold, condensed, all-caps sans-serif font, designed for high impact and readability from a distance.",
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread uses stark black-and-white across all elements. The photograph on the right is particularly high-contrast, with deep, inky blacks."
+    },
+    "white_space": "moderate",
+    "visual_density": "moderate",
+    "left_right_relationship": "Juxtaposition. The left page presents a theoretical argument about television's new sensory language and a satirical critique of its content. The right page provides a real-world artifact from an older medium (cinema) that is being reshaped by the forces described on the left.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This spread presents a critical argument about media effects through juxtaposition. On the left, a text block analyzes how television's formal techniques have reconditioned audiences, paired with a satirical cartoon about TV's vapidness. On the right, a large, gritty photograph of a movie theater marquee serves as a visual counterpoint, representing the older medium of film now competing with and being influenced by television's new aesthetic."
+}

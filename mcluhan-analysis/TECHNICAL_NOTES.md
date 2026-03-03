@@ -24,6 +24,7 @@
 | Transformers | 4.57.1 | HuggingFace model inference |
 | PyTorch | 2.10.0+cu128 (molmo) | Deep learning framework |
 | Claude Code | Opus 4.6 | Orchestration + interpretive analysis |
+| Pillow | Latest | Image compression for static site build (PNG→JPEG) |
 
 ### Model Inventory
 | Model | Size | Interface | Primary Use |
@@ -31,7 +32,8 @@
 | Qwen2.5-VL-7B | 6.0 GB | Ollama (`qwen2.5vl:7b`) | OCR (archived — replaced by Qwen3-VL) |
 | Qwen3-VL | 6.1 GB | Ollama (`qwen3-vl`) | OCR + image description + layout analysis (sole VLM) |
 | Molmo2-8B | ~16 GB | HuggingFace Transformers | Image description (archived — inconsistent quality) |
-| Claude Opus 4.6 | Cloud | Claude Code CLI | Interpretive analysis, orchestration |
+| Gemini 2.5 Pro | Cloud | Google AI SDK (`google-generativeai`) | Visual descriptions (85 spreads) |
+| Claude Opus 4.6 | Cloud | Claude Code CLI | Interpretive analysis, content planning, orchestration |
 
 ---
 
@@ -125,6 +127,65 @@
 
 #### Decision
 **Molmo2-8B downgraded to secondary correlation role.** Image description is sometimes useful but inconsistent. Layout analysis is unreliable. The model is retained for cases where cross-validation between two independent VLMs adds confidence, but it cannot serve as a primary descriptor.
+
+### 2.3 Qwen3-VL Image Description Limitations
+
+**Evaluation date:** 2026-03-03
+**Context:** While Qwen3-VL dramatically outperforms Qwen2.5-VL for OCR, its image description capabilities have significant accuracy issues.
+
+#### Observed Failures
+
+| Spread | Error | Severity |
+|--------|-------|----------|
+| spread_050 | Misidentified a **foot** as a **hand** | High — fundamentally wrong object identification |
+| spread_050 | Misidentified a **big toe** as a **nose ring** | High — implausible identification |
+| General | Tendency toward generic descriptions lacking visual specificity | Medium |
+| General | Poor identification of human body parts in non-standard compositions | Medium |
+
+#### Assessment
+Qwen3-VL (7B parameters, local inference) is adequate for OCR but **unreliable for detailed image identification**. The foot/hand misidentification on spread_050 is not a marginal error — it represents a fundamental failure in visual understanding. This motivated the evaluation of Gemini 2.5 Pro for visual descriptions.
+
+### 2.4 Gemini 2.5 Pro Evaluation (Visual Descriptions)
+
+**Evaluation date:** 2026-03-03
+**Model:** `gemini-2.5-pro` via Google AI SDK
+**API tier:** Paid (no rate limiting required)
+**Context window:** 1M tokens (system instruction used ~51K tokens, ~5% of capacity)
+
+#### Setup
+- Client module: `source/gemini_tools.py`
+- API key: `GEMINI_API_KEY` in `source/.env` (gitignored)
+- Temperature: 0.2, max output: 16384 tokens
+- System instruction includes: `phase_b_methodology_v2.md`, `analysis_schema_v1.2.json`, 2 gold standard samples
+
+#### Visual Description Quality
+
+Gemini 2.5 Pro was evaluated against the existing Qwen3-VL descriptions. A full comparison across all 85 spreads was generated (`output/gemini_comparison_report.md`).
+
+| Metric | Result |
+|--------|--------|
+| Spreads with visual descriptions | 85/85 (100%) |
+| Image identification accuracy | Significantly better than Qwen3-VL |
+| Object/body part identification | Correct (foot identified as foot, not hand) |
+| Design field differences | 290 field-level differences from existing analysis |
+| Conciseness | More focused than Qwen3-VL's verbose descriptions |
+
+#### Key Differences from Existing Analysis
+
+| Field | Gemini Tendency | Existing (Qwen3-VL + Claude) |
+|-------|----------------|-------------------------------|
+| `visual_density` | More conservative ("moderate") | More dramatic ("overwhelming") |
+| `left_right_relationship` | Correctly identifies single pages | Sometimes assigns two-page relationships to single pages |
+| `layout_description` | Concise, spatially precise | Verbose, interpretive |
+| Image subjects | Accurate identification | Occasional misidentification (spread_050) |
+
+#### Decision
+**Gemini 2.5 Pro adopted for visual descriptions.** The model's 1M context window allowed including full methodology + schema + samples in every request, ensuring consistent quality. Image identification is materially better than the local 7B model.
+
+**Gemini independent analysis was NOT executed.** Only Phase 2 (visual descriptions) of the planned 4-phase Gemini integration was completed. The user directed that content planning use Claude Opus exclusively.
+
+#### Deviation from Plan
+The original plan specified `gemini-3.1-pro-preview` but `gemini-2.5-pro` was used — the 3.1 model was not yet available at time of execution.
 
 ---
 
@@ -247,6 +308,90 @@ For each section, transcribe the text EXACTLY as it appears...
 }
 ```
 
+### 5.4 Analysis Database Structure (v1.2)
+
+```json
+{
+  "metadata": {
+    "schema_version": "1.2",
+    "schema_theoretical_basis": [
+      "Kress & van Leeuwen 2006 (visual grammar)",
+      "Barthes 1977; Martinec & Salway 2005 (image-text relations)",
+      "Drucker 2014 (performative design)",
+      "Bateman 2008; Hiippala 2015 (GeM framework)"
+    ],
+    "analysis_model": "claude-opus-4-6+qwen3-vl"
+  },
+  "spreads": [
+    {
+      "id": "spread_NNN",
+      "analyst": "claude-opus-4-6+qwen3-vl",
+      "analysis_method": "llm_primary_human_reviewed",
+      "images": [{
+        "relationship_to_text": {
+          "primary_relation": "enum (illustrates|amplifies|literalizes|...)",
+          "barthes_mode": "anchorage|relay",
+          "description": "..."
+        },
+        "interactive_meaning": {
+          "contact": "demand|offer|not_applicable",
+          "social_distance": "intimate|social|public|not_applicable",
+          "attitude_angle": "frontal|oblique|vertical_power|not_applicable"
+        }
+      }],
+      "design": {
+        "color_and_tone": {
+          "contrast": "high|low|mixed",
+          "dominant_tone": "dark|light|mixed",
+          "description": "..."
+        },
+        "information_value": {
+          "left_right": "given_new|balanced|reversed|not_applicable",
+          "top_bottom": "ideal_real|balanced|not_applicable",
+          "center_margin": "centered|distributed|not_applicable"
+        },
+        "compositional_framing": "strongly_framed|weakly_framed|mixed|not_applicable"
+      },
+      "rhetoric": {
+        "rhetorical_strategy": {
+          "primary": "one of 15-term controlled vocabulary",
+          "secondary": "nullable, from same vocabulary"
+        },
+        "strategy_description": "...",
+        "multi_spread_patterns": "...",
+        "confidence": "high|medium|low"
+      },
+      "themes": { "confidence": "high|medium|low" },
+      "progression": { "confidence": "high|medium|low" }
+    }
+  ]
+}
+```
+
+**v1.1 → v1.2 Changes:** 12 revisions (A1-A12) adding controlled vocabularies, Barthes image-text taxonomy, Kress & van Leeuwen visual grammar fields, confidence indicators, and per-entry analyst metadata. Full revision details in `ContextDocs/schema_methodology_revisions.md`.
+
+### 5.5 Controlled Vocabularies (v1.2)
+
+The v1.2 schema introduces controlled vocabularies grounded in multimodal discourse analysis literature:
+
+**Rhetorical Strategies (15 terms):**
+assertion, confrontation, juxtaposition, accumulation, disruption, provocation, invocation, dramatization, quieting, sensory_overload, humor, demonstration, interpellation, defamiliarization, call_and_response
+
+**McLuhan Concepts (19 terms):**
+medium_is_the_message, extensions_of_man, global_village, hot_and_cool, rear_view_mirror, figure_ground, acoustic_space, visual_space, electric_age, print_culture, tribal, pattern_recognition, sense_ratios, environment_as_invisible, obsolescence_and_retrieval, participation, implosion, anti_environment, allatonceness
+
+**Image-Text Relationship (primary_relation):**
+illustrates, amplifies, literalizes, contradicts, ironizes, provides_atmosphere, serves_as_metaphor, extends, independent, anchorage, relay
+
+**Barthes Mode:** anchorage, relay (from Barthes 1977; Martinec & Salway 2005)
+
+**Interactive Meaning (Kress & van Leeuwen 2006):**
+- Contact: demand, offer, not_applicable
+- Social distance: intimate, social, public, not_applicable
+- Attitude angle: frontal, oblique, vertical_power, not_applicable
+
+The vocabulary registry is maintained in `source/theme_vocabulary.json` (59 terms with definitions and related_terms).
+
 ---
 
 ## 6. Infrastructure Notes
@@ -368,4 +513,178 @@ This layering is documented in `source/phase_b_methodology.md` (field-by-field m
 
 ---
 
-*This document is updated when significant technical decisions are made or new model evaluations are conducted.*
+## 9. Schema Version History
+
+| Version | Date | Changes | Key Files |
+|---------|------|---------|-----------|
+| 1.0 | 2026-03-02 | Initial schema design (8 sections per spread) | `analysis_schema_v1.0.json` (superseded) |
+| 1.1 | 2026-03-02 | Added `movement_mapping` field, 9 sections per spread | `analysis_schema_v1.1.json` |
+| 1.2 | 2026-03-02 | Theoretical grounding: 12 revisions (A1-A12), controlled vocabularies, structured objects, confidence indicators | `analysis_schema_v1.2.json` |
+
+### v1.2 Theoretical Framework
+
+The v1.2 schema maps to four established theoretical frameworks in multimodal discourse analysis:
+
+| Framework | Fields Added/Modified | Purpose |
+|-----------|----------------------|---------|
+| Kress & van Leeuwen (2006) | `interactive_meaning`, `information_value`, `compositional_framing` | Visual grammar — systematic analysis of visual composition |
+| Barthes (1977) / Martinec & Salway (2005) | `relationship_to_text.barthes_mode` | Image-text relations — anchorage vs relay taxonomy |
+| Drucker (2014) | `design_enacts_argument`, `design_argument_description` (retained from v1.1) | Performative design — design as meaning-making |
+| Bateman (2008) / Hiippala (2015) | Schema architecture (multi-layered annotation) | GeM framework — computational multimodal annotation |
+
+The theoretical grounding enables potential academic publication. See `ContextDocs/visual_rhetoric_and_reliability.md` for the full mapping and `ContextDocs/schema_methodology_revisions.md` for the revision rationale.
+
+---
+
+## 10. Content Plan Architecture (Phase C)
+
+### 10.1 Overview
+
+The content plan maps each of the 85 original spreads to a contemporary AI-era equivalent. The plan is the primary input for downstream authoring and design phases.
+
+**Generator script:** `source/generate_content_plan.py`
+**Output:** `output/content_plan.json` (402KB, 85 entries + meta section)
+
+### 10.2 Content Plan Schema
+
+```json
+{
+  "version": "1.0",
+  "generated": "2026-03-03T...",
+  "generator": "merge_sections.py (improved plans)",
+  "schema_version": "planning_v1",
+  "meta": {
+    "movement_plan": { /* 5 movements with arc descriptions, themes, thinkers */ },
+    "convergence_map": { /* 6 convergences with appearances across spreads */ },
+    "rhythm_plan": { /* Segments defining pace and energy by movement */ },
+    "quotation_distribution": { /* By thinker (20) and by movement (5) */ },
+    "image_strategy": { /* Image approach per movement */ },
+    "structural_decisions": { /* Boundary decisions, open questions */ }
+  },
+  "pages": [
+    {
+      "spread_id": "spread_NNN",
+      "movement": "prologue|movement_1_environment|movement_2_acceleration|hinge|movement_3_dreamscape",
+      "original_summary": "Brief summary of the original spread's content and argument",
+      "contemporary_plan": {
+        "theme": "AI-era theme title",
+        "argument": "100-150 word argument (the 'why' of this spread)",
+        "text": { "display_text": "...", "body_text_direction": "...", "quotation": {...} },
+        "image": { "concept": "...", "visual_style": "...", "relationship_to_text": "..." },
+        "rhetoric": { "strategy": "one of 15 terms", "design_enacts": "mechanism description" },
+        "mapping": {
+          "relationship_to_original": "echo|inversion|transformation|departure",
+          "convergences": ["convergence_id", ...],
+          "thinkers": ["Thinker Name", ...]
+        }
+      },
+      "paper_trace": { "citation": "...", "convergence_tag": "..." },
+      "reviewer_feedback": null
+    }
+  ]
+}
+```
+
+### 10.3 Movement Assignments
+
+| Movement | Spreads | Count | Arc |
+|----------|---------|-------|-----|
+| Prologue | 001-010 | 10 | Individual → data shadow → planetary infrastructure |
+| M1: Environment | 011-035 | 25 | Bratton's Stack: Earth → Cloud → City → Address → Interface → User |
+| M2: Acceleration | 036-060 | 25 | Generated reality, synthetic media, recursive acceleration |
+| Hinge | 061-065 | 5 | Copernican trauma, meaning crisis, threshold crossing |
+| M3: Dreamscape | 066-085 | 20 | Consciousness, numinous return, maelstrom, coda |
+
+### 10.4 Controlled Vocabularies (Content Plan)
+
+**Rhetorical Strategies (15 terms, same as analysis schema):**
+assertion, confrontation, juxtaposition, accumulation, disruption, provocation, invocation, dramatization, quieting, sensory_overload, humor, demonstration, interpellation, defamiliarization, call_and_response
+
+**Relationship to Original (4 terms):**
+- `echo` — contemporary content that parallels the original's structure and argument
+- `inversion` — the original's logic reversed or contradicted by AI-era developments
+- `transformation` — the original's concern fundamentally altered by AI context
+- `departure` — new territory with no direct parallel in the original
+
+**Convergences (6):**
+reality_as_interface, intelligence_substrate_independent, failure_of_propositions, recursive_acceleration, return_of_the_numinous, accidental_megastructure
+
+### 10.5 Distribution Targets and Actuals
+
+| Metric | Target | Actual |
+|--------|--------|--------|
+| Strategies | All 15 used, no adjacent duplicates | 15/15 used, 0 adjacent duplicates |
+| Relationships | Balanced across 4 types | echo=33, transformation=29, inversion=15, departure=8 |
+| Convergences | All 6 present in every movement | All 6 present across all movements |
+| Thinkers | 20+ with framework-sourced quotations | 20 thinkers with named works and quotations |
+| Argument length | 100-150 words | min=76, max=166, avg=115 words |
+| Paper traces | Present for every entry | 85/85 entries have citations |
+
+### 10.6 Parallel Subagent Architecture
+
+The content plan was generated using a parallel subagent architecture — a significant deviation from the sequential approach originally envisioned.
+
+**Architecture:**
+```
+generate_content_plan.py → baseline content_plan.json
+                         ↓
+     ┌──────────────────────────────────────────┐
+     │  4 parallel Claude Code subagents        │
+     │  ┌──────────┐ ┌───────┐ ┌───────┐ ┌───┐ │
+     │  │ Prologue │ │  M1   │ │  M2   │ │H+3│ │
+     │  │  10 pgs  │ │ 25 pg │ │ 25 pg │ │25p│ │
+     │  └────┬─────┘ └───┬───┘ └───┬───┘ └─┬─┘ │
+     └───────┼────────────┼────────┼────────┼───┘
+             ↓            ↓        ↓        ↓
+     prologue_plans  m1_plans  m2_plans  hinge_m3_plans
+                         ↓
+     merge_sections.py → merged content_plan.json
+                         ↓
+     update_meta.py → final content_plan.json (meta section updated)
+```
+
+**Why parallel:** Each section + framework docs (~200KB context documents) consumes significant context. Running all 85 spreads sequentially in a single context would exceed practical limits. The parallel approach also enables independent quality review per section.
+
+**Each subagent receives:**
+- Framework documents: `framework_v3.md` (65KB), `theorist_reference.md` (46KB)
+- Per-spread analysis data extracted from the analysis database
+- Quality requirements: named thinkers with exact quotations, varied strategies, concrete image/design directions
+- Reference entry from a completed section (for quality calibration)
+
+**Resilience challenge:** One subagent's output was lost during context compaction (Hinge+M3 in Session 8). The recovery strategy was to launch a dedicated rewrite subagent in Session 9 with explicit output file targeting. This produced the highest-quality section (110KB, all 15 strategies used).
+
+---
+
+## 11. Deviations from Original Plans
+
+This section documents significant deviations from the original project plans and planning engine instructions.
+
+### 11.1 Gemini Integration
+
+**Original plan:** Full 4-phase Gemini integration (visual descriptions → independent analysis → comparison → merge) using `gemini-3.1-pro-preview`.
+
+**Actual:** Only Phase 2 (visual descriptions) was executed, using `gemini-2.5-pro`. User directed that content planning use Claude Opus exclusively: "I want your expertise, as you are the best, not another model's."
+
+**Impact:** Gemini visual descriptions (85 files) are available for downstream use, but the independent analysis and automated merge were not performed. The content plan reflects Claude's interpretation, not a consensus of multiple models.
+
+### 11.2 Content Plan Schema
+
+**Original (planning engine instructions):** Field names `text_direction`, `image_direction`, `design_direction` with specific subfield structures.
+
+**Actual:** Uses `text`, `image`, `rhetoric` to maintain compatibility with `build_static_site.py` and the existing viewer infrastructure. The semantic content is equivalent but the field names differ.
+
+### 11.3 Subagent Architecture
+
+**Original:** Sequential, single-agent process working through spreads in order.
+
+**Actual:** 4 parallel subagents (one per movement section), with a merge-and-validate step. This was necessary for context management and also produced better results since each agent could maintain full framework context for its section.
+
+### 11.4 Qwen3-VL Role
+
+**Original plan:** Qwen3-VL handles all VLM tasks (OCR, image description, layout analysis).
+
+**Actual:** Qwen3-VL retained for OCR only. Image descriptions supplemented by Gemini 2.5 Pro due to accuracy issues (spread_050 foot/hand misidentification).
+
+---
+
+*Last updated: Session 9 (Phase C complete — content plan generated, validated, and deployed).*

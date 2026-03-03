@@ -8,6 +8,8 @@
       21
     ],
     "section": "body",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
     "spread_type": "text_with_specific_image",
     "orientation": "landscape_spread",
     "text": {
@@ -27,57 +29,100 @@
     ],
     "images": [
       {
-        "position": "full_bleed",
-        "subject": "### Visual Elements in the Book Spread  \n\n#### 1. **Small Inset Image on the Left Page**  \n- **What it depicts**: A close - up black - and - white photograph of an electronic circuit board. It shows intricate details of tiny components such as resistors, capacitors, or integrated circuits, densely packed together. The image focuses on the fine, technical elements typical of circuitry.  \n- **Position**: Inset on the left page, located in the upper left quadrant, above the main text block.  \n- **Visual style**: Black - and - white photograph (macro photography).  \n- **Composition**: Tight crop emphasizing the circuit’s complexity. High contrast between dark components and the lighter background of the circuit board. The angle is a direct close - up, highlighting the minute details of the electronic parts.  \n- **Page occupation**: Approximately 5–10% of the left page.  \n\n\n#### 2. **Full - Bleed Image on the Right Page**  \n- **What it depicts**: A repeating pattern of human noses in profile view, arranged in a grid. Each nose is a black - and - white photograph showing the side of the nose with visible nostrils, the bridge of the nose, and the contours of the nose. The noses are tiled to create a continuous, repetitive pattern across the page.  \n- **Position**: Full bleed on the right page, covering the entire right side of the spread.  \n- **Visual style**: Black - and - white photograph (or a manipulated photographic image, likely a digital collage or repeated photograph).  \n- **Composition**: Grid layout with rows and columns of profile noses. The angle is consistent (side view), creating a uniform pattern. High contrast between the dark noses and the lighter background (which has subtle texture or white areas). The image has a hypnotic, repetitive quality due to the grid structure.  \n- **Page occupation**: 100% of the right page.",
-        "source_type": "advertisement",
-        "source_credit": "The Advertising Council, Inc.",
-        "estimated_date": "c. 1960s",
-        "composition": "",
-        "scale": "full_spread",
-        "relationship_to_text": ""
+        "position": "inset_left",
+        "subject": "A small, high-contrast photograph of an electronic circuit board, showing intricate pathways and components.",
+        "source_type": "technical_diagram",
+        "composition": "A dense, detailed, top-down view of the circuit board, rendered in stark black and white. The complexity of the pattern verges on abstraction.",
+        "scale": "icon",
+        "estimated_date": "circa 1960s",
+        "interactive_meaning": {
+          "contact": "not_applicable",
+          "social_distance": "not_applicable",
+          "attitude_angle": "not_applicable"
+        }
+      },
+      {
+        "position": "right_page",
+        "subject": "A repeating grid pattern of a human nose seen in profile. The same close-up image of a nose is duplicated multiple times, filling the entire page.",
+        "source_type": "art_photograph",
+        "composition": "A full-bleed, high-contrast, grainy image creating a dense, textured pattern. All noses are identical and face to the right, suggesting uniformity and mechanical reproduction.",
+        "scale": "full_bleed",
+        "estimated_date": "circa 1960s",
+        "interactive_meaning": {
+          "contact": "offer",
+          "social_distance": "intimate",
+          "attitude_angle": "oblique"
+        }
       }
     ],
     "design": {
-      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two distinct sections:  \n- **Left side**: Dominated by text. The title *“your job”* sits at the top, followed by a column of body text (with a small, abstract graphic—possibly a circuit board—positioned above the main text block).  \n- **Right side**: Occupied by a high-contrast black-and-white photograph of repeated human profiles (noses/foreheads), arranged in a grid.  \nThe text and image are **side-by-side**, with clear visual separation. The text block is left-aligned with generous margins, while the image fills the right half of the page, creating a balanced yet distinct division between textual and visual elements.  \n\n\n### 2. TYPOGRAPHY  \n- **Title**: *“your job”* is large, bold, and **sans-serif** (lowercase, modern display font), drawing immediate attention.  \n- **Body text**: Smaller, **serif** (e.g., Times New Roman), regular weight, and black-on-white (standard book typography).  \n- **Other text**: Quotations and smaller captions (e.g., *“Come into my parlor...”*) use the same serif body font, maintaining consistency.  \n- **Contrast**: Text is **high-contrast** (black on white), while the image uses stark black-and-white tones. No reversed (white-on-black) text appears.  \n\n\n### 3. CONTRAST & TONE  \n- **Text side**: Light (white background) with high contrast (black text), creating clarity and readability.  \n- **Image side**: Dark (predominantly black-and-white) with **high contrast** (sharp edges, deep shadows, and bright highlights in the grid of profiles).  \n- **Overall tone**: The spread is **dual-toned**—the text side feels clean and analytical, while the image side feels stark and mechanical. The high contrast in both elements reinforces a sense of precision and tension.  \n\n\n### 4. WHITE SPACE  \n- **Text side**: **Moderate to dense** white space. The text block is left-aligned with ample margins on the right, top, and bottom, allowing the text to breathe.  \n- **Image side**: Minima",
+      "layout_description": "A strongly asymmetrical layout. The left page is dominated by white space, featuring a large headline at the top, a single column of text, and a small inset image. The right page is a dense, full-bleed photographic pattern, creating a stark visual contrast between the textual/informational left and the metaphorical/textural right.",
       "typography": {
-        "body_font_style": "Sans-serif text",
-        "display_font_style": "Large display typography",
+        "body_font_style": "Serif, medium weight, regular size, set in a single column with a ragged right margin.",
+        "display_font_style": "Large, bold, lowercase sans-serif font for the headline 'your job'.",
         "special_treatments": []
       },
-      "color_and_tone": "Black and white.",
-      "white_space": "sparse",
-      "visual_density": "dense",
-      "left_right_relationship": "mirror"
+      "color_and_tone": {
+        "contrast": "high",
+        "dominant_tone": "balanced",
+        "description": "The spread is entirely in high-contrast black and white. The left page is predominantly light, while the right page is a dense, dark pattern."
+      },
+      "white_space": "moderate",
+      "visual_density": "moderate",
+      "left_right_relationship": "Juxtaposition. The left page presents a textual argument about the obsolescence of specialized jobs due to automation ('electric circuitry'). The right page provides a visual metaphor for this specialization and its dehumanizing, repetitive nature through the grid of identical noses, evoking the phrase 'keeping one's nose to the grindstone.'",
+      "information_value": {
+        "left_right": "given_new",
+        "top_bottom": "ideal_real",
+        "center_margin": "distributed"
+      },
+      "compositional_framing": "strongly_framed"
     },
     "rhetoric": {
-      "argument": "your job \"Jobs\" represent a relatively recent pattern of work.",
-      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "argument": "The extension of the media inventory to 'your job' reveals how communications technologies restructure not just leisure and culture but the fundamental conditions of labor—work itself is a media-saturated environment whose form is determined by dominant communication technologies.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": [
+          "demonstration",
+          "interpellation"
+        ]
+      },
+      "strategy_description": "The spread juxtaposes elements through its combination of text and design. Secondary strategies of demonstration and interpellation reinforce the primary approach.",
       "design_enacts_argument": true,
       "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
-      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
+      "reader_experience": "Sustained reading — the reader engages with extended prose argument.",
       "mcluhan_concepts": [
-        "pattern_recognition"
-      ]
+        "environment_as_invisible"
+      ],
+      "multi_spread_patterns": null,
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
         "electric_technology",
         "fragmentation_vs_unification",
         "education",
-        "perception",
-        "space_and_time"
+        "perception_and_senses",
+        "space_and_time",
+        "automation"
       ],
-      "contemporary_domain_candidates": [],
-      "movement_mapping": [],
-      "mapping_rationale": ""
+      "contemporary_domain_candidates": [
+        "surveillance_and_control",
+        "global_village_revisited"
+      ],
+      "movement_mapping": [
+        "movement_1_environment"
+      ],
+      "mapping_rationale": "The claim that media reshape government anticipates how social media have transformed political campaigns, governance, and civic discourse—from algorithmic influence operations to the erosion of shared factual reality to the real-time publicization of state action.",
+      "confidence": "moderate"
     },
     "progression": {
       "pace_shift": "steady",
       "thematic_function": "develops_theme",
-      "relationship_to_previous": "",
-      "relationship_to_next": ""
+      "relationship_to_previous": "Escalates from labor to governance, the most explicitly political item in the inventory, arguing that political structures are media artifacts.",
+      "relationship_to_next": "The final inventory item ('the others') represents the maximum expansion—from self to the entire social field of otherness.",
+      "confidence": "moderate"
     },
-    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+    "notes": "The inventory's inclusion of government completes the move from private to public: you → family → neighborhood → education → job → government. Each domain is revealed as a media environment rather than an autonomous institution. The implication is that changing the communication medium changes the form of governance, a thesis now demonstrated by the effects of social media on democratic institutions.\n\n[Gemini visual description] The reader is presented with a starkly divided spread. On the left, the headline 'your job' introduces a textual argument about automation replacing specialized human labor, illustrated by a small circuit board. On the right, a full-bleed, repeating pattern of identical human noses in profile creates a powerful visual metaphor for mechanical, de-individualized work, evoking a feeling of unease and conformity."
   },
   "ocr": {
     "ocr_raw": "your job\n\n\"When this circuit learns your job, what are you going to do?\"\n\n\"Jobs\" represent a relatively recent pattern of work. From the fifteenth century to the twentieth century, there is a steady progress of fragmentation of the stages of work that constitute \"mechanization\" and \"specialism.\" These procedures cannot serve for survival or sanity in this new time.\n\nUnder conditions of electric circuitry, all the fragmented job patterns tend to blend once more into involving and demanding roles or forms of work that more and more resemble teaching, learning, and \"human\" service, in the older sense of dedicated loyalty.\n\nUnhappily, many well-intentioned political reform programs that aim at the alleviation of suffering caused by unemployment betray an ignorance of the true nature of media-influence.\n\n\"Come into my parlor,\" said the computer to the specialist.\n\n20",
@@ -92,5 +137,62 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two distinct sections:  \n- **Left side**: Dominated by text. The title *“your job”* sits at the top, followed by a column of body text (with a small, abstract graphic—possibly a circuit board—positioned above the main text block).  \n- **Right side**: Occupied by a high-contrast black-and-white photograph of repeated human profiles (noses/foreheads), arranged in a grid.  \nThe text and image are **side-by-side**, with clear visual separation. The text block is left-aligned with generous margins, while the image fills the right half of the page, creating a balanced yet distinct division between textual and visual elements.  \n\n\n### 2. TYPOGRAPHY  \n- **Title**: *“your job”* is large, bold, and **sans-serif** (lowercase, modern display font), drawing immediate attention.  \n- **Body text**: Smaller, **serif** (e.g., Times New Roman), regular weight, and black-on-white (standard book typography).  \n- **Other text**: Quotations and smaller captions (e.g., *“Come into my parlor...”*) use the same serif body font, maintaining consistency.  \n- **Contrast**: Text is **high-contrast** (black on white), while the image uses stark black-and-white tones. No reversed (white-on-black) text appears.  \n\n\n### 3. CONTRAST & TONE  \n- **Text side**: Light (white background) with high contrast (black text), creating clarity and readability.  \n- **Image side**: Dark (predominantly black-and-white) with **high contrast** (sharp edges, deep shadows, and bright highlights in the grid of profiles).  \n- **Overall tone**: The spread is **dual-toned**—the text side feels clean and analytical, while the image side feels stark and mechanical. The high contrast in both elements reinforces a sense of precision and tension.  \n\n\n### 4. WHITE SPACE  \n- **Text side**: **Moderate to dense** white space. The text block is left-aligned with ample margins on the right, top, and bottom, allowing the text to breathe.  \n- **Image side**: Minimal white space *within* the image (the grid of profiles is tightly packed), but the image itself is bordered by the page’s edge, creating a clean separation from the text.  \n- **Overall**: White space is **moderate**—sufficient to balance the dense text and image without feeling sparse or overwhelming. It enhances the spread’s structured, intentional feel.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Contrast**: The left (text) and right (image) are **thematically linked but visually distinct**. The text discusses the fragmentation of work, while the image’s grid of repetitive profiles visually echoes this theme (e.g., “mechanization” and “specialism” mentioned in the text).  \n- **Relationship type**: **Contrast with unity**—the text explains the concept, and the image *visually embodies* it. The left side (informational) and right side (symbolic) work together to reinforce the spread’s message, rather than competing or mirroring each other.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Minimal, analytical, and tense**. The clean typography, high-contrast image, and structured layout create a calm, intellectual atmosphere. However, the grid of repetitive profiles introduces a subtle sense of monotony or mechanical rigidity, aligning with the text’s critique of fragmented work.  \n- **Key impressions**: The spread feels **controlled yet urgent**—the white space and typography convey order, while the image’s repetition hints at the “mechanization” the text critiques. It avoids chaos or overwhelming energy, instead offering a focused, thought-provoking visual experience.",
     "layout_analysis_time": 12.5,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_015",
+    "movement": "movement_1_environment",
+    "original_summary": {
+      "spread_type": "text_with_specific_image",
+      "section": "body",
+      "book_pages": [
+        20,
+        21
+      ],
+      "original_themes": [
+        "electric_technology",
+        "fragmentation_vs_unification",
+        "education",
+        "automation"
+      ],
+      "rhetorical_strategy": "assertion",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "text_excerpt": "Jobs represent a relatively recent pattern of work. From the time of Gutenberg to the age of automation, jobs have been a standard form of social organization."
+    },
+    "contemporary_plan": {
+      "theme": "Your job: the human exception handler",
+      "argument": "McLuhan noted that 'jobs' were a recent invention of the Gutenberg era. He was right: the stable, lifelong career lasted roughly 500 years and is now dissolving. But the dissolution is not into leisure (as McLuhan sometimes hoped) but into a new role: the human exception handler. Automated systems process 99.7% of warehouse logistics, loan applications, content moderation decisions — then route the remaining 0.3% to a human for judgment. The worker is no longer the engine but the override button. McKinsey's 2023 estimate: 30% of work hours in the US economy could be automated by 2030. The question is not whether your job will be automated but which exception-handling niche you will occupy.",
+      "text": {
+        "approach": "original_prose",
+        "description": "Display text: 'your job.' Body text: the exception-handler argument. Specific: Amazon warehouse workers make 200+ micro-decisions per hour that robots cannot; content moderators review the 0.1% of posts algorithms flag; radiologists confirm what AI detects. The human is now the system's quality-assurance layer.",
+        "voice_notes": "Direct, unsentimental. Economic anxiety stated as structural fact, not personal grievance."
+      },
+      "image": {
+        "approach": "found",
+        "subject": "An Amazon fulfillment center interior — the long corridor of shelving robots with a single human worker visible among them. The human should appear as one component in an automated system, not as its operator. Scale should emphasize the ratio: many machines, one person.",
+        "mood": "industrial_scale",
+        "image_text_relationship": "literalizes"
+      },
+      "rhetoric": {
+        "strategy": "confrontation",
+        "design_enacts": "The image confronts the reader with the ratio: vast automated infrastructure, tiny human figure. The reader is forced to see themselves as the small figure in the machine. The design makes the economic argument visceral through scale."
+      },
+      "mapping": {
+        "relationship_to_original": "inversion",
+        "convergences": [],
+        "thinkers": [],
+        "quotations": []
+      },
+      "dependencies": "Continues the 'you' series."
+    },
+    "paper_trace": {
+      "citation": "Autor 2015 \"Why Are There Still So Many Jobs?\" on task-based displacement and the hollowing of middle-skill labor",
+      "convergence_tag": null
+    },
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

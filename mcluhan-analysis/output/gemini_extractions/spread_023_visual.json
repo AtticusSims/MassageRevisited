@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_023",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:11:53.605114",
+  "generation_time_s": 31.7,
+  "images": [
+    {
+      "position": "spanning_gutter",
+      "subject": "An extreme close-up of a single human eye, looking directly forward. The image captures the pupil, iris, sclera, upper and lower eyelids with eyelashes, and a thick eyebrow. The eye is wide open.",
+      "source_type": "art_photograph",
+      "composition": "The photograph is a tightly framed, extreme close-up, centered on the spread. It is bisected vertically by the book's gutter, splitting the pupil and iris. The image is rendered in high-contrast, grainy black and white, emphasizing the textures of skin and hair.",
+      "scale": "dominant",
+      "estimated_date": "circa 1960s",
+      "interactive_meaning": {
+        "contact": "demand",
+        "social_distance": "intimate",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A single, massive photograph of an eye dominates the spread, spanning both pages and split by the central gutter. Above the image, in the top margin, a single line of text also spans the gutter. The composition is largely symmetrical around the vertical axis.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "Sans-serif, medium weight, medium size, lowercase. Positioned in the white space at the top of the spread.",
+      "special_treatments": [
+        "The text is a sentence fragment ending in an ellipsis, suggesting continuation."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The stark black-and-white photography creates a dramatic tonal range, from the deep black of the pupil to the bright white of the sclera and surrounding page."
+    },
+    "white_space": "moderate",
+    "visual_density": "sparse",
+    "left_right_relationship": "The two pages are unified into a single canvas, bisected by the gutter. The reader's brain must stitch the two halves of the eye together, actively overcoming the physical separation of the pages.",
+    "information_value": {
+      "left_right": "balanced",
+      "top_bottom": "ideal_real",
+      "center_margin": "centered"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "A massive, high-contrast photograph of a human eye stares directly out at the reader, spanning the entire two-page spread and split by the book's spine. Above this confrontational and intimate image, a single line of text reads 'is an extension of the eye...'. The scale and direct gaze create a powerful, slightly unsettling experience of being seen."
+}

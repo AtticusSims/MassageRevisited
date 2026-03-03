@@ -1,0 +1,123 @@
+{
+  "spread_id": "spread_006",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:03:45.459661",
+  "generation_time_s": 40.8,
+  "_array_response": [
+    {
+      "id": "spread_006",
+      "pdf_page": 6,
+      "book_pages": [
+        2,
+        3
+      ],
+      "section": "front_matter",
+      "analyst": "vlm_assisted",
+      "analysis_method": "llm_primary_human_reviewed",
+      "spread_type": "title_page",
+      "orientation": "landscape_spread",
+      "text": {
+        "body_text": "Published in 2001 by Gingko Press\n5768 Paradise Drive, Suite J, Corte Madera, CA 94925\n(415) 924-9615, Fax (415) 924-9605\nemail: books@gingkopress.com\nhttp://www.gingkopress.com\nISBN: 1-58423-070-3\nPrinted in Germany by Cantz & Bosse",
+        "display_text": "The Medium is the Massage\nMarshall McLuhan\nQuentin Fiore\nAn Inventory of Effects",
+        "captions": [
+          "Produced by Jerome Agel",
+          "© 1967 by Jerome Agel. Renewed © 1996 by Jerome Agel. All rights reserved."
+        ],
+        "page_numbers_visible": []
+      },
+      "quotations": [],
+      "images": [
+        {
+          "position": "spanning_gutter",
+          "subject": "A heavily distorted, high-contrast, grainy, black-and-white photograph of a human face in extreme close-up. The features—eyes, nose, and mouth—are abstracted into stark black shapes on a white background, conveying a sense of being overwhelmed, electronically processed, or in anguish.",
+          "source_type": "art_photograph",
+          "source_credit": null,
+          "estimated_date": "c. 1960s",
+          "composition": "Extreme close-up filling the frame. The image is rendered with a very coarse halftone screen or solarization effect, which eliminates all mid-tones, reducing the face to pure black and white. This creates a graphic, abstract quality where the face appears fragmented and textured.",
+          "scale": "dominant",
+          "relationship_to_text": {
+            "primary_relation": "serves_as_metaphor",
+            "barthes_mode": "relay",
+            "description": "The image serves as a visual metaphor for the 'massage' of the medium. While the text on the left provides the book's title (the 'message'), the image on the right enacts the sensory, distorting, and overwhelming effect of media on human perception."
+          },
+          "interactive_meaning": {
+            "contact": "offer",
+            "social_distance": "intimate",
+            "attitude_angle": "frontal"
+          }
+        }
+      ],
+      "design": {
+        "layout_description": "A starkly asymmetrical layout. The left page features a solid black vertical bar containing the title, authors, and other credits in white text. The right page is almost entirely consumed by a full-bleed, high-contrast photograph of a face, which also bleeds across the gutter and slightly overlaps the black bar on the left.",
+        "typography": {
+          "body_font_style": "Sans-serif, small size, regular weight for the publisher's information block at the bottom left.",
+          "display_font_style": "Sans-serif, bold, very large size for the main title. Authors' names are slightly smaller but still prominent. A different, lighter-weight sans-serif is used for the rotated subtitle.",
+          "special_treatments": [
+            "Text reversed out (white on black)",
+            "Text rotated 90 degrees clockwise ('An Inventory of Effects', 'Produced by Jerome Agel')"
+          ]
+        },
+        "color_and_tone": {
+          "contrast": "high",
+          "dominant_tone": "balanced",
+          "description": "Extreme high-contrast black and white. The design uses solid black fields against the grainy, textured black and white of the photograph, eliminating all grayscale."
+        },
+        "white_space": "none",
+        "visual_density": "dense",
+        "left_right_relationship": "Contrast and integration. The left page presents structured, legible information (the 'message'), while the right page offers a visceral, sensory experience (the 'massage'). The image from the right bleeds over the black bar on the left, visually integrating the two and suggesting the 'massage' is encroaching upon and altering the 'message'.",
+        "information_value": {
+          "left_right": "given_new",
+          "top_bottom": "ideal_real",
+          "center_margin": "distributed"
+        },
+        "compositional_framing": "weakly_framed"
+      },
+      "rhetoric": {
+        "argument": "The title page argues that the experience of new media is not a passive reception of a message, but an active, often violent, 'massage' of the human sensorium. The form of the book will embody this principle.",
+        "rhetorical_strategy": {
+          "primary": "juxtaposition",
+          "secondary": [
+            "demonstration"
+          ]
+        },
+        "strategy_description": "The primary strategy is the juxtaposition of two modes of communication: the linear, typographic 'message' on the left and the all-at-once, sensory 'massage' of the image on the right. This visual contrast immediately establishes the book's central thesis.",
+        "design_enacts_argument": true,
+        "design_argument_description": "The design performs the 'massage.' The high-contrast, grainy image is a physical assault on the eyes, refusing to resolve into a clear portrait. It feels like visual noise or static. Furthermore, this visual noise bleeds over and encroaches upon the clean, typographic column of the title, demonstrating how the medium's effects ('massage') overwhelm and redefine the content ('message').",
+        "reader_experience": "Confrontation and disorientation. The reader is immediately faced with a visually aggressive and ambiguous image, setting an expectation that this will not be a conventional reading experience. It creates a feeling of sensory overload from the very first page.",
+        "mcluhan_concepts": [
+          "medium_is_the_message",
+          "sense_ratios",
+          "figure_ground"
+        ],
+        "multi_spread_patterns": null,
+        "confidence": "high"
+      },
+      "themes": {
+        "original_themes": [
+          "mediation",
+          "perception",
+          "sensory_experience",
+          "the_body",
+          "disruption"
+        ],
+        "contemporary_domain_candidates": [
+          "attention_and_cognition",
+          "embodiment_and_disembodiment"
+        ],
+        "movement_mapping": [
+          "prologue"
+        ],
+        "mapping_rationale": "This spread serves as the book's thesis statement, establishing the core concept of the medium's impact on human senses. This maps directly to contemporary concerns about how digital interfaces, VR/AR, and information overload reshape our cognitive and embodied experience. The visceral, overwhelming image is a 1967 precursor to the 'attention economy' and the sensory saturation of digital life.",
+        "confidence": "high"
+      },
+      "progression": {
+        "pace_shift": "steady",
+        "thematic_function": "introduces_theme",
+        "relationship_to_previous": "This is the formal title page, following the cover and half-title. It solidifies the book's identity and presents its core visual and conceptual argument for the first time.",
+        "relationship_to_next": "This page acts as a declaration of intent. It establishes the book's experimental aesthetic and confrontational tone, preparing the reader for the non-linear, visually-driven arguments that will follow.",
+        "confidence": "high"
+      },
+      "notes": "The publishing information on the left page is for the 2001 Gingko Press reprint. The core design elements (title typography, image, layout) are from the original 1967 publication."
+    }
+  ]
+}

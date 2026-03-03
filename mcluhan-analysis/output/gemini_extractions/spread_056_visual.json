@@ -1,0 +1,47 @@
+{
+  "spread_id": "spread_056",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:28:57.800758",
+  "generation_time_s": 26.1,
+  "images": [
+    {
+      "position": "dominant",
+      "subject": "A group of young white men in academic graduation gowns walking in a procession, seemingly walking out of a ceremony. The caption identifies them as Amherst seniors walking out on a graduation address by Secretary of Defense Robert McNamara in June 1966. The students have serious expressions. In the background, older men in suits and gowns are seated, observing the walkout. One person in the procession holds up a camera with a flash.",
+      "source_type": "press_photo",
+      "composition": "A grainy, high-contrast black and white photograph taken from a slightly low angle within the crowd. The composition is dynamic, with the students moving from left to right across the frame, creating diagonal lines. The focus is slightly soft, conveying a sense of motion and immediacy.",
+      "scale": "dominant",
+      "estimated_date": "June 1966",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "far_social",
+        "attitude_angle": "low_angle"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single-page layout. A large photograph occupies the top three-quarters of the page, bleeding to the top, left, and right edges. Below the image, in the white space of the bottom quarter, a small caption is set to the left, while the large, bold, stencil-font word 'EDUCATION' dominates the bottom right, partially disappearing into the book's gutter.",
+    "typography": {
+      "body_font_style": "Small, sans-serif font for the caption.",
+      "display_font_style": "Large, bold, black, stencil-style sans-serif font. The letters are thick and have a utilitarian, almost industrial or military feel.",
+      "special_treatments": [
+        "The display text 'EDUCATION' is slightly angled, rising from left to right.",
+        "The display text is positioned to be partially obscured by the gutter, making it feel like it's emerging from or receding into the spine of the book."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread uses stark black and white in both the photograph and the typography, creating a high-contrast, impactful visual."
+    },
+    "white_space": "minimal",
+    "visual_density": "moderate",
+    "left_right_relationship": "This is a single page, not a spread.",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "mixed"
+  },
+  "spread_description": "A reader encounters a powerful, full-page press photograph of a 1966 student anti-war protest at a graduation ceremony. Below this image of dissent, the single word 'EDUCATION' is rendered in a large, aggressive stencil font, challenging the reader to reconsider the purpose and meaning of education in a time of social and political upheaval. The juxtaposition of the act of protest with the institutional label creates a tense and questioning experience."
+}

@@ -1,0 +1,57 @@
+{
+  "spread_id": "spread_044",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:23:30.618443",
+  "generation_time_s": 32.3,
+  "images": [
+    {
+      "position": "left_page",
+      "subject": "A full-length photograph of a female fashion model posing with hands on her hips. She wears a dark, sleeveless A-line mini-dress with the word 'LOVE' in large, white, block letters arranged vertically. The 'O' is a circular cutout revealing her midriff. She wears dark, flat shoes with square buckles and looks up and away from the camera against a plain white background.",
+      "source_type": "art_photograph",
+      "composition": "The model is shot from a slightly low angle, emphasizing her height and the graphic quality of the dress. The composition is minimalist and high-contrast, with the dark figure isolated against a stark white void.",
+      "scale": "dominant",
+      "estimated_date": "mid-1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "far_social",
+        "attitude_angle": "low_angle"
+      }
+    },
+    {
+      "position": "right_page",
+      "subject": "A man in a suit and tie, likely a politician, speaking at a podium. The podium is draped in voluminous patriotic bunting with stars and stripes, creating the illusion that he is wearing a giant skirt. Two large American flags are visible behind him against a dark background.",
+      "source_type": "press_photo",
+      "composition": "The man is centrally framed and shot from a low angle, a conventional technique to convey authority. The lighting is dramatic, highlighting his face and the flags. The composition is dominated by the surreal shape of the bunting-covered podium.",
+      "scale": "dominant",
+      "estimated_date": "1950s-1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "close_social",
+        "attitude_angle": "low_angle"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is a diptych of two vertically-oriented, high-contrast photographs. The left page is dominated by a figure against a white background, while the right page features a figure against a dark background. Small blocks of text are placed in the lower-left and upper-right corners, occupying the negative space created by the images.",
+    "typography": {
+      "body_font_style": "A small block of serif text is located at the bottom left.",
+      "display_font_style": "Two lines of bold, sans-serif text are in the upper right corner, followed by a third, smaller line in a serif font.",
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread is starkly balanced between the light-dominant left page and the dark-dominant right page, creating a strong visual yin-yang effect."
+    },
+    "white_space": "moderate",
+    "visual_density": "moderate",
+    "left_right_relationship": "The two pages are in stark contrast, juxtaposing a figure of 1960s pop/counter-culture (the 'LOVE' dress) with a figure of the political establishment (politician with flags). The visual opposition of light and dark backgrounds reinforces this thematic contrast.",
+    "information_value": {
+      "left_right": "balanced",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This spread presents a stark visual juxtaposition of two worlds from the 1960s. On the left, a fashion model in a graphic 'LOVE' dress stands against a bright white background, while on the right, a politician at a flag-draped podium is set against a dark background. The contrasting imagery and sparse text invite the reader to consider the different forms of 'involvement' and social participation, from pop culture to politics."
+}

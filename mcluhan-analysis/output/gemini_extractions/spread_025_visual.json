@@ -1,0 +1,47 @@
+{
+  "spread_id": "spread_025",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:12:41.022126",
+  "generation_time_s": 26.5,
+  "images": [
+    {
+      "position": "spanning_gutter",
+      "subject": "A graphic symbol of a central white circle with five thick black arrows radiating outwards in various directions. The symbol resembles a hub, a nerve ganglion, or a stylized explosion.",
+      "source_type": "graphic_symbol",
+      "composition": "High-contrast black on a white background. The arrows create strong diagonal vectors, suggesting dynamic, multi-directional extension from a central point. The graphic is placed centrally on the spread, acting as the main visual anchor.",
+      "scale": "dominant",
+      "estimated_date": null,
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is organized around a large graphic symbol that spans the gutter, visually and conceptually linking the two pages. Text is positioned in the upper corners: a bold, multi-line statement on the upper left and a paragraph of explanatory text on the upper right. The final, punchy line 'men change.' is given significant weight and space at the bottom of the right-hand text block.",
+    "typography": {
+      "body_font_style": "Sans-serif, medium weight, set ragged-right in a single column on the right page.",
+      "display_font_style": "Heavy, bold sans-serif. Used for the text on the left page ('electric circuitry...') and for the emphatic final line on the right ('men change.'), which is significantly larger than the preceding body text.",
+      "special_treatments": [
+        "The phrase 'When these ratios change,' is broken into three short, stacked lines, creating a typographic pause before the conclusion.",
+        "The final line 'men change.' is set in a much larger and bolder weight to serve as a visual and conceptual punchline."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "The spread uses a stark black-and-white palette, creating a clean, almost clinical or diagrammatic feel. There are no mid-tones."
+    },
+    "white_space": "abundant",
+    "visual_density": "sparse",
+    "left_right_relationship": "The left page presents a concept or a label ('electric circuitry, an extension of the central nervous system'), and the right page provides the explanation and consequence. The central graphic physically bridges the two pages, illustrating the concept described on the left and grounding the theory explained on theright.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "A reader encounters a stark, diagrammatic spread dominated by a large black graphic of a central hub with arrows radiating outwards, spanning both pages. On the left, bold text identifies this as 'electric circuitry, an extension of the central nervous system.' On the right, a block of text explains how media alter human perception, culminating in the heavily emphasized conclusion: 'men change.' The overall experience is one of a clean, forceful, and didactic visual argument about technological extension and human transformation."
+}

@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_027",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:13:43.751568",
+  "generation_time_s": 29.4,
+  "images": [
+    {
+      "position": "spanning_gutter",
+      "subject": "A graphic element at the bottom of the spread. It consists of three parallel horizontal lines: the top is solid, the middle is dotted, and the bottom is dashed. Below these is a fourth line marked like a ruler with vertical tick marks of varying lengths. A faint, smudged vertical mark, resembling a partial fingerprint, is overlaid in the center, disrupting the lines.",
+      "source_type": "graphic_symbol",
+      "composition": "A linear, horizontal diagram contrasting different types of lines (continuous, fragmented) and measurement. The composition is minimalist and symbolic, with the central smudge providing a single point of organic disruption to the geometric precision.",
+      "scale": "small_inset",
+      "estimated_date": null,
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is dominated by text, arranged in two primary columns on the left and right pages, creating a balanced but separated structure. The left page contains several paragraphs, a typographic demonstration of fragmented words, and a quote at the bottom. The right page continues the essay. A single graphic element spans the gutter at the very bottom, visually linking the two pages. The overall impression is clean, ordered, and academic, with a large amount of white space.",
+    "typography": {
+      "body_font_style": "Serif font, medium weight, ragged-right justification. The text is set in relatively narrow columns.",
+      "display_font_style": null,
+      "special_treatments": [
+        "The words 'continuous' and 'connected' are spelled out with characters separated by commas and hyphens ('c,o,n,t,i,n,u,o,u,s' and 'c-o-n-n-e-c-t-e-d'), visually enacting the concept of fragmented parts being strung together."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "Purely black text and graphics on a white background, creating a stark, high-contrast visual field."
+    },
+    "white_space": "abundant",
+    "visual_density": "sparse",
+    "left_right_relationship": "Continuation. The essay begins on the left page and flows directly to the right page, forming a single, continuous argument. The left page establishes the historical premise (ear vs. eye), and the right page elaborates on the consequences for Western thought.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This is a text-heavy, scholarly spread arguing that the phonetic alphabet shifted Western culture from an auditory to a visual mode of perception, fostering linear, fragmented thinking. The clean, two-column layout reinforces the theme of ordered, sequential text, while typographic tricks—like spelling out words letter by letter—visually demonstrate the concept of assembling meaning from discrete parts. A graphic at the bottom contrasts different types of lines, symbolizing the 'continuum' of print culture."
+}

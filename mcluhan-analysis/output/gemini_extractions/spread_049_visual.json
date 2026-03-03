@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_049",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:25:56.702906",
+  "generation_time_s": 24.4,
+  "images": [
+    {
+      "position": "right_page",
+      "subject": "A line drawing of a nude, overweight, crowned male figure, representing the emperor from 'The Emperor's New Clothes.' The figure has a large belly, a frilly ruff around his neck, and is striding forward in profile.",
+      "source_type": "editorial_cartoon",
+      "composition": "Minimalist black line drawing on a white background. The figure is shown in profile, moving left-to-right, and is cropped at the right and bottom edges of the page. The style is simple and expressive.",
+      "scale": "dominant",
+      "estimated_date": "c. 1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "far_social",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A highly asymmetrical layout. The left page is mostly empty white space, with a single block of text positioned in the bottom half. The right page is dominated by a large line drawing, creating a strong visual contrast between text and image, and between empty and occupied space.",
+    "typography": {
+      "body_font_style": "Serif font, medium weight, left-aligned (ragged right), presented in a single column.",
+      "display_font_style": null,
+      "special_treatments": [
+        "The final word of the text, 'him,' is underlined for emphasis."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "Stark black ink on a white paper background, creating a clean and minimalist aesthetic."
+    },
+    "white_space": "abundant",
+    "visual_density": "sparse",
+    "left_right_relationship": "Illustration and elaboration. The text on the left explains the concept of the 'antisocial' observer using the story of 'The Emperor's New Clothes,' and the image on the right provides the direct, humorous visual punchline.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This is a stark, minimalist spread featuring a block of text on the bottom-left page and a large, humorous line drawing of a naked emperor on the right. The text discusses the role of the 'antisocial' artist or poet in seeing the environment clearly, using 'The Emperor's New Clothes' as a direct example. The reader's experience is one of immediate recognition, as the cartoon provides the visual punchline to the text's argument, reinforcing the idea of seeing the obvious truth that others ignore."
+}

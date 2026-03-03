@@ -1,0 +1,72 @@
+{
+  "spread_id": "spread_073",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:38:27.848042",
+  "generation_time_s": 29.5,
+  "images": [
+    {
+      "position": "inset_left",
+      "subject": "A high-angle view of several people, appearing as dark silhouettes, standing near a large, white, abstract form, likely a sculpture in a museum or gallery.",
+      "source_type": "art_photograph",
+      "composition": "High-angle, looking down on the subjects. The image is high-contrast, reducing figures to near-silhouettes and emphasizing abstract shapes over individual details.",
+      "scale": "small_inset",
+      "estimated_date": "c. 1966",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "impersonal",
+        "attitude_angle": "overhead"
+      }
+    },
+    {
+      "position": "inset_left",
+      "subject": "Two figures in what appears to be a gallery setting. A man in a dark suit stands with his back partially to the viewer, while another person sits with their head in their hand in a pose of contemplation or weariness.",
+      "source_type": "art_photograph",
+      "composition": "Eye-level shot, rendered in high-contrast black and white which obscures facial details and focuses on the postures and forms of the subjects.",
+      "scale": "small_inset",
+      "estimated_date": "c. 1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "far_social",
+        "attitude_angle": "oblique"
+      }
+    },
+    {
+      "position": "right_page",
+      "subject": "A crowded press scrum. In the foreground, British Prime Minister Harold Wilson smokes a pipe, looking slightly to his right. Next to him, a young man (one of The Beatles) smiles broadly. They are surrounded by a crush of photographers with flash cameras and other onlookers.",
+      "source_type": "press_photo",
+      "composition": "A candid, tightly-framed shot characteristic of photojournalism. The lighting is harsh, likely from on-camera flashes, creating bright highlights and deep shadows. The frame is packed with faces, conveying a sense of chaotic energy and intense media attention.",
+      "scale": "dominant",
+      "estimated_date": "c. 1964",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "close_social",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is built on a stark contrast between the left and right pages. The left page is minimalist, featuring large display text and two small, isolated photographs against abundant white space. The right page is dense and chaotic, dominated by a large, crowded press photo with several blocks of text packed underneath it.",
+    "typography": {
+      "body_font_style": "A standard serif typeface is used for the captions and quotes at the bottom of the spread.",
+      "display_font_style": "The phrase 'you can get away with' is set in a very large, bold, black sans-serif font. The words are stacked vertically, with 'get away' significantly larger than 'you can' and 'with', creating a dynamic, cascading effect.",
+      "special_treatments": [
+        "Variable font sizing in display text to create emphasis and visual rhythm."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The entire spread is in high-contrast black and white, with the left page being predominantly white and the right page having a dense, darker photographic tone."
+    },
+    "white_space": "moderate",
+    "visual_density": "moderate",
+    "left_right_relationship": "Contrast and juxtaposition. The sparse, 'cool', abstract art world on the left is contrasted with the dense, 'hot', chaotic media world of politics and pop culture on the right. The text 'you can get away with' acts as an ironic commentary spanning both realms, questioning what is permissible or considered valuable in each.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This spread creates a jarring juxtaposition between two worlds. The left page is sparse and cool, dominated by the large, cynical text 'you can get away with' and small photos of detached art-gallery scenes. In stark contrast, the right page is a dense, chaotic press photo of a politician and pop stars in a media scrum, anchored by text questioning the role of art and museums. The reader experiences a collision between the sanitized world of 'high art' and the messy vitality of popular culture, forced to consider where true 'life' resides."
+}

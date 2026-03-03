@@ -1,0 +1,57 @@
+{
+  "spread_id": "spread_012",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:06:26.852101",
+  "generation_time_s": 29.8,
+  "images": [
+    {
+      "position": "inset_left",
+      "subject": "A small, square graphic of concentric black and white circles, creating a hypnotic, target-like, or ripple effect, reminiscent of Op Art.",
+      "source_type": "graphic_symbol",
+      "composition": "High-contrast black and white lines within a square frame. The pattern creates a visual vibration and sense of depth, drawing the eye inward.",
+      "scale": "icon",
+      "estimated_date": null,
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    },
+    {
+      "position": "right_page",
+      "subject": "An old-fashioned, possibly wrought iron or cast iron, hall tree or coat rack. It features a central post with ornate, curved hooks for coats and hats at two levels.",
+      "source_type": "art_photograph",
+      "composition": "The object is photographed frontally and isolated against a stark white background, removing all environmental context. The presentation is high-contrast, almost a silhouette, emphasizing its form.",
+      "scale": "dominant",
+      "estimated_date": null,
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "far_social",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single, right-hand page with a very sparse, asymmetrical layout. The title 'your family' is at the top. The left side contains a block of text introduced by a small graphic icon. The right half of the page is dominated by a large, vertical photograph of a coat rack. All elements are isolated by significant white space.",
+    "typography": {
+      "body_font_style": "Serif, medium weight, with ragged-right justification.",
+      "display_font_style": "Sans-serif, bold, large, lowercase. Positioned at the top of the page as a title.",
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "Stark black and white with no mid-tones, creating a clean, graphic quality."
+    },
+    "white_space": "abundant",
+    "visual_density": "sparse",
+    "left_right_relationship": "This is a single page, but within it, the left side presents the text-based argument while the right side offers a large, symbolic image for contemplation, creating a call-and-response dynamic on the page itself.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "The reader encounters a stark, spacious page titled 'your family.' A block of text on the left argues that the family's influence is waning due to electric media, while the right side is dominated by a large, isolated image of an old-fashioned coat rack. The overall feeling is one of quiet contemplation, with the enigmatic coat rack prompting questions about its connection to the text—perhaps as a symbol of an obsolete family structure or a place where outside influences are 'hung'."
+}

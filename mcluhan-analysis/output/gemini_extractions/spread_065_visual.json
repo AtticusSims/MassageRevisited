@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_065",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:34:24.603251",
+  "generation_time_s": 21.5,
+  "images": [
+    {
+      "position": "right_page",
+      "subject": "An extreme close-up, high-contrast black and white photograph of a young man's face in profile, facing right. The lighting is dramatic (chiaroscuro), strongly illuminating the ear, the side of the eye, the bridge of the nose, and the chin against a pure black background.",
+      "source_type": "art_photograph",
+      "composition": "The image is a tightly framed profile shot with strong chiaroscuro lighting that sculpts the facial features out of deep shadow. The background is a solid, non-referential black, focusing all attention on the textures and forms of the face, particularly the ear.",
+      "scale": "full_bleed",
+      "estimated_date": "c. 1950s-1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "intimate",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is starkly divided by the gutter. The left page contains a single, justified column of text surrounded by generous white space. The right page is entirely consumed by a full-bleed, high-contrast photograph. This creates a strong binary opposition between the textual/verbal space on the left and the immersive visual/sensory space on the right.",
+    "typography": {
+      "body_font_style": "Serif, standard book weight and size, set in a single justified column.",
+      "display_font_style": null,
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread is tonally split. The left page is light (black text on white paper), while the right page is predominantly dark due to the deep blacks of the photograph's background and shadows."
+    },
+    "white_space": "moderate",
+    "visual_density": "moderate",
+    "left_right_relationship": "The relationship is one of illustrative contrast. The left page's text discusses James Joyce and 'oral linguistic music,' emphasizing the auditory. The right page provides a monumental, listening ear, visually embodying the theme of a return to acoustic, sensory experience over linear text.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "not_applicable",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This spread presents a stark juxtaposition between text and image. On the left, a conventional block of prose discusses James Joyce and the shift from visual to auditory culture. On the right, a full-bleed, high-contrast photograph of a face in profile, with a dramatically lit ear, visually embodies this shift, confronting the reader with an image of intense listening."
+}

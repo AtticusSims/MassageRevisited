@@ -1,0 +1,144 @@
+{
+  "spread_id": "spread_013",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:07:07.948504",
+  "generation_time_s": 41.1,
+  "_array_response": [
+    {
+      "id": "spread_013",
+      "pdf_page": 13,
+      "book_pages": [
+        16,
+        17
+      ],
+      "section": "body",
+      "analyst": "vlm_assisted",
+      "analysis_method": "llm_primary_human_reviewed",
+      "spread_type": "text_with_specific_image",
+      "orientation": "landscape_spread",
+      "text": {
+        "body_text": "Electric circuitry has overthrown the regime of \"time\" and \"space\" and pours upon us instantly and continuously the concerns of all other men. It has re-constituted dialogue on a global scale. Its message is Total Change, ending psychic, social, economic, and political parochialism. The old civic, state, and national groupings have become un-workable. Nothing can be further from the spirit of the new technology than \"a place for everything and everything in its place.\" You can't go home again.",
+        "display_text": "your neighborhood",
+        "captions": [],
+        "page_numbers_visible": [
+          16
+        ]
+      },
+      "quotations": [],
+      "images": [
+        {
+          "position": "inset_left",
+          "subject": "A small, black, stylized graphic symbol resembling an antique hall tree or coat rack. It is symmetrical with a central vertical post and curved, ornate arms extending from the top.",
+          "source_type": "graphic_symbol",
+          "source_credit": null,
+          "estimated_date": null,
+          "composition": "A simple, high-contrast line drawing placed to the left of the main text block. It acts as a decorative or symbolic element.",
+          "scale": "icon",
+          "relationship_to_text": {
+            "primary_relation": "provides_atmosphere",
+            "barthes_mode": "anchorage",
+            "description": "The symbol evokes an old-fashioned, domestic object, reinforcing the theme of a bygone era of home and neighborhood that the text argues has been overthrown."
+          },
+          "interactive_meaning": {
+            "contact": "not_applicable",
+            "social_distance": "not_applicable",
+            "attitude_angle": "not_applicable"
+          }
+        },
+        {
+          "position": "inset_right",
+          "subject": "A formal, black-and-white, head-and-shoulders portrait of a young boy, approximately 8-10 years old. He has dark, neatly combed hair with a side part and is wearing a dark garment with a large, white, pointed collar. He looks directly at the camera with a serious, neutral expression.",
+          "source_type": "art_photograph",
+          "source_credit": "Peter Pollack",
+          "estimated_date": "c. 1930s-1950s",
+          "composition": "The photograph is presented as a physical object, with a white border and black photo corners, set against the solid gray background of the right page. The framing is tight on the boy's face and shoulders. The lighting is soft and even.",
+          "scale": "quarter_page",
+          "relationship_to_text": {
+            "primary_relation": "serves_as_metaphor",
+            "barthes_mode": "relay",
+            "description": "The boy's portrait serves as a powerful metaphor for the lost innocence, stability, and 'parochialism' of the pre-electric neighborhood described on the left page. His direct gaze confronts the reader with a face from the world that, as the text concludes, 'You can't go home again' to."
+          },
+          "interactive_meaning": {
+            "contact": "demand",
+            "social_distance": "close_social",
+            "attitude_angle": "frontal"
+          }
+        }
+      ],
+      "design": {
+        "layout_description": "The spread is strongly asymmetrical. The left page is predominantly white space, featuring a large title at the top, a block of text, and a small graphic icon. The right page is a solid field of gray, with a single, inset black-and-white photograph positioned slightly above the vertical center.",
+        "typography": {
+          "body_font_style": "Serif, medium weight, left-aligned with a ragged right margin.",
+          "display_font_style": "Large, bold, lowercase sans-serif. The word 'your' is stacked directly above 'neighborhood'.",
+          "special_treatments": []
+        },
+        "color_and_tone": {
+          "contrast": "moderate",
+          "dominant_tone": "balanced",
+          "description": "The high contrast of the black text on the white left page is balanced by the mid-tone gray and softer photographic tones of the right page."
+        },
+        "white_space": "abundant",
+        "visual_density": "sparse",
+        "left_right_relationship": "Juxtaposition. The left page presents an abstract, sweeping argument about technological change, while the right page offers a concrete, personal, and nostalgic image that embodies what has been lost. The text explains the change; the image evokes the feeling of that change.",
+        "information_value": {
+          "left_right": "new_given",
+          "top_bottom": "ideal_real",
+          "center_margin": "distributed"
+        },
+        "compositional_framing": "strongly_framed"
+      },
+      "rhetoric": {
+        "argument": "Electric media have collapsed time and space, destroying the old, localized social structures like the 'neighborhood' and replacing them with a global, continuous dialogue. This 'Total Change' has made the past inaccessible; 'You can't go home again.'",
+        "rhetorical_strategy": {
+          "primary": "juxtaposition",
+          "secondary": [
+            "assertion",
+            "confrontation"
+          ]
+        },
+        "strategy_description": "The primary strategy is the juxtaposition of a dense, abstract argument (left page) with a single, emotionally resonant image (right page). The argument's abstract nature is made concrete and personal by the boy's portrait, which represents the very concept of 'neighborhood' and 'home' that is now lost. The boy's direct gaze creates a secondary confrontational effect, challenging the reader to reconcile the text's claims with this human face.",
+        "design_enacts_argument": true,
+        "design_argument_description": "The design enacts the argument of dislocation. The stark separation between the left and right pages—one white and textual, the other gray and imagistic—mirrors the separation between the new electric environment and the old, lost world. The reader's eye must cross the gutter, a physical gap, to connect the abstract argument to its human consequence, performing the very distance the text describes.",
+        "reader_experience": "Nostalgia, melancholy, and a sense of intellectual and emotional dislocation. The reader processes the abstract argument on the left, then is confronted by the personal, human face on the right, creating a poignant feeling of loss for a world that seems both familiar and impossibly distant.",
+        "mcluhan_concepts": [
+          "global_village",
+          "electric_age",
+          "implosion",
+          "rear_view_mirror"
+        ],
+        "multi_spread_patterns": null,
+        "confidence": "high"
+      },
+      "themes": {
+        "original_themes": [
+          "space_and_time",
+          "global_village",
+          "community",
+          "nostalgia",
+          "dislocation",
+          "the_child",
+          "loss_of_home"
+        ],
+        "contemporary_domain_candidates": [
+          "global_village_revisited",
+          "public_private_collapse",
+          "attention_and_cognition"
+        ],
+        "movement_mapping": [
+          "prologue",
+          "movement_1_environment"
+        ],
+        "mapping_rationale": "McLuhan's argument that electric circuitry collapses space and ends 'parochialism' is the foundational concept for the internet's 'global village.' The feeling of being unable to 'go home again' maps to the contemporary experience of digital placelessness and the erosion of local community in favor of online, global networks. The nostalgic image of the child represents the stable, pre-digital identity that is now constantly being renegotiated in a networked world.",
+        "confidence": "high"
+      },
+      "progression": {
+        "pace_shift": "decelerating",
+        "thematic_function": "develops_theme",
+        "relationship_to_previous": "This spread follows the confrontational 'you' and surveillance theme of spread_011. It shifts the focus from individual identity under surveillance to the dissolution of the collective social fabric ('your neighborhood'), broadening the scope of technology's impact from the personal to the communal.",
+        "relationship_to_next": "This spread's theme of lost stability and the end of 'a place for everything' sets up the following spreads which explore the chaotic, all-at-once nature of the new electric environment. The feeling of loss here provides the emotional context for the sensory overload to come.",
+        "confidence": "high"
+      },
+      "notes": "The phrase 'You can't go home again' is a direct allusion to the 1940 novel by Thomas Wolfe, which deals with themes of change, memory, and the impossibility of returning to the past. This literary reference adds a layer of cultural depth to McLuhan's argument."
+    }
+  ]
+}

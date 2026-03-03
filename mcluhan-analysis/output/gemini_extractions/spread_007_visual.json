@@ -1,0 +1,47 @@
+{
+  "spread_id": "spread_007",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:04:06.019468",
+  "generation_time_s": 20.6,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "An extreme close-up, black and white photograph of a person's head and hand, spanning both pages. The left page shows the side of the head, mostly in deep shadow, with hair and an ear partially visible. The right page is dominated by a large, textured hand held against the temple and forehead, with fingers slightly curled. The gesture suggests intense thought, sensory overload, or shielding oneself.",
+      "source_type": "art_photograph",
+      "composition": "The image uses dramatic chiaroscuro lighting, with strong contrast between the brightly lit hand and the shadowed face. It's an extreme close-up, tightly cropped to create an intimate and intense atmosphere, focusing on the tactile and sensory experience. The book's gutter vertically bisects the composition.",
+      "scale": "full_bleed",
+      "estimated_date": "circa 1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "intimate",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A single, powerful photograph covers the entire spread, bleeding to all edges. A short phrase of text is overlaid in the upper right quadrant. The composition is unified across the gutter, treating the two pages as a single canvas.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "White, sans-serif, medium weight, lowercase with a question mark.",
+      "special_treatments": [
+        "Text reversed out (white on dark image)",
+        "Text overlaid on image"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "dark",
+      "description": "The spread is defined by dramatic, high-contrast black and white photography (chiaroscuro), creating a moody and intense feeling."
+    },
+    "white_space": "none",
+    "visual_density": "sparse",
+    "left_right_relationship": "continuation. The single photograph flows seamlessly across the gutter, with the shadowed head on the left and the illuminated hand on the right forming a single, unified gesture.",
+    "information_value": {
+      "left_right": "balanced",
+      "top_bottom": "not_applicable",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "This spread confronts the reader with an intense, full-bleed photograph of a hand pressed to a person's head, suggesting sensory input or overload. The text '...the massage?' completes the book's title phrase from the preceding pages, reframing it as a question about the physical, neurological, and sensory effects of media. The experience is intimate and tactile, drawing the reader into a direct consideration of media's impact on the body."
+}

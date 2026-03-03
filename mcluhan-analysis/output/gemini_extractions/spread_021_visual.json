@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_021",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:11:00.128053",
+  "generation_time_s": 39.0,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "A dramatic, low-angle close-up of a car's wheel. The image features a black tire with a whitewall stripe and a detailed chrome hubcap with radial fins. The word 'PLYMOUTH' is visible in an arc on the hubcap. The wheel is on a dark asphalt surface with a painted white line.",
+      "source_type": "art_photograph",
+      "composition": "Dynamic, low-angle shot that fills the entire frame, creating a sense of power and monumentality. The composition is dominated by the strong curves of the tire and the radial pattern of the hubcap. High-contrast black and white photography emphasizes the metallic sheen and dark rubber.",
+      "scale": "full_bleed",
+      "estimated_date": "mid-1960s",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "intimate",
+        "attitude_angle": "low_angle"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A single, full-bleed photograph of a car wheel spans both pages, creating a unified and immersive visual field. A single line of text is placed in the upper left corner, functioning as a caption or conceptual key to the dominant image.",
+    "typography": {
+      "body_font_style": "A single line of small serif text is present.",
+      "display_font_style": null,
+      "special_treatments": [
+        "Text begins with an ellipsis, suggesting it is a fragment continuing a thought from a previous page."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "dark",
+      "description": "The stark contrast between the deep black of the tire and asphalt and the bright chrome of the hubcap and white lines creates a powerful, graphic quality."
+    },
+    "white_space": "none",
+    "visual_density": "moderate",
+    "left_right_relationship": "The single image creates a continuous visual field across the gutter, treating the two pages as one canvas. The text on the left provides the conceptual frame for the entire image.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "The reader is confronted by a massive, full-bleed, low-angle photograph of a car's wheel, which feels powerful and dynamic. A small line of text in the top-left corner, '...is an extension of the foot,' provides the conceptual punchline, reframing the technological object as a prosthetic for the human body. The experience is one of visual immersion followed by a sudden conceptual re-evaluation."
+}

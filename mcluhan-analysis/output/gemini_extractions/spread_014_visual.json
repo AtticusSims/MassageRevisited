@@ -1,0 +1,60 @@
+{
+  "spread_id": "spread_014",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:07:46.740981",
+  "generation_time_s": 38.8,
+  "images": [
+    {
+      "position": "top_right",
+      "subject": "A printed circuit board (PCB) showing intricate, branching patterns of conductive traces and solder points. Text labels like 'INVERTER' and a part number are visible.",
+      "source_type": "technical_diagram",
+      "composition": "The board is photographed frontally, filling the top portion of the page. The high-contrast black and white rendering emphasizes the abstract, graphical pattern of the circuitry, resembling a complex map or network.",
+      "scale": "half_page",
+      "estimated_date": "c. 1960s",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    },
+    {
+      "position": "inset_left",
+      "subject": "A high-contrast, close-up photograph of a young boy's face. He is looking up and away from the viewer with an intense, worried, or bewildered expression.",
+      "source_type": "press_photo",
+      "composition": "Tightly cropped on the face from a slightly low angle. Dramatic, high-contrast lighting creates deep shadows. The image has a grainy texture.",
+      "scale": "small_inset",
+      "estimated_date": "c. 1950s-1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "intimate",
+        "attitude_angle": "low_angle"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A single portrait page dominated by a large image of a circuit board at the top. Below, a block of justified text is anchored on the left by the large, bold, stacked display text 'your education'. A small, inset photo of a child's face is embedded within the first paragraph of the text block, creating a focal point of human emotion within the rational structure.",
+    "typography": {
+      "body_font_style": "Justified serif font, likely Times New Roman or a similar book face, set in a single wide column.",
+      "display_font_style": "Heavy, bold sans-serif. The word 'your' is stacked directly on top of the larger word 'education', creating a strong vertical block on the left.",
+      "special_treatments": [
+        "Display text stacked vertically",
+        "Image inset within a paragraph, disrupting the text block"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "Stark black and white with no grayscale tones, emphasizing the graphic quality of the images and text."
+    },
+    "white_space": "moderate",
+    "visual_density": "dense",
+    "left_right_relationship": "This is a single page, not a spread. The layout balances the technical image at the top with the text and display type below.",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "mixed"
+  },
+  "spread_description": "This single page, titled 'your education,' presents a stark contrast between technology and humanity. A large, intricate circuit board at the top represents the new 'electric information' environment, while below, a small, intense photo of a bewildered child is embedded in text describing the clash between this new world and the old world of the classroom. The layout visually pits the inhuman, ordered system of the circuit against the emotional, confused reality of the child who must navigate it."
+}

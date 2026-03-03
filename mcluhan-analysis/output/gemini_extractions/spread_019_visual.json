@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_019",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:10:00.097454",
+  "generation_time_s": 22.4,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "An extreme close-up, black and white photograph of human toes. The image is so magnified that the texture of the skin, the ridges of the flesh, and the details of the toenails are the primary subjects. The composition features what appear to be three toes, with the central one bisected by the book's gutter.",
+      "source_type": "art_photograph",
+      "composition": "Extreme close-up, almost macro, with high-contrast lighting that creates deep shadows and emphasizes texture. The framing is tight and crops the toes, making them appear monumental and abstract. The image is grainy, characteristic of halftone printing.",
+      "scale": "full_bleed",
+      "estimated_date": "circa 1960s",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "intimate",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A single, full-bleed photograph spans the entire two-page spread, with no margins or text. The image bleeds off all four edges. The physical gutter of the book creates a distinct vertical line down the center of the composition, interrupting the image of the central toe.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": null,
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "A grainy, high-contrast black and white photograph. The interplay of bright highlights on the skin and deep black shadows gives the image a dramatic, sculptural quality."
+    },
+    "white_space": "none",
+    "visual_density": "sparse",
+    "left_right_relationship": "continuation. The spread functions as a single, continuous canvas for one photograph, with the left and right pages being two halves of the same image.",
+    "information_value": {
+      "left_right": "balanced",
+      "top_bottom": "not_applicable",
+      "center_margin": "centered"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "This is a silent, purely visual spread dominated by a single, full-bleed photograph. The reader is confronted with an unsettlingly intimate, high-contrast close-up of human toes, rendered at a scale that makes them abstract and monumental. The lack of any text forces a direct, visceral engagement with the image, emphasizing texture, form, and the physicality of the human body."
+}

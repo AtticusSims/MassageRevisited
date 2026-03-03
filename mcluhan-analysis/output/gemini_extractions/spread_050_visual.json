@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_050",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T18:59:24.439178",
+  "generation_time_s": 20.9,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "An extreme close-up, high-contrast photograph spanning two pages. On the left page is a large human foot. On the right page is the face of a middle-aged man with a furrowed brow. The big toe of the foot is pressing firmly into the man's cheek, next to his nose. The man's hand is held up to his chin.",
+      "source_type": "art_photograph",
+      "composition": "Extreme close-up with claustrophobic framing. The image is characterized by dramatic, high-contrast lighting (chiaroscuro) that casts deep shadows, emphasizing skin texture. The central point of action—the toe pressing the cheek—occurs directly over the gutter.",
+      "scale": "full_bleed",
+      "estimated_date": "c. 1950s-1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "intimate",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A single, full-bleed black and white photograph occupies the entire two-page spread, with no text, margins, or other graphic elements. The composition is split by the book's gutter, with a foot on the left page physically interacting with a face on the right page, creating a single, unsettling scene.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": null,
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "dark",
+      "description": "The spread uses dramatic chiaroscuro, with deep blacks and bright highlights creating a tense, visceral mood."
+    },
+    "white_space": "none",
+    "visual_density": "dense",
+    "left_right_relationship": "The two pages form a single, unified image of action and reaction. The gutter divides the 'aggressor' (the foot on the left) from the 'recipient' (the face on the right), emphasizing the point of impact.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "not_applicable",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "This spread presents a jarring, full-bleed photograph of a human foot pressing into a man's face, creating a visceral and surreal image of pressure and sensory confusion. The complete absence of text forces the reader to confront the ambiguous metaphorical meaning of this uncomfortable physical interaction. The experience is one of disorientation and physical empathy."
+}

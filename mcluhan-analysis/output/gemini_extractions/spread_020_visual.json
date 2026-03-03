@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_020",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:10:21.136926",
+  "generation_time_s": 21.0,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "An extreme close-up, black-and-white photograph of a human foot, spanning both pages. The image focuses on the ball of the foot and the big toe, with the whorls and ridges of the skin texture rendered in sharp, tactile detail. Part of a second toe is visible on the far left.",
+      "source_type": "art_photograph",
+      "composition": "Macro photograph with dramatic, high-contrast lighting (chiaroscuro). The light source is from the right, illuminating the big toe and the right side of the ball of the foot, while the left side falls into deep shadow. The tight framing renders the familiar body part abstract and monumental.",
+      "scale": "full_bleed",
+      "estimated_date": "circa 1960s",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "intimate",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A single, full-bleed photograph of a foot covers the entire two-page spread, seamlessly crossing the gutter. The only other element is a small, two-word caption, 'The wheel', located in the top right corner of the right-hand page.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "A small, sans-serif font is used for the caption 'The wheel'. Its placement is subtle and does not compete with the dominant image.",
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread uses a strong chiaroscuro effect. The left page is predominantly dark, while the right page is brightly lit, creating a dramatic tonal shift across the gutter."
+    },
+    "white_space": "none",
+    "visual_density": "dense",
+    "left_right_relationship": "continuation",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "not_applicable",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "The reader is confronted by a monumental, full-bleed black-and-white photograph of a human foot, so closely cropped that it becomes an abstract landscape of skin and texture. This tactile, organic image is unexpectedly captioned with the mechanical and conceptual phrase 'The wheel' in the upper right corner. The experience is one of defamiliarization, forcing a metaphorical connection between the human body as a technology of locomotion and the invention that extended it."
+}

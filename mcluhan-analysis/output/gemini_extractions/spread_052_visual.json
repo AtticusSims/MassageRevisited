@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_052",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:27:03.401387",
+  "generation_time_s": 40.6,
+  "images": [
+    {
+      "position": "spanning_gutter",
+      "subject": "A high-contrast silhouette of a line of seven figures holding hands and dancing along the crest of a hill against a white sky. The figure on the far right is a skeletal representation of Death holding a large scythe. The figure on the far left appears to be playing a wind instrument, possibly a pipe or saxophone. The other figures are in various forms of medieval or rustic dress. The scene depicts the 'Danse Macabre' or Dance of Death.",
+      "source_type": "film_still",
+      "composition": "A stark, black silhouette against a plain white background. The figures form a strong horizontal line that moves from left to right across the entire spread. The composition is graphic and symbolic, emphasizing form over detail.",
+      "scale": "dominant",
+      "estimated_date": "c. 1957",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "impersonal",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is horizontally divided. The top third is occupied by a single, continuous silhouette image that spans both pages. The bottom two-thirds consists of a solid black field. Within this black field, two blocks of white text are placed at the bottom, one on the left page and one on the right, separated by the gutter.",
+    "typography": {
+      "body_font_style": "Sans-serif, medium weight, white text on a black background. Set in two justified columns at the bottom of the spread.",
+      "display_font_style": null,
+      "special_treatments": [
+        "Text reversed out (white on black)"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "dark",
+      "description": "The spread uses a stark black-and-white palette. The large black field covering the lower two-thirds makes the overall tone dark and somber, while the white text and the white sky in the image create maximum contrast."
+    },
+    "white_space": "none",
+    "visual_density": "moderate",
+    "left_right_relationship": "The image creates a continuous visual element that unifies the left and right pages. The text is balanced, with a column on each page, creating a parallel structure for the argument that flows from left to right.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "mixed"
+  },
+  "spread_description": "A reader encounters a somber, high-contrast spread divided into a white top and a black bottom. Spanning the top is a silhouette of the 'Dance of Death,' directly illustrating the theme of societal anxiety during a period of transition. Below, white text reversed out of the black field explains how cultures try to use old tools for new environments, explicitly connecting the medieval fear of print technology (The Dance of Death) to modern anxieties."
+}

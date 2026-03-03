@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_031",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:16:09.930055",
+  "generation_time_s": 48.1,
+  "images": [
+    {
+      "position": "spanning_gutter",
+      "subject": "A fine art reproduction of a Renaissance painting, likely 'The Ideal City' (c. 1480s), depicting a perfectly symmetrical and empty Italian piazza. The composition is a textbook example of one-point linear perspective, with architectural lines converging on a central vanishing point. The scene is viewed from beneath a classical colonnade.",
+      "source_type": "fine_art_reproduction",
+      "composition": "The composition is rigidly structured by one-point linear perspective, creating a sense of immense depth and mathematical order. The viewpoint is fixed, central, and elevated. Long shadows cast by the low sun accentuate the geometric forms of the pavement and buildings.",
+      "scale": "half_page",
+      "estimated_date": "c. 1480-1490",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "impersonal",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is bisected horizontally. The top half is the full-bleed reproduction of the Renaissance painting, spanning the gutter. The bottom half is a solid black field, also spanning the gutter. A block of white text is positioned in the lower right quadrant, within the black area.",
+    "typography": {
+      "body_font_style": "A serif typeface, set in white against a black background. The text is set flush-left, ragged-right in a single block.",
+      "display_font_style": null,
+      "special_treatments": [
+        "reversed text (white on black)"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "dark",
+      "description": "A stark, high-contrast design dominated by the large black field in the bottom half, which visually separates the viewer from the image above."
+    },
+    "white_space": "none",
+    "visual_density": "moderate",
+    "left_right_relationship": "continuation. The primary visual elements—the painting and the black field—extend uninterrupted across the gutter, treating the spread as a single compositional unit.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "The reader is presented with a stark horizontal division. Above, a Renaissance painting of an 'Ideal City' exemplifies the detached, ordered perspective of visual space. Below, a black void contains text that explicitly contrasts this legacy with the immersive, all-at-once nature of the electric age, making the design itself a demonstration of the argument."
+}

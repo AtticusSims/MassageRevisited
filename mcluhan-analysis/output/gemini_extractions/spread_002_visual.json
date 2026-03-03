@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_002",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:02:02.626799",
+  "generation_time_s": 25.6,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "An abstract, blurry, warm-toned photograph used as a background texture. The colors are primarily reddish-brown and dark, with soft gradients of light. A dark, curved shape is vaguely visible on the left side, but the overall image is non-representational.",
+      "source_type": "art_photograph",
+      "composition": "Extremely shallow depth of field creating a soft, abstract color field. The composition is non-representational, focusing on color and light gradients from a warm reddish-brown to near black.",
+      "scale": "full_bleed",
+      "estimated_date": null,
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single, portrait-oriented page, likely a back cover or dust jacket flap. White text is set in several left-aligned paragraphs over a full-bleed, abstract background image. The text block occupies the central vertical two-thirds of the page.",
+    "typography": {
+      "body_font_style": "Sans-serif, regular weight, white. The leading is open, enhancing readability against the textured background.",
+      "display_font_style": "The book title 'The Medium is the Massage' appears at the top and is slightly bolder than the body text, but is otherwise integrated into the text block.",
+      "special_treatments": [
+        "Text reversed out (white on color background)"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "moderate",
+      "dominant_tone": "dark",
+      "description": "The page has a warm, atmospheric tone due to the reddish-brown and orange hues of the background image, which contrasts with the clean white text."
+    },
+    "white_space": "minimal",
+    "visual_density": "moderate",
+    "left_right_relationship": "This is a single portrait page, so there is no left-right relationship.",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "centered"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "The reader encounters a single page of summary text, likely a back cover or dust jacket flap, set against a warm, blurry, abstract background. The white sans-serif type feels clean and direct, while the background provides an atmospheric, slightly mysterious tone. The text serves as an introduction or sales pitch, explaining the book's premise and historical significance to a potential reader."
+}

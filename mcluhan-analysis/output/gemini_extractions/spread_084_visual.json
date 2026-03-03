@@ -1,0 +1,30 @@
+{
+  "spread_id": "spread_084",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:45:25.692491",
+  "generation_time_s": 27.1,
+  "images": [],
+  "design": {
+    "layout_description": "A single portrait page with a functional, two-column layout. A descriptive paragraph for the image on page 1 sits at the top left. The page number '159' is at the top right. Below, two columns list the image credits for the book: the left column covers pages 1-95, and the right covers 96 to the back cover. The layout is clean and utilitarian, with generous white space separating the elements.",
+    "typography": {
+      "body_font_style": "Sans-serif, regular weight, small size. Page numbers are bolded. The text is set in two left-aligned (ragged right) columns.",
+      "display_font_style": null,
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "Standard black text on a white background."
+    },
+    "white_space": "abundant",
+    "visual_density": "moderate",
+    "left_right_relationship": "This is a single portrait page, not a spread. The layout consists of two distinct columns of text separated by a wide central margin.",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This page serves as the book's colophon, listing the credits for all images used. The layout is purely functional, with two columns of sans-serif text cataloging sources by page number against a plain white background. Its stark, utilitarian design contrasts sharply with the visually dynamic and experimental spreads that precede it, marking a clear end to the book's main argument and a shift to administrative back matter."
+}

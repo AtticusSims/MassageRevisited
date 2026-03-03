@@ -8,6 +8,8 @@
       55
     ],
     "section": "body",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
     "spread_type": "image_dominant",
     "orientation": "landscape_spread",
     "text": {
@@ -25,47 +27,83 @@
         "source_credit": "uncredited",
         "estimated_date": "c. 1960s",
         "composition": "",
-        "scale": "full_spread",
-        "relationship_to_text": ""
+        "scale": "dominant",
+        "relationship_to_text": {
+          "primary_relation": "illustrates",
+          "barthes_mode": "anchorage",
+          "description": ""
+        },
+        "interactive_meaning": {
+          "contact": "not_applicable",
+          "social_distance": "close_social",
+          "attitude_angle": "oblique"
+        }
       }
     ],
     "design": {
       "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is a **two-page layout** with a clear division:  \n- **Top half (both pages)**: Dominated by a dense, repeating geometric pattern (black-and-white tessellation of angular shapes). This visual element spans the entire width of both pages, creating a unified horizontal band.  \n- **Bottom half (left and right pages)**: Divided into two vertical columns of text. The left page’s text column sits below the geometric pattern, and the right page’s text column does the same. The space is split horizontally (image vs. text) and vertically (left vs. right text columns), with no significant overlap between the image and text zones.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Small **body text** (typical of book paragraphs, not display text).  \n- **Font style**: Appears to be **serif** (traditional book typography), though the mirrored/reversed orientation makes precise identification difficult.  \n- **Weight**: Light (not bold), as it is standard body text.  \n- **Orientation**: **Reversed** (upside down and mirrored). The text is printed in a way that requires flipping the page to read, creating a disorienting effect.  \n- **Color**: Black text on a white background (though the reversal makes it appear “reversed” in orientation, not color).  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (strict black-and-white palette with no grayscale or muted tones). The geometric pattern and text both rely on stark black/white opposition.  \n- **Tone**: Predominantly **light** (white background dominates the text area), but the geometric pattern introduces dense black shapes. The overall tone is **minimalist** due to the lack of color, yet the reversal adds visual tension.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The geometric pattern at the top is dense (little white space within it), but the text columns have ample white space around them (e.g., margins between the text and the page edges). The space between the image and text is",
       "typography": {
-        "body_font_style": "Serif text",
+        "body_font_style": "sans-serif",
         "display_font_style": null,
-        "special_treatments": []
+        "special_treatments": [
+          "inverted text (upside-down and mirrored)"
+        ]
       },
-      "color_and_tone": "Black and white.",
-      "white_space": "sparse",
-      "visual_density": "dense",
-      "left_right_relationship": "mirror"
+      "color_and_tone": {
+        "contrast": "high",
+        "dominant_tone": "light",
+        "description": "Black and white with gray tones."
+      },
+      "white_space": "minimal",
+      "visual_density": "overwhelming",
+      "left_right_relationship": "mirror",
+      "information_value": {
+        "left_right": "balanced",
+        "top_bottom": "not_applicable",
+        "center_margin": "distributed"
+      },
+      "compositional_framing": "weakly_framed"
     },
     "rhetoric": {
-      "argument": "Visual/typographic spread — argument conveyed through imagery and design rather than prose.",
-      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "argument": "The physically inverted and disrupted text shatters print-era reading conventions, forcing the reader to experience the cognitive disorientation that occurs when a dominant medium's ground rules are violated—this is what electronic media do to print consciousness, made viscerally immediate.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": [
+          "demonstration"
+        ]
+      },
+      "strategy_description": "The spread juxtaposes elements through its combination of text and design. Secondary strategies of demonstration reinforce the primary approach.",
       "design_enacts_argument": true,
-      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
-      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "design_argument_description": "Inverted and disrupted typography forces the reader to experience print conventions being violated from within, demonstrating that the 'invisible' rules of the reading environment become visible only when broken.",
+      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
       "mcluhan_concepts": [
-        "media_ecology"
-      ]
+        "participation"
+      ],
+      "multi_spread_patterns": "spreads_031_032:disruption_pair: Two spreads of sustained typographic disruption create a cumulative experience of print-convention breakdown that mirrors the dissolution of stable media environments.",
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
         "visual_rhetoric"
       ],
-      "contemporary_domain_candidates": [],
-      "movement_mapping": [],
-      "mapping_rationale": ""
+      "contemporary_domain_candidates": [
+        "attention_and_cognition",
+        "post_literacy_and_language"
+      ],
+      "movement_mapping": [
+        "movement_1_environment"
+      ],
+      "mapping_rationale": "The sustained disruption parallels the contemporary experience of perpetual format-shifting—moving between incompatible media conventions (email, messaging, social feeds, video) that each demand different cognitive orientations, making adaptability rather than mastery the core literacy skill.",
+      "confidence": "moderate"
     },
     "progression": {
       "pace_shift": "accelerating",
-      "thematic_function": "illustrates",
-      "relationship_to_previous": "",
-      "relationship_to_next": ""
+      "thematic_function": "transition",
+      "relationship_to_previous": "Continues and intensifies the previous spread's typographic disruption, refusing to let the reader regain perceptual equilibrium.",
+      "relationship_to_next": "The textual disruption yields to visual metaphor: prison bars as the image of print culture's perceptual constraints.",
+      "confidence": "moderate"
     },
-    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+    "notes": "The repetition of disruption across multiple spreads is itself significant: it's not a one-time trick but a sustained condition. The reader cannot simply adjust once and settle into a new pattern—the disruption keeps shifting, modeling the perpetual instability of electronic media environments."
   },
   "ocr": {
     "ocr_raw": "",
@@ -80,5 +118,59 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is a **two-page layout** with a clear division:  \n- **Top half (both pages)**: Dominated by a dense, repeating geometric pattern (black-and-white tessellation of angular shapes). This visual element spans the entire width of both pages, creating a unified horizontal band.  \n- **Bottom half (left and right pages)**: Divided into two vertical columns of text. The left page’s text column sits below the geometric pattern, and the right page’s text column does the same. The space is split horizontally (image vs. text) and vertically (left vs. right text columns), with no significant overlap between the image and text zones.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Small **body text** (typical of book paragraphs, not display text).  \n- **Font style**: Appears to be **serif** (traditional book typography), though the mirrored/reversed orientation makes precise identification difficult.  \n- **Weight**: Light (not bold), as it is standard body text.  \n- **Orientation**: **Reversed** (upside down and mirrored). The text is printed in a way that requires flipping the page to read, creating a disorienting effect.  \n- **Color**: Black text on a white background (though the reversal makes it appear “reversed” in orientation, not color).  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (strict black-and-white palette with no grayscale or muted tones). The geometric pattern and text both rely on stark black/white opposition.  \n- **Tone**: Predominantly **light** (white background dominates the text area), but the geometric pattern introduces dense black shapes. The overall tone is **minimalist** due to the lack of color, yet the reversal adds visual tension.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The geometric pattern at the top is dense (little white space within it), but the text columns have ample white space around them (e.g., margins between the text and the page edges). The space between the image and text is also substantial, creating a clear visual separation.  \n- **Distribution**: White space is concentrated in the text area (around columns) and between the image and text, while the image itself is tightly packed with shapes.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Mirror**: The **text** on both pages is a **mirror image** (upside down and reversed), creating a symmetrical yet disorienting relationship.  \n- **Contrast**: The **geometric patterns** on the left and right pages are *not* mirror images—they differ in the placement of black shapes, introducing subtle asymmetry.  \n- **Overall**: The text’s mirrored relationship dominates, while the images provide a contrasting, asymmetrical visual anchor. This creates a tension between order (geometric pattern) and disruption (reversed text).  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Chaotic yet controlled**. The high-contrast black-and-white palette and geometric precision create order, but the **reversed text** disrupts reading flow, inducing confusion or disorientation. The minimal color scheme (only black/white) amplifies this chaos, as the viewer must actively “decode” the reversed text.  \n- **Key impression**: The spread feels **aggressively minimalist**—it uses stark simplicity to create visual tension, rather than calm or warmth. The reversed text acts as a deliberate disruption, making the layout feel intentionally unsettling or experimental.",
     "layout_analysis_time": 11.2,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_032",
+    "movement": "movement_1_environment",
+    "original_summary": {
+      "spread_type": "image_dominant",
+      "section": "body",
+      "book_pages": [
+        54,
+        55
+      ],
+      "original_themes": [
+        "visual_rhetoric"
+      ],
+      "rhetorical_strategy": "accumulation",
+      "design_enacts_argument": true,
+      "design_argument_description": "City/urban images accumulated on the spread demonstrate the urban environment as media artifact — the city as medium.",
+      "text_excerpt": ""
+    },
+    "contemporary_plan": {
+      "theme": "The City layer: computation at urban scale",
+      "argument": "The original accumulated city images, showing the urban environment as media artifact. The contemporary version reveals the computational layer beneath the city surface. Singapore's Smart Nation initiative deploys sensors across the entire city-state: lampposts that count pedestrians, drainage sensors that predict flooding, cameras that track crowd density. Sidewalk Labs' plan for Toronto (proposed 2017, abandoned 2020) would have instrumented entire neighborhoods. The smart city is the Stack's City layer: computation at the scale of urban life, invisible to its inhabitants, governing traffic, energy, waste, and movement through algorithmic optimization.",
+      "text": {
+        "approach": "no_text",
+        "description": "No text, or minimal: a single line identifying the city and the number of sensors per square kilometer.",
+        "voice_notes": ""
+      },
+      "image": {
+        "approach": "found",
+        "subject": "A composite image: a normal city street photograph overlaid with a semi-transparent visualization layer showing sensor coverage, WiFi fields, camera sight lines, and data flows. The overlay should make the invisible computational infrastructure of the city visible. Alternatively: Singapore's Smart Nation sensor deployment, or a Sidewalk Labs concept rendering.",
+        "mood": "layered_urban",
+        "image_text_relationship": "independent"
+      },
+      "rhetoric": {
+        "strategy": "defamiliarization",
+        "design_enacts": "The overlay technique — normal city image made transparent to reveal its computational layer — performs M1's central mission: making the invisible infrastructure visible. The reader sees what they walk through without seeing."
+      },
+      "mapping": {
+        "relationship_to_original": "transformation",
+        "convergences": [],
+        "thinkers": [],
+        "quotations": []
+      },
+      "dependencies": "Stack layer: City. Part of the Stack visual sequence."
+    },
+    "paper_trace": {
+      "citation": "Bratton 2016 \"The Stack\" ch.3 on the City layer and urban-scale computation",
+      "convergence_tag": null
+    },
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

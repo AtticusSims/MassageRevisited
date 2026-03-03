@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_077",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:41:04.640624",
+  "generation_time_s": 31.8,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "A high-contrast, black-and-white photograph of turbulent flames. On the left page, a black silhouette of a human hand with fingers splayed is visible, appearing to reach into or be consumed by the fire.",
+      "source_type": "art_photograph",
+      "composition": "Chaotic and abstract, dominated by the stark black and white shapes of fire. The silhouetted hand on the left provides a single, dramatic human focal point within the turbulence. The extreme high contrast gives the image a graphic, almost woodcut-like quality.",
+      "scale": "full_bleed",
+      "estimated_date": "c. 1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "close_social",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A single, full-bleed, high-contrast photograph of fire spans both pages, creating a unified and immersive visual field. The left page is purely pictorial, featuring the silhouetted hand. The right page overlays a single column of white, ragged-right text directly onto the image, containing quotes and a paragraph of prose.",
+    "typography": {
+      "body_font_style": "Sans-serif, medium weight, white text reversed out of the dark image background. Set in a single column with ragged-right justification.",
+      "display_font_style": null,
+      "special_treatments": [
+        "Text reversed out (white on black/image)"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "dark",
+      "description": "The image is rendered in stark black and white with no mid-tones, creating a dramatic and somewhat violent tonal quality. The white text on the dark, busy background creates high visual vibration."
+    },
+    "white_space": "none",
+    "visual_density": "dense",
+    "left_right_relationship": "A continuous visual field links the two pages. The left page presents a visceral, symbolic action (a hand in fire), while the right page provides the philosophical and theoretical text for interpreting that action. It's a relationship of phenomenon and exegesis.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "A reader encounters an immersive, full-bleed image of high-contrast flames spanning both pages. On the left, a silhouetted hand reaches into the fire, suggesting destruction and fusion. White text floats over the flames on the right, juxtaposing quotes from Laotze with McLuhan's argument that electronic media are 'Orientalizing the West,' replacing distinct separation with a 'fused' unity."
+}

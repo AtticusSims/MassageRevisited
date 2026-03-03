@@ -8,6 +8,8 @@
       17
     ],
     "section": "body",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
     "spread_type": "text_with_specific_image",
     "orientation": "landscape_spread",
     "text": {
@@ -29,52 +31,92 @@
       {
         "position": "full_bleed",
         "subject": "### 1. Graphic Symbol (Left Page)  \n- **Depicts**: A small, abstract black graphic symbol with three curved, ornate arms (resembling a stylized decorative motif or a simplified letterform, possibly evoking a \"Y\" shape with flowing lines).  \n- **Position**: Left page, left side, approximately 1 inch from the top edge, aligned with the left margin.  \n- **Visual Style**: Black and white graphic symbol (line art, no shading or texture).  \n- **Composition**: Vertical, minimal scale (≈2–3 cm tall), high contrast against the white page background. The lines are smooth and curved, with no internal detail or depth.  \n- **Page Occupation**: Roughly 5% of the left page’s area.  \n\n\n### 2. Photograph (Right Page)  \n- **Depicts**: A black and white head-and-shoulders portrait of a young boy (estimated age 8–10 years old) wearing a dark V-neck sweater with a crisp white collar. The boy faces the camera directly, with a neutral expression. The background is a plain, light gray tone (typical of mid-20th-century studio portraits).  \n- **Position**: Right page, centered vertically, inset within the page (not full bleed; the photo is contained within the right page’s area).  \n- **Visual Style**: Black and white photograph (photographic realism with visible grain, characteristic of older print media).  \n- **Composition**: Straight-on angle (eye-level), high contrast between the boy’s dark hair/sweater, white collar, and light gray background. The photograph is framed by a white border with **black triangular corners** (a design choice that creates a border effect, emphasizing the photo as a distinct visual element).  \n- **Page Occupation**: Approximately 75% of the right page’s area (the photo dominates the right page, with the gray background surrounding it).",
-        "source_type": "graphic",
+        "source_type": "graphic_symbol",
         "source_credit": "Peter Moore",
         "estimated_date": "c. 1960s",
         "composition": "",
-        "scale": "full_spread",
-        "relationship_to_text": ""
+        "scale": "small_inset",
+        "relationship_to_text": {
+          "primary_relation": "provides_atmosphere",
+          "barthes_mode": "anchorage",
+          "description": ""
+        },
+        "interactive_meaning": {
+          "contact": "not_applicable",
+          "social_distance": "not_applicable",
+          "attitude_angle": "not_applicable"
+        }
       }
     ],
     "design": {
       "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two distinct sections:  \n- **Left side (white background)**: Contains the title *“your neighborhood”*, a small decorative icon (resembling a stylized tree or branch), and the body text. Text is left-aligned, leaving ample empty space to the right of the text block.  \n- **Right side (gray background)**: Features a large, centered black-and-white photograph of a person. The photo is framed by a thin white border, with the gray background surrounding it.  \nThe division is stark and intentional—text occupies the left, image the right—with no overlap or merging of the two sections. The layout emphasizes **separation** between text and image, creating a clear visual hierarchy.  \n\n\n### 2. TYPOGRAPHY  \n- **Title text**: *“your neighborhood”* is large, bold, and **sans-serif** (e.g., Helvetica or similar modern sans-serif font). It dominates the top-left of the page, drawing immediate attention.  \n- **Body text**: Smaller, **serif** (e.g., Times New Roman or similar traditional serif), in regular weight. It is left-aligned and occupies the lower-left portion of the white section.  \n- **Contrast**: All text is **black on white** (no reversed/white-on-black text). The title’s boldness and size contrast sharply with the smaller, lighter body text.  \n- **Hierarchy**: The title functions as a display text (large, bold), while the body text is a standard body text (smaller, serif).  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**:  \n  - Left side: **High contrast** (black text on pure white background).  \n  - Right side: **Lower contrast** (gray background with a black-and-white photo; the photo’s grayscale tones blend with the gray backdrop).  \n- **Tone**: Predominantly **light** (white on the left, muted gray on the right). The overall tone is **neutral and understated**, with the gray section adding subtle depth without overwhelming the page.  \n\n\n### 4. WHITE SPACE  \nThe spread features **dense white space**.  \n-",
       "typography": {
-        "body_font_style": "Sans-serif text",
+        "body_font_style": "sans-serif",
         "display_font_style": "Large display typography",
-        "special_treatments": []
+        "special_treatments": [
+          "oversized display typography"
+        ]
       },
-      "color_and_tone": "Black and white.",
-      "white_space": "sparse",
-      "visual_density": "dense",
-      "left_right_relationship": "mirror"
+      "color_and_tone": {
+        "contrast": "high",
+        "dominant_tone": "light",
+        "description": "Black and white with gray tones."
+      },
+      "white_space": "minimal",
+      "visual_density": "overwhelming",
+      "left_right_relationship": "mirror",
+      "information_value": {
+        "left_right": "balanced",
+        "top_bottom": "not_applicable",
+        "center_margin": "distributed"
+      },
+      "compositional_framing": "strongly_framed"
     },
     "rhetoric": {
-      "argument": "your neighborhood Electric circuitry has overthrown the regime of \"time\" and \"space\" and pours upon us instantly and continuously the concerns of all other men.",
-      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "argument": "Extending the inventory to 'your neighborhood' and 'your education' reveals how media don't just enter private spaces but restructure the public institutions—schools, communities—through which people organize collective life and transmit cultural knowledge.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": [
+          "demonstration",
+          "interpellation"
+        ]
+      },
+      "strategy_description": "The spread juxtaposes elements through its combination of text and design. Secondary strategies of demonstration and interpellation reinforce the primary approach.",
       "design_enacts_argument": true,
       "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
       "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
       "mcluhan_concepts": [
-        "media_ecology"
-      ]
+        "electric_age"
+      ],
+      "multi_spread_patterns": null,
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
         "electric_technology",
-        "space_and_time"
+        "space_and_time",
+        "clothing_and_housing",
+        "information",
+        "speed_and_acceleration"
       ],
-      "contemporary_domain_candidates": [],
-      "movement_mapping": [],
-      "mapping_rationale": ""
+      "contemporary_domain_candidates": [
+        "attention_and_cognition",
+        "embodiment_and_disembodiment"
+      ],
+      "movement_mapping": [
+        "movement_1_environment"
+      ],
+      "mapping_rationale": "The forced physical rotation parallels how mobile device usage has restructured bodily orientation (portrait vs. landscape, head-down posture, thumb-scrolling), and how VR/AR demands new embodied relationships with information—media literally reshape how bodies inhabit space.",
+      "confidence": "moderate"
     },
     "progression": {
       "pace_shift": "steady",
       "thematic_function": "develops_theme",
-      "relationship_to_previous": "",
-      "relationship_to_next": ""
+      "relationship_to_previous": "The rotated text about education physically enacts the reorientation that the preceding spread's inventory intellectually described—theory becomes bodily experience.",
+      "relationship_to_next": "Returns to the inventory's expanding circles (your job) after the physical disruption, with the reader now carrying the bodily memory of forced reorientation.",
+      "confidence": "moderate"
     },
-    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+    "notes": "This is the book's most direct physical demonstration of its thesis: by rotating the text, Fiore forces the reader to rotate the book (or their head), making the reading body suddenly visible. The medium of the book is literally working the reader over. This spread about education is itself educating the reader through physical experience rather than abstract instruction."
   },
   "ocr": {
     "ocr_raw": "your\nneighborhood\nElectric circuitry has overthrown the regime of \"time\" and \"space\" and pours upon us instantly and continuously the concerns of all other men. It has reconstituted dialogue on a global scale. Its message is Total Change, ending psychic, social, economic, and political parochialism. The old civic, state, and national groupings have become unworkable. Nothing can be further from the spirit of the new technology than \"a place for everything and everything in its place.\" You can't go home again.\n16",
@@ -89,5 +131,70 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two distinct sections:  \n- **Left side (white background)**: Contains the title *“your neighborhood”*, a small decorative icon (resembling a stylized tree or branch), and the body text. Text is left-aligned, leaving ample empty space to the right of the text block.  \n- **Right side (gray background)**: Features a large, centered black-and-white photograph of a person. The photo is framed by a thin white border, with the gray background surrounding it.  \nThe division is stark and intentional—text occupies the left, image the right—with no overlap or merging of the two sections. The layout emphasizes **separation** between text and image, creating a clear visual hierarchy.  \n\n\n### 2. TYPOGRAPHY  \n- **Title text**: *“your neighborhood”* is large, bold, and **sans-serif** (e.g., Helvetica or similar modern sans-serif font). It dominates the top-left of the page, drawing immediate attention.  \n- **Body text**: Smaller, **serif** (e.g., Times New Roman or similar traditional serif), in regular weight. It is left-aligned and occupies the lower-left portion of the white section.  \n- **Contrast**: All text is **black on white** (no reversed/white-on-black text). The title’s boldness and size contrast sharply with the smaller, lighter body text.  \n- **Hierarchy**: The title functions as a display text (large, bold), while the body text is a standard body text (smaller, serif).  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**:  \n  - Left side: **High contrast** (black text on pure white background).  \n  - Right side: **Lower contrast** (gray background with a black-and-white photo; the photo’s grayscale tones blend with the gray backdrop).  \n- **Tone**: Predominantly **light** (white on the left, muted gray on the right). The overall tone is **neutral and understated**, with the gray section adding subtle depth without overwhelming the page.  \n\n\n### 4. WHITE SPACE  \nThe spread features **dense white space**.  \n- On the left, the text is left-aligned, leaving significant empty space to the right of the text block.  \n- On the right, the gray background surrounds the photo, with ample empty space above, below, and to the sides of the image.  \nThis abundance of white space creates a **minimalist, uncluttered feel**, emphasizing the separation between text and image.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \nThe left and right sections exhibit **contrast**.  \n- The left is text-heavy (title + body text), while the right is image-heavy (the photograph).  \n- They are **distinct and non-overlapping**, with no visual or thematic merging. The text’s intellectual tone (“Electric circuitry has overthrown the regime of ‘time’ and ‘space’…”) contrasts with the photograph’s human element, creating a deliberate juxtaposition.  \n- The relationship is not “mirror” (text/image swapped) or “unified” (text/image harmonizing); instead, it is **contrasting**—text vs. image, left vs. right.  \n\n\n### 6. OVERALL FEEL  \nThe spread conveys a **calm, minimalist, and intellectual mood**.  \n- **Calm**: Ample white space, clean typography, and muted tones (gray background, black-and-white photo) prevent visual chaos.  \n- **Minimalist**: The layout avoids ornamentation; text and image are presented with restraint.  \n- **Intellectual**: The serious, abstract content (discussing technology’s impact on society) paired with the stark design suggests a scholarly or avant-garde tone.  \n- **Energy**: Not aggressive or overwhelming—instead, it feels **measured and contemplative**, inviting the reader to absorb the text and reflect on the image.",
     "layout_analysis_time": 13.2,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_013",
+    "movement": "movement_1_environment",
+    "original_summary": {
+      "spread_type": "text_with_specific_image",
+      "section": "body",
+      "book_pages": [
+        16,
+        17
+      ],
+      "original_themes": [
+        "electric_technology",
+        "space_and_time",
+        "information",
+        "speed_and_acceleration"
+      ],
+      "rhetorical_strategy": "assertion",
+      "design_enacts_argument": true,
+      "design_argument_description": "The juxtaposition of McLuhan's text about electric circuitry overthrowing time and space with an image of a building demonstrates the collision between old spatial structures and new information environments.",
+      "text_excerpt": "Electric circuitry has overthrown the regime of 'time' and 'space' and pours upon us instantly and continuously the concerns of all other men."
+    },
+    "contemporary_plan": {
+      "theme": "Your neighborhood: bandwidth as geography",
+      "argument": "McLuhan declared that electric circuitry overthrew time and space. In 2026, this is no longer a prophecy — it is a zoning law. Your 'neighborhood' is defined by bandwidth tier more than by latitude. Starlink's 6,000+ satellites redraw geography from orbit. The 1996 Telecommunications Act's 'digital divide' was spatial; the 2020s divide is temporal — milliseconds of latency determine whether you participate in the real-time economy or are relegated to its archive. Bratton's Stack reorganizes territory not by borders but by bandwidth topology.",
+      "text": {
+        "approach": "combination",
+        "description": "Display text: 'your neighborhood.' Body text: the bandwidth-as-geography argument. Specific data: Starlink coverage maps vs. income maps, latency as class marker, the 47ms that separates high-frequency trading hubs from everywhere else. Close with Bratton's planetary computation quote.",
+        "voice_notes": "Expansive, cartographic. The reader should feel the ground shifting beneath their feet as 'neighborhood' is redefined."
+      },
+      "image": {
+        "approach": "found",
+        "subject": "A satellite internet coverage map or fiber-optic network visualization overlaid on a traditional geographic map — the new territory drawn by bandwidth, not borders. Alternatively: a Starlink satellite trail photograph showing the constellation visible from Earth.",
+        "mood": "monumental_technical",
+        "image_text_relationship": "amplifies"
+      },
+      "rhetoric": {
+        "strategy": "assertion",
+        "design_enacts": "The spread asserts the new geography boldly, with the coverage-map image replacing the traditional neighborhood. The design makes the abstract (bandwidth topology) concrete (visible map), performing the 'making visible' that is M1's mission."
+      },
+      "mapping": {
+        "relationship_to_original": "transformation",
+        "convergences": [
+          "accidental_megastructure"
+        ],
+        "thinkers": [
+          "Bratton"
+        ],
+        "quotations": [
+          {
+            "text": "Planetary computation reorganizes geopolitics according to the topological relations of information, not the territorial jurisdictions of traditional states.",
+            "author": "Bratton",
+            "source": "The Stack, MIT Press, 2016, p. 23",
+            "rationale": "The neighborhood is now a node in the Stack — geography yields to topology."
+          }
+        ]
+      },
+      "dependencies": "Continues the 'you' series. Introduces the accidental_megastructure convergence."
+    },
+    "paper_trace": "convergence:accidental_megastructure — introduced here as the Stack that replaces geography",
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_059",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:30:21.609849",
+  "generation_time_s": 25.5,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "A dark, theatrical scene, likely a 1960s multimedia performance or 'happening'. In the foreground, the silhouettes of a small crowd or performers stand on a stage. In the background, large, grainy images are projected onto a scalloped or cloud-shaped screen. The left projection is a high-contrast, close-up of a woman's face with blonde hair, looking forward but with an averted gaze. The right projection is a more abstract, blurred image of a face or body. Two star-shaped lights are visible at the top of the scene.",
+      "source_type": "art_photograph",
+      "composition": "A layered composition with dark silhouettes in the foreground against brightly lit projections in the background. The lighting is low-key and high-contrast, creating a chiaroscuro effect. The scene is bisected by the gutter, separating the two primary projections.",
+      "scale": "full_bleed",
+      "estimated_date": "c. 1965-1967",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "impersonal",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A single, full-bleed black and white photograph covers the entire two-page spread. A single line of text is reversed out in white at the bottom of the page, spanning the gutter and acting as a caption for the immersive scene.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "A single line of serif text, medium weight, reversed out (white on black).",
+      "special_treatments": [
+        "Text reversed out (white on black)"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "moderate",
+      "dominant_tone": "dark",
+      "description": "The spread is overwhelmingly dark, with the projections serving as the primary light source, creating glowing, high-contrast areas within a black field."
+    },
+    "white_space": "none",
+    "visual_density": "moderate",
+    "left_right_relationship": "Continuation. The photograph is a single, continuous scene that spans the gutter, treating the two pages as a unified canvas. The gutter subtly divides the two main projections.",
+    "information_value": {
+      "left_right": "balanced",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "The reader is immersed in a dark, full-bleed photograph of a 1960s multimedia event, with ghostly faces projected over the silhouettes of a crowd. The atmosphere is dreamlike and disorienting, capturing the sensory experience of a new media environment. A single, cryptic line of white text at the bottom, 'History as she is harped. Rite words in rote order,' provides a critical anchor to the hypnotic visual."
+}

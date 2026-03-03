@@ -32,7 +32,10 @@
   <div class="tab-bar">
     <button class="tab active" data-tab="analysis" onclick="switchTab('analysis')">Analysis</button>
     <button class="tab" data-tab="visual" onclick="switchTab('visual')">Visual Analysis</button>
+    <button class="tab" data-tab="planning" onclick="switchTab('planning')">Planning</button>
     <div class="tab-spacer"></div>
+    <button class="overview-btn" onclick="showOverview()">Overview</button>
+    <button class="export-btn" onclick="exportRevisionPrompt()">Export</button>
     <div class="review-controls" id="reviewControls">
       <button class="review-btn approve" id="btnApprove" onclick="setReview('approved')">✓ Approve</button>
       <button class="review-btn flag" id="btnFlag" onclick="setReview('flagged')">⚑ Flag</button>
@@ -67,6 +70,25 @@
         <div id="visualContent">
           <div class="placeholder">Loading visual analysis data...</div>
         </div>
+      </div>
+      <!-- Planning tab -->
+      <div id="tabPlanning" class="tab-content" style="display:none;">
+        <div id="planningContent">
+          <div class="placeholder">Loading planning data...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overview Modal -->
+  <div class="modal-overlay" id="overviewModal" style="display:none;" onclick="if(event.target===this)closeOverview()">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Content Plan Overview</h2>
+        <button class="modal-close" onclick="closeOverview()">&times;</button>
+      </div>
+      <div class="modal-body" id="overviewBody">
+        <div class="placeholder">Loading overview data...</div>
       </div>
     </div>
   </div>
@@ -145,6 +167,9 @@ function switchTab(tab) {
   } else if (tab === 'visual') {
     document.getElementById('tabVisual').style.display = 'block';
     if (currentSpreadData) renderVisual(currentSpreadData);
+  } else if (tab === 'planning') {
+    document.getElementById('tabPlanning').style.display = 'block';
+    if (currentSpreadData) renderPlanning(currentSpreadData);
   }
 }
 
@@ -176,16 +201,21 @@ async function loadSpread(spreadId) {
       }
       // Always update visual tab content (even if hidden)
       renderVisual(currentSpreadData);
+      renderPlanning(currentSpreadData);
     } else {
       currentSpreadData = null;
       showPlaceholder(item.analyzed ? 'Data file not found' : 'Not yet analyzed');
       document.getElementById('visualContent').innerHTML =
+        '<div class="placeholder">Not yet analyzed</div>';
+      document.getElementById('planningContent').innerHTML =
         '<div class="placeholder">Not yet analyzed</div>';
     }
   } catch (e) {
     currentSpreadData = null;
     showPlaceholder('Error loading data');
     document.getElementById('visualContent').innerHTML =
+      '<div class="placeholder">Error loading data</div>';
+    document.getElementById('planningContent').innerHTML =
       '<div class="placeholder">Error loading data</div>';
   }
 
@@ -267,7 +297,7 @@ function renderVisual(data) {
         <span class="tag vlm-model">${esc(data.visual.model || 'qwen3-vl')}</span>
         ${data.visual.image_description_time ? `<span class="vlm-time">${data.visual.image_description_time}s</span>` : ''}
       </div>
-      <div class="visual-text">${esc(data.visual.image_description)}</div>
+      <div class="visual-text md-content">${renderMarkdown(data.visual.image_description)}</div>
     </div>`;
   }
 
@@ -279,7 +309,7 @@ function renderVisual(data) {
         <span class="tag vlm-model">${esc(data.visual.model || 'qwen3-vl')}</span>
         ${data.visual.layout_analysis_time ? `<span class="vlm-time">${data.visual.layout_analysis_time}s</span>` : ''}
       </div>
-      <div class="visual-text">${esc(data.visual.layout_analysis)}</div>
+      <div class="visual-text md-content">${renderMarkdown(data.visual.layout_analysis)}</div>
     </div>`;
   }
 
@@ -325,11 +355,483 @@ function toggleCollapsible(header) {
   const arrow = header.querySelector('.collapse-arrow');
   if (body.style.display === 'none') {
     body.style.display = 'block';
-    arrow.textContent = '▾';
+    arrow.textContent = '\u25BE';
   } else {
     body.style.display = 'none';
-    arrow.textContent = '▸';
+    arrow.textContent = '\u25B8';
   }
+}
+
+// ========== Planning View Rendering ==========
+function renderPlanning(data) {
+  const el = document.getElementById('planningContent');
+
+  if (!data || !data.content_plan) {
+    el.innerHTML = '<div class="placeholder">No content plan data available for this spread</div>';
+    return;
+  }
+
+  const plan = data.content_plan;
+  const cp = plan.contemporary_plan || {};
+  const os = plan.original_summary || {};
+  const mapping = cp.mapping || {};
+  const feedback = plan.reviewer_feedback || {};
+
+  let html = '';
+
+  // Movement badge
+  html += `<div class="plan-movement">
+    <span class="tag movement-badge">${fmtEnum(plan.movement || '')}</span>
+  </div>`;
+
+  // Theme & Argument
+  html += `<div class="section plan-section">
+    <div class="section-header">Theme & Argument</div>
+    <div class="plan-theme">${esc(cp.theme || '')}</div>
+    <div class="plan-argument">${esc(cp.argument || '')}</div>
+  </div>`;
+
+  // Text Plan
+  if (cp.text) {
+    html += `<div class="section plan-section">
+      <div class="section-header">Text</div>
+      <div class="field"><span class="field-label">Approach</span>
+        <span class="tag text-approach">${fmtEnum(cp.text.approach || '')}</span></div>`;
+    if (cp.text.description) {
+      html += `<div class="field"><span class="field-label">Description</span>
+        <div class="field-value">${esc(cp.text.description)}</div></div>`;
+    }
+    if (cp.text.voice_notes) {
+      html += `<div class="field"><span class="field-label">Voice Notes</span>
+        <div class="field-value voice-notes">${esc(cp.text.voice_notes)}</div></div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Image Plan
+  if (cp.image) {
+    html += `<div class="section plan-section">
+      <div class="section-header">Image</div>
+      <div class="field"><span class="field-label">Approach</span>
+        <span class="tag image-approach">${fmtEnum(cp.image.approach || '')}</span></div>`;
+    if (cp.image.subject) {
+      html += `<div class="field"><span class="field-label">Subject</span>
+        <div class="field-value">${esc(cp.image.subject)}</div></div>`;
+    }
+    if (cp.image.mood) {
+      html += `<div class="field"><span class="field-label">Mood</span>
+        <span class="tag mood">${fmtEnum(cp.image.mood)}</span></div>`;
+    }
+    if (cp.image.image_text_relationship) {
+      html += `<div class="field"><span class="field-label">Image-Text Relationship</span>
+        <span class="tag">${fmtEnum(cp.image.image_text_relationship)}</span></div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Rhetoric Plan
+  if (cp.rhetoric) {
+    html += `<div class="section plan-section rhetoric">
+      <div class="section-header">Rhetoric</div>
+      <div class="field"><span class="field-label">Strategy</span>
+        <span class="tag strategy-primary">${fmtEnum(cp.rhetoric.strategy || '')}</span></div>`;
+    if (cp.rhetoric.design_enacts) {
+      html += `<div class="field"><span class="field-label">Design Enacts</span>
+        <div class="field-value" style="color:#e8c878;">${esc(cp.rhetoric.design_enacts)}</div></div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Mapping
+  html += `<div class="section plan-section">
+    <div class="section-header">Mapping to Original</div>
+    <div class="field"><span class="field-label">Relationship</span>
+      <span class="tag relationship">${fmtEnum(mapping.relationship_to_original || '')}</span></div>`;
+
+  if (mapping.convergences && mapping.convergences.length) {
+    html += `<div class="field"><span class="field-label">Convergences</span>
+      <div>${mapping.convergences.map(c => `<span class="tag convergence">${fmtEnum(c)}</span>`).join('')}</div></div>`;
+  }
+
+  if (mapping.thinkers && mapping.thinkers.length) {
+    html += `<div class="field"><span class="field-label">Thinkers</span>
+      <div>${mapping.thinkers.map(t => `<span class="tag thinker">${esc(t)}</span>`).join('')}</div></div>`;
+  }
+
+  if (mapping.quotations && mapping.quotations.length) {
+    html += `<div class="field"><span class="field-label">Quotations</span>`;
+    for (const q of mapping.quotations) {
+      html += `<div class="card">
+        <div class="quote-text">\u201C${esc(q.text)}\u201D</div>
+        <div class="card-field">\u2014 ${esc(q.thinker)}${q.source ? `, <em>${esc(q.source)}</em>` : ''}</div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+  html += `</div>`;
+
+  // Paper Trace
+  if (plan.paper_trace) {
+    html += `<div class="section plan-section paper-trace">
+      <div class="section-header">Paper Trace</div>
+      <div class="field"><span class="field-label">Citation</span>
+        <div class="field-value">${esc(plan.paper_trace.citation || '')}</div></div>`;
+    if (plan.paper_trace.convergence_tag) {
+      html += `<div class="field"><span class="field-label">Convergence Tag</span>
+        <div class="field-value">${esc(plan.paper_trace.convergence_tag)}</div></div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Dependencies
+  if (cp.dependencies) {
+    html += `<div class="section plan-section">
+      <div class="section-header">Dependencies</div>
+      <div class="field-value">${esc(cp.dependencies)}</div>
+    </div>`;
+  }
+
+  // Original Summary (collapsible, default expanded)
+  // Pull richer data from the analysis if available
+  const analysis = data.analysis || {};
+  const origText = analysis.text || {};
+  const origRhetoric = analysis.rhetoric || {};
+  const origDesign = analysis.design || {};
+
+  html += `<div class="section plan-section">
+    <div class="section-header collapsible-header" onclick="toggleCollapsible(this)">
+      <span>Original Analysis Summary</span>
+      <span class="collapse-arrow">\u25BE</span>
+    </div>
+    <div class="collapsible-body">
+      <div class="field"><span class="field-label">Spread Type</span>
+        <span class="tag">${fmtEnum(os.spread_type || analysis.spread_type || '')}</span></div>
+      <div class="field"><span class="field-label">Section</span>
+        <span class="tag">${fmtEnum(os.section || analysis.section || '')}</span></div>
+      <div class="field"><span class="field-label">Original Themes</span>
+        <div>${(os.original_themes||[]).map(t => `<span class="tag theme">${fmtEnum(t)}</span>`).join('') || '<span style="color:var(--text-muted);">None identified</span>'}</div></div>
+      <div class="field"><span class="field-label">Strategy</span>
+        <span class="tag">${fmtEnum(os.rhetorical_strategy || '')}</span></div>`;
+
+  // Show the actual argument from analysis
+  if (origRhetoric.argument) {
+    html += `<div class="field"><span class="field-label">Original Argument</span>
+      <div class="field-value" style="color:#fff;font-weight:500;">${esc(origRhetoric.argument)}</div></div>`;
+  }
+
+  // Show design-enacts info
+  if (os.design_enacts_argument) {
+    html += `<div class="field"><span class="field-label">Design Enacts Argument</span>
+      <span class="badge-yes">YES</span>
+      ${os.design_argument_description ? `<div class="field-value" style="margin-top:4px;font-size:12px;color:#e8c878;">${esc(os.design_argument_description)}</div>` : ''}
+    </div>`;
+  }
+
+  // Show display/body text from original
+  if (origText.display_text) {
+    html += `<div class="field"><span class="field-label">Display Text</span>
+      <div class="field-value" style="font-size:16px;font-weight:700;color:#fff;">${esc(origText.display_text)}</div></div>`;
+  }
+  if (origText.body_text) {
+    html += `<div class="field"><span class="field-label">Body Text</span>
+      <div class="field-value body-text" style="font-size:12px;max-height:120px;overflow-y:auto;">${esc(origText.body_text)}</div></div>`;
+  }
+
+  // Show text_excerpt from content plan if available
+  if (os.text_excerpt) {
+    html += `<div class="field"><span class="field-label">Text Excerpt</span>
+      <div class="field-value" style="font-size:12px;max-height:100px;overflow-y:auto;">${esc(os.text_excerpt)}</div></div>`;
+  }
+
+  html += `</div></div>`;
+
+  // Reviewer Feedback
+  html += `<div class="section plan-section feedback-section">
+    <div class="section-header">Feedback</div>
+    <div class="feedback-input">
+      <textarea id="feedbackNote" placeholder="Add feedback note..." rows="2"></textarea>
+      <button class="feedback-add-btn" onclick="addFeedbackNote()">Add Note</button>
+    </div>
+    <div id="feedbackNotes"></div>
+  </div>`;
+
+  el.innerHTML = html;
+
+  // Load and render existing feedback notes
+  renderFeedbackNotes();
+}
+
+// ========== Feedback (localStorage) ==========
+const FEEDBACK_KEY = 'mcluhan_feedback';
+
+function getFeedbackData() {
+  try {
+    return JSON.parse(localStorage.getItem(FEEDBACK_KEY) || '{}');
+  } catch { return {}; }
+}
+
+function addFeedbackNote() {
+  const textarea = document.getElementById('feedbackNote');
+  const note = textarea.value.trim();
+  if (!note) return;
+
+  const spreadId = NAV_ITEMS[currentIndex].id;
+  const data = getFeedbackData();
+  if (!data[spreadId]) data[spreadId] = [];
+  data[spreadId].push({
+    text: note,
+    timestamp: new Date().toISOString()
+  });
+  localStorage.setItem(FEEDBACK_KEY, JSON.stringify(data));
+  textarea.value = '';
+  renderFeedbackNotes();
+}
+
+function deleteFeedbackNote(index) {
+  const spreadId = NAV_ITEMS[currentIndex].id;
+  const data = getFeedbackData();
+  if (data[spreadId]) {
+    data[spreadId].splice(index, 1);
+    if (data[spreadId].length === 0) delete data[spreadId];
+    localStorage.setItem(FEEDBACK_KEY, JSON.stringify(data));
+  }
+  renderFeedbackNotes();
+}
+
+function renderFeedbackNotes() {
+  const el = document.getElementById('feedbackNotes');
+  if (!el) return;
+  const spreadId = NAV_ITEMS[currentIndex].id;
+  const data = getFeedbackData();
+  const notes = data[spreadId] || [];
+
+  if (notes.length === 0) {
+    el.innerHTML = '<div class="no-notes">No feedback notes yet</div>';
+    return;
+  }
+
+  let html = '';
+  for (let i = 0; i < notes.length; i++) {
+    const n = notes[i];
+    const date = new Date(n.timestamp).toLocaleDateString('en-US', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});
+    html += `<div class="feedback-note">
+      <div class="feedback-note-text">${esc(n.text)}</div>
+      <div class="feedback-note-meta">
+        <span class="feedback-date">${date}</span>
+        <button class="feedback-delete" onclick="deleteFeedbackNote(${i})">&times;</button>
+      </div>
+    </div>`;
+  }
+  el.innerHTML = html;
+}
+
+// ========== Overview Modal ==========
+let overviewData = null;
+
+async function showOverview() {
+  const modal = document.getElementById('overviewModal');
+  modal.style.display = 'flex';
+
+  if (!overviewData) {
+    try {
+      const resp = await fetch('data/meta.json');
+      if (resp.ok) {
+        overviewData = await resp.json();
+      }
+    } catch (e) {
+      console.error('Failed to load meta.json:', e);
+    }
+  }
+
+  renderOverview();
+}
+
+function closeOverview() {
+  document.getElementById('overviewModal').style.display = 'none';
+}
+
+function renderOverview() {
+  const el = document.getElementById('overviewBody');
+
+  if (!overviewData || !overviewData.meta) {
+    el.innerHTML = '<div class="placeholder">No overview data available. Run generate_content_plan.py first.</div>';
+    return;
+  }
+
+  const meta = overviewData.meta;
+  let html = '';
+
+  // Version info
+  html += `<div class="overview-info">
+    <span class="tag">Plan v${overviewData.version || '?'}</span>
+    <span class="tag">Schema v${overviewData.schema_version || '?'}</span>
+    <span class="overview-date">Generated: ${overviewData.generated ? new Date(overviewData.generated).toLocaleDateString() : '?'}</span>
+  </div>`;
+
+  // Movement Plan (dict keyed by movement id)
+  if (meta.movement_plan) {
+    html += `<div class="section overview-section">
+      <div class="section-header">Movement Plan</div>`;
+    const mpEntries = typeof meta.movement_plan === 'object' && !Array.isArray(meta.movement_plan)
+      ? Object.entries(meta.movement_plan)
+      : (Array.isArray(meta.movement_plan) ? meta.movement_plan.map(m => [m.id || '', m]) : []);
+    for (const [movId, mov] of mpEntries) {
+      const title = mov.title || fmtEnum(movId);
+      const range = mov.spread_range || '?';
+      const desc = mov.description || mov.arc_description || '';
+      const pageCount = mov.page_count ? `(${mov.page_count} spreads)` : '';
+      html += `<div class="overview-movement">
+        <div class="overview-movement-header">
+          <span class="tag movement-badge">${fmtEnum(movId)}</span>
+          <span class="overview-movement-title">${esc(title)}</span>
+          <span class="overview-spread-range">${esc(range)} ${esc(pageCount)}</span>
+        </div>
+        <div class="overview-movement-desc">${esc(desc)}</div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Convergence Map
+  if (meta.convergence_map && meta.convergence_map.convergences) {
+    html += `<div class="section overview-section">
+      <div class="section-header">Convergences (${meta.convergence_map.convergences.length})</div>`;
+    for (const c of meta.convergence_map.convergences) {
+      const name = c.name || fmtEnum(c.id || '');
+      const appearances = c.appearances || [];
+      html += `<div class="overview-convergence">
+        <div class="convergence-header">
+          <span class="tag convergence">${esc(name)}</span>
+          <span class="convergence-count">${appearances.length} appearances</span>
+        </div>`;
+      if (appearances.length) {
+        html += `<div class="convergence-appearances">`;
+        for (const a of appearances) {
+          html += `<div class="convergence-appearance">
+            <span class="tag movement-badge" style="font-size:10px;">${fmtEnum(a.movement || '')}</span>
+            <a href="#" onclick="closeOverview();loadSpread('${a.spread_id}');return false;" class="convergence-spread-link">${a.spread_id}</a>
+            <span class="convergence-intensity tag">${fmtEnum(a.intensity || '')}</span>
+            <span class="convergence-manifestation">${esc(a.manifestation || '')}</span>
+          </div>`;
+        }
+        html += `</div>`;
+      }
+      html += `</div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Rhythm Plan
+  if (meta.rhythm_plan) {
+    html += `<div class="section overview-section">
+      <div class="section-header">Rhythm Plan</div>`;
+    if (meta.rhythm_plan.description) {
+      html += `<div class="field-value" style="margin-bottom:12px;">${esc(meta.rhythm_plan.description)}</div>`;
+    }
+    if (meta.rhythm_plan.segments && meta.rhythm_plan.segments.length) {
+      html += `<div class="rhythm-segments">`;
+      for (const seg of meta.rhythm_plan.segments) {
+        html += `<div class="rhythm-segment">
+          <div class="rhythm-segment-range">${esc(seg.spread_range || '')}</div>
+          <div class="rhythm-segment-char">${esc(seg.character || '')}</div>
+          ${seg.design_pattern ? `<div class="rhythm-segment-design">${esc(seg.design_pattern)}</div>` : ''}
+        </div>`;
+      }
+      html += `</div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Status Dashboard
+  html += `<div class="section overview-section">
+    <div class="section-header">Review Status Dashboard</div>`;
+  const reviewData = getReviewData();
+  const feedbackData = getFeedbackData();
+  let approved = 0, flagged = 0, pending = 0, withNotes = 0;
+  for (const item of NAV_ITEMS) {
+    const s = (reviewData[item.id] && reviewData[item.id].status) || 'pending';
+    if (s === 'approved') approved++;
+    else if (s === 'flagged') flagged++;
+    else pending++;
+    if (feedbackData[item.id] && feedbackData[item.id].length) withNotes++;
+  }
+  html += `<div class="dashboard-stats">
+    <div class="dash-stat"><span class="dash-num approved">${approved}</span><span class="dash-label">Approved</span></div>
+    <div class="dash-stat"><span class="dash-num flagged">${flagged}</span><span class="dash-label">Flagged</span></div>
+    <div class="dash-stat"><span class="dash-num pending">${pending}</span><span class="dash-label">Pending</span></div>
+    <div class="dash-stat"><span class="dash-num notes">${withNotes}</span><span class="dash-label">With Notes</span></div>
+  </div>`;
+
+  // Flagged spreads list
+  const flaggedSpreads = NAV_ITEMS.filter(n => (reviewData[n.id] && reviewData[n.id].status) === 'flagged');
+  if (flaggedSpreads.length) {
+    html += `<div class="flagged-list"><strong>Flagged spreads:</strong> ${flaggedSpreads.map(s => `<a href="#" onclick="closeOverview();loadSpread('${s.id}');return false;">${s.id}</a>`).join(', ')}</div>`;
+  }
+  html += `</div>`;
+
+  el.innerHTML = html;
+}
+
+// ========== Export Revision Prompt ==========
+function exportRevisionPrompt() {
+  const reviewData = getReviewData();
+  const feedbackData = getFeedbackData();
+
+  let prompt = '# Content Plan Revision Prompt\n\n';
+  prompt += `Generated: ${new Date().toISOString()}\n\n`;
+
+  // Summary
+  let approved = 0, flagged = 0;
+  for (const item of NAV_ITEMS) {
+    const s = (reviewData[item.id] && reviewData[item.id].status) || 'pending';
+    if (s === 'approved') approved++;
+    if (s === 'flagged') flagged++;
+  }
+  prompt += `## Summary\n- Approved: ${approved}\n- Flagged: ${flagged}\n- Pending: ${NAV_ITEMS.length - approved - flagged}\n\n`;
+
+  // Flagged spreads with feedback
+  const flaggedSpreads = NAV_ITEMS.filter(n => (reviewData[n.id] && reviewData[n.id].status) === 'flagged');
+  if (flaggedSpreads.length) {
+    prompt += `## Flagged Spreads\n\n`;
+    for (const s of flaggedSpreads) {
+      prompt += `### ${s.id}\n`;
+      const notes = feedbackData[s.id] || [];
+      if (notes.length) {
+        for (const n of notes) {
+          prompt += `- ${n.text}\n`;
+        }
+      } else {
+        prompt += `- (no notes)\n`;
+      }
+      prompt += '\n';
+    }
+  }
+
+  // All spreads with feedback notes (including non-flagged)
+  const withNotes = NAV_ITEMS.filter(n => feedbackData[n.id] && feedbackData[n.id].length > 0 && (reviewData[n.id] && reviewData[n.id].status) !== 'flagged');
+  if (withNotes.length) {
+    prompt += `## Other Spreads with Notes\n\n`;
+    for (const s of withNotes) {
+      prompt += `### ${s.id} (${(reviewData[s.id] && reviewData[s.id].status) || 'pending'})\n`;
+      const notes = feedbackData[s.id] || [];
+      for (const n of notes) {
+        prompt += `- ${n.text}\n`;
+      }
+      prompt += '\n';
+    }
+  }
+
+  // Copy to clipboard
+  navigator.clipboard.writeText(prompt).then(() => {
+    const btn = document.querySelector('.export-btn');
+    const orig = btn.textContent;
+    btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = orig; }, 2000);
+  }).catch(() => {
+    // Fallback: open in new window
+    const w = window.open('', '_blank');
+    w.document.write('<pre>' + prompt.replace(/</g, '&lt;') + '</pre>');
+  });
 }
 
 // ========== Analysis Rendering ==========
@@ -339,12 +841,36 @@ function showPlaceholder(msg) {
   document.getElementById('analysisContent').style.display = 'none';
 }
 
+// Format enum values: replace underscores with spaces, capitalize first letter of each word
+function fmtEnum(str) {
+  if (!str) return '';
+  return str.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+// Render a confidence badge (high/moderate/low)
+function renderConfidence(level) {
+  if (!level) return '';
+  return `<span class="tag confidence-${level}">${fmtEnum(level)} confidence</span>`;
+}
+
 function renderAnalysis(s) {
   document.getElementById('analysisPlaceholder').style.display = 'none';
   const el = document.getElementById('analysisContent');
   el.style.display = 'block';
 
   let html = '';
+
+  // Per-entry metadata (analyst, analysis_method) — v1.2
+  if (s.analyst || s.analysis_method) {
+    html += `<div class="entry-meta">`;
+    if (s.analyst) {
+      html += `<span class="meta-label">Analyst</span><span class="tag analyst">${esc(s.analyst)}</span>`;
+    }
+    if (s.analysis_method) {
+      html += `<span class="meta-label">Method</span><span class="tag method">${fmtEnum(s.analysis_method)}</span>`;
+    }
+    html += `</div>`;
+  }
 
   // Identification
   html += `<div class="section">
@@ -395,13 +921,47 @@ function renderAnalysis(s) {
     for (const img of s.images) {
       html += `<div class="card">
         <div class="card-title">${esc(img.position)} \u00B7 ${esc(img.scale)}</div>
-        <div class="card-field"><strong>Subject:</strong> ${esc(img.subject)}</div>
+        <div class="card-field"><strong>Subject:</strong><div class="md-content">${renderMarkdown(img.subject)}</div></div>
         <div class="card-field"><strong>Source type:</strong> <span class="tag">${esc(img.source_type)}</span></div>
         ${img.source_credit ? `<div class="card-field"><strong>Credit:</strong> ${esc(img.source_credit)}</div>` : ''}
         ${img.estimated_date ? `<div class="card-field"><strong>Date:</strong> ${esc(img.estimated_date)}</div>` : ''}
-        <div class="card-field"><strong>Composition:</strong> ${esc(img.composition)}</div>
-        <div class="card-field"><strong>Relationship to text:</strong> ${esc(img.relationship_to_text)}</div>
-      </div>`;
+        <div class="card-field"><strong>Composition:</strong><div class="md-content">${renderMarkdown(img.composition)}</div></div>`;
+
+      // relationship_to_text: v1.2 object {primary_relation, barthes_mode, description} or v1.1 string
+      if (img.relationship_to_text && typeof img.relationship_to_text === 'object') {
+        const rt = img.relationship_to_text;
+        html += `<div class="card-field"><strong>Relationship to text:</strong>
+          <span class="tag relation">${fmtEnum(rt.primary_relation)}</span>`;
+        if (rt.barthes_mode) {
+          html += `<span class="tag barthes">${fmtEnum(rt.barthes_mode)}</span>`;
+        }
+        if (rt.description) {
+          html += `<div class="field-value" style="margin-top:4px;font-size:12px;">${esc(rt.description)}</div>`;
+        }
+        html += `</div>`;
+      } else if (img.relationship_to_text) {
+        // v1.1 fallback: plain string
+        html += `<div class="card-field"><strong>Relationship to text:</strong> ${esc(img.relationship_to_text)}</div>`;
+      }
+
+      // interactive_meaning: v1.2 object {contact, social_distance, attitude_angle}
+      if (img.interactive_meaning && typeof img.interactive_meaning === 'object') {
+        const im = img.interactive_meaning;
+        html += `<div class="card-field"><strong>Interactive meaning:</strong>
+          <div class="interactive-meaning">`;
+        if (im.contact) {
+          html += `<span class="labeled-badge"><span class="badge-label">Contact</span><span class="tag interactive">${fmtEnum(im.contact)}</span></span>`;
+        }
+        if (im.social_distance) {
+          html += `<span class="labeled-badge"><span class="badge-label">Distance</span><span class="tag interactive">${fmtEnum(im.social_distance)}</span></span>`;
+        }
+        if (im.attitude_angle) {
+          html += `<span class="labeled-badge"><span class="badge-label">Angle</span><span class="tag interactive">${fmtEnum(im.attitude_angle)}</span></span>`;
+        }
+        html += `</div></div>`;
+      }
+
+      html += `</div>`;
     }
     html += `</div>`;
   }
@@ -409,7 +969,7 @@ function renderAnalysis(s) {
   // Design
   html += `<div class="section"><div class="section-header">Design</div>
     <div class="field"><span class="field-label">Layout</span>
-      <div class="field-value">${esc(s.design.layout_description)}</div></div>`;
+      <div class="field-value md-content">${renderMarkdown(s.design.layout_description)}</div></div>`;
   if (s.design.typography) {
     const t = s.design.typography;
     if (t.body_font_style) {
@@ -425,49 +985,129 @@ function renderAnalysis(s) {
         <div class="field-value">${t.special_treatments.map(s => '\u2022 ' + esc(s)).join('<br>')}</div></div>`;
     }
   }
-  html += `<div class="field"><span class="field-label">Color & Tone</span>
-    <div class="field-value">${esc(s.design.color_and_tone)}</div></div>`;
+
+  // color_and_tone: v1.2 object {contrast, dominant_tone, description} or v1.1 string
+  html += `<div class="field"><span class="field-label">Color & Tone</span>`;
+  if (s.design.color_and_tone && typeof s.design.color_and_tone === 'object') {
+    const ct = s.design.color_and_tone;
+    html += `<div>`;
+    if (ct.contrast) {
+      html += `<span class="tag contrast">${fmtEnum(ct.contrast)} contrast</span>`;
+    }
+    if (ct.dominant_tone) {
+      html += `<span class="tag tone">${fmtEnum(ct.dominant_tone)} tone</span>`;
+    }
+    html += `</div>`;
+    if (ct.description) {
+      html += `<div class="field-value" style="margin-top:4px;">${esc(ct.description)}</div>`;
+    }
+  } else {
+    // v1.1 fallback: plain string
+    html += `<div class="field-value">${esc(s.design.color_and_tone)}</div>`;
+  }
+  html += `</div>`;
+
   html += `<div class="field">
     <span class="tag">${s.design.white_space} white space</span>
     <span class="tag">${s.design.visual_density} density</span></div>`;
+
+  // information_value: v1.2 object {left_right, top_bottom, center_margin}
+  if (s.design.information_value && typeof s.design.information_value === 'object') {
+    const iv = s.design.information_value;
+    html += `<div class="field"><span class="field-label">Information Value</span>
+      <div class="info-value-group">`;
+    if (iv.left_right) {
+      html += `<span class="labeled-badge"><span class="badge-label">L\u2013R</span><span class="tag info-value">${fmtEnum(iv.left_right)}</span></span>`;
+    }
+    if (iv.top_bottom) {
+      html += `<span class="labeled-badge"><span class="badge-label">T\u2013B</span><span class="tag info-value">${fmtEnum(iv.top_bottom)}</span></span>`;
+    }
+    if (iv.center_margin) {
+      html += `<span class="labeled-badge"><span class="badge-label">C\u2013M</span><span class="tag info-value">${fmtEnum(iv.center_margin)}</span></span>`;
+    }
+    html += `</div></div>`;
+  }
+
+  // compositional_framing: v1.2 enum
+  if (s.design.compositional_framing) {
+    html += `<div class="field"><span class="field-label">Compositional Framing</span>
+      <div><span class="tag framing">${fmtEnum(s.design.compositional_framing)}</span></div></div>`;
+  }
+
   html += `<div class="field"><span class="field-label">Left\u2013Right Relationship</span>
     <div class="field-value">${esc(s.design.left_right_relationship)}</div></div>`;
   html += `</div>`;
 
   // Rhetoric
   html += `<div class="section rhetoric">
-    <div class="section-header">Rhetoric</div>
+    <div class="section-header">Rhetoric${s.rhetoric.confidence ? ' ' + renderConfidence(s.rhetoric.confidence) : ''}</div>
     <div class="field"><span class="field-label">Argument</span>
       <div class="field-value" style="font-size:15px;color:#fff;font-weight:500;">${esc(s.rhetoric.argument)}</div></div>
-    <div class="field"><span class="field-label">Rhetorical Strategy</span>
-      <div class="field-value" style="font-size:14px;">${esc(s.rhetoric.rhetorical_strategy)}</div></div>
-    <div class="field"><span class="field-label">Design Enacts Argument</span>
+    <div class="field"><span class="field-label">Rhetorical Strategy</span>`;
+
+  // rhetorical_strategy: v1.2 object {primary, secondary} or v1.1 string
+  if (s.rhetoric.rhetorical_strategy && typeof s.rhetoric.rhetorical_strategy === 'object') {
+    const rs = s.rhetoric.rhetorical_strategy;
+    html += `<div>`;
+    if (rs.primary) {
+      html += `<span class="tag strategy-primary">${fmtEnum(rs.primary)}</span>`;
+    }
+    if (rs.secondary && rs.secondary.length) {
+      for (const sec of rs.secondary) {
+        html += `<span class="tag strategy-secondary">${fmtEnum(sec)}</span>`;
+      }
+    }
+    html += `</div>`;
+  } else {
+    // v1.1 fallback: plain string
+    html += `<div class="field-value" style="font-size:14px;">${esc(s.rhetoric.rhetorical_strategy)}</div>`;
+  }
+
+  // strategy_description: v1.2 new field
+  if (s.rhetoric.strategy_description) {
+    html += `<div class="strategy-description">${esc(s.rhetoric.strategy_description)}</div>`;
+  }
+  html += `</div>`;
+
+  html += `<div class="field"><span class="field-label">Design Enacts Argument</span>
       <div>${s.rhetoric.design_enacts_argument ? '<span class="badge-yes">YES</span>' : '<span class="badge-no">NO</span>'}</div>
       ${s.rhetoric.design_argument_description ? `<div class="field-value" style="margin-top:6px;font-size:14px;color:#e8c878;">${esc(s.rhetoric.design_argument_description)}</div>` : ''}
     </div>
     <div class="field"><span class="field-label">Reader Experience</span>
       <div class="field-value">${esc(s.rhetoric.reader_experience)}</div></div>
     <div class="field"><span class="field-label">McLuhan Concepts</span>
-      <div>${(s.rhetoric.mcluhan_concepts||[]).map(c => `<span class="tag mcluhan">${c.replace(/_/g,' ')}</span>`).join('')}</div></div>
-  </div>`;
+      <div>${(s.rhetoric.mcluhan_concepts||[]).map(c => `<span class="tag mcluhan">${fmtEnum(c)}</span>`).join('')}</div></div>`;
+
+  // multi_spread_patterns: v1.2 new field (string|null)
+  if (s.rhetoric.multi_spread_patterns) {
+    html += `<div class="field"><span class="field-label">Multi-Spread Patterns</span>
+      <div class="multi-spread-box">${esc(s.rhetoric.multi_spread_patterns)}</div></div>`;
+  }
+
+  html += `</div>`;
 
   // Themes
-  html += `<div class="section"><div class="section-header">Themes</div>
+  html += `<div class="section"><div class="section-header">Themes${s.themes.confidence ? ' ' + renderConfidence(s.themes.confidence) : ''}</div>
     <div class="field"><span class="field-label">Original Themes</span>
-      <div>${(s.themes.original_themes||[]).map(t => `<span class="tag theme">${esc(t)}</span>`).join('')}</div></div>
+      <div>${(s.themes.original_themes||[]).map(t => `<span class="tag theme">${fmtEnum(t)}</span>`).join('') || '<span style="color:var(--text-muted);font-style:italic;">None identified</span>'}</div></div>
     <div class="field"><span class="field-label">Contemporary Domains</span>
-      <div>${(s.themes.contemporary_domain_candidates||[]).map(d => `<span class="tag domain">${d.replace(/_/g,' ')}</span>`).join('') || '<span style="color:var(--text-muted);font-style:italic;">None</span>'}</div></div>
+      <div>${(s.themes.contemporary_domain_candidates||[]).map(d => `<span class="tag domain">${fmtEnum(d)}</span>`).join('') || '<span style="color:var(--text-muted);font-style:italic;">Not yet mapped</span>'}</div></div>
     <div class="field"><span class="field-label">Movement Mapping</span>
-      <div>${(s.themes.movement_mapping||[]).map(m => `<span class="tag movement">${m.replace(/_/g,' ')}</span>`).join('') || '<span style="color:var(--text-muted);font-style:italic;">None</span>'}</div></div>
-    <div class="field"><span class="field-label">Mapping Rationale</span>
-      <div class="field-value">${esc(s.themes.mapping_rationale)}</div></div>
+      <div>${(s.themes.movement_mapping||[]).map(m => `<span class="tag movement">${fmtEnum(m)}</span>`).join('') || '<span style="color:var(--text-muted);font-style:italic;">Not yet assigned</span>'}</div></div>`;
+  if (s.themes.mapping_rationale) {
+    html += `<div class="field"><span class="field-label">Mapping Rationale</span>
+      <div class="field-value">${esc(s.themes.mapping_rationale)}</div></div>`;
+  }
+  html += `<div class="themes-note" style="margin-top:8px;padding:8px;background:rgba(255,255,255,0.03);border-radius:4px;font-size:11px;color:var(--text-muted);">
+    <em>Note: Theme analysis was auto-generated from VLM data. Contemporary domains and movement mapping are populated in the Content Plan (Planning tab).</em>
+  </div>
   </div>`;
 
   // Progression
-  html += `<div class="section"><div class="section-header">Progression</div>
+  html += `<div class="section"><div class="section-header">Progression${s.progression.confidence ? ' ' + renderConfidence(s.progression.confidence) : ''}</div>
     <div class="field">
-      <span class="tag pace">${(s.progression.pace_shift||'').replace(/_/g,' ')}</span>
-      <span class="tag function">${(s.progression.thematic_function||'').replace(/_/g,' ')}</span>
+      <span class="tag pace">${fmtEnum(s.progression.pace_shift||'')}</span>
+      <span class="tag function">${fmtEnum(s.progression.thematic_function||'')}</span>
     </div>
     <div class="field"><span class="field-label">Relationship to Previous</span>
       <div class="field-value">${esc(s.progression.relationship_to_previous)}</div></div>
@@ -490,6 +1130,35 @@ function esc(str) {
   const d = document.createElement('div');
   d.textContent = str;
   return d.innerHTML;
+}
+
+// Lightweight markdown→HTML for VLM output (headings, bold, italic, lists, line breaks)
+function renderMarkdown(str) {
+  if (!str) return '';
+  // First HTML-escape
+  let html = esc(str);
+  // Headings: #### > ### > ## (process longest first)
+  html = html.replace(/^####\s+(.+)$/gm, '<h4>$1</h4>');
+  html = html.replace(/^###\s+(.+)$/gm, '<h3>$1</h3>');
+  html = html.replace(/^##\s+(.+)$/gm, '<h2>$1</h2>');
+  // Bold: **text**
+  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  // Italic: *text* (but not inside bold)
+  html = html.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
+  // Bullet lists: lines starting with - (with optional leading spaces)
+  html = html.replace(/^(\s*)- (.+)$/gm, function(match, indent, content) {
+    return `<li>${content}</li>`;
+  });
+  // Wrap consecutive <li> in <ul>
+  html = html.replace(/((?:<li>.*?<\/li>\n?)+)/g, '<ul>$1</ul>');
+  // Numbered lists: lines starting with 1. 2. etc
+  html = html.replace(/^\d+\.\s+(.+)$/gm, '<li>$1</li>');
+  // Convert remaining newlines to <br> (but not after block elements)
+  html = html.replace(/\n(?!<[hul\/])/g, '<br>\n');
+  // Clean up double <br> after block elements
+  html = html.replace(/(<\/h[234]>)<br>/g, '$1');
+  html = html.replace(/(<\/ul>)<br>/g, '$1');
+  return html;
 }
 
 // ========== Image Zoom ==========
@@ -584,11 +1253,13 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight' || e.key === 'd') navigate(1);
   if (e.key === '1') switchTab('analysis');
   if (e.key === '2') switchTab('visual');
+  if (e.key === '3') switchTab('planning');
   if (e.key === 'y') setReview('approved');
   if (e.key === 'f') setReview('flagged');
   if (e.key === '+' || e.key === '=') zoomIn();
   if (e.key === '-') zoomOut();
   if (e.key === '0') zoomReset();
+  if (e.key === 'Escape') closeOverview();
 });
 
 // ========== Start ==========

@@ -1,0 +1,123 @@
+{
+  "spread_id": "spread_038",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:20:08.475855",
+  "generation_time_s": 28.8,
+  "_array_response": [
+    {
+      "id": "spread_038",
+      "pdf_page": 38,
+      "book_pages": [
+        66,
+        67
+      ],
+      "section": "body",
+      "analyst": "vlm_assisted",
+      "analysis_method": "llm_primary_human_reviewed",
+      "spread_type": "image_dominant",
+      "orientation": "landscape_spread",
+      "text": {
+        "body_text": "The new electronic interdependence recreates the world in the image of a global village.",
+        "display_text": "",
+        "captions": [],
+        "page_numbers_visible": []
+      },
+      "quotations": [],
+      "images": [
+        {
+          "position": "full_bleed",
+          "subject": "An intimate, low-light scene of a tribal gathering, likely in a hut. A group of Black men and women are seated in a circle. A central, older male figure sits with his arms raised and mouth open, as if chanting or in a trance. The others watch him intently. The figures are mostly unclothed or wearing traditional attire, such as necklaces and braided hairstyles.",
+          "source_type": "press_photo",
+          "source_credit": "Constantine Manos (Magnum)",
+          "estimated_date": "c. 1960-1965",
+          "composition": "The composition is circular, drawing the viewer into the group. The perspective is low, at eye-level with the seated figures. The lighting is high-contrast and dramatic (chiaroscuro), with deep shadows and bright, focused highlights, suggesting a single light source. The frame is tightly cropped, enhancing the sense of intimacy and communal participation.",
+          "scale": "full_bleed",
+          "relationship_to_text": {
+            "primary_relation": "serves_as_metaphor",
+            "barthes_mode": "anchorage",
+            "description": "The image of a pre-literate, tribal village provides a concrete, visual metaphor for the 'global village' created by electronic media. The text anchors the meaning of the image, instructing the reader to see this scene not just as an ethnographic document, but as a model for the new, interconnected world."
+          },
+          "interactive_meaning": {
+            "contact": "offer",
+            "social_distance": "far_social",
+            "attitude_angle": "frontal"
+          }
+        }
+      ],
+      "design": {
+        "layout_description": "A single, full-bleed black and white photograph covers the entire two-page spread, seamlessly crossing the gutter. A small, two-line block of white text is overlaid on a dark area in the upper right quadrant of the image.",
+        "typography": {
+          "body_font_style": "Small sans-serif font, regular weight. White text reversed out of the dark photographic background.",
+          "display_font_style": null,
+          "special_treatments": [
+            "Text overlaid on image",
+            "Text reversed out (white on black)"
+          ]
+        },
+        "color_and_tone": {
+          "contrast": "high",
+          "dominant_tone": "dark",
+          "description": "The spread is dominated by deep blacks and shadowy mid-tones, punctuated by stark, almost blown-out highlights on the figures' skin, creating a dramatic and intense mood."
+        },
+        "white_space": "none",
+        "visual_density": "dense",
+        "left_right_relationship": "continuation",
+        "information_value": {
+          "left_right": "given_new",
+          "top_bottom": "ideal_real",
+          "center_margin": "centered"
+        },
+        "compositional_framing": "weakly_framed"
+      },
+      "rhetoric": {
+        "argument": "Electronic media are dissolving the fragmented, individualistic world of print culture and returning humanity to a state of collective, tribal consciousness—a 'global village' characterized by intense interdependence and participation.",
+        "rhetorical_strategy": {
+          "primary": "juxtaposition",
+          "secondary": [
+            "assertion"
+          ]
+        },
+        "strategy_description": "The core strategy is the juxtaposition of a 'primitive' or 'tribal' past (the image) with the electronic future (the text). This forces the reader to see the supposedly advanced state of electronic interdependence as a form of re-tribalization.",
+        "design_enacts_argument": false,
+        "design_argument_description": null,
+        "reader_experience": "Immersion and contemplation. The full-bleed, intimate photograph draws the reader into the scene, while the text provides a sudden conceptual leap, prompting the reader to connect this ancient form of community with their own experience of a media-saturated world.",
+        "mcluhan_concepts": [
+          "global_village",
+          "tribal",
+          "participation",
+          "acoustic_space",
+          "electric_age"
+        ],
+        "multi_spread_patterns": null,
+        "confidence": "high"
+      },
+      "themes": {
+        "original_themes": [
+          "global_village",
+          "tribalism",
+          "participation",
+          "electric_age",
+          "community",
+          "acoustic_space"
+        ],
+        "contemporary_domain_candidates": [
+          "global_village_revisited",
+          "public_private_collapse"
+        ],
+        "movement_mapping": [
+          "movement_1_environment"
+        ],
+        "mapping_rationale": "McLuhan's core concept of the 'global village' is directly invoked here. This maps to contemporary discussions of internet culture, social media, and digital tribalism, where electronic networks create new forms of intense, often fraught, global and sub-global communities.",
+        "confidence": "high"
+      },
+      "progression": {
+        "pace_shift": "decelerating",
+        "thematic_function": "introduces_theme",
+        "relationship_to_previous": "This spread introduces one of McLuhan's most famous concepts, 'the global village,' with a powerful, full-page visual metaphor. It likely follows a more text-heavy or abstract spread, using this image to ground the concept in a visceral, human scene.",
+        "relationship_to_next": "This spread establishes the 'global village' as a central theme. The following spreads will likely explore the consequences of this new tribalism—both its positive aspects (interconnection) and its negative ones (loss of privacy, heightened conflict).",
+        "confidence": "moderate"
+      },
+      "notes": "This is one of the most iconic spreads in the book, where a key McLuhan concept is presented with its defining visual metaphor. The choice of a non-Western, pre-literate society is crucial to his argument about moving beyond the linear, fragmented mindset of print culture."
+    }
+  ]
+}

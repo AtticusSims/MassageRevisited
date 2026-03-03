@@ -1,0 +1,47 @@
+{
+  "spread_id": "spread_074",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:39:05.389324",
+  "generation_time_s": 37.5,
+  "images": [
+    {
+      "position": "right_page",
+      "subject": "A black and white photograph of a smiling blonde woman, possibly an actress, clapping at a formal event. She is wearing a dark, sequined dress and is seen from the waist up. In the foreground, a table is set with glasses, some containing red wine, and a coffee cup.",
+      "source_type": "press_photo",
+      "composition": "Medium shot with a slightly low angle. The subject is brightly lit with a flash against a dark, out-of-focus background, creating high contrast. The composition captures a moment of cheerful action.",
+      "scale": "dominant",
+      "estimated_date": "1959",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "close_social",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is strongly divided by the gutter. The left page contains a single, justified column of body text, with a small, vertically stacked phrase at the bottom. The right page is dominated by a large photograph, with two blocks of text placed in the upper right corner. The layout creates a clear separation between the theoretical argument on the left and the visual example on the right.",
+    "typography": {
+      "body_font_style": "Serif, regular weight, justified in a single column.",
+      "display_font_style": "The phrases 'some like it hot,' and 'some like it cold.' are set in a bold, lowercase sans-serif font, with each word on its own line. The contextual text about Khrushchev is in a smaller, regular-weight serif font.",
+      "special_treatments": [
+        "Vertical stacking of display text ('some / like / it / hot,').",
+        "Splitting of a conceptual pair ('hot'/'cold') across the two pages of the spread."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread has high contrast due to the stark black text on the white left page and the deep blacks and bright whites in the photograph on the right page. The overall tone is balanced, with the light left page offsetting the dark photograph."
+    },
+    "white_space": "moderate",
+    "visual_density": "moderate",
+    "left_right_relationship": "Juxtaposition and contrast. The left page presents an abstract argument about hot and cold wars, while the right page provides a concrete, seemingly incongruous cultural image. The typographic phrases 'some like it hot,' and 'some like it cold.' explicitly link the two, forcing the reader to reconcile the geopolitical with the cultural.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "balanced",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This spread presents a stark juxtaposition between text and image. The left page features a dense paragraph arguing that modern conflict has become 'information war,' fought under 'cold' conditions. The right page is dominated by a glamorous press photo of a woman at a Hollywood party for Soviet Premier Khrushchev, creating a visual and conceptual clash between serious geopolitical theory and the spectacle of celebrity culture. The phrases 'some like it hot,' and 'some like it cold,' split across the pages, serve as a clever, ironic bridge connecting the two disparate worlds."
+}

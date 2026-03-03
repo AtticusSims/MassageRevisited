@@ -8,6 +8,8 @@
       19
     ],
     "section": "body",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
     "spread_type": "text_with_specific_image",
     "orientation": "landscape_spread",
     "text": {
@@ -21,60 +23,106 @@
     "quotations": [],
     "images": [
       {
-        "position": "full_bleed",
-        "subject": "### 1. Printed Circuit Board Photograph  \n- **Depicts**: A black-and-white photograph of a rectangular printed circuit board (PCB) with intricate electronic components. Visible elements include:  \n  - Rows of metallic pins/connectors along the left edge.  \n  - Multiple integrated circuits (ICs) with visible pin legs (e.g., rectangular chips with multiple pins).  \n  - Passive components (e.g., resistors, capacitors) arranged in grid-like patterns across the board.  \n  - A dark (black) PCB base with lighter (silver/white) components creating high contrast.  \n- **Position**: Top of the left page, spanning the full width of the left page (not spanning both pages).  \n- **Visual Style**: Black-and-white photograph with sharp focus on technical details.  \n- **Composition**:  \n  - **Framing**: Tight close-up, emphasizing the board’s surface and component arrangement.  \n  - **Angle**: Slightly angled top-down view, highlighting the board’s layout.  \n  - **Contrast**: High contrast between the dark PCB and lighter components, making details stand out.  \n  - **Key Visual Qualities**: Sharp focus on circuitry, precise rendering of component shapes and pin layouts.  \n- **Page Occupation**: Approximately 30–40% of the left page (occupies the top third).  \n\n\n### 2. Portrait Photograph  \n- **Depicts**: A black-and-white photograph of a person’s face (a man with short hair), cropped to show the upper face (eyes, nose, mouth) in a close-up.  \n- **Position**: Inset at the bottom left of the left page, below the title “your education” and main text.  \n- **Visual Style**: Black-and-white photograph with a soft focus on the face.  \n- **Composition**:  \n  - **Framing**: Tight crop, focusing on facial features with minimal background.  \n  - **Angle**: Direct frontal view, centered on the face.  \n  - **Contrast**: Moderate contrast with subtle shading on the face, creating depth.  \n  - **Key Visual Qualities**: Soft focus on the face, emphasizing texture and expression.  \n- **Page Occupatio",
-        "source_type": "illustration",
-        "source_credit": "The Advertising Council, Inc.",
+        "position": "top_right",
+        "subject": "A printed circuit board (PCB) showing intricate, branching patterns of conductive traces and solder points. Text labels like 'INVERTER' and a part number are visible.",
+        "source_type": "technical_diagram",
+        "composition": "The board is photographed frontally, filling the top portion of the page. The high-contrast black and white rendering emphasizes the abstract, graphical pattern of the circuitry, resembling a complex map or network.",
+        "scale": "half_page",
         "estimated_date": "c. 1960s",
-        "composition": "",
-        "scale": "full_spread",
-        "relationship_to_text": ""
+        "interactive_meaning": {
+          "contact": "not_applicable",
+          "social_distance": "not_applicable",
+          "attitude_angle": "not_applicable"
+        }
+      },
+      {
+        "position": "inset_left",
+        "subject": "A high-contrast, close-up photograph of a young boy's face. He is looking up and away from the viewer with an intense, worried, or bewildered expression.",
+        "source_type": "press_photo",
+        "composition": "Tightly cropped on the face from a slightly low angle. Dramatic, high-contrast lighting creates deep shadows. The image has a grainy texture.",
+        "scale": "small_inset",
+        "estimated_date": "c. 1950s-1960s",
+        "interactive_meaning": {
+          "contact": "offer",
+          "social_distance": "intimate",
+          "attitude_angle": "low_angle"
+        }
       }
     ],
     "design": {
-      "layout_description": "### 1. SPATIAL ARRANGEMENT  \n- **Text Placement**: The main body text occupies the **right side** of the page, spanning from the top (below the image) to the bottom. A smaller section header (“your education”) appears vertically on the **left side**, above a small portrait photo.  \n- **Image Placement**: The black-and-white circuit board image dominates the **top third** of the page, centered horizontally.  \n- **Space Division**: The layout is split into three distinct zones:  \n  - *Top*: Dedicated to the circuit board image (visual focus).  \n  - *Left*: Reserved for the section header (“your education”) and a portrait photo (visual/structural anchor).  \n  - *Right*: Filled with the primary body text (content focus).  \n  This division creates a clear hierarchy: image → header → content, guiding the reader’s eye from top to bottom.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Types**:  \n  - *Display Text*: “your education” is large, bold, and **sans-serif** (modern, clean, attention-grabbing).  \n  - *Body Text*: Smaller, **serif** (e.g., Times New Roman), regular weight (readable, traditional academic tone).  \n  - *Page Number*: Small, **sans-serif** (top-right corner, subtle).  \n- **Contrast**: All text is **black on white** (no reversed/white-on-black text).  \n- **Weight/Style**: The header uses **bold** for emphasis; body text uses **normal weight** for readability. No extreme light/dark variations.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The circuit board image features stark black/white lines (technical precision), and the text uses bold black lettering on white (clear legibility).  \n- **Tone**: **Neutral/technical**. The monochrome palette and circuit board imagery evoke a mechanical, industrial feel, while the serif body text adds a scholarly tone. No emotional aggression or chaos—instead, a calm, analytical mood.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The circuit board image occupies significant space (top third), but the ",
+      "layout_description": "A single portrait page dominated by a large image of a circuit board at the top. Below, a block of justified text is anchored on the left by the large, bold, stacked display text 'your education'. A small, inset photo of a child's face is embedded within the first paragraph of the text block, creating a focal point of human emotion within the rational structure.",
       "typography": {
-        "body_font_style": "Sans-serif text",
-        "display_font_style": "Large display typography",
-        "special_treatments": []
+        "body_font_style": "Justified serif font, likely Times New Roman or a similar book face, set in a single wide column.",
+        "display_font_style": "Heavy, bold sans-serif. The word 'your' is stacked directly on top of the larger word 'education', creating a strong vertical block on the left.",
+        "special_treatments": [
+          "Display text stacked vertically",
+          "Image inset within a paragraph, disrupting the text block"
+        ]
       },
-      "color_and_tone": "Black and white.",
-      "white_space": "sparse",
+      "color_and_tone": {
+        "contrast": "high",
+        "dominant_tone": "light",
+        "description": "Stark black and white with no grayscale tones, emphasizing the graphic quality of the images and text."
+      },
+      "white_space": "moderate",
       "visual_density": "dense",
-      "left_right_relationship": "mirror"
+      "left_right_relationship": "This is a single page, not a spread. The layout balances the technical image at the top with the text and display type below.",
+      "information_value": {
+        "left_right": "single_page",
+        "top_bottom": "ideal_real",
+        "center_margin": "distributed"
+      },
+      "compositional_framing": "mixed"
     },
     "rhetoric": {
-      "argument": "your education There is a world of difference between the modern home environment and the grated electric information and the classroom.",
-      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "argument": "The physically rotated text forces readers to reorient their bodies to continue reading, enacting the disruption that new media cause to established perceptual habits—the body itself must adapt when the medium changes, proving that media effects are physical, not merely intellectual.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": [
+          "demonstration",
+          "interpellation"
+        ]
+      },
+      "strategy_description": "The spread juxtaposes elements through its combination of text and design. Secondary strategies of demonstration and interpellation reinforce the primary approach.",
       "design_enacts_argument": true,
-      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
-      "reader_experience": "Sustained reading — the reader engages with extended prose argument.",
+      "design_argument_description": "Rotated text forces bodily reorientation, making the reader physically experience how media environments restructure habitual perception—the body must change to accommodate the medium's demands.",
+      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
       "mcluhan_concepts": [
-        "pattern_recognition",
-        "environment"
-      ]
+        "medium_is_the_message"
+      ],
+      "multi_spread_patterns": null,
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
         "media_as_environment",
         "electric_technology",
         "education",
-        "perception",
+        "perception_and_senses",
         "space_and_time",
+        "youth_and_generation",
         "war_and_violence",
+        "clothing_and_housing",
         "information"
       ],
-      "contemporary_domain_candidates": [],
-      "movement_mapping": [],
-      "mapping_rationale": ""
+      "contemporary_domain_candidates": [
+        "labor_and_value",
+        "ambient_intelligence"
+      ],
+      "movement_mapping": [
+        "movement_1_environment"
+      ],
+      "mapping_rationale": "Media's transformation of work anticipates the gig economy, remote work, platform labor, and algorithmic management where employment is inseparable from digital infrastructure—the 'job' is now constituted by the communication platforms through which it is performed.",
+      "confidence": "moderate"
     },
     "progression": {
       "pace_shift": "decelerating",
       "thematic_function": "develops_theme",
-      "relationship_to_previous": "",
-      "relationship_to_next": ""
+      "relationship_to_previous": "Continues the inventory's expansion from education to labor, each domain demonstrating another area of life constituted by media environments.",
+      "relationship_to_next": "From labor to government—the inventory reaches its most public domain before the final expansion to 'the others.'",
+      "confidence": "moderate"
     },
-    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+    "notes": "Including 'your job' in the media inventory is quietly radical: it insists that economic life is a media effect, not just a market outcome. The means of communication determine the means of production—a McLuhanesque revision of Marx that becomes obvious in the age of platform capitalism.\n\n[Gemini visual description] This single page, titled 'your education,' presents a stark contrast between technology and humanity. A large, intricate circuit board at the top represents the new 'electric information' environment, while below, a small, intense photo of a bewildered child is embedded in text describing the clash between this new world and the old world of the classroom. The layout visually pits the inhuman, ordered system of the circuit against the emotional, confused reality of the child who must navigate it."
   },
   "ocr": {
     "ocr_raw": "",
@@ -89,5 +137,62 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \n- **Text Placement**: The main body text occupies the **right side** of the page, spanning from the top (below the image) to the bottom. A smaller section header (“your education”) appears vertically on the **left side**, above a small portrait photo.  \n- **Image Placement**: The black-and-white circuit board image dominates the **top third** of the page, centered horizontally.  \n- **Space Division**: The layout is split into three distinct zones:  \n  - *Top*: Dedicated to the circuit board image (visual focus).  \n  - *Left*: Reserved for the section header (“your education”) and a portrait photo (visual/structural anchor).  \n  - *Right*: Filled with the primary body text (content focus).  \n  This division creates a clear hierarchy: image → header → content, guiding the reader’s eye from top to bottom.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Types**:  \n  - *Display Text*: “your education” is large, bold, and **sans-serif** (modern, clean, attention-grabbing).  \n  - *Body Text*: Smaller, **serif** (e.g., Times New Roman), regular weight (readable, traditional academic tone).  \n  - *Page Number*: Small, **sans-serif** (top-right corner, subtle).  \n- **Contrast**: All text is **black on white** (no reversed/white-on-black text).  \n- **Weight/Style**: The header uses **bold** for emphasis; body text uses **normal weight** for readability. No extreme light/dark variations.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The circuit board image features stark black/white lines (technical precision), and the text uses bold black lettering on white (clear legibility).  \n- **Tone**: **Neutral/technical**. The monochrome palette and circuit board imagery evoke a mechanical, industrial feel, while the serif body text adds a scholarly tone. No emotional aggression or chaos—instead, a calm, analytical mood.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The circuit board image occupies significant space (top third), but the text is arranged with intentional gaps:  \n  - Space around the header/portrait (left side) prevents crowding.  \n  - The body text is dense but not packed (lines of text are spaced for readability).  \n- **Effect**: White space balances the technical image and text, avoiding visual overload while maintaining structure.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Continuation**. The left side (header + photo) *introduces* the topic (“your education”), while the right side (body text) *elaborates* on it. The layout is cohesive: the header and photo set the stage, and the text expands the idea.  \n- **Not Mirror/One Dominates**: The left is vertical (header + photo), while the right is horizontal (body text)—they are complementary, not mirrored or competing. The relationship is unified by the theme of education.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/Energy**: **Calm, professional, and informative**. The clean layout, high-contrast imagery, and serif body text create a scholarly, academic atmosphere. The circuit board image adds a subtle “tech-forward” edge, but the overall tone is **minimalist and structured**—not chaotic or aggressive. It feels like a textbook page designed to convey ideas clearly and thoughtfully.",
     "layout_analysis_time": 12.7,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_014",
+    "movement": "movement_1_environment",
+    "original_summary": {
+      "spread_type": "text_with_specific_image",
+      "section": "body",
+      "book_pages": [
+        18,
+        19
+      ],
+      "original_themes": [
+        "media_as_environment",
+        "education",
+        "perception_and_senses",
+        "youth_and_generation",
+        "information"
+      ],
+      "rhetorical_strategy": "juxtaposition",
+      "design_enacts_argument": true,
+      "design_argument_description": "Rotated text forces bodily reorientation, making the reader physically experience how media environments restructure habitual perception — the body must change to accommodate the medium's demands.",
+      "text_excerpt": "The young student today grows up in an electrically configured world... a world of electric information at home vs. the classroom which exists in a nineteenth-century world of data classification."
+    },
+    "contemporary_plan": {
+      "theme": "Your education: the proposition trap",
+      "argument": "McLuhan's gap between the electric home and the print classroom has metastasized. The student now grows up with ChatGPT capable of generating any essay, Wolfram Alpha solving any equation, YouTube explaining any concept — yet the classroom still tests whether the student can personally reproduce these operations. The gap is no longer between media (electric vs. print) but between modes of knowing: propositional knowledge (facts a student can state) versus procedural and participatory knowledge (wisdom a student can embody). The AI tutor delivers infinite propositions but cannot teach the student to care about any of them. This is the failure of propositions in embryo.",
+      "text": {
+        "approach": "original_prose",
+        "description": "Display text: 'your education.' Body text: the proposition trap — AI can answer every test question, so what is the test for? Specific: Khan Academy's AI tutor Khanmigo handles 40,000+ conversations daily, yet student engagement metrics continue to decline. The gap is not access to information but access to meaning.",
+        "voice_notes": "Analytical with an undertow of urgency. This is a structural problem, not a complaint about kids these days."
+      },
+      "image": {
+        "approach": "found",
+        "subject": "Split composition: on the left, a student using an AI tutoring interface (clean, glowing, responsive); on the right, a traditional classroom with rows of desks and a chalkboard. The visual gap between them IS the argument. The AI side should feel seductive; the classroom side should feel inert.",
+        "mood": "diagnostic",
+        "image_text_relationship": "amplifies"
+      },
+      "rhetoric": {
+        "strategy": "juxtaposition",
+        "design_enacts": "The literal split between AI-tutor and classroom images performs the gap the text describes. The reader's eye oscillates between the two environments, unable to rest in either — enacting the student's dilemma."
+      },
+      "mapping": {
+        "relationship_to_original": "transformation",
+        "convergences": [
+          "failure_of_propositions"
+        ],
+        "thinkers": [],
+        "quotations": []
+      },
+      "dependencies": "Continues the 'you' series. Introduces the failure_of_propositions convergence."
+    },
+    "paper_trace": "convergence:failure_of_propositions — introduced through the education gap",
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

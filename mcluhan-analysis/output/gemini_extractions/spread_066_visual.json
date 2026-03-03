@@ -1,0 +1,47 @@
+{
+  "spread_id": "spread_066",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:34:58.095170",
+  "generation_time_s": 33.5,
+  "images": [
+    {
+      "position": "left_page",
+      "subject": "A large, bold copyright symbol (©), composed of the letter 'C' inside a circle, which is itself enclosed in a second, thicker circle.",
+      "source_type": "graphic_symbol",
+      "composition": "The symbol is placed in the upper half of the left page, above the main text block. It is a high-contrast, black-on-white graphic with clean, hard edges.",
+      "scale": "quarter_page",
+      "estimated_date": null,
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is organized into two distinct columns, one on each page. The left page features a large graphic symbol (copyright logo) at the top, followed by a justified block of text. The right page contains a flush-left, ragged-right text block, followed by three identical, indented lines of text with ditto marks. The overall composition is clean, orderly, and dominated by text and white space.",
+    "typography": {
+      "body_font_style": "A clean, sans-serif typeface. The left column is justified, creating a solid rectangular block. The right column is set flush-left, ragged-right. The repeated lines at the bottom right are indented.",
+      "display_font_style": null,
+      "special_treatments": [
+        "Repetition of the phrase 'A ditto, ditto device.'",
+        "Use of ditto marks (〃) to visually represent mechanical copying."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "Stark black text and graphics on a plain white background, creating maximum legibility and a clean, modern feel."
+    },
+    "white_space": "abundant",
+    "visual_density": "sparse",
+    "left_right_relationship": "A relationship of historical progression and conceptual contrast. The left page describes the past: the invention of authorship and copyright as a result of print technology. The right page describes the (then) present/future: the erosion of authorship through new copying technologies like Xerography.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This is a clean, text-heavy spread that contrasts the historical concept of authorship with the disruptive force of new copying technologies. A large copyright symbol on the left page anchors a discussion of intellectual property born from print, while the right page discusses Xerography and features the repeated, mechanical phrase 'A ditto, ditto device,' visually and textually performing the act of copying."
+}

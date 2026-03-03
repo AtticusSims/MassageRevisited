@@ -24,6 +24,7 @@ OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 VLM_DIR = os.path.join(OUTPUT_DIR, "vlm_extractions")
 RENDERED_DIR = os.path.join(BASE_DIR, "rendered")
 DB_PATH = os.path.join(OUTPUT_DIR, "analysis_database.json")
+PLAN_PATH = os.path.join(OUTPUT_DIR, "content_plan.json")
 
 VIEWER_DIR = os.path.join(BASE_DIR, "viewer")
 STATIC_HTML = os.path.join(VIEWER_DIR, "static_viewer.html")
@@ -74,8 +75,8 @@ def build_index(db):
     }
 
 
-def build_spread_data(spread_id, db):
-    """Build merged per-spread JSON (analysis + OCR + visual)."""
+def build_spread_data(spread_id, db, plan_pages=None):
+    """Build merged per-spread JSON (analysis + OCR + visual + content plan)."""
     entries = db.get("spreads", [])
     entry = next((e for e in entries if e["id"] == spread_id), None)
 
@@ -111,6 +112,12 @@ def build_spread_data(spread_id, db):
             "layout_analysis_time": visual_data.get("layout_analysis_time"),
             "model": visual_data.get("model", "qwen3-vl"),
         }
+
+    # Merge content plan data if available
+    if plan_pages:
+        plan_entry = next((p for p in plan_pages if p.get("spread_id") == spread_id), None)
+        if plan_entry:
+            result["content_plan"] = plan_entry
 
     return result
 
@@ -184,7 +191,7 @@ def main():
     os.makedirs(IMAGES_DIR, exist_ok=True)
 
     # Load analysis database
-    print(f"\n[1/4] Loading analysis database...")
+    print(f"\n[1/5] Loading analysis database...")
     db = load_json(DB_PATH)
     if not db:
         print(f"  ERROR: {DB_PATH} not found")
@@ -192,9 +199,34 @@ def main():
     entries = db.get("spreads", [])
     print(f"  Found {len(entries)} analyzed spreads")
 
+    # Load content plan
+    print(f"\n[2/5] Loading content plan...")
+    content_plan = load_json(PLAN_PATH)
+    plan_pages = []
+    plan_meta = None
+    if content_plan:
+        plan_pages = content_plan.get("pages", [])
+        plan_meta = content_plan.get("meta", None)
+        print(f"  Found {len(plan_pages)} page plans")
+        # Save meta.json for the overview view
+        if plan_meta:
+            meta_out = {
+                "version": content_plan.get("version", "1.0"),
+                "generated": content_plan.get("generated", ""),
+                "schema_version": content_plan.get("schema_version", ""),
+                "meta": plan_meta,
+            }
+            save_json(os.path.join(DATA_DIR, "meta.json"), meta_out)
+            print(f"  Saved data/meta.json")
+    else:
+        print(f"  WARNING: {PLAN_PATH} not found, building without content plan data")
+
     # Build index.json
-    print(f"\n[2/4] Building index and per-spread data files...")
+    print(f"\n[3/5] Building index and per-spread data files...")
     index_data = build_index(db)
+    # Add content plan status to index
+    index_data["has_content_plan"] = len(plan_pages) > 0
+    index_data["content_plan_version"] = content_plan.get("version", "") if content_plan else ""
     save_json(os.path.join(DATA_DIR, "index.json"), index_data)
     print(f"  Saved data/index.json ({len(index_data['spreads'])} spreads)")
 
@@ -206,9 +238,10 @@ def main():
         has_analysis = any(e["id"] == spread_id for e in entries)
         has_ocr = os.path.exists(os.path.join(VLM_DIR, f"{spread_id}_ocr_qwen3.json"))
         has_visual = os.path.exists(os.path.join(VLM_DIR, f"{spread_id}_visual_qwen3.json"))
+        has_plan = any(p.get("spread_id") == spread_id for p in plan_pages)
 
-        if has_analysis or has_ocr or has_visual:
-            spread_data = build_spread_data(spread_id, db)
+        if has_analysis or has_ocr or has_visual or has_plan:
+            spread_data = build_spread_data(spread_id, db, plan_pages)
             save_json(os.path.join(DATA_DIR, f"{spread_id}.json"), spread_data)
             spread_count += 1
 
@@ -216,13 +249,13 @@ def main():
 
     # Compress images
     if not args.no_images:
-        print(f"\n[3/4] Compressing images (JPEG quality {JPEG_QUALITY})...")
+        print(f"\n[4/5] Compressing images (JPEG quality {JPEG_QUALITY})...")
         compress_images()
     else:
-        print(f"\n[3/4] Skipping image compression (--no-images)")
+        print(f"\n[4/5] Skipping image compression (--no-images)")
 
     # Copy HTML and CSS
-    print(f"\n[4/4] Copying viewer files...")
+    print(f"\n[5/5] Copying viewer files...")
     shutil.copy2(STATIC_HTML, os.path.join(DOCS_DIR, "index.html"))
     shutil.copy2(STATIC_CSS, os.path.join(DOCS_DIR, "style.css"))
     print(f"  Copied index.html and style.css")

@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_022",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:11:21.860883",
+  "generation_time_s": 21.7,
+  "images": [
+    {
+      "position": "spanning_gutter",
+      "subject": "The tips of two index fingers, one on the left page and one on the right, entering the frame from the extreme edges. They are pointing towards the center of the spread, framing the empty white space between them.",
+      "source_type": "art_photograph",
+      "composition": "A minimalist and symmetrical composition dominated by negative space. The fingers are rendered in soft, low-contrast grayscale against a stark white background, creating a high-key effect. Their placement on the horizontal midline creates a strong sense of balance.",
+      "scale": "dominant",
+      "estimated_date": "c. 1967",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "intimate",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The layout is exceptionally sparse. The words 'the book' are centered at the top of the spread. Below, two index fingers enter from the far left and right edges, pointing inward. The vast majority of the two-page spread is empty white space, which becomes the subject, framed by the text above and the fingers on the sides.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "Lowercase sans-serif font, medium weight. Significant kerning between the two words 'the' and 'book' separates them visually.",
+      "special_treatments": [
+        "Extreme letter-spacing / kerning"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "low",
+      "dominant_tone": "light",
+      "description": "This is a high-key spread, overwhelmingly dominated by white. The photographic elements are soft grayscale, contributing to an overall low-contrast and quiet feel."
+    },
+    "white_space": "abundant",
+    "visual_density": "sparse",
+    "left_right_relationship": "Symmetrical mirror. The left and right pages are nearly identical compositions, creating a single, unified visual field across the gutter.",
+    "information_value": {
+      "left_right": "balanced",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "A reader encounters an almost empty spread, with the words 'the book' floating at the top. From the left and right edges, two index fingers point inward, framing the vast white space and implicitly referencing the physical object the reader is holding. The experience is quiet, minimalist, and self-referential, turning the act of reading and the form of the book itself into the subject."
+}

@@ -8,6 +8,8 @@
       67
     ],
     "section": "body",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
     "spread_type": "text_with_specific_image",
     "orientation": "landscape_spread",
     "text": {
@@ -27,49 +29,84 @@
         "source_credit": "N. R. Farbman, for Time, Inc.",
         "estimated_date": "c. 1960s",
         "composition": "",
-        "scale": "full_spread",
-        "relationship_to_text": ""
+        "scale": "small_inset",
+        "relationship_to_text": {
+          "primary_relation": "provides_atmosphere",
+          "barthes_mode": "anchorage",
+          "description": ""
+        },
+        "interactive_meaning": {
+          "contact": "not_applicable",
+          "social_distance": "impersonal",
+          "attitude_angle": "low_angle"
+        }
       }
     ],
     "design": {
       "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe visual layout prioritizes the **photograph** as the dominant element, occupying the majority of the spread (centered or slightly left-aligned). The **text** is positioned in the **top-right corner**, creating a clear visual hierarchy where the image commands attention, and the text serves as a secondary, contextual element. The space is divided into two primary zones: the large, immersive photograph (filling most of the page) and the small text block (a narrow strip in the upper right). This arrangement emphasizes the image’s narrative weight while using the text to frame its thematic context.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Type**: A short caption (“The new electronic interdependence recreates the world in the image of a global village”) is visible.  \n- **Size & Weight**: It is **small body text** (not display text), with a **regular (light) weight**—no bolding.  \n- **Font Style**: The typeface is **sans-serif** (clean, modern, with no serifs), typical of mid-20th-century editorial design.  \n- **Color & Orientation**: The text is **black on white** (standard for printed pages), not reversed (white on black). It is oriented normally (not upside-down or mirrored).  \n\n\n### 3. CONTRAST & TONE  \n- **Image Tone**: The photograph is **high-contrast black-and-white**, with stark shadows and highlights (e.g., deep blacks in the background, bright highlights on skin/objects). This creates a dramatic, almost theatrical mood.  \n- **Overall Spread**: The spread has **high contrast** due to the photograph’s tonal range and the text’s black-on-white simplicity. The image’s darkness (relative to the page’s white background) amplifies this contrast, making the visual feel dynamic and intense.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Sparse** (minimal empty space). The photograph dominates the page, leaving only narrow margins around the text and the edges of the page. The text itself is small, so the white space is limited to the areas *not* occupi",
       "typography": {
-        "body_font_style": "Sans-serif text",
+        "body_font_style": "sans-serif",
         "display_font_style": null,
-        "special_treatments": []
+        "special_treatments": [
+          "text overlaid on image"
+        ]
       },
-      "color_and_tone": "Black and white.",
-      "white_space": "sparse",
-      "visual_density": "dense",
-      "left_right_relationship": "mirror"
+      "color_and_tone": {
+        "contrast": "high",
+        "dominant_tone": "dark",
+        "description": "High contrast black and white."
+      },
+      "white_space": "minimal",
+      "visual_density": "overwhelming",
+      "left_right_relationship": "mirror",
+      "information_value": {
+        "left_right": "balanced",
+        "top_bottom": "not_applicable",
+        "center_margin": "distributed"
+      },
+      "compositional_framing": "strongly_framed"
     },
     "rhetoric": {
-      "argument": "Brief textual element: 'The new electronic interdependence recreates the world in the image of a global ...'",
-      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "argument": "Electronic interdependence 'recreates the world in the image of a global village'—not merely connecting distant people but fundamentally transforming spatial and temporal experience so that events anywhere are experienced everywhere simultaneously, abolishing the distances that print perspective created.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": [
+          "demonstration"
+        ]
+      },
+      "strategy_description": "The spread juxtaposes elements through its combination of text and design. Secondary strategies of demonstration reinforce the primary approach.",
       "design_enacts_argument": true,
       "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
       "reader_experience": "Brief encounter — the reader absorbs the spread quickly before moving forward.",
       "mcluhan_concepts": [
-        "electric_age",
-        "global_village"
-      ]
+        "medium_is_the_message"
+      ],
+      "multi_spread_patterns": null,
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
         "electric_technology",
         "tribal_culture"
       ],
-      "contemporary_domain_candidates": [],
-      "movement_mapping": [],
-      "mapping_rationale": ""
+      "contemporary_domain_candidates": [
+        "authorship_and_creativity",
+        "ambient_intelligence"
+      ],
+      "movement_mapping": [
+        "movement_2_acceleration"
+      ],
+      "mapping_rationale": "The environment-as-art concept anticipates the aestheticization of everyday life through social media (Instagram filters, TikTok performances, curated feeds) and immersive technologies (AR overlays, smart environments) that transform the ordinary into the designed.",
+      "confidence": "moderate"
     },
     "progression": {
       "pace_shift": "accelerating",
       "thematic_function": "develops_theme",
-      "relationship_to_previous": "",
-      "relationship_to_next": ""
+      "relationship_to_previous": "The environment-as-art concept extends the previous spread's world-recreation thesis: if electronic media recreate the world, then the world becomes an artwork.",
+      "relationship_to_next": "A New Yorker cartoon provides comic relief and cultural evidence after the theoretical escalation.",
+      "confidence": "moderate"
     },
-    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+    "notes": "The Rauschenberg-style visual collage enacts the art/life dissolution it describes. Fiore's design doesn't illustrate the concept but demonstrates it: the page itself is an environment-as-art-form, asking the reader to experience it rather than merely decode it. The reader becomes the audience of the book's own environmental art."
   },
   "ocr": {
     "ocr_raw": "The new electronic interdependence recreates the world in the image of a global village.",
@@ -84,5 +121,68 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe visual layout prioritizes the **photograph** as the dominant element, occupying the majority of the spread (centered or slightly left-aligned). The **text** is positioned in the **top-right corner**, creating a clear visual hierarchy where the image commands attention, and the text serves as a secondary, contextual element. The space is divided into two primary zones: the large, immersive photograph (filling most of the page) and the small text block (a narrow strip in the upper right). This arrangement emphasizes the image’s narrative weight while using the text to frame its thematic context.  \n\n\n### 2. TYPOGRAPHY  \n- **Text Type**: A short caption (“The new electronic interdependence recreates the world in the image of a global village”) is visible.  \n- **Size & Weight**: It is **small body text** (not display text), with a **regular (light) weight**—no bolding.  \n- **Font Style**: The typeface is **sans-serif** (clean, modern, with no serifs), typical of mid-20th-century editorial design.  \n- **Color & Orientation**: The text is **black on white** (standard for printed pages), not reversed (white on black). It is oriented normally (not upside-down or mirrored).  \n\n\n### 3. CONTRAST & TONE  \n- **Image Tone**: The photograph is **high-contrast black-and-white**, with stark shadows and highlights (e.g., deep blacks in the background, bright highlights on skin/objects). This creates a dramatic, almost theatrical mood.  \n- **Overall Spread**: The spread has **high contrast** due to the photograph’s tonal range and the text’s black-on-white simplicity. The image’s darkness (relative to the page’s white background) amplifies this contrast, making the visual feel dynamic and intense.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Sparse** (minimal empty space). The photograph dominates the page, leaving only narrow margins around the text and the edges of the page. The text itself is small, so the white space is limited to the areas *not* occupied by the image or text.  \n- **Density**: The layout is **packed**—the image and text fill most of the page, with little room for visual breathing room. This density reinforces the photograph’s immersive, crowded feel.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Contrast**. The left side (or center) is dominated by the photograph (a dense, human-centric scene), while the right side (top-right corner) holds the text. The image and text occupy distinct spatial zones, with no mirroring or unification—they are visually and thematically separate. The image’s energy contrasts with the text’s conceptual tone, creating a dialogue between visual and textual elements.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/Energy**: **Chaotic yet purposeful**. The photograph’s crowded composition (people in close proximity, expressive gestures) and high-contrast black-and-white tones evoke a sense of urgency, community, or ritualistic intensity. The text’s theme (“global village”) adds a layer of conceptual weight, but the visual chaos (dense figures, dramatic lighting) dominates, creating an **overwhelming, dynamic energy**—not calm or minimal, but deeply engaged with the subject matter. The spread feels urgent, almost documentary-like, reflecting the era’s fascination with technological interconnectedness (echoed in the text’s “global village” reference).",
     "layout_analysis_time": 12.4,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_038",
+    "movement": "movement_2_acceleration",
+    "original_summary": {
+      "spread_type": "text_with_specific_image",
+      "section": "body",
+      "book_pages": [
+        66,
+        67
+      ],
+      "original_themes": [
+        "electric_technology",
+        "tribal_culture"
+      ],
+      "rhetorical_strategy": "assertion",
+      "design_enacts_argument": true,
+      "design_argument_description": "Full-bleed photograph of a communal gathering surrounds a single assertion, making the text feel embedded within the village it describes. The reader is inside the claim, not observing it from outside.",
+      "text_excerpt": "The new electronic interdependence recreates the world in the image of a global village."
+    },
+    "contemporary_plan": {
+      "theme": "The global model",
+      "argument": "McLuhan's 'global village' -- which assumed human interdependence mediated by electric signals -- has been superseded. The new computational interdependence recreates the world in the image of a global model: not a village of humans connected, but a single trained intelligence processing all languages, all knowledge, all culture simultaneously. The village metaphor implied democracy; the model metaphor implies something more unsettling -- a single perspective applied everywhere. Bratton's planetary computation names the infrastructure; this spread names its cognitive form.",
+      "text": {
+        "approach": "combination",
+        "description": "'The new computational interdependence recreates the world in the image of a global model.' Single declarative sentence, echoing the original exactly, followed by 2-3 sentences on the village-to-model shift. Bratton's planetary computation as the infrastructure beneath the model.",
+        "voice_notes": "Expansive, vertiginous. The scale should feel planetary. But a note of unease: a village has citizens; a model has parameters."
+      },
+      "image": {
+        "approach": "found",
+        "subject": "A data center aerial photograph or satellite image of undersea cable networks -- the planetary infrastructure of the global model made visible. The image should convey the same communal density as the original's gathering photograph, but the 'gathering' is now fiber optic and silicon.",
+        "mood": "cosmic, slightly ominous",
+        "image_text_relationship": "amplifies -- the infrastructure image envelops the text, making the reader feel embedded within the global model as the original embedded them in the village."
+      },
+      "rhetoric": {
+        "strategy": "assertion",
+        "design_enacts": "The spread's composition echoes the original: full-bleed image surrounding a single bold claim. But the communal gathering has been replaced by computational infrastructure. The design argues through substitution: same form, different content, and the difference IS the argument."
+      },
+      "mapping": {
+        "relationship_to_original": "transformation",
+        "convergences": [
+          "accidental_megastructure"
+        ],
+        "thinkers": [
+          "Bratton"
+        ],
+        "quotations": [
+          {
+            "text": "The planetary is not the global. The planetary is a different geometry of political geography.",
+            "author": "Bratton",
+            "source": "The Revenge of the Real, Verso, 2021, p. 9",
+            "rationale": "Bratton distinguishes planetary computation from globalization -- the model is not the village at scale."
+          }
+        ]
+      },
+      "dependencies": null
+    },
+    "paper_trace": "Bratton planetary computation -- The Stack (2016) and The Revenge of the Real (2021).",
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_079",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:42:03.210032",
+  "generation_time_s": 23.4,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "The front page of The New York Times from Wednesday, November 10, 1965. The main headline reads: 'POWER FAILURE SNARLS NORTHEAST; 800,000 ARE CAUGHT IN SUBWAYS HERE; AUTOS TIED UP, CITY GROPES IN DARK'. The page includes the newspaper's masthead, various sub-headlines and articles, and a small, grainy, high-contrast photograph of a city skyline (likely New York City) during the blackout, showing dark buildings against a lighter sky.",
+      "source_type": "historical_document",
+      "composition": "A direct, high-contrast reproduction of a newspaper front page. The composition is dense with text arranged in columns. A block of new text is overlaid on the bottom third of the page, obscuring some of the original newspaper content. The image has a grainy, slightly distorted quality characteristic of halftone printing and reproduction.",
+      "scale": "full_bleed",
+      "estimated_date": "November 10, 1965",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "impersonal",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single-page layout, not a spread. The entire page is filled with a reproduction of a newspaper front page. A rectangular block of text is superimposed over the bottom third of the newspaper image, creating a layered effect where the new text comments on the background image.",
+    "typography": {
+      "body_font_style": "The overlaid text is a sans-serif font, medium weight, set in a justified block.",
+      "display_font_style": "The newspaper features multiple display styles: the iconic blackletter (Gothic) masthead for 'The New York Times', and large, bold, condensed sans-serif fonts for the headlines.",
+      "special_treatments": [
+        "Text overlaid on image"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The page is entirely black and white, mimicking the original newspaper. The contrast is stark between the black ink and the off-white paper background."
+    },
+    "white_space": "minimal",
+    "visual_density": "dense",
+    "left_right_relationship": "Not applicable, single page.",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "The reader is confronted with the historic front page of The New York Times reporting on the 1965 Northeast blackout, a moment when the electric environment suddenly failed. Superimposed over this document of technological collapse is McLuhan's text, which uses the blackout as a concrete example of how 'electric technology shapes, works over, alters—massages—every instant of our lives.' The design forces the reader to see the historical event through McLuhan's theoretical lens, re-framing a news story as evidence for his central argument."
+}

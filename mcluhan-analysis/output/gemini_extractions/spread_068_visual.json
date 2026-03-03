@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_068",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:36:07.426002",
+  "generation_time_s": 44.4,
+  "images": [
+    {
+      "position": "top_half_page",
+      "subject": "A black and white photograph of a crowd of mostly middle-aged and older white men in suits and overcoats, walking in what appears to be a formal procession or parade. One man wears military medals, another a uniform. A single woman is visible in the crowd. Their expressions are uniformly serious and grim as they walk outdoors past bare trees.",
+      "source_type": "press_photo",
+      "composition": "The photograph is a medium shot taken from a slightly low angle, looking up at the procession. The composition is dense with figures filling the frame horizontally. The image has a slightly soft focus and visible halftone printing texture, characteristic of news photography of the era.",
+      "scale": "half_page",
+      "estimated_date": "1950s-1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "impersonal",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single, portrait-oriented page. A large horizontal photograph occupies the top half. A single block of justified text is positioned in the bottom third, separated from the image by a wide band of white space. The layout is a simple, bipartite, top-and-bottom structure.",
+    "typography": {
+      "body_font_style": "Serif, medium weight, standard text size, set in a single wide, justified column.",
+      "display_font_style": null,
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "High contrast between the black text, the black-and-white photo, and the stark white page. The photograph itself has moderate contrast with a range of grey tones."
+    },
+    "white_space": "abundant",
+    "visual_density": "moderate",
+    "left_right_relationship": "This is a single page, so there is no left-right relationship.",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "real_ideal",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "A reader encounters a starkly divided page with a large black-and-white photograph of a grim, formal procession of adults at the top. Below this image, separated by a wide gap of white space, a block of text argues that the 'television generation is a grim bunch,' more serious and earnest than their predecessors. The visual solemnity of the photograph is thus juxtaposed with the text's analysis of a new, media-conditioned seriousness in the young."
+}

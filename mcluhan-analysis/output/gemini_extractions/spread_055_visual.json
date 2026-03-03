@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_055",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:28:31.687552",
+  "generation_time_s": 29.6,
+  "images": [
+    {
+      "position": "right_page",
+      "subject": "A black and white photograph of two young boys, barefoot or in simple shoes, working on complex machinery in what appears to be a textile mill. One boy stands on a metal grate on the machine, reaching up with both hands. The other boy is behind him, partially obscured. The environment is filled with the repeating patterns of spindles and industrial equipment.",
+      "source_type": "press_photo",
+      "composition": "The photograph is taken from a slightly low angle, looking up at the children. The dense, repeating lines of the factory machinery create a visually complex and overwhelming environment that dwarfs the small figures of the boys. The image is grainy with moderate contrast, typical of early 20th-century documentary photography.",
+      "scale": "half_page",
+      "estimated_date": "c. 1910s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "far_social",
+        "attitude_angle": "low_angle"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is asymmetrically balanced. The left page consists of a single, dense column of text. The right page is divided horizontally: a large photograph occupies the top half, and a shorter column of text sits below it. The elements are clearly separated by white space, creating a structured, almost academic layout.",
+    "typography": {
+      "body_font_style": "A standard serif font, left-aligned with a ragged right edge. The columns are relatively wide.",
+      "display_font_style": null,
+      "special_treatments": [
+        "The word 'R-O-L-E-S' is spelled out with hyphens to emphasize it and slow the reader down."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "moderate",
+      "dominant_tone": "balanced",
+      "description": "High-contrast black text on a white background, paired with a moderate-contrast historical photograph containing a full range of grey tones."
+    },
+    "white_space": "moderate",
+    "visual_density": "dense",
+    "left_right_relationship": "The left page presents a general theoretical critique of education ('Given'), while the right page provides a specific historical image and a new analytical framework ('New') involving the 'dropout' and 'teach-in'. The image on the right serves as a visual anchor and metaphor for the outdated industrial model of education described on the left.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "not_applicable",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This spread presents a critique of industrial-age education systems failing in the electric age. A dense column of text on the left page argues that traditional schooling is irrelevant to modern youth, while the right page juxtaposes a historical Lewis Hine photograph of child laborers in a factory with text analyzing the 'dropout' and 'teach-in' as responses to this failure. The reader experiences a scholarly argument that uses the stark visual of child labor as a metaphor for the rigid, fragmenting, and de-humanizing nature of outdated educational models."
+}

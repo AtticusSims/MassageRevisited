@@ -1,0 +1,59 @@
+{
+  "spread_id": "spread_011",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:05:57.034807",
+  "generation_time_s": 33.6,
+  "images": [
+    {
+      "position": "inset_left",
+      "subject": "A high-contrast black and white graphic of a human fingerprint, likely a thumbprint or index fingerprint, showing the detailed ridges and whorls.",
+      "source_type": "graphic_symbol",
+      "composition": "The fingerprint is presented as a clear, isolated graphic element. The high-contrast rendering emphasizes its function as a unique biometric identifier.",
+      "scale": "small_inset",
+      "estimated_date": null,
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    },
+    {
+      "position": "right_page",
+      "subject": "A full-page graphic of a bullseye or target, composed of thick, alternating black and white concentric circles radiating from a central white circle.",
+      "source_type": "graphic_symbol",
+      "composition": "The Op Art-style graphic fills the entire page, creating a hypnotic and confrontational effect. The geometric precision and stark contrast draw the viewer's eye directly to the center.",
+      "scale": "full_bleed",
+      "estimated_date": null,
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is strongly asymmetrical. The left page features a large display word, 'you', at the top, followed by a small inset fingerprint graphic and a single column of body text. The right page is entirely dedicated to a full-bleed graphic of a target, creating a stark visual contrast with the text-heavy left page.",
+    "typography": {
+      "body_font_style": "A serif font, likely Times New Roman or similar, set in a single justified column of standard body text size.",
+      "display_font_style": "The word 'you' is set in a large, bold, lowercase sans-serif font, dominating the top of the left page.",
+      "special_treatments": [
+        "The final word of the body text, 'buzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzing', is elongated with repeated letters to typographically mimic the sound it describes."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread uses pure black and white with no grayscale, creating a stark, high-contrast visual field that is both graphic and aggressive."
+    },
+    "white_space": "moderate",
+    "visual_density": "dense",
+    "left_right_relationship": "A call-and-response or subject-predicate structure. The left page identifies the subject ('you', the fingerprint, the text on surveillance), and the right page reveals their status: a target. The relationship is one of identification followed by targeting.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "Encountering this spread is a confrontational experience where the reader is directly implicated in the argument about surveillance. The left page identifies 'you' with a fingerprint and interrogating text, while the stark, full-page target on the right visually transforms the reader from a passive observer into the subject being watched and aimed at. The design moves from identification to targeting, making the abstract threat of data collection feel personal and immediate."
+}

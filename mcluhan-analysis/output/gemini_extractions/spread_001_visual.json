@@ -1,0 +1,48 @@
+{
+  "spread_id": "spread_001",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:00:08.457351",
+  "generation_time_s": 26.9,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "A heavily blurred, high-contrast, warm-toned photograph of what appears to be a human face or head. Specific features are obscured by the shallow depth of field, but the large, soft shapes suggest eye sockets, the curve of a cheek, and hair. The effect is abstract and organic, denying clear identification.",
+      "source_type": "art_photograph",
+      "composition": "Extreme close-up with a very shallow depth of field, resulting in significant blur and abstraction. The composition is dominated by large, soft-edged shapes of dark shadow and warm, reddish-orange light, creating a tactile, mysterious quality.",
+      "scale": "full_bleed",
+      "estimated_date": "1960s",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "intimate",
+        "attitude_angle": "not_applicable"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single, portrait-oriented page serving as the book's front cover. Text is overlaid directly onto the full-bleed, blurry photographic background. A clear hierarchy is established, with authors' names at the top, the title and subtitle in the center, and the producer's credit at the bottom.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "A bold, sans-serif typeface is used for all text. The authors' names are in lowercase. The title, 'the medium is the MASSAGE', strategically uses all caps for the final word to emphasize the book's central pun. The subtitle, 'AN INVENTORY OF EFFECTS', is also in all caps and stacked vertically.",
+      "special_treatments": [
+        "Text overlaid on image",
+        "Title word ('MASSAGE') emphasized with all caps",
+        "Author's name ('marshall') is partially cropped at the top edge of the cover"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "dark",
+      "description": "The background image is composed of dark, shadowy areas and warm, reddish-orange mid-tones, suggesting skin. The overlaid text is primarily black and white, creating a sharp contrast that makes it legible despite the complex background."
+    },
+    "white_space": "none",
+    "visual_density": "moderate",
+    "left_right_relationship": "This is a single portrait page, not a two-page spread.",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "centered"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "The book's cover immediately establishes a tactile and disorienting tone, featuring bold, clean typography layered over a heavily blurred and abstract photograph of a human face. The title emphasizes the word 'MASSAGE' in all caps, signaling the book's central pun and its focus on sensory experience over linear information. The design forces the viewer to feel rather than just read, preparing them for the non-linear, immersive argument within."
+}

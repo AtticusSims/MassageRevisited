@@ -1,0 +1,48 @@
+{
+  "spread_id": "spread_029",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:14:52.512209",
+  "generation_time_s": 38.7,
+  "images": [
+    {
+      "position": "inset_left",
+      "subject": "A black and white line drawing in an engraving or woodcut style, depicting a human right hand holding a quill or stylus and drawing a line on a small, flat surface like a tablet or parchment. The hand is detailed with hatching and cross-hatching.",
+      "source_type": "illustration",
+      "composition": "Close-up on the hand, shown from an oblique, slightly overhead angle. The style uses hatching and cross-hatching for shading. The composition focuses entirely on the act of writing/drawing.",
+      "scale": "quarter_page",
+      "estimated_date": "17th-19th century",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "close_social",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A starkly divided spread. The left page follows a traditional layout with a column of text above a line-drawing illustration, all on a white background. The right page is a full-bleed black field with a single column of repeating white text running down its length.",
+    "typography": {
+      "body_font_style": "Serif, regular weight, justified. Two words in the final stanza, 'SPEECH' and 'THOUGHT', are capitalized for emphasis.",
+      "display_font_style": "The right page uses a white italic serif font, repeated 15 times to form a column. This text functions as both content and a strong graphic pattern.",
+      "special_treatments": [
+        "Text reversed out (white on black) on the right page",
+        "Repetitive text used as a visual pattern",
+        "Emphasis via capitalization in body text ('SPEECH', 'THOUGHT')"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread is a study in contrast, with the left page being entirely black-on-white and the right page being entirely white-on-black."
+    },
+    "white_space": "minimal",
+    "visual_density": "moderate",
+    "left_right_relationship": "Contrast and historical progression. The left page (writing/manuscript culture) is visually and thematically contrasted with the right page (printing/mechanical reproduction). The left is unique and handmade; the right is repetitive and mechanical.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This spread presents a stark visual contrast between manuscript and print culture. The left page, on a white background, combines text about the invention of writing with a historical illustration of a hand using a quill. The right page, a black void, features the phrase 'Printing, a ditto device' repeated in a column of white text, visually enacting the mechanical repetition of the printing press."
+}

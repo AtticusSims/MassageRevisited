@@ -1,0 +1,57 @@
+{
+  "spread_id": "spread_058",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:29:56.098683",
+  "generation_time_s": 33.8,
+  "images": [
+    {
+      "position": "left_page",
+      "subject": "A stark, high-contrast black silhouette against a white background, positioned vertically along the left edge of the page. The edge of the silhouette is highly irregular, jagged, and textured, resembling torn paper, fur, or perhaps flames.",
+      "source_type": "art_photograph",
+      "composition": "Extreme high-contrast black and white photograph used for its abstract, graphic quality. The composition is minimalist and vertical, focusing entirely on the texture and shape of the silhouette's edge against the empty white page.",
+      "scale": "dominant",
+      "estimated_date": "circa 1960s",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    },
+    {
+      "position": "right_page",
+      "subject": "An editorial cartoon depicting a city street scene. In the foreground, a portly, older man in a fedora and trench coat, smoking a pipe, looks disapprovingly over his shoulder at a group of three young people with long hair and non-conformist clothing ('punks'). The group stands on a corner under a lamppost. The artist's signature, 'Lorenz', is visible.",
+      "source_type": "editorial_cartoon",
+      "composition": "A gestural ink and wash drawing. The main figure is large in the foreground, establishing his perspective as dominant. The younger people are in the middle ground. The background city details are loosely sketched.",
+      "scale": "dominant",
+      "estimated_date": "1966",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "far_social",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is defined by a strong asymmetrical contrast. The left page is minimalist and abstract, featuring a single vertical silhouette against a vast white background. The right page is representational and narrative, with a cartoon and its caption occupying the middle and lower portions of the page, also surrounded by significant white space.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "The caption text is a traditional serif font, relatively small, placed conventionally below the cartoon.",
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "The spread is entirely black and white. The left page is pure, stark contrast, while the right page uses grayscale ink wash to create shading and depth within the cartoon."
+    },
+    "white_space": "abundant",
+    "visual_density": "sparse",
+    "left_right_relationship": "Juxtaposition and contrast. The abstract, almost primal energy of the silhouette on the left is given a specific social context on the right. The left page presents a raw, disruptive form, while the right page shows the establishment's bemused and resentful reaction to the human embodiment of that disruption.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "balanced",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This spread creates a visual argument through stark juxtaposition. The left page presents an abstract, jagged black silhouette suggesting raw, disruptive energy, while the right page features a New Yorker cartoon of an older man complaining about the economic impact of 'punks.' The reader experiences a conceptual leap from the abstract form of disruption on the left to its specific, generational manifestation and the establishment's reaction on the right."
+}

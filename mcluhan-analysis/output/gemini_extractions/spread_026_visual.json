@@ -1,0 +1,59 @@
+{
+  "spread_id": "spread_026",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:13:14.314183",
+  "generation_time_s": 33.3,
+  "images": [
+    {
+      "position": "right_page",
+      "subject": "A stylized line drawing of a playing card figure, the Queen of Hearts. She has a grotesque, wide-eyed expression, an open mouth, and is wearing a crown-like headdress decorated with hearts. She holds a small flower scepter in one hand and has a clenched fist with the other, with a large black heart on her chest.",
+      "source_type": "illustration",
+      "composition": "The figure is shown from the waist up, angled slightly toward the viewer but with her head turned to face left. The lines are clear and defined, creating a cartoonish but menacing character. The expression is one of manic authority or shock.",
+      "scale": "dominant",
+      "estimated_date": "Style reminiscent of late 19th-century illustration (e.g., John Tenniel).",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "close_social",
+        "attitude_angle": "frontal"
+      }
+    },
+    {
+      "position": "inset_left",
+      "subject": "A high-contrast, grainy silhouette of a young woman's head and shoulders in profile, facing right. She has dark, wavy hair. The image appears to be a heavily processed photograph.",
+      "source_type": "art_photograph",
+      "composition": "A simple profile view. The high-contrast processing removes all internal detail, reducing the figure to a dark, textured shape. This stark, photographic style contrasts sharply with the clean line drawing of the Queen.",
+      "scale": "small_inset",
+      "estimated_date": "Circa 1960s",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "close_social",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The page is arranged as a confrontation. Handwritten-style text occupies the upper left. A large, aggressive illustration of the Queen dominates the right. A small, dark silhouette of Alice is positioned on the lower left, facing the Queen, creating a strong diagonal line of interaction between the two figures.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "The text is not typeset but is a script that mimics handwriting. It is informal, slightly uneven, and integrated with the illustrations as a single compositional element. It recounts a dialogue from 'Alice in Wonderland'.",
+      "special_treatments": [
+        "Handwritten-style script instead of typeset font"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "Stark black and white composition, combining clean line art with a grainy, high-contrast photographic element."
+    },
+    "white_space": "abundant",
+    "visual_density": "sparse",
+    "left_right_relationship": "This is a single page composition. The right side (Queen) visually dominates and confronts the left side (Alice and text).",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "A reader encounters a sparse, single-page composition dominated by a grotesque line drawing of the Queen of Hearts from 'Alice in Wonderland'. She confronts a small, photographic silhouette of Alice, while handwritten text of their famous 'sentence first, evidence later' dialogue frames the scene. The clash of illustrative styles—clean line art versus grainy photo—creates a sense of disorientation and highlights the absurdity of the quoted logic."
+}

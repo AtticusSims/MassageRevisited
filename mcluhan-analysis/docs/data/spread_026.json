@@ -8,6 +8,8 @@
       43
     ],
     "section": "body",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
     "spread_type": "text_with_specific_image",
     "orientation": "landscape_spread",
     "text": {
@@ -25,54 +27,97 @@
     ],
     "images": [
       {
-        "position": "spanning_spread",
-        "subject": "### Visual Element 1: Profile of a Person (Alice)  \n1. **Depicts**: A side profile of a person with long, wavy hair, facing right. The hair is rendered with fine, detailed lines and subtle shading to convey texture and volume. The face is in profile, showing the side of the head, ear, and neck.  \n2. **Position**: Left side of the spread (left page), positioned to the left of the text block, occupying the left portion of the left page.  \n3. **Visual Style**: Black and white hand-drawn illustration with detailed linework and subtle shading.  \n4. **Composition**: Profile view (side angle). The hair dominates the composition, with lines creating a sense of volume. Contrast is moderate (hair has more shading than the face). Key visual qualities: long hair with intricate line work, profile of the face, and orientation facing right.  \n5. **Page Occupation**: Approximately 30% of the left page.  \n\n\n### Visual Element 2: Illustrated Character (King)  \n1. **Depicts**: A humanoid figure wearing a large, ornate crown with spade patterns (the crown features spade symbols, like those on playing cards), a high ruffled collar, a robe with spade motifs and decorative patterns (including a heart symbol on the chest), holding a small flower in the right hand, and gesturing with the left hand. The figure has exaggerated facial features: large eyes, a mustache, and an open mouth.  \n2. **Position**: Right side of the spread (right page), positioned to the right of the text block, occupying the right portion of the right page.  \n3. **Visual Style**: Black and white hand-drawn illustration with bold outlines and detailed linework for clothing and accessories.  \n4. **Composition**: Frontal perspective but facing left (toward the profile). The crown is large, with spade symbols; the robe has intricate patterns. Angle is a three-quarter view, but the face is frontal. Contrast is high due to black and white, with bold outlines. Key visual qualities: exaggerated facial features, detailed patter",
+        "position": "right_page",
+        "subject": "A stylized line drawing of a playing card figure, the Queen of Hearts. She has a grotesque, wide-eyed expression, an open mouth, and is wearing a crown-like headdress decorated with hearts. She holds a small flower scepter in one hand and has a clenched fist with the other, with a large black heart on her chest.",
         "source_type": "illustration",
-        "source_credit": "uncredited",
-        "estimated_date": "c. 1960s",
-        "composition": "",
-        "scale": "full_spread",
-        "relationship_to_text": ""
+        "composition": "The figure is shown from the waist up, angled slightly toward the viewer but with her head turned to face left. The lines are clear and defined, creating a cartoonish but menacing character. The expression is one of manic authority or shock.",
+        "scale": "dominant",
+        "estimated_date": "Style reminiscent of late 19th-century illustration (e.g., John Tenniel).",
+        "interactive_meaning": {
+          "contact": "offer",
+          "social_distance": "close_social",
+          "attitude_angle": "frontal"
+        }
+      },
+      {
+        "position": "inset_left",
+        "subject": "A high-contrast, grainy silhouette of a young woman's head and shoulders in profile, facing right. She has dark, wavy hair. The image appears to be a heavily processed photograph.",
+        "source_type": "art_photograph",
+        "composition": "A simple profile view. The high-contrast processing removes all internal detail, reducing the figure to a dark, textured shape. This stark, photographic style contrasts sharply with the clean line drawing of the Queen.",
+        "scale": "small_inset",
+        "estimated_date": "Circa 1960s",
+        "interactive_meaning": {
+          "contact": "offer",
+          "social_distance": "close_social",
+          "attitude_angle": "oblique"
+        }
       }
     ],
     "design": {
-      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe page is **divided vertically**: text occupies the **left half**, while the illustration (a stylized Queen of Hearts figure) dominates the **right half**. The text is left-aligned in a single column, with dialogue bubbles and narrative text stacked vertically. The image is positioned to the right of the text, creating a clear visual hierarchy where text explains the scene and the illustration visually embodies the dialogue. The space is balanced but leans toward the image’s prominence due to its size and detailed linework.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: All visible text is **body text** (narrative/dialogue), with no large display text.  \n- **Font style**: The text uses a **handwritten/script-like serif font** (e.g., cursive or decorative serif), common in illustrated children’s books to evoke whimsy.  \n- **Weight/contrast**: Text is **medium-weight** (not bold or light), with consistent black-on-white contrast.  \n- **Layout**: Text is left-aligned, with line breaks matching the narrative flow (e.g., dialogue tags like *“No!”* are visually distinct).  \n\n\n### 3. CONTRAST & TONE  \n- **Predominant tone**: **Light** (white background) with **high contrast** (black text/illustration).  \n- **Visual impact**: The stark black-and-white palette creates sharp definition, emphasizing the illustration’s details (e.g., the Queen’s ornate crown, floral details) and the text’s readability.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The text block has ample white space around it (e.g., margins, spacing between lines), while the illustration’s right-side placement leaves room for the image to breathe.  \n- **Effect**: White space separates text and image, preventing visual clutter while maintaining a cohesive flow. It feels intentional, not sparse or packed.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Dynamic**: The text and image form a **complementary, unified relationship**. The text *narrates* the scene (e.g., Alice’s protest), whi",
+      "layout_description": "The page is arranged as a confrontation. Handwritten-style text occupies the upper left. A large, aggressive illustration of the Queen dominates the right. A small, dark silhouette of Alice is positioned on the lower left, facing the Queen, creating a strong diagonal line of interaction between the two figures.",
       "typography": {
-        "body_font_style": "Serif text",
-        "display_font_style": null,
-        "special_treatments": []
+        "body_font_style": null,
+        "display_font_style": "The text is not typeset but is a script that mimics handwriting. It is informal, slightly uneven, and integrated with the illustrations as a single compositional element. It recounts a dialogue from 'Alice in Wonderland'.",
+        "special_treatments": [
+          "Handwritten-style script instead of typeset font"
+        ]
       },
-      "color_and_tone": "Black and white.",
-      "white_space": "sparse",
-      "visual_density": "dense",
-      "left_right_relationship": "mirror"
+      "color_and_tone": {
+        "contrast": "high",
+        "dominant_tone": "light",
+        "description": "Stark black and white composition, combining clean line art with a grainy, high-contrast photographic element."
+      },
+      "white_space": "abundant",
+      "visual_density": "sparse",
+      "left_right_relationship": "This is a single page composition. The right side (Queen) visually dominates and confronts the left side (Alice and text).",
+      "information_value": {
+        "left_right": "single_page",
+        "top_bottom": "ideal_real",
+        "center_margin": "distributed"
+      },
+      "compositional_framing": "weakly_framed"
     },
     "rhetoric": {
-      "argument": "\"Now for the evidence,\" said the King, \"and then the sentence.\"\n\"No!\" said the Queen, \"first the sentence, and then the evidence!\"\n\"Nonsense!\" cried Alice, so loudly that everybody jumped, \"the idea of having the sentence first!\".",
-      "rhetorical_strategy": "Juxtaposition of text and image — the relationship between word and picture creates meaning neither carries alone.",
+      "argument": "The Alice in Wonderland quotation introduces the theme of epistemological vertigo: in a world where everything communicates and every medium has moral consequences, the challenge shifts from finding meaning to navigating an excess of it—Wonderland as media environment.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": [
+          "demonstration"
+        ]
+      },
+      "strategy_description": "The spread juxtaposes elements through its combination of text and design. Secondary strategies of demonstration reinforce the primary approach.",
       "design_enacts_argument": true,
       "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
       "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
       "mcluhan_concepts": [
-        "media_ecology"
-      ]
+        "environment_as_invisible"
+      ],
+      "multi_spread_patterns": "spreads_025_075:alice_references: Alice in Wonderland appears at three structural points (025, 034, 075/081-082), marking transitions from theory to culture (025), from analysis to wordplay (034), and from arguments to identity crisis (081-082), with Alice serving as the reader's avatar in the media landscape.",
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
-        "perception",
+        "perception_and_senses",
         "technology_and_body"
       ],
-      "contemporary_domain_candidates": [],
-      "movement_mapping": [],
-      "mapping_rationale": ""
+      "contemporary_domain_candidates": [
+        "post_literacy_and_language",
+        "attention_and_cognition"
+      ],
+      "movement_mapping": [
+        "movement_1_environment"
+      ],
+      "mapping_rationale": "The alphabet's sensory translation (ear to eye) anticipates contemporary cross-modal translations—voice-to-text, text-to-image AI, multimodal interfaces—each of which restructures cognition in ways McLuhan would recognize as extensions that amputate as much as they amplify.",
+      "confidence": "moderate"
     },
     "progression": {
       "pace_shift": "steady",
       "thematic_function": "develops_theme",
-      "relationship_to_previous": "",
-      "relationship_to_next": ""
+      "relationship_to_previous": "The ear/alphabet discussion explains why Alice's world is disorienting: the alphabet restructured consciousness from acoustic immersion to visual linearity, and that restructuring is now being reversed.",
+      "relationship_to_next": "The alphabetic analysis leads to deeper historical context about pre-literate consciousness, building the case for what was lost in the translation from ear to eye.",
+      "confidence": "moderate"
     },
-    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+    "notes": "This spread begins the book's deep historical argument: the alphabet is not merely a notation system but a perceptual technology that created the preconditions for Western civilization's defining characteristics—individualism, linear logic, legal systems, scientific method. The ear/eye contrast will structure the rest of the book's analysis.\n\n[Gemini visual description] A reader encounters a sparse, single-page composition dominated by a grotesque line drawing of the Queen of Hearts from 'Alice in Wonderland'. She confronts a small, photographic silhouette of Alice, while handwritten text of their famous 'sentence first, evidence later' dialogue frames the scene. The clash of illustrative styles—clean line art versus grainy photo—creates a sense of disorientation and highlights the absurdity of the quoted logic."
   },
   "ocr": {
     "ocr_raw": "\"Now for the evidence,\" said the King, \"and then the sentence.\"\n\"No!\" said the Queen, \"first the sentence, and then the evidence!\"\n\"Nonsense!\" cried Alice, so loudly that everybody jumped, \"the idea of having the sentence first!\"",
@@ -87,5 +132,68 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe page is **divided vertically**: text occupies the **left half**, while the illustration (a stylized Queen of Hearts figure) dominates the **right half**. The text is left-aligned in a single column, with dialogue bubbles and narrative text stacked vertically. The image is positioned to the right of the text, creating a clear visual hierarchy where text explains the scene and the illustration visually embodies the dialogue. The space is balanced but leans toward the image’s prominence due to its size and detailed linework.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: All visible text is **body text** (narrative/dialogue), with no large display text.  \n- **Font style**: The text uses a **handwritten/script-like serif font** (e.g., cursive or decorative serif), common in illustrated children’s books to evoke whimsy.  \n- **Weight/contrast**: Text is **medium-weight** (not bold or light), with consistent black-on-white contrast.  \n- **Layout**: Text is left-aligned, with line breaks matching the narrative flow (e.g., dialogue tags like *“No!”* are visually distinct).  \n\n\n### 3. CONTRAST & TONE  \n- **Predominant tone**: **Light** (white background) with **high contrast** (black text/illustration).  \n- **Visual impact**: The stark black-and-white palette creates sharp definition, emphasizing the illustration’s details (e.g., the Queen’s ornate crown, floral details) and the text’s readability.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The text block has ample white space around it (e.g., margins, spacing between lines), while the illustration’s right-side placement leaves room for the image to breathe.  \n- **Effect**: White space separates text and image, preventing visual clutter while maintaining a cohesive flow. It feels intentional, not sparse or packed.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Dynamic**: The text and image form a **complementary, unified relationship**. The text *narrates* the scene (e.g., Alice’s protest), while the illustration *visually embodies* the Queen’s exaggerated reaction.  \n- **Balance**: Neither dominates; text drives the narrative, and the image reinforces it. This mirrors the story’s playful tension (e.g., the King/Queen’s debate over “evidence vs. sentence”).  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Whimsical, chaotic, and energetic**. The hand-drawn style, exaggerated character features (e.g., the Queen’s large head, expressive face), and Alice’s shouted “Nonsense!” evoke the absurdity of *Alice in Wonderland*.  \n- **Tone**: Not calm or minimal—instead, it feels **overwhelmingly lively**, with high contrast and dynamic linework creating a sense of urgency (e.g., Alice’s shout “so loudly that everybody jumped”). This aligns with the story’s surreal, rule-defying logic.",
     "layout_analysis_time": 9.0,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_026",
+    "movement": "movement_1_environment",
+    "original_summary": {
+      "spread_type": "text_with_specific_image",
+      "section": "body",
+      "book_pages": [
+        42,
+        43
+      ],
+      "original_themes": [
+        "perception_and_senses",
+        "technology_and_body"
+      ],
+      "rhetorical_strategy": "defamiliarization",
+      "design_enacts_argument": true,
+      "design_argument_description": "The Alice in Wonderland quote ('Sentence first — verdict afterwards!') and surreal imagery defamiliarize legal and logical norms, making the reader see the absurdity of reversed causality.",
+      "text_excerpt": "'No, no!' said the Queen. 'Sentence first — verdict afterwards.' 'Stuff and nonsense!' said Alice."
+    },
+    "contemporary_plan": {
+      "theme": "Sentence first, verdict after: algorithmic pre-crime",
+      "argument": "Carroll's Queen of Hearts demanded the sentence before the verdict. Algorithmic governance delivers exactly this. COMPAS recidivism scores determine sentences before trials are conducted — ProPublica's 2016 investigation found the system was twice as likely to falsely flag Black defendants as future criminals. Palantir's Gotham platform routes police patrols before crimes occur. Amazon's recruitment AI screened out women before interviews happened. The sentence comes first; the verdict (evidence, trial, due process) is generated retroactively to justify it. Noble's 'Algorithms of Oppression' documents the racial architecture of these pre-emptive systems. Alice's 'Stuff and nonsense!' no longer applies: the nonsense is operational.",
+      "text": {
+        "approach": "quotation",
+        "description": "The Alice quote retained from the original, centered at top: 'Sentence first — verdict afterwards!' Below: a two-column layout. Left column: algorithmic systems that pre-judge (COMPAS, PredPol, Palantir, automated welfare denial). Right column: the populations they disproportionately affect. The visual structure performs the verdict (left) and sentence (right) in reversed order.",
+        "voice_notes": "Darkly comic, then serious. The Carroll quotation should initially amuse, then curdle as the examples accumulate."
+      },
+      "image": {
+        "approach": "found",
+        "subject": "A risk-assessment dashboard or predictive policing heat map — the algorithm's 'sentence' visualized as colored zones on a city map, red and orange zones overlaying specific neighborhoods. The image should feel clinical and authoritative, which is precisely the problem.",
+        "mood": "bureaucratic_menace",
+        "image_text_relationship": "ironizes"
+      },
+      "rhetoric": {
+        "strategy": "defamiliarization",
+        "design_enacts": "The Carroll quotation defamiliarizes algorithmic governance by framing it as Wonderland logic. The reader sees predictive policing through Alice's eyes — as absurd — before the examples make it real. The gap between the whimsy of the quote and the gravity of the examples IS the critique."
+      },
+      "mapping": {
+        "relationship_to_original": "inversion",
+        "convergences": [
+          "failure_of_propositions"
+        ],
+        "thinkers": [
+          "Noble"
+        ],
+        "quotations": [
+          {
+            "text": "'No, no!' said the Queen. 'Sentence first — verdict afterwards.'",
+            "author": "Lewis Carroll",
+            "source": "Alice's Adventures in Wonderland, 1865, Chapter XII",
+            "rationale": "Historical presaging quote, retained from the original. Now operational rather than absurd."
+          }
+        ]
+      },
+      "dependencies": "Opens the culmination phase of M1 (026-035). The Alice quote connects to the original's use at this position."
+    },
+    "paper_trace": "convergence:failure_of_propositions — propositional logic (if X then Y) applied to human behavior produces injustice",
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

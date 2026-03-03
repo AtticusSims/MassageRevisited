@@ -1,0 +1,48 @@
+{
+  "spread_id": "spread_003",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:01:07.880740",
+  "generation_time_s": 24.4,
+  "images": [
+    {
+      "position": "spanning_horizontal_top",
+      "subject": "A semi-transparent, light-colored horizontal band that partially obscures the text beneath it.",
+      "source_type": "graphic_symbol",
+      "composition": "A simple horizontal rectangle with soft, slightly feathered edges is overlaid on the top section of text, creating a layered, partially obscured effect.",
+      "scale": "small_inset",
+      "estimated_date": null,
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single, portrait-oriented page, likely the back cover of a modern edition. It features a single column of left-aligned text providing biographical information for the authors and credits for the publisher. The layout is structured into distinct paragraphs, but a semi-transparent horizontal band cuts across the top paragraph, introducing a deconstructed, layered element.",
+    "typography": {
+      "body_font_style": "A sans-serif typeface is used for all text. The body text is set in a regular weight, while book titles are highlighted in a contrasting red color. The overall text quality has a slightly soft or degraded appearance, possibly an intentional design choice.",
+      "display_font_style": null,
+      "special_treatments": [
+        "Text is partially obscured by a semi-transparent overlay.",
+        "Use of a second color (red) to highlight specific words (book titles) within the body text.",
+        "The text has a slightly blurry or low-resolution quality, mimicking digital distortion."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "moderate",
+      "dominant_tone": "light",
+      "description": "The page uses black and red text on a light, slightly cool-toned background. A semi-transparent white band adds a layer of visual noise and reduces contrast in the top section."
+    },
+    "white_space": "moderate",
+    "visual_density": "moderate",
+    "left_right_relationship": "This is a single page, not a spread.",
+    "information_value": {
+      "left_right": "single_page",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This page appears to be the back cover of a modern reprint, featuring biographical blurbs for McLuhan, Fiore, and Agel, alongside publisher details. The design is clean but intentionally disrupted by a semi-transparent band obscuring some text, and the use of red for emphasis, reflecting a more contemporary, deconstructed design aesthetic than the original 1967 book."
+}

@@ -1,0 +1,304 @@
+{
+  "version": "1.0",
+  "updated": "2026-03-02",
+  "description": "Controlled vocabulary registry for original_themes field. Updated after each batch of analyses. Terms drawn from batch_create_analysis.py keyword detection, manual annotations in spreads 001-010, and the thematic terrain of McLuhan/Fiore's The Medium is the Massage.",
+  "terms": {
+    "media_as_environment": {
+      "definition": "The idea that media are not neutral channels but pervasive environments that reshape perception, behavior, and social organization. Central to McLuhan's argument that we live inside our media rather than merely using them.",
+      "first_used": "spread_001",
+      "related_terms": ["media_ecology", "electric_technology", "perception_and_senses"]
+    },
+    "electric_technology": {
+      "definition": "The constellation of electronic and electric media (telegraph, radio, television, computers) that McLuhan argues has restructured human experience by collapsing space and time and retribalizing culture.",
+      "first_used": "spread_001",
+      "related_terms": ["speed_and_acceleration", "space_and_time", "tribal_culture"]
+    },
+    "fragmentation_vs_unification": {
+      "definition": "The tension between the fragmenting, specializing tendency of print/mechanical culture and the unifying, integrating tendency of electric media. A recurring structural opposition throughout the book.",
+      "first_used": "spread_001",
+      "related_terms": ["print_culture", "tribal_culture", "electric_technology"]
+    },
+    "education": {
+      "definition": "Critique of formal educational institutions as products of print culture, ill-suited to the electric age. McLuhan argues schools impose obsolete linear, specialist thinking on students shaped by electronic media.",
+      "first_used": "spread_001",
+      "related_terms": ["youth_and_generation", "print_culture", "media_literacy"]
+    },
+    "consumer_culture": {
+      "definition": "The commercial environment of advertising, branding, and mass consumption as both a product of and participant in media transformation. Images from consumer culture serve as evidence throughout the book.",
+      "first_used": "spread_001",
+      "related_terms": ["visual_rhetoric", "identity", "information"]
+    },
+    "anxiety_and_despair": {
+      "definition": "The psychological dislocation, confusion, and existential unease produced by rapid media change. McLuhan treats anxiety not as pathology but as a natural response to environmental transformation.",
+      "first_used": "spread_001",
+      "related_terms": ["identity", "speed_and_acceleration", "obsolescence"]
+    },
+    "identity": {
+      "definition": "How selfhood, individuality, and personal identity are constituted and destabilized by media environments. Electric media dissolve the fixed, private self that print culture constructed.",
+      "first_used": "spread_001",
+      "related_terms": ["privacy", "public_private_collapse", "perception_and_senses"]
+    },
+    "perception_and_senses": {
+      "definition": "McLuhan's thesis that media alter the ratio among the human senses, privileging some (sight in print culture) while suppressing others. Each medium restructures how we perceive the world.",
+      "first_used": "spread_001",
+      "related_terms": ["sensory_experience", "synesthesia", "media_as_environment"]
+    },
+    "space_and_time": {
+      "definition": "The restructuring of spatial and temporal experience by media. Electric media collapse distance and enforce simultaneity, replacing the sequential, uniform space-time of print culture.",
+      "first_used": "spread_001",
+      "related_terms": ["electric_technology", "speed_and_acceleration", "tribal_culture"]
+    },
+    "print_culture": {
+      "definition": "The civilization organized around the printed book: linear thinking, individualism, nationalism, specialization, and visual dominance. McLuhan treats it as an environment now being superseded by electric media.",
+      "first_used": "spread_001",
+      "related_terms": ["fragmentation_vs_unification", "typographic_expression", "the_book_as_medium"]
+    },
+    "tribal_culture": {
+      "definition": "Pre-literate social organization characterized by oral communication, communal identity, acoustic space, and simultaneous sensory engagement. McLuhan argues electric media are retribalizing the world.",
+      "first_used": "spread_001",
+      "related_terms": ["electric_technology", "fragmentation_vs_unification", "participation"]
+    },
+    "youth_and_generation": {
+      "definition": "The generational divide between those raised in print culture and those raised in the electric environment. McLuhan sees youth as native inhabitants of the new media landscape.",
+      "first_used": "spread_001",
+      "related_terms": ["education", "electric_technology", "identity"]
+    },
+    "war_and_violence": {
+      "definition": "The relationship between media and warfare, including how electric media make violence immediate and visceral, and how media change itself constitutes a form of violence to existing social structures.",
+      "first_used": "spread_001",
+      "related_terms": ["the_violence_of_new_media", "electric_technology", "anxiety_and_despair"]
+    },
+    "art_and_creativity": {
+      "definition": "The artist as early warning system who perceives media environments before others. McLuhan draws on art and artists throughout as models for the kind of awareness electric culture demands.",
+      "first_used": "spread_001",
+      "related_terms": ["pattern_recognition", "media_literacy", "defamiliarization"]
+    },
+    "technology_and_body": {
+      "definition": "McLuhan's concept that all technologies are extensions of the human body and nervous system. Electric media extend the central nervous system itself, creating a global body.",
+      "first_used": "spread_001",
+      "related_terms": ["technology_as_extension", "the_body", "perception_and_senses"]
+    },
+    "clothing_and_housing": {
+      "definition": "Clothing and architecture understood as media -- extensions of the skin that create environments and communicate identity. McLuhan uses them to demonstrate that all human artifacts are media.",
+      "first_used": "spread_001",
+      "related_terms": ["technology_and_body", "media_as_environment", "identity"]
+    },
+    "automation": {
+      "definition": "The replacement of human labor and decision-making by machines and computers. McLuhan sees automation not as a mere economic shift but as the logical endpoint of technological extension.",
+      "first_used": "spread_001",
+      "related_terms": ["electric_technology", "information", "obsolescence"]
+    },
+    "information": {
+      "definition": "The shift from an economy of goods to an economy of information. Electric media turn information into the primary commodity and restructure all institutions around its flow.",
+      "first_used": "spread_001",
+      "related_terms": ["electric_technology", "automation", "speed_and_acceleration"]
+    },
+    "privacy": {
+      "definition": "The dissolution of private life under electric media conditions. Privacy is a product of print culture's creation of the individual; electric media expose and dissolve it.",
+      "first_used": "spread_001",
+      "related_terms": ["public_private_collapse", "surveillance", "identity"]
+    },
+    "surveillance": {
+      "definition": "The capacity of electric media to make all human activity visible and monitorable. McLuhan anticipates the surveillance implications of interconnected electronic networks.",
+      "first_used": "spread_001",
+      "related_terms": ["privacy", "public_private_collapse", "electric_technology"]
+    },
+    "visual_rhetoric": {
+      "definition": "The use of images, photographs, and visual composition to advance arguments non-verbally. In the book, Fiore's visual selections function as independent rhetorical acts, not mere illustrations.",
+      "first_used": "spread_001",
+      "related_terms": ["design_as_content", "art_and_creativity", "typographic_expression"]
+    },
+    "typographic_expression": {
+      "definition": "The use of typography itself -- scale, orientation, weight, placement -- as a rhetorical and expressive medium. Fiore transforms letterforms into visual arguments that enact McLuhan's thesis.",
+      "first_used": "spread_001",
+      "related_terms": ["visual_rhetoric", "design_as_content", "print_culture"]
+    },
+    "media_ecology": {
+      "definition": "The study of media as environments and environments as media. The overarching intellectual framework of the book, treating communication technologies as ecosystems that shape human life.",
+      "first_used": "spread_001",
+      "related_terms": ["media_as_environment", "electric_technology", "pattern_recognition"]
+    },
+    "obsolescence": {
+      "definition": "The process by which new media render previous media and their associated social forms obsolete. McLuhan treats obsolescence not as failure but as a structural feature of media succession.",
+      "first_used": "spread_001",
+      "related_terms": ["electric_technology", "print_culture", "speed_and_acceleration"]
+    },
+    "participation": {
+      "definition": "The demand for active involvement that electric media place on audiences, contrasted with the passive spectatorship of print. Cool media require the audience to fill in and complete the message.",
+      "first_used": "spread_001",
+      "related_terms": ["tribal_culture", "electric_technology", "the_book_as_medium"]
+    },
+    "speed_and_acceleration": {
+      "definition": "The increasing velocity of information flow and social change under electric conditions. McLuhan argues that speed itself becomes a transformative medium, compressing cause and effect.",
+      "first_used": "spread_001",
+      "related_terms": ["electric_technology", "space_and_time", "anxiety_and_despair"]
+    },
+    "public_private_collapse": {
+      "definition": "The erosion of the boundary between public and private life under electric media. Television, radio, and electronic networks bring the public world into private space and expose private life to public view.",
+      "first_used": "spread_001",
+      "related_terms": ["privacy", "surveillance", "electric_technology"]
+    },
+    "sensory_experience": {
+      "definition": "Direct emphasis on bodily sensation and sensory engagement as a way of knowing. The book's design appeals to touch, sight, and spatial awareness beyond conventional reading.",
+      "first_used": "spread_001",
+      "related_terms": ["perception_and_senses", "synesthesia", "the_body"]
+    },
+    "synesthesia": {
+      "definition": "The blending or interplay of multiple senses, which McLuhan argues electric media restore after centuries of visual dominance under print. The book itself attempts synesthetic experience through design.",
+      "first_used": "spread_001",
+      "related_terms": ["perception_and_senses", "sensory_experience", "tribal_culture"]
+    },
+    "pattern_recognition": {
+      "definition": "The ability to perceive structural patterns across media environments rather than focusing on content. McLuhan advocates pattern recognition as the essential skill for navigating the electric age.",
+      "first_used": "spread_001",
+      "related_terms": ["art_and_creativity", "media_ecology", "media_literacy"]
+    },
+    "the_book_as_medium": {
+      "definition": "Self-reflexive awareness that The Medium is the Massage is itself a medium whose physical form, design, and production constitute its argument. The book interrogates its own bookness.",
+      "first_used": "spread_001",
+      "related_terms": ["design_as_content", "print_culture", "typographic_expression"]
+    },
+    "design_as_content": {
+      "definition": "Fiore's principle that graphic design, layout, and visual composition are not decoration but primary carriers of meaning. The medium of the page IS the message of the page.",
+      "first_used": "spread_001",
+      "related_terms": ["the_book_as_medium", "visual_rhetoric", "typographic_expression"]
+    },
+    "technology_as_extension": {
+      "definition": "McLuhan's foundational concept that every technology extends some human organ or capacity. The wheel extends the foot, clothing extends the skin, electric circuitry extends the nervous system.",
+      "first_used": "spread_001",
+      "related_terms": ["technology_and_body", "the_body", "media_as_environment"]
+    },
+    "the_body": {
+      "definition": "The human body as reference point for understanding media: technologies as prostheses, media as nervous system extensions, and physical sensation as a mode of engagement with the book.",
+      "first_used": "spread_001",
+      "related_terms": ["technology_and_body", "technology_as_extension", "sensory_experience"]
+    },
+    "the_violence_of_new_media": {
+      "definition": "The disruptive, destructive force that new media exert on existing social structures, institutions, and ways of life. Media change is not gentle evolution but violent transformation.",
+      "first_used": "spread_001",
+      "related_terms": ["war_and_violence", "obsolescence", "anxiety_and_despair"]
+    },
+    "defamiliarization": {
+      "definition": "The artistic and rhetorical strategy of making the familiar strange in order to reveal hidden structures. Fiore's design choices and McLuhan's aphorisms both work to defamiliarize everyday media experience.",
+      "first_used": "spread_001",
+      "related_terms": ["art_and_creativity", "visual_rhetoric", "humor_as_method"]
+    },
+    "humor_as_method": {
+      "definition": "The use of wit, puns, irony, and playfulness as serious intellectual tools. McLuhan's wordplay (massage/message) and Fiore's visual jokes are not ornamental but methodological.",
+      "first_used": "spread_001",
+      "related_terms": ["defamiliarization", "the_book_as_medium", "participation"]
+    },
+    "media_literacy": {
+      "definition": "The capacity to understand how media environments shape perception and thought. McLuhan's project is fundamentally pedagogical: teaching readers to see the water they swim in.",
+      "first_used": "spread_001",
+      "related_terms": ["education", "pattern_recognition", "media_ecology"]
+    },
+    "authorship": {
+      "definition": "Questions of who speaks, who creates, and how authorial identity functions in collaborative and multi-media contexts. The McLuhan-Fiore-Agel collaboration itself raises questions about authorship.",
+      "first_used": "spread_001",
+      "related_terms": ["collaboration", "the_book_as_medium", "identity"]
+    },
+    "collaboration": {
+      "definition": "The multi-author, multi-disciplinary production model of the book itself. McLuhan (theorist), Fiore (designer), and Agel (producer) enact the collaborative logic of electric media.",
+      "first_used": "spread_001",
+      "related_terms": ["authorship", "the_book_as_medium", "participation"]
+    },
+    "domesticity": {
+      "definition": "The home as a site of media transformation, where television and electric media dissolve the boundary between domestic space and the wider world.",
+      "first_used": "spread_001",
+      "related_terms": ["public_private_collapse", "clothing_and_housing", "the_everyday"]
+    },
+    "the_everyday": {
+      "definition": "Ordinary, mundane experience as the primary site where media effects are felt. McLuhan and Fiore draw on everyday imagery to show that media transformation is not abstract but lived.",
+      "first_used": "spread_001",
+      "related_terms": ["domesticity", "consumer_culture", "media_as_environment"]
+    },
+    "nature_vs_technology": {
+      "definition": "The relationship between the natural world and technological environments. McLuhan complicates simple opposition by arguing that technology is a natural extension of human biology.",
+      "first_used": "spread_001",
+      "related_terms": ["technology_and_body", "media_as_environment", "the_body"]
+    },
+    "epistemology": {
+      "definition": "How we know what we know, and how media shape the very structure of knowledge. McLuhan argues that each dominant medium produces its own epistemology -- its own standards of truth and evidence.",
+      "first_used": "spread_001",
+      "related_terms": ["perception_and_senses", "print_culture", "media_ecology"]
+    },
+    "prophecy": {
+      "definition": "McLuhan's anticipatory mode of analysis, which extrapolates present media tendencies into future social forms. The book's prophetic claims position it as both analysis and warning.",
+      "first_used": "spread_001",
+      "related_terms": ["electric_technology", "pattern_recognition", "art_and_creativity"]
+    },
+    "transformation": {
+      "definition": "Fundamental, structural change in human experience produced by media succession. Not gradual improvement but qualitative metamorphosis of perception, social organization, and identity.",
+      "first_used": "spread_001",
+      "related_terms": ["electric_technology", "obsolescence", "the_violence_of_new_media"]
+    },
+    "totality": {
+      "definition": "The all-at-once, simultaneous character of electric experience, contrasted with the sequential, segmented character of print. Electric media create a total field of awareness.",
+      "first_used": "spread_001",
+      "related_terms": ["space_and_time", "tribal_culture", "electric_technology"]
+    },
+    "touch": {
+      "definition": "The sense of touch as McLuhan's figure for the total sensory involvement that electric media restore. Touch implies contact, immediacy, and participation rather than detached observation.",
+      "first_used": "spread_001",
+      "related_terms": ["sensory_experience", "perception_and_senses", "the_body"]
+    },
+    "physicality": {
+      "definition": "The material, physical dimension of the book as object -- its weight, texture, page-turning rhythm, and tactile presence. Fiore's design foregrounds the book's physicality as part of its argument.",
+      "first_used": "spread_001",
+      "related_terms": ["the_book_as_medium", "touch", "the_body"]
+    },
+    "mediation": {
+      "definition": "The process by which media intervene between humans and their experience of the world. All perception is mediated; McLuhan's project is to make that mediation visible.",
+      "first_used": "spread_001",
+      "related_terms": ["media_as_environment", "perception_and_senses", "media_ecology"]
+    },
+    "infiltration": {
+      "definition": "The way media penetrate and reshape institutions, relationships, and consciousness without explicit awareness. Media change operates by stealth, altering environments before inhabitants notice.",
+      "first_used": "spread_001",
+      "related_terms": ["media_as_environment", "the_everyday", "surveillance"]
+    },
+    "disruption": {
+      "definition": "The shock and discontinuity that accompany media transitions. New media disrupt existing patterns of thought, social organization, and institutional function.",
+      "first_used": "spread_001",
+      "related_terms": ["the_violence_of_new_media", "obsolescence", "transformation"]
+    },
+    "convention": {
+      "definition": "Established habits, norms, and expectations shaped by previous media environments. McLuhan argues that conventions persist past their usefulness, creating friction with new media realities.",
+      "first_used": "spread_001",
+      "related_terms": ["print_culture", "obsolescence", "education"]
+    },
+    "commerce": {
+      "definition": "Economic activity and commercial exchange as shaped by media environments. Electric media transform commerce from physical goods exchange to information-based transaction.",
+      "first_used": "spread_001",
+      "related_terms": ["consumer_culture", "information", "automation"]
+    },
+    "cultural_relevance": {
+      "definition": "The question of how cultural products, institutions, and practices maintain or lose relevance as media environments shift. A meta-theme about the book's own enduring applicability.",
+      "first_used": "spread_001",
+      "related_terms": ["obsolescence", "prophecy", "media_ecology"]
+    },
+    "intimacy": {
+      "definition": "The paradoxical closeness and exposure that electric media create. Television and electronic networks produce a sense of intimate contact with distant events and strangers.",
+      "first_used": "spread_001",
+      "related_terms": ["public_private_collapse", "touch", "participation"]
+    },
+    "media_theory": {
+      "definition": "Explicit theoretical reflection on the nature and effects of media, as distinct from the experiential or rhetorical dimensions of the book. Spreads where McLuhan's argument is most directly discursive.",
+      "first_used": "spread_001",
+      "related_terms": ["media_ecology", "media_as_environment", "epistemology"]
+    },
+    "anxiety": {
+      "definition": "Short-form alias for anxiety_and_despair, generated by batch_create_analysis.py keyword detection. Prefer anxiety_and_despair for new manual annotations.",
+      "first_used": "spread_009",
+      "related_terms": ["anxiety_and_despair", "identity", "speed_and_acceleration"],
+      "canonical_form": "anxiety_and_despair"
+    },
+    "perception": {
+      "definition": "Short-form alias for perception_and_senses, generated by batch_create_analysis.py keyword detection. Prefer perception_and_senses for new manual annotations.",
+      "first_used": "spread_001",
+      "related_terms": ["perception_and_senses", "sensory_experience", "synesthesia"],
+      "canonical_form": "perception_and_senses"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_036",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:19:05.008083",
+  "generation_time_s": 24.8,
+  "images": [
+    {
+      "position": "left_page",
+      "subject": "A high-contrast, black and white photograph characterized by extreme horizontal motion blur. The image is abstract and dark, composed of streaks of light and shadow that suggest immense speed, like a view from a fast-moving vehicle at night or a long-exposure shot of traffic. A bright, distorted white shape is visible near the bottom.",
+      "source_type": "art_photograph",
+      "composition": "The composition is dominated by horizontal lines and a dark, low-key tone. It creates a sense of disorientation and velocity, prioritizing atmosphere and sensation over a clear, identifiable subject. The texture of the film grain and the blurred light streaks are the primary visual elements.",
+      "scale": "full_bleed",
+      "estimated_date": "circa 1960-1967",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is starkly divided by the gutter. The left page is entirely consumed by a full-bleed, dark, abstract photograph. The right page is a clean, white field containing a single, justified column of black text, with the page number '63' at the top right corner.",
+    "typography": {
+      "body_font_style": "Serif, medium weight, justified in a single column that occupies approximately two-thirds of the page width.",
+      "display_font_style": null,
+      "special_treatments": [
+        "The word 'd-a-n-g-l-i-n-g' is hyphenated between each letter, visually slowing the act of reading and enacting the feeling of being suspended or fragmented."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread presents a powerful binary of a dark, photographic left page and a light, typographic right page, creating maximum contrast across the gutter."
+    },
+    "white_space": "moderate",
+    "visual_density": "moderate",
+    "left_right_relationship": "Juxtaposition and contrast. The non-linear, atmospheric, 'cool' image of speed on the left provides the experiential context for the linear, 'hot,' analytical text on the right. The image creates the feeling that the text then explains.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "balanced",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "A reader encounters a starkly divided spread that contrasts feeling with explanation. On the left, a full-page, dark, blurry photograph creates a disorienting sensation of high speed. On the right, a clean white page presents a dense block of text analyzing the consequences of this new electric velocity, such as the collapse of space and the shift from linear thinking to pattern recognition."
+}

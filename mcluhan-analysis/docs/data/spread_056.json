@@ -8,7 +8,9 @@
       103
     ],
     "section": "body",
-    "spread_type": "image_dominant",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
+    "spread_type": "press_photo_with_title",
     "orientation": "landscape_spread",
     "text": {
       "body_text": "",
@@ -21,53 +23,84 @@
     "quotations": [],
     "images": [
       {
-        "position": "right_page",
-        "subject": "### 1. Black and White Photograph  \n**1. What does it depict?**  \nA group of young men in academic regalia (dark gowns with attached hoods, some wearing caps) walking out of a graduation ceremony. The scene includes a dense crowd of onlookers: some in formal attire (suits, ties), others in academic dress. In the background, a brick building with trees and a structure with a flag (likely a university building) is visible. The action shows students exiting the event, suggesting a protest or walkout during a speech.  \n\n**2. Where is it positioned?**  \nFull bleed across the top of the spread, spanning both left and right pages.  \n\n**3. Visual style**  \nBlack and white photograph with high contrast, capturing a candid, documentary-style moment.  \n\n**4. Composition**  \n- **Framing**: Shot from a slightly low angle, focusing on the crowd’s movement. The foreground shows the backs of heads of onlookers, the midground features students in gowns walking, and the background includes more attendees and architectural elements.  \n- **Angle**: Eye-level to slightly low, emphasizing the students’ movement.  \n- **Contrast**: Strong contrast between dark gowns/suits and lighter areas (e.g., sky, building).  \n- **Key visual qualities**: Dynamic, with a sense of motion; the density of people creates a chaotic yet purposeful atmosphere. Some figures are in sharp focus, while others are blurred to highlight the action.  \n\n**5. Page occupation**  \nApproximately 66% of the page (top two-thirds).  \n\n\n### 2. \"EDUCATION\" Graphic Symbol  \n**1. What does it depict?**  \nThe word \"EDUCATION\" rendered in large, bold, sans-serif typeface. The letters are split into \"ED\" (left) and \"UCATION\" (right), but the design integrates them into a single cohesive unit. The text has a textured or slightly distressed appearance, with subtle shadows or embossed effects on some letters.  \n\n**2. Where is it positioned?**  \nPositioned at the bottom of the spread, spanning both pages (full bleed across the bottom). ",
-        "source_type": "graphic",
-        "source_credit": "Wide World Photos, Inc.",
-        "estimated_date": "c. 1960s",
-        "composition": "",
-        "scale": "full_spread",
-        "relationship_to_text": ""
+        "position": "dominant",
+        "subject": "A group of young white men in academic graduation gowns walking in a procession, seemingly walking out of a ceremony. The caption identifies them as Amherst seniors walking out on a graduation address by Secretary of Defense Robert McNamara in June 1966. The students have serious expressions. In the background, older men in suits and gowns are seated, observing the walkout. One person in the procession holds up a camera with a flash.",
+        "source_type": "press_photo",
+        "composition": "A grainy, high-contrast black and white photograph taken from a slightly low angle within the crowd. The composition is dynamic, with the students moving from left to right across the frame, creating diagonal lines. The focus is slightly soft, conveying a sense of motion and immediacy.",
+        "scale": "dominant",
+        "estimated_date": "June 1966",
+        "interactive_meaning": {
+          "contact": "offer",
+          "social_distance": "far_social",
+          "attitude_angle": "low_angle"
+        }
       }
     ],
     "design": {
-      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is divided into **two primary zones**:  \n- **Top section (image)**: A black-and-white photograph dominates the upper two-thirds, depicting a crowd of people (likely students) protesting during a graduation event. The photo is dense with figures, filling the frame without significant negative space.  \n- **Bottom section (text)**: Text is split into two parts:  \n  - A **small, left-aligned caption** beneath the photo, providing context (“Amherst seniors walk out on graduation address by Secretary of Defense Robert McNamara. June, 1966.”).  \n  - A **large, bold title** (“EDUCATION”) positioned in the bottom-right corner, spanning the width of the spread.  \n\nThe space is structured as **image (top) + text (bottom)**, with the text further divided into left (caption) and right (title) to create visual balance. The photo’s density contrasts with the sparse text area, emphasizing the image as the focal point.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text (caption)**:  \n  - *Size*: Small (typical of newspaper-style captions).  \n  - *Font*: Serif (e.g., Times New Roman), suggesting traditional print design.  \n  - *Weight*: Light (normal weight, not bold).  \n  - *Color*: Black on white (standard for print).  \n- **Display text (“EDUCATION”)**:  \n  - *Size*: Large, dominant (occupies significant visual space).  \n  - *Font*: Sans-serif (blocky, geometric letterforms; likely a bold, modern typeface like Helvetica or a custom variant).  \n  - *Weight*: Bold (high-impact, commanding attention).  \n  - *Color*: Black on white (consistent with the caption, but larger scale).  \n\nThe typography creates a **hierarchy**: the caption provides context, while “EDUCATION” acts as a thematic anchor. The serif body text contrasts with the bold, sans-serif display text, emphasizing the latter’s importance.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The photograph uses stark black-and-white tonal ranges (shadows vs. highlights), while",
+      "layout_description": "This is a single-page layout. A large photograph occupies the top three-quarters of the page, bleeding to the top, left, and right edges. Below the image, in the white space of the bottom quarter, a small caption is set to the left, while the large, bold, stencil-font word 'EDUCATION' dominates the bottom right, partially disappearing into the book's gutter.",
       "typography": {
-        "body_font_style": "Sans-serif text",
-        "display_font_style": "Large display typography",
-        "special_treatments": []
+        "body_font_style": "Small, sans-serif font for the caption.",
+        "display_font_style": "Large, bold, black, stencil-style sans-serif font. The letters are thick and have a utilitarian, almost industrial or military feel.",
+        "special_treatments": [
+          "The display text 'EDUCATION' is slightly angled, rising from left to right.",
+          "The display text is positioned to be partially obscured by the gutter, making it feel like it's emerging from or receding into the spine of the book."
+        ]
       },
-      "color_and_tone": "Black and white.",
-      "white_space": "sparse",
-      "visual_density": "dense",
-      "left_right_relationship": "contrast"
+      "color_and_tone": {
+        "contrast": "high",
+        "dominant_tone": "balanced",
+        "description": "The spread uses stark black and white in both the photograph and the typography, creating a high-contrast, impactful visual."
+      },
+      "white_space": "minimal",
+      "visual_density": "moderate",
+      "left_right_relationship": "This is a single page, not a spread.",
+      "information_value": {
+        "left_right": "single_page",
+        "top_bottom": "ideal_real",
+        "center_margin": "distributed"
+      },
+      "compositional_framing": "mixed"
     },
     "rhetoric": {
-      "argument": "Brief textual element: 'EDUCATION'",
-      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
-      "design_enacts_argument": true,
-      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
-      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "argument": "The photograph of Amherst seniors walking out on Secretary McNamara's address—captioned EDUCATION—demonstrates that the clash between institutional authority and youth consciousness is not political disagreement but media incompatibility: the lecture format cannot contain electronic-age awareness.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": [
+          "demonstration"
+        ]
+      },
+      "strategy_description": "The spread juxtaposes elements through its combination of text and design. Secondary strategies of demonstration reinforce the primary approach.",
+      "design_enacts_argument": false,
+      "design_argument_description": "",
+      "reader_experience": "Brief encounter — the reader absorbs the spread quickly before moving forward.",
       "mcluhan_concepts": [
-        "media_ecology"
-      ]
+        "medium_is_the_message"
+      ],
+      "multi_spread_patterns": null,
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
         "education"
       ],
-      "contemporary_domain_candidates": [],
-      "movement_mapping": [],
-      "mapping_rationale": ""
+      "contemporary_domain_candidates": [
+        "attention_and_cognition",
+        "agency_and_autonomy"
+      ],
+      "movement_mapping": [
+        "movement_2_acceleration"
+      ],
+      "mapping_rationale": "The walkout as media protest anticipates how digital-native generations reject institutional communication formats (lectures, press conferences, official statements) in favor of participatory, horizontal, peer-to-peer modes—the format, not the content, is what's being rejected.",
+      "confidence": "moderate"
     },
     "progression": {
       "pace_shift": "accelerating",
-      "thematic_function": "punctuates",
-      "relationship_to_previous": "",
-      "relationship_to_next": ""
+      "thematic_function": "transition",
+      "relationship_to_previous": "The walkout photograph provides visual evidence for the preceding spread's analysis of educational crisis—theory confirmed by documented event.",
+      "relationship_to_next": "From institutional rejection to cultural diagnosis: Dylan as the voice of the generation that perceives what institutions cannot.",
+      "confidence": "moderate"
     },
-    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+    "notes": "The single word EDUCATION in massive type beneath the walkout photograph creates a powerful ironic commentary: what is being 'educated' here? The students are educating the institution about its own obsolescence. The photograph documents a moment where the invisible environment of the lecture hall becomes visible through its rejection.\n\n[Gemini visual description] A reader encounters a powerful, full-page press photograph of a 1966 student anti-war protest at a graduation ceremony. Below this image of dissent, the single word 'EDUCATION' is rendered in a large, aggressive stencil font, challenging the reader to reconsider the purpose and meaning of education in a time of social and political upheaval. The juxtaposition of the act of protest with the institutional label creates a tense and questioning experience."
   },
   "ocr": {
     "ocr_raw": "Amherst seniors walk out on graduation address by Secretary of Defense Robert McNamara. June, 1966.\nEDUCATION",
@@ -82,5 +115,60 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is divided into **two primary zones**:  \n- **Top section (image)**: A black-and-white photograph dominates the upper two-thirds, depicting a crowd of people (likely students) protesting during a graduation event. The photo is dense with figures, filling the frame without significant negative space.  \n- **Bottom section (text)**: Text is split into two parts:  \n  - A **small, left-aligned caption** beneath the photo, providing context (“Amherst seniors walk out on graduation address by Secretary of Defense Robert McNamara. June, 1966.”).  \n  - A **large, bold title** (“EDUCATION”) positioned in the bottom-right corner, spanning the width of the spread.  \n\nThe space is structured as **image (top) + text (bottom)**, with the text further divided into left (caption) and right (title) to create visual balance. The photo’s density contrasts with the sparse text area, emphasizing the image as the focal point.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text (caption)**:  \n  - *Size*: Small (typical of newspaper-style captions).  \n  - *Font*: Serif (e.g., Times New Roman), suggesting traditional print design.  \n  - *Weight*: Light (normal weight, not bold).  \n  - *Color*: Black on white (standard for print).  \n- **Display text (“EDUCATION”)**:  \n  - *Size*: Large, dominant (occupies significant visual space).  \n  - *Font*: Sans-serif (blocky, geometric letterforms; likely a bold, modern typeface like Helvetica or a custom variant).  \n  - *Weight*: Bold (high-impact, commanding attention).  \n  - *Color*: Black on white (consistent with the caption, but larger scale).  \n\nThe typography creates a **hierarchy**: the caption provides context, while “EDUCATION” acts as a thematic anchor. The serif body text contrasts with the bold, sans-serif display text, emphasizing the latter’s importance.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The photograph uses stark black-and-white tonal ranges (shadows vs. highlights), while the text relies on black-on-white contrast.  \n- **Tone**: Predominantly **dark** in the photograph (due to the black-and-white format and shadowy crowd), but the text area is **light** (white background). The overall tone is **neutral but intense**, driven by the photograph’s high-contrast imagery and the bold text.  \n\n\n### 4. WHITE SPACE  \n- **Image area**: **Packed** (no significant negative space; the photograph is dense with people).  \n- **Text area**: **Moderate** white space. The caption is small, leaving ample white space around it, while “EDUCATION” is positioned to allow breathing room on the right. The spread avoids clutter, using white space to frame the text and image.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Caption** (left): Positioned beneath the photo, it provides contextual detail and anchors the left side.  \n- **“EDUCATION”** (right): Dominates the right side, visually balancing the caption.  \n- **Relationship**: **Contrast** (left = informational caption; right = thematic title). The two text elements are **separate but complementary**, with the caption explaining the image and “EDUCATION” framing the broader context.  \n\n\n### 6. OVERALL FEEL  \nThe spread conveys an **aggressive, chaotic, and tense mood**. The photograph’s depiction of a protest (students walking out of a graduation ceremony) suggests unrest, while the high-contrast black-and-white format amplifies the drama. The bold, sans-serif “EDUCATION” title adds urgency, and the dense crowd in the photo creates a sense of urgency and conflict. The design feels **overwhelming** due to the protest’s intensity, but the clean typography and white space prevent it from being chaotic. The mood is **political and confrontational**, reflecting the historical context (likely related to anti-war protests during the Vietnam War era).",
     "layout_analysis_time": 13.0,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_056",
+    "movement": "movement_2_acceleration",
+    "original_summary": {
+      "spread_type": "press_photo_with_title",
+      "section": "body",
+      "book_pages": [
+        102,
+        103
+      ],
+      "original_themes": [
+        "education"
+      ],
+      "rhetorical_strategy": "juxtaposition",
+      "design_enacts_argument": false,
+      "design_argument_description": "",
+      "text_excerpt": "The TV child expects involvement and doesn't want a specialist job in the future."
+    },
+    "contemporary_plan": {
+      "theme": "Education when the answer is free",
+      "argument": "The original's 'EDUCATION' as environmental challenge returns with new force. The TV child expected involvement; the AI child expects generation. What does education mean when the student can generate the answer to any question? The Socratic method assumed the student didn't know; the AI era assumes the student has infinite access to answers but no wisdom about questions. Vervaeke's meaning crisis applied to pedagogy: propositional knowledge (facts, procedures, algorithms) has been externalized to machines, leaving participatory knowledge (wisdom, judgment, taste) as the only remaining human educational value -- and the one our institutions are least equipped to teach.",
+      "text": {
+        "approach": "display_text_only",
+        "description": "'EDUCATION' -- single word, monumental scale, spanning the spread. But the letterforms are subtly unstable: perhaps a generative font that shifts between serif and sans-serif, or letterforms that appear slightly different on close inspection than at a distance. Education persists as a word, but its referent is destabilizing.",
+        "voice_notes": "The weight of the single word should carry the entire argument. Monumental, but trembling. Education is still here -- but what does it mean?"
+      },
+      "image": {
+        "approach": "typography_only",
+        "subject": "The word EDUCATION at environmental scale IS the image. No additional visual elements.",
+        "mood": "monumental, unstable",
+        "image_text_relationship": "The typography IS both image and text simultaneously, collapsing the distinction."
+      },
+      "rhetoric": {
+        "strategy": "assertion",
+        "design_enacts": "The single word dominates the spread, but its typographic instability signals that the institution it names is being restructured by the medium it cannot yet perceive. The design argues through typography: the word is still legible, but its form is no longer stable."
+      },
+      "mapping": {
+        "relationship_to_original": "echo",
+        "convergences": [
+          "failure_of_propositions"
+        ],
+        "thinkers": [
+          "Vervaeke"
+        ],
+        "quotations": []
+      },
+      "dependencies": "Echoes spread 014 (education in M1) and the original's education spreads."
+    },
+    "paper_trace": "Vervaeke participatory vs. propositional knowledge. Education as M2's recurring institutional test case.",
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

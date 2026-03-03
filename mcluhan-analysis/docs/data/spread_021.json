@@ -8,64 +8,94 @@
       33
     ],
     "section": "body",
-    "spread_type": "image_dominant",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
+    "spread_type": "press_photo_with_title",
     "orientation": "landscape_spread",
     "text": {
       "body_text": "...is an extension of the foot",
-      "display_text": "SOUTH PL",
+      "display_text": "PLYMOUTH",
       "captions": [],
       "page_numbers_visible": []
     },
     "quotations": [],
     "images": [
       {
-        "position": "right_page",
-        "subject": "### 1. Depiction of Visual Element  \nThe image depicts a **close-up black-and-white photograph of a car wheel hubcap** (the circular metal cover on a vehicle’s wheel). The hubcap features concentric circular patterns with radial spokes and embossed text reading *“SOUTH PL”* (likely truncated from a longer phrase like *“SOUTH PLAZA”*). The hubcap is attached to a dark-colored car body, and the background includes a portion of a road surface with a **white painted line** (suggesting a street or highway), along with subtle texture (e.g., water droplets or wear on the road).  \n\n\n### 2. Position on the Page  \nThe photograph **spans both pages** (left and right) as a **full-bleed image**, covering the entire spread without any inset or separation between the left and right page areas. It is not confined to a single page but extends across the entire book spread.  \n\n\n### 3. Visual Style  \nThe element is a **black-and-white photograph** with high contrast, emphasizing the metallic sheen of the hubcap against the dark car body and road. The image uses sharp tonal gradients to highlight texture and detail.  \n\n\n### 4. Composition  \n- **Framing**: Tight close-up on the wheel hubcap, with the car body and road visible in the background. The frame is cropped to focus on the wheel’s circular geometry.  \n- **Angle**: Slightly oblique (not directly frontal), revealing the wheel’s curvature and the road surface on the right side of the spread.  \n- **Contrast**: Stark black-and-white contrast emphasizes the hubcap’s metallic texture (bright highlights on the spokes and central hub) against the dark car body and road.  \n- **Key Visual Qualities**: Radial symmetry of the hubcap’s design, sharp lines of the spokes, embossed text (*“SOUTH PL”*), and the textured road surface with a white line. The road’s white line adds a dynamic, directional element to the composition.  \n\n\n### 5. Page Occupation  \nThe photograph **occupies 100% of the page area** (full bleed), covering both the left and ",
-        "source_type": "advertisement",
-        "source_credit": "Peter Moore",
-        "estimated_date": "c. 1960s",
-        "composition": "",
-        "scale": "full_spread",
-        "relationship_to_text": ""
+        "position": "full_bleed",
+        "subject": "A dramatic, low-angle close-up of a car's wheel. The image features a black tire with a whitewall stripe and a detailed chrome hubcap with radial fins. The word 'PLYMOUTH' is visible in an arc on the hubcap. The wheel is on a dark asphalt surface with a painted white line.",
+        "source_type": "art_photograph",
+        "composition": "Dynamic, low-angle shot that fills the entire frame, creating a sense of power and monumentality. The composition is dominated by the strong curves of the tire and the radial pattern of the hubcap. High-contrast black and white photography emphasizes the metallic sheen and dark rubber.",
+        "scale": "full_bleed",
+        "estimated_date": "mid-1960s",
+        "interactive_meaning": {
+          "contact": "not_applicable",
+          "social_distance": "intimate",
+          "attitude_angle": "low_angle"
+        }
       }
     ],
     "design": {
-      "layout_description": "### 1. SPATIAL ARRANGEMENT  \n- **Text placement**: The phrase *\"...is an extension of the foot\"* sits in the **top-left corner**, small and unobtrusive.  \n- **Image placement**: The photograph dominates the spread, centered on a vintage car wheel (with the brand name *“BENTLEY”* visible on the hub). The wheel occupies the left-to-center portion, while the right side shows a blurred road surface with a white line.  \n- **Space division**: The layout is **asymmetrical**, with text confined to the top-left (a narrow vertical strip) and the image occupying ~80% of the spread. The wheel is the focal point, with negative space (dark background) surrounding it, creating a visual hierarchy where the image commands attention.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Only one visible text element: the header *\"...is an extension of the foot\"*.  \n- **Size/weight**: Small, **body text** (not display text). It appears **light** (thin weight) and **sans-serif** (clean, modern typeface).  \n- **Color**: **White on black** (reversed, as the image is monochrome). The brand name *“BENTLEY”* is part of the photograph, not separate typography.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly dark** (black-and-white photography with deep shadows on the car body and road).  \n- **Contrast**: **High contrast**—sharp delineation between the bright metallic wheel, white text, and dark background. The wheel’s reflective surfaces and the road’s textured white line amplify this contrast.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Sparse**. The text occupies minimal space, and the image’s dark background creates large areas of negative space (e.g., the top-right corner, the road’s shadowed regions). However, the wheel’s intricate details and the road’s texture prevent the spread from feeling empty.  \n- **Effect**: The sparse white space emphasizes the wheel’s precision and the text’s subtlety, avoiding visual clutter.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Continuation**",
+      "layout_description": "A single, full-bleed photograph of a car wheel spans both pages, creating a unified and immersive visual field. A single line of text is placed in the upper left corner, functioning as a caption or conceptual key to the dominant image.",
       "typography": {
-        "body_font_style": "Sans-serif text",
-        "display_font_style": "Large display typography",
-        "special_treatments": []
+        "body_font_style": "A single line of small serif text is present.",
+        "display_font_style": null,
+        "special_treatments": [
+          "Text begins with an ellipsis, suggesting it is a fragment continuing a thought from a previous page."
+        ]
       },
-      "color_and_tone": "Black and white.",
-      "white_space": "sparse",
-      "visual_density": "sparse",
-      "left_right_relationship": "contrast"
+      "color_and_tone": {
+        "contrast": "high",
+        "dominant_tone": "dark",
+        "description": "The stark contrast between the deep black of the tire and asphalt and the bright chrome of the hubcap and white lines creates a powerful, graphic quality."
+      },
+      "white_space": "none",
+      "visual_density": "moderate",
+      "left_right_relationship": "The single image creates a continuous visual field across the gutter, treating the two pages as one canvas. The text on the left provides the conceptual frame for the entire image.",
+      "information_value": {
+        "left_right": "given_new",
+        "top_bottom": "ideal_real",
+        "center_margin": "distributed"
+      },
+      "compositional_framing": "weakly_framed"
     },
     "rhetoric": {
-      "argument": "Brief textual element: 'SOUTH PL ...is an extension of the foot'",
-      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "argument": "The visual composite of wheel and foot transforms the abstract 'extensions' metaphor into a concrete image, demonstrating that the relationship between body and technology is not merely analogical but functionally continuous—the technology literally grows from the body's needs.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": []
+      },
+      "strategy_description": "The spread juxtaposes elements through its combination of text and design.",
       "design_enacts_argument": true,
       "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
       "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
       "mcluhan_concepts": [
-        "media_ecology"
-      ]
+        "medium_is_the_message"
+      ],
+      "multi_spread_patterns": null,
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
         "technology_and_body"
       ],
-      "contemporary_domain_candidates": [],
-      "movement_mapping": [],
-      "mapping_rationale": ""
+      "contemporary_domain_candidates": [
+        "post_literacy_and_language",
+        "attention_and_cognition"
+      ],
+      "movement_mapping": [
+        "movement_1_environment"
+      ],
+      "mapping_rationale": "The book/eye connection illuminates how screens have further extended and transformed visual processing, while the resurgence of non-visual media (podcasts, voice assistants, spatial audio) represents a partial reversal of the visual dominance that print created.",
+      "confidence": "moderate"
     },
     "progression": {
       "pace_shift": "accelerating",
       "thematic_function": "develops_theme",
-      "relationship_to_previous": "",
-      "relationship_to_next": ""
+      "relationship_to_previous": "Escalates from physical extension (foot/wheel) to perceptual extension (eye/book), raising the stakes from bodily capacity to cognitive organization.",
+      "relationship_to_next": "The statement about the book extending the eye prepares for the eye close-up that mirrors the earlier foot close-up, establishing the visual grammar of the extensions sequence.",
+      "confidence": "moderate"
     },
-    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+    "notes": "Moving from foot/wheel to eye/book escalates the argument: transportation extends physical capacity, but literacy extends perception itself. The stakes increase with each example. McLuhan's point is that the book didn't just store information—it restructured consciousness toward linearity, privacy, and individual perspective.\n\n[Gemini visual description] The reader is confronted by a massive, full-bleed, low-angle photograph of a car's wheel, which feels powerful and dynamic. A small line of text in the top-left corner, '...is an extension of the foot,' provides the conceptual punchline, reframing the technological object as a prosthetic for the human body. The experience is one of visual immersion followed by a sudden conceptual re-evaluation."
   },
   "ocr": {
     "ocr_raw": "...is an extension of the foot\nSOUTH PL",
@@ -80,5 +110,56 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \n- **Text placement**: The phrase *\"...is an extension of the foot\"* sits in the **top-left corner**, small and unobtrusive.  \n- **Image placement**: The photograph dominates the spread, centered on a vintage car wheel (with the brand name *“BENTLEY”* visible on the hub). The wheel occupies the left-to-center portion, while the right side shows a blurred road surface with a white line.  \n- **Space division**: The layout is **asymmetrical**, with text confined to the top-left (a narrow vertical strip) and the image occupying ~80% of the spread. The wheel is the focal point, with negative space (dark background) surrounding it, creating a visual hierarchy where the image commands attention.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Only one visible text element: the header *\"...is an extension of the foot\"*.  \n- **Size/weight**: Small, **body text** (not display text). It appears **light** (thin weight) and **sans-serif** (clean, modern typeface).  \n- **Color**: **White on black** (reversed, as the image is monochrome). The brand name *“BENTLEY”* is part of the photograph, not separate typography.  \n\n\n### 3. CONTRAST & TONE  \n- **Tone**: **Predominantly dark** (black-and-white photography with deep shadows on the car body and road).  \n- **Contrast**: **High contrast**—sharp delineation between the bright metallic wheel, white text, and dark background. The wheel’s reflective surfaces and the road’s textured white line amplify this contrast.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Sparse**. The text occupies minimal space, and the image’s dark background creates large areas of negative space (e.g., the top-right corner, the road’s shadowed regions). However, the wheel’s intricate details and the road’s texture prevent the spread from feeling empty.  \n- **Effect**: The sparse white space emphasizes the wheel’s precision and the text’s subtlety, avoiding visual clutter.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Relationship**: **Continuation**. The text (left) acts as a thematic anchor for the image (right), which visually extends the “foot” concept (implied by the wheel’s connection to the car’s movement). The image flows from left (wheel) to right (road), creating a seamless narrative.  \n- **Balance**: The text is a minor element, while the image dominates the right side, reinforcing a **left-to-right visual flow** (text → image).  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Calm, sophisticated, and minimal**. The high-contrast black-and-white photography, clean typography, and precise wheel details evoke luxury and precision (aligning with Bentley’s brand identity). There is no chaos or aggression—instead, the layout feels controlled, elegant, and modern, emphasizing the wheel as a “functional extension of the foot” (a metaphor for automotive engineering).  \n\nThis spread exemplifies mid-century design principles: restrained typography, high-contrast imagery, and a focus on form over ornamentation, creating a timeless, refined aesthetic.",
     "layout_analysis_time": 12.2,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_021",
+    "movement": "movement_1_environment",
+    "original_summary": {
+      "spread_type": "press_photo_with_title",
+      "section": "body",
+      "book_pages": [
+        32,
+        33
+      ],
+      "original_themes": [
+        "technology_and_body"
+      ],
+      "rhetorical_strategy": "juxtaposition",
+      "design_enacts_argument": true,
+      "design_argument_description": "The foot/wheel juxtaposition and the tire image literalize the extension metaphor — the wheel IS the foot, amplified.",
+      "text_excerpt": "the wheel... is an extension of the foot"
+    },
+    "contemporary_plan": {
+      "theme": "The autonomous vehicle: extension beyond the foot",
+      "argument": "The original's 'the wheel is an extension of the foot' established the template: technology amplifies a bodily faculty. The contemporary version breaks the template: the self-driving car does not extend the foot — it replaces it. The Waymo fleet in San Francisco logged 7.1 million miles in 2023 with no human driver. The extension has exceeded the faculty, and now the human is optional. This is the critical shift from extension to replacement, and it will recur through every subsequent entry in the sequence. McLuhan's 'auto-amputation' — the thesis that each extension produces a corresponding numbness — reaches its logical conclusion when the extension no longer needs the thing it extends.",
+      "text": {
+        "approach": "display_text_only",
+        "description": "Display text: 'the autonomous vehicle / is an extension beyond the foot.' The word 'beyond' is the key: it marks the departure from McLuhan's extension model into something he did not fully anticipate — replacement. Small body text: Waymo's 7.1 million driverless miles.",
+        "voice_notes": "Ominous simplicity. Let the 'beyond' do the work."
+      },
+      "image": {
+        "approach": "found",
+        "subject": "Interior of a Waymo or Cruise autonomous vehicle — the steering wheel absent or untouched, the driver's seat empty. The image should feel uncanny: everything is normal except no one is driving. The windshield shows a real street with real pedestrians.",
+        "mood": "uncanny_domestic",
+        "image_text_relationship": "literalizes"
+      },
+      "rhetoric": {
+        "strategy": "defamiliarization",
+        "design_enacts": "The empty driver's seat defamiliarizes the ordinary act of driving. The design makes the familiar (a car interior) strange (no driver), and the reader's unease IS the argument about what happens when extensions exceed their faculties."
+      },
+      "mapping": {
+        "relationship_to_original": "echo",
+        "convergences": [],
+        "thinkers": [],
+        "quotations": []
+      },
+      "dependencies": "Continues the extensions sequence. Establishes the 'extension beyond' pattern that 022-024 will repeat."
+    },
+    "paper_trace": "Kress & van Leeuwen: absence as meaning — the empty seat signifies the surpassed faculty",
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

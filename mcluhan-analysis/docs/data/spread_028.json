@@ -8,7 +8,9 @@
       47
     ],
     "section": "body",
-    "spread_type": "image_dominant",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
+    "spread_type": "press_photo_with_title",
     "orientation": "landscape_spread",
     "text": {
       "body_text": "",
@@ -26,52 +28,86 @@
     "images": [
       {
         "position": "full_bleed",
-        "subject": "### 1. **Photograph (Primary Visual Element)**  \n- **What it depicts**: A black-and-white photograph of numerous military aircraft (likely bombers) arranged in tight rows on an airfield or industrial airbase. Visible details include:  \n  - Multiple aircraft with distinct fuselages, wings, cockpits, and tail sections.  \n  - Ladders leading to the aircraft’s cockpits.  \n  - Large, curved hangar-like structures in the background (suggesting an airfield or aircraft manufacturing facility).  \n  - Irregular black splatter marks or damage across the image (appearing as intentional graphic elements or signs of aging/photographic wear).  \n  - Industrial equipment and vehicles in the background, partially obscured by the aircraft.  \n\n- **Position on the page**: Full-bleed, spanning the entire page (occupying the main visual space of the spread).  \n\n- **Visual style**: Black-and-white historical photograph with visible grain, texture, and signs of aging (e.g., faded areas, scratches). The splatter marks are integrated into the photograph as part of its visual composition.  \n\n- **Composition**:  \n  - **Framing**: Wide-angle, high-angle perspective (looking down on the aircraft).  \n  - **Angle**: Elevated viewpoint, emphasizing the orderly rows of planes and the scale of the airfield.  \n  - **Contrast**: High contrast between light (aircraft surfaces, sky) and dark (shadows, hangar structures, splatter marks).  \n  - **Key visual qualities**: Repetitive geometric patterns of aircraft fuselages, layered depth from foreground to background, and chaotic texture from the splatter marks. The photograph’s grain and wear add a gritty, historical feel.  \n\n- **Page occupation**: Approximately 95–100% of the page (the photograph dominates the spread, with only a narrow strip of text at the bottom excluded per instructions).  \n\n\n### 2. **Graphic Elements Within the Photograph**  \n- **Splatter marks**: Irregular black shapes scattered across the photograph (e.g., near the top-right, center, ",
-        "source_type": "graphic",
-        "source_credit": "General Dynamics, Convair Div.",
-        "estimated_date": "c. 1960s",
-        "composition": "",
-        "scale": "full_spread",
-        "relationship_to_text": ""
+        "subject": "A black and white photograph of a massive factory assembly line. In the foreground, rows of what appear to be small submarine hulls or aircraft fuselages are being constructed. In the background, countless rows of what look like shoe lasts or molds recede into the distance, emphasizing industrial scale and mass production.",
+        "source_type": "press_photo",
+        "composition": "The composition is dominated by strong diagonal lines formed by the rows of manufactured goods, creating a powerful sense of rhythm and infinite repetition. The perspective is slightly elevated, looking down upon the factory floor, which enhances the feeling of scale and systematic order. The lighting is diffuse, typical of a large industrial interior.",
+        "scale": "full_bleed",
+        "estimated_date": "c. 1940s-1950s",
+        "interactive_meaning": {
+          "contact": "not_applicable",
+          "social_distance": "impersonal",
+          "attitude_angle": "overhead"
+        }
       }
     ],
     "design": {
-      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **dominated by a large black-and-white photograph** occupying the top 80–90% of the space, depicting a dense array of military aircraft (likely bombers) in a hangar or airfield setting. The **text** (“...‘as we begin, so shall we go’”) is positioned as a **horizontal band at the bottom**, spanning the full width of the spread. The space is divided into two distinct zones:  \n- **Visual (image)**: The photograph fills most of the frame, with aircraft arranged in tight rows (left-to-right flow).  \n- **Textual (quote)**: A solid black strip at the bottom, anchoring the visual narrative.  \nThis division creates a clear hierarchy: the image commands attention, while the text serves as a thematic anchor.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Only one visible text element—the quote at the bottom.  \n- **Size/weight**: The quote is **large display text** (prominent, designed to be read easily). It appears **bold** (for emphasis) and uses a **sans-serif font** (clean, modern, and legible).  \n- **Color/contrast**: The text is **white on black** (reversed), creating high contrast against the dark background of the text strip. There is no small body text or serif font present.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** dominates the spread. The photograph features stark black-and-white tonal shifts (e.g., shadows on aircraft, bright highlights on metal surfaces), while the text strip uses extreme contrast (white text on black).  \n- **Tone**: The overall tone is **stark, serious, and historical**—evoking a wartime or industrial context. The high contrast amplifies a sense of urgency or gravity.  \n\n\n### 4. WHITE SPACE  \n- **Empty space**: **Minimal to none**. The photograph is densely packed with aircraft (no large gaps), and the text strip is a solid black band with no negative space. The spread feels **packed**—every inch is occupied by visual or textual elements.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- The layout f",
+      "layout_description": "A single, full-bleed black and white photograph spans the entire two-page spread, crossing the gutter seamlessly. At the very bottom, a solid black bar is overlaid on the image, containing a single line of white text that also spans the gutter.",
       "typography": {
-        "body_font_style": "Sans-serif text",
-        "display_font_style": "Large display typography",
-        "special_treatments": []
+        "body_font_style": null,
+        "display_font_style": "A single line of text in a serif font, medium weight, and lowercase. The text is reversed out (white on black).",
+        "special_treatments": [
+          "Text reversed out (white on black)",
+          "Text overlaid on an image",
+          "Text contained within a solid black bar"
+        ]
       },
-      "color_and_tone": "Black and white.",
-      "white_space": "sparse",
+      "color_and_tone": {
+        "contrast": "moderate",
+        "dominant_tone": "balanced",
+        "description": "The photograph has a full grayscale range, capturing the metallic textures and deep shadows of the industrial environment without being overly high-contrast."
+      },
+      "white_space": "none",
       "visual_density": "dense",
-      "left_right_relationship": "mirror"
+      "left_right_relationship": "Continuous panoramic image. The spread functions as a single, unified canvas, with the gutter acting as an interruption to be ignored rather than a separator.",
+      "information_value": {
+        "left_right": "balanced",
+        "top_bottom": "ideal_real",
+        "center_margin": "distributed"
+      },
+      "compositional_framing": "weakly_framed"
     },
     "rhetoric": {
-      "argument": "Brief textual element: 'AS, GO'",
-      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "argument": "The pre-alphabetic world is characterized as a total sensory environment of 'simultaneous interplay' where ear, touch, smell, and sight participated together, establishing a contrast with the fragmented, vision-dominated world that literacy created—a lost wholeness that electronic media may restore.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": [
+          "demonstration"
+        ]
+      },
+      "strategy_description": "The spread juxtaposes elements through its combination of text and design. Secondary strategies of demonstration reinforce the primary approach.",
       "design_enacts_argument": true,
-      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
-      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "design_argument_description": "The juxtaposition of text and image forces the reader to process multiple media simultaneously, creating meaning through their interaction.",
+      "reader_experience": "Sustained reading — the reader engages with extended prose argument.",
       "mcluhan_concepts": [
-        "media_ecology"
-      ]
+        "visual_space",
+        "environment_as_invisible",
+        "print_culture"
+      ],
+      "multi_spread_patterns": null,
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
-        "visual_rhetoric"
+        "media_ecology"
       ],
-      "contemporary_domain_candidates": [],
-      "movement_mapping": [],
-      "mapping_rationale": ""
+      "contemporary_domain_candidates": [
+        "algorithmic_identity",
+        "surveillance_and_control"
+      ],
+      "movement_mapping": [
+        "movement_1_environment"
+      ],
+      "mapping_rationale": "The address-as-identity concept directly anticipates IP addresses, digital identifiers, social media handles, and the broader apparatus of computational identity that makes individuals trackable and addressable within networks—identity as a function of one's position in a communication grid.",
+      "confidence": "moderate"
     },
     "progression": {
       "pace_shift": "accelerating",
-      "thematic_function": "punctuates",
-      "relationship_to_previous": "",
-      "relationship_to_next": ""
+      "thematic_function": "transition",
+      "relationship_to_previous": "From abstract description of pre-literate wholeness to concrete analysis of how literacy creates addressable, governable identities through naming systems.",
+      "relationship_to_next": "From naming systems to the printing press—the technology that industrialized alphabetic culture's tendencies toward uniformity and reproducibility.",
+      "confidence": "moderate"
     },
-    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+    "notes": "The seemingly mundane observation about addresses contains a radical insight: naming and addressing are technologies of governance. To name is to classify; to address is to locate. The postal system, the census, the telephone directory—each creates a different kind of addressable subject. Digital platforms create yet another: the uniquely identified, perpetually trackable data-subject.\n\n[Gemini visual description] The reader is confronted by a vast, full-bleed photograph of an industrial assembly line, depicting the overwhelming scale of mass production with its endless, repeating forms. The image creates a sense of both awe and dehumanization. A single, ominous line of text at the bottom, '...\"as we begin, so shall we go\"', captions the scene, suggesting that the patterns of our technological creations dictate the trajectory of our society."
   },
   "ocr": {
     "ocr_raw": "...“as we begin, so shall we go”",
@@ -86,5 +122,60 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **dominated by a large black-and-white photograph** occupying the top 80–90% of the space, depicting a dense array of military aircraft (likely bombers) in a hangar or airfield setting. The **text** (“...‘as we begin, so shall we go’”) is positioned as a **horizontal band at the bottom**, spanning the full width of the spread. The space is divided into two distinct zones:  \n- **Visual (image)**: The photograph fills most of the frame, with aircraft arranged in tight rows (left-to-right flow).  \n- **Textual (quote)**: A solid black strip at the bottom, anchoring the visual narrative.  \nThis division creates a clear hierarchy: the image commands attention, while the text serves as a thematic anchor.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Only one visible text element—the quote at the bottom.  \n- **Size/weight**: The quote is **large display text** (prominent, designed to be read easily). It appears **bold** (for emphasis) and uses a **sans-serif font** (clean, modern, and legible).  \n- **Color/contrast**: The text is **white on black** (reversed), creating high contrast against the dark background of the text strip. There is no small body text or serif font present.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** dominates the spread. The photograph features stark black-and-white tonal shifts (e.g., shadows on aircraft, bright highlights on metal surfaces), while the text strip uses extreme contrast (white text on black).  \n- **Tone**: The overall tone is **stark, serious, and historical**—evoking a wartime or industrial context. The high contrast amplifies a sense of urgency or gravity.  \n\n\n### 4. WHITE SPACE  \n- **Empty space**: **Minimal to none**. The photograph is densely packed with aircraft (no large gaps), and the text strip is a solid black band with no negative space. The spread feels **packed**—every inch is occupied by visual or textual elements.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- The layout follows a **unified horizontal flow**: The photograph’s composition (aircraft lined left-to-right) and the text strip (horizontal quote) align with the natural left-to-right reading direction. There is **no mirror or contrast**—the image and text work together to extend the visual narrative (e.g., the quote reinforces the image’s theme of resolve). The relationship is **continuation**—the text logically follows the image’s story.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Resolute, intense, and determined**. The black-and-white photography, dense composition, and motivational quote (“as we begin, so shall we go”) evoke a wartime or industrial-era urgency. It is **not calm or chaotic**—instead, it feels **aggressive in purpose** (driven by resolve) but **controlled** (through the clean typography and structured layout). The mood is **overwhelming in its seriousness**, emphasizing commitment and forward momentum.",
     "layout_analysis_time": 10.3,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_028",
+    "movement": "movement_1_environment",
+    "original_summary": {
+      "spread_type": "press_photo_with_title",
+      "section": "body",
+      "book_pages": [
+        46,
+        47
+      ],
+      "original_themes": [
+        "media_ecology",
+        "print_culture"
+      ],
+      "rhetorical_strategy": "accumulation",
+      "design_enacts_argument": true,
+      "design_argument_description": "The typographic/newspaper layout accumulates print artifacts, demonstrating the visual environment of the Gutenberg era through its own design vocabulary.",
+      "text_excerpt": ""
+    },
+    "contemporary_plan": {
+      "theme": "The Address layer: you are your hash",
+      "argument": "The original's typographic spread played with letterforms as visual artifacts of print culture. The contemporary transformation: the Address layer of Bratton's Stack, where identity is no longer a name but a computational address. Your digital identity is a hash: 0x7a69... on Ethereum, a UUID in a database, a cookie string in a browser. QR codes have replaced signatures; 2FA tokens replace handshakes; biometric hashes replace faces at borders. The typography of the Gutenberg era (letterforms, typefaces, layouts) has been superseded by the encoding of the computational era (hash strings, QR matrices, biometric templates). The spread should make this visible through typographic treatment: letterforms dissolving into hash characters.",
+      "text": {
+        "approach": "display_text_only",
+        "description": "A typographic composition where human-readable text (names, addresses, phone numbers) gradually morphs into machine-readable encoding (hash strings, QR data, hexadecimal). The transformation should be visible left-to-right across the spread: identity becoming address, name becoming hash. No continuous prose — the typography IS the content.",
+        "voice_notes": "Playful, visually inventive. This spread should be a typographic tour de force echoing the visual wit of the original's letterform spread."
+      },
+      "image": {
+        "approach": "typography_only",
+        "subject": "The typography itself is the image: a gradient from human-readable to machine-readable text, letterforms dissolving into hash characters, with QR codes emerging from the negative space. No separate image — the entire spread is typographic composition.",
+        "mood": "precise_playful",
+        "image_text_relationship": "extends"
+      },
+      "rhetoric": {
+        "strategy": "interpellation",
+        "design_enacts": "The spread demonstrates the Address layer through its own typography: the reader watches letterforms transform into hash codes, experiencing the shift from name to address as a visual event. The design performs the encoding it describes."
+      },
+      "mapping": {
+        "relationship_to_original": "transformation",
+        "convergences": [],
+        "thinkers": [],
+        "quotations": []
+      },
+      "dependencies": "Stack layer: Address. Part of the Stack layer mapping sequence."
+    },
+    "paper_trace": {
+      "citation": "Bratton 2016 \"The Stack\" ch.4 on the Address layer: identity as computable hash",
+      "convergence_tag": null
+    },
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

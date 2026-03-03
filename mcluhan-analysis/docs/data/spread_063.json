@@ -8,10 +8,12 @@
       117
     ],
     "section": "body",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
     "spread_type": "image_dominant",
     "orientation": "landscape_spread",
     "text": {
-      "body_text": "",
+      "body_text": "117\n\nMost people find it difficult to understand purely verbal concepts. They suspect the ear; they don't trust it. In general we feel more secure when things are visible, when we can \"see for ourselves.\" We admonish children, for instance, to \"believe only half of what they see, and nothing of what they hear.\" All kinds of \"shorthand\" systems of notation have been developed to help us see what we hear.\n\nWe employ visual and spatial metaphors for a great many everyday expressions. We insist on employing visual metaphors even when we refer to purely psychological states, such as tendency and duration. For instance, we say thereafter when we really mean thenafter, always when we mean at all times. We are so visually biased that we call our wisest men visionaries, or seers!\n\n. , ; : ? ! \" ' - \n\nReminders—(relics of the past)—in a world of the PRINTED word—efforts to introduce an AUDITORY dimension onto the visual organization of the PAGE: all effect information, RHYTHM, inflection, pauses. Until recent years, these EFFECTS were quite elaborate—they allowed for all sorts of CHANGES of type faces. The NEWSPAPER layout provides more variety of AUDITORY effects from typography than the ordinary book page does.",
       "display_text": "",
       "captions": [],
       "page_numbers_visible": []
@@ -25,47 +27,82 @@
         "source_credit": "Peter Moore",
         "estimated_date": "c. 1960s",
         "composition": "",
-        "scale": "full_spread",
-        "relationship_to_text": ""
+        "scale": "small_inset",
+        "relationship_to_text": {
+          "primary_relation": "illustrates",
+          "barthes_mode": "anchorage",
+          "description": ""
+        },
+        "interactive_meaning": {
+          "contact": "not_applicable",
+          "social_distance": "intimate",
+          "attitude_angle": "oblique"
+        }
       }
     ],
     "design": {
       "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two primary sections:  \n- **Left side**: A black-and-white photograph of handwritten notes on a spiral-bound notepad. The image occupies the left third of the page, with the notepad tilted diagonally against a dark background.  \n- **Right side**: Text dominates the right two-thirds, split into two distinct blocks:  \n  - *Top text block*: A dense paragraph of body text.  \n  - *Bottom text block*: A smaller paragraph of text, separated by a graphic of punctuation marks (e.g., `?`, `!`, `\"`).  \nThe space is divided **asymmetrically** (image on left, text on right), with the text further segmented by the punctuation graphic. The handwritten notes and printed text are visually distinct, emphasizing a contrast between *personal, analog* (left) and *structured, digital* (right) forms.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text**: Small, serif font (e.g., Times New Roman) in standard weight. It is the primary text, conveying academic or reflective content.  \n- **Handwritten notes (left image)**: Cursive script, irregular and dense—embodying a \"relic of the past\" (as referenced in the text).  \n- **Punctuation graphic (center)**: Bold, sans-serif symbols (e.g., `?`, `!`, `\"`), designed for visual impact.  \n- **Emphasis**: Key terms (e.g., *PRINTED*, *AUDITORY*, *RHYTHM*) are **bolded** or **underlined** to highlight thematic concepts.  \nNo large display text exists; the focus is on **small, readable body text** with supplementary handwritten and graphic elements.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The left image uses stark black-and-white (dark background, light paper with dark ink), while the right text uses black-on-white (high-contrast typography). The punctuation graphic also uses black-on-white.  \n- **Tone**: Predominantly **dual-toned**:  \n  - Left: *Dark* (black background, creating a \"relic\" feel).  \n  - Right: *Light* (white background, emphasizing clarity and st",
       "typography": {
-        "body_font_style": "Sans-serif text",
+        "body_font_style": "sans-serif",
         "display_font_style": null,
-        "special_treatments": []
+        "special_treatments": [
+          "oversized display typography",
+          "handwritten text"
+        ]
       },
-      "color_and_tone": "Black and white.",
-      "white_space": "sparse",
-      "visual_density": "dense",
-      "left_right_relationship": "mirror"
+      "color_and_tone": {
+        "contrast": "high",
+        "dominant_tone": "dark",
+        "description": "High contrast black and white."
+      },
+      "white_space": "minimal",
+      "visual_density": "overwhelming",
+      "left_right_relationship": "mirror",
+      "information_value": {
+        "left_right": "balanced",
+        "top_bottom": "not_applicable",
+        "center_margin": "distributed"
+      },
+      "compositional_framing": "strongly_framed"
     },
     "rhetoric": {
-      "argument": "Visual/typographic spread — argument conveyed through imagery and design rather than prose.",
-      "rhetorical_strategy": "Visual rhetoric — the image(s) carry the argument without reliance on prose.",
+      "argument": "The handwritten letters and enlarged punctuation marks argue that print culture contains vestigial traces of oral/acoustic culture—punctuation is a visual technology designed to encode vocal rhythms (pause, emphasis, inflection) into silent text, revealing print's hidden dependency on the oral world it displaced.",
+      "rhetorical_strategy": {
+        "primary": "juxtaposition",
+        "secondary": []
+      },
+      "strategy_description": "Visual/typographic spread employing juxtaposition through design form rather than textual argument.",
       "design_enacts_argument": true,
       "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
       "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
       "mcluhan_concepts": [
-        "media_ecology"
-      ]
+        "medium_is_the_message"
+      ],
+      "multi_spread_patterns": null,
+      "confidence": "moderate"
     },
     "themes": {
       "original_themes": [
         "visual_rhetoric"
       ],
-      "contemporary_domain_candidates": [],
-      "movement_mapping": [],
-      "mapping_rationale": ""
+      "contemporary_domain_candidates": [
+        "post_literacy_and_language",
+        "embodiment_and_disembodiment"
+      ],
+      "movement_mapping": [
+        "hinge_m2_m3"
+      ],
+      "mapping_rationale": "Punctuation as acoustic encoding anticipates how digital communication reinvents paralinguistic cues through emoji, capitalization, ellipses, and formatting conventions—each a visual attempt to encode the vocal/gestural information that text inherently strips away.",
+      "confidence": "moderate"
     },
     "progression": {
       "pace_shift": "accelerating",
-      "thematic_function": "illustrates",
-      "relationship_to_previous": "",
-      "relationship_to_next": ""
+      "thematic_function": "transition",
+      "relationship_to_previous": "Punctuation marks reveal print's hidden acoustic dimension, connecting to the memory/orality theme by showing how visual text retains vestiges of vocal performance.",
+      "relationship_to_next": "From punctuation's acoustic traces to voiceprints' visual traces—sound made visible through electronic technology, reversing the alphabet's original translation.",
+      "confidence": "moderate"
     },
-    "notes": "Auto-generated from VLM data. OCR model: qwen3-vl. Visual model: qwen3-vl."
+    "notes": "The oversized punctuation marks (periods, commas, question marks, quotation marks) are presented as visual objects rather than transparent signifiers, defamiliarizing the typographic conventions that readers normally look through. This is another instance of making the medium visible by enlarging it past the threshold of transparency."
   },
   "ocr": {
     "ocr_raw": "",
@@ -80,5 +117,61 @@
     "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is **vertically divided** into two primary sections:  \n- **Left side**: A black-and-white photograph of handwritten notes on a spiral-bound notepad. The image occupies the left third of the page, with the notepad tilted diagonally against a dark background.  \n- **Right side**: Text dominates the right two-thirds, split into two distinct blocks:  \n  - *Top text block*: A dense paragraph of body text.  \n  - *Bottom text block*: A smaller paragraph of text, separated by a graphic of punctuation marks (e.g., `?`, `!`, `\"`).  \nThe space is divided **asymmetrically** (image on left, text on right), with the text further segmented by the punctuation graphic. The handwritten notes and printed text are visually distinct, emphasizing a contrast between *personal, analog* (left) and *structured, digital* (right) forms.  \n\n\n### 2. TYPOGRAPHY  \n- **Body text**: Small, serif font (e.g., Times New Roman) in standard weight. It is the primary text, conveying academic or reflective content.  \n- **Handwritten notes (left image)**: Cursive script, irregular and dense—embodying a \"relic of the past\" (as referenced in the text).  \n- **Punctuation graphic (center)**: Bold, sans-serif symbols (e.g., `?`, `!`, `\"`), designed for visual impact.  \n- **Emphasis**: Key terms (e.g., *PRINTED*, *AUDITORY*, *RHYTHM*) are **bolded** or **underlined** to highlight thematic concepts.  \nNo large display text exists; the focus is on **small, readable body text** with supplementary handwritten and graphic elements.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** throughout. The left image uses stark black-and-white (dark background, light paper with dark ink), while the right text uses black-on-white (high-contrast typography). The punctuation graphic also uses black-on-white.  \n- **Tone**: Predominantly **dual-toned**:  \n  - Left: *Dark* (black background, creating a \"relic\" feel).  \n  - Right: *Light* (white background, emphasizing clarity and structure).  \nThis contrast reinforces the text’s theme: visual bias vs. auditory perception.  \n\n\n### 4. WHITE SPACE  \n- **Moderate white space**:  \n  - Left: The handwritten notes occupy most of the left, but the dark background creates negative space around the notepad.  \n  - Right: The text blocks are spaced with ample white space around them, especially between the top text, punctuation graphic, and bottom text.  \n  - Punctuation graphic: Small and centered, surrounded by white space to avoid visual clutter.  \nThe layout avoids being \"packed\" or \"sparse\"—it balances readability with visual rhythm.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Contrast**: The left (handwritten notes) and right (printed text) are **mirror images of thematic tension**:  \n  - Left: *Chaotic, personal* (handwritten script, \"relics of the past\").  \n  - Right: *Orderly, structured* (printed text, \"auditory dimension\").  \n- **Relationship**: They **contrast** rather than unify. The handwritten notes visually embody the text’s argument about visual bias, while the printed text rationalizes it. This creates a **dialogue between analog and digital**, personal and institutional.  \n\n\n### 6. OVERALL FEEL  \n- **Visual mood**: **Chaotic yet structured**. The handwritten notes (messy, irregular) clash with the clean, orderly text, reflecting the text’s theme of \"visual bias.\"  \n- **Energy**: **Intellectual but tense**. The stark black-and-white contrast, combined with the handwritten chaos, creates a sense of urgency or unease—echoing the text’s critique of how humans prioritize sight over sound.  \n- **Emotional tone**: **Overwhelming in its duality**—the left side feels intimate and raw, while the right feels clinical and analytical. Together, they evoke a *thought-provoking tension* between instinct and reason.",
     "layout_analysis_time": 15.2,
     "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_063",
+    "movement": "hinge",
+    "original_summary": {
+      "spread_type": "image_dominant",
+      "section": "body",
+      "book_pages": [
+        116,
+        117
+      ],
+      "original_themes": [
+        "visual_rhetoric"
+      ],
+      "rhetorical_strategy": "demonstration",
+      "design_enacts_argument": true,
+      "design_argument_description": "The handwritten notes and enlarged punctuation marks argue that print culture contains vestigial traces of oral/acoustic culture — the oversized punctuation marks (. , ; : ? ! \" ' -) are presented as visual objects rather than transparent signifiers, defamiliarizing the typographic conventions that readers normally look through.",
+      "text_excerpt": "Most people find it difficult to understand purely verbal concepts. They suspect the ear; they don't trust it... Reminders — (relics of the past) — in a world of the PRINTED word — efforts to introduce an AUDITORY dimension onto the visual organization of the PAGE."
+    },
+    "contemporary_plan": {
+      "theme": "The new punctuation: emoji as acoustic encoding",
+      "argument": "McLuhan's spread reveals punctuation as print culture's attempt to encode oral qualities — pause, emphasis, rhythm — into visual text. Each comma is a notated breath; each question mark a vocal inflection frozen in ink. The original's oversized punctuation marks defamiliarize these conventions, making the medium visible. In 2026, emoji have become the new punctuation — a visual-gestural system encoding paralinguistic information that text inherently strips away. A period at the end of a text message now signals coldness, not completion (Gunraj et al., 'Texting Insincerely,' Computers in Human Behavior, 2016). Tone indicators (/s, /j, /gen) are explicit metadata tags for vocal register. The thumbs-up reaction is a compressed social gesture. These are not degradations of literacy but the same impulse McLuhan identified: every text system reinvents the acoustic dimension it destroyed.",
+      "text": {
+        "approach": "combination",
+        "description": "Left page: a high-contrast photograph of a phone screen showing a text conversation where meaning is carried entirely by emoji, reactions, and formatting rather than words. Right page: the original's text about visual bias and punctuation as acoustic relics, with key phrases in CAPS preserved. Between them, a row of contemporary 'punctuation': emoji, tone indicators, reaction buttons — the new acoustic encoding.",
+        "voice_notes": "Light, almost playful. This is the Hinge's breathing room — a spread that reveals rather than confronts. The reader should feel recognition, not alarm."
+      },
+      "image": {
+        "approach": "graphic_symbol",
+        "subject": "A row of emoji and tone indicators presented at the same monumental scale as the original's punctuation marks: a thumbs-up, a skull (used as laughter), a red heart, /s, /gen — each one isolated, enlarged past recognition, becoming visual objects rather than transparent signifiers. The defamiliarization mirrors the original exactly.",
+        "mood": "analytical_playful",
+        "image_text_relationship": "demonstrates"
+      },
+      "rhetoric": {
+        "strategy": "demonstration",
+        "design_enacts": "The oversized emoji and tone indicators perform the same defamiliarization as the original's oversized punctuation marks. By enlarging these normally-transparent signifiers past their functional scale, the design makes the medium visible — the reader is forced to see the acoustic-encoding system they normally look through. The spread demonstrates its argument rather than stating it."
+      },
+      "mapping": {
+        "relationship_to_original": "echo",
+        "convergences": [
+          "failure_of_propositions"
+        ],
+        "thinkers": [],
+        "quotations": []
+      },
+      "dependencies": "The Hinge's lightest touch. Bridges 062's commodification to 064's surveillance through the connecting theme of encoding — how media translate between sensory registers."
+    },
+    "paper_trace": {
+      "citation": "McLuhan 1962 \"The Gutenberg Galaxy\" on the return of acoustic communication through electronic media",
+      "convergence_tag": "failure_of_propositions -- emoji as post-propositional encoding"
+    },
+    "reviewer_feedback": {
+      "status": "pending",
+      "notes": "",
+      "revision_count": 0
+    }
   }
 }

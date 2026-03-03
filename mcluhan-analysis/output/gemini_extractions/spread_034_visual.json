@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_034",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:18:10.410970",
+  "generation_time_s": 45.8,
+  "images": [
+    {
+      "position": "full_bleed",
+      "subject": "A high-contrast, magnified photograph of a repeating pattern of vertical stripes. Five light, slightly textured stripes are set against a dark, solid background. The light stripes are marred by dark, irregular markings that suggest corrosion, dirt, or decay, with the central stripe being the most heavily affected.",
+      "source_type": "art_photograph",
+      "composition": "A rigid, geometric composition of repeating vertical lines. The rhythm is disrupted by organic, chaotic textures on the light stripes. The framing is a tight crop, suggesting the pattern continues beyond the page edges.",
+      "scale": "full_bleed",
+      "estimated_date": "circa 1960s",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "not_applicable",
+        "attitude_angle": "not_applicable"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "A full-bleed, textless spread. The entire two-page surface is covered by a single, continuous abstract photographic image of vertical stripes, treating the spread as a unified canvas with the pattern running across the gutter.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": null,
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "dark",
+      "description": "Stark black and white abstract pattern. The high contrast emphasizes the geometric structure and the texture of the 'damage' on the white stripes."
+    },
+    "white_space": "none",
+    "visual_density": "moderate",
+    "left_right_relationship": "Unified. The pattern continues seamlessly across the gutter, making the left and right pages a single, continuous visual field.",
+    "information_value": {
+      "left_right": "balanced",
+      "top_bottom": "balanced",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "weakly_framed"
+  },
+  "spread_description": "This is a stark, textless spread dominated by a full-bleed, high-contrast abstract image. The reader is confronted with a pattern of vertical black and white stripes, resembling prison bars or a magnified technical object like magnetic tape. The clean geometry is disrupted by textures of decay or corrosion on the white stripes, creating a feeling of unease, confinement, or information degradation."
+}

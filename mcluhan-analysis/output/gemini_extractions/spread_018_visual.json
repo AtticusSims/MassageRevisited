@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_018",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:09:37.674267",
+  "generation_time_s": 29.4,
+  "images": [
+    {
+      "position": "right_page",
+      "subject": "An extreme close-up, grainy, black-and-white photograph of a human ear. The lighting is dramatic, casting deep shadows and highlighting the texture of the skin, making the ear's form appear almost abstract and landscape-like.",
+      "source_type": "art_photograph",
+      "composition": "Extreme close-up, tightly framed to abstract the ear from the head. The image is characterized by its heavy grain and high contrast, which emphasizes texture over clear representation. The angle is a direct profile of the ear.",
+      "scale": "dominant",
+      "estimated_date": "c. 1960-1967",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "intimate",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is starkly divided by the gutter. The left page contains two blocks of text set against a large amount of white space. The right page is completely filled with a dark, full-bleed photograph. This creates a strong asymmetrical balance and visual contrast between the textual left and the imagistic right.",
+    "typography": {
+      "body_font_style": "A standard serif font. The first block is a justified paragraph. The second block breaks a sentence into short, individually centered lines, creating a poetic, list-like structure.",
+      "display_font_style": null,
+      "special_treatments": [
+        "Typographic fragmentation of the sentence 'All media are extensions of some human faculty—psychic or physical.' to emphasize each component part."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread features a severe contrast between the bright white left page and the dark, shadowy photograph on the right page."
+    },
+    "white_space": "moderate",
+    "visual_density": "moderate",
+    "left_right_relationship": "Juxtaposition and illustration. The left page states the abstract thesis ('media are extensions of some human faculty'), and the right page provides a powerful, concrete, sensory example (the ear as a medium/extension).",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "A reader encounters a starkly divided spread with text on the left and a full-page image on the right. The left page presents McLuhan's core thesis that media are extensions of human faculties, set in clean type against a white void. The right page confronts the reader with a dark, grainy, and intimate close-up of a human ear, viscerally illustrating the abstract concept from the facing page."
+}

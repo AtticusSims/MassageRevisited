@@ -1,0 +1,46 @@
+{
+  "spread_id": "spread_043",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:22:58.271334",
+  "generation_time_s": 39.8,
+  "images": [
+    {
+      "position": "right_page",
+      "subject": "A high-contrast, black-and-white photograph showing an extreme close-up of a human body part, likely a leg or arm, covered by a white, open-weave, net-like fabric. The fabric creates a complex geometric pattern of interconnected threads against the skin, which is visible underneath. The lighting is dramatic, emphasizing the texture and the way the net conforms to the body's curves.",
+      "source_type": "art_photograph",
+      "composition": "Extreme close-up that renders the subject almost abstract. The frame is filled with the repeating geometric pattern of the netting. Strong side-lighting creates high contrast, with bright white threads and deep black shadows, emphasizing texture and form.",
+      "scale": "dominant",
+      "estimated_date": "circa 1960s",
+      "interactive_meaning": {
+        "contact": "not_applicable",
+        "social_distance": "intimate",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is starkly divided by the gutter. The left page is a solid black field containing four lines of left-aligned white text. The right page is completely filled by a high-contrast, textured photograph that bleeds to all edges.",
+    "typography": {
+      "body_font_style": null,
+      "display_font_style": "Sans-serif, medium weight, white text. The phrase is broken into four short, stacked lines.",
+      "special_treatments": [
+        "Text reversed out (white on black)"
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "balanced",
+      "description": "The spread is built on extreme black-and-white contrast. The left page is a pure black void with white text, while the right page is a photograph with deep blacks and bright whites, creating a powerful graphic statement."
+    },
+    "white_space": "minimal",
+    "visual_density": "moderate",
+    "left_right_relationship": "Juxtaposition and metaphorical extension. The left page presents a textual premise, an abstract idea. The right page provides a concrete, tactile, visual metaphor for that idea. The hard edge of the black field 'brushes against' the textured image, enacting the text.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "not_applicable",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "A reader encounters a starkly divided spread that creates a powerful visual metaphor. On the left, against a void-like black background, white text poses a fragment: 'When information is brushed against information...'. On the right, a full-page, high-contrast photograph offers a tactile response: a complex, net-like pattern stretched over a curved surface, suggesting friction, interface, and the creation of a new pattern from the contact."
+}

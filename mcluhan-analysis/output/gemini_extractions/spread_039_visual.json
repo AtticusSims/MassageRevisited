@@ -1,0 +1,44 @@
+{
+  "spread_id": "spread_039",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:20:30.782880",
+  "generation_time_s": 22.3,
+  "images": [
+    {
+      "position": "right_page",
+      "subject": "A 17th-century technical illustration demonstrating linear perspective. On the left, a man in period attire (doublet, hose, sword) stands as a subject. On the right, a seated artist or draftsman observes him. Lines of sight radiate from the eyes of both figures to geometric planes on the floor, illustrating the mathematical construction of a fixed point of view.",
+      "source_type": "technical_diagram",
+      "composition": "A detailed line engraving with hatching for depth. The composition is didactic, clearly showing the geometric relationship between observers and the subject within a constructed space. The view is from an oblique angle, emphasizing the technical process.",
+      "scale": "dominant",
+      "estimated_date": "c. 1648",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "far_social",
+        "attitude_angle": "oblique"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "The spread is clearly divided. The left page consists of a single, dense column of justified text. The right page contains two short paragraphs of text at the top, with a large historical illustration occupying the lower two-thirds of the page. The layout is orderly and academic.",
+    "typography": {
+      "body_font_style": "A standard serif font, set in a single column with justified alignment.",
+      "display_font_style": null,
+      "special_treatments": []
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "Stark black ink on a white paper background, typical of a conventional book layout."
+    },
+    "white_space": "moderate",
+    "visual_density": "moderate",
+    "left_right_relationship": "Argument and evidence. The left page presents McLuhan's argument about the 'fixed point of view' derived from print technology, while the right page provides a direct visual illustration of the historical origin of that concept: Renaissance perspective.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This is a calm, scholarly spread that contrasts a dense block of text on the left with a historical diagram of linear perspective on the right. It visually and textually argues that print technology created a 'fixed point of view,' which is now being superseded by the 'multiple models for exploration' of the electric age. The reader's experience is one of intellectual engagement with a historical concept being presented as the foundation for a modern problem."
+}

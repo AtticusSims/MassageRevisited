@@ -1,0 +1,60 @@
+{
+  "spread_id": "spread_061",
+  "model": "gemini-2.5-pro",
+  "timestamp": "2026-03-03T19:32:01.452801",
+  "generation_time_s": 35.2,
+  "images": [
+    {
+      "position": "left_page",
+      "subject": "A high-contrast, grainy photograph of a classical sculpted head of a man with curly hair. The features are somewhat abstracted by the harsh lighting and coarse halftone printing.",
+      "source_type": "fine_art_reproduction",
+      "composition": "The bust is isolated against a white background, positioned in the upper-left quadrant of the page. The high-contrast black and white rendering gives it a stark, almost ghostly appearance.",
+      "scale": "quarter_page",
+      "estimated_date": "Classical era (sculpture), mid-20th century (photograph)",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "intimate",
+        "attitude_angle": "oblique"
+      }
+    },
+    {
+      "position": "left_page",
+      "subject": "A high-contrast, grainy photograph of a classical sculpted head of a bearded man, likely a philosopher such as Socrates or Plato. He has a broad nose, full beard, and a furrowed brow.",
+      "source_type": "fine_art_reproduction",
+      "composition": "Positioned directly below the first bust, this image is also isolated against a white background. The features are more distinct than the top image, and the figure gazes forward with a contemplative expression. The printing style is consistent with the image above it.",
+      "scale": "quarter_page",
+      "estimated_date": "Classical era (sculpture), mid-20th century (photograph)",
+      "interactive_meaning": {
+        "contact": "offer",
+        "social_distance": "intimate",
+        "attitude_angle": "frontal"
+      }
+    }
+  ],
+  "design": {
+    "layout_description": "This is a single page, not a spread. The layout is strongly bifurcated. The left half of the page contains two classical busts stacked vertically in a column. The right half contains a block of text, beginning with a prominent quote and followed by several paragraphs of body text. The page number '113' is centered at the very top.",
+    "typography": {
+      "body_font_style": "A standard serif font, medium weight, justified in a single wide column on the right side of the page.",
+      "display_font_style": null,
+      "special_treatments": [
+        "The quote from Socrates is set apart from the main body text with extra leading.",
+        "The words 'we' and 'mimetic' are underlined for emphasis in the final paragraph."
+      ]
+    },
+    "color_and_tone": {
+      "contrast": "high",
+      "dominant_tone": "light",
+      "description": "The page is stark black and white. The high-contrast, grainy quality of the photographs of the busts makes them feel like degraded artifacts, visually echoing the theme of information loss and transformation over time."
+    },
+    "white_space": "abundant",
+    "visual_density": "moderate",
+    "left_right_relationship": "The page is split into a visual column (left) and a textual column (right). The images of the philosophers on the left serve as the visual anchor and authority for the text on the right, which discusses their ideas. It's a relationship of illustration and elaboration.",
+    "information_value": {
+      "left_right": "given_new",
+      "top_bottom": "ideal_real",
+      "center_margin": "distributed"
+    },
+    "compositional_framing": "strongly_framed"
+  },
+  "spread_description": "This single page contrasts the visual and the textual, the oral and the literate. On the left, two grainy, high-contrast busts of Greek philosophers are stacked vertically, representing the classical world. On the right, a quote from Socrates lamenting writing's effect on memory introduces a block of text that analyzes the shift from Homeric oral culture to Platonic literate culture, creating a stark division between the image of the past and the analysis of its media."
+}
