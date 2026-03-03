@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "docs-server",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8000", "--directory", "mcluhan-analysis/docs"],
+      "port": 8000
+    },
+    {
+      "name": "flask-viewer",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["mcluhan-analysis/viewer/app.py"],
+      "port": 5001
+    }
+  ]
+}

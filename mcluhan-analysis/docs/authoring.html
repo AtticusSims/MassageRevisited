@@ -86,24 +86,41 @@
       width: 55%; min-width: 500px; display: flex; flex-direction: column;
       border-right: 1px solid var(--border); background: #111;
     }
-    .render-panel-header {
-      padding: 8px 12px; border-bottom: 1px solid var(--border);
+    .render-pane-header {
+      padding: 6px 12px; border-bottom: 1px solid var(--border);
       font-size: 12px; color: var(--text-muted); display: flex; justify-content: space-between; align-items: center;
-      background: var(--bg-panel);
+      background: var(--bg-panel); flex-shrink: 0;
+    }
+    .render-pane-header .pane-label {
+      font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted);
     }
     .render-tabs {
       display: flex; gap: 2px;
     }
     .render-tab {
-      padding: 4px 12px; font-size: 11px; border-radius: 3px; cursor: pointer;
+      padding: 3px 10px; font-size: 10px; border-radius: 3px; cursor: pointer;
       background: transparent; color: var(--text-muted); border: 1px solid transparent;
     }
     .render-tab:hover { background: var(--bg-hover); }
     .render-tab.active { background: var(--bg-card); color: var(--accent); border-color: var(--border); }
 
+    /* Top pane: rendered spread */
+    .render-top-pane {
+      flex: 1; display: flex; flex-direction: column; min-height: 0;
+    }
     .render-viewport {
       flex: 1; display: flex; align-items: center; justify-content: center;
-      padding: 16px; overflow: auto;
+      padding: 12px; overflow: auto;
+    }
+
+    /* Bottom pane: original / wireframe */
+    .render-bottom-pane {
+      flex: 1; display: flex; flex-direction: column; min-height: 0;
+      border-top: 2px solid var(--border);
+    }
+    .render-bottom-viewport {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      padding: 8px; overflow: auto; position: relative;
     }
 
     /* ===== The Book Spread ===== */
@@ -577,18 +594,54 @@
       transform-origin: center center;
     }
 
-    /* ===== Original Spread Image (toggle view) ===== */
-    .original-image-view {
+    /* ===== Original Spread Image (in bottom pane) ===== */
+    .bottom-view {
       display: none; width: 100%; height: 100%;
-      align-items: center; justify-content: center; padding: 12px;
+      align-items: center; justify-content: center;
     }
-    .original-image-view.active { display: flex; }
-    .original-image-view img {
+    .bottom-view.active { display: flex; }
+    .bottom-view img {
       max-width: 100%; max-height: 100%; object-fit: contain;
       border: 1px solid var(--border);
     }
-    .rendered-view { display: flex; }
-    .rendered-view.hidden { display: none; }
+
+    /* ===== Image Prompts Section ===== */
+    .image-prompts-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      padding: 12px 14px; margin-top: 4px;
+    }
+    .image-prompts-header {
+      display: flex; align-items: center; gap: 8px; cursor: pointer;
+      font-size: 13px; color: var(--text-bright);
+    }
+    .image-prompts-header::before {
+      content: '\25B6'; font-size: 10px; color: var(--green); transition: transform 0.2s;
+    }
+    .image-prompts-card.expanded .image-prompts-header::before {
+      transform: rotate(90deg);
+    }
+    .image-prompts-body {
+      display: none; margin-top: 10px;
+    }
+    .image-prompts-card.expanded .image-prompts-body {
+      display: block;
+    }
+    .prompt-item {
+      padding: 8px; margin-bottom: 8px; background: var(--bg); border-radius: 4px;
+      border-left: 2px solid var(--green);
+    }
+    .prompt-item-header {
+      font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px;
+      color: var(--green); margin-bottom: 4px;
+    }
+    .prompt-item-text {
+      font-size: 11px; line-height: 1.45; color: var(--text-muted); font-family: 'Consolas', 'Monaco', monospace;
+      white-space: pre-wrap; word-break: break-word;
+    }
+    .prompt-meta {
+      display: flex; gap: 8px; margin-top: 4px; font-size: 9px; color: var(--text-muted);
+    }
+    .prompt-meta span { opacity: 0.7; }
 
     /* ===== Responsive ===== */
     @media (max-width: 1100px) {
@@ -596,9 +649,16 @@
     }
     @media (max-width: 900px) {
       .main-content { flex-direction: column; }
-      .render-panel { width: 100%; min-width: 0; height: 50%; border-right: none; border-bottom: 1px solid var(--border); }
+      .render-panel { width: 100%; min-width: 0; height: 60%; border-right: none; border-bottom: 1px solid var(--border); }
       .options-panel { min-width: 0; }
     }
+
+    /* ===== Resizable split (top/bottom pane drag) ===== */
+    .pane-resizer {
+      height: 4px; background: var(--border); cursor: row-resize; flex-shrink: 0;
+      transition: background 0.15s;
+    }
+    .pane-resizer:hover, .pane-resizer.active { background: var(--accent); }
   </style>
 </head>
 <body>
@@ -637,19 +697,15 @@
   <!-- Main Content -->
   <div class="main-content">
 
-    <!-- Left: Spread Renderer -->
+    <!-- Left: Split Render Panel -->
     <div class="render-panel">
-      <div class="render-panel-header">
-        <div class="render-tabs">
-          <div class="render-tab active" data-view="rendered" onclick="switchView('rendered')">Rendered</div>
-          <div class="render-tab" data-view="original" onclick="switchView('original')">Original</div>
-          <div class="render-tab" data-view="wireframe" onclick="switchView('wireframe')">Wireframe</div>
+      <!-- TOP PANE: Rendered spread -->
+      <div class="render-top-pane">
+        <div class="render-pane-header">
+          <span class="pane-label">Rendered</span>
+          <span id="renderInfo" style="font-size:10px;color:var(--text-muted)"></span>
         </div>
-        <span id="renderInfo" style="font-size:10px;color:var(--text-muted)"></span>
-      </div>
-      <div class="render-viewport" id="renderViewport">
-        <!-- Rendered spread -->
-        <div class="rendered-view" id="renderedView">
+        <div class="render-viewport" id="renderViewport">
           <div class="spread-scale-wrapper" id="spreadScaleWrapper">
             <div class="spread-frame" id="spreadFrame">
               <div class="gutter-line" id="gutterLine"></div>
@@ -658,19 +714,28 @@
             </div>
           </div>
         </div>
-        <!-- Original image -->
-        <div class="original-image-view" id="originalView">
-          <img id="originalImage" src="" alt="Original spread" />
-        </div>
-        <!-- Wireframe -->
-        <div class="original-image-view" id="wireframeView">
-          <div id="wireframeSvg" style="width:100%;max-width:800px;"></div>
+        <!-- Image alternatives strip -->
+        <div class="image-strip" id="imageStrip" style="display:none;">
+          <span class="image-strip-label">Images <span style="opacity:0.5">[&nbsp;]</span>:</span>
+          <div class="image-strip-thumbs" id="imageStripThumbs"></div>
         </div>
       </div>
-      <!-- Image alternatives strip -->
-      <div class="image-strip" id="imageStrip" style="display:none;">
-        <span class="image-strip-label">Images <span style="opacity:0.5">[&nbsp;]</span>:</span>
-        <div class="image-strip-thumbs" id="imageStripThumbs"></div>
+      <!-- BOTTOM PANE: Original / Wireframe -->
+      <div class="render-bottom-pane">
+        <div class="render-pane-header">
+          <div class="render-tabs">
+            <div class="render-tab active" data-view="original" onclick="switchBottomView('original')">Original</div>
+            <div class="render-tab" data-view="wireframe" onclick="switchBottomView('wireframe')">Wireframe</div>
+          </div>
+        </div>
+        <div class="render-bottom-viewport" id="bottomViewport">
+          <div class="bottom-view active" id="originalView">
+            <img id="originalImage" src="" alt="Original spread" />
+          </div>
+          <div class="bottom-view" id="wireframeView">
+            <div id="wireframeSvg" style="width:100%;max-width:800px;"></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -700,7 +765,7 @@ let currentIndex = 0;
 let currentRenderOption = null; // which option is rendered in the spread
 let currentImageIdx = 0; // which image option is shown (0-based)
 let selections = {};
-let currentView = 'rendered'; // 'rendered' | 'original' | 'wireframe'
+let currentBottomView_state = 'original'; // 'original' | 'wireframe' (for bottom pane)
 
 try {
   const saved = localStorage.getItem('authoring_selections_v2');
@@ -770,13 +835,15 @@ function goToSpread(idx) {
   if (idx >= 0 && idx < data.spreads.length) renderSpread(idx);
 }
 
-// ===== View Switching =====
-function switchView(view) {
-  currentView = view;
-  document.querySelectorAll('.render-tab').forEach(t => t.classList.toggle('active', t.dataset.view === view));
-  document.getElementById('renderedView').className = view === 'rendered' ? 'rendered-view' : 'rendered-view hidden';
-  document.getElementById('originalView').className = view === 'original' ? 'original-image-view active' : 'original-image-view';
-  document.getElementById('wireframeView').className = view === 'wireframe' ? 'original-image-view active' : 'original-image-view';
+// ===== View Switching (bottom pane: original / wireframe) =====
+let currentBottomView = 'original';
+function switchBottomView(view) {
+  currentBottomView = view;
+  document.querySelectorAll('.render-bottom-pane .render-tab').forEach(t =>
+    t.classList.toggle('active', t.dataset.view === view)
+  );
+  document.getElementById('originalView').className = view === 'original' ? 'bottom-view active' : 'bottom-view';
+  document.getElementById('wireframeView').className = view === 'wireframe' ? 'bottom-view active' : 'bottom-view';
 }
 
 // ===== Render Spread =====
@@ -806,7 +873,7 @@ function renderSpread(idx) {
   document.getElementById('themeLine').textContent = spread.theme || '';
 
   // Original image
-  document.getElementById('originalImage').src = `spreads/${sid}.jpg`;
+  document.getElementById('originalImage').src = `images/${sid}.jpg`;
 
   // Wireframe
   const wireDiv = document.getElementById('wireframeSvg');
@@ -940,6 +1007,9 @@ function buildOptionCards(spread) {
     spread.dependency_flags.forEach(f => html += `<span class="dep-flag">${esc(f)}</span>`);
     html += `</div>`;
   }
+
+  // Image Prompts
+  html += buildImagePromptsSection(sid);
 
   scroll.innerHTML = html;
   scroll.scrollTop = 0;
@@ -1296,7 +1366,7 @@ function viewOption(sid, optId) {
   const spread = data.spreads[currentIndex];
   buildOptionCards(spread);
   renderSpreadLayout(spread, optId);
-  if (currentView !== 'rendered') switchView('rendered');
+  // Rendered is always visible in top pane now
 }
 
 function selectOption(sid, optId) {
@@ -1336,6 +1406,40 @@ function saveSelections() {
 
 function toggleDesignSpec() {
   document.getElementById('designSpecCard')?.classList.toggle('expanded');
+}
+
+function toggleImagePrompts() {
+  document.getElementById('imagePromptsCard')?.classList.toggle('expanded');
+}
+
+function buildImagePromptsSection(sid) {
+  const meta = imageMetadata?.[sid];
+  if (!meta || meta.skipped || !meta.options?.length) return '';
+
+  let html = `<div class="image-prompts-card" id="imagePromptsCard">`;
+  html += `<div class="image-prompts-header" onclick="toggleImagePrompts()">Image Prompts (${meta.approach})</div>`;
+  html += `<div class="image-prompts-body">`;
+
+  meta.options.forEach((opt, i) => {
+    html += `<div class="prompt-item">`;
+    html += `<div class="prompt-item-header">Option ${i + 1} — ${esc(opt.model || 'unknown')}</div>`;
+    html += `<div class="prompt-item-text">${esc(opt.prompt || 'No prompt recorded')}</div>`;
+    html += `<div class="prompt-meta">`;
+    html += `<span>${(opt.size_kb || 0).toFixed(0)} KB</span>`;
+    html += `<span>${esc(opt.license || '')}</span>`;
+    html += `</div>`;
+    html += `</div>`;
+  });
+
+  if (meta.search_query) {
+    html += `<div class="prompt-item" style="border-left-color:var(--blue);">`;
+    html += `<div class="prompt-item-header" style="color:var(--blue);">Search Query</div>`;
+    html += `<div class="prompt-item-text">${esc(meta.search_query)}</div>`;
+    html += `</div>`;
+  }
+
+  html += `</div></div>`;
+  return html;
 }
 
 // ===== Export =====
