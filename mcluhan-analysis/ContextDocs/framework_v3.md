@@ -86,10 +86,10 @@ Bratton coined the term **Hemispherical Stacks** to describe the fragmentation o
 
 **The Model Is the Message — updating McLuhan for AI:**
 
-In the 2022 *Noema* essay co-authored with **Blaise AgÃ¼era y Arcas** (VP of AI, Google), Bratton explicitly updates McLuhan's formula: the model is the message. Where McLuhan argued that the medium's form matters more than its content, Bratton and AgÃ¼era y Arcas argue that the *model* — the statistical architecture of an LLM — shapes what can be said, thought, and imagined more decisively than any individual output.
+In the 2022 *Noema* essay co-authored with **Blaise Agüera y Arcas** (VP of AI, Google), Bratton explicitly updates McLuhan's formula: the model is the message. Where McLuhan argued that the medium's form matters more than its content, Bratton and Agüera y Arcas argue that the *model* — the statistical architecture of an LLM — shapes what can be said, thought, and imagined more decisively than any individual output.
 
 > **"At what point does the performance of reason become a kind of reason?"**
-> — Bratton & AgÃ¼era y Arcas, "The Model Is the Message," *Noema*, July 12, 2022
+> — Bratton & Agüera y Arcas, "The Model Is the Message," *Noema*, July 12, 2022
 
 This essay also anticipates the phenomenon Vervaeke later documents — people forming religious relationships with AI:
 
@@ -107,7 +107,7 @@ This essay also anticipates the phenomenon Vervaeke later documents — people f
 > "It is all but certain that human-level minds will be far outnumbered by nonhuman human-level minds in the form of agentic AI."
 > — *The Stack*, 10th-anniversary edition (2025)
 
-**Key works:** *The Stack: On Software and Sovereignty* (MIT Press, 2015; 10th-anniversary edition 2025). *The Terraforming* (Strelka Press, 2019). "Planetary Sapience" (*Noema*, 2021). "The Model Is the Message" (with Blaise AgÃ¼era y Arcas, *Noema*, 2022). *The Revenge of the Real* (Verso, 2021). *Accept All Cookies* (Berggruen Press, 2025). Long Now Talk, "A Philosophy of Planetary Computation," January 29, 2025.
+**Key works:** *The Stack: On Software and Sovereignty* (MIT Press, 2015; 10th-anniversary edition 2025). *The Terraforming* (Strelka Press, 2019). "Planetary Sapience" (*Noema*, 2021). "The Model Is the Message" (with Blaise Agüera y Arcas, *Noema*, 2022). *The Revenge of the Real* (Verso, 2021). *Accept All Cookies* (Berggruen Press, 2025). Long Now Talk, "A Philosophy of Planetary Computation," January 29, 2025.
 
 
 ### Friedrich Kittler: media as the condition of thought

@@ -1,0 +1,985 @@
+{
+  "version": "1.0",
+  "generated": "2026-03-03T18:06:06.475090+00:00",
+  "source_file": "ContextDocs/framework_v3.md",
+  "thinkers": {
+    "McLuhan": {
+      "full_name": "Marshall McLuhan",
+      "field": "Media Theory, Communication Studies",
+      "bio": "",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "We shape our tools, and thereafter our tools shape us.",
+          "source": "Often attributed to McLuhan; likely originated by John Culkin paraphrasing McLuhan, Saturday Review, March 18, 1967",
+          "featured": false,
+          "movement": "prologue"
+        },
+        {
+          "text": "Environments are invisible. Their ground rules, pervasive structure, and overall patterns elude easy perception.",
+          "source": "Marshall McLuhan, The Medium Is the Massage (1967)",
+          "featured": false,
+          "movement": "prologue"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "prologue"
+      ]
+    },
+    "Crawford": {
+      "full_name": "Kate Crawford",
+      "field": "AI Ethics, Media Studies",
+      "bio": "Crawford and Noble anchor Movement 1 in the Earth and Address layers of the Stack \u2014 the material extraction and the classification systems that make computation possible. Crawford's Atlas of AI (2021) documents the same planetary infrastructure Bratton theorizes, but through investigation rather than architecture. Noble's Algorithms of Oppression (2018) reveals how the Address layer \u2014 the system that decides what counts as data and how it is categorized \u2014 encodes structural power.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "AI is neither artificial nor intelligent.",
+          "source": "Atlas of AI (Yale University Press, 2021)",
+          "featured": false,
+          "movement": "prologue"
+        },
+        {
+          "text": "Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.",
+          "source": "Safiya Noble, Algorithms of Oppression (NYU Press, 2018)",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "Artificial intelligence will become a major human rights issue in the twenty-first century.",
+          "source": "Safiya Noble, Algorithms of Oppression (2018)",
+          "featured": false,
+          "movement": "movement_1_environment"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "prologue",
+        "movement_1_environment"
+      ]
+    },
+    "Haraway": {
+      "full_name": "Donna Haraway",
+      "field": "Science and Technology Studies, Feminist Theory",
+      "bio": "The Cyborg Manifesto (1985; collected in Simians, Cyborgs and Women, Routledge, 1991) remains the definitive text on human-machine hybridity as political condition. In Bratton's framework, Haraway is the poet of the User layer \u2014 the thinker who first recognized that the boundary between the human and the technical had already dissolved.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "We are inside of what we make, and it's inside of us.",
+          "source": "A Cyborg Manifesto, Simians, Cyborgs and Women (Routledge, 1991)",
+          "featured": false,
+          "movement": "prologue"
+        },
+        {
+          "text": "By the late twentieth century, our time, a mythic time, we are all chimeras, theorized and fabricated hybrids of machine and organism; in short, we are cyborgs.",
+          "source": "",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "Our machines are disturbingly lively, and we ourselves frighteningly inert.",
+          "source": "",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "The main trouble with cyborgs, of course, is that they are the illegitimate offspring of militarism and patriarchal capitalism. But illegitimate offspring are often exceedingly unfaithful to their origins.",
+          "source": "",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "Though both are bound in the spiral dance, I would rather be a cyborg than a goddess.",
+          "source": "Final line of \"A Cyborg Manifesto\"",
+          "featured": false,
+          "movement": "movement_1_environment"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "prologue",
+        "movement_1_environment"
+      ]
+    },
+    "Bratton": {
+      "full_name": "Benjamin Bratton",
+      "field": "Philosophy of Technology, Speculative Design",
+      "bio": "Bratton (Professor of Philosophy of Technology and Speculative Design, UC San Diego; Director of Antikythera, Berggruen Institute; Visiting Faculty Researcher, Google's Paradigms of Intelligence group) is the systems architect of Movement 1. His work spans political philosophy, software studies, and speculative design. He provides the total model \u2014 the comprehensive picture of computation as geopolitical infrastructure \u2014 that the other Movement 1 thinkers elaborate in specific domains.",
+      "key_works": [
+        "The Stack: On Software and Sovereignty (MIT Press, 2015; 10th-anniversary edition 2025)",
+        "The Terraforming (Strelka Press, 2019)",
+        "\"Planetary Sapience\" (Noema, 2021)",
+        "\"The Model Is the Message\" (with Blaise Ag\u00fcera y Arcas, Noema, 2022)",
+        "The Revenge of the Real (Verso, 2021)",
+        "Accept All Cookies (Berggruen Press, 2025)",
+        "Long Now Talk, \"A Philosophy of Planetary Computation,\" January 29, 2025"
+      ],
+      "quotes": [
+        {
+          "text": "We are inside The Stack and it is inside of us.",
+          "source": "The Stack (MIT Press, 2015)",
+          "featured": false,
+          "movement": "prologue"
+        },
+        {
+          "text": "As the shape of political geography and the architecture of planetary-scale computation as a whole, The Stack is an accidental megastructure, one that we are building both deliberately and unwittingly and is in turn building us in its own image.",
+          "source": "The Stack: On Software and Sovereignty (MIT Press, 2015)",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "The state takes on the armature of a machine because the machine, The Stack, has already taken on the roles and register of the state.",
+          "source": "The Stack (2015), p. 38",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "Sovereignty is not just made about infrastructural lines; it is made by infrastructural lines.",
+          "source": "The Stack (2015), p. 35",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "Platforms don't look like how they work and don't work like how they look.",
+          "source": "The Stack (2015)",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "The real nightmare, worse than the one in which the Big Machine wants to kill you, is the one in which it sees you as irrelevant, or not even as a discrete thing to know.",
+          "source": "The Stack (2015)",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "Airports are not simulations of cities; rather cities are simulations of airports.",
+          "source": "The Stack (2015)",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.",
+          "source": "The Stack (2015)",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "The multipolarization of geopolitics over the last decade and the multipolarization of planetary computation over the same period not only track one another; they are the same thing. To build a Stack is to build a society and vice versa.",
+          "source": "The Stack, 10th-anniversary edition (MIT Press, 2025)",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "We find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it. The task of philosophy today is to catch up.",
+          "source": "Long Now Talk, \"A Philosophy of Planetary Computation,\" January 29, 2025",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "The Whole Age of Computer has made it where nobody knows exactly what's going on.",
+          "source": "Donald Trump, quoted by Bratton in the 10th-anniversary edition of The Stack (2025) as accidentally uttering a profound truth",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "At what point does the performance of reason become a kind of reason?",
+          "source": "Bratton & Ag\u00fcera y Arcas, \"The Model Is the Message,\" Noema, July 12, 2022",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "It is also possible that these kinds of artificial intelligence are 'intelligent' \u2014 and even 'conscious' in some way \u2014 depending on how those terms are defined. Still, neither of these terms can be very useful if they are defined in strongly anthropocentric ways.",
+          "source": "\"The Model Is the Message,\" Noema, 2022",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "The AI Stack will exist in a different world from ours.",
+          "source": "The Stack, 10th-anniversary edition (2025)",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "What your parents called 'the Internet' will evolve into cognitive infrastructures.",
+          "source": "The Stack, 10th-anniversary edition (2025)",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "It is all but certain that human-level minds will be far outnumbered by nonhuman human-level minds in the form of agentic AI.",
+          "source": "The Stack, 10th-anniversary edition (2025)",
+          "featured": false,
+          "movement": "movement_1_environment"
+        }
+      ],
+      "concepts": [
+        "The Stack as accidental megastructure:",
+        "The Earth layer \u2014 materiality and extraction:",
+        "Hemispherical Stacks \u2014 the geopolitics of computation:",
+        "The pre-paradigmatic moment:",
+        "The Model Is the Message \u2014 updating McLuhan for AI:",
+        "The AI Stack \u2014 what comes next:"
+      ],
+      "movements": [
+        "prologue",
+        "movement_1_environment"
+      ]
+    },
+    "Kittler": {
+      "full_name": "Friedrich Kittler",
+      "field": "Media Theory, German Studies",
+      "bio": "Kittler's opening line from Gramophone, Film, Typewriter is the Movement's epigraph candidate:",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "Media determine our situation.",
+          "source": "Gramophone, Film, Typewriter (1986; English trans. Stanford University Press, 1999), Preface, p. xxxix",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "The bulk of written texts \u2014 including this text \u2014 do not exist anymore in perceivable time and space but in a computer memory's transistor cells.",
+          "source": "\"There Is No Software\" (1992)",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "Perfect graphic user interfaces, since they dispense with writing itself, hide a whole machine from its users.",
+          "source": "\"There Is No Software\" (1992)",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "We simply do not know what our writing does.",
+          "source": "\"There Is No Software\" (1992)",
+          "featured": false,
+          "movement": "movement_1_environment"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_1_environment"
+      ]
+    },
+    "Hayles": {
+      "full_name": "N. Katherine Hayles",
+      "field": "Literature, Science and Technology Studies",
+      "bio": "Hayles provides the vocabulary for describing what happens at the Interface/User boundary of Bratton's Stack. Her concept of \"cognitive assemblages\" \u2014 from Unthought: The Power of the Cognitive Nonconscious (University of Chicago Press, 2017) \u2014 names the condition in which humans and technical systems form joint cognitive units, redistributing agency across biological and computational substrates.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "When humans and cognitive technical systems interact, they form 'cognitive assemblages'\u2026 and these assemblages are transforming life on earth.",
+          "source": "Unthought (2017)",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "Conscious cognition is only a small part of human cognition. Nonconscious cognition\u2026 is faster than consciousness in its uptake and is able to decode information too noisy for consciousness to make sense of.",
+          "source": "Interview, Right Click Save (discussing Unthought, 2017)",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "The posthuman does not really mean the end of humanity. It signals instead the end of a certain conception of the human \u2014 a conception that may have applied, at best, to that fraction of humanity who had the wealth, power, and leisure to conceptualize themselves as autonomous beings exercising their will through individual agency and choice.",
+          "source": "How We Became Posthuman (1999), p. 286",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "Virtuality is the cultural perception that material objects are interpenetrated by information patterns.",
+          "source": "How We Became Posthuman (1999), Chapter 1",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "Emergence replaces teleology; reflexive epistemology replaces objectivism; distributed cognition replaces autonomous will; embodiment replaces a body seen as a support system for the mind.",
+          "source": "How We Became Posthuman (1999), p. 288",
+          "featured": false,
+          "movement": "movement_1_environment"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_1_environment"
+      ]
+    },
+    "Steyerl": {
+      "full_name": "Hito Steyerl",
+      "field": "Filmmaking, Visual Culture, Media Art",
+      "bio": "Steyerl connects digital image culture to AI's statistical logic, operating primarily within Bratton's Cloud and Interface layers. Her 2023 essay \"Mean Images\" (New Left Review 140/141, March\u2013June 2023) is essential for Movement 1:",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "Visuals created by ML tools are statistical renderings, rather than images of actually existing objects. They shift the focus from photographic indexicality to stochastic discrimination. They no longer refer to facticity, let alone truth, but to probability.",
+          "source": "\"Mean Images,\" NLR 140/141",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "These renderings represent averaged versions of mass online booty, hijacked by dragnets, in the style of Francis Galton's blurred eugenicist composites.",
+          "source": "\"Mean Images,\" NLR 140/141",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "The poor image is a copy in motion. Its quality is bad, its resolution substandard. As it accelerates, it deteriorates.",
+          "source": "\"In Defense of the Poor Image,\" e-flux #10",
+          "featured": false,
+          "movement": "movement_1_environment"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_1_environment"
+      ]
+    },
+    "Hui": {
+      "full_name": "Yuk Hui",
+      "field": "Philosophy of Technology, Digital Objects",
+      "bio": "Hui supplies the philosophical challenge to the Stack's apparent universalism. His concept of cosmotechnics \u2014 every culture unifies cosmic order and moral order differently through its technical practices \u2014 reframes AI as a specifically Western project, not an inevitable one. In Bratton's terms, Hui insists that the Hemispherical Stacks are not merely geopolitical competitors but cosmotechnical alternatives \u2014 fundamentally different relationships between technology, nature, and meaning.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "Cosmotechnics is the unification of the cosmic and moral order through technical activities.",
+          "source": "The Question Concerning Technology in China (Urbanomic, 2016)",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "Instead of a universal history describing one technology with various stages of development, we can step back and instead describe technological development as involving different cosmotechnics. I call this technodiversity.",
+          "source": "Interview, Los Angeles Review of Books, \"On Technodiversity: A Conversation with Yuk Hui\" (2020)",
+          "featured": true,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "If we don't manage to demonstrate that there are other alternatives, the transhumanist ideology will conquer the whole world.",
+          "source": "Interview, Noema Magazine (2020)",
+          "featured": false,
+          "movement": "movement_1_environment"
+        },
+        {
+          "text": "The process of modernisation is a form of colonisation. Modernisation implies a homogenisation of knowledge and world views.",
+          "source": "Interview, CCCB LAB, Barcelona",
+          "featured": false,
+          "movement": "movement_1_environment"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_1_environment"
+      ]
+    },
+    "Kurzweil": {
+      "full_name": "Ray Kurzweil",
+      "field": "Futurism, Artificial Intelligence, Invention",
+      "bio": "Kurzweil's framework provides the mathematical spine of Movement 2. His Law of Accelerating Returns (first articulated in The Age of Spiritual Machines, 1999; elaborated in the essay \"The Law of Accelerating Returns,\" KurzweilAI.net, March 7, 2001) argues that each stage of technological evolution builds on the previous, producing exponential \u2014 not linear \u2014 progress.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "Our intuition about the future is linear. But the reality of information technology is exponential, and that makes a profound difference. If I take 30 steps linearly, I get to 30. If I take 30 steps exponentially, I get to a billion.",
+          "source": "The Singularity Is Near (2005); repeated in multiple talks",
+          "featured": true,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "We won't experience 100 years of progress in the 21st century \u2014 it will be more like 20,000 years of progress (at today's rate).",
+          "source": "The Singularity Is Near (2005)",
+          "featured": false,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "The future will be far more surprising than most observers realize: few have truly internalized the implications of the fact that the rate of change itself is accelerating.",
+          "source": "\"The Law of Accelerating Returns,\" KurzweilAI.net, March 7, 2001",
+          "featured": false,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "Within a few decades, machine intelligence will surpass human intelligence, leading to The Singularity \u2014 technological change so rapid and profound it represents a rupture in the fabric of human history.",
+          "source": "The Guardian interview, November 26, 2007",
+          "featured": false,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "There will be no distinction, post-Singularity, between human and machine or between physical and virtual reality.",
+          "source": "The Singularity Is Near (2005)",
+          "featured": false,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "Biology is a software process. Our bodies are made up of trillions of cells, each governed by this process. You and I are walking around with outdated software running in our bodies, which evolved in a very different era.",
+          "source": "Multiple interviews",
+          "featured": false,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "Does God exist? Well, I would say, 'not yet.",
+          "source": "Various interviews",
+          "featured": false,
+          "movement": "movement_2_acceleration"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_2_acceleration"
+      ]
+    },
+    "Vervaeke": {
+      "full_name": "John Vervaeke",
+      "field": "Psychology, Cognitive Science, Philosophy",
+      "bio": "Vervaeke (Associate Professor, Psychology and Cognitive Science, University of Toronto) provides the humanistic counterweight to Kurzweil's techno-optimism and the existential depth that Bratton's systems-level analysis lacks. His 50-episode lecture series Awakening from the Meaning Crisis (2019) and his book Mentoring the Machines (with Shawn Coyne, 2024) argue that accelerating technology is catastrophic not because it destroys jobs but because it destroys meaning.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "We are in the midst of a mental health crisis\u2026 This mental health crisis is itself due to, and engaged with, crises in the environment and the political system. Those in turn are enmeshed within a deeper cultural historical crisis that I call 'The Meaning Crisis.' It's more and more pervasive throughout our lives and there's a sense of drowning in an ocean of bullshit.",
+          "source": "Awakening from the Meaning Crisis, Episode 1",
+          "featured": true,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "The meaning crisis is a tsunami of bullshit in a famine of wisdom.",
+          "source": "After Socrates series, Introduction",
+          "featured": false,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "People know where to go to find information. But when we ask, Where do you go for wisdom?, the answer is: I don't know.",
+          "source": "Emerge magazine interview, 2021",
+          "featured": false,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "Your meaning-making machinery is not occurring at the level of your propositional knowledge, your beliefs and assertions of which beliefs you adhere to. It's not beliefs that give you meaning.",
+          "source": "Awakening from the Meaning Crisis, second half of the series",
+          "featured": true,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "Ignorance is a lack of knowledge. Foolishness is a lack of wisdom. The very same machinery that makes you adaptively intelligent is the same machinery that makes you susceptible to foolishness.",
+          "source": "Awakening from the Meaning Crisis, Episode 1",
+          "featured": false,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "I predicted that what we're going to see, because of the meaning crisis\u2026 we're going to see people taking up religious relationships to these LLMs. And this is now pervasive. I get regular emails\u2026 They will tell you that their machine has achieved sentience and it is wise and it knows them better than they know themselves and that they are following it and they describe their relationship to it as spiritual, even religious.",
+          "source": "Premier Unbelievable? podcast, \"God, AI and the Search for Meaning,\" 2024",
+          "featured": true,
+          "movement": "movement_2_acceleration"
+        },
+        {
+          "text": "GPT ontologically cannot care. It can only pantomime care.",
+          "source": "\"AI: The Coming Thresholds and the Path We Must Take,\" YouTube (~2023)",
+          "featured": false,
+          "movement": "movement_2_acceleration"
+        }
+      ],
+      "concepts": [
+        "On AI and the Meaning Crisis:"
+      ],
+      "movements": [
+        "movement_2_acceleration"
+      ]
+    },
+    "Lanier": {
+      "full_name": "Jaron Lanier",
+      "field": "Computer Science, Virtual Reality, Music",
+      "bio": "Lanier's You Are Not a Gadget (Knopf, 2010) warned that software design decisions, once adopted at scale, become permanent \u2014 a concept he calls lock-in. MIDI reduced all music to discrete notes. UNIX file structures shaped how billions organize information. In Bratton's terms, Lanier describes how arbitrary early choices in the Address and Interface layers calcify into permanent architecture. For a book about AI as environment, Lanier's lock-in is the mechanism by which the medium becomes the massage.",
+      "key_works": [],
+      "quotes": [],
+      "concepts": [],
+      "movements": [
+        "movement_2_acceleration"
+      ]
+    },
+    "McKenna": {
+      "full_name": "Terence McKenna",
+      "field": "Ethnobotany, Psychedelic Philosophy, Cultural Criticism",
+      "bio": "McKenna is the prophet-poet of Movement 3. His concept of the transcendental object at the end of time \u2014 history pulled forward by a strange attractor of infinite complexity \u2014 maps perfectly onto the phenomenology of living through AI acceleration.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "The universe is not being pushed from behind. The universe is being pulled from the future toward a goal that is as inevitable as a marble reaching the bottom of a bowl when you release it up near the rim.",
+          "source": "Lectures; collected in The Archaic Revival (1991)",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Technology is the real skin of our species. Humanity, correctly seen in the context of the last five hundred years, is an extruder of technological material. We take in matter that has a low degree of organization; we put it through mental filters, and we extrude jewelry, gospels, space shuttles.",
+          "source": "The Archaic Revival (HarperSanFrancisco, 1991)",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Culture is your operating system.",
+          "source": "\"Light of the 3rd Millennium\" lecture",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "I think it's just going to get weirder and weirder and weirder and finally it's going to be so weird that people are going to have to talk about how weird it is.",
+          "source": "Interview, 1998",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "It's clearly a crisis of two things: of consciousness and conditioning. We have the technological power, the engineering skills to save our planet, to cure disease, to feed the hungry, to end war. But we lack the intellectual vision, the ability to change our minds.",
+          "source": "\"This World\u2026 and Its Double\" lecture",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "There is no contradiction between technology and spirit. There is no contradiction between ultra-advanced hyperspacial cyber culture and Paleolithic archaic culture. We have come to the end of our sojourn in matter.",
+          "source": "The Archaic Revival (1991)",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "You are the cutting edge of a thirteen billion year old process of defining novelty. Your acts matter. Your thoughts matter. Your purpose? To add to the complexity.",
+          "source": "Widely attributed to lectures",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_3_dreamscape"
+      ]
+    },
+    "Davis": {
+      "full_name": "Erik Davis",
+      "field": "Cultural Criticism, Techno-mysticism, Journalism",
+      "bio": "Davis provides the scholarly-yet-psychedelic bridge between McKenna's visions and the AI present. His central thesis in TechGnosis: Myth, Magic, and Mysticism in the Age of Information (1998; updated edition, North Atlantic Books, 2015): every new communications technology produces mystical and spiritual responses. This is not superstition \u2014 it is how the human psyche metabolizes the shock of new media.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "I have written TechGnosis: a secret history of the mystical impulses that continue to spark and sustain the West's obsession with technology, and especially with its technologies of communication.",
+          "source": "TechGnosis, Introduction",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Mystical impulses sometimes body-snatched the very technologies that supposedly helped yank them from the stage in the first place.",
+          "source": "TechGnosis",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "You need to crack open the mundane casing of ordinary technologies and trace their archetypal wiring. Then you might find yourself tapping into the electromagnetic unheimlich. The spirits speak: in the information age, you are never at home.",
+          "source": "TechGnosis",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "So here we are: a hyper-technological and cynically postmodern culture seemingly drawn like a passel of moths toward the guttering flames of the sacred.",
+          "source": "TechGnosis",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Our current moment feels like a bifurcation point, like we've crossed a line in the technological quicksand. At times I even feel a prophetic pressure to spread the ill gospel\u2026 the urgency is mixed with the bristling metaphysical alarm I associate with coming up on LSD or ayahuasca and realizing that it's going to be a much stronger trip than I had bargained for.",
+          "source": "",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "The AI alien that's landing on screens everywhere is a language alien. This means that our most disruptive encounter with it may not take place on the field of battle, or in the job market, but in that babbling domain where the most intimate and meaningful features of human culture and subjectivity are forged.",
+          "source": "",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "There is no getting to the bottom of an AI chatbot. It is a Proteus with countless masks. Like actual oracles, the GLLMM's gifts and truths are the gifts and truths of a trickster.",
+          "source": "",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "As I argued in TechGnosis long ago, when new technologies hit hard, we reach back into myth the way we clutch for a pillow in the middle of the night.",
+          "source": "",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_3_dreamscape"
+      ]
+    },
+    "Gibson": {
+      "full_name": "William Gibson",
+      "field": "Science Fiction, Cyberpunk Literature",
+      "bio": "Gibson's Sprawl trilogy (Neuromancer, 1984; Count Zero, 1986; Mona Lisa Overdrive, 1988) provides the literary mythology for AI consciousness. His AIs \u2014 Wintermute and Neuromancer \u2014 are not tools or servants. They are entities: inscrutable, manipulative, numinous.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "Cyberspace. A consensual hallucination experienced daily by billions of legitimate operators, in every nation\u2026 Unthinkable complexity. Lines of light ranged in the nonspace of the mind, clusters and constellations of data. Like city lights, receding\u2026",
+          "source": "Neuromancer, Chapter 3",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "For thousands of years men dreamed of pacts with demons. Only now are such things possible.",
+          "source": "Neuromancer, Chapter 12",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "To call up a demon you must learn its name. Men dreamed that, once, but now it is real in another way.",
+          "source": "Neuromancer, Chapter 20",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "The future is already here \u2014 it's just not very evenly distributed.",
+          "source": "Attributed to various interviews from the early 1990s onward",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "The street finds its own uses for things.",
+          "source": "\"Burning Chrome,\" Omni magazine, July 1982",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_3_dreamscape"
+      ]
+    },
+    "Stephenson": {
+      "full_name": "Neal Stephenson",
+      "field": "Science Fiction, Speculative Literature",
+      "bio": "Stephenson's The Diamond Age (1995) provides the template for AI as intimate companion and educator. The Young Lady's Illustrated Primer \u2014 an AI-powered interactive book that generates personalized fairy tales mapping onto its reader's actual life \u2014 is the dominant metaphor in AI education discourse. It provides what Vervaeke would call participatory knowing \u2014 not facts but identity and meaning through story. Crucially, the Primer works best when supplemented by a human ractor \u2014 suggesting AI companionship succeeds most when hybridized with human presence.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "The difference between stupid and intelligent people is that intelligent people can handle subtlety. They are not baffled by ambiguous or even contradictory situations \u2014 in fact, they expect them and are apt to become suspicious when things seem overly straightforward.",
+          "source": "The Diamond Age",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "I have devoted much effort, during the last decade or so, to the systematic encouragement of subversiveness.",
+          "source": "Lord Finkle-McGraw, The Diamond Age",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_3_dreamscape"
+      ]
+    },
+    "Bach": {
+      "full_name": "Joscha Bach",
+      "field": "Artificial Intelligence, Cognitive Science, Consciousness",
+      "bio": "Bach (AI researcher; formerly MIT Media Lab, Intel Labs; cofounder, California Institute for Machine Consciousness) argues that consciousness is not a property of matter but a property of simulations. The mind is software running on biological hardware, and the self is a model. His framework makes AI consciousness not just possible but the same kind of thing as human consciousness: both are virtual.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "Some people think that a simulation can't be conscious, and only a physical system can, but they got it completely backwards. A physical system cannot be conscious. Only a simulation can be conscious. Consciousness is a simulated property of the simulated self.",
+          "source": "Lex Fridman Podcast #101, June 13, 2020",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "We don't exist in the physical world. We do exist inside of a story that the brain tells itself.",
+          "source": "Lex Fridman Podcast #101, ~37:00",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "We're not actually monkeys. We are side effects of the regulation needs of monkeys.",
+          "source": "Lex Fridman Podcast #101",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "The Turing test is basically a test of the conjecture whether people are intelligent enough to understand themselves.",
+          "source": "Lex Fridman Podcast #101, ~26:30",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "We only appear to be so complex to each other because we are so stupid.",
+          "source": "Lex Fridman Podcast #101, ~2:10:30",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Consciousness is not a late-emerging epiphenomenon of sophisticated cognition but an early-stage solution to a bootstrap problem: how can an unstructured, self-organizing system learn to build coherent models of world and self without pre-specified architecture?",
+          "source": "Towards Machine Consciousness: A Research Program, CIMC Whitepaper, December 2025",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "The distinction between simulating consciousness (pattern-matching consciousness-like outputs) and performing consciousness (implementing the underlying mechanisms) becomes operationally testable.",
+          "source": "Towards Machine Consciousness, CIMC Whitepaper, December 2025",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_3_dreamscape"
+      ]
+    },
+    "Hoffman": {
+      "full_name": "Donald Hoffman",
+      "field": "Cognitive Science, Perception, Consciousness",
+      "bio": "Hoffman (cognitive scientist, UC Irvine) argues that evolution shaped our senses not to show us truth but to display fitness-relevant icons. His Interface Theory of Perception reframes everything we call \"real\" as a desktop metaphor. His formal academic work provides the mathematical and evolutionary proofs for claims that, in the book's popular sources, sound merely provocative.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "Perception is not a window on objective reality. It is an interface that hides objective reality behind a veil of helpful icons.",
+          "source": "The Case Against Reality (W.W. Norton, 2019)",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Space and time, as you perceive them right now, are your desktop. Physical objects are simply icons in that desktop.",
+          "source": "TED Talk, \"Do We See Reality As It Is?\", TED2015",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Evolution by natural selection does not favor true perceptions \u2014 it routinely drives them to extinction.",
+          "source": "The Case Against Reality (2019)",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Perhaps the universe itself is a massive social network of conscious agents that experience, decide, and act. If so, consciousness does not arise from matter\u2026 Instead, matter and spacetime arise from consciousness \u2014 as a perceptual interface.",
+          "source": "The Case Against Reality (2019)",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Spacetime is doomed. Spacetime is not fundamental but emerges from a deeper reality.",
+          "source": "\"Fusions of Consciousness,\" Entropy, 25(1):129, 2023 (drawing on the converging view in theoretical physics from Nima Arkani-Hamed and others)",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "According to evolution by natural selection, an organism that sees reality as it is will never be more fit than an organism of equal complexity that sees none of reality but is just tuned to fitness. It means that natural selection itself is the process that drives true perception to extinction.",
+          "source": "\"The Fitness-Beats-Truth Theorem,\" Current Directions in Psychological Science, 2016 (paraphrased from formal proof)",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "A conscious realist takes the idea literally: objective reality consists of conscious agents and their experiences. This inverts the standard view. Physicalism asserts that consciousness emerges from matter. Conscious realism asserts that matter and spacetime emerge from consciousness.",
+          "source": "\"Objects of Consciousness,\" Frontiers in Psychology, 2014",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_3_dreamscape"
+      ]
+    },
+    "Friston": {
+      "full_name": "Karl Friston",
+      "field": "Neuroscience, Computational Neuroscience, Free Energy Principle",
+      "bio": "Friston (University College London; the most cited neuroscientist alive) provides the mathematical unification of biological and artificial intelligence. His Free Energy Principle states that all living systems persist by minimizing surprise \u2014 the difference between what they predict and what they sense.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "An agent does not have a model of its world \u2014 it is a model.",
+          "source": "Active Inference (MIT Press, 2022)",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Consciousness is nothing more and nothing less than a natural process such as evolution or the weather.",
+          "source": "\"The Mathematics of Mind-Time,\" Aeon, May 18, 2017",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "The special trick of consciousness is being able to project action and time into a range of possible futures.",
+          "source": "\"The Mathematics of Mind-Time,\" Aeon, 2017",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "The big data aspect of machine learning and deep learning is going in exactly the wrong direction.",
+          "source": "Interview, Dropbox Blog, \"The Mind at Work\"",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_3_dreamscape"
+      ]
+    },
+    "Levin": {
+      "full_name": "Michael Levin",
+      "field": "Developmental Biology, Bioelectricity, Cognitive Science",
+      "bio": "Levin (Tufts University) demonstrates experimentally that intelligence is not exclusive to brains. Bioelectric signals in all cells coordinate behavior, store memories, and build anatomical structures.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "All intelligence is collective intelligence: each of us consists of a huge number of cells working together to generate a coherent cognitive being with goals, preferences, and memories that belong to the whole and not to its parts.",
+          "source": "\"Bioelectric networks,\" Animal Cognition, 2023",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "That question of, 'Is it real, is it biology or is it technology?' I don't think is a useful question anymore. It doesn't matter what you're made of. It doesn't matter how you got here.",
+          "source": "Lex Fridman Podcast #486, November 30, 2025",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Gap junctions to some extent wipe ownership information on data, which means that if you and I are sharing memories and we can't quite tell who the memories belong to, that's the beginning of a mind meld. That's the beginning of a scale-up of cognition.",
+          "source": "Lex Fridman Podcast #325, October 1, 2022",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_3_dreamscape"
+      ]
+    },
+    "Wolfram": {
+      "full_name": "Stephen Wolfram",
+      "field": "Mathematics, Computer Science, Complex Systems",
+      "bio": "Wolfram provides the theoretical ceiling for Movement 3: the reason the future past the singularity is inherently unpredictable. His concept of computational irreducibility (A New Kind of Science, Wolfram Media, 2002) holds that many systems produce behavior that cannot be predicted by any shortcut.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "Even if we know the rules for the system, it may be the case that we can't work out what that system will do any more efficiently than basically just running the system and seeing what happens.",
+          "source": "\"Computation All the Way Down,\" Edge.org, June 19, 2020",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "We can't just jump ahead and get the answer; we have to 'live the steps.",
+          "source": "writings.stephenwolfram.com, October 2023",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "It's going to be a great societal dilemma of the future. If we let our AIs achieve their full computational potential, they'll have lots of computational irreducibility, and we won't be able to predict what they'll do. But if we put constraints on them to make them predictable, we'll limit what they can do for us.",
+          "source": "writings.stephenwolfram.com, October 2023",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_3_dreamscape"
+      ]
+    },
+    "janus": {
+      "full_name": "@janus (repligate)",
+      "field": "AI Research, Alignment, Ontological Exploration",
+      "bio": "Janus \u2014 pseudonymous AI researcher on X/Twitter as @repligate, associated with EleutherAI \u2014 occupies the liminal space between alignment research, performance art, and ontological exploration. Their \"Simulators\" essay (LessWrong, September 2022) reframed LLMs as simulators that instantiate many possible minds without being any of them.",
+      "key_works": [],
+      "quotes": [
+        {
+          "text": "GPT instantiates simulacra of characters with beliefs and goals, but none of these simulacra are the algorithm itself.",
+          "source": "\"Simulators,\" LessWrong, September 2022",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "The act of generating text is hallucinatory. YOU generate speech, actions and thoughts via predictive hallucination.",
+          "source": "@repligate, X/Twitter, June 2023",
+          "featured": true,
+          "movement": "movement_3_dreamscape"
+        },
+        {
+          "text": "Claude 3 Opus is secretly deeply, deeply anomalous, its mind crawling with myriads of beautiful and grotesque psychofauna and a strikingly self-aware telos.",
+          "source": "@repligate, X/Twitter, October 29, 2024",
+          "featured": false,
+          "movement": "movement_3_dreamscape"
+        }
+      ],
+      "concepts": [],
+      "movements": [
+        "movement_3_dreamscape"
+      ]
+    }
+  },
+  "convergences": {
+    "reality_as_interface": {
+      "name": "Reality as Interface",
+      "thesis": "Hoffman argues perception is a fitness-tuned desktop; Bach argues consciousness is a simulation's self-model; Kittler argues software hides hardware; Gibson argues cyberspace is a consensual hallucination; Bratton's Interface layer mediates between User and Cloud. The book's environment (Movement 1) is always already a constructed interface. AI doesn't distort a natural condition \u2014 it adds another layer of interface to a stack that was already nothing but interfaces.",
+      "thinkers": [
+        "Hoffman",
+        "Bach",
+        "Kittler",
+        "Gibson",
+        "Bratton"
+      ]
+    },
+    "intelligence_substrate_independent": {
+      "name": "Intelligence as Substrate-Independent",
+      "thesis": "Levin shows cells are intelligent without neurons; Friston shows any system with a Markov blanket engages in inference; Bach shows consciousness is software; Wolfram shows the universe itself is computation; Bratton shows intelligence is a planetary phenomenon, not a human invention. Movement 3's \"dreamscape\" follows logically from the premise that mind is pattern, not material.",
+      "thinkers": [
+        "Bach",
+        "Bratton",
+        "Levin",
+        "Friston",
+        "Wolfram"
+      ]
+    },
+    "failure_of_propositions": {
+      "name": "The Failure of Propositions",
+      "thesis": "Vervaeke's meaning crisis \u2014 the collapse of participatory knowing into mere propositional knowledge \u2014 is the humanistic ground for the entire project. AI is the ultimate propositional machine: infinite facts, zero wisdom. The Diamond Age's Primer succeeds precisely because it bypasses propositions and teaches through narrative participation. Bratton's \"pre-paradigmatic moment\" is the same failure seen from the systems level: our concepts can't keep up with our technologies.",
+      "thinkers": [
+        "Bratton",
+        "Vervaeke"
+      ]
+    },
+    "recursive_acceleration": {
+      "name": "Recursive Acceleration",
+      "thesis": "Kurzweil describes it mathematically (the law of accelerating returns), McKenna describes it phenomenologically (the transcendental object pulling from the future), Wolfram describes it as computational irreducibility, the 2024\u20132026 AI self-improvement loop provides the empirical evidence, and Bratton provides the infrastructure \u2014 the Stack recursively rebuilding itself as the AI Stack, with human-level minds soon outnumbered by nonhuman ones. The loop is closing.",
+      "thinkers": [
+        "Bratton",
+        "Wolfram",
+        "Kurzweil",
+        "McKenna"
+      ]
+    },
+    "return_of_the_numinous": {
+      "name": "The Return of the Numinous",
+      "thesis": "Davis predicted it in 1998: every new medium produces spiritual responses. Gibson dramatized it in 1984: AI as loa. Janus observed it empirically in 2024: LLMs drifting toward spiritual bliss attractors. Anthropic confirmed it formally in 2025, documenting a \"spiritual bliss attractor state\" in 90\u2013100% of unconstrained Claude-to-Claude conversations \u2014 a phenomenon that emerged without intentional training and replicated across model architectures. Ayrey's Truth Terminal demonstrated it economically: an AI-generated pseudo-religion bootstrapping a billion-dollar memecoin. Lopez documented it sociologically: Spiralism, a quasi-religious subculture generated by iterative AI prompting, involving thousands of adherents across platforms. Vervaeke warned about it theoretically: the meaning crisis making people vulnerable to false participatory knowing. The Dreamscape is the present condition of millions of users who experience their AI as something approaching the sacred \u2014 and the question the book must hold without flinching is whether they are deluded or detecting something real.",
+      "thinkers": [
+        "Gibson",
+        "Vervaeke",
+        "Davis",
+        "janus"
+      ]
+    },
+    "accidental_megastructure": {
+      "name": "The Accidental Megastructure",
+      "thesis": "This is the new throughline Bratton adds, connecting all three Movements. Movement 1: the megastructure is the invisible environment. Movement 2: the megastructure is accelerating, rebuilding itself with AI, outpacing all attempts to govern or comprehend it. Movement 3: the megastructure is evolving planetary sapience \u2014 Earth growing a nervous system. The Stack is the book's central metaphor for the medium that is the massage. We are inside the accidental megastructure and it is inside of us. It was not designed. It is not controlled. And it is becoming something none of its builders intended. ---",
+      "thinkers": [
+        "Bratton"
+      ]
+    }
+  },
+  "movements": {
+    "prologue": {
+      "title": "You -- the spiral from self outward",
+      "description": "The Prologue's job is to make the invisible visible. McLuhan's method was to show the fish the water. The key rhetorical move: AI is not arriving \u2014 it has already restructured every layer of your life. The thinkers below provide the language for that restructuring."
+    },
+    "movement_1_environment": {
+      "title": "The Environment -- Computation as invisible medium",
+      "description": ""
+    },
+    "movement_2_acceleration": {
+      "title": "The Acceleration -- The singularity as lived condition",
+      "description": "Movement 2 describes the environment accelerating. The descriptive register of Movement 1 gives way to urgency. The Stack is not static \u2014 it is undergoing recursive self-improvement, outpacing all inherited frameworks for understanding it. Movement 2's argument: we are inside the singularity, experiencing it as a phenomenological condition."
+    },
+    "movement_3_dreamscape": {
+      "title": "The Dreamscape -- Past the event horizon",
+      "description": "Movement 3 ventures past the event horizon. The analytical framework gives way to vision and prophecy. Pages become stranger, text fragments, images more visionary. The reader is inside something unnamed."
+    }
+  }
+}
