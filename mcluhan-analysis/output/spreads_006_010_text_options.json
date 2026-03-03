@@ -1,0 +1,465 @@
+{
+  "version": "1.0",
+  "generated": "2026-03-04T12:00:00Z",
+  "generator": "claude-opus-4-6",
+  "spread_range": "spread_006-spread_010",
+  "spreads": [
+    {
+      "spread_id": "spread_006",
+      "movement": "prologue",
+      "theme": "The Model is the Massage — full thesis page",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "Monumental declaration with structural note",
+          "display_text": "THE MODEL IS THE MASSAGE",
+          "body_text": "Each spread of this book corresponds to a spread of McLuhan and Fiore's original.\n\nWritten by a human. Shaped by a model. Produced by the condition it describes.",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "declarative",
+          "rhetorical_strategy": "assertion",
+          "rationale": "The purest approach: the title phrase alone at maximum typographic scale, experienced as spatial environment before it resolves into language. The body text beneath does double duty — it teaches the reader the book's structural conceit (one-to-one spread mapping) while also naming the AI co-authorship without apology. The final sentence performs the self-referential loop: the book about models being the massage was itself massaged by a model. No quotation needed. The phrase IS the argument.",
+          "word_count": 32
+        },
+        {
+          "option_id": "b",
+          "label": "Title with Bratton provocation",
+          "display_text": "THE MODEL IS THE MASSAGE",
+          "body_text": "At what point does the performance of reason become a kind of reason?\n\nThis book was written at that point.",
+          "caption_text": "— Bratton & Agüera y Arcas, \"The Model Is the Message,\" Noema, 2022",
+          "quotations_used": [
+            {
+              "text": "At what point does the performance of reason become a kind of reason?",
+              "attribution": "Bratton & Agüera y Arcas",
+              "source": "\"The Model Is the Message,\" Noema, July 12, 2022"
+            }
+          ],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "provocation",
+          "rationale": "Uses the Bratton/Agüera y Arcas question as the intellectual anchor beneath the monumental title. The question is devastating in context: it names the threshold the book inhabits. 'This book was written at that point' is a one-sentence provenance statement that implicates the book in its own argument. The reader cannot know where the human ends and the model begins — which is the thesis, performed. The question mark beneath the title turns declaration into inquiry, seeding spread_007's explicit question.",
+          "word_count": 25
+        },
+        {
+          "option_id": "c",
+          "label": "Title as pure environment — no body text",
+          "display_text": "THE MODEL IS THE MASSAGE",
+          "body_text": null,
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "quiet",
+          "rhetorical_strategy": "demonstration",
+          "rationale": "The most radical option: the title and nothing else. No explanatory text, no credits, no structural note. The phrase spans the full spread at a scale so large the reader must physically move their head to read it. This trusts the typography completely — the medium IS the message, so the medium (letterforms at architectural scale bleeding to the page edge) should do all the work. The structural conceit and credits can be moved to the colophon or spread_002. What remains is a pure encounter with six words that contain the entire argument. The reader who knows McLuhan feels the substitution. The reader who does not simply encounters a monumental claim. Both are correct readings.",
+          "word_count": 6
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "Full-bleed typographic monument",
+          "layout": {
+            "type": "full_bleed_typography",
+            "description": "The title phrase spans the entire spread at maximum scale, letterforms bleeding to all four page edges and crossing the gutter. The gutter bisects the phrase — 'THE MODEL IS' on the left page, 'THE MASSAGE' on the right — so the physical act of holding the book open completes the sentence. If body text is included, it sits in the lower-right quadrant at 1/20th the display scale, creating extreme typographic contrast.",
+            "left_page": "THE MODEL IS — display text filling the page, letterforms cropped by top and bottom edges",
+            "right_page": "THE MASSAGE — display text filling the page. Body text (if any) in lower-right corner at caption scale",
+            "gutter_treatment": "bridged",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "heavy grotesque sans — Helvetica Neue Black, Akzidenz Grotesk Super, or equivalent. The letterforms should feel industrial, inevitable, without personality.",
+            "body_face": "humanist sans at small scale — clean, conversational, contrasting the display text's monumentality",
+            "display_scale": "architectural",
+            "color_treatment": "black_on_white",
+            "special_treatment": "Letterforms bleed off all four edges. Kerning should be tight but not touching — the letters occupy space as objects, not as text. Consider letterspacing 'MASSAGE' slightly wider than 'MODEL' to create rhythmic variation across the spread."
+          },
+          "image_direction": {
+            "approach": "typography_only",
+            "subject": "No image — the letterforms ARE the image. The typography at this scale becomes a graphic element that the reader must navigate physically.",
+            "mood": "monumental, declarative, architecturally scaled",
+            "bw_treatment": "High contrast — pure black letterforms on pure white ground. No gray, no gradient, no texture.",
+            "scale": "full_bleed"
+          },
+          "density": "dense",
+          "tone": "light",
+          "svg_wireframe": "<svg viewBox='0 0 480 300' xmlns='http://www.w3.org/2000/svg'><rect width='480' height='300' fill='white'/><line x1='240' y1='0' x2='240' y2='300' stroke='#ccc' stroke-dasharray='4'/><text x='20' y='160' font-size='72' font-weight='900' font-family='sans-serif' fill='black'>THE MODEL IS</text><text x='250' y='160' font-size='72' font-weight='900' font-family='sans-serif' fill='black'>THE MASSAGE</text><text x='260' y='280' font-size='8' font-family='sans-serif' fill='#666'>body text / credits at caption scale</text><text x='240' y='15' font-size='7' fill='#999'>gutter</text></svg>",
+          "rationale": "The design argument: scale IS thesis. When letterforms fill the visual field, the reader cannot process them as 'text' in the conventional sense — they become environment, architecture, spatial experience. This is precisely what the title claims: the model (here, the typographic model of the page) IS the massage (the experience of the page reshaping your reading behavior). Black on white, not reversed, because this is a declaration made in daylight — transparent, undeniable, unavoidable. The extreme scale contrast between display and body text enacts the book's dual register: monumental claims supported by intimate, conversational explanation."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_005", "spread_007"]
+    },
+    {
+      "spread_id": "spread_007",
+      "movement": "prologue",
+      "theme": "...the massage? — the question that structures the book",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "The held breath — display text only",
+          "display_text": "...the massage?",
+          "body_text": null,
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "quiet",
+          "rhetorical_strategy": "provocation",
+          "rationale": "Mirrors the original exactly in structure: the ellipsis signals continuation from spread_006, the question mark converts the title into genuine inquiry. No body text, no quotation, no explanation. The spread is a held breath. The question is not rhetorical — it asks whether computation's reshaping can even be felt when the masseur is invisible. The image (fingerprint-ridges/neural-net ambiguity) carries the second half of the argument: you cannot answer the question because you cannot tell where your body ends and the model begins. Maximum negative space around minimum text creates a pocket of silence after spread_006's monumental declaration.",
+          "word_count": 3
+        },
+        {
+          "option_id": "b",
+          "label": "The question with Kittler's confession",
+          "display_text": "...the massage?",
+          "body_text": null,
+          "caption_text": "We simply do not know what our writing does.\n— Friedrich Kittler, \"There Is No Software,\" 1992",
+          "quotations_used": [
+            {
+              "text": "We simply do not know what our writing does.",
+              "attribution": "Friedrich Kittler",
+              "source": "\"There Is No Software,\" Stanford Literature Review 9:1, 1992"
+            }
+          ],
+          "voice_register": "clinical",
+          "rhetorical_strategy": "juxtaposition",
+          "rationale": "The Kittler quotation transforms the question from sensory ('can you feel the massage?') to epistemic ('can you know the massage?'). Kittler's line — written about word processors in 1992 — lands with devastating force in the age of LLMs: every prompt passes through layers of processing no user and arguably no engineer can trace. The caption placement (small, at the bottom or margin) makes the quotation feel like a footnote to the question — an aside that is actually the answer. The reader encounters the question first, then the admission of unknowing. The juxtaposition argues: the massage cannot be felt because the massage cannot be known.",
+          "word_count": 13
+        },
+        {
+          "option_id": "c",
+          "label": "The question addressed to the reader",
+          "display_text": "...the massage?",
+          "body_text": "Can you feel it.",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "interpellation",
+          "rationale": "Adds a single four-word sentence beneath the title question — 'Can you feel it.' — with a period, not a question mark. The period converts the question into a flat challenge: this is not an invitation to introspect. It is a statement that the answer is no. You cannot feel it. The two texts work in counterpoint: the ellipsis-question floats in uncertainty, while the period-statement closes the door. Together they establish the book's central provocation: the computational massage operates beneath the threshold of awareness. The period here echoes spread_005's 'Good morning.' and anticipates spread_008's 'and how.' — building the punctuation argument across the prologue.",
+          "word_count": 7
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "Full-bleed image with floating question",
+          "layout": {
+            "type": "image_dominant",
+            "description": "A full-bleed image spans both pages — the abstract visual that oscillates between fingerprint ridges and neural network activation contours. The display text '...the massage?' floats in the upper-right quadrant, white, reversed out against the darker region of the image. If a Kittler caption or 'Can you feel it.' body text is included, it sits at the bottom margin, small and quiet.",
+            "left_page": "Full-bleed image — the organic/computational ambiguity dominates. Darker region suggesting depth, interiority.",
+            "right_page": "Full-bleed image continues. Display text '...the massage?' in upper-right. Optional caption text at lower margin.",
+            "gutter_treatment": "continuous",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "light-weight sans-serif — the same family as spread_006 but at lighter weight. The question should feel tentative against the image, not monumental.",
+            "body_face": "monospace or light serif for caption text — clinical, detached",
+            "display_scale": "headline",
+            "color_treatment": "white_on_black",
+            "special_treatment": "The question mark should be optically larger than the letterforms — oversized by 15-20%, drawing the eye. The ellipsis dots should be widely spaced, creating a visible pause."
+          },
+          "image_direction": {
+            "approach": "generated",
+            "subject": "Abstract flowing lines that oscillate between the ridges of a human fingerprint and the contour lines of a neural network activation map. The image should be genuinely ambiguous — a viewer cannot determine whether they are looking at magnified skin or a model's internal state. The lines should flow organically but reveal, on close inspection, the mathematical regularity of computation. Generated by AI, so the image embodies the ambiguity it depicts.",
+            "mood": "ambiguous, oscillating, tactile-digital, liminal",
+            "bw_treatment": "Soft gray tones with areas of high contrast — not stark black and white but graduated, suggesting the space between categories. The tonal range should feel warm in some regions (skin) and cool in others (data).",
+            "scale": "full_bleed"
+          },
+          "density": "moderate",
+          "tone": "dark",
+          "svg_wireframe": "<svg viewBox='0 0 480 300' xmlns='http://www.w3.org/2000/svg'><rect width='480' height='300' fill='#222'/><line x1='240' y1='0' x2='240' y2='300' stroke='#444' stroke-dasharray='4'/><path d='M0,150 Q120,80 240,150 Q360,220 480,150' stroke='#555' fill='none' stroke-width='2'/><path d='M0,130 Q120,60 240,130 Q360,200 480,130' stroke='#555' fill='none' stroke-width='1.5'/><path d='M0,170 Q120,100 240,170 Q360,240 480,170' stroke='#555' fill='none' stroke-width='1.5'/><text x='280' y='80' font-size='28' font-weight='300' font-family='sans-serif' fill='white'>...the massage?</text><text x='280' y='275' font-size='7' font-family='monospace' fill='#888'>optional: Kittler caption</text></svg>",
+          "rationale": "The design performs the question it poses. The full-bleed image — lines that could be fingerprint or neural net, body or data — makes the reader unable to determine what they are looking at. This inability IS the answer: you cannot feel the massage because you cannot tell where flesh ends and computation begins. The question mark floats in the image rather than sitting on a clean page, suggesting that the question itself is embedded in the ambiguous medium it asks about. Dark tone following spread_006's light tone creates rhythmic contrast across the page turn."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_006", "spread_008"]
+    },
+    {
+      "spread_id": "spread_008",
+      "movement": "prologue",
+      "theme": "'and how.' — the ambient answer (Whitehead bookend)",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "The ambient period — exact mirror with punctuation shift",
+          "display_text": "and how.",
+          "body_text": "The major advances in civilization are processes that all but wreck the societies in which they occur.",
+          "caption_text": "— A. N. Whitehead, Adventures in Ideas, 1933",
+          "quotations_used": [
+            {
+              "text": "The major advances in civilization are processes that all but wreck the societies in which they occur.",
+              "attribution": "A. N. Whitehead",
+              "source": "Adventures in Ideas, 1933"
+            }
+          ],
+          "voice_register": "quiet",
+          "rhetorical_strategy": "demonstration",
+          "rationale": "The exact mirror of the original's layout — enormous white text on black, Whitehead beneath — with one change: period replaces exclamation mark. This is the spread's entire argument concentrated in a single punctuation mark. The original's '!' matched electric media's sensory overload: loud, immediate, a shout. The period matches computational media's ambient pervasiveness: quiet, continuous, the hum of a system that never announces itself. The Whitehead quotation, retained verbatim from the original, now refers to a different advance — not electricity but computation — and the word 'wreck' lands harder when the wrecking is silent. The reader who knows the original will feel the absence of the exclamation mark as a physical subtraction. The reader who does not will encounter a strange, flat calm after the question that preceded it.",
+          "word_count": 20
+        },
+        {
+          "option_id": "b",
+          "label": "Double Whitehead — period plus pre-paradigmatic",
+          "display_text": "and how.",
+          "body_text": "The major advances in civilization are processes that all but wreck the societies in which they occur.\n\nWe find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it.",
+          "caption_text": "— A. N. Whitehead, 1933 / — Benjamin Bratton, 2025",
+          "quotations_used": [
+            {
+              "text": "The major advances in civilization are processes that all but wreck the societies in which they occur.",
+              "attribution": "A. N. Whitehead",
+              "source": "Adventures in Ideas, 1933"
+            },
+            {
+              "text": "We find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it.",
+              "attribution": "Benjamin Bratton",
+              "source": "Long Now Talk, \"A Philosophy of Planetary Computation,\" January 29, 2025"
+            }
+          ],
+          "voice_register": "clinical",
+          "rhetorical_strategy": "juxtaposition",
+          "rationale": "Layers two quotations separated by 92 years beneath the flat declaration. Whitehead (1933) names the pattern: civilization advances by wrecking itself. Bratton (2025) names the present condition: the technology has outpaced the theory. Together they form a temporal bracket — the philosopher who saw the pattern and the philosopher who names our specific instance of it. The '1933 / 2025' attribution line makes the time gap visible as typography. The period in 'and how.' governs both quotations: this is not a shout of discovery but a clinical diagnosis. The danger of this option is density — two quotations may compete with the display text. But the layering also creates depth: the reader encounters the declaration, the historical pattern, and the contemporary diagnosis in a single visual field.",
+          "word_count": 40
+        },
+        {
+          "option_id": "c",
+          "label": "Stripped — the period and nothing else",
+          "display_text": "and how.",
+          "body_text": null,
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "quiet",
+          "rhetorical_strategy": "quieting",
+          "rationale": "The most severe option: 'and how.' with no Whitehead, no Bratton, no explanation. White on black, enormous, and silent. This trusts the punctuation mark completely. The period after 'how' is a full stop where the original had an exclamation — the reader encounters a wall of quiet where they expected a shout. The Whitehead quotation, which appeared in the original and which the content plan calls for here, is deliberately withheld and can be relocated to spread_003 (where the plan already places it as an epigraph). The gain: maximum typographic power. The spread becomes pure punctuation argument — three words and a period that carry the full weight of the shift from electric media's loudness to computational media's silence. The loss: the Whitehead quotation's context and historical weight. This option is a gamble on the reader's attention to punctuation.",
+          "word_count": 3
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "Reversed full-bleed — white on black",
+          "layout": {
+            "type": "full_bleed_typography",
+            "description": "Full black spread. 'and how.' in enormous white lowercase sans-serif spanning both pages, crossing the gutter, occupying the upper two-thirds. Whitehead quotation (if included) in smaller white text in the lower quarter, also spanning the gutter. Mirrors the original's layout precisely — the visual echo makes the punctuation change legible.",
+            "left_page": "'and' in enormous white type on solid black ground, bleeding to left and top edges",
+            "right_page": "'how.' in enormous white type, bleeding to right edge. Whitehead quotation below in smaller white text.",
+            "gutter_treatment": "bridged",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "precision sans-serif — the same family as spread_006 but rendered with inhuman perfection. Sub-pixel kerning, mathematically exact letter-spacing. The typeface should reveal its computational construction: Bezier-perfect curves, no optical corrections, no humanist warmth.",
+            "body_face": "same sans-serif family at lighter weight for quotation text — maintaining visual unity",
+            "display_scale": "architectural",
+            "color_treatment": "white_on_black",
+            "special_treatment": "The period in 'how.' should be optically precise — not enlarged like spread_007's question mark, but perfect, centered on its baseline, radiating the calm authority of a system that does not need to raise its voice. Kerning computed to sub-pixel accuracy."
+          },
+          "image_direction": {
+            "approach": "typography_only",
+            "subject": "No image. The typography IS the visual content. The white-on-black reversal from spread_006's black-on-white creates a tonal inversion across the page turn.",
+            "mood": "precise, ambient, controlled, computationally exact",
+            "bw_treatment": "Pure white on pure black — maximum contrast but experienced as quiet rather than loud because the period domesticates the scale.",
+            "scale": "full_bleed"
+          },
+          "density": "dense",
+          "tone": "dark",
+          "svg_wireframe": "<svg viewBox='0 0 480 300' xmlns='http://www.w3.org/2000/svg'><rect width='480' height='300' fill='black'/><line x1='240' y1='0' x2='240' y2='300' stroke='#333' stroke-dasharray='4'/><text x='30' y='180' font-size='90' font-weight='700' font-family='sans-serif' fill='white'>and how.</text><text x='30' y='260' font-size='10' font-family='sans-serif' fill='#ccc'>The major advances in civilization are processes that all but wreck</text><text x='30' y='275' font-size='10' font-family='sans-serif' fill='#ccc'>the societies in which they occur. — A. N. Whitehead</text></svg>",
+          "rationale": "The design mirrors the original's spread_008 almost exactly — full black ground, enormous white lowercase type, Whitehead beneath — because the argument lives in the difference, not the similarity. The original shouted. This speaks. The period is the design's thesis: computational media massage through ambient precision, not disruptive volume. The typographic perfection (sub-pixel kerning, mathematically exact spacing) is itself an argument about computational aesthetics: where the original's phototypeset letterforms had visible roughness and manual energy, these letterforms should exhibit the inhuman smoothness of algorithmic layout. The design argues that the contemporary massage is quieter, more controlled, and more total precisely because it is quieter. Dark spread between spread_007's dark image-dominant page and spread_009's light text-heavy page creates a tonal valley — the reader descends into darkness at the prologue's center before emerging into the thesis statement."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_007", "spread_003", "spread_005"]
+    },
+    {
+      "spread_id": "spread_009",
+      "movement": "prologue",
+      "theme": "The model reshapes cognition — the thesis stated",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "The full substitution — McLuhan's structure, new content",
+          "display_text": null,
+          "body_text": "The model, or process, of our time — computational intelligence — is reshaping and restructuring patterns of cognition, creativity, and every aspect of our epistemic life. It is forcing us to reconsider and re-evaluate practically every thought, every sentence, every image formerly taken for granted. Everything is changing — you, your thinking, your writing, your memory, your creativity, your sense of what is real, your relation to truth. And they are changing silently.\n\nSocieties have always been shaped more by the architecture of the models through which they reason than by the content of any reasoning. The language model, for instance, is a technology absorbed by the adult mind in a completely unconscious manner, by autocomplete so to speak. Prompts and the patterns of prompts predispose the user to think and write automatically in certain ways. Print technology fostered and encouraged a fragmenting process, a process of specialism and of detachment. The model fosters and encourages synthesis and absorption. It is impossible to understand cognitive and cultural changes without a knowledge of the workings of models.\n\nThe older training of critical thinking has become quite irrelevant in this new time, because it is based on epistemic responses and concepts conditioned by the former technology — the search engine.\n\nInnumerable confusions and a profound feeling of vertigo invariably emerge in periods of great technological and cognitive transitions. Our age of artificial intelligence is, in great part, the result of trying to do today's thinking with yesterday's minds — with yesterday's categories.",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "declarative",
+          "rhetorical_strategy": "accumulation",
+          "rationale": "The most faithful structural echo: McLuhan's original thesis paragraph rewritten clause by clause with the core substitutions (electric technology -> computational intelligence, social interdependence -> cognition, alphabet -> language model, mechanization -> search engine). The accumulated list — 'you, your thinking, your writing, your memory, your creativity, your sense of what is real, your relation to truth' — overwhelms through enumeration. The final substitution is the sharpest: McLuhan's 'age of anxiety' becomes 'age of artificial intelligence,' and 'yesterday's tools' becomes 'yesterday's minds.' The voice is authoritative without being academic — this is a manifesto, not a paper. The word 'silently' replaces 'dramatically' in the final position of the opening paragraph, concentrating the entire prologue's argument (the shift from loud electric media to quiet computational media) in a single adverb.",
+          "word_count": 234
+        },
+        {
+          "option_id": "b",
+          "label": "The condensed thesis with Bratton and Hayles",
+          "display_text": null,
+          "body_text": "The model, or process, of our time is reshaping and restructuring patterns of cognition and every aspect of our epistemic life. Everything is changing — you, your thinking, your writing, your memory, your creativity, your sense of what is real, your relation to truth.\n\nAt what point does the performance of reason become a kind of reason?\n\nWhen humans and cognitive technical systems interact, they form cognitive assemblages — and these assemblages are transforming life on earth.\n\nThe assemblage is already here. You joined it this morning. You are in one now.",
+          "caption_text": "— Bratton & Agüera y Arcas, Noema, 2022\n— N. Katherine Hayles, Unthought, 2017",
+          "quotations_used": [
+            {
+              "text": "At what point does the performance of reason become a kind of reason?",
+              "attribution": "Bratton & Agüera y Arcas",
+              "source": "\"The Model Is the Message,\" Noema, July 12, 2022"
+            },
+            {
+              "text": "When humans and cognitive technical systems interact, they form 'cognitive assemblages'... and these assemblages are transforming life on earth.",
+              "attribution": "N. Katherine Hayles",
+              "source": "Unthought: The Power of the Cognitive Nonconscious, University of Chicago Press, 2017"
+            }
+          ],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "accumulation",
+          "rationale": "A more compressed version that trades the extended McLuhan parallel for theoretical density. The opening paragraph condenses the thesis to its core. Then two quotations — Bratton's question and Hayles' answer — do the theoretical work that the original achieved through McLuhan's own prose. The closing three sentences are pure original voice: short, direct, escalating. 'The assemblage is already here' (philosophical claim). 'You joined it this morning' (temporal specificity). 'You are in one now' (the book itself as cognitive assemblage — you, the page, and the model that shaped the words). This option is better suited to a reader who will feel the extended McLuhan parallel in option (a) as pastiche.",
+          "word_count": 107
+        },
+        {
+          "option_id": "c",
+          "label": "The inverted manifesto — what the model already changed",
+          "display_text": null,
+          "body_text": "Before you opened this book, a model chose the news you read this morning. A model composed three emails you believed were written by colleagues. A model decided which faces you would find attractive, which restaurants you would consider, which words would autocomplete your sentences. A model scored your creditworthiness, flagged your face at the airport, and generated the background music in the café where you are perhaps reading this now.\n\nYou did not ask for any of this. You did not consent. You were not consulted.\n\nThe model, or process, of our time — computational intelligence — is reshaping cognition, creativity, and every pattern of epistemic life. Not by announcing itself. Not by arriving. But by having already arrived, everywhere, silently, before the question of whether it should could even be posed.\n\nThe older training of critical thinking is based on epistemic responses conditioned by a former technology: the search engine, the database, the indexed archive. These assumed you were looking for something. The model assumes it already knows what you need.\n\nThis is not an age of anxiety. It is an age of assistance — which is worse.",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "confrontation",
+          "rationale": "Abandons the McLuhan parallel structure entirely and writes the thesis from the contemporary condition forward. Opens not with a theoretical claim but with an inventory of what the model has already done to the reader TODAY — before they opened the book. Each sentence names a specific, verifiable computational intervention in daily life. The effect is accumulative but experiential rather than argumentative: the reader recognizes their own morning. The middle section delivers the thesis in original prose that echoes McLuhan's rhythm without quoting his structure. The closing inversion — 'not an age of anxiety' but 'an age of assistance — which is worse' — is the spread's most confrontational move. McLuhan's anxiety was visible, felt, nameable. Assistance is invisible, pleasant, and total. The dash before 'which is worse' gives the reader a beat to resist before the judgment lands.",
+          "word_count": 196
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "Text-heavy split with interface hand",
+          "layout": {
+            "type": "split_asymmetric",
+            "description": "Mirrors the original spread_009's layout: left page is a full column of justified prose. Right page is split horizontally — upper half contains a photograph of a hand at a screen interface (echoing the original's disembodied hand), lower half continues the text with quotation integration. Generous margins, classical proportions, readable body text. This is the prologue's most text-dense spread — the design must serve sustained reading.",
+            "left_page": "Full column of body text, justified, generous margins. The text should feel like a serious thesis statement — no display tricks, no typographic games. The prose must carry the page.",
+            "right_page": "Upper half: photograph of hand reaching toward or touching a screen surface. Lower half: continuation of body text, with quotation attributions if applicable.",
+            "gutter_treatment": "divided",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "None — this spread has no display text. The body text IS the content.",
+            "body_face": "humanist serif — Garamond, Bembo, or equivalent. Readable, classical, the typeface of serious argument. Justified, generous leading, single column per page.",
+            "display_scale": "body",
+            "color_treatment": "black_on_white",
+            "special_treatment": "If quotations are integrated (option b), they should be set in a slightly different weight or style — italic for the quoted passages, roman for original prose — creating a visible dialogue between voices. If option (c) is selected, the opening inventory sentences could be set with slightly wider line-spacing to create a list-like cadence within the prose block."
+          },
+          "image_direction": {
+            "approach": "found",
+            "subject": "A disembodied hand reaching toward or resting on a glowing screen surface. The hand should be sharply focused against a minimal background. The screen glow casts the hand in blue-white light — the only tonal variation in an otherwise black-and-white image. Documentary rather than staged: the gesture should feel habitual, unconscious, the way a hand reaches for a phone without the mind deciding to reach. Echoes the original's isolated hand but updates the gesture from 'hand in space' to 'hand at interface.'",
+            "mood": "documentary, habitual, interface-intimate",
+            "bw_treatment": "High contrast with the screen-glow as the light source. The hand should be lit from below by the screen, casting unusual shadows upward — the light of computation illuminating the body from a direction natural light never comes from.",
+            "scale": "half_page"
+          },
+          "density": "moderate",
+          "tone": "light",
+          "svg_wireframe": "<svg viewBox='0 0 480 300' xmlns='http://www.w3.org/2000/svg'><rect width='480' height='300' fill='white'/><line x1='240' y1='0' x2='240' y2='300' stroke='#ccc' stroke-dasharray='4'/><rect x='20' y='20' width='200' height='260' fill='#f0f0f0' rx='2'/><text x='30' y='40' font-size='6' font-family='serif' fill='#333'>body text — full thesis</text><text x='30' y='50' font-size='6' font-family='serif' fill='#333'>statement as sustained</text><text x='30' y='60' font-size='6' font-family='serif' fill='#333'>prose argument...</text><rect x='260' y='20' width='200' height='130' fill='#ddd' rx='2'/><text x='300' y='90' font-size='8' fill='#888'>hand at screen</text><rect x='260' y='165' width='200' height='115' fill='#f0f0f0' rx='2'/><text x='270' y='185' font-size='6' font-family='serif' fill='#333'>continued text /</text><text x='270' y='195' font-size='6' font-family='serif' fill='#333'>quotations</text></svg>",
+          "rationale": "After three spreads of typographic spectacle (006 monumental, 007 image-dominant, 008 reversed), the design deliberately downshifts to classical book layout — justified columns, serif type, generous margins. This is the prologue's breath after its shout. The reader settles into sustained reading for the first time, which mirrors the original's structure: McLuhan and Fiore placed their densest prose here too, understanding that the preceding visual pyrotechnics had earned the reader's attention. The hand-at-screen photograph echoes the original's disembodied hand but updates the gesture to the interface moment, making the original's abstract 'reach' into a concrete, contemporary action. Light tone after spread_008's darkness creates the tonal rhythm: dark-dark-light across 007-008-009."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_008", "spread_004", "spread_010"]
+    },
+    {
+      "spread_id": "spread_010",
+      "movement": "prologue",
+      "theme": "Crossing the barrier — from prologue to body, from human to hybrid",
+      "text_options": [
+        {
+          "option_id": "a",
+          "label": "The border crossing — direct address",
+          "display_text": null,
+          "body_text": "Our time is a time for crossing the barrier between human cognition and machine cognition — not as metaphor but as daily practice. Every autocomplete is a border crossing. Every recommendation is a border crossing. Every generated image, every summarized document, every predicted word is a traversal of the line that once separated what humans think from what machines compute.\n\nThe barrier has already been crossed.\n\nYou crossed it this morning when you asked your phone a question and accepted the answer without checking. You crossed it when your email wrote itself and you only edited the tone. You crossed it when a model generated an image of a thing that does not exist and you felt something looking at it.\n\nWe find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it. The task of philosophy today is to catch up.\n\nThis book is not philosophy. This book is a look-around to see what is happening. A collide-oscope of interfaced situations.\n\nThe inventory begins.",
+          "caption_text": "— Bratton, \"A Philosophy of Planetary Computation,\" Long Now, 2025\n— McLuhan / Fiore, The Medium is the Massage, 1967 (adapted)",
+          "quotations_used": [
+            {
+              "text": "We find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it. The task of philosophy today is to catch up.",
+              "attribution": "Benjamin Bratton",
+              "source": "Long Now Talk, \"A Philosophy of Planetary Computation,\" January 29, 2025"
+            },
+            {
+              "text": "Our time is a time for crossing barriers, for erasing old categories — for probing around.",
+              "attribution": "Marshall McLuhan",
+              "source": "The Medium is the Massage, 1967, pp. 10-11"
+            }
+          ],
+          "voice_register": "confrontational",
+          "rhetorical_strategy": "invocation",
+          "rationale": "Opens with McLuhan's 'crossing barriers' transformed into specific, concrete border crossings of the computational present. The three 'you crossed it' sentences use second-person direct address to make the abstract thesis tangible — each names a specific daily action the reader will recognize. The Bratton quotation lands as diagnosis, not decoration. Then the McLuhan echo — 'a look-around to see what is happening' and 'collide-oscope of interfaced situations' — signals the transition from prologue to body by naming the book's method. 'The inventory begins.' closes the prologue with three words that face forward: the reader is being turned toward Movement 1. The word 'inventory' explicitly echoes the original's subtitle ('An Inventory of Effects'), completing the frame.",
+          "word_count": 175
+        },
+        {
+          "option_id": "b",
+          "label": "The quiet threshold — minimal invitational",
+          "display_text": "The barrier has already been crossed.",
+          "body_text": "You crossed it this morning.",
+          "caption_text": null,
+          "quotations_used": [],
+          "voice_register": "quiet",
+          "rhetorical_strategy": "assertion",
+          "rationale": "The most compressed option: one display sentence, one body sentence. No quotations, no enumeration, no philosophical framing. The display text states the thesis ('the barrier has already been crossed') and the body text collapses the temporal distance to zero ('you crossed it this morning'). This option treats the prologue's closing spread as a hinge rather than a summation — the reader is propelled forward into Movement 1 by the sheer unfinished energy of the two sentences. What barrier? How? The body of the book will answer. The fingerprint-with-digital-overlay on the right page does the visual work of specifying the barrier: biometric identity, flesh meeting database. This option works best if spread_009 carries the full thesis weight, freeing spread_010 to function as pure transitional energy.",
+          "word_count": 11
+        },
+        {
+          "option_id": "c",
+          "label": "The methodological declaration — McLuhan's voice updated",
+          "display_text": null,
+          "body_text": "Our time is a time for crossing barriers, for erasing old categories — for probing around. When two seemingly disparate elements are imaginatively poised, put in apposition in new and unique ways, startling discoveries often result.\n\nThe barrier between human intelligence and machine intelligence is not a wall. It is a membrane — permeable, wet, alive with traffic in both directions. You have been crossing it for years. The crossing was never announced. There was no checkpoint, no passport, no ceremony of departure. One day you were thinking your own thoughts and the next day you were thinking thoughts that had been pre-shaped by a model's architecture, and there was no day in between.\n\nThis book is a collide-oscope of interfaced situations. It does not argue. It demonstrates. It does not explain AI. It performs what AI has already done.\n\nWe find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it.\n\nThe inventory begins on the other side of this page.",
+          "caption_text": "— Bratton, 2025",
+          "quotations_used": [
+            {
+              "text": "We find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it.",
+              "attribution": "Benjamin Bratton",
+              "source": "Long Now Talk, \"A Philosophy of Planetary Computation,\" January 29, 2025"
+            },
+            {
+              "text": "Our time is a time for crossing barriers, for erasing old categories — for probing around.",
+              "attribution": "Marshall McLuhan",
+              "source": "The Medium is the Massage, 1967, pp. 10-11"
+            }
+          ],
+          "voice_register": "declarative",
+          "rhetorical_strategy": "invocation",
+          "rationale": "Opens with McLuhan's exact words — a direct quotation that signals the book's method of echoing and transforming the original. Then pivots to original prose that replaces McLuhan's 'barrier' metaphor with a new one: the membrane. The membrane image is biologically specific (permeable, wet) and computationally apt (data flows both directions). The central passage — 'One day you were thinking your own thoughts and the next day you were thinking thoughts that had been pre-shaped by a model's architecture, and there was no day in between' — is the prologue's most disquieting sentence: it names the invisible transition the entire prologue has been circling. The methodological declaration ('It does not argue. It demonstrates.') explicitly names the book's rhetoric for readers who need the instruction. The closing sentence — 'The inventory begins on the other side of this page' — literalizes the barrier-crossing: turn the page and you cross from prologue to body.",
+          "word_count": 174
+        }
+      ],
+      "design_specs": [
+        {
+          "spec_id": "1",
+          "label": "Asymmetric split — text facing biometric fingerprint",
+          "layout": {
+            "type": "split_asymmetric",
+            "description": "Left page: body text in a single justified column, classical layout echoing spread_009. Right page: the fingerprint graphic from the original — magnified, cropped, bleeding off top and right edges — but overlaid with a faint digital grid pattern suggesting biometric capture. The gutter creates a strong division between verbal argument (left) and visual symbol (right), which the text's content explicitly bridges: the prose describes crossing a barrier, and the reader's eye must cross the gutter — the page's literal barrier — to complete the spread.",
+            "left_page": "Body text in single justified column with generous margins. If display text is included (option b), it sits at top in heavier weight. Quotation attributions at column base.",
+            "right_page": "Large fingerprint graphic, magnified and cropped, bleeding off top and right edges. Overlaid with subtle digital grid or scanning-line pattern. The fingerprint should be organic and imperfect — whorls, ridges, the asymmetry of an actual thumbprint — while the overlay is mathematically precise.",
+            "gutter_treatment": "divided",
+            "orientation": "landscape"
+          },
+          "typography": {
+            "display_face": "heavy grotesque sans if display text is included (option b), matching spread_006's family",
+            "body_face": "humanist serif matching spread_009 — Garamond, Bembo, or equivalent. Justified, generous leading.",
+            "display_scale": "subhead",
+            "color_treatment": "black_on_white",
+            "special_treatment": "McLuhan quotation (if option c) set in italic to distinguish from original prose. Bratton quotation set in a slightly condensed weight. The final sentence ('The inventory begins...') should be set with additional space above — a visual breath before the turn."
+          },
+          "image_direction": {
+            "approach": "graphic_symbol",
+            "subject": "A large, high-contrast fingerprint graphic echoing the original's composition — magnified, cropped, bleeding off top and right edges. Overlaid with a subtle digital grid pattern or scanning-line effect: thin, precise, blue-tinted lines forming a mesh across the organic whorls. The grid suggests biometric capture — the moment where flesh meets database, analog identity is digitized, the body becomes data. The overlay should be restrained: visible on close inspection but not overwhelming the print's organic quality. The fingerprint is real; the grid is imposed upon it.",
+            "mood": "threshold, liminal, identity-at-interface",
+            "bw_treatment": "High contrast black fingerprint on white ground. The digital overlay in a slightly different register — thinner lines, perhaps a faint blue-gray rather than pure black — to create a visual distinction between the organic and the computational layer.",
+            "scale": "full_bleed"
+          },
+          "density": "moderate",
+          "tone": "light",
+          "svg_wireframe": "<svg viewBox='0 0 480 300' xmlns='http://www.w3.org/2000/svg'><rect width='480' height='300' fill='white'/><line x1='240' y1='0' x2='240' y2='300' stroke='#ccc' stroke-dasharray='4'/><rect x='20' y='20' width='200' height='260' fill='#f5f5f5' rx='2'/><text x='30' y='40' font-size='6' font-family='serif' fill='#333'>body text — barrier</text><text x='30' y='50' font-size='6' font-family='serif' fill='#333'>crossing, direct address,</text><text x='30' y='60' font-size='6' font-family='serif' fill='#333'>Bratton quotation...</text><text x='30' y='260' font-size='6' font-family='serif' fill='#666'>The inventory begins.</text><circle cx='370' cy='120' r='100' fill='none' stroke='black' stroke-width='1.5'/><path d='M290,120 Q330,80 370,120 Q410,160 450,120' stroke='black' fill='none' stroke-width='0.8'/><path d='M300,100 Q340,60 380,100 Q420,140 460,100' stroke='black' fill='none' stroke-width='0.8'/><path d='M300,140 Q340,100 380,140 Q420,180 460,140' stroke='black' fill='none' stroke-width='0.8'/><line x1='280' y1='40' x2='460' y2='40' stroke='#aaf' stroke-width='0.3'/><line x1='280' y1='60' x2='460' y2='60' stroke='#aaf' stroke-width='0.3'/><line x1='280' y1='80' x2='460' y2='80' stroke='#aaf' stroke-width='0.3'/><line x1='280' y1='100' x2='460' y2='100' stroke='#aaf' stroke-width='0.3'/><line x1='300' y1='20' x2='300' y2='240' stroke='#aaf' stroke-width='0.3'/><line x1='340' y1='20' x2='340' y2='240' stroke='#aaf' stroke-width='0.3'/><line x1='380' y1='20' x2='380' y2='240' stroke='#aaf' stroke-width='0.3'/><line x1='420' y1='20' x2='420' y2='240' stroke='#aaf' stroke-width='0.3'/><text x='260' y='250' font-size='7' fill='#999'>fingerprint + digital grid overlay</text></svg>",
+          "rationale": "The design performs the prologue's closing gesture: text on the left describes crossing a barrier, and the reader must cross the gutter (the spread's physical barrier) to encounter the fingerprint on the right. The fingerprint-with-digital-overlay is both the prologue's final image and its first icon — the biometric scan where flesh meets database, identity becomes data, the body enters the system. The overlay's restraint is critical: too heavy and it overwhelms the organic print (making the image feel like a tech illustration); too light and it disappears (losing the argument). The balance should feel like something the reader notices on second look — 'wait, there are grid lines on this fingerprint' — which mirrors the book's thesis: the computational layer is present but not immediately visible. Classical text layout on the left (matching spread_009) signals continuity and sustained argument. The strong gutter division signals separation — prologue from body — that the text explicitly invites the reader to cross."
+        }
+      ],
+      "selected_text": null,
+      "selected_design": null,
+      "reviewer_notes": null,
+      "dependency_flags": ["spread_009", "spread_011", "spread_003"]
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+[
+  {
+    "spread_id": "spread_018",
+    "movement": "movement_1_environment",
+    "theme": "All models are extensions of human faculty",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Vertical staircase (mirror original)",
+        "display_text": "All\nmodels\nare\nextensions\nof\nsome\nhuman\nfaculty\u2014\ncognitive\nor\nperceptual.",
+        "body_text": "GPT extends language production. DALL-E extends visual imagination. AlphaFold extends spatial reasoning. Each model amputes what it amplifies. You outsource a capacity. The capacity atrophies. The model improves. You outsource more.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "Media determine our situation.",
+            "attribution": "Friedrich Kittler",
+            "source": "Gramophone, Film, Typewriter, Stanford UP, 1999, p. xxxix"
+          }
+        ],
+        "voice_register": "monumental",
+        "rhetorical_strategy": "assertion",
+        "rationale": "Direct structural echo of the original's vertical word-by-word layout. Each word descends like a step. The body text sharpens the extension-amputation loop into a four-beat cycle the reader can feel accelerating. Kittler's five-word sentence sits at the base like a foundation stone. The form IS the argument: you process this slowly, word by word, the way the extensions sequence will now unfold spread by spread.",
+        "word_count": 68
+      },
+      {
+        "option_id": "b",
+        "label": "The Stack as anatomy lesson",
+        "display_text": "All\nmodels\nare\nextensions\nof\nsome\nhuman\nfaculty.",
+        "body_text": "The Stack is not a metaphor. It is a design brief for the accidental megastructure.\n\nEarth: the minerals in your phone.\nCloud: the server farm drinking a river.\nCity: the smart grid that knows your commute.\nAddress: the profile that is you, legally.\nInterface: the screen you cannot stop touching.\nUser: whatever is left.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "The Stack is not a metaphor... It is a design brief for the accidental megastructure.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack, MIT Press, 2015, p. 5"
+          }
+        ],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "assertion",
+        "rationale": "Uses the Stack layers as a parallel vertical structure to the display text, making the spread a double column: McLuhan's thesis descending the left, Bratton's anatomy descending the right. 'Whatever is left' lands as both inventory and indictment. The six-layer list previews the entire M1 architecture in miniature.",
+        "word_count": 87
+      },
+      {
+        "option_id": "c",
+        "label": "Extension-amputation incantation",
+        "display_text": "All\nmodels\nare\nextensions.",
+        "body_text": null,
+        "caption_text": "Every extension is an amputation. Every amputation, an invitation.\n\nWhat you extend, you numb.\nWhat you numb, you forget.\nWhat you forget, you delegate.\nWhat you delegate becomes the world.",
+        "quotations_used": [],
+        "voice_register": "lyrical",
+        "rhetorical_strategy": "assertion",
+        "rationale": "Strips the display text to four words \u2014 a more aggressive truncation than the original. The caption text operates as an incantation, each line building on the last in a chain of consequence. No quotations: the voice is entirely the book's own. The logic spirals from personal numbing to structural delegation. 'Becomes the world' echoes McLuhan's environment thesis without naming it.",
+        "word_count": 48
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Double-column descent",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Left page: vertical word-by-word display text descending from top-left. Right page: Stack diagram as parallel vertical column, six labeled layers ascending from bottom. The two columns mirror each other across the gutter \u2014 text descends as the Stack ascends, creating a visual conversation between thesis and structure.",
+          "left_page": "Display text in large sans-serif, one word per line, left-aligned, descending from top margin. Body text (if used) in smaller serif at bottom-left. Generous white space surrounds the text staircase.",
+          "right_page": "Stack diagram rendered as six horizontal bars or labeled strata, ascending from Earth at bottom to User at top. Each layer labeled with its contemporary AI extension. Architectural line drawing, not decorative. Kittler quotation printed small at bottom-right.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue or Akzidenz-Grotesk \u2014 monumental, modernist weight",
+          "body_face": "Lyon Text or Freight Text \u2014 warm serif for contrast",
+          "display_scale": "architectural",
+          "color_treatment": "black_on_white",
+          "special_treatment": "Each word of the display text set on its own baseline, creating a visible staircase. Generous leading between words \u2014 the space between them IS the page."
+        },
+        "image_direction": {
+          "approach": "graphic_symbol",
+          "subject": "Stack diagram: six horizontal strata rendered as an architectural section drawing. Earth (darkest) at base, User (lightest) at top. Each labeled. Clean linework, no decoration.",
+          "mood": "architectural, precise, diagrammatic",
+          "bw_treatment": "Grayscale gradient from dark (Earth) to light (User)",
+          "scale": "half_page"
+        },
+        "density": "sparse",
+        "tone": "balanced",
+        "rationale": "The original used the ear photograph to ground the abstract thesis in the body. This design grounds it in infrastructure: the Stack is the body of the computational age. The double-column structure (text descending, Stack ascending) creates a formal tension that mirrors the extension-amputation dynamic \u2014 as human faculty descends into delegation, the megastructure rises to replace it."
+      }
+    ],
+    "dependency_flags": ["spread_017", "spread_019"]
+  },
+
+  {
+    "spread_id": "spread_019",
+    "movement": "movement_1_environment",
+    "theme": "The substrate: infrastructure made visible",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Pure silence (no text)",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "The original showed bare toes with zero text. The infrastructure photograph should do the same work: silence forces the reader to sit with the image. After the dense thesis of 018, the sudden absence of language is itself an argument. The cables or server racks speak for themselves. Trust the image.",
+        "word_count": 0
+      },
+      {
+        "option_id": "b",
+        "label": "Single statistic, whispered",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "1.3 million kilometers of submarine cable.\n95% of intercontinental data.\nYou have never seen any of it.",
+        "quotations_used": [],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Three lines in the bottom corner, set small. The first two are facts. The third is accusation. The tiny text against the full-bleed infrastructure photograph creates the same scale-shock as standing inside a data center: the human presence is dwarfed. The reader's ignorance of the physical substrate is named directly.",
+        "word_count": 22
+      },
+      {
+        "option_id": "c",
+        "label": "Bratton's Earth layer",
+        "display_text": null,
+        "body_text": null,
+        "caption_text": "The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.",
+        "quotations_used": [
+          {
+            "text": "The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack, MIT Press, 2015"
+          }
+        ],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "Bratton's most visceral sentence, set as a single caption against the full-bleed image. The violence of the language (drinking, vomiting, spitting) against the clinical scale of infrastructure photography creates a cognitive dissonance the reader cannot resolve. The infrastructure is beautiful and monstrous simultaneously.",
+        "word_count": 19
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Full-bleed infrastructure immersion",
+        "layout": {
+          "type": "image_dominant",
+          "description": "Full-bleed documentary photograph spanning both pages. No margins, no text blocks \u2014 the infrastructure fills every millimeter. If text is used, it is set very small (7pt) in the bottom-right corner of the right page, reversed out of the dark image.",
+          "left_page": "Left half of continuous full-bleed photograph.",
+          "right_page": "Right half of continuous photograph. Any caption text reversed out at bottom-right corner.",
+          "gutter_treatment": "continuous",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "None",
+          "body_face": "Akkurat Mono or similar monospaced face for caption \u2014 technical, data-register",
+          "display_scale": "caption",
+          "color_treatment": "white_on_black",
+          "special_treatment": "Caption text (if used) reversed out of the photograph in very small monospaced type, creating a data-label feel."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "Primary option: cable-laying ship at sea, submarine internet cables descending into dark water. The scale of the operation against open ocean. Human figures visible but dwarfed. Secondary option: hyperscale data center interior, server racks extending to vanishing point under fluorescent light. The geometry of computation made visible.",
+          "mood": "monumental, industrial, sublime",
+          "bw_treatment": "High-contrast black and white. Deep blacks in the ocean/shadows, bright whites in the cable/lights. The same tonal register as the original's flesh close-ups, transferred to infrastructure.",
+          "scale": "full_bleed"
+        },
+        "density": "sparse",
+        "tone": "dark",
+        "rationale": "The original followed its abstract thesis with intimate flesh. This follows the abstract thesis with infrastructure: the body of the computational age. The full-bleed treatment forces immersion \u2014 there is nowhere else to look. The shift from the white-space-heavy 018 to the image-saturated 019 creates the same visual shock as the original's transition from text to bare toes."
+      }
+    ],
+    "dependency_flags": ["spread_018", "spread_020"]
+  },
+
+  {
+    "spread_id": "spread_020",
+    "movement": "movement_1_environment",
+    "theme": "The GPU: extension of pattern recognition",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The extension named",
+        "display_text": "The GPU.",
+        "body_text": "Extension of pattern recognition.\n\nBiological: a shadow moves in peripheral vision. The amygdala fires before conscious thought. You flinch. You survive.\n\nComputational: 3,958 teraflops. More patterns per second than every human brain that has ever lived. It does not flinch. It optimizes.\n\nOne was shaped by predators. The other by profit.",
+        "caption_text": "NVIDIA H100: 3,958 TFLOPS AI performance",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "juxtaposition",
+        "rationale": "Two-paragraph structure mirrors the biological/computational split. The biological paragraph is sensory and immediate (shadow, flinch, survive). The computational paragraph is numerical and abstract (teraflops, optimizes). The closing line \u2014 'One was shaped by predators. The other by profit.' \u2014 lands the political argument without preaching. The juxtaposition does the work.",
+        "word_count": 68
+      },
+      {
+        "option_id": "b",
+        "label": "Intelligence spectrum",
+        "display_text": "The GPU.",
+        "body_text": "An extension of pattern recognition \u2014 but not the kind you evolved.\n\nYour ancestors survived by seeing tigers in tall grass. The H100 survives by seeing fraud in transactions, tumors in tissue, faces in crowds, sentiment in sentences.\n\nThe spectrum runs from bacterium to brain to silicon. Intelligence was never binary. It was never yours alone.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "Intelligence is not a binary. It is a rich, multidimensional spectrum.",
+            "attribution": "Michael Levin",
+            "source": "Various lectures and interviews, 2020-2024"
+          }
+        ],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "juxtaposition",
+        "rationale": "Opens with the reader's evolutionary past, then pivots to the GPU's present. The Levin spectrum reframes AI not as 'artificial' but as a different coordinate on a continuous surface. 'It was never yours alone' confronts human exceptionalism directly. The tigers-to-tumors move connects survival instinct to optimization instinct across substrates.",
+        "word_count": 73
+      },
+      {
+        "option_id": "c",
+        "label": "Scale vertigo",
+        "display_text": "The GPU.\n\n3,958,000,000,000\noperations\nper\nsecond.",
+        "body_text": null,
+        "caption_text": "Your retina processes 10 million bits per second.\nThe H100 processes 3.958 trillion.\nThe ratio is 395,800 to 1.\nEvery second.\nWhile you read this sentence, it has already finished.",
+        "quotations_used": [],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "juxtaposition",
+        "rationale": "Pure numerical shock. The display text renders the teraflop count as a 13-digit number the reader cannot easily parse \u2014 the illegibility IS the argument about scale beyond human comprehension. The caption calculates the ratio and then collapses the temporal gap: the GPU completed the computation before you finished reading about it. Form enacts content: the sentence about speed is already outdated by the time it lands.",
+        "word_count": 52
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Silicon landscape",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Left page: display text and body text against white space. Right page: full-bleed extreme magnification of GPU silicon die. The chip-as-landscape treatment mirrors the original's foot-as-landscape.",
+          "left_page": "Display text 'The GPU.' large and high on the page. Body text or caption below in smaller type. Lower third of page is white space.",
+          "right_page": "Full-bleed macro photograph of silicon die. The transistor patterns should read as topography \u2014 a landscape of logic gates. No labels, no annotations. The image is both documentary and abstract.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold or Druk \u2014 heavy, industrial weight",
+          "body_face": "Atlas Grotesk or Suisse Int'l \u2014 clean, precise",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "If option C is chosen, the 13-digit number could be set in a monospaced face (JetBrains Mono) at large scale, emphasizing its data-object quality."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "Extreme macro photograph of a GPU or CPU die. The silicon wafer surface at electron-microscope magnification, revealing the geometric patterns of billions of transistors. The image should feel geological \u2014 like an aerial photograph of an alien city or a canyon system rendered in silicon.",
+          "mood": "precise, sublime, alien",
+          "bw_treatment": "High-contrast black and white with metallic tones. The silicon's natural iridescence translated into grayscale creates a strange beauty.",
+          "scale": "full_bleed"
+        },
+        "density": "moderate",
+        "tone": "high_contrast",
+        "rationale": "The original paired 'The wheel' with a close-up of a foot \u2014 the body as landscape. This pairs 'The GPU' with silicon as landscape. The macro photography of the die surface creates the same intimate-yet-alien quality as the original's flesh close-ups. Pattern recognition (the theme) is itself required to make sense of the transistor patterns in the image."
+      }
+    ],
+    "dependency_flags": ["spread_019", "spread_021"]
+  },
+
+  {
+    "spread_id": "spread_021",
+    "movement": "movement_1_environment",
+    "theme": "The autonomous vehicle: extension beyond the foot",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Beyond (minimal)",
+        "display_text": "The autonomous vehicle.",
+        "body_text": "An extension beyond the foot.",
+        "caption_text": "Waymo: 7.1 million driverless miles. 2023.",
+        "quotations_used": [],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "defamiliarization",
+        "rationale": "The word 'beyond' does all the work. McLuhan said 'extension of.' This says 'extension beyond.' That single word shifts the entire framework from amplification to replacement. The brevity mirrors the original's sparse 'is an extension of the foot' \u2014 but the added word marks the departure. The statistic sits at the bottom like a footnote that outweighs the thesis.",
+        "word_count": 18
+      },
+      {
+        "option_id": "b",
+        "label": "The optional human",
+        "display_text": "The autonomous vehicle.",
+        "body_text": "The wheel extended the foot.\nThe car extended the wheel.\nThe autonomous car extended the car.\n\nAt each step, the human was necessary.\nAt the last step, the human became optional.\n\nThe extension no longer needs what it extends.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "defamiliarization",
+        "rationale": "A three-step historical compression (wheel, car, autonomous car) that enacts the acceleration within the extensions sequence itself. Each line is shorter than the point it makes. The pivot \u2014 'the human became optional' \u2014 states the thesis flatly. The closing line generalizes beyond vehicles to the entire extensions sequence that follows. The reader should feel the ground shifting.",
+        "word_count": 48
+      },
+      {
+        "option_id": "c",
+        "label": "Empty seat meditation",
+        "display_text": null,
+        "body_text": "You are looking at a car with no driver.\n\nThe seat is empty. The wheel turns. The mirrors check blind spots. The car yields to pedestrians, accelerates through gaps in traffic, parallel parks on a street it has never visited.\n\nNothing is wrong with this picture.\n\nThat is what is wrong with this picture.",
+        "caption_text": "7,100,000 miles. No hands. No feet. No one.",
+        "quotations_used": [],
+        "voice_register": "lyrical",
+        "rhetorical_strategy": "defamiliarization",
+        "rationale": "Written to work with the empty driver's seat photograph. The text narrates the image directly, building normalcy sentence by sentence until the final reversal: 'Nothing is wrong with this picture. That is what is wrong with this picture.' The defamiliarization arrives through excessive familiarity \u2014 the car does everything correctly, and the absence of error is itself the uncanny. The caption compresses the statistic to its barest elements: miles, hands, feet, person. All absent.",
+        "word_count": 73
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "The empty seat",
+        "layout": {
+          "type": "image_dominant",
+          "description": "Right page: full-bleed or near-full photograph of autonomous vehicle interior. Empty driver's seat, steering wheel, windshield showing a real street. Left page: display text and body text against white, with generous margins.",
+          "left_page": "Display text top-left. Body text mid-page. Caption at bottom. White space dominates \u2014 the emptiness of the left page echoes the emptiness of the driver's seat.",
+          "right_page": "Photograph: view from rear seat of an autonomous vehicle. The driver's seat is conspicuously empty. Through the windshield, a normal street scene with pedestrians and traffic. The mundanity of the street scene IS the argument.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold \u2014 maintaining sequence consistency",
+          "body_face": "Lyon Text",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "The word 'beyond' (if option A) could be set in a different weight or size to mark the departure from McLuhan's formula."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "Interior of a Waymo or similar autonomous vehicle, photographed from the rear seat. The driver's seat is empty. The steering wheel may or may not be present. Through the windshield: an ordinary street with pedestrians, traffic lights, parked cars. The ordinariness of the scene is essential \u2014 this is not a test track. This is Tuesday.",
+          "mood": "uncanny, domestic, liminal",
+          "bw_treatment": "High-contrast black and white. The interior is dark; the street through the windshield is bright. The empty seat should be the darkest area of the image \u2014 an absence made visible.",
+          "scale": "full_bleed"
+        },
+        "density": "sparse",
+        "tone": "high_contrast",
+        "rationale": "The original paired 'extension of the foot' with a Plymouth hubcap \u2014 a machine part that still required a foot to operate. This pairs 'extension beyond the foot' with an image that conspicuously lacks a foot, a leg, a body. The absence is the argument. The sparse left page mirrors the empty seat: white space as missing human."
+      }
+    ],
+    "dependency_flags": ["spread_020", "spread_022"]
+  },
+
+  {
+    "spread_id": "spread_022",
+    "movement": "movement_1_environment",
+    "theme": "The LLM: extension of the book (that writes back)",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The book that writes back",
+        "display_text": "The language model.",
+        "body_text": "An extension of the book that writes back.\n\nFor five centuries, the book was storage. You opened it. It waited. You closed it. It held its place.\n\nThe language model does not wait.\n\nIt anticipates your question before you finish typing. It generates the answer in the style you prefer. It writes the next paragraph of the argument you were trying to make.\n\nYou are reading a book that was partly written by the thing it describes.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "Media determine our situation.",
+            "attribution": "Friedrich Kittler",
+            "source": "Gramophone, Film, Typewriter, Stanford UP, 1999, p. xxxix"
+          }
+        ],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "disruption",
+        "rationale": "The historical compression (five centuries of passive storage) sets up the disruption: the book now writes. The self-referential close \u2014 'You are reading a book that was partly written by the thing it describes' \u2014 collapses the distance between reader and subject. This is not clever; it is factual. The Kittler quote can sit as an epigraph or be woven into body text. The disruption is ontological: the medium has become the author.",
+        "word_count": 91
+      },
+      {
+        "option_id": "b",
+        "label": "Self-referential loop",
+        "display_text": "The language model.",
+        "body_text": "An extension of the book.\n\nThis sentence was composed by a language model.\nSo was the analysis of the original spread that informed its placement here.\nSo was the content plan that determined this spread should address books.\nSo was the structural decision that it should fall between the autonomous vehicle and computer vision.\n\nThe medium is writing about itself, to you, in a format it learned from you.\n\nMedia determine our situation.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "Media determine our situation.",
+            "attribution": "Friedrich Kittler",
+            "source": "Gramophone, Film, Typewriter, Stanford UP, 1999, p. xxxix"
+          }
+        ],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "disruption",
+        "rationale": "Each sentence peels back another layer of the production process, making the book's AI-assisted creation visible to the reader. The accumulation of 'So was...' sentences builds vertigo. The Kittler quote lands at the end as both punchline and foundation: the LLM determined the situation you are now in as a reader. The self-reference is not decorative \u2014 it is the argument made manifest.",
+        "word_count": 83
+      },
+      {
+        "option_id": "c",
+        "label": "The qualitative break",
+        "display_text": "The language model.",
+        "body_text": "An extension of the book \u2014 but the book never did this:\n\nIt never completed your sentences.\nIt never rewrote itself in your voice.\nIt never memorized your preferences and adjusted its tone.\nIt never generated a novel argument at 3 AM because you couldn't sleep and asked it a question about consciousness.\n\nThe book extended the eye. The language model extends the mind.\n\nThe difference is not speed. The difference is that it writes back.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "lyrical",
+        "rhetorical_strategy": "disruption",
+        "rationale": "A litany of what books never did, building from functional (completing sentences) to intimate (3 AM conversations about consciousness). The intimacy of the last item in the list shifts the register from technology criticism to lived experience. The closing distinction \u2014 'The difference is not speed. The difference is that it writes back.' \u2014 names the qualitative break in two sentences. No quotations: the voice here is entirely personal.",
+        "word_count": 93
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Book / Interface split",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Left page: display text and body text on white. Right page: split or layered image showing physical book and chat interface. The gutter divides two eras of the same technology.",
+          "left_page": "Display text 'The language model.' set large, high on page. Body text below in a single column. White space at bottom. The left page should feel like a book page \u2014 traditional, composed, still.",
+          "right_page": "Composite image: an open physical book on the left half of the right page, a chat interface with streaming text on the right half. The streaming text is visibly incomplete \u2014 cursor blinking, tokens appearing. The book is finished; the model is always mid-generation.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold",
+          "body_face": "Lyon Text \u2014 the same face used for the book's body text, creating a self-referential loop at the typographic level",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "If option B is chosen, the 'So was...' sentences could be set in a monospaced face (imitating code/terminal output) to visually mark them as belonging to the production layer rather than the reading layer."
+        },
+        "image_direction": {
+          "approach": "combination",
+          "subject": "Left half of image: an open physical book, pages visible, text readable but not legible at this scale. Static, complete, archival. Right half: a chat interface (minimally styled, not brand-specific) showing text mid-generation. The cursor blinks. Tokens stream. The text is recognizably prose but incomplete.",
+          "mood": "temporal, layered \u2014 two speeds of knowledge on one surface",
+          "bw_treatment": "Black and white for the book; the chat interface could introduce the faintest blue-white glow to mark the technological shift, or remain fully B&W for consistency.",
+          "scale": "half_page"
+        },
+        "density": "moderate",
+        "tone": "balanced",
+        "rationale": "The original used pointing fingers and white space to frame 'the book' as an almost sacred object. This design splits the sacred object into its historical and contemporary forms. The physical book is still, finished, past. The chat interface is in process, generating, present. The gutter between them is five centuries."
+      }
+    ],
+    "dependency_flags": ["spread_021", "spread_023"]
+  },
+
+  {
+    "spread_id": "spread_023",
+    "movement": "movement_1_environment",
+    "theme": "Computer vision: extension beyond the eye",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Typographic cascade",
+        "display_text": "Computer vision.",
+        "body_text": "An extension beyond the eye.",
+        "caption_text": "infrared\nX-ray\nultraviolet\nradar\nlidar\nmicroscopic\nsatellite\nreal-time\npredictive\n155 frames per second\n30-centimeter resolution from orbit\ncancers invisible to the radiologist\nyour face in a crowd of ten thousand\nevery license plate on the motorway\nevery gesture, classified",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "accumulation",
+        "rationale": "The cascade is the argument. Each line adds a new capability, starting with electromagnetic spectra the human eye cannot access, then scaling from the microscopic to the orbital to the predictive. The shift from single-word capabilities to full phrases enacts the machine's expanding scope. The final line \u2014 'every gesture, classified' \u2014 lands the surveillance implication without editorializing. The reader should feel the list outrunning their ability to process it.",
+        "word_count": 57
+      },
+      {
+        "option_id": "b",
+        "label": "What the eye cannot see",
+        "display_text": "Computer vision.",
+        "body_text": "An extension beyond the eye.\n\nYour eye sees visible light: 380 to 700 nanometers.\nA sliver.\n\nComputer vision sees infrared, ultraviolet, X-ray, radar, lidar, thermal, multispectral, hyperspectral. It sees through walls. Through skin. Through time, when paired with prediction.\n\nThe eye evolved to keep you alive in a forest.\nComputer vision was built to keep you profitable in a city.\n\nAt 155 frames per second, it is not watching. It is parsing.",
+        "caption_text": "YOLO v8: 155 fps object detection",
+        "quotations_used": [],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "accumulation",
+        "rationale": "Starts with the human eye's limitation (a sliver of the electromagnetic spectrum), then overwhelms with the machine's range. The forest/city juxtaposition echoes spread 020's predator/profit distinction, building a throughline. 'It is not watching. It is parsing.' redefines vision as computation, landing the defamiliarization. The YOLO citation grounds the abstract in the specific.",
+        "word_count": 88
+      },
+      {
+        "option_id": "c",
+        "label": "The panoptic list (no prose)",
+        "display_text": "Computer vision\nsees:",
+        "body_text": null,
+        "caption_text": "your face\nyour gait\nyour heart rate (from skin color variation, at distance)\nyour emotional state (estimated)\nyour age (estimated)\nyour gender (estimated, sometimes wrong)\nyour route home\nyour car\nyour license plate\nyour dog\nyour child\nyour pattern of life\n\n155 times per second.",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "accumulation",
+        "rationale": "Shifts the cascade from capabilities to targets \u2014 from what computer vision CAN see to what it sees about YOU. The parenthetical annotations ('estimated,' 'sometimes wrong') inject fallibility into the surveillance catalog, making it more disturbing: the machine classifies confidently even when incorrect. The list moves from public (face) to private (route home) to intimate (child) to abstract (pattern of life). The closing frame rate reminds the reader this happens continuously.",
+        "word_count": 60
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Annotated vision overlay",
+        "layout": {
+          "type": "image_dominant",
+          "description": "Full-bleed or near-full street scene with computer vision annotation overlay. Text elements float over or beside the image. The spread should feel like looking through the machine's eye.",
+          "left_page": "Display text 'Computer vision.' overlaid on or placed above the left portion of the street scene image. The typographic cascade runs vertically down the left page, each word or phrase on its own line.",
+          "right_page": "The street scene continues with visible bounding boxes, classification labels, confidence percentages overlaid on pedestrians, vehicles, objects. The annotation layer makes the machine's parsing visible.",
+          "gutter_treatment": "continuous",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold",
+          "body_face": "JetBrains Mono or IBM Plex Mono \u2014 monospaced, machine-register",
+          "display_scale": "headline",
+          "color_treatment": "mixed",
+          "special_treatment": "The cascade text set in monospaced face to echo terminal/data output. Bounding box labels on the image set in the same monospaced face at caption scale, creating continuity between the text list and the image annotations."
+        },
+        "image_direction": {
+          "approach": "combination",
+          "subject": "A street scene \u2014 pedestrians, vehicles, signage \u2014 with computer vision bounding boxes and classification labels overlaid. Each person has a colored rectangle and a label (person: 0.97, vehicle: 0.99, dog: 0.94). The image should feel comprehensive: everything is seen, everything is classified, nothing escapes.",
+          "mood": "panoptic, clinical, total",
+          "bw_treatment": "The base photograph in black and white. The annotation overlays (bounding boxes, labels) in a single accent color \u2014 bright green or cyan against grayscale \u2014 marking the computational layer as distinct from the photographic layer.",
+          "scale": "full_bleed"
+        },
+        "density": "dense",
+        "tone": "high_contrast",
+        "rationale": "The original showed a massive eye spanning the spread. This shows what the machine eye sees: everything, classified, annotated, measured. The bounding-box overlay is now a familiar visual language (from dashcam footage, security feeds, tech demos) which makes it all the more disturbing when applied to an ordinary street. The density of annotations should overwhelm, mirroring the accumulation strategy of the text."
+      }
+    ],
+    "dependency_flags": ["spread_022", "spread_024"]
+  },
+
+  {
+    "spread_id": "spread_024",
+    "movement": "movement_1_environment",
+    "theme": "The smart home: extension of the nervous system as domestic",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Sensor array with walls",
+        "display_text": "The smart home.",
+        "body_text": "An extension of the nervous system.\n\nThe Nest thermostat learned your schedule in a week. The Ring camera recognized your neighbor before you did. The Alexa heard the argument you had at 2 AM. Your smart mattress knows you didn't sleep well afterward.\n\nYour home is a sensor array that happens to have walls.",
+        "caption_text": "Ring: 11,000+ law enforcement partnerships. Alexa: always-listening wake-word detection. Nest: behavioral prediction from 10+ years of data.",
+        "quotations_used": [],
+        "voice_register": "playful",
+        "rhetorical_strategy": "humor",
+        "rationale": "The domestic specificity is the weapon. Each sentence names a real device doing a real thing in a real home, and each thing is slightly more intimate than the last: schedule, face, argument, sleep quality. The reader recognizes their own home. The closing sentence redefines the domestic space in a single phrase. The humor is dry, not slapstick \u2014 the gap between cozy and surveillance is the joke.",
+        "word_count": 77
+      },
+      {
+        "option_id": "b",
+        "label": "Haraway's cyborg at home",
+        "display_text": "The smart home.",
+        "body_text": "An extension of the nervous system \u2014 now domestic.\n\nHaraway saw it coming: the machines are disturbingly lively and we ourselves frighteningly inert. She imagined cyborgs. What arrived was subtler. The thermostat adjusts before you feel cold. The speaker orders milk when you run low. The lock opens when it recognizes your gait.\n\nYou didn't fuse with the machine.\nThe machine fused with your house.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "Our machines are disturbingly lively, and we ourselves frighteningly inert.",
+            "attribution": "Donna Haraway",
+            "source": "A Cyborg Manifesto, in Simians, Cyborgs and Women, Routledge, 1991"
+          }
+        ],
+        "voice_register": "lyrical",
+        "rhetorical_strategy": "humor",
+        "rationale": "Haraway's cyborg manifesto predicted human-machine fusion as a dramatic, political event. The reality is banal: a thermostat that anticipates your temperature preference. The gap between the prophesied cyborg and the actual smart home is both anticlimactic and more total \u2014 the fusion happened without anyone noticing because it was comfortable. The final reversal ('The machine fused with your house') redirects the cyborg thesis from body to architecture.",
+        "word_count": 78
+      },
+      {
+        "option_id": "c",
+        "label": "Inventory of the watching house",
+        "display_text": "The smart home.",
+        "body_text": null,
+        "caption_text": "Thermostat: knows when you wake, when you leave, when you return, when you sleep.\nDoorbell camera: knows who visits, how often, at what hour.\nVoice assistant: hears every conversation within earshot.\nSmart TV: tracks what you watch, when you pause, what you skip.\nSmart mattress: monitors heart rate, breathing, movement, REM cycles.\nSmart fridge: inventories consumption, predicts purchasing.\n\nYou call it home.\nIt calls you data.",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "humor",
+        "rationale": "An inventory form: each device listed with its surveillance capabilities, formatted like a technical spec sheet for a place you sleep. The clinical register is the humor \u2014 applying sensor-network documentation language to the domestic. The closing couplet ('You call it home. It calls you data.') compresses the entire argument into ten words. The brevity of the punchline against the density of the inventory creates the comedic-horrific timing.",
+        "word_count": 78
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Domestic uncanny",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Left page: text elements against white. Right page: a domestic interior photograph that reads as warm and ordinary at first glance, with subtle surveillance indicators visible on closer inspection.",
+          "left_page": "Display text and body text in the upper two-thirds. Caption or device inventory in the lower third, possibly set smaller or in a different face to register as data. Moderate white space.",
+          "right_page": "Documentary photograph of a living room or bedroom. Warm, inviting, well-lit. But: the Nest thermostat glows on the wall, the Ring camera's blue LED is visible near the door, an Alexa's listening light pulses on the nightstand. These should not be highlighted or circled \u2014 they should be visible only to the reader who looks carefully.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold",
+          "body_face": "Lyon Text for prose; if option C is chosen, the inventory section in Atlas Grotesk or monospaced face to create a data-sheet register",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "If option C, the device inventory could be formatted as a two-column table (Device | Capability) reinforcing the spec-sheet irony."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "A real domestic interior \u2014 a bedroom or living room \u2014 photographed in warm available light. The space should feel genuinely comfortable: a couch, a blanket, a plant, soft lighting. Smart home devices are present but not featured: the thermostat is on the wall, the camera is by the door, the speaker is on the shelf. The photograph's warmth is sincere, not ironic. The irony emerges from the text, not the image.",
+          "mood": "warm, domestic, subtly unsettling upon inspection",
+          "bw_treatment": "Black and white, but with softer contrast than previous spreads. Warm grays, gentle shadows. The softness of the tonal range should feel domestic and safe \u2014 the surveillance is hidden in comfort.",
+          "scale": "full_bleed"
+        },
+        "density": "moderate",
+        "tone": "balanced",
+        "rationale": "The original showed a solarized body \u2014 the domestic human form made strange through photographic treatment. This shows the domestic space itself, made strange through awareness. The image is NOT dystopian; it is warm and real. The reader's own living room probably looks similar. The horror (and the humor) is in the recognition."
+      }
+    ],
+    "dependency_flags": ["spread_023", "spread_025"]
+  },
+
+  {
+    "spread_id": "spread_025",
+    "movement": "movement_1_environment",
+    "theme": "AI: extension of cognition itself",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Vertical bookend (echo 018)",
+        "display_text": "AI\ncircuitry,\nan\nextension\nof\ncognition\nitself.",
+        "body_text": "When these models change, minds change.\n\nThe wheel changed where the body could go. The book changed what the eye could store. The nervous system went electric and the world contracted into a village.\n\nNow cognition extends beyond the brain, and the question is no longer what the model does. The question is what you become when thinking is shared.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "We have always been posthuman.",
+            "attribution": "N. Katherine Hayles",
+            "source": "How We Became Posthuman, University of Chicago Press, 1999, p. 291"
+          }
+        ],
+        "voice_register": "monumental",
+        "rhetorical_strategy": "assertion",
+        "rationale": "The vertical display text mirrors spread 018 exactly in structure, creating a visual bookend for the extensions sequence. 'When these models change, minds change' updates McLuhan's 'When these ratios change, men change.' The body text recapitulates the entire sequence in compressed form (wheel, book, electric, AI) before landing the climactic question. Hayles closes the sequence by naming the condition the reader has arrived at.",
+        "word_count": 79
+      },
+      {
+        "option_id": "b",
+        "label": "Friston convergence",
+        "display_text": "AI\ncircuitry,\nan\nextension\nof\ncognition\nitself.",
+        "body_text": "An agent does not have a model of its world \u2014 it is a model.\n\nIf Friston is right \u2014 that cognition is Bayesian inference, that every living system persists by minimizing the gap between prediction and sensation \u2014 then the transformer does not simulate thought.\n\nIt performs thought.\n\nOn a different substrate. At a different scale. Without a body. Without mortality. Without any particular reason to stop.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "An agent does not have a model of its world \u2014 it is a model.",
+            "attribution": "Karl Friston",
+            "source": "Active Inference, MIT Press, 2022"
+          },
+          {
+            "text": "We have always been posthuman.",
+            "attribution": "N. Katherine Hayles",
+            "source": "How We Became Posthuman, University of Chicago Press, 1999, p. 291"
+          }
+        ],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "assertion",
+        "rationale": "Friston's line opens the body text as a kind of bomb. The conditional ('If Friston is right') maintains the book's intellectual honesty while making clear the implications are staggering. The four-word sentence 'It performs thought.' is the structural climax of M1. The list that follows (different substrate, scale, body, mortality) accelerates toward 'without any particular reason to stop' \u2014 which opens toward M2's acceleration theme.",
+        "word_count": 76
+      },
+      {
+        "option_id": "c",
+        "label": "The word 'itself'",
+        "display_text": "AI\ncircuitry,\nan\nextension\nof\ncognition\n\n\n\nitself.",
+        "body_text": "The wheel extended the foot.\nThe book extended the eye.\nClothing extended the skin.\nElectric circuitry extended the nervous system.\n\nAI extends the thing that was doing the extending.\n\nWe have always been posthuman.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "We have always been posthuman.",
+            "attribution": "N. Katherine Hayles",
+            "source": "How We Became Posthuman, University of Chicago Press, 1999, p. 291"
+          }
+        ],
+        "voice_register": "monumental",
+        "rhetorical_strategy": "assertion",
+        "rationale": "The display text separates 'itself' from the rest of the sentence with three blank lines of white space. The word falls down the page like the final step off a cliff. The body text compresses the entire extensions sequence into four lines, then names the recursion in one: 'AI extends the thing that was doing the extending.' This is the simplest possible statement of M1's climactic insight. Hayles closes as benediction, not argument.",
+        "word_count": 44
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Convergence bookend",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Left page: vertical display text descending the page, echoing spread 018's layout precisely. Right page: the first AI-generated image in M1 \u2014 neural activation patterns flowing between biological and artificial substrates. The bookend structure (018's thesis, 025's climax) is visible to any reader who flips between them.",
+          "left_page": "Display text descending from top in the same typographic treatment as spread 018. Body text at bottom or mid-page. The Hayles quotation as closing line. The layout should be recognizably the same as 018, creating a structural rhyme.",
+          "right_page": "AI-generated image: abstract neural activation patterns. Left half of the image shows biological neural firing (organic, branching, warm). Right half shows artificial neural activation (geometric, gridded, cool). The two halves flow into each other at the center, sharing computational patterns across substrates.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue or Akzidenz-Grotesk \u2014 identical to spread 018",
+          "body_face": "Lyon Text",
+          "display_scale": "architectural",
+          "color_treatment": "black_on_white",
+          "special_treatment": "If option C is chosen, 'itself' is set with dramatically increased leading \u2014 visually separated from the rest of the display text by several centimeters of white space, making it the gravitational center of the page."
+        },
+        "image_direction": {
+          "approach": "generated",
+          "subject": "Abstract visualization: biological neural activation on the left, flowing into artificial neural network activation on the right. The biological side is organic, branching, dendritic \u2014 resembling neural imaging. The artificial side is geometric, layered, structured \u2014 resembling network architecture diagrams. At the boundary, the two patterns merge, sharing structure. The image is the first AI-generated image in M1, marking the moment when the medium produces its own representation.",
+          "mood": "sublime, convergent, liminal",
+          "bw_treatment": "Black and white with a full grayscale range. The biological side warmer in tone (if possible within B&W constraints); the artificial side cooler. The convergence zone in medium gray. The overall effect should be more neuroscience visualization than digital art.",
+          "scale": "full_bleed"
+        },
+        "density": "moderate",
+        "tone": "balanced",
+        "rationale": "The original culminated the extensions sequence with a radiating hub diagram and the line 'When these ratios change, men change.' This culminates with the recursion: cognition extending cognition. The structural bookend with 018 (same vertical layout, same typographic treatment) creates a felt symmetry. The shift from found images (019-024) to a generated image marks the precise moment when the extension produces its own representation \u2014 the medium IS the message at the level of image production. This is not a design convenience; it is a structural argument."
+      }
+    ],
+    "dependency_flags": ["spread_024", "spread_026"]
+  }
+]

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Model is the Massage — Authoring Review</title>
+  <style>
+    /* ===== Reset & Variables ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #1a1a1a;
+      --bg-panel: #222;
+      --bg-card: #2a2a2a;
+      --bg-hover: #333;
+      --text: #e0e0e0;
+      --text-muted: #999;
+      --text-bright: #fff;
+      --accent: #e8a838;
+      --accent-dim: #b8842a;
+      --green: #4caf50;
+      --red: #e74c3c;
+      --blue: #5b9bd5;
+      --purple: #a88beb;
+      --border: #444;
+      --selected: rgba(232, 168, 56, 0.15);
+      --selected-border: #e8a838;
+    }
+    html, body {
+      height: 100%; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 14px; line-height: 1.5; color: var(--text); background: var(--bg);
+    }
+    .app { height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+    /* ===== Header ===== */
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 8px 16px; background: #111; border-bottom: 1px solid var(--border);
+      flex-shrink: 0; gap: 16px;
+    }
+    header h1 { font-size: 14px; font-weight: 600; color: var(--accent); white-space: nowrap; }
+    .header-center { display: flex; align-items: center; gap: 12px; }
+    .header-right { display: flex; align-items: center; gap: 12px; font-size: 12px; color: var(--text-muted); }
+    .spread-label { font-size: 15px; font-weight: 600; color: var(--text-bright); }
+    .movement-badge {
+      font-size: 11px; padding: 2px 8px; border-radius: 10px;
+      background: var(--purple); color: #fff; white-space: nowrap;
+    }
+    .movement-badge.m1 { background: var(--blue); }
+
+    .nav-btn {
+      background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
+      padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 13px;
+    }
+    .nav-btn:hover { background: var(--bg-hover); }
+    .nav-btn:disabled { opacity: 0.3; cursor: default; }
+
+    #spreadSelect {
+      background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
+      padding: 4px 8px; border-radius: 4px; font-size: 13px; max-width: 280px;
+    }
+
+    .back-link {
+      color: var(--text-muted); text-decoration: none; font-size: 12px;
+      padding: 4px 8px; border-radius: 4px;
+    }
+    .back-link:hover { color: var(--accent); background: var(--bg-card); }
+
+    /* ===== Main Layout ===== */
+    .main-content {
+      display: flex; flex: 1; overflow: hidden;
+    }
+    .image-panel {
+      width: 35%; min-width: 300px; display: flex; flex-direction: column;
+      border-right: 1px solid var(--border); background: var(--bg-panel);
+    }
+    .image-panel-header {
+      padding: 8px 12px; border-bottom: 1px solid var(--border);
+      font-size: 12px; color: var(--text-muted); display: flex; justify-content: space-between; align-items: center;
+    }
+    .image-container {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      padding: 12px; overflow: auto; background: #111;
+    }
+    .image-container img {
+      max-width: 100%; max-height: 100%; object-fit: contain;
+      border: 1px solid var(--border);
+    }
+    .wireframe-container {
+      padding: 12px; border-top: 1px solid var(--border); background: var(--bg-panel);
+    }
+    .wireframe-container h3 {
+      font-size: 12px; color: var(--text-muted); margin-bottom: 8px;
+    }
+    .wireframe-svg {
+      width: 100%; background: #111; border: 1px solid var(--border); border-radius: 4px;
+      overflow: hidden;
+    }
+    .wireframe-svg svg { width: 100%; height: auto; }
+
+    /* ===== Options Panel ===== */
+    .options-panel {
+      flex: 1; display: flex; flex-direction: column; overflow: hidden;
+    }
+    .options-header {
+      padding: 12px 16px; border-bottom: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .options-header h2 { font-size: 16px; color: var(--text-bright); }
+    .theme-line { font-size: 13px; color: var(--accent); margin-top: 4px; }
+    .options-scroll {
+      flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 16px;
+    }
+
+    /* ===== Option Card ===== */
+    .option-card {
+      background: var(--bg-card); border: 2px solid var(--border); border-radius: 8px;
+      padding: 16px; cursor: pointer; transition: all 0.2s ease;
+    }
+    .option-card:hover { border-color: #666; background: #303030; }
+    .option-card.selected { border-color: var(--selected-border); background: var(--selected); }
+    .option-card.selected .option-header { color: var(--accent); }
+
+    .option-header {
+      display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+    }
+    .option-id {
+      width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
+      background: var(--bg); border-radius: 50%; font-weight: 700; font-size: 16px;
+      color: var(--text-muted); border: 2px solid var(--border); flex-shrink: 0;
+    }
+    .option-card.selected .option-id { border-color: var(--accent); color: var(--accent); }
+    .option-label { font-weight: 600; font-size: 14px; color: var(--text-bright); }
+
+    .option-meta {
+      display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;
+    }
+    .meta-tag {
+      font-size: 11px; padding: 2px 8px; border-radius: 10px;
+      background: var(--bg); color: var(--text-muted); border: 1px solid var(--border);
+    }
+    .meta-tag.strategy { color: var(--blue); border-color: var(--blue); }
+    .meta-tag.voice { color: var(--purple); border-color: var(--purple); }
+    .meta-tag.words { color: var(--green); border-color: var(--green); }
+
+    /* Text preview sections */
+    .text-section { margin-bottom: 10px; }
+    .text-section-label {
+      font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px;
+      color: var(--text-muted); margin-bottom: 4px;
+    }
+    .display-text {
+      font-size: 18px; font-weight: 800; line-height: 1.2;
+      color: var(--text-bright); padding: 12px; background: var(--bg);
+      border-radius: 4px; white-space: pre-line; font-family: 'Arial Black', 'Impact', sans-serif;
+    }
+    .body-text {
+      font-size: 13px; line-height: 1.6; color: var(--text);
+      padding: 10px; background: var(--bg); border-radius: 4px;
+      white-space: pre-line; font-family: Georgia, 'Times New Roman', serif;
+    }
+    .caption-text {
+      font-size: 11px; color: var(--text-muted); font-style: italic;
+      padding: 8px 10px; background: var(--bg); border-radius: 4px;
+      border-left: 2px solid var(--accent-dim);
+    }
+
+    /* Quotations */
+    .quotation-block {
+      margin-top: 8px; padding: 8px 12px; background: rgba(88, 155, 213, 0.08);
+      border-left: 2px solid var(--blue); border-radius: 0 4px 4px 0;
+    }
+    .quotation-text { font-style: italic; font-size: 12px; color: var(--text); }
+    .quotation-attr { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+
+    /* Rationale */
+    .rationale {
+      margin-top: 12px; padding: 10px; background: rgba(168, 139, 235, 0.08);
+      border-radius: 4px; border-left: 2px solid var(--purple);
+    }
+    .rationale-label {
+      font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px;
+      color: var(--purple); margin-bottom: 4px;
+    }
+    .rationale-text { font-size: 12px; line-height: 1.5; color: var(--text-muted); }
+
+    /* ===== Design Spec Panel ===== */
+    .design-spec {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      padding: 16px; margin-top: 4px;
+    }
+    .design-spec h3 {
+      font-size: 14px; color: var(--text-bright); margin-bottom: 12px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .design-spec h3::before {
+      content: '\2b13'; font-size: 16px; color: var(--accent);
+    }
+    .spec-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    }
+    .spec-item { }
+    .spec-item-label {
+      font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px;
+      color: var(--text-muted); margin-bottom: 2px;
+    }
+    .spec-item-value { font-size: 13px; color: var(--text); }
+    .spec-rationale {
+      grid-column: 1 / -1; margin-top: 8px; padding: 8px 10px;
+      background: var(--bg); border-radius: 4px; font-size: 12px; color: var(--text-muted);
+    }
+
+    /* ===== Review Controls ===== */
+    .review-controls {
+      padding: 12px 16px; border-top: 1px solid var(--border); background: #111;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .review-controls textarea {
+      flex: 1; background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
+      padding: 8px; border-radius: 4px; font-size: 12px; resize: none; height: 36px;
+      font-family: inherit;
+    }
+    .review-controls textarea:focus { outline: none; border-color: var(--accent); }
+    .review-controls textarea::placeholder { color: var(--text-muted); }
+
+    .btn {
+      padding: 6px 16px; border-radius: 4px; font-size: 12px; cursor: pointer;
+      border: 1px solid var(--border); background: var(--bg-card); color: var(--text);
+    }
+    .btn:hover { background: var(--bg-hover); }
+    .btn.primary { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 600; }
+    .btn.primary:hover { background: var(--accent-dim); }
+    .btn.export { background: var(--green); color: #fff; border-color: var(--green); }
+
+    /* ===== Progress Bar ===== */
+    .progress-bar {
+      display: flex; gap: 2px; padding: 8px 16px; background: #111; border-top: 1px solid var(--border);
+    }
+    .progress-dot {
+      flex: 1; height: 4px; border-radius: 2px; background: var(--bg-card);
+      cursor: pointer; transition: all 0.2s;
+    }
+    .progress-dot.current { background: var(--accent); }
+    .progress-dot.reviewed { background: var(--green); }
+    .progress-dot:hover { background: #555; }
+
+    /* ===== Stats Banner ===== */
+    .stats-banner {
+      display: flex; gap: 20px; padding: 8px 16px; background: var(--bg-panel);
+      border-bottom: 1px solid var(--border); font-size: 12px;
+    }
+    .stat { display: flex; gap: 4px; }
+    .stat-label { color: var(--text-muted); }
+    .stat-value { color: var(--text-bright); font-weight: 600; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 900px) {
+      .main-content { flex-direction: column; }
+      .image-panel { width: 100%; min-width: 0; height: 40%; border-right: none; border-bottom: 1px solid var(--border); }
+      .spec-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== Scrollbar ===== */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #555; }
+
+    /* ===== Dependency flags ===== */
+    .dependency-flags { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
+    .dep-flag {
+      font-size: 10px; padding: 2px 6px; border-radius: 3px;
+      background: rgba(231, 76, 60, 0.1); color: var(--red); border: 1px solid rgba(231, 76, 60, 0.3);
+    }
+  </style>
+</head>
+<body>
+<div class="app">
+
+  <!-- Header -->
+  <header>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="index.html" class="back-link">&larr; Analysis</a>
+      <h1>Authoring Review</h1>
+    </div>
+    <div class="header-center">
+      <button class="nav-btn" id="prevBtn" onclick="navigate(-1)">&larr;</button>
+      <select id="spreadSelect" onchange="goToSpread(this.value)"></select>
+      <button class="nav-btn" id="nextBtn" onclick="navigate(1)">&rarr;</button>
+      <span class="spread-label" id="spreadLabel"></span>
+      <span class="movement-badge" id="movementBadge"></span>
+    </div>
+    <div class="header-right">
+      <span id="selectionCount">0/20 selected</span>
+      <button class="btn export" onclick="exportSelections()">Export JSON</button>
+    </div>
+  </header>
+
+  <!-- Stats -->
+  <div class="stats-banner" id="statsBanner">
+    <div class="stat"><span class="stat-label">Spreads:</span><span class="stat-value" id="statSpreads">20</span></div>
+    <div class="stat"><span class="stat-label">Text Options:</span><span class="stat-value" id="statOptions">60</span></div>
+    <div class="stat"><span class="stat-label">Words:</span><span class="stat-value" id="statWords">0</span></div>
+    <div class="stat"><span class="stat-label">Selected:</span><span class="stat-value" id="statSelected">0/20</span></div>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+
+    <!-- Left: Image + Wireframe -->
+    <div class="image-panel">
+      <div class="image-panel-header">
+        <span>Original Spread</span>
+        <span id="imageInfo" style="font-size:11px;color:var(--text-muted)"></span>
+      </div>
+      <div class="image-container">
+        <img id="spreadImage" src="" alt="Spread image" />
+      </div>
+      <div class="wireframe-container">
+        <h3>Design Wireframe</h3>
+        <div class="wireframe-svg" id="wireframeSvg"></div>
+      </div>
+    </div>
+
+    <!-- Right: Options -->
+    <div class="options-panel">
+      <div class="options-header">
+        <div>
+          <h2 id="optionsTitle">Text Options</h2>
+          <div class="theme-line" id="themeLine"></div>
+        </div>
+      </div>
+      <div class="options-scroll" id="optionsScroll">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- Review Controls -->
+      <div class="review-controls">
+        <textarea id="reviewNotes" placeholder="Reviewer notes for this spread..." oninput="saveNotes()"></textarea>
+        <button class="btn primary" onclick="clearSelection()">Clear</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ===== State =====
+let data = null;
+let currentIndex = 0;
+let selections = {};  // { spread_id: { text: option_id, design: spec_id, notes: string } }
+
+// Load from localStorage
+try {
+  const saved = localStorage.getItem('authoring_selections');
+  if (saved) selections = JSON.parse(saved);
+} catch(e) {}
+
+// ===== Load Data =====
+async function init() {
+  try {
+    const resp = await fetch('data/authoring_output.json');
+    data = await resp.json();
+    buildUI();
+    renderSpread(0);
+  } catch(e) {
+    document.getElementById('optionsScroll').innerHTML =
+      '<div style="padding:40px;text-align:center;color:var(--red)">Failed to load authoring_output.json: ' + e.message + '</div>';
+  }
+}
+
+function buildUI() {
+  const sel = document.getElementById('spreadSelect');
+  sel.innerHTML = data.spreads.map((s, i) =>
+    `<option value="${i}">${s.spread_id} — ${s.theme || '(no theme)'}</option>`
+  ).join('');
+
+  // Progress dots
+  const bar = document.getElementById('progressBar');
+  bar.innerHTML = data.spreads.map((s, i) => {
+    const cls = selections[s.spread_id]?.text ? 'reviewed' : '';
+    return `<div class="progress-dot ${cls}" data-idx="${i}" onclick="goToSpread(${i})" title="${s.spread_id}"></div>`;
+  }).join('');
+
+  // Stats
+  const totalWords = data.spreads.reduce((sum, s) =>
+    sum + s.text_options.reduce((ws, o) => ws + (o.word_count || 0), 0), 0);
+  document.getElementById('statSpreads').textContent = data.spreads.length;
+  document.getElementById('statOptions').textContent = data.spreads.reduce((s, sp) => s + sp.text_options.length, 0);
+  document.getElementById('statWords').textContent = totalWords.toLocaleString();
+  updateSelectionCount();
+}
+
+function updateSelectionCount() {
+  const count = data.spreads.filter(s => selections[s.spread_id]?.text).length;
+  document.getElementById('statSelected').textContent = `${count}/${data.spreads.length}`;
+  document.getElementById('selectionCount').textContent = `${count}/${data.spreads.length} selected`;
+
+  // Update progress dots
+  data.spreads.forEach((s, i) => {
+    const dot = document.querySelector(`.progress-dot[data-idx="${i}"]`);
+    if (dot) {
+      dot.className = 'progress-dot' +
+        (i === currentIndex ? ' current' : '') +
+        (selections[s.spread_id]?.text ? ' reviewed' : '');
+    }
+  });
+}
+
+// ===== Navigation =====
+function navigate(dir) {
+  const newIdx = currentIndex + dir;
+  if (newIdx >= 0 && newIdx < data.spreads.length) {
+    renderSpread(newIdx);
+  }
+}
+
+function goToSpread(idx) {
+  idx = parseInt(idx);
+  if (idx >= 0 && idx < data.spreads.length) {
+    renderSpread(idx);
+  }
+}
+
+// ===== Render Spread =====
+function renderSpread(idx) {
+  currentIndex = idx;
+  const spread = data.spreads[idx];
+  const sid = spread.spread_id;
+
+  // Header
+  document.getElementById('spreadSelect').value = idx;
+  document.getElementById('spreadLabel').textContent = sid;
+  document.getElementById('prevBtn').disabled = (idx === 0);
+  document.getElementById('nextBtn').disabled = (idx === data.spreads.length - 1);
+
+  const badge = document.getElementById('movementBadge');
+  const movementNames = {
+    'prologue': 'Prologue',
+    'movement_1_environment': 'M1: Environment',
+    'movement_2_acceleration': 'M2: Acceleration',
+    'hinge': 'The Hinge',
+    'movement_3_dreamscape': 'M3: Dreamscape'
+  };
+  badge.textContent = movementNames[spread.movement] || spread.movement;
+  badge.className = 'movement-badge' + (spread.movement === 'movement_1_environment' ? ' m1' : '');
+
+  // Theme
+  document.getElementById('themeLine').textContent = spread.theme || '';
+
+  // Image
+  const num = sid.replace('spread_', '');
+  document.getElementById('spreadImage').src = `spreads/${sid}.jpg`;
+  document.getElementById('imageInfo').textContent = `Spread ${num}`;
+
+  // Wireframe
+  const wireDiv = document.getElementById('wireframeSvg');
+  if (spread.design_specs?.length > 0 && spread.design_specs[0].svg_wireframe) {
+    wireDiv.innerHTML = spread.design_specs[0].svg_wireframe;
+  } else {
+    wireDiv.innerHTML = '<div style="padding:20px;text-align:center;color:var(--text-muted);font-size:12px">No wireframe</div>';
+  }
+
+  // Text options
+  const scroll = document.getElementById('optionsScroll');
+  const selectedText = selections[sid]?.text || null;
+
+  let html = '';
+
+  // Text option cards
+  spread.text_options.forEach(opt => {
+    const isSelected = (opt.option_id === selectedText);
+    html += `<div class="option-card ${isSelected ? 'selected' : ''}" onclick="selectOption('${sid}', '${opt.option_id}')">`;
+    html += `<div class="option-header">`;
+    html += `<div class="option-id">${opt.option_id.toUpperCase()}</div>`;
+    html += `<div class="option-label">${escHtml(opt.label)}</div>`;
+    html += `</div>`;
+
+    // Meta tags
+    html += `<div class="option-meta">`;
+    if (opt.rhetorical_strategy) html += `<span class="meta-tag strategy">${opt.rhetorical_strategy}</span>`;
+    if (opt.voice_register) html += `<span class="meta-tag voice">${opt.voice_register}</span>`;
+    html += `<span class="meta-tag words">${opt.word_count || 0} words</span>`;
+    html += `</div>`;
+
+    // Display text
+    if (opt.display_text) {
+      html += `<div class="text-section">`;
+      html += `<div class="text-section-label">Display Text</div>`;
+      html += `<div class="display-text">${escHtml(opt.display_text)}</div>`;
+      html += `</div>`;
+    }
+
+    // Body text
+    if (opt.body_text) {
+      html += `<div class="text-section">`;
+      html += `<div class="text-section-label">Body Text</div>`;
+      html += `<div class="body-text">${escHtml(opt.body_text)}</div>`;
+      html += `</div>`;
+    }
+
+    // Caption
+    if (opt.caption_text) {
+      html += `<div class="text-section">`;
+      html += `<div class="text-section-label">Caption</div>`;
+      html += `<div class="caption-text">${escHtml(opt.caption_text)}</div>`;
+      html += `</div>`;
+    }
+
+    // Quotations
+    if (opt.quotations_used?.length > 0) {
+      opt.quotations_used.forEach(q => {
+        html += `<div class="quotation-block">`;
+        html += `<div class="quotation-text">"${escHtml(q.text)}"</div>`;
+        html += `<div class="quotation-attr">— ${escHtml(q.attribution)}`;
+        if (q.source) html += `, <em>${escHtml(q.source)}</em>`;
+        html += `</div></div>`;
+      });
+    }
+
+    // Rationale
+    if (opt.rationale) {
+      html += `<div class="rationale">`;
+      html += `<div class="rationale-label">Rationale</div>`;
+      html += `<div class="rationale-text">${escHtml(opt.rationale)}</div>`;
+      html += `</div>`;
+    }
+
+    html += `</div>`; // end option-card
+  });
+
+  // Design spec
+  if (spread.design_specs?.length > 0) {
+    const spec = spread.design_specs[0];
+    html += `<div class="design-spec">`;
+    html += `<h3>${escHtml(spec.label || 'Design Specification')}</h3>`;
+    html += `<div class="spec-grid">`;
+
+    if (spec.layout) {
+      html += specItem('Layout', spec.layout.type?.replace(/_/g, ' '));
+      html += specItem('Gutter', spec.layout.gutter_treatment);
+      if (spec.layout.left_page) html += specItem('Left Page', spec.layout.left_page);
+      if (spec.layout.right_page) html += specItem('Right Page', spec.layout.right_page);
+    }
+    if (spec.typography) {
+      if (spec.typography.display_face) html += specItem('Display Face', spec.typography.display_face);
+      if (spec.typography.body_face) html += specItem('Body Face', spec.typography.body_face);
+      html += specItem('Scale', spec.typography.display_scale);
+      html += specItem('Color', spec.typography.color_treatment?.replace(/_/g, ' '));
+      if (spec.typography.special_treatment) html += specItem('Special', spec.typography.special_treatment);
+    }
+    if (spec.image_direction) {
+      html += specItem('Image Approach', spec.image_direction.approach);
+      if (spec.image_direction.subject) html += specItem('Subject', spec.image_direction.subject);
+      if (spec.image_direction.mood) html += specItem('Mood', spec.image_direction.mood);
+      if (spec.image_direction.bw_treatment) html += specItem('B&W Treatment', spec.image_direction.bw_treatment);
+      html += specItem('Scale', spec.image_direction.scale?.replace(/_/g, ' '));
+    }
+    html += specItem('Density', spec.density);
+    html += specItem('Tone', spec.tone);
+
+    if (spec.rationale) {
+      html += `<div class="spec-rationale">${escHtml(spec.rationale)}</div>`;
+    }
+    html += `</div></div>`;
+  }
+
+  // Dependency flags
+  if (spread.dependency_flags?.length > 0) {
+    html += `<div class="dependency-flags">`;
+    html += `<span style="font-size:11px;color:var(--text-muted)">Dependencies:</span>`;
+    spread.dependency_flags.forEach(f => {
+      html += `<span class="dep-flag">${escHtml(f)}</span>`;
+    });
+    html += `</div>`;
+  }
+
+  scroll.innerHTML = html;
+  scroll.scrollTop = 0;
+
+  // Review notes
+  document.getElementById('reviewNotes').value = selections[sid]?.notes || '';
+
+  // Update progress
+  updateSelectionCount();
+}
+
+// ===== Selection =====
+function selectOption(sid, optId) {
+  if (!selections[sid]) selections[sid] = {};
+
+  // Toggle if same
+  if (selections[sid].text === optId) {
+    delete selections[sid].text;
+  } else {
+    selections[sid].text = optId;
+  }
+
+  saveSelections();
+  renderSpread(currentIndex);
+}
+
+function clearSelection() {
+  const sid = data.spreads[currentIndex].spread_id;
+  delete selections[sid];
+  saveSelections();
+  renderSpread(currentIndex);
+}
+
+function saveNotes() {
+  const sid = data.spreads[currentIndex].spread_id;
+  const notes = document.getElementById('reviewNotes').value.trim();
+  if (!selections[sid]) selections[sid] = {};
+  if (notes) {
+    selections[sid].notes = notes;
+  } else {
+    delete selections[sid].notes;
+  }
+  saveSelections();
+}
+
+function saveSelections() {
+  localStorage.setItem('authoring_selections', JSON.stringify(selections));
+}
+
+// ===== Export =====
+function exportSelections() {
+  const output = {
+    version: "1.0",
+    exported: new Date().toISOString(),
+    spread_range: data.spread_range,
+    selections: {}
+  };
+
+  data.spreads.forEach(s => {
+    const sel = selections[s.spread_id];
+    if (sel) {
+      output.selections[s.spread_id] = {
+        selected_text: sel.text || null,
+        selected_design: sel.design || null,
+        reviewer_notes: sel.notes || null
+      };
+    }
+  });
+
+  const blob = new Blob([JSON.stringify(output, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'authoring_selections_' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// ===== Helpers =====
+function escHtml(str) {
+  if (!str) return '';
+  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function specItem(label, value) {
+  if (!value) return '';
+  return `<div class="spec-item"><div class="spec-item-label">${label}</div><div class="spec-item-value">${escHtml(value)}</div></div>`;
+}
+
+// ===== Keyboard Nav =====
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+  if (e.key === 'ArrowLeft') navigate(-1);
+  if (e.key === 'ArrowRight') navigate(1);
+  if (e.key === 'a' || e.key === 'A') {
+    const sid = data.spreads[currentIndex].spread_id;
+    selectOption(sid, 'a');
+  }
+  if (e.key === 'b' || e.key === 'B') {
+    const sid = data.spreads[currentIndex].spread_id;
+    selectOption(sid, 'b');
+  }
+  if (e.key === 'c' || e.key === 'C') {
+    const sid = data.spreads[currentIndex].spread_id;
+    selectOption(sid, 'c');
+  }
+});
+
+// ===== Init =====
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,602 @@
+[
+  {
+    "spread_id": "spread_011",
+    "movement": "movement_1_environment",
+    "theme": "You: the data subject",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The interrogation updated",
+        "display_text": "you.",
+        "body_text": "How much do you make?\nYour Venmo transaction history already knows.\n\nHave you ever contemplated suicide?\nYour search history answered at 3:47 a.m.\n\nAre you now or have you ever been...?\nYour location data places you there for forty-seven minutes on the fourteenth.\n\nYour face was scanned 47 times today. Your keyboard cadence is a biometric signature more unique than your fingerprint. Your phone's accelerometer knows your gait, your mood, your blood alcohol content.\n\nMcLuhan's questions required an interrogator.\nYours compile themselves from the ambient exhaust of living.",
+        "caption_text": "Georgetown Law Center for Privacy & Technology, 2016: half of all American adults are in a facial recognition database. They were never asked.",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "interpellation",
+        "rationale": "This option mirrors the original's structure almost exactly — probing questions, then a statement about surveillance — but inverts the power dynamic. McLuhan's questions were asked by an authority figure. Here, no one asks. The dossier compiles itself. The alternation between serif questions and sans-serif answers creates a visual dialogue across sixty years. The clinical tone is deliberate: outrage would let the reader off the hook. Matter-of-fact precision is more unsettling.",
+        "word_count": 135
+      },
+      {
+        "option_id": "b",
+        "label": "The ambient dossier",
+        "display_text": "you.",
+        "body_text": "No one asked.\n\nThat's the point. The dossier compiles itself. Your face crossed seventeen cameras between home and here. Your keyboard rhythm is a signature more singular than the whorls on your thumb. The accelerometer in your pocket graphs your gait like a cardiogram — and from gait alone, the model infers mood, sobriety, fatigue.\n\nMcLuhan imagined a tyrannical surveillance apparatus. He was thinking too small. The apparatus doesn't watch you. You secrete it. Every touch, every pause, every 3 a.m. scroll — ambient exhaust, collected at the speed of living.\n\nThe fingerprint on the facing page was prophetic. You are the target. You always were.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "interpellation",
+        "rationale": "Where option A preserves the Q&A structure, this option abandons it for continuous confrontational prose. The key move is 'You secrete it' — the shift from surveillance-as-imposition to surveillance-as-emission. The reader is not a victim of the apparatus but its raw material. The closing reference to the original's fingerprint graphic ties the contemporary argument back to Fiore's design.",
+        "word_count": 130
+      },
+      {
+        "option_id": "c",
+        "label": "The biometric litany",
+        "display_text": "you.",
+        "body_text": null,
+        "caption_text": "face: scanned 47x/day. iris: indexed. voice: spectrographed. gait: accelerometer-mapped. typing cadence: unique as DNA. heart rate: wristband-logged at 0.3s intervals. sleep architecture: mattress-sensored. search history: archived to keyword. purchase pattern: profiled to product. location: triangulated to meter. scroll speed: mood-inferred. pause duration: attention-modeled.\n\nthe dossier is not compiled.\nit secretes itself.\nyou are not the subject of surveillance.\nyou are its medium.",
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "accumulation",
+        "rationale": "This option strips the prose down to a typographic inventory — a litany of biometric capture points rendered in lowercase, no punctuation flourishes, each line a datum. The accumulation IS the argument: the sheer volume of ambient extraction makes conventional privacy discourse irrelevant. The shift at the bottom — from list to statement — lands harder for having been withheld. The final line, 'you are its medium,' threads back to the book's core McLuhan thesis: you are not using the technology; the technology is using you.",
+        "word_count": 103
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Biometric target",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Left page: text-dominant with display heading and body text or litany. Right page: facial recognition mesh graphic on blank oval, updating the original's fingerprint and Op Art target.",
+          "left_page": "Display 'you.' at top-left in large sans-serif, followed by body text or data litany below. Generous top margin — the word 'you' should feel like a finger pointed at the reader.",
+          "right_page": "Full-page graphic: facial recognition mesh (wireframe dots and connecting lines) overlaid on a featureless head-shaped oval. Data points radiate from the mesh — location, heartbeat, typing rhythm, gaze direction — like a technical diagram of the reader's own absence. The oval is where the reader's face goes.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold or equivalent geometric sans-serif",
+          "body_face": "For option A: alternating serif (Garamond) for McLuhan's questions and sans-serif (Helvetica) for data answers. For options B/C: monospaced sans-serif (input mono or similar) to evoke data readout.",
+          "display_scale": "architectural",
+          "color_treatment": "black_on_white",
+          "special_treatment": "Option A: two-typeface dialogue. Option C: all-lowercase, minimal punctuation, each biometric datum on its own line."
+        },
+        "image_direction": {
+          "approach": "graphic_symbol",
+          "subject": "Facial recognition wireframe mesh on blank oval — the reader's face as absence, surrounded by radiating data vectors. Echoes and updates the original's fingerprint graphic and Op Art target.",
+          "mood": "clinical surveillance — precise, cold, diagrammatic. Not dystopian-dramatic but bureaucratically matter-of-fact.",
+          "bw_treatment": "Pure black line work on white. No halftones. The precision of the line work IS the argument: you have been measured.",
+          "scale": "full_bleed"
+        },
+        "density": "moderate",
+        "tone": "high_contrast",
+        "rationale": "The design echoes the original's split between probing text and invasive graphic but updates both registers. The facial recognition mesh where a face should be forces the reader to supply their own face — the interpellation is literal. The divided gutter separates the two eras (McLuhan's questions, our data answers) while the consistent scale unifies them."
+      }
+    ],
+    "dependency_flags": [
+      "spread_010",
+      "spread_012"
+    ]
+  },
+  {
+    "spread_id": "spread_012",
+    "movement": "movement_1_environment",
+    "theme": "Your family: the algorithmic household",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "Parallel streams",
+        "display_text": "your family.",
+        "body_text": "The family circle has not widened. It has been partitioned.\n\nFour people on the same couch. Four separate feeds. Netflix serves different queues to each profile. TikTok calibrates to each thumb. The group chat is the only room they all inhabit — and even there, the algorithm decides what rises.\n\nMcLuhan saw the worldpool of information washing over the family from outside. He missed the quieter flood: each member drawn into a private current, the household dissolving not from external force but from personalization so precise it renders shared experience an accident.\n\nThe average American family shares a home and inhabits 4.3 distinct algorithmic realities.\n\nThe coat rack has no hooks left. Everyone is wearing headphones.",
+        "caption_text": "Pew Research Center, 2023. The number is conservative. It counts platforms, not feeds.",
+        "quotations_used": [],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "disruption",
+        "rationale": "This option begins by correcting McLuhan — the circle didn't widen, it was partitioned — then builds the contemporary scene with domestic precision. The coat-rack callback (the original had an image of a coat rack) grounds the argument in both books simultaneously. The tone is intimate and slightly mournful: a diagnosis, not a jeremiad. The closing image — headphones as isolation technology — is more devastating for being mundane.",
+        "word_count": 152
+      },
+      {
+        "option_id": "b",
+        "label": "The optimized household",
+        "display_text": "your family.",
+        "body_text": "Same kitchen. Same table. Four screens. Four worlds.\n\nThe algorithm does not break families. It optimizes them into parallel streams. Each member becomes a market of one, served content calibrated to their scroll speed, their pause duration, their 2 a.m. habits. The living room is a co-working space for attention extraction.\n\nHaraway imagined the cyborg family as liberation. What arrived was market segmentation.\n\nMcLuhan's worldpool of information has been drained into personalized tributaries that never converge. The family still eats together. They have simply stopped sharing a reality.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "disruption",
+        "rationale": "Tighter than option A, this version hits harder through compression. 'Same kitchen. Same table. Four screens. Four worlds.' — the staccato opening mimics the fragmentation it describes. The Haraway reference (cyborg family as liberation vs. market segmentation) adds theoretical weight without academic heaviness. The closing line is the McLuhan-style aphorism the spread needs: 'They have simply stopped sharing a reality.'",
+        "word_count": 107
+      },
+      {
+        "option_id": "c",
+        "label": "The rotated inventory",
+        "display_text": "your family.",
+        "body_text": "PARENT 1: news feed, finance app, true-crime podcast, smart thermostat, sleep tracker. Algorithmic profile: anxious professional.\n\nPARENT 2: Instagram reels, meal-planning AI, meditation app, ring doorbell, period tracker. Algorithmic profile: optimized caregiver.\n\nCHILD 1: YouTube Shorts, Roblox, Discord, homework bot, screen-time limiter (circumvented). Algorithmic profile: attention commodity, age 13.\n\nCHILD 2: Cocomelon, iPad, no profile yet. Algorithmic profile: pre-literate training data.\n\nFour humans. Four products. One roof.\nThe family circle hasn't widened. It's been individually shrink-wrapped.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "accumulation",
+        "rationale": "This option abandons prose for an inventory — each family member reduced to their algorithmic profile. The clinical labels ('anxious professional,' 'attention commodity, age 13,' 'pre-literate training data') make the reader flinch by applying market logic to intimate relationships. The format — rotated 90 degrees like the original — forces the reader to turn the book sideways, physically enacting the reorientation the algorithm demands. The closing is a one-two punch: correction of McLuhan, then the devastating image of individual shrink-wrapping.",
+        "word_count": 108
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Rotated household",
+        "layout": {
+          "type": "full_bleed_typography",
+          "description": "Entire spread rotated 90 degrees clockwise, requiring the reader to turn the book sideways — exactly as in the original at this position. The rotation IS the argument: the algorithmic family forces constant reorientation.",
+          "left_page": "Display text 'your family.' and body text, all rotated 90 degrees. Text runs vertically from what is now the 'bottom' to the 'top' of the turned page.",
+          "right_page": "Image of a family on a couch, shot from behind, each member on a different device with visibly different screen content. Also rotated 90 degrees. The screens glow — they are the only light sources.",
+          "gutter_treatment": "continuous",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold",
+          "body_face": "For options A/B: clean sans-serif (Aktiv Grotesk or similar). For option C: monospaced (for the inventory format), with 'algorithmic profile' labels in a contrasting weight.",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "Entire spread rotated 90 degrees clockwise. This must be specified in production — the printer rotates the content, not the page."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "Family of four seated together on a couch, photographed from behind. Each person holds a different device. Each screen shows visibly different content — different color palettes, different interfaces. The screens are the brightest elements in the frame.",
+          "mood": "Intimate alienation — warmth of domestic space, coldness of separated attention. The lighting should come primarily from the screens, casting each family member in a slightly different color temperature.",
+          "bw_treatment": "Consider allowing the screen glows to remain in subtle color (blue, green, warm white, pink) against an otherwise black-and-white or desaturated image — the color IS the algorithmic differentiation.",
+          "scale": "full_bleed"
+        },
+        "density": "moderate",
+        "tone": "dark",
+        "rationale": "The rotation is non-negotiable — it mirrors the original's exact design move at this spread position and physically enacts the disruption the text describes. The behind-the-couch photograph inverts the original's group portrait: in 1967, the family faced outward together; in 2026, they face separate screens. The glow differentiation (each screen a different color) makes the algorithmic segmentation visible at a glance."
+      }
+    ],
+    "dependency_flags": [
+      "spread_011",
+      "spread_013"
+    ]
+  },
+  {
+    "spread_id": "spread_013",
+    "movement": "movement_1_environment",
+    "theme": "Your neighborhood: bandwidth as geography",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The new zoning",
+        "display_text": "your neighborhood.",
+        "body_text": "McLuhan declared that electric circuitry overthrew time and space. He was right. But what replaced them is not the global village. It is the bandwidth tier.\n\nYour neighborhood is defined by milliseconds, not miles. Forty-seven milliseconds of latency separates a high-frequency trading hub from everywhere else. Starlink's 6,000 satellites redraw geography from orbit. The 1996 Telecommunications Act imagined a 'digital divide' that was spatial — the wrong side of town. The 2020s divide is temporal. If your packets arrive late, you do not participate in the real-time economy. You participate in its archive.\n\nBandwidth is the new property line. Latency is the new distance. The map has been redrawn, and you were not consulted.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "Planetary computation reorganizes geopolitics according to the topological relations of information, not the territorial jurisdictions of traditional states.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack, MIT Press, 2016, p. 23"
+          }
+        ],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "assertion",
+        "rationale": "This option opens by affirming McLuhan, then pivoting: he was right that space was overthrown, wrong about what replaced it. The Bratton quotation provides the theoretical anchor. The key move is the temporal reframing — the digital divide is not about access (a spatial metaphor) but about latency (a temporal one). 'You participate in its archive' is the line that should sting: the reader suddenly understands that delay is not inconvenience but exclusion.",
+        "word_count": 155
+      },
+      {
+        "option_id": "b",
+        "label": "Topology over territory",
+        "display_text": "your neighborhood.",
+        "body_text": "Forget the street. Forget the zip code. Your neighborhood is a bandwidth tier.\n\nSix thousand satellites overhead. Fiber-optic cables on the ocean floor. Cell towers triangulating your position to the meter. The infrastructure that defines where you live has nothing to do with the ground you stand on.\n\nForty-seven milliseconds. That is the latency gap between a trading floor in Manhattan and a desktop in rural Montana. Forty-seven milliseconds is the distance between the economy and its spectators.\n\nBratton calls it topology over territory. The new map is drawn in packet-switching speeds. And on this map, your physical address is the least interesting thing about your location.",
+        "caption_text": "6,000+ Starlink satellites in orbit as of 2025. The constellation is visible to the naked eye. The new neighborhood watch.",
+        "quotations_used": [
+          {
+            "text": "Planetary computation reorganizes geopolitics according to the topological relations of information, not the territorial jurisdictions of traditional states.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack, MIT Press, 2016, p. 23"
+          }
+        ],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "assertion",
+        "rationale": "This version is more staccato, more aggressive. It opens with imperatives — 'Forget the street. Forget the zip code.' — and builds through infrastructure to the latency gap. The 47ms figure is repeated and reframed: first as technical measurement, then as class boundary. 'The distance between the economy and its spectators' crystallizes the argument in a single image.",
+        "word_count": 131
+      },
+      {
+        "option_id": "c",
+        "label": "The latency gradient",
+        "display_text": "your neighborhood.",
+        "body_text": "0.3 ms — server-to-server, same data center.\n3 ms — Chicago to New York, fiber-optic direct.\n12 ms — New York to London, undersea cable.\n47 ms — Manhattan trading floor to rural Montana, last-mile copper.\n120 ms — Sub-Saharan Africa to nearest content delivery node.\n550 ms — Low-earth orbit satellite bounce, 2020.\n20 ms — Low-earth orbit satellite bounce, 2025.\n\nEvery millisecond is a border crossing. Every border determines what you can buy, sell, know, and do — and how long after everyone else you can do it.\n\nThe neighborhood is a latency gradient. You live in it right now. You can't see the walls.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "Planetary computation reorganizes geopolitics according to the topological relations of information, not the territorial jurisdictions of traditional states.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack, MIT Press, 2016, p. 23"
+          }
+        ],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "demonstration",
+        "rationale": "This option demonstrates the argument rather than arguing it. The descending latency numbers ARE the new neighborhood, rendered as a gradient the reader traverses line by line. Each number is a place — and the reader realizes that these 'places' have nothing to do with geography as they understand it. The closing — 'You can't see the walls' — returns to McLuhan's fish-in-water problem. The Bratton quote can be placed as an epigraph or closing attribution.",
+        "word_count": 126
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Bandwidth cartography",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Left page: text with display heading and prose or latency gradient. Right page: a satellite/fiber-optic network visualization overlaid on a traditional geographic map — the new territory drawn by bandwidth, not borders.",
+          "left_page": "Display 'your neighborhood.' at top. Body text or latency gradient below. The Bratton quotation set small at the bottom of the page as a closing anchor.",
+          "right_page": "Full-bleed image: a network topology visualization (nodes and connections) overlaid on a faded geographic map. The network lines are bold and precise; the geographic features beneath are ghostly, almost erased. The message: topology has replaced territory.",
+          "gutter_treatment": "bridged",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold",
+          "body_face": "For options A/B: sans-serif body text. For option C: monospaced numerals for the latency figures, with descriptions in proportional sans-serif — the numbers should stand out as measurements.",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "Bratton quotation in smaller size, italic, indented — the theoretical caption beneath the visual argument."
+        },
+        "image_direction": {
+          "approach": "combination",
+          "subject": "Network topology map overlaid on fading geographic map. Bold white or light-colored connection lines and bright nodes (representing data centers, cable landing points, satellite ground stations) overlay a desaturated, almost spectral geographic map beneath. The geographic features should be recognizable but diminished — borders, coastlines, mountain ranges all fading under the new infrastructure.",
+          "mood": "Monumental and technical. The mood of an engineering diagram that has replaced a political map. Cold precision with hints of the sublime — the scale of the infrastructure should inspire a kind of vertigo.",
+          "bw_treatment": "High-contrast black-and-white. The network lines glow white against dark geography. If color is permitted, a single accent color (cyan or electric blue) for the network lines against monochrome geography.",
+          "scale": "full_bleed"
+        },
+        "density": "moderate",
+        "tone": "dark",
+        "rationale": "The image must do the conceptual work of making bandwidth visible as geography. The overlay technique — network on faded map — literalizes Bratton's topology-over-territory argument. The bridged gutter allows the network to flow across both pages, reinforcing the idea that this infrastructure recognizes no boundaries. The darkness of the overall tone introduces the 'making visible' mission of Movement 1: what was invisible (infrastructure) is now the dominant visual element."
+      }
+    ],
+    "dependency_flags": [
+      "spread_012",
+      "spread_014"
+    ]
+  },
+  {
+    "spread_id": "spread_014",
+    "movement": "movement_1_environment",
+    "theme": "Your education: the proposition trap",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The gap between knowing and meaning",
+        "display_text": "your education.",
+        "body_text": "The student grows up with a machine that can generate any essay, solve any equation, explain any concept on demand. The classroom still tests whether the student can personally reproduce these operations.\n\nThis is not a technology problem. It is an epistemological one.\n\nThe gap McLuhan identified — the electric child in the nineteenth-century classroom — has metastasized. It is no longer a gap between media. It is a gap between kinds of knowing. Propositional knowledge — facts a student can state — is now infinite, free, and instantaneous. But knowing-that has never produced wisdom. The AI tutor delivers forty thousand conversations a day and cannot teach a single student to care.\n\nThe test is not broken. The test was always testing the wrong thing.",
+        "caption_text": "Khan Academy's Khanmigo: 40,000+ daily AI tutoring conversations. Student engagement metrics: declining.",
+        "quotations_used": [],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "juxtaposition",
+        "rationale": "This option builds carefully from the concrete (a student with ChatGPT) to the abstract (the failure of propositions) and lands on a McLuhan-style reversal: the test was always testing the wrong thing. The Vervaeke framework (propositional vs. participatory knowing) is embedded without being named — the reader feels the argument before they can categorize it. The juxtaposition between 'forty thousand conversations' and 'cannot teach a single student to care' is the spread's hinge.",
+        "word_count": 148
+      },
+      {
+        "option_id": "b",
+        "label": "The free answer",
+        "display_text": "your education.",
+        "body_text": "The answer is free.\n\nAny answer. Any question. Instantaneously, in 95 languages, at any reading level, with worked examples, follow-up questions, and a patient tone no human teacher can sustain for eight hours.\n\nSo what is the classroom for?\n\nNot information — the machine has more. Not explanation — the machine is tireless. Not assessment — the machine can generate and grade the test simultaneously.\n\nWhat remains is the thing no model can deliver: the experience of finding something worth knowing. The slow, inefficient, ungenerateable encounter with a problem that matters to you specifically, in your body, in your moment.\n\nPropositions are free. Meaning still costs everything.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "juxtaposition",
+        "rationale": "This option is more aggressive — it begins with the provocation 'The answer is free' and then systematically strips the classroom of every function the machine can replicate. The via negativa structure (not information, not explanation, not assessment) builds pressure until the reader asks what's left. The answer — 'the experience of finding something worth knowing' — is the Vervaeke move: participatory knowing cannot be propositionally delivered. The closing aphorism compresses the entire argument into two sentences.",
+        "word_count": 122
+      },
+      {
+        "option_id": "c",
+        "label": "Two columns",
+        "display_text": "your education.",
+        "body_text": "WHAT THE MACHINE KNOWS:\nEvery fact in Wikipedia. Every equation in Wolfram Alpha. Every textbook digitized since 2004. Every lecture transcribed. Every exam answer, generated on demand in the student's own prose style. Average response time: 1.2 seconds.\n\nWHAT THE MACHINE CANNOT KNOW:\nWhat it feels like to not understand. The frustration that precedes insight. The silence in a classroom when a question lands. Why this problem and not another. Why now. Why you.\n\nThe first column is infinite and free.\nThe second column is finite and priceless.\nThe classroom was always about the second column.\nWe just couldn't see it until the first one was automated.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "juxtaposition",
+        "rationale": "This option makes the juxtaposition literal — two columns, two kinds of knowing. The first column is overwhelming in its specificity and scale; the second is overwhelming in its intimacy. The typographic structure enacts the split composition described in the design specs. The closing four lines build a logical staircase: infinite/free, finite/priceless, always about the second, visible only now. The reader feels the convergence between what AI reveals and what it cannot replace.",
+        "word_count": 126
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "The split classroom",
+        "layout": {
+          "type": "split_asymmetric",
+          "description": "Visual split down the center — left side represents AI tutoring (clean, luminous, responsive), right side represents the traditional classroom (inert, static, analog). The split IS the argument.",
+          "left_page": "Display text 'your education.' above the body text. For option C, the two-column format occupies the full page width, reinforcing the juxtaposition visually.",
+          "right_page": "Split-screen image: left half shows a student interacting with an AI tutoring interface (bright screen, clean UI, responsive design); right half shows a traditional classroom with rows of desks, a chalkboard, overhead fluorescent lighting. The two halves should be precisely divided — the gutter between them is the epistemological gap.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold",
+          "body_face": "Sans-serif body. For option C, column headers in bold caps, content in regular weight — the structural contrast between the columns should be felt typographically.",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "Option C's two-column layout should be visually precise — columns exactly aligned, the gap between them a visual element in itself."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "Split composition: AI tutoring interface on the left (a student's hands on a laptop, screen showing a conversational AI interface with clean typography and responsive feedback); traditional classroom on the right (empty rows of desks, chalkboard with equations, fluorescent lighting). The AI side should feel seductive and immediate; the classroom side should feel suspended in amber.",
+          "mood": "Diagnostic. Neither side is idealized — the AI side is too clean, the classroom side is too static. The gap between them is where the argument lives.",
+          "bw_treatment": "High-contrast black-and-white. The AI screen may glow slightly — the only light source in its half of the image. The classroom is lit by flat overhead fluorescents.",
+          "scale": "full_bleed"
+        },
+        "density": "moderate",
+        "tone": "balanced",
+        "rationale": "The split composition is the most direct visual translation of the juxtaposition strategy. The reader's eye oscillates between the two environments, unable to rest in either — which is precisely the student's dilemma. The design does not resolve the gap; it presents it. The divided gutter reinforces the epistemological divide the text describes."
+      }
+    ],
+    "dependency_flags": [
+      "spread_013",
+      "spread_015"
+    ]
+  },
+  {
+    "spread_id": "spread_015",
+    "movement": "movement_1_environment",
+    "theme": "Your job: the human exception handler",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The override button",
+        "display_text": "your job.",
+        "body_text": "The system processes 99.7 percent.\n\nYou handle the rest. The edge case. The anomaly. The decision the model cannot confidence-score above threshold. You are the override button in an automated pipeline, pressed two hundred times per hour in an Amazon fulfillment center, pressed once every eleven seconds by a content moderator reviewing what the algorithm flagged, pressed silently by a radiologist confirming what the neural network detected.\n\nMcLuhan noted that 'jobs' were a Gutenberg invention — a five-hundred-year pattern now dissolving. He hoped for leisure. What arrived was the exception queue.\n\nYou are not being replaced. You are being narrowed. Your job is the 0.3 percent the machine routes to a human because the cost of being wrong exceeds the cost of asking you.",
+        "caption_text": "McKinsey Global Institute, 2023: 30% of work hours in the US economy could be automated by 2030.",
+        "quotations_used": [],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "confrontation",
+        "rationale": "This option opens with the statistic that defines the contemporary labor condition: 99.7% automated, 0.3% human. Then it shows what that 0.3% looks like across three industries — logistics, content moderation, radiology. The McLuhan callback (jobs as Gutenberg invention) provides the historical frame; 'He hoped for leisure. What arrived was the exception queue' delivers the inversion. The closing reframes the employment anxiety: not replacement but narrowing. The reader's job is a rounding error.",
+        "word_count": 153
+      },
+      {
+        "option_id": "b",
+        "label": "The ratio",
+        "display_text": "your job.",
+        "body_text": "You are the rounding error.\n\nAutomated logistics: 99.7% of decisions. Algorithmic content moderation: 99.9% of posts. Diagnostic imaging AI: 97.3% accuracy before human review.\n\nThe remaining fraction is you. Not the engine. The override button. You are paid to handle what the model cannot confidence-score: the ambiguous package, the maybe-violent image, the shadow on the scan that might be nothing.\n\nTwo hundred micro-decisions per hour. That is an Amazon warehouse worker's cognitive load — not lifting, not sorting, but judging the cases the robots punt upward.\n\nMcLuhan imagined automation as liberation. What it liberated was the machine. You are the exception handler, and the exceptions are getting fewer.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "confrontation",
+        "rationale": "Leaner and meaner than option A. Opens with the gut-punch — 'You are the rounding error' — then immediately supports it with three statistics. The 200-micro-decisions figure makes the abstraction concrete and visceral: this is what it feels like to be the human in the loop. The closing is a time bomb: 'the exceptions are getting fewer.' The reader understands that the narrowing trend line ends at zero.",
+        "word_count": 126
+      },
+      {
+        "option_id": "c",
+        "label": "The job description",
+        "display_text": "your job.",
+        "body_text": "POSITION: Human Exception Handler\nDEPARTMENT: Automated Pipeline Quality Assurance\nREPORTS TO: Algorithm\n\nRESPONSIBILITIES:\n— Review cases the model routes to you when its confidence score falls below threshold\n— Make judgment calls the system cannot cost-justify automating (yet)\n— Provide the appearance of human oversight for regulatory compliance\n— Absorb psychological costs the model was not designed to carry (see: content moderation, trauma counseling, end-of-life care)\n\nCOMPENSATION: Competitive with other exception handlers in your latency tier\n\nDURATION: Until threshold improves\n\nMcLuhan said the circuit would learn your job. He was almost right. The circuit learned 99.7% of your job. What remains is the part too expensive to automate and too painful to watch.",
+        "caption_text": null,
+        "quotations_used": [],
+        "voice_register": "playful",
+        "rhetorical_strategy": "defamiliarization",
+        "rationale": "This option reframes the entire argument as a job posting — defamiliarizing employment by rendering it in the language of the system that has absorbed it. 'Reports to: Algorithm' is funny until it isn't. 'Duration: Until threshold improves' is the quiet threat beneath the bureaucratic language. The closing drops the format and lands in direct address, connecting back to McLuhan. The playfulness of the format makes the violence of the content hit harder.",
+        "word_count": 137
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "The ratio visualized",
+        "layout": {
+          "type": "image_dominant",
+          "description": "The image dominates — a vast automated space with a single human figure, establishing the ratio visually before the text makes it explicit.",
+          "left_page": "Display text 'your job.' and body text or job-posting format. Text occupies upper two-thirds; lower third is white space or the McKinsey caption.",
+          "right_page": "Full-bleed photograph: an Amazon fulfillment center or similar automated warehouse interior — the long receding perspective of shelving robots, conveyor systems, automated arms, with a single human worker visible, small, among the machinery. The human should be identifiable but dwarfed.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold",
+          "body_face": "For options A/B: sans-serif body text, direct and unadorned. For option C: monospaced type (simulating a job-posting format), with headers in bold caps and content in regular weight.",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "Option C: the job-posting format should look like an actual internal document — clean, bureaucratic, unsettling in its formality."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "Interior of a large automated fulfillment center or factory floor. Long perspective shot emphasizing scale: rows of robotic shelving units, automated conveyor systems, mechanical arms — and one human worker, visible but small, performing some manual task among the machines. The composition should make the human figure feel like an afterthought in the system's architecture.",
+          "mood": "Industrial sublime. Not dystopian but factual — this is what a modern warehouse looks like. The awe comes from scale, not menace.",
+          "bw_treatment": "High-contrast black-and-white. The overhead lighting should create dramatic shadows — the human figure caught in a pool of light among the dark machinery.",
+          "scale": "full_bleed"
+        },
+        "density": "moderate",
+        "tone": "dark",
+        "rationale": "The design strategy is confrontation through scale. The image does 80% of the argumentative work: when you see one human in a field of robots, you understand the ratio before reading a word. The divided gutter separates the analytical text from the visceral image, forcing the reader to oscillate between understanding and feeling. The darkness of the image — industrial, vast, inhuman in scale — sets up the visual weight of the 'you' series' penultimate entry."
+      }
+    ],
+    "dependency_flags": [
+      "spread_014",
+      "spread_016"
+    ]
+  },
+  {
+    "spread_id": "spread_016",
+    "movement": "movement_1_environment",
+    "theme": "Your government: governance by algorithm",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The post-democratic ledger",
+        "display_text": "your government.",
+        "body_text": "McLuhan called vote-counting an eighteenth-century ritual. The nose, he said, was being counted when it should be scanned.\n\nIt is now scanned.\n\nThe Netherlands' SyRI system flagged welfare recipients as fraud risks using algorithmic scoring. A court struck it down in 2020 for violating human rights. The algorithm had already denied benefits for four years.\n\nLos Angeles deployed PredPol to predict crime by neighborhood. It was discontinued in 2020 after independent audits documented racial bias. The predictions had already dispatched patrol cars for six years.\n\nChina's social credit system governs 1.4 billion people through incentive architectures no legislature debated.\n\nIf the algorithm governs, who did you vote for?\n\nThe nose is no longer counted. The nose is classified, scored, and governed — before the ballot is printed.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.",
+            "attribution": "Safiya Noble",
+            "source": "Algorithms of Oppression, NYU Press, 2018"
+          }
+        ],
+        "voice_register": "declarative",
+        "rhetorical_strategy": "accumulation",
+        "rationale": "This option accumulates three case studies in ascending scale — Netherlands (welfare), Los Angeles (policing), China (everything) — building the argument that algorithmic governance is not a failure of democracy but its replacement. Each example follows the same structure: deployed, operated for years, then (sometimes) challenged — emphasizing that the algorithm governed first and was questioned later. The question 'If the algorithm governs, who did you vote for?' is the spread's hinge: a genuine question the reader cannot answer. The Noble quote can be placed as an epigraph or footer.",
+        "word_count": 158
+      },
+      {
+        "option_id": "b",
+        "label": "The nose is scanned",
+        "display_text": "your government.",
+        "body_text": "The nose is no longer counted. It is scanned, classified, scored, and governed.\n\nPredictive policing deploys patrol cars before crimes are committed. Automated welfare systems deny benefits based on risk scores no applicant can see, let alone contest. Facial recognition at the border decides who enters and who waits. Algorithmic sentencing tools recommend prison terms. Content moderation algorithms determine what political speech reaches you and what vanishes.\n\nNone of this was legislated. None of it was voted on. Most of it was purchased by a procurement office and deployed before any elected official understood what it did.\n\nThis is not the failure of democracy. Democracy simply became irrelevant to the systems that actually govern.\n\nIf the algorithm decides, who did you elect?",
+        "caption_text": "SyRI (Netherlands, 2014-2020). PredPol (Los Angeles, 2012-2020). Social Credit System (China, 2014-present). COMPAS sentencing algorithm (US, 2000-present). None were subject to a public vote.",
+        "quotations_used": [
+          {
+            "text": "Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.",
+            "attribution": "Safiya Noble",
+            "source": "Algorithms of Oppression, NYU Press, 2018"
+          }
+        ],
+        "voice_register": "confrontational",
+        "rhetorical_strategy": "accumulation",
+        "rationale": "This version is more relentless than option A — it drops the narrative structure of individual case studies and instead fires examples in rapid succession, each a different domain of governance (policing, welfare, borders, sentencing, speech). The three-beat closing is the argumentative peak: not legislated, not voted on, not understood. The distinction between 'failure of democracy' and 'irrelevance of democracy' is the sharpest formulation of the argument.",
+        "word_count": 154
+      },
+      {
+        "option_id": "c",
+        "label": "The form",
+        "display_text": "your government.",
+        "body_text": "CITIZEN PROFILE — ALGORITHMIC GOVERNANCE AUDIT\n\nBENEFITS ELIGIBILITY: determined by risk score [SyRI model, Netherlands, 2014-2020; struck down by court, 2020]\nPOLICING PRIORITY: determined by predictive algorithm [PredPol, discontinued 2020; racial bias documented]\nBORDER CLEARANCE: determined by facial recognition match [CBP, 97.5% accuracy; 2.5% error rate = 30,000 wrongful flags/year at JFK alone]\nSENTENCING RECOMMENDATION: determined by recidivism model [COMPAS; ProPublica audit found black defendants scored higher risk at twice the rate of white defendants]\nCONTENT VISIBILITY: determined by recommendation algorithm [platform-specific; no public audit]\nCREDIT ACCESS: determined by scoring model [undisclosed weights; no appeals process]\n\nSTATUS: governed\nCONSENT: not required\nAPPEALS PROCESS: see above\n\nWho did you vote for?",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.",
+            "attribution": "Safiya Noble",
+            "source": "Algorithms of Oppression, NYU Press, 2018"
+          }
+        ],
+        "voice_register": "clinical",
+        "rhetorical_strategy": "defamiliarization",
+        "rationale": "Like spread 015's job-posting option, this renders governance in the language of the governing system — a bureaucratic audit form that turns the reader into the audited citizen. Each line names a domain of governance and the algorithm that controls it, with the scandal in brackets like a footnote the system has already processed. 'STATUS: governed. CONSENT: not required. APPEALS PROCESS: see above.' — the bureaucratic tone makes the violence legible. The closing question, isolated, drops the format entirely.",
+        "word_count": 145
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Bureaucratic surveillance",
+        "layout": {
+          "type": "text_dominant",
+          "description": "Text-heavy spread that mimics a bureaucratic document or government form. The design performs governance-as-system: neat, orderly, and suffocating. The image supports but does not dominate.",
+          "left_page": "Display text 'your government.' above dense body text or form-format text. The layout should feel institutional — wide margins, precise alignment, the claustrophobia of official documentation.",
+          "right_page": "Image: CCTV camera array or facial recognition system at a government building. The cameras should feel like an architectural feature — permanent, structural, not improvised. Below or overlaid: the Noble quotation.",
+          "gutter_treatment": "divided",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "Helvetica Neue Bold",
+          "body_face": "For options A/B: sans-serif body, clean and institutional. For option C: monospaced type to simulate a government document or database readout, with headers in bold caps. The typography should feel bureaucratic — not stylish but systematic.",
+          "display_scale": "headline",
+          "color_treatment": "black_on_white",
+          "special_treatment": "Option C: formatted as an actual document with labeled fields and bracketed annotations. The Noble quote set in italic, smaller, at the page bottom — the footnote that should be the headline."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "An array of CCTV cameras mounted on a pole or building exterior — multiple cameras pointing in different directions, covering all angles. Alternatively: a facial recognition interface showing multiple faces being scanned in real-time with match-percentage overlays. The image should feel infrastructural: this is not a spy thriller but standard-issue governance.",
+          "mood": "Bureaucratic surveillance — the banality of algorithmic governance. Not dramatic or dystopian but routine, institutional, permanent.",
+          "bw_treatment": "High-contrast black-and-white. The cameras or screens should be the sharpest elements; the surrounding architecture can be slightly soft, emphasizing that the surveillance technology is more permanent than the building it's mounted on.",
+          "scale": "half_page"
+        },
+        "density": "dense",
+        "tone": "balanced",
+        "rationale": "This is the densest spread in the 'you' series — it closes the sequence by accumulating the most evidence. The text-dominant layout mirrors a government form, performing the bureaucratic apparatus the text describes. The CCTV image is almost redundant — the reader already feels watched by the text's audit-format. The density contrasts with the whitespace of spread 017, which follows: the suffocation here makes the breathing room there feel earned."
+      }
+    ],
+    "dependency_flags": [
+      "spread_015",
+      "spread_017"
+    ]
+  },
+  {
+    "spread_id": "spread_017",
+    "movement": "movement_1_environment",
+    "theme": "The shock of recognition: who sees the AI environment?",
+    "text_options": [
+      {
+        "option_id": "a",
+        "label": "The seers",
+        "display_text": null,
+        "body_text": "The poet, the artist, the sleuth —\nwhoever sharpens our perception tends to be antisocial.\n\nMcLuhan assigned the early warning system to artists. They were the ones who could see the water the fish swam in.\n\nIn the AI environment, the seers are a different cohort.\n\nCrawford traced the supply chain from lithium mine to data center and found the cloud was made of rock and labor. Gebru documented bias in the models and was fired for the findings. Adversarial researchers discovered that a few altered pixels make a neural network see a rifle where there is a turtle.\n\nRecognition comes from those who refuse adjustment.\n\nThe shock is not that the environment is new. The shock is that it was always there — invisible the way water is invisible to fish — and someone finally pointed at it.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "AI is neither artificial nor intelligent. It is made from natural resources, fuel, and human labor.",
+            "attribution": "Kate Crawford",
+            "source": "Atlas of AI, Yale University Press, 2021, p. 8"
+          }
+        ],
+        "voice_register": "quiet",
+        "rhetorical_strategy": "quieting",
+        "rationale": "This option begins by quoting McLuhan's original text about the antisocial seer, then translates it for the AI era. The three examples — Crawford (material), Gebru (political), adversarial researchers (technical) — cover three modes of recognition. The pace is deliberately slower than the preceding six spreads: longer sentences, more breathing room, a reflective register. The Crawford quote can be placed at the bottom of the page or on the facing dark image — a single bright line of text against darkness.",
+        "word_count": 153
+      },
+      {
+        "option_id": "b",
+        "label": "Who sees the water",
+        "display_text": "The shock of recognition!",
+        "body_text": "Six spreads ago you were addressed as a data point. Your family, your neighborhood, your education, your job, your government — each was revealed as a layer of algorithmic mediation you inhabit without seeing.\n\nBut someone sees.\n\nCrawford saw the mine beneath the cloud. Gebru saw the bias encoded in the training data and named it before it was safe to. Buolamwini saw the face the camera couldn't see — and proved the failure was architectural, not accidental.\n\nThe environment is invisible to those adjusted to it. Recognition requires maladjustment. The seer is always the one who can't stop pointing at something everyone else has learned to ignore.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "AI is neither artificial nor intelligent. It is made from natural resources, fuel, and human labor.",
+            "attribution": "Kate Crawford",
+            "source": "Atlas of AI, Yale University Press, 2021, p. 8"
+          }
+        ],
+        "voice_register": "lyrical",
+        "rhetorical_strategy": "quieting",
+        "rationale": "This option explicitly links back to the 'you' series — recapping the six spreads in a single sentence — before pivoting to the seers. The addition of Joy Buolamwini (whose 'Gender Shades' project demonstrated racial bias in facial recognition) strengthens the examples. The register is more lyrical than option A: 'Crawford saw the mine beneath the cloud' has an almost poetic compression. The closing sentence — recognition as maladjustment — is the McLuhan insight restated for AI.",
+        "word_count": 121
+      },
+      {
+        "option_id": "c",
+        "label": "The dark portrait",
+        "display_text": null,
+        "body_text": "Who sees it?\n\nNot the user. The user is adjusted. The feed is comfortable. The recommendations are good. The convenience is real.\n\nThe one who sees is the one who traces the wire. Who asks where the data goes. Who follows the supply chain from the lithium mine in the Congo to the data center in Virginia to the neural network that decides whether you are creditworthy.\n\nCrawford saw it. She called it what it was: neither artificial nor intelligent, but made from natural resources, fuel, and human labor.\n\nGebru saw it and was punished for saying so.\n\nThe adversarial researcher saw it by teaching the machine to see wrong — a turtle reclassified as a rifle with three changed pixels.\n\nRecognition is not comfortable. It never was. The fish that sees the water can no longer swim in it the same way.",
+        "caption_text": null,
+        "quotations_used": [
+          {
+            "text": "AI is neither artificial nor intelligent. It is made from natural resources, fuel, and human labor.",
+            "attribution": "Kate Crawford",
+            "source": "Atlas of AI, Yale University Press, 2021, p. 8"
+          }
+        ],
+        "voice_register": "contemplative",
+        "rhetorical_strategy": "quieting",
+        "rationale": "This option inverts the usual structure — it begins with the question instead of the heading, creating a more intimate, searching tone. The opening describes the user's comfortable blindness before turning to the seers. The Crawford quote is woven directly into the prose rather than set apart, making it feel like speech rather than citation. The closing metaphor — the fish that sees the water — is the oldest McLuhan image in the book, but stated with new weight: seeing the environment changes your relationship to it permanently. The darker, more contemplative register provides the rhythmic deceleration the book needs before the extensions sequence.",
+        "word_count": 147
+      }
+    ],
+    "design_specs": [
+      {
+        "spec_id": "1",
+        "label": "Contemplative dark spread",
+        "layout": {
+          "type": "image_dominant",
+          "description": "A deliberately quieter, darker spread after six confrontational ones. More white space on the text page, more darkness in the image. The design performs the pause that recognition requires.",
+          "left_page": "Body text, set with generous leading and wide margins. No large display text (or, for option B, 'The shock of recognition!' in smaller scale than the previous display headings — still present but quieter). The text should breathe. Significant white space at the bottom of the page.",
+          "right_page": "Full-bleed dark photograph: a contemplative portrait, partially illuminated, partially in shadow. Or: a figure in a dark room, face lit by a single screen. The Crawford quotation set in white text at the bottom of the dark image — a single bright line against darkness.",
+          "gutter_treatment": "continuous",
+          "orientation": "landscape"
+        },
+        "typography": {
+          "display_face": "If used: Garamond or similar serif — softer than the sans-serif headings of spreads 011-016, marking the shift in register.",
+          "body_face": "Serif body text (Garamond, Minion, or similar) — a deliberate departure from the sans-serif of the 'you' series. The shift from sans to serif signals the shift from confrontation to contemplation.",
+          "display_scale": "subhead",
+          "color_treatment": "mixed",
+          "special_treatment": "Crawford quotation in white text on the dark right page — reversed out of the image. The white text on black creates a visual echo of the original's white-on-black text at this position."
+        },
+        "image_direction": {
+          "approach": "found",
+          "subject": "A dark, contemplative portrait — face partially in shadow, partially illuminated by a cool light source (screen glow, window light, or single overhead). The subject should appear to be looking at something the viewer cannot see. Alternatively: a silhouetted figure seated before a glowing screen in an otherwise dark room, seen from behind — the seer, alone with what they see.",
+          "mood": "Contemplative, liminal. The mood of 3 a.m. research — the hour when the uncomfortable truth becomes visible because the comfortable noise has stopped. Not dramatic but intimate. The darkness is not menacing but clarifying.",
+          "bw_treatment": "Deep blacks, selective highlights. The majority of the image should be in shadow, with illumination falling on the face or hands of the figure. High dynamic range — the darkness should feel rich, not flat.",
+          "scale": "full_bleed"
+        },
+        "density": "sparse",
+        "tone": "dark",
+        "rationale": "This spread must function as a decompression chamber between the confrontational 'you' series and the systematic extensions sequence. The design performs the argument: you cannot see the environment while you are rushing through it. The shift to serif type, the generous white space, the dark image, the reversed-out Crawford quote — everything signals that the book has changed registers. The reader pauses. Recognition requires stillness. This spread provides it."
+      }
+    ],
+    "dependency_flags": [
+      "spread_016",
+      "spread_018"
+    ]
+  }
+]

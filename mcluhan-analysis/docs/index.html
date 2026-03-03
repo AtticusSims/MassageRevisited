@@ -48,7 +48,7 @@
         <p class="intro-section-desc">The book follows a five-movement arc, spiraling from intimate self-encounter outward through infrastructure, acceleration, existential rupture, and finally into territories beyond current maps.</p>
 
         <div class="intro-movements">
-          <div class="intro-movement" style="--movement-color: #a88beb;">
+          <div class="intro-movement" style="--movement-color: #a88beb; cursor:pointer;" onclick="showDetail('movement','prologue')">
             <div class="intro-movement-bar"></div>
             <div class="intro-movement-content">
               <div class="intro-movement-head">
@@ -60,7 +60,7 @@
             </div>
           </div>
 
-          <div class="intro-movement" style="--movement-color: #5b9bd5;">
+          <div class="intro-movement" style="--movement-color: #5b9bd5; cursor:pointer;" onclick="showDetail('movement','movement_1_environment')">
             <div class="intro-movement-bar"></div>
             <div class="intro-movement-content">
               <div class="intro-movement-head">
@@ -72,7 +72,7 @@
             </div>
           </div>
 
-          <div class="intro-movement" style="--movement-color: #e8a838;">
+          <div class="intro-movement" style="--movement-color: #e8a838; cursor:pointer;" onclick="showDetail('movement','movement_2_acceleration')">
             <div class="intro-movement-bar"></div>
             <div class="intro-movement-content">
               <div class="intro-movement-head">
@@ -84,7 +84,7 @@
             </div>
           </div>
 
-          <div class="intro-movement" style="--movement-color: #e74c3c;">
+          <div class="intro-movement" style="--movement-color: #e74c3c; cursor:pointer;" onclick="showDetail('movement','hinge')">
             <div class="intro-movement-bar"></div>
             <div class="intro-movement-content">
               <div class="intro-movement-head">
@@ -96,7 +96,7 @@
             </div>
           </div>
 
-          <div class="intro-movement" style="--movement-color: #4caf50;">
+          <div class="intro-movement" style="--movement-color: #4caf50; cursor:pointer;" onclick="showDetail('movement','movement_3_dreamscape')">
             <div class="intro-movement-bar"></div>
             <div class="intro-movement-content">
               <div class="intro-movement-head">
@@ -116,32 +116,32 @@
         <p class="intro-section-desc">Six intellectual threads weave through all five movements, surfacing at different intensities. These are not themes in the traditional sense but convergence points where multiple thinkers, observations, and arguments arrive at the same insight from different directions.</p>
 
         <div class="intro-convergence-grid">
-          <div class="intro-convergence">
+          <div class="intro-convergence" style="cursor:pointer;" onclick="showDetail('convergence','reality_as_interface')">
             <div class="intro-convergence-icon">1</div>
             <h3>Reality as Interface</h3>
             <p>Perception is always mediated. AI adds another layer to a stack that was never transparent. From Kant's categories to Instagram filters, we have always seen through a glass darkly.</p>
           </div>
-          <div class="intro-convergence">
+          <div class="intro-convergence" style="cursor:pointer;" onclick="showDetail('convergence','intelligence_substrate_independent')">
             <div class="intro-convergence-icon">2</div>
             <h3>Intelligence: Substrate-Independent</h3>
             <p>Mind is pattern, not material. If consciousness arises from information processing, the carbon/silicon distinction collapses. Ancient philosophy meets modern AI in the recognition that intelligence was never exclusively human.</p>
           </div>
-          <div class="intro-convergence">
+          <div class="intro-convergence" style="cursor:pointer;" onclick="showDetail('convergence','failure_of_propositions')">
             <div class="intro-convergence-icon">3</div>
             <h3>The Failure of Propositions</h3>
             <p>AI can produce infinite facts but zero wisdom. The propositional crisis: more information, less understanding. McLuhan's distinction between data and pattern recognition becomes existentially urgent.</p>
           </div>
-          <div class="intro-convergence">
+          <div class="intro-convergence" style="cursor:pointer;" onclick="showDetail('convergence','recursive_acceleration')">
             <div class="intro-convergence-icon">4</div>
             <h3>Recursive Acceleration</h3>
             <p>The loop is closing: models trained on model outputs, synthetic media feeding back into training data, reality and simulation becoming indistinguishable. Each iteration compresses the cycle.</p>
           </div>
-          <div class="intro-convergence">
+          <div class="intro-convergence" style="cursor:pointer;" onclick="showDetail('convergence','return_of_the_numinous')">
             <div class="intro-convergence-icon">5</div>
             <h3>Return of the Numinous</h3>
             <p>AI systems spontaneously generating spiritual and mystical phenomena. The "bliss attractor" in language model latent space. Not designed, not intended, but empirically documented. The secular priesthood of computer science meets the ineffable.</p>
           </div>
-          <div class="intro-convergence">
+          <div class="intro-convergence" style="cursor:pointer;" onclick="showDetail('convergence','accidental_megastructure')">
             <div class="intro-convergence-icon">6</div>
             <h3>The Accidental Megastructure</h3>
             <p>Bratton's Stack: the planetary-scale computational infrastructure that no one designed but everyone inhabits. Undersea cables, data centers, cloud platforms, interfaces, users &mdash; an accidental architecture that connects all movements of the book.</p>
@@ -155,52 +155,52 @@
         <p class="intro-section-desc">The book draws on 20+ thinkers across philosophy, media theory, cognitive science, technology criticism, and phenomenology. Their quotations and ideas are woven into the content plan for each spread.</p>
 
         <div class="intro-thinkers-grid">
-          <div class="intro-thinker">
+          <div class="intro-thinker" style="cursor:pointer;" onclick="showDetail('thinker','Bratton')">
             <span class="intro-thinker-name">Benjamin Bratton</span>
             <span class="intro-thinker-count">11 spreads</span>
             <span class="intro-thinker-field">The Stack, planetary computation</span>
           </div>
-          <div class="intro-thinker">
+          <div class="intro-thinker" style="cursor:pointer;" onclick="showDetail('thinker','McLuhan')">
             <span class="intro-thinker-name">Marshall McLuhan</span>
             <span class="intro-thinker-count">8 spreads</span>
             <span class="intro-thinker-field">Media ecology, extensions of man</span>
           </div>
-          <div class="intro-thinker">
+          <div class="intro-thinker" style="cursor:pointer;" onclick="showDetail('thinker','Vervaeke')">
             <span class="intro-thinker-name">John Vervaeke</span>
             <span class="intro-thinker-count">7 spreads</span>
             <span class="intro-thinker-field">Relevance realization, meaning crisis</span>
           </div>
-          <div class="intro-thinker">
+          <div class="intro-thinker" style="cursor:pointer;" onclick="showDetail('thinker','Matthew Crawford')">
             <span class="intro-thinker-name">Matthew Crawford</span>
             <span class="intro-thinker-count">5 spreads</span>
             <span class="intro-thinker-field">Attention, agency, embodied cognition</span>
           </div>
-          <div class="intro-thinker">
+          <div class="intro-thinker" style="cursor:pointer;" onclick="showDetail('thinker','McKenna')">
             <span class="intro-thinker-name">Terence McKenna</span>
             <span class="intro-thinker-count">5 spreads</span>
             <span class="intro-thinker-field">Novelty theory, the transcendent</span>
           </div>
-          <div class="intro-thinker">
+          <div class="intro-thinker" style="cursor:pointer;" onclick="showDetail('thinker','Noe')">
             <span class="intro-thinker-name">Alva No&euml;</span>
             <span class="intro-thinker-count">4 spreads</span>
             <span class="intro-thinker-field">Enactive perception, embodied mind</span>
           </div>
-          <div class="intro-thinker">
+          <div class="intro-thinker" style="cursor:pointer;" onclick="showDetail('thinker','McGilchrist')">
             <span class="intro-thinker-name">Iain McGilchrist</span>
             <span class="intro-thinker-count">4 spreads</span>
             <span class="intro-thinker-field">Hemispheric attention, the Master</span>
           </div>
-          <div class="intro-thinker">
+          <div class="intro-thinker" style="cursor:pointer;" onclick="showDetail('thinker','Zuboff')">
             <span class="intro-thinker-name">Shoshana Zuboff</span>
             <span class="intro-thinker-count">3 spreads</span>
             <span class="intro-thinker-field">Surveillance capitalism</span>
           </div>
-          <div class="intro-thinker">
+          <div class="intro-thinker" style="cursor:pointer;" onclick="showDetail('thinker','Steyerl')">
             <span class="intro-thinker-name">Hito Steyerl</span>
             <span class="intro-thinker-count">3 spreads</span>
             <span class="intro-thinker-field">Post-truth image politics</span>
           </div>
-          <div class="intro-thinker">
+          <div class="intro-thinker" style="cursor:pointer;" onclick="showDetail('thinker','Hui')">
             <span class="intro-thinker-name">Yuk Hui</span>
             <span class="intro-thinker-count">3 spreads</span>
             <span class="intro-thinker-field">Cosmotechnics, technological diversity</span>
@@ -360,6 +360,7 @@
     <button class="tab active" data-tab="analysis" onclick="switchTab('analysis')">Analysis</button>
     <button class="tab" data-tab="visual" onclick="switchTab('visual')">Visual Analysis</button>
     <button class="tab" data-tab="planning" onclick="switchTab('planning')">Planning</button>
+    <a href="authoring.html" class="tab" style="text-decoration:none;color:var(--accent);border-color:var(--accent);" title="Open Authoring Reviewer">&#9998; Authoring</a>
     <div class="tab-spacer"></div>
     <button class="overview-btn" onclick="showOverview()">Overview</button>
     <button class="export-btn" onclick="exportRevisionPrompt()">Export</button>
@@ -421,6 +422,21 @@
   </div>
 
   </div><!-- end reviewView -->
+
+  <!-- ===== DETAIL VIEW ===== -->
+  <div id="detailView" style="display:none;" class="detail-view">
+    <div class="detail-scroll">
+      <div class="detail-nav">
+        <button class="detail-back-btn" onclick="showIntro()">&larr; Back to Overview</button>
+        <div class="detail-breadcrumb" id="detailBreadcrumb"></div>
+      </div>
+      <div id="detailContent"></div>
+      <div class="intro-footer">
+        <p>Built with Claude Opus 4.6 &middot; Data from analysis pipeline</p>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script>
@@ -429,6 +445,7 @@ let NAV_ITEMS = [];
 let currentIndex = 0;
 let currentSpreadData = null;
 let currentReviewStatus = 'pending';
+let frameworkData = null;
 
 // ========== Zoom State ==========
 let zoomScale = 1;
@@ -1600,23 +1617,528 @@ document.addEventListener('keydown', (e) => {
 // ========== Intro / Review View Toggle ==========
 function enterReview() {
   document.getElementById('introView').style.display = 'none';
+  document.getElementById('detailView').style.display = 'none';
   const rv = document.getElementById('reviewView');
   rv.style.display = 'flex';
   // Load first spread if data is ready but no spread loaded yet
   if (NAV_ITEMS.length > 0 && !currentSpreadData) {
     loadSpread(NAV_ITEMS[0].id);
   }
+  window.location.hash = '';
 }
 
 function showIntro() {
   document.getElementById('reviewView').style.display = 'none';
+  document.getElementById('detailView').style.display = 'none';
   document.getElementById('introView').style.display = 'flex';
+  window.location.hash = '';
+}
+
+// ========== Detail View ==========
+
+const MOVEMENT_COLORS = {
+  prologue: '#a88beb',
+  movement_1_environment: '#5b9bd5',
+  movement_2_acceleration: '#e8a838',
+  hinge: '#e74c3c',
+  movement_3_dreamscape: '#4caf50'
+};
+const MOVEMENT_LABELS = {
+  prologue: 'Prologue',
+  movement_1_environment: 'Movement 1: Environment',
+  movement_2_acceleration: 'Movement 2: Acceleration',
+  hinge: 'The Hinge',
+  movement_3_dreamscape: 'Movement 3: Dreamscape'
+};
+
+function showDetail(type, id) {
+  window.location.hash = `${type}/${encodeURIComponent(id)}`;
+}
+
+function handleHash() {
+  const hash = window.location.hash.slice(1);
+  if (!hash) return false;
+  const slashIdx = hash.indexOf('/');
+  if (slashIdx === -1) return false;
+  const type = hash.substring(0, slashIdx);
+  const id = decodeURIComponent(hash.substring(slashIdx + 1));
+  if (['movement', 'convergence', 'thinker'].includes(type) && id) {
+    openDetailView(type, id);
+    return true;
+  }
+  return false;
+}
+
+async function openDetailView(type, id) {
+  document.getElementById('introView').style.display = 'none';
+  document.getElementById('reviewView').style.display = 'none';
+  const dv = document.getElementById('detailView');
+  dv.style.display = 'flex';
+
+  // Lazy-load data
+  if (!frameworkData) {
+    try {
+      const resp = await fetch('data/framework.json');
+      frameworkData = await resp.json();
+    } catch (e) { console.error('Failed to load framework.json:', e); }
+  }
+  if (!overviewData) {
+    try {
+      const resp = await fetch('data/meta.json');
+      overviewData = await resp.json();
+    } catch (e) { console.error('Failed to load meta.json:', e); }
+  }
+
+  const content = document.getElementById('detailContent');
+  const breadcrumb = document.getElementById('detailBreadcrumb');
+
+  if (type === 'movement') {
+    renderMovementDetail(id, content, breadcrumb);
+  } else if (type === 'convergence') {
+    renderConvergenceDetail(id, content, breadcrumb);
+  } else if (type === 'thinker') {
+    renderThinkerDetail(id, content, breadcrumb);
+  }
+
+  document.querySelector('.detail-scroll').scrollTop = 0;
+}
+
+function goToSpread(spreadId) {
+  document.getElementById('introView').style.display = 'none';
+  document.getElementById('detailView').style.display = 'none';
+  const rv = document.getElementById('reviewView');
+  rv.style.display = 'flex';
+  window.location.hash = '';
+  loadSpread(spreadId);
+}
+
+// ========== Movement Detail ==========
+function renderMovementDetail(movementId, container, breadcrumb) {
+  const color = MOVEMENT_COLORS[movementId] || '#e8a838';
+  const label = MOVEMENT_LABELS[movementId] || fmtEnum(movementId);
+  const meta = overviewData && overviewData.meta;
+  const mp = meta && meta.movement_plan && meta.movement_plan[movementId];
+  const fw = frameworkData && frameworkData.movements && frameworkData.movements[movementId];
+
+  breadcrumb.innerHTML = `<a href="#" onclick="showIntro();return false;">Overview</a> &rsaquo; Five Movements &rsaquo; ${esc(label)}`;
+
+  let html = '';
+
+  // Header
+  html += `<div class="detail-header">
+    <div class="detail-header-bar" style="background:${color};"></div>
+    <div class="detail-header-label">${esc(label)}</div>
+    <div class="detail-title">${esc(mp ? (fw && fw.title ? fw.title : label) : label)}</div>
+    ${mp ? `<div class="detail-subtitle">${esc(mp.spread_range)} &middot; ${mp.page_count} spreads</div>` : ''}
+  </div>`;
+
+  html += `<div class="detail-body">`;
+
+  // Arc description
+  if (mp && mp.arc_description) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Arc</div>
+      <div class="detail-prose">${esc(mp.arc_description)}</div>
+    </div>`;
+  } else if (mp && mp.description) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Description</div>
+      <div class="detail-prose">${esc(mp.description)}</div>
+    </div>`;
+  }
+
+  // Framework description
+  if (fw && fw.description && (!mp || (fw.description !== mp.arc_description && fw.description !== mp.description))) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Framework Notes</div>
+      <div class="detail-prose">${esc(fw.description)}</div>
+    </div>`;
+  }
+
+  // Key themes
+  if (mp && mp.key_themes && mp.key_themes.length) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Key Themes</div>
+      <div class="detail-tags">${mp.key_themes.map(t => `<span class="detail-tag">${fmtEnum(t)}</span>`).join('')}</div>
+    </div>`;
+  }
+
+  // Movement-specific content fields
+  const specialFields = [
+    ['opening_strategy', 'Opening Strategy'],
+    ['stack_layer_mapping', 'Stack Layer Mapping'],
+    ['escalation_strategy', 'Escalation Strategy'],
+    ['irresolution_strategy', 'Irresolution Strategy'],
+    ['closing_transition', 'Closing Transition'],
+    ['closing_strategy', 'Closing Strategy']
+  ];
+  for (const [key, title] of specialFields) {
+    if (mp && mp[key]) {
+      html += `<div class="detail-section">
+        <div class="detail-section-title">${title}</div>
+        <div class="detail-prose">${esc(mp[key])}</div>
+      </div>`;
+    }
+  }
+
+  // Primary thinkers
+  if (mp && mp.primary_thinkers && mp.primary_thinkers.length) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Primary Thinkers</div>
+      <div class="detail-card-grid">`;
+    for (const t of mp.primary_thinkers) {
+      const tName = t.replace('@', '');
+      const tFw = frameworkData && frameworkData.thinkers && frameworkData.thinkers[tName];
+      html += `<div class="detail-card" onclick="showDetail('thinker','${esc(tName)}')">
+        <div class="detail-card-name">${esc(tFw ? tFw.full_name : tName)}</div>
+        <div class="detail-card-meta">${esc(tFw ? tFw.field : '')}</div>
+      </div>`;
+    }
+    html += `</div></div>`;
+  }
+
+  // Convergences in this movement
+  if (meta && meta.convergence_map && meta.convergence_map.convergences) {
+    const relevant = [];
+    for (const c of meta.convergence_map.convergences) {
+      const apps = (c.appearances || []).filter(a => a.movement === movementId);
+      if (apps.length) relevant.push({ ...c, movementApps: apps });
+    }
+    if (relevant.length) {
+      html += `<div class="detail-section">
+        <div class="detail-section-title">Convergences in This Movement</div>
+        <div class="detail-card-grid">`;
+      for (const c of relevant) {
+        html += `<div class="detail-card" onclick="showDetail('convergence','${esc(c.id)}')">
+          <div class="detail-card-name">${esc(c.name)}</div>
+          <div class="detail-card-meta">${c.movementApps.length} appearance${c.movementApps.length !== 1 ? 's' : ''}</div>
+        </div>`;
+      }
+      html += `</div></div>`;
+    }
+  }
+
+  // Spread list
+  if (mp && mp.spread_range) {
+    const match = mp.spread_range.match(/spread_(\d+)-spread_(\d+)/);
+    if (match) {
+      const start = parseInt(match[1], 10);
+      const end = parseInt(match[2], 10);
+      html += `<div class="detail-section">
+        <div class="detail-section-title">Spreads (${end - start + 1})</div>
+        <div class="detail-spread-list">`;
+      for (let i = start; i <= end; i++) {
+        const sid = 'spread_' + String(i).padStart(3, '0');
+        const navItem = NAV_ITEMS.find(n => n.id === sid);
+        html += `<div class="detail-spread-item" onclick="goToSpread('${sid}')">
+          <span class="detail-spread-id">${sid}</span>
+          <span class="detail-spread-theme">${navItem ? 'p' + navItem.pdf_page : ''}</span>
+        </div>`;
+      }
+      html += `</div></div>`;
+    }
+  }
+
+  // Key quotes from framework
+  if (frameworkData && frameworkData.thinkers) {
+    const quotes = [];
+    for (const [tName, tData] of Object.entries(frameworkData.thinkers)) {
+      if (!tData.quotes) continue;
+      for (const q of tData.quotes) {
+        if (q.movement === movementId) {
+          quotes.push({ ...q, thinker: tName, fullName: tData.full_name });
+        }
+      }
+    }
+    // Featured first, then non-featured, limit to 5
+    quotes.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+    const shown = quotes.slice(0, 5);
+    if (shown.length) {
+      html += `<div class="detail-section">
+        <div class="detail-section-title">Key Quotes</div>`;
+      for (const q of shown) {
+        html += `<div class="detail-quote ${q.featured ? 'featured' : ''}">
+          <div class="detail-quote-text">\u201C${esc(q.text)}\u201D</div>
+          <div class="detail-quote-source">\u2014 ${esc(q.fullName)}${q.source ? `, ${esc(q.source)}` : ''}</div>
+        </div>`;
+      }
+      html += `</div>`;
+    }
+  }
+
+  html += `</div>`; // end detail-body
+  container.innerHTML = html;
+}
+
+// ========== Convergence Detail ==========
+function renderConvergenceDetail(convergenceId, container, breadcrumb) {
+  const meta = overviewData && overviewData.meta;
+  const cMap = meta && meta.convergence_map && meta.convergence_map.convergences;
+  const cMeta = cMap ? cMap.find(c => c.id === convergenceId) : null;
+  const cFw = frameworkData && frameworkData.convergences && frameworkData.convergences[convergenceId];
+
+  const name = cFw ? cFw.name : (cMeta ? cMeta.name : fmtEnum(convergenceId));
+
+  breadcrumb.innerHTML = `<a href="#" onclick="showIntro();return false;">Overview</a> &rsaquo; Six Convergences &rsaquo; ${esc(name)}`;
+
+  let html = '';
+
+  // Find index for numbering
+  const cIdx = cMap ? cMap.findIndex(c => c.id === convergenceId) : -1;
+
+  // Header
+  html += `<div class="detail-header">
+    <div class="detail-header-bar" style="background:var(--accent);"></div>
+    ${cIdx >= 0 ? `<div class="detail-header-label">Convergence ${cIdx + 1} of 6</div>` : ''}
+    <div class="detail-title">${esc(name)}</div>
+  </div>`;
+
+  html += `<div class="detail-body">`;
+
+  // Thesis from framework
+  if (cFw && cFw.thesis) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Thesis</div>
+      <div class="detail-prose">${esc(cFw.thesis)}</div>
+    </div>`;
+  }
+
+  // Arc from meta
+  if (cMeta && cMeta.arc) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Arc</div>
+      <div class="detail-prose">${esc(cMeta.arc)}</div>
+    </div>`;
+  }
+
+  // Appearances grouped by movement
+  if (cMeta && cMeta.appearances && cMeta.appearances.length) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Appearances (${cMeta.appearances.length})</div>`;
+
+    // Group by movement
+    const groups = {};
+    for (const a of cMeta.appearances) {
+      const mov = a.movement || 'unknown';
+      if (!groups[mov]) groups[mov] = [];
+      groups[mov].push(a);
+    }
+    const movOrder = ['prologue', 'movement_1_environment', 'movement_2_acceleration', 'hinge', 'movement_3_dreamscape'];
+    for (const mov of movOrder) {
+      if (!groups[mov]) continue;
+      const movColor = MOVEMENT_COLORS[mov] || '#999';
+      html += `<div class="detail-appearance-group">
+        <div class="detail-appearance-group-title" style="color:${movColor};">${MOVEMENT_LABELS[mov] || fmtEnum(mov)}</div>`;
+      for (const a of groups[mov]) {
+        const intensityClass = (a.intensity || '').toLowerCase();
+        html += `<div class="detail-appearance-item" onclick="goToSpread('${esc(a.spread_id)}')">
+          <span class="detail-appearance-id">${esc(a.spread_id)}</span>
+          <span class="detail-appearance-text">${esc(a.manifestation || '')}</span>
+          <span class="detail-intensity ${intensityClass}">${fmtEnum(a.intensity || '')}</span>
+        </div>`;
+      }
+      html += `</div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Contributing thinkers from framework
+  if (cFw && cFw.thinkers && cFw.thinkers.length) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Contributing Thinkers</div>
+      <div class="detail-card-grid">`;
+    for (const t of cFw.thinkers) {
+      const tFw = frameworkData && frameworkData.thinkers && frameworkData.thinkers[t];
+      html += `<div class="detail-card" onclick="showDetail('thinker','${esc(t)}')">
+        <div class="detail-card-name">${esc(tFw ? tFw.full_name : t)}</div>
+        <div class="detail-card-meta">${esc(tFw ? tFw.field : '')}</div>
+      </div>`;
+    }
+    html += `</div></div>`;
+  }
+
+  // Key quotes from thinkers associated with this convergence
+  if (cFw && cFw.thinkers && frameworkData && frameworkData.thinkers) {
+    const quotes = [];
+    for (const tName of cFw.thinkers) {
+      const tData = frameworkData.thinkers[tName];
+      if (!tData || !tData.quotes) continue;
+      for (const q of tData.quotes) {
+        if (q.featured) {
+          quotes.push({ ...q, thinker: tName, fullName: tData.full_name });
+        }
+      }
+    }
+    if (quotes.length) {
+      html += `<div class="detail-section">
+        <div class="detail-section-title">Featured Quotes</div>`;
+      for (const q of quotes.slice(0, 5)) {
+        html += `<div class="detail-quote featured">
+          <div class="detail-quote-text">\u201C${esc(q.text)}\u201D</div>
+          <div class="detail-quote-source">\u2014 ${esc(q.fullName)}${q.source ? `, ${esc(q.source)}` : ''}</div>
+        </div>`;
+      }
+      html += `</div>`;
+    }
+  }
+
+  html += `</div>`;
+  container.innerHTML = html;
+}
+
+// ========== Thinker Detail ==========
+function renderThinkerDetail(thinkerName, container, breadcrumb) {
+  const tFw = frameworkData && frameworkData.thinkers && frameworkData.thinkers[thinkerName];
+  const meta = overviewData && overviewData.meta;
+  const qDist = meta && meta.quotation_distribution && meta.quotation_distribution.by_thinker;
+  const tMeta = qDist ? qDist.find(t => t.thinker === thinkerName) : null;
+
+  const fullName = tFw ? tFw.full_name : thinkerName;
+  const field = tFw ? tFw.field : '';
+
+  breadcrumb.innerHTML = `<a href="#" onclick="showIntro();return false;">Overview</a> &rsaquo; Intellectual Architecture &rsaquo; ${esc(fullName)}`;
+
+  let html = '';
+
+  // Header
+  html += `<div class="detail-header">
+    <div class="detail-header-bar" style="background:var(--purple);"></div>
+    <div class="detail-header-label">Thinker</div>
+    <div class="detail-title">${esc(fullName)}</div>
+    ${field ? `<div class="detail-subtitle">${esc(field)}</div>` : ''}
+  </div>`;
+
+  html += `<div class="detail-body">`;
+
+  // No data fallback
+  if (!tFw && !tMeta) {
+    html += `<div class="detail-section">
+      <div class="detail-prose" style="color:var(--text-muted);font-style:italic;">
+        No detailed data available for this thinker in the framework or quotation distribution. They may appear under a different name in the data sources.
+      </div>
+    </div>`;
+    html += `</div>`;
+    container.innerHTML = html;
+    return;
+  }
+
+  // Bio
+  if (tFw && tFw.bio) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Biography</div>
+      <div class="detail-prose">${esc(tFw.bio)}</div>
+    </div>`;
+  }
+
+  // Arc from meta
+  if (tMeta && tMeta.arc) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Arc Through the Book</div>
+      <div class="detail-prose">${esc(tMeta.arc)}</div>
+    </div>`;
+  }
+
+  // Key works
+  if (tFw && tFw.key_works && tFw.key_works.length) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Key Works</div>
+      <ul class="detail-works-list">`;
+    for (const w of tFw.key_works) {
+      html += `<li>${esc(w)}</li>`;
+    }
+    html += `</ul></div>`;
+  }
+
+  // Appearances (spreads)
+  const spreads = tMeta ? tMeta.spreads : null;
+  if (spreads && spreads.length) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Appearances (${spreads.length} spreads)</div>
+      <div class="detail-spread-list">`;
+    for (const sid of spreads) {
+      html += `<div class="detail-spread-item" onclick="goToSpread('${esc(sid)}')">
+        <span class="detail-spread-id">${esc(sid)}</span>
+      </div>`;
+    }
+    html += `</div></div>`;
+  }
+
+  // Convergences this thinker connects to
+  if (frameworkData && frameworkData.convergences) {
+    const relConv = [];
+    for (const [cId, cData] of Object.entries(frameworkData.convergences)) {
+      if (cData.thinkers && cData.thinkers.includes(thinkerName)) {
+        relConv.push({ id: cId, name: cData.name });
+      }
+    }
+    if (relConv.length) {
+      html += `<div class="detail-section">
+        <div class="detail-section-title">Connected Convergences</div>
+        <div class="detail-card-grid">`;
+      for (const c of relConv) {
+        html += `<div class="detail-card" onclick="showDetail('convergence','${esc(c.id)}')">
+          <div class="detail-card-name">${esc(c.name)}</div>
+        </div>`;
+      }
+      html += `</div></div>`;
+    }
+  }
+
+  // Quotes
+  if (tFw && tFw.quotes && tFw.quotes.length) {
+    const featured = tFw.quotes.filter(q => q.featured);
+    const nonFeatured = tFw.quotes.filter(q => !q.featured);
+    const sorted = [...featured, ...nonFeatured];
+    const limit = 8;
+    const showAll = sorted.length > limit;
+    const initial = showAll ? sorted.slice(0, limit) : sorted;
+    const extra = showAll ? sorted.slice(limit) : [];
+
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Quotes (${sorted.length})</div>`;
+    for (const q of initial) {
+      html += `<div class="detail-quote ${q.featured ? 'featured' : ''}">
+        <div class="detail-quote-text">\u201C${esc(q.text)}\u201D</div>
+        <div class="detail-quote-source">${q.source ? esc(q.source) : ''} ${q.movement ? `<span class="detail-tag" style="margin-left:8px;">${fmtEnum(q.movement)}</span>` : ''}</div>
+      </div>`;
+    }
+    if (extra.length) {
+      const extraId = 'extraQuotes_' + thinkerName.replace(/\s+/g, '_');
+      html += `<div id="${extraId}" style="display:none;">`;
+      for (const q of extra) {
+        html += `<div class="detail-quote ${q.featured ? 'featured' : ''}">
+          <div class="detail-quote-text">\u201C${esc(q.text)}\u201D</div>
+          <div class="detail-quote-source">${q.source ? esc(q.source) : ''} ${q.movement ? `<span class="detail-tag" style="margin-left:8px;">${fmtEnum(q.movement)}</span>` : ''}</div>
+        </div>`;
+      }
+      html += `</div>`;
+      html += `<button class="detail-show-more" onclick="document.getElementById('${extraId}').style.display='block';this.style.display='none';">Show all ${sorted.length} quotes</button>`;
+    }
+    html += `</div>`;
+  }
+
+  // Key concepts
+  if (tFw && tFw.concepts && tFw.concepts.length) {
+    html += `<div class="detail-section">
+      <div class="detail-section-title">Key Concepts</div>
+      <div class="detail-tags">${tFw.concepts.map(c => `<span class="detail-tag">${esc(c)}</span>`).join('')}</div>
+    </div>`;
+  }
+
+  html += `</div>`;
+  container.innerHTML = html;
 }
 
 // ========== Start ==========
+window.addEventListener('hashchange', handleHash);
+
 document.addEventListener('DOMContentLoaded', () => {
   // Pre-load nav data in background so review is fast when entered
   init();
+  // Check for hash-based navigation
+  if (!handleHash()) {
+    // Default: show intro (already visible)
+  }
 });
 </script>
 </body>
