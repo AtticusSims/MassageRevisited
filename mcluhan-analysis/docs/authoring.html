@@ -1172,6 +1172,10 @@ function renderSpread(idx) {
   const selectedOpt = selections[sid]?.text || null;
   currentRenderOption = selectedOpt || (spread.text_options.length > 0 ? spread.text_options[0].option_id : null);
 
+  // Image strip — must come before renderSpreadLayout so currentImageIdx
+  // is restored to this spread's saved selection before the layout uses it
+  populateImageStrip(sid);
+
   // Build option cards
   buildOptionCards(spread);
 
@@ -1179,9 +1183,6 @@ function renderSpread(idx) {
   if (currentRenderOption) {
     renderSpreadLayout(spread, currentRenderOption);
   }
-
-  // Image strip
-  populateImageStrip(sid);
 
   // Notes
   document.getElementById('reviewNotes').value = selections[sid]?.notes || '';
