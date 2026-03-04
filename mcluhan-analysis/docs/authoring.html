@@ -6,7 +6,7 @@
   <title>The Model is the Massage — Authoring Review</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&family=Urbanist:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Sora:wght@100..800&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Anton&family=Archivo+Black&display=swap" rel="stylesheet">
   <style>
     /* ===== Reset & Variables ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -134,6 +134,37 @@
       font-size: 10px; padding: 2px 6px; border-radius: 3px;
     }
     .collapse-btn:hover { background: var(--bg-hover); color: var(--accent); }
+
+    /* ===== Font Picker Toolbar ===== */
+    .font-picker-bar {
+      display: flex; align-items: center; gap: 12px;
+      padding: 5px 12px; background: var(--bg-panel);
+      border-bottom: 1px solid var(--border); flex-shrink: 0;
+      overflow-x: auto;
+    }
+    .font-picker-group {
+      display: flex; align-items: center; gap: 4px; white-space: nowrap;
+    }
+    .font-picker-group label {
+      font-size: 9px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.5px; color: var(--text-muted); min-width: 48px;
+    }
+    .font-picker-group select {
+      background: var(--bg-card); border: 1px solid var(--border);
+      color: var(--text); font-size: 12px; padding: 3px 6px;
+      border-radius: 3px; cursor: pointer; max-width: 180px;
+    }
+    .font-picker-group select:hover { border-color: var(--accent-dim); }
+    .font-picker-group select:focus { outline: none; border-color: var(--accent); }
+    .font-picker-sep {
+      width: 1px; height: 18px; background: var(--border); flex-shrink: 0;
+    }
+    .font-picker-reset {
+      background: none; border: 1px solid var(--border); color: var(--text-muted);
+      font-size: 10px; padding: 3px 8px; border-radius: 3px; cursor: pointer;
+      white-space: nowrap;
+    }
+    .font-picker-reset:hover { color: var(--accent); border-color: var(--accent-dim); }
 
     /* ===== The Book Spread ===== */
     .spread-frame {
@@ -726,6 +757,56 @@
           <span class="pane-label">Rendered</span>
           <span id="renderInfo" style="font-size:10px;color:var(--text-muted)"></span>
         </div>
+        <!-- Font Picker -->
+        <div class="font-picker-bar">
+          <div class="font-picker-group">
+            <label>Display</label>
+            <select id="fontPickerDisplay" onchange="onFontChange('display', this.value)">
+              <option value="'Space Grotesk', sans-serif">Space Grotesk</option>
+              <option value="'Urbanist', sans-serif">Urbanist</option>
+              <option value="'DM Sans', sans-serif">DM Sans</option>
+              <option value="'Outfit', sans-serif">Outfit</option>
+              <option value="'Sora', sans-serif">Sora</option>
+              <option value="'Manrope', sans-serif">Manrope</option>
+              <option value="'Plus Jakarta Sans', sans-serif">Plus Jakarta Sans</option>
+              <option value="'Oswald', sans-serif">Oswald</option>
+              <option value="'Anton', sans-serif">Anton</option>
+              <option value="'Archivo Black', sans-serif">Archivo Black</option>
+              <option value="'Bebas Neue', sans-serif">Bebas Neue</option>
+            </select>
+          </div>
+          <div class="font-picker-sep"></div>
+          <div class="font-picker-group">
+            <label>Body</label>
+            <select id="fontPickerBody" onchange="onFontChange('body', this.value)">
+              <option value="'Inter', sans-serif">Inter</option>
+              <option value="'DM Sans', sans-serif">DM Sans</option>
+              <option value="'Outfit', sans-serif">Outfit</option>
+              <option value="'Sora', sans-serif">Sora</option>
+              <option value="'Manrope', sans-serif">Manrope</option>
+              <option value="'Plus Jakarta Sans', sans-serif">Plus Jakarta Sans</option>
+              <option value="'Source Serif 4', serif">Source Serif 4</option>
+              <option value="'Lora', serif">Lora</option>
+              <option value="'Libre Baskerville', serif">Libre Baskerville</option>
+            </select>
+          </div>
+          <div class="font-picker-sep"></div>
+          <div class="font-picker-group">
+            <label>Caption</label>
+            <select id="fontPickerCaption" onchange="onFontChange('caption', this.value)">
+              <option value="'Cormorant Garamond', serif">Cormorant Garamond</option>
+              <option value="'Source Serif 4', serif">Source Serif 4</option>
+              <option value="'Lora', serif">Lora</option>
+              <option value="'Playfair Display', serif">Playfair Display</option>
+              <option value="'EB Garamond', serif">EB Garamond</option>
+              <option value="'Libre Baskerville', serif">Libre Baskerville</option>
+              <option value="'Inter', sans-serif">Inter</option>
+              <option value="'Space Grotesk', sans-serif">Space Grotesk</option>
+            </select>
+          </div>
+          <div class="font-picker-sep"></div>
+          <button class="font-picker-reset" onclick="resetFonts()" title="Reset to defaults">Reset</button>
+        </div>
         <div class="render-viewport" id="renderViewport">
           <div class="spread-scale-wrapper" id="spreadScaleWrapper">
             <div class="spread-frame" id="spreadFrame">
@@ -805,6 +886,7 @@ async function init() {
       if (imgResp.ok) imageMetadata = await imgResp.json();
     } catch(e) { /* image metadata not available yet */ }
     buildUI();
+    initFontPicker();
     renderSpread(0);
     window.addEventListener('resize', scaleSpread);
   } catch(e) {
@@ -875,6 +957,91 @@ function toggleBottomPane() {
   btn.textContent = pane.classList.contains('collapsed') ? '▲' : '▼';
   // Re-scale spread after layout shift
   setTimeout(scaleSpread, 250);
+}
+
+// ===== Font Picker =====
+const FONT_DEFAULTS = {
+  display: "'Space Grotesk', sans-serif",
+  body: "'Inter', sans-serif",
+  caption: "'Cormorant Garamond', serif"
+};
+
+function initFontPicker() {
+  // Restore saved fonts from localStorage
+  try {
+    const saved = localStorage.getItem('authoring_fonts');
+    if (saved) {
+      const fonts = JSON.parse(saved);
+      if (fonts.display) { applyFont('display', fonts.display); setPickerValue('fontPickerDisplay', fonts.display); }
+      if (fonts.body) { applyFont('body', fonts.body); setPickerValue('fontPickerBody', fonts.body); }
+      if (fonts.caption) { applyFont('caption', fonts.caption); setPickerValue('fontPickerCaption', fonts.caption); }
+    }
+  } catch(e) {}
+  // Style each option in its own font for preview
+  styleFontOptions();
+}
+
+function styleFontOptions() {
+  document.querySelectorAll('.font-picker-group select').forEach(sel => {
+    Array.from(sel.options).forEach(opt => {
+      opt.style.fontFamily = opt.value;
+    });
+    // Style the select itself to match current value
+    sel.style.fontFamily = sel.value;
+  });
+}
+
+function setPickerValue(pickerId, value) {
+  const sel = document.getElementById(pickerId);
+  if (!sel) return;
+  // Find matching option
+  for (let i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].value === value) {
+      sel.selectedIndex = i;
+      sel.style.fontFamily = value;
+      return;
+    }
+  }
+}
+
+function applyFont(role, value) {
+  const varName = `--font-${role}`;
+  document.documentElement.style.setProperty(varName, value);
+}
+
+function onFontChange(role, value) {
+  applyFont(role, value);
+  // Update select's own display font
+  const sel = document.getElementById(`fontPicker${role.charAt(0).toUpperCase() + role.slice(1)}`);
+  if (sel) sel.style.fontFamily = value;
+  // Save to localStorage
+  saveFontChoices();
+  // Re-render current spread to apply new fonts
+  if (data && data.spreads[currentIndex] && currentRenderOption) {
+    renderSpreadLayout(data.spreads[currentIndex], currentRenderOption);
+  }
+}
+
+function resetFonts() {
+  applyFont('display', FONT_DEFAULTS.display);
+  applyFont('body', FONT_DEFAULTS.body);
+  applyFont('caption', FONT_DEFAULTS.caption);
+  setPickerValue('fontPickerDisplay', FONT_DEFAULTS.display);
+  setPickerValue('fontPickerBody', FONT_DEFAULTS.body);
+  setPickerValue('fontPickerCaption', FONT_DEFAULTS.caption);
+  localStorage.removeItem('authoring_fonts');
+  if (data && data.spreads[currentIndex] && currentRenderOption) {
+    renderSpreadLayout(data.spreads[currentIndex], currentRenderOption);
+  }
+}
+
+function saveFontChoices() {
+  const fonts = {
+    display: document.getElementById('fontPickerDisplay')?.value || FONT_DEFAULTS.display,
+    body: document.getElementById('fontPickerBody')?.value || FONT_DEFAULTS.body,
+    caption: document.getElementById('fontPickerCaption')?.value || FONT_DEFAULTS.caption
+  };
+  localStorage.setItem('authoring_fonts', JSON.stringify(fonts));
 }
 
 // ===== Render Spread =====
