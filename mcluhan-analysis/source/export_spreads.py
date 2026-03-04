@@ -81,7 +81,7 @@ def export_spreads():
 
             # Navigate to spread
             page.evaluate(f"goToSpread({idx})")
-            page.wait_for_timeout(300)  # Let render settle
+            page.wait_for_timeout(800)  # Let render settle (increased for complex layouts)
 
             # Get the design spec info for the report
             spec = spread["design_specs"][0] if spread.get("design_specs") else {}

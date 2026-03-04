@@ -1282,25 +1282,35 @@ function renderSpreadLayout(spread, optionId) {
       if (opt.display_text) {
         const words = opt.display_text.split(/\s+/);
         if (words.length <= 2) {
-          // Short text (1-2 words): center across entire spread, don't split
+          // Short text (1-2 words): display centered, body/caption at bottom
           frame.innerHTML = `
             <div class="gutter-line ${gutterTreatment}" id="gutterLine"></div>
-            <div style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;padding:40px;">
-              ${buildDisplayText(opt.display_text, displayScale, colorTreatment, tone)}
+            <div style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;justify-content:space-between;padding:60px;">
+              <div style="flex:1;display:flex;align-items:center;justify-content:center;">
+                ${buildDisplayText(opt.display_text, displayScale, colorTreatment, tone)}
+              </div>
+              ${(bodyEl || captionEl) ? `<div style="max-width:50%;align-self:flex-end;text-align:right;">
+                ${bodyEl || ''}
+                ${captionEl ? `<div style="margin-top:12px">${captionEl}</div>` : ''}
+              </div>` : ''}
             </div>
-            ${bodyEl ? `<div style="position:absolute;bottom:60px;right:60px;max-width:40%;text-align:right">${bodyEl}</div>` : ''}
-            ${captionEl ? `<div style="position:absolute;bottom:30px;right:60px;max-width:38%;text-align:right">${captionEl}</div>` : ''}
           `;
         } else {
           // Multi-word: split across pages
           const mid = Math.ceil(words.length / 2);
           const leftWords = words.slice(0, mid).join(' ');
           const rightWords = words.slice(mid).join(' ');
-          left.innerHTML = `<div class="display-zone">${buildDisplayText(leftWords, displayScale, colorTreatment, tone)}</div>`;
+          left.style.cssText = 'display:flex;align-items:center;justify-content:center;padding:20px;overflow:hidden;word-break:break-all;overflow-wrap:break-word;';
+          left.innerHTML = buildDisplayText(leftWords, displayScale, colorTreatment, tone);
+          right.style.cssText = 'display:flex;flex-direction:column;justify-content:space-between;padding:20px;overflow:hidden;word-break:break-all;overflow-wrap:break-word;';
           right.innerHTML = `
-            <div class="display-zone">${buildDisplayText(rightWords, displayScale, colorTreatment, tone)}</div>
-            ${bodyEl ? `<div class="body-zone">${bodyEl}</div>` : ''}
-            ${captionEl ? `<div class="caption-zone">${captionEl}</div>` : ''}
+            <div style="flex:1;display:flex;align-items:center;justify-content:center;word-break:break-all;overflow-wrap:break-word;">
+              ${buildDisplayText(rightWords, displayScale, colorTreatment, tone)}
+            </div>
+            ${(bodyEl || captionEl) ? `<div style="text-align:right;padding:20px 20px 0;">
+              ${bodyEl || ''}
+              ${captionEl ? `<div style="margin-top:8px">${captionEl}</div>` : ''}
+            </div>` : ''}
           `;
         }
       } else {
@@ -1310,24 +1320,26 @@ function renderSpreadLayout(spread, optionId) {
       }
       break;
 
-    case 'full_bleed_image':
-      // Image spans both pages with text overlaid
+    case 'full_bleed_image': {
+      // Image spans both pages with optional text overlaid
       const fullBleedUrl = getImageUrl(sid);
       const fullBleedBg = fullBleedUrl
         ? `<img src="${fullBleedUrl}" alt="${esc(imageSubject)}" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;" onerror="this.outerHTML='<div class=image-placeholder style=height:100%>${esc(imageSubject)}</div>'" />`
         : `<div class="image-placeholder" style="height:100%">${esc(imageSubject)}</div>`;
+      const fbiHasText = opt.display_text || opt.body_text || opt.caption_text;
       frame.innerHTML = `
         <div class="gutter-line ${gutterTreatment}" id="gutterLine"></div>
         <div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;">
           ${fullBleedBg}
         </div>
-        <div class="text-overlay" style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;justify-content:flex-end;padding:60px 50px;background:linear-gradient(transparent 40%, rgba(0,0,0,0.65));">
-          <div class="display-zone">${buildDisplayText(opt.display_text || '', displayScale, 'white_on_black', 'dark')}</div>
-          ${bodyEl ? `<div class="body-zone" style="color:rgba(255,255,255,0.9);margin-top:16px">${buildBodyText(opt.body_text, 'white_on_black', 'dark')}</div>` : ''}
-          ${captionEl ? `<div class="caption-zone" style="color:rgba(255,255,255,0.7);margin-top:12px">${buildCaptionText(opt.caption_text, 'white_on_black', 'dark')}</div>` : ''}
-        </div>
+        ${fbiHasText ? `<div class="text-overlay" style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;justify-content:flex-end;padding:60px 50px;background:linear-gradient(transparent 40%, rgba(0,0,0,0.65));">
+          ${opt.display_text ? `<div class="display-zone">${buildDisplayText(opt.display_text, displayScale, 'white_on_black', 'dark')}</div>` : ''}
+          ${opt.body_text ? `<div class="body-zone" style="color:rgba(255,255,255,0.9);margin-top:16px">${buildBodyText(opt.body_text, 'white_on_black', 'dark')}</div>` : ''}
+          ${opt.caption_text ? `<div class="caption-zone" style="color:rgba(255,255,255,0.7);margin-top:12px">${buildCaptionText(opt.caption_text, 'white_on_black', 'dark')}</div>` : ''}
+        </div>` : ''}
       `;
       break;
+    }
 
     case 'split_asymmetric':
       left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;overflow:hidden;';
@@ -1366,16 +1378,42 @@ function renderSpreadLayout(spread, optionId) {
       `;
       break;
 
-    case 'image_dominant':
-      left.innerHTML = imgEl || buildImageElement(sid, 'image', 'height:100%');
-      right.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;overflow:hidden;';
-      right.innerHTML = `
-        ${displayEl}
-        ${bodyEl ? `<div style="margin-top:20px">${bodyEl}</div>` : ''}
-        ${captionEl ? `<div style="margin-top:16px">${captionEl}</div>` : ''}
-        ${quoteEl ? `<div style="margin-top:20px">${quoteEl}</div>` : ''}
-      `;
+    case 'image_dominant': {
+      // Image spans full spread; text overlaid on right portion
+      const idUrl = getImageUrl(sid);
+      const idBg = idUrl
+        ? `<img src="${idUrl}" alt="${esc(imageSubject)}" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;" onerror="this.outerHTML='<div class=image-placeholder style=position:absolute;top:0;left:0;width:100%;height:100%>${esc(imageSubject)}</div>'" />`
+        : `<div class="image-placeholder" style="position:absolute;top:0;left:0;width:100%;height:100%">${esc(imageSubject)}</div>`;
+      const idHasText = opt.display_text || opt.body_text || opt.caption_text || (opt.quotations_used?.length > 0);
+      if (idHasText) {
+        // Build text elements forced to white for image overlay
+        const idDisplay = opt.display_text ? buildDisplayText(opt.display_text, displayScale, 'white_on_black', 'dark') : '';
+        const idBody = opt.body_text ? buildBodyText(opt.body_text, 'white_on_black', 'dark') : '';
+        const idCaption = opt.caption_text ? buildCaptionText(opt.caption_text, 'white_on_black', 'dark') : '';
+        let idQuote = '';
+        if (opt.quotations_used?.length > 0) {
+          const q = opt.quotations_used[0];
+          idQuote = buildQuotationText(q.text, q.attribution, q.source, 'white_on_black', 'dark');
+        }
+        frame.innerHTML = `
+          <div class="gutter-line ${gutterTreatment}" id="gutterLine"></div>
+          <div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;">${idBg}</div>
+          <div style="position:absolute;top:0;right:0;width:50%;bottom:0;display:flex;flex-direction:column;justify-content:center;padding:50px 40px;background:linear-gradient(to right, transparent, rgba(0,0,0,0.7) 30%);overflow:hidden;">
+            ${idDisplay}
+            ${idBody ? `<div style="margin-top:20px">${idBody}</div>` : ''}
+            ${idCaption ? `<div style="margin-top:16px">${idCaption}</div>` : ''}
+            ${idQuote ? `<div style="margin-top:20px">${idQuote}</div>` : ''}
+          </div>
+        `;
+      } else {
+        // No text — pure full-bleed image
+        frame.innerHTML = `
+          <div class="gutter-line ${gutterTreatment}" id="gutterLine"></div>
+          <div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;">${idBg}</div>
+        `;
+      }
       break;
+    }
 
     case 'text_over_image':
       const toiUrl = getImageUrl(sid);
