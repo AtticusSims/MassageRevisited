@@ -137,7 +137,7 @@
 
     /* ===== The Book Spread ===== */
     .spread-frame {
-      width: 1060px; height: 936px;
+      width: 1060px; height: 905px;
       background: #fff; color: #000;
       position: relative; overflow: hidden;
       box-shadow: 0 8px 40px rgba(0,0,0,0.5);
@@ -1395,7 +1395,7 @@ function scaleSpread() {
   const vw = viewport.clientWidth - 32;
   const vh = viewport.clientHeight - 32;
   const sw = 1060;
-  const sh = 936;
+  const sh = 905;
   const scale = Math.min(vw / sw, vh / sh, 1);
   wrapper.style.transform = `scale(${scale})`;
 }
