@@ -355,6 +355,7 @@
     }
     .spread-display-text.scale-architectural { font-size: 72px; }
     .spread-display-text.scale-monumental { font-size: 60px; }
+    .spread-display-text.scale-monumental-single { font-size: min(70vw, 420px); line-height: 0.85; letter-spacing: -0.02em; }
     .spread-display-text.scale-headline { font-size: 52px; }
     .spread-display-text.scale-large { font-size: 48px; }
     .spread-display-text.scale-subhead { font-size: 36px; }
@@ -362,6 +363,61 @@
     .spread-display-text.scale-body { font-size: 24px; }
     .spread-display-text.scale-small { font-size: 20px; }
     .spread-display-text.scale-caption { font-size: 16px; }
+
+    /* Quality Rating Buttons */
+    .quality-rating { display: inline-flex; gap: 3px; margin-left: 6px; }
+    .quality-btn {
+      width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--border);
+      background: transparent; color: var(--text-muted); font-size: 11px; font-weight: 700;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: all 0.15s ease;
+    }
+    .quality-btn:hover { transform: scale(1.15); }
+    .quality-btn.q3 { border-color: #4caf50; color: #4caf50; }
+    .quality-btn.q3.active { background: #4caf50; color: #fff; }
+    .quality-btn.q2 { border-color: #ff9800; color: #ff9800; }
+    .quality-btn.q2.active { background: #ff9800; color: #fff; }
+    .quality-btn.q1 { border-color: #f44336; color: #f44336; }
+    .quality-btn.q1.active { background: #f44336; color: #fff; }
+
+    /* Image Selection Button */
+    .image-select-actions {
+      display: flex; align-items: center; gap: 8px; margin-top: 6px; padding: 0 4px;
+    }
+    .image-select-btn {
+      font-size: 10px; padding: 3px 10px; border-radius: 3px; cursor: pointer;
+      border: 1px solid var(--accent); background: transparent; color: var(--accent);
+      transition: all 0.15s ease;
+    }
+    .image-select-btn:hover { background: var(--accent); color: #fff; }
+    .image-select-btn.active { background: var(--accent); color: #fff; }
+    .image-selected-label { font-size: 10px; color: var(--accent); font-weight: 600; }
+    .image-thumb.selected-image { border-color: var(--accent) !important; box-shadow: 0 0 0 2px var(--accent); }
+
+    /* Instructions Modal */
+    .modal-overlay {
+      display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.7); z-index: 10000;
+      align-items: center; justify-content: center;
+    }
+    .modal-overlay.visible { display: flex; }
+    .modal-content {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      max-width: 640px; width: 90%; max-height: 80vh; overflow-y: auto;
+      padding: 32px; position: relative; color: var(--text);
+    }
+    .modal-close {
+      position: absolute; top: 12px; right: 16px; background: none; border: none;
+      color: var(--text-muted); font-size: 20px; cursor: pointer; padding: 4px 8px;
+    }
+    .modal-close:hover { color: var(--text); }
+    .modal-content h2 { margin: 0 0 20px; font-size: 18px; color: var(--accent); }
+    .modal-content h3 { margin: 20px 0 8px; font-size: 14px; color: var(--blue); }
+    .modal-content p { margin: 4px 0 12px; font-size: 13px; line-height: 1.6; color: var(--text-secondary); }
+    .modal-content kbd {
+      background: var(--bg-main); border: 1px solid var(--border); border-radius: 3px;
+      padding: 1px 6px; font-size: 11px; font-family: monospace;
+    }
 
     .spread-body-text {
       font-family: var(--font-body);
@@ -733,6 +789,7 @@
     <div class="header-right">
       <span id="selectionCount">0 selected</span>
       <button class="btn export" onclick="exportSelections()">Export</button>
+      <button class="btn" onclick="showInstructions()" style="margin-left:4px;font-size:12px;padding:4px 10px;" title="Help & Instructions">?</button>
     </div>
   </header>
 
@@ -859,6 +916,35 @@
     </div>
   </div>
 
+</div>
+
+<!-- Instructions Modal -->
+<div class="modal-overlay" id="instructionsModal" onclick="if(event.target===this)hideInstructions()">
+  <div class="modal-content">
+    <button class="modal-close" onclick="hideInstructions()">&times;</button>
+    <h2>Authoring Review Tool - Instructions</h2>
+
+    <h3>Navigation</h3>
+    <p>Use <kbd>&larr;</kbd> <kbd>&rarr;</kbd> arrow keys or click the navigation arrows. Use the dropdown to jump directly to any spread.</p>
+
+    <h3>Text Selection</h3>
+    <p>Each spread has multiple text options (A, B, C). Click <strong>View</strong> to preview how it renders on the page. Click <strong>Select</strong> to mark it as your chosen option. Press <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> to quickly switch between options, and <kbd>Enter</kbd> to select the currently viewed option.</p>
+
+    <h3>Quality Rating</h3>
+    <p>Rate each text option's quality using the colored buttons: <strong style="color:#4caf50">3</strong> = excellent (include in all versions), <strong style="color:#ff9800">2</strong> = acceptable (include in alternate versions), <strong style="color:#f44336">1</strong> = reject (do not include). Click a rating again to remove it.</p>
+
+    <h3>Image Selection</h3>
+    <p>When images are available, thumbnails appear at the bottom of the render area. Click a thumbnail to preview it, then click <strong>Select Image</strong> to lock your choice. Use <kbd>[</kbd> and <kbd>]</kbd> keys to cycle through image options.</p>
+
+    <h3>Fonts</h3>
+    <p>Use the three font dropdowns (Display, Body, Caption) above the render area to change typefaces. Click <strong>Reset</strong> to return to defaults. Font choices are saved automatically and included in the export.</p>
+
+    <h3>Notes</h3>
+    <p>Type review notes in the text area below the option cards. Notes are saved automatically per spread.</p>
+
+    <h3>Export</h3>
+    <p>Click <strong>Export</strong> to download a JSON file containing all your selections, quality ratings, font choices, and notes.</p>
+  </div>
 </div>
 
 <script>
@@ -1165,6 +1251,13 @@ function buildOptionCards(spread) {
     } else {
       html += `<span style="font-size:10px;color:var(--accent)">Selected</span>`;
     }
+    // Quality rating
+    const currentQuality = selections[sid]?.[`quality_${opt.option_id}`] || 0;
+    html += `<div class="quality-rating">`;
+    html += `<button class="quality-btn q3${currentQuality === 3 ? ' active' : ''}" onclick="event.stopPropagation(); setQuality('${sid}','${opt.option_id}',3)" title="Excellent">3</button>`;
+    html += `<button class="quality-btn q2${currentQuality === 2 ? ' active' : ''}" onclick="event.stopPropagation(); setQuality('${sid}','${opt.option_id}',2)" title="Acceptable">2</button>`;
+    html += `<button class="quality-btn q1${currentQuality === 1 ? ' active' : ''}" onclick="event.stopPropagation(); setQuality('${sid}','${opt.option_id}',1)" title="Reject">1</button>`;
+    html += `</div>`;
     html += `</div>`;
 
     html += `</div>`;
@@ -1268,30 +1361,48 @@ function renderSpreadLayout(spread, optionId) {
   }
 
   // Image element — use real image if available, otherwise placeholder
-  const needsImage = ['full_bleed_image', 'split_asymmetric', 'split_symmetric',
-    'text_dominant', 'image_dominant', 'text_over_image', 'dense_collage', 'text_with_specific_image'].includes(layoutType)
-    && imageApproach !== 'typography_only' && imageApproach !== 'none';
-
   const sid = spread.spread_id;
   const imageSubject = spec?.image_direction?.subject || 'image';
+
+  const needsImage = ['full_bleed_image', 'split_asymmetric', 'split_symmetric',
+    'text_dominant', 'image_dominant', 'text_over_image', 'dense_collage', 'text_with_specific_image',
+    'diagram_with_text'].includes(layoutType)
+    && imageApproach !== 'typography_only' && imageApproach !== 'none';
+
+  // For full_bleed_typography, check if images are available even though layout isn't in needsImage
+  const hasImageForTypography = layoutType === 'full_bleed_typography'
+    && imageApproach !== 'typography_only' && imageApproach !== 'none'
+    && getImageUrl(sid);
+
   const imgEl = needsImage ? buildImageElement(sid, imageSubject) : '';
 
   // Layout-specific rendering
   switch (layoutType) {
-    case 'full_bleed_typography':
+    case 'full_bleed_typography': {
+      // Background image layer for full_bleed_typography when images available
+      const fbtBgUrl = hasImageForTypography ? getImageUrl(sid) : null;
+      const fbtBgLayer = fbtBgUrl ? `<div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;">
+        <img src="${fbtBgUrl}" alt="${esc(imageSubject)}" style="width:100%;height:100%;object-fit:cover;opacity:0.3;" onerror="this.style.display='none'" />
+      </div>` : '';
+      // Use white text when there's a background image
+      const fbtColor = fbtBgUrl ? 'white_on_black' : colorTreatment;
+      const fbtTone = fbtBgUrl ? 'dark' : tone;
+
       if (opt.display_text) {
         const words = opt.display_text.split(/\s+/);
         if (words.length <= 2) {
           // Short text (1-2 words): display centered, body/caption at bottom
           frame.innerHTML = `
             <div class="gutter-line ${gutterTreatment}" id="gutterLine"></div>
+            ${fbtBgLayer}
+            ${fbtBgUrl ? '<div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);"></div>' : ''}
             <div style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;justify-content:space-between;padding:60px;">
               <div style="flex:1;display:flex;align-items:center;justify-content:center;">
-                ${buildDisplayText(opt.display_text, displayScale, colorTreatment, tone)}
+                ${buildDisplayText(opt.display_text, displayScale, fbtColor, fbtTone)}
               </div>
               ${(bodyEl || captionEl) ? `<div style="max-width:50%;align-self:flex-end;text-align:right;">
-                ${bodyEl || ''}
-                ${captionEl ? `<div style="margin-top:12px">${captionEl}</div>` : ''}
+                ${fbtBgUrl ? buildBodyText(opt.body_text || '', fbtColor, fbtTone) : (bodyEl || '')}
+                ${opt.caption_text ? `<div style="margin-top:12px">${fbtBgUrl ? buildCaptionText(opt.caption_text, fbtColor, fbtTone) : captionEl}</div>` : ''}
               </div>` : ''}
             </div>
           `;
@@ -1300,25 +1411,60 @@ function renderSpreadLayout(spread, optionId) {
           const mid = Math.ceil(words.length / 2);
           const leftWords = words.slice(0, mid).join(' ');
           const rightWords = words.slice(mid).join(' ');
-          left.style.cssText = 'display:flex;align-items:center;justify-content:center;padding:20px;overflow:hidden;word-break:break-all;overflow-wrap:break-word;';
-          left.innerHTML = buildDisplayText(leftWords, displayScale, colorTreatment, tone);
-          right.style.cssText = 'display:flex;flex-direction:column;justify-content:space-between;padding:20px;overflow:hidden;word-break:break-all;overflow-wrap:break-word;';
-          right.innerHTML = `
-            <div style="flex:1;display:flex;align-items:center;justify-content:center;word-break:break-all;overflow-wrap:break-word;">
-              ${buildDisplayText(rightWords, displayScale, colorTreatment, tone)}
-            </div>
-            ${(bodyEl || captionEl) ? `<div style="text-align:right;padding:20px 20px 0;">
-              ${bodyEl || ''}
-              ${captionEl ? `<div style="margin-top:8px">${captionEl}</div>` : ''}
-            </div>` : ''}
-          `;
+          if (fbtBgUrl) {
+            frame.innerHTML = `
+              <div class="gutter-line ${gutterTreatment}" id="gutterLine"></div>
+              ${fbtBgLayer}
+              <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);"></div>
+              <div style="position:absolute;top:0;left:0;width:50%;bottom:0;display:flex;align-items:center;justify-content:center;padding:20px;overflow:hidden;word-break:break-all;overflow-wrap:break-word;">
+                ${buildDisplayText(leftWords, displayScale, fbtColor, fbtTone)}
+              </div>
+              <div style="position:absolute;top:0;right:0;width:50%;bottom:0;display:flex;flex-direction:column;justify-content:space-between;padding:20px;overflow:hidden;word-break:break-all;overflow-wrap:break-word;">
+                <div style="flex:1;display:flex;align-items:center;justify-content:center;word-break:break-all;overflow-wrap:break-word;">
+                  ${buildDisplayText(rightWords, displayScale, fbtColor, fbtTone)}
+                </div>
+                ${(opt.body_text || opt.caption_text) ? `<div style="text-align:right;padding:20px 20px 0;">
+                  ${opt.body_text ? buildBodyText(opt.body_text, fbtColor, fbtTone) : ''}
+                  ${opt.caption_text ? `<div style="margin-top:8px">${buildCaptionText(opt.caption_text, fbtColor, fbtTone)}</div>` : ''}
+                </div>` : ''}
+              </div>
+            `;
+          } else {
+            left.style.cssText = 'display:flex;align-items:center;justify-content:center;padding:20px;overflow:hidden;word-break:break-all;overflow-wrap:break-word;';
+            left.innerHTML = buildDisplayText(leftWords, displayScale, colorTreatment, tone);
+            right.style.cssText = 'display:flex;flex-direction:column;justify-content:space-between;padding:20px;overflow:hidden;word-break:break-all;overflow-wrap:break-word;';
+            right.innerHTML = `
+              <div style="flex:1;display:flex;align-items:center;justify-content:center;word-break:break-all;overflow-wrap:break-word;">
+                ${buildDisplayText(rightWords, displayScale, colorTreatment, tone)}
+              </div>
+              ${(bodyEl || captionEl) ? `<div style="text-align:right;padding:20px 20px 0;">
+                ${bodyEl || ''}
+                ${captionEl ? `<div style="margin-top:8px">${captionEl}</div>` : ''}
+              </div>` : ''}
+            `;
+          }
         }
       } else {
         // No display text — show body/caption centered
-        left.innerHTML = bodyEl ? `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:60px">${bodyEl}</div>` : '';
-        right.innerHTML = captionEl ? `<div style="display:flex;align-items:flex-end;justify-content:flex-end;height:100%;padding:60px">${captionEl}</div>` : '';
+        if (fbtBgUrl) {
+          frame.innerHTML = `
+            <div class="gutter-line ${gutterTreatment}" id="gutterLine"></div>
+            ${fbtBgLayer}
+            <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);"></div>
+            <div style="position:absolute;top:0;left:0;width:50%;bottom:0;display:flex;align-items:center;justify-content:center;height:100%;padding:60px">
+              ${opt.body_text ? buildBodyText(opt.body_text, fbtColor, fbtTone) : ''}
+            </div>
+            <div style="position:absolute;top:0;right:0;width:50%;bottom:0;display:flex;align-items:flex-end;justify-content:flex-end;height:100%;padding:60px">
+              ${opt.caption_text ? buildCaptionText(opt.caption_text, fbtColor, fbtTone) : ''}
+            </div>
+          `;
+        } else {
+          left.innerHTML = bodyEl ? `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:60px">${bodyEl}</div>` : '';
+          right.innerHTML = captionEl ? `<div style="display:flex;align-items:flex-end;justify-content:flex-end;height:100%;padding:60px">${captionEl}</div>` : '';
+        }
       }
       break;
+    }
 
     case 'full_bleed_image': {
       // Image spans both pages with optional text overlaid
@@ -1519,18 +1665,33 @@ function populateImageStrip(sid) {
   currentImageIdx = selections[sid]?.image ?? meta.selected ?? 0;
   if (currentImageIdx >= meta.options.length) currentImageIdx = 0;
 
+  const savedImageSelection = selections[sid]?.selectedImage;
+
   strip.style.display = 'flex';
   let html = '';
   meta.options.forEach((opt, i) => {
     const active = (i === currentImageIdx) ? ' active' : '';
-    html += `<div class="image-thumb${active}" onclick="selectImage('${sid}', ${i})" title="Option ${i+1}: ${opt.source}">`;
+    const isSelected = (i === savedImageSelection) ? ' selected-image' : '';
+    html += `<div class="image-thumb${active}${isSelected}" onclick="previewImage('${sid}', ${i})" title="Option ${i+1}: ${opt.source || 'image'}">`;
     html += `<img src="images/${opt.file}" alt="Option ${i+1}" onerror="this.parentElement.innerHTML='<span class=no-img>?</span>'" />`;
     html += `</div>`;
   });
   thumbs.innerHTML = html;
+
+  // Add Select Image button below thumbnails
+  let actionsEl = strip.querySelector('.image-select-actions');
+  if (!actionsEl) {
+    actionsEl = document.createElement('div');
+    actionsEl.className = 'image-select-actions';
+    strip.appendChild(actionsEl);
+  }
+  const isCurrentSelected = (savedImageSelection === currentImageIdx);
+  actionsEl.innerHTML = isCurrentSelected
+    ? `<span class="image-selected-label">Image ${currentImageIdx + 1} Selected</span>`
+    : `<button class="image-select-btn" onclick="confirmImageSelection('${sid}', ${currentImageIdx})">Select Image ${currentImageIdx + 1}</button>`;
 }
 
-function selectImage(sid, idx) {
+function previewImage(sid, idx) {
   currentImageIdx = idx;
   if (!selections[sid]) selections[sid] = {};
   selections[sid].image = idx;
@@ -1545,6 +1706,24 @@ function selectImage(sid, idx) {
     renderSpreadLayout(spread, currentRenderOption);
   }
 }
+
+function confirmImageSelection(sid, idx) {
+  if (!selections[sid]) selections[sid] = {};
+  if (selections[sid].selectedImage === idx) {
+    // Toggle off
+    delete selections[sid].selectedImage;
+  } else {
+    selections[sid].selectedImage = idx;
+  }
+  selections[sid].image = idx;
+  currentImageIdx = idx;
+  saveSelections();
+  populateImageStrip(sid);
+  updateSelectionCount();
+}
+
+// Keep backward compat alias
+function selectImage(sid, idx) { previewImage(sid, idx); }
 
 function getImageUrl(sid) {
   // Returns the URL for the currently selected image option, or null
@@ -1567,7 +1746,11 @@ function buildImageElement(sid, subject, style) {
 // ===== Typography Builders =====
 function buildDisplayText(text, scale, color, tone) {
   if (!text) return '';
-  const scaleClass = `scale-${scale || 'large'}`;
+  // Single character at architectural scale gets monumental treatment
+  const trimmed = text.trim();
+  const scaleClass = (trimmed.length === 1 && (scale === 'architectural' || scale === 'monumental'))
+    ? 'scale-monumental-single'
+    : `scale-${scale || 'large'}`;
   const colorStyle = getTextColor(color, tone, 'display');
   return `<div class="spread-display-text ${scaleClass}" style="${colorStyle}">${esc(text)}</div>`;
 }
@@ -1723,20 +1906,35 @@ function buildImagePromptsSection(sid) {
 // ===== Export =====
 function exportSelections() {
   const output = {
-    version: "2.0",
+    version: "2.1",
     exported: new Date().toISOString(),
     spread_range: data.spread_range,
     total_spreads: data.spreads.length,
+    fonts: {
+      display: document.getElementById('fontPickerDisplay')?.value || FONT_DEFAULTS.display,
+      body: document.getElementById('fontPickerBody')?.value || FONT_DEFAULTS.body,
+      caption: document.getElementById('fontPickerCaption')?.value || FONT_DEFAULTS.caption
+    },
     selections: {}
   };
   data.spreads.forEach(s => {
     const sel = selections[s.spread_id];
-    if (sel?.text) {
+    // Collect quality ratings for all options
+    const qualityRatings = {};
+    if (s.text_options) {
+      s.text_options.forEach(opt => {
+        const q = sel?.[`quality_${opt.option_id}`];
+        if (q) qualityRatings[opt.option_id] = q;
+      });
+    }
+    const hasData = sel?.text || sel?.selectedImage != null || sel?.notes || Object.keys(qualityRatings).length > 0;
+    if (hasData) {
       output.selections[s.spread_id] = {
-        selected_text: sel.text,
-        selected_design: sel.design || null,
-        selected_image: sel.image || null,
-        reviewer_notes: sel.notes || null
+        selected_text: sel?.text || null,
+        selected_design: sel?.design || null,
+        selected_image: sel?.selectedImage ?? sel?.image ?? null,
+        quality_ratings: Object.keys(qualityRatings).length > 0 ? qualityRatings : null,
+        reviewer_notes: sel?.notes || null
       };
     }
   });
@@ -1762,9 +1960,38 @@ function truncate(str, n) {
   return str.length > n ? str.slice(0, n) + '...' : str;
 }
 
+// ===== Quality Rating =====
+function setQuality(sid, optId, rating) {
+  if (!selections[sid]) selections[sid] = {};
+  const key = `quality_${optId}`;
+  if (selections[sid][key] === rating) {
+    delete selections[sid][key]; // Toggle off
+  } else {
+    selections[sid][key] = rating;
+  }
+  saveSelections();
+  const spread = data.spreads[currentIndex];
+  buildOptionCards(spread);
+}
+
+// ===== Instructions Modal =====
+function showInstructions() {
+  document.getElementById('instructionsModal').classList.add('visible');
+}
+function hideInstructions() {
+  document.getElementById('instructionsModal').classList.remove('visible');
+}
+
 // ===== Keyboard Nav =====
 document.addEventListener('keydown', e => {
+  // Close modal on Escape
+  if (e.key === 'Escape') {
+    hideInstructions();
+    return;
+  }
   if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+  // Don't process nav keys when modal is open
+  if (document.getElementById('instructionsModal').classList.contains('visible')) return;
   if (e.key === 'ArrowLeft') navigate(-1);
   if (e.key === 'ArrowRight') navigate(1);
   const sid = data?.spreads[currentIndex]?.spread_id;
