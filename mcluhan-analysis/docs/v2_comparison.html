@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Regeneration v2 — Side-by-Side Comparison</title>
+<style>
+  :root {
+    --bg: #1a1a1a;
+    --card: #242424;
+    --border: #333;
+    --text: #e0e0e0;
+    --dim: #888;
+    --accent: #4a9eff;
+    --green: #4caf50;
+    --red: #ef5350;
+    --yellow: #ffc107;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  .subtitle {
+    color: var(--dim);
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+  }
+  .summary-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-box h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .stat {
+    text-align: center;
+    padding: 0.75rem;
+    background: rgba(74, 158, 255, 0.08);
+    border-radius: 6px;
+  }
+  .stat-num { font-size: 2rem; font-weight: 700; color: var(--accent); }
+  .stat-label { font-size: 0.75rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  .spread-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    overflow: hidden;
+  }
+  .spread-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .spread-id {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .spread-theme {
+    font-size: 0.8rem;
+    color: var(--dim);
+    font-style: italic;
+    flex: 1;
+  }
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .badge-issue { background: rgba(239, 83, 80, 0.2); color: var(--red); }
+  .badge-fixed { background: rgba(76, 175, 80, 0.2); color: var(--green); }
+  .badge-improved { background: rgba(255, 193, 7, 0.2); color: var(--yellow); }
+
+  .spread-body { padding: 1.5rem; }
+
+  .issue-banner {
+    background: rgba(239, 83, 80, 0.1);
+    border-left: 3px solid var(--red);
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--red);
+  }
+
+  .spec-box {
+    background: rgba(74, 158, 255, 0.06);
+    border: 1px solid rgba(74, 158, 255, 0.15);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .spec-box h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+  .spec-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+  }
+  .spec-label {
+    color: var(--dim);
+    min-width: 100px;
+    flex-shrink: 0;
+  }
+  .spec-value { color: var(--text); }
+
+  .comparison-section {
+    margin-bottom: 1.5rem;
+  }
+  .comparison-section h3 {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .image-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  .image-cell {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .image-cell img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #333;
+  }
+  .image-label {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.7rem;
+    color: var(--dim);
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .image-label .version {
+    font-weight: 700;
+    color: var(--text);
+  }
+  .v1-label .version { color: var(--red); }
+  .v2-label .version { color: var(--green); }
+
+  .prompt-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 900px) {
+    .prompt-comparison { grid-template-columns: 1fr; }
+  }
+  .prompt-box {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .prompt-header {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .prompt-header-v1 {
+    background: rgba(239, 83, 80, 0.15);
+    color: var(--red);
+  }
+  .prompt-header-v2 {
+    background: rgba(76, 175, 80, 0.15);
+    color: var(--green);
+  }
+  .prompt-text {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--dim);
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .prompt-text::-webkit-scrollbar { width: 4px; }
+  .prompt-text::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .assessment {
+    background: rgba(76, 175, 80, 0.06);
+    border: 1px solid rgba(76, 175, 80, 0.15);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    font-size: 0.8rem;
+  }
+  .assessment h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--green);
+    margin-bottom: 0.5rem;
+    border: none;
+    padding: 0;
+  }
+  .assessment p { margin-bottom: 0.4rem; }
+  .recommend {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(76, 175, 80, 0.15);
+    font-weight: 600;
+    color: var(--green);
+  }
+
+  .toc {
+    margin-bottom: 2rem;
+  }
+  .toc a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .toc a:hover { text-decoration: underline; }
+
+  .methodology {
+    font-size: 0.8rem;
+    color: var(--dim);
+    margin-bottom: 2rem;
+  }
+  .methodology h2 {
+    color: var(--text);
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .methodology ul {
+    margin-left: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .methodology li { margin-bottom: 0.3rem; }
+  .methodology code {
+    background: rgba(74, 158, 255, 0.1);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>The Model is the Massage &mdash; Image Regeneration v2</h1>
+<p class="subtitle">
+  Side-by-side comparison of original (v1) and improved (v2) Nano Banana generations for 8 problem spreads.<br>
+  Generated 2026-03-04 &bull; Model: gemini-3.1-flash-image-preview (fallback: gemini-2.5-flash-image)
+</p>
+
+<div class="summary-box">
+  <h2>Overview</h2>
+  <div class="summary-grid">
+    <div class="stat">
+      <div class="stat-num">8</div>
+      <div class="stat-label">Spreads Targeted</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">16</div>
+      <div class="stat-label">v2 Images Generated</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">5</div>
+      <div class="stat-label">"Photo of Book" Fixed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">3</div>
+      <div class="stat-label">Concept/Style Fixed</div>
+    </div>
+  </div>
+</div>
+
+<div class="methodology">
+  <h2>Root Cause Analysis &amp; Prompt Strategy</h2>
+  <p><strong>Primary failure mode:</strong> The v1 <code>craft_prompt()</code> function included the phrase <em>"This is for a serious intellectual book in the tradition of McLuhan and Fiore's 'The Medium is the Massage'"</em> &mdash; Nano Banana interpreted "book" literally and rendered output as if photographed from a physical book with page edges, binding shadows, and paper texture.</p>
+  <p><strong>V2 prompt improvements:</strong></p>
+  <ul>
+    <li>Removed ALL book/page/print references from prompts</li>
+    <li>Added explicit anti-book constraints: "NO page edges, NO book binding shadows, NO paper texture"</li>
+    <li>Used natural language creative director style instead of keyword lists (Nano Banana uses Gemini's 32K token encoder, not CLIP's 77-token limit)</li>
+    <li>Used cultural shorthand references (Edward Tufte, Don McCullin, Wolfgang Weingart, Clark Little, Sir John Tenniel) to anchor aesthetic</li>
+    <li>Instructed "Do NOT include any text that could be read as real words" to prevent AI text garbling</li>
+    <li>Simplified complex multi-element compositions with clearer compositional language</li>
+  </ul>
+</div>
+
+<nav class="toc">
+  <strong>Jump to:</strong>
+  <a href="#spread_018">018 Stack Diagram</a>
+  <a href="#spread_022">022 Book vs Chat</a>
+  <a href="#spread_066">066 Copyright Symbol</a>
+  <a href="#spread_074">074 Protest Crowd</a>
+  <a href="#spread_075">075 Tenniel Battle</a>
+  <a href="#spread_080">080 Surfer/Data Wave</a>
+  <a href="#spread_081">081 Numbered Faces</a>
+  <a href="#spread_082">082 Morphing Figures</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════ SPREAD 018 ═══════════════════════════════════════════ -->
+<div class="spread-card" id="spread_018">
+  <div class="spread-header">
+    <span class="spread-id">spread_018</span>
+    <span class="spread-theme">"All models are extensions of some human faculty&mdash;cognitive or perceptual"</span>
+    <span class="badge badge-fixed">Fixed</span>
+  </div>
+  <div class="spread-body">
+    <div class="issue-banner">
+      ISSUE: Original rendered as photograph of a physical book with 3D cartoon blocks, visible page edges, gray background showing book surface
+    </div>
+
+    <div class="spec-box">
+      <h3>Design Specification</h3>
+      <div class="spec-row"><span class="spec-label">Approach:</span><span class="spec-value">graphic_symbol</span></div>
+      <div class="spec-row"><span class="spec-label">Subject:</span><span class="spec-value">Stack diagram: six horizontal strata as architectural section. Earth (darkest) at base, User (lightest) at top. Each labeled. Clean linework, no decoration.</span></div>
+      <div class="spec-row"><span class="spec-label">Mood:</span><span class="spec-value">architectural, precise, diagrammatic</span></div>
+      <div class="spec-row"><span class="spec-label">B&amp;W Treatment:</span><span class="spec-value">Grayscale gradient from dark (Earth) to light (User)</span></div>
+      <div class="spec-row"><span class="spec-label">Scale:</span><span class="spec-value">half_page (3:4 portrait)</span></div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V1 Original (Problem)</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/spread_018_opt_0.jpg" alt="spread_018 v1 opt 0">
+          <div class="image-label v1-label"><span class="version">V1 opt_0</span><span>104.2 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V2 Regenerated</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/v2/spread_018_v2_opt_0.jpg" alt="spread_018 v2 opt 0">
+          <div class="image-label v2-label"><span class="version">V2 opt_0</span><span>42.3 KB</span></div>
+        </div>
+        <div class="image-cell">
+          <img src="images/v2/spread_018_v2_opt_1.jpg" alt="spread_018 v2 opt 1">
+          <div class="image-label v2-label"><span class="version">V2 opt_1</span><span>67.1 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-comparison">
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v1">V1 Original Prompt</div>
+        <div class="prompt-text">Create a black and white photograph/image: Stack diagram: six horizontal strata rendered as an architectural section drawing. Earth (darkest) at base, User (lightest) at top. Each labeled. Clean linework, no decoration.
+
+Mood and atmosphere: architectural, precise, diagrammatic
+
+Black and white treatment: Grayscale gradient from dark (Earth) to light (User)
+
+Composition scale: half_page
+
+Portrait orientation, suitable for one page of a book spread.
+
+Style: editorial, documentary, art photography quality. This is for a serious intellectual book in the tradition of McLuhan and Fiore's 'The Medium is the Massage' (1967).</div>
+      </div>
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v2">V2 Improved Prompt</div>
+        <div class="prompt-text">A minimal, flat architectural section diagram rendered in clean black ink on white. Six horizontal strata stacked vertically like geological layers in a textbook cross-section. From bottom to top, labeled in a clean sans-serif typeface: EARTH, GEOSPHERE, INFRASTRUCTURE, NETWORK, INTERFACE, USER. Each layer is a simple flat rectangle &mdash; the bottom layer is solid black, each successive layer slightly lighter, the top layer is white with a thin black outline. The style is purely diagrammatic: no 3D effects, no shadows, no perspective, no decoration. Think of a clean technical illustration from an Edward Tufte book or a minimal infographic in a scientific journal. The entire image should be flat and edge-to-edge with NO page borders, NO paper texture, and NO book edges visible.</div>
+      </div>
+    </div>
+
+    <div class="assessment">
+      <h3>Quality Assessment</h3>
+      <p><strong>Photo-of-book problem:</strong> Completely eliminated. Both v2 options are flat, edge-to-edge diagrams with no book artifacts.</p>
+      <p><strong>Concept accuracy:</strong> Both correctly render the 6-layer stack with proper labeling and gradient from dark to light.</p>
+      <p><strong>Style match:</strong> opt_1 is closer to the Tufte-like diagrammatic aesthetic specified. Clean flat rectangles, solid gradient fills, no decoration.</p>
+      <p class="recommend">Recommended: V2 opt_1 &mdash; Cleaner, more minimal, better matches the "architectural section" specification.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ SPREAD 022 ═══════════════════════════════════════════ -->
+<div class="spread-card" id="spread_022">
+  <div class="spread-header">
+    <span class="spread-id">spread_022</span>
+    <span class="spread-theme">"The language model"</span>
+    <span class="badge badge-improved">Improved</span>
+  </div>
+  <div class="spread-body">
+    <div class="issue-banner">
+      ISSUE: Original rendered as photo of physical book on wooden table surface, with an iPad showing garbled ChatGPT-like interface text ("frevono:inst stented cinmas"), visible device bezels
+    </div>
+
+    <div class="spec-box">
+      <h3>Design Specification</h3>
+      <div class="spec-row"><span class="spec-label">Approach:</span><span class="spec-value">combination</span></div>
+      <div class="spec-row"><span class="spec-label">Subject:</span><span class="spec-value">Left half: open physical book, pages visible, text readable but not legible. Static, complete, archival. Right half: chat interface (minimally styled, not brand-specific) showing text mid-generation. Cursor blinks. Tokens stream.</span></div>
+      <div class="spec-row"><span class="spec-label">Mood:</span><span class="spec-value">temporal, layered &mdash; two speeds of knowledge on one surface</span></div>
+      <div class="spec-row"><span class="spec-label">B&amp;W Treatment:</span><span class="spec-value">Black and white for the book; chat interface could introduce faintest blue-white glow or remain fully B&amp;W</span></div>
+      <div class="spec-row"><span class="spec-label">Scale:</span><span class="spec-value">half_page (3:4 portrait)</span></div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V1 Original (Problem)</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/spread_022_opt_0.jpg" alt="spread_022 v1 opt 0">
+          <div class="image-label v1-label"><span class="version">V1 opt_0</span><span>228.9 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V2 Regenerated</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/v2/spread_022_v2_opt_0.jpg" alt="spread_022 v2 opt 0">
+          <div class="image-label v2-label"><span class="version">V2 opt_0</span><span>64.8 KB</span></div>
+        </div>
+        <div class="image-cell">
+          <img src="images/v2/spread_022_v2_opt_1.jpg" alt="spread_022 v2 opt 1">
+          <div class="image-label v2-label"><span class="version">V2 opt_1</span><span>120.2 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-comparison">
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v1">V1 Original Prompt</div>
+        <div class="prompt-text">Create a black and white photograph/image: Left half of image: an open physical book, pages visible, text readable but not legible at this scale. Static, complete, archival. Right half: a chat interface (minimally styled, not brand-specific) showing text mid-generation. The cursor blinks. Tokens stream. The text is recognizably prose but incomplete.
+
+Mood and atmosphere: temporal, layered &mdash; two speeds of knowledge on one surface
+
+Black and white treatment: Black and white for the book; the chat interface could introduce the faintest blue-white glow...
+
+Portrait orientation, suitable for one page of a book spread.
+
+Style: editorial, documentary, art photography quality. This is for a serious intellectual book...</div>
+      </div>
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v2">V2 Improved Prompt</div>
+        <div class="prompt-text">A stark black and white diptych composition, split vertically down the center. Left half: an overhead view of an open hardcover book lying flat, its pages spread wide, photographed from directly above against a pure black background. The text on the pages is visible as texture but not readable. Right half: a minimalist dark interface showing lines of text appearing one word at a time, with a blinking cursor at the end. The interface is stripped of all branding &mdash; just light text on a dark field. The contrast is between the static, complete object (the book) and the dynamic, incomplete process (the generation). Shot as a clean flat-lay composition. No table surface visible. No device bezels. No reflections. Pure black background behind both halves. High contrast monochrome. Do NOT include any text that could be read as real words &mdash; all text should be abstract marks suggesting letterforms. The image must fill the entire frame edge to edge with NO page borders and NO paper texture.</div>
+      </div>
+    </div>
+
+    <div class="assessment">
+      <h3>Quality Assessment</h3>
+      <p><strong>Photo-of-book problem:</strong> Substantially improved. opt_1 has a clean diptych with book on black background and abstract interface &mdash; no table surface, no device bezels. opt_0 is darker/more abstract.</p>
+      <p><strong>Text garbling:</strong> opt_1 still shows text on the book pages (inherent to the concept) but the right-side interface uses abstract line marks instead of garbled words. Significant improvement over v1's "frevono:inst stented cinmas".</p>
+      <p><strong>Remaining issue:</strong> The concept inherently requires showing text, making it harder to fully eliminate garbling. opt_1 handles this best with text-as-texture.</p>
+      <p class="recommend">Recommended: V2 opt_1 &mdash; Better diptych composition, cleaner book rendering, abstract interface marks.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ SPREAD 066 ═══════════════════════════════════════════ -->
+<div class="spread-card" id="spread_066">
+  <div class="spread-header">
+    <span class="spread-id">spread_066</span>
+    <span class="spread-theme">"&copy;" &mdash; The death of authorship at scale</span>
+    <span class="badge badge-fixed">Fixed</span>
+  </div>
+  <div class="spread-body">
+    <div class="issue-banner">
+      ISSUE: Original concept was excellent (dissolving copyright symbol with halftone) but rendered as a photograph of a book page &mdash; visible dark binding edge on left, paper texture, shadows
+    </div>
+
+    <div class="spec-box">
+      <h3>Design Specification</h3>
+      <div class="spec-row"><span class="spec-label">Approach:</span><span class="spec-value">graphic_symbol</span></div>
+      <div class="spec-row"><span class="spec-label">Subject:</span><span class="spec-value">The copyright symbol in a state of dissolution &mdash; clean geometry breaking into particles, fragments, static. Recognizable from across the room but reveals decomposition on close inspection.</span></div>
+      <div class="spec-row"><span class="spec-label">Mood:</span><span class="spec-value">entropic, analytical, quietly ominous</span></div>
+      <div class="spec-row"><span class="spec-label">B&amp;W Treatment:</span><span class="spec-value">High contrast at center degrading to noisy halftone at edges &mdash; the symbol losing its resolution</span></div>
+      <div class="spec-row"><span class="spec-label">Scale:</span><span class="spec-value">half_page (3:4 portrait)</span></div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V1 Original (Problem)</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/spread_066_opt_0.jpg" alt="spread_066 v1 opt 0">
+          <div class="image-label v1-label"><span class="version">V1 opt_0</span><span>280.2 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V2 Regenerated</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/v2/spread_066_v2_opt_0.jpg" alt="spread_066 v2 opt 0">
+          <div class="image-label v2-label"><span class="version">V2 opt_0</span><span>168.2 KB</span></div>
+        </div>
+        <div class="image-cell">
+          <img src="images/v2/spread_066_v2_opt_1.jpg" alt="spread_066 v2 opt 1">
+          <div class="image-label v2-label"><span class="version">V2 opt_1</span><span>198.9 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-comparison">
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v1">V1 Original Prompt</div>
+        <div class="prompt-text">Create a black and white photograph/image: The copyright symbol in a state of dissolution &mdash; clean geometry breaking into particles, fragments, static. The symbol should be recognizable from across the room but, on close inspection, reveal its own decomposition.
+
+Mood and atmosphere: entropic, analytical, quietly ominous
+
+Black and white treatment: High contrast at center degrading to noisy halftone at edges &mdash; the symbol losing its resolution
+
+Portrait orientation, suitable for one page of a book spread.
+
+Style: editorial, documentary, art photography quality. This is for a serious intellectual book...</div>
+      </div>
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v2">V2 Improved Prompt</div>
+        <div class="prompt-text">A bold graphic design composition: the copyright symbol (a capital C inside a circle) rendered in solid black, centered on a pure white background. The symbol is large, filling most of the frame. The right side and bottom of the symbol are disintegrating &mdash; breaking apart into angular fragments, pixels, and particles that scatter outward and dissolve into noise. The left side of the symbol remains crisp and geometric. The dissolution should progress from clean to chaotic, left to right, as if the symbol is being eroded by entropy. Rendered in a high-contrast screen-print or risograph aesthetic &mdash; solid blacks, stark whites, visible halftone dots in the transition zones. Think of Wolfgang Weingart's deconstructed typography or April Greiman's digital experiments. The image must be completely flat and fill the entire frame. NO page edges, NO book binding shadows, NO paper texture visible at the borders.</div>
+      </div>
+    </div>
+
+    <div class="assessment">
+      <h3>Quality Assessment</h3>
+      <p><strong>Photo-of-book problem:</strong> Completely eliminated. Both v2 options are flat graphic compositions with no book artifacts whatsoever.</p>
+      <p><strong>Concept accuracy:</strong> Both nail the dissolving copyright symbol with halftone aesthetic. opt_1 has more dramatic dissolution with the Weingart deconstructed typography feel.</p>
+      <p><strong>Style match:</strong> Excellent. The risograph/screen-print aesthetic comes through with visible halftone dots in the transition zones, exactly as specified.</p>
+      <p class="recommend">Recommended: V2 opt_1 &mdash; More dynamic dissolution, better halftone gradient, fills frame more boldly.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ SPREAD 074 ═══════════════════════════════════════════ -->
+<div class="spread-card" id="spread_074">
+  <div class="spread-header">
+    <span class="spread-id">spread_074</span>
+    <span class="spread-theme">"some like it simulated, some like it real"</span>
+    <span class="badge badge-improved">Improved</span>
+  </div>
+  <div class="spread-body">
+    <div class="issue-banner">
+      ISSUE: Original had visible book binding edge on left, garbled text on protest signs ("ROFOU", "VOCa", "POSET"), felt like photo of a book page rather than a raw photograph
+    </div>
+
+    <div class="spec-box">
+      <h3>Design Specification</h3>
+      <div class="spec-row"><span class="spec-label">Approach:</span><span class="spec-value">generated</span></div>
+      <div class="spec-row"><span class="spec-label">Subject:</span><span class="spec-value">Photograph-quality image at boundary of verifiability: politically charged scene (crowd, protest). Must be convincing enough that reader cannot determine provenance. No tells, no glitches.</span></div>
+      <div class="spec-row"><span class="spec-label">Mood:</span><span class="spec-value">vertiginous, politically weighted, documentary in feel</span></div>
+      <div class="spec-row"><span class="spec-label">B&amp;W Treatment:</span><span class="spec-value">High contrast black and white &mdash; matching 1960s press photography tonal range</span></div>
+      <div class="spec-row"><span class="spec-label">Scale:</span><span class="spec-value">full_bleed</span></div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V1 Original (Problem)</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/spread_074_opt_0.jpg" alt="spread_074 v1 opt 0">
+          <div class="image-label v1-label"><span class="version">V1 opt_0</span><span>287.7 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V2 Regenerated</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/v2/spread_074_v2_opt_0.jpg" alt="spread_074 v2 opt 0">
+          <div class="image-label v2-label"><span class="version">V2 opt_0</span><span>370.6 KB</span></div>
+        </div>
+        <div class="image-cell">
+          <img src="images/v2/spread_074_v2_opt_1.jpg" alt="spread_074 v2 opt 1">
+          <div class="image-label v2-label"><span class="version">V2 opt_1</span><span>249.1 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-comparison">
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v1">V1 Original Prompt</div>
+        <div class="prompt-text">Create a black and white photograph/image: A photograph-quality image at the boundary of verifiability: politically or emotionally charged scene (crowd, protest, natural disaster, celebration). Must be convincing enough that the reader genuinely cannot determine provenance. No tells, no glitches, no uncanny valley.
+
+Mood and atmosphere: vertiginous, politically weighted, documentary in feel
+
+Black and white treatment: High contrast black and white &mdash; matching the tonal range of 1960s press photography
+
+Portrait orientation, suitable for one page of a book spread.
+
+Style: editorial, documentary, art photography quality. This is for a serious intellectual book...</div>
+      </div>
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v2">V2 Improved Prompt</div>
+        <div class="prompt-text">A documentary-style black and white photograph of a large crowd gathered in a public square, shot from a slightly elevated vantage point &mdash; perhaps a second-floor window. The crowd is dense, hundreds of people filling the frame. Some hold signs (the signs should have abstract marks suggesting text, NOT readable words). There is a haze of smoke or tear gas drifting across the upper portion of the scene. Wet pavement reflects the crowd. The composition and grain should evoke 1960s press photography &mdash; think Don McCullin or Philip Jones Griffiths. Shot on Kodak Tri-X 400 film, with authentic film grain, deep blacks, and bright highlights in the wet surfaces. Shallow depth of field so the nearest figures are sharp and the far crowd softens into abstraction. The image must fill the entire frame with NO borders, NO page edges, and NO book binding visible.</div>
+      </div>
+    </div>
+
+    <div class="assessment">
+      <h3>Quality Assessment</h3>
+      <p><strong>Photo-of-book problem:</strong> Eliminated. Both v2 options fill the frame completely with no book binding or page edge artifacts.</p>
+      <p><strong>Text garbling:</strong> Significantly improved. Signs now show abstract marks/scrawls rather than garbled English words. opt_0 handles this best.</p>
+      <p><strong>Photographic quality:</strong> Both feel like authentic 1960s press photography. Film grain, wet pavement reflections, and atmospheric haze are all present. opt_1 has an interesting framing through a window which adds compositional depth but introduces a border element.</p>
+      <p><strong>Remaining concern:</strong> opt_1's window frame could be seen as a compositional element (interesting) or an artifact (border-like). opt_0 is the safer choice.</p>
+      <p class="recommend">Recommended: V2 opt_0 &mdash; Pure documentary photograph with no framing device, better fills the full_bleed specification.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ SPREAD 075 ═══════════════════════════════════════════ -->
+<div class="spread-card" id="spread_075">
+  <div class="spread-header">
+    <span class="spread-id">spread_075</span>
+    <span class="spread-theme">Tenniel-style digital battle scene</span>
+    <span class="badge badge-improved">Improved</span>
+  </div>
+  <div class="spread-body">
+    <div class="issue-banner">
+      ISSUE: Original was too cluttered with readable AI-garbled text labels (#TrollArmy, FAKE NEWS!, CANCELLED!, BLOCKED, FLAGGED AS MISLEADING, @USER1:) &mdash; felt like a political poster, not a Victorian engraving
+    </div>
+
+    <div class="spec-box">
+      <h3>Design Specification</h3>
+      <div class="spec-row"><span class="spec-label">Approach:</span><span class="spec-value">generated</span></div>
+      <div class="spec-row"><span class="spec-label">Subject:</span><span class="spec-value">Tenniel-style cross-hatched battle scene rendered in digital elements: avatars, verification badges, text bubbles, bot indicators, flag emojis, tumbling in dense absurd confusion. Victorian illustration vocabulary, contemporary content.</span></div>
+      <div class="spec-row"><span class="spec-label">Mood:</span><span class="spec-value">chaotic, absurd, overwhelming &mdash; but in the register of Victorian illustration rather than digital glitch</span></div>
+      <div class="spec-row"><span class="spec-label">B&amp;W Treatment:</span><span class="spec-value">High-contrast line drawing with cross-hatching, matching original Tenniel aesthetic</span></div>
+      <div class="spec-row"><span class="spec-label">Scale:</span><span class="spec-value">full_bleed</span></div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V1 Original (Problem)</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/spread_075_opt_0.jpg" alt="spread_075 v1 opt 0">
+          <div class="image-label v1-label"><span class="version">V1 opt_0</span><span>627.0 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V2 Regenerated</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/v2/spread_075_v2_opt_0.jpg" alt="spread_075 v2 opt 0">
+          <div class="image-label v2-label"><span class="version">V2 opt_0</span><span>500.0 KB</span></div>
+        </div>
+        <div class="image-cell">
+          <img src="images/v2/spread_075_v2_opt_1.jpg" alt="spread_075 v2 opt 1">
+          <div class="image-label v2-label"><span class="version">V2 opt_1</span><span>460.6 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-comparison">
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v1">V1 Original Prompt</div>
+        <div class="prompt-text">Create a black and white photograph/image: A Tenniel-style cross-hatched battle scene rendered in digital elements: avatars, verification badges, text bubbles, bot indicators, flag emojis, all tumbling over each other in dense, absurd confusion. The style should deliberately echo the 19th-century illustration vocabulary while the content is entirely contemporary.
+
+Mood and atmosphere: chaotic, absurd, overwhelming &mdash; but in the register of Victorian illustration rather than digital glitch
+
+Black and white treatment: High-contrast line drawing with cross-hatching, matching the original Tenniel aesthetic
+
+Portrait orientation, suitable for one page of a book spread.
+
+Style: editorial, documentary, art photography quality. This is for a serious intellectual book...</div>
+      </div>
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v2">V2 Improved Prompt</div>
+        <div class="prompt-text">A detailed pen-and-ink illustration in the style of Sir John Tenniel's engravings for Alice in Wonderland. The scene depicts a chaotic battle: dozens of small figures tumble over each other in a dense melee. Instead of soldiers, the combatants are anonymous figures &mdash; some wearing suits, some in hoodies &mdash; wielding shields shaped like verification checkmarks, throwing speech bubbles as projectiles, and charging behind banner-like flags. A few robot-like figures (simple, geometric, not detailed) are mixed into the crowd. The overall composition should be a single dense, swirling mass of conflict rendered entirely in fine cross-hatching and parallel line shading, exactly like a Victorian woodcut engraving. Pure black ink on white paper. No digital effects. No actual readable text on any element &mdash; all labels and signs should be abstract squiggles suggesting text. The image fills the entire frame. No borders. No page edges.</div>
+      </div>
+    </div>
+
+    <div class="assessment">
+      <h3>Quality Assessment</h3>
+      <p><strong>Text garbling:</strong> Major improvement. V1 had dozens of readable garbled labels (#TrollArmy, FAKE NEWS, etc.). V2 opts have no readable text &mdash; the checkmark shields are visual symbols rather than text labels.</p>
+      <p><strong>Style accuracy:</strong> Improved but not fully Tenniel. Both v2 opts use pen-and-ink with more line detail than v1, but the style is still more modern editorial illustration than true Victorian woodcut engraving. The cross-hatching is finer and more consistent than v1.</p>
+      <p><strong>Composition:</strong> opt_1 is denser and more pyramidal (closer to Tenniel's mass compositions), while opt_0 is more spread out. Both avoid v1's poster-like text overlay problem.</p>
+      <p><strong>Remaining concern:</strong> Neither fully achieves the Tenniel aesthetic (parallel line shading is still closer to modern illustration). May benefit from a third-pass prompt iteration.</p>
+      <p class="recommend">Recommended: V2 opt_1 &mdash; Denser composition, closer to Tenniel's mass pile-up style, no readable text.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ SPREAD 080 ═══════════════════════════════════════════ -->
+<div class="spread-card" id="spread_080">
+  <div class="spread-header">
+    <span class="spread-id">spread_080</span>
+    <span class="spread-theme">"You cannot predict the wave. You can only ride it"</span>
+    <span class="badge badge-fixed">Fixed</span>
+  </div>
+  <div class="spread-body">
+    <div class="issue-banner">
+      ISSUE: Original had data overlay too obvious/pasted-on (glowing node-and-edge network blatantly composited over the wave), portrait orientation when spec calls for full_bleed landscape
+    </div>
+
+    <div class="spec-box">
+      <h3>Design Specification</h3>
+      <div class="spec-row"><span class="spec-label">Approach:</span><span class="spec-value">generated</span></div>
+      <div class="spec-row"><span class="spec-label">Subject:</span><span class="spec-value">Figure surfing enormous wave that is visually ambiguous: water becoming neural network becoming data streams becoming water. Figure balanced, attentive, focused &mdash; the body language of pattern-recognition.</span></div>
+      <div class="spec-row"><span class="spec-label">Mood:</span><span class="spec-value">dynamic, joyful, resolute &mdash; the specific joy of attending to structure within chaos</span></div>
+      <div class="spec-row"><span class="spec-label">B&amp;W Treatment:</span><span class="spec-value">High contrast, dramatic &mdash; wave massive, figure small but composed. Deep blacks in water/data, bright whites in spray/signal.</span></div>
+      <div class="spec-row"><span class="spec-label">Scale:</span><span class="spec-value">full_bleed (16:9 landscape)</span></div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V1 Original (Problem)</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/spread_080_opt_0.jpg" alt="spread_080 v1 opt 0">
+          <div class="image-label v1-label"><span class="version">V1 opt_0</span><span>405.6 KB &bull; PORTRAIT (wrong)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V2 Regenerated</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/v2/spread_080_v2_opt_0.jpg" alt="spread_080 v2 opt 0">
+          <div class="image-label v2-label"><span class="version">V2 opt_0</span><span>226.7 KB &bull; LANDSCAPE</span></div>
+        </div>
+        <div class="image-cell">
+          <img src="images/v2/spread_080_v2_opt_1.jpg" alt="spread_080 v2 opt 1">
+          <div class="image-label v2-label"><span class="version">V2 opt_1</span><span>373.8 KB &bull; LANDSCAPE</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-comparison">
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v1">V1 Original Prompt</div>
+        <div class="prompt-text">Create a black and white photograph/image: A figure surfing or navigating an enormous wave that is visually ambiguous: water becoming neural network visualization becoming data streams becoming water. The figure is balanced, attentive, focused. Not a heroic pose but a skillful one &mdash; the body language of pattern-recognition.
+
+Mood and atmosphere: dynamic, joyful, resolute &mdash; the specific joy of attending to structure within chaos
+
+Black and white treatment: High contrast, dramatic &mdash; the wave should feel massive, the figure small but composed...
+
+Portrait orientation, suitable for one page of a book spread.
+
+Style: editorial, documentary, art photography quality. This is for a serious intellectual book...</div>
+      </div>
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v2">V2 Improved Prompt</div>
+        <div class="prompt-text">A dramatic black and white photograph of a lone surfer riding inside the barrel of an enormous wave. The wave is captured at the moment of maximum curl, with the surfer crouched low and focused. Within the texture of the water &mdash; in the foam, the spray, the glass-smooth face of the wave &mdash; there are subtle visual echoes of data patterns: faint grid lines in the water's surface, node-and-edge patterns in the foam, flowing curves that suggest both hydrodynamics and neural network diagrams. These data elements should be VERY subtle &mdash; visible only on close inspection, integrated into the water's natural texture, not overlaid as a separate graphic layer. The primary read should be: powerful surf photograph. The secondary read, on closer look: the water is also information. Shot in the style of Clark Little or Aaron Chang &mdash; crisp, high-contrast, with deep blacks in the barrel and brilliant whites in the spray. The surfer should be small relative to the wave, emphasizing the scale. Landscape orientation, filling the entire frame edge to edge. No borders.</div>
+      </div>
+    </div>
+
+    <div class="assessment">
+      <h3>Quality Assessment</h3>
+      <p><strong>Orientation:</strong> Fixed. Both v2 options are correctly landscape (16:9) as specified for full_bleed. V1 was portrait.</p>
+      <p><strong>Data overlay:</strong> Dramatically improved. V1 had blatant glowing node-and-edge networks composited over the wave face. V2 opts show a powerful, authentic-feeling surf photograph where data patterns are barely perceptible &mdash; integrated into the water texture rather than overlaid.</p>
+      <p><strong>Photographic quality:</strong> Excellent. Both feel like real Clark Little / Aaron Chang barrel shots. High contrast, dramatic spray, surfer small relative to wave.</p>
+      <p><strong>Concept execution:</strong> The "primary read = surf photo, secondary read = information" dual reading works much better in v2. The subtlety is key.</p>
+      <p class="recommend">Recommended: V2 opt_1 &mdash; More dramatic scale (surfer smaller), more cinematic barrel, better composition.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ SPREAD 081 ═══════════════════════════════════════════ -->
+<div class="spread-card" id="spread_081">
+  <div class="spread-header">
+    <span class="spread-id">spread_081</span>
+    <span class="spread-theme">"...and who are you?"</span>
+    <span class="badge badge-fixed">Fixed</span>
+  </div>
+  <div class="spread-body">
+    <div class="issue-banner">
+      ISSUE: Original clearly rendered as photograph of an open book &mdash; visible center binding, gray table surface around edges, faces too varied (some with glasses, different genders), numbers garbled
+    </div>
+
+    <div class="spec-box">
+      <h3>Design Specification</h3>
+      <div class="spec-row"><span class="spec-label">Approach:</span><span class="spec-value">generated</span></div>
+      <div class="spec-row"><span class="spec-label">Subject:</span><span class="spec-value">Left: numbered human figures in line-illustration style. Faces subtly different as if generated from same model with different seeds &mdash; not identical, not unique, but variations. Right: circular-framed computational presence &mdash; abstract pattern of nodes and connections.</span></div>
+      <div class="spec-row"><span class="spec-label">Mood:</span><span class="spec-value">uncanny, intimate, accusatory &mdash; the reader should feel personally addressed by a system that addresses everyone identically</span></div>
+      <div class="spec-row"><span class="spec-label">B&amp;W Treatment:</span><span class="spec-value">Clean line drawing, high contrast, minimal &mdash; diagrammatic rather than expressive</span></div>
+      <div class="spec-row"><span class="spec-label">Scale:</span><span class="spec-value">full_bleed (16:9 landscape)</span></div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V1 Original (Problem)</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/spread_081_opt_0.jpg" alt="spread_081 v1 opt 0">
+          <div class="image-label v1-label"><span class="version">V1 opt_0</span><span>148.0 KB &bull; Photo of book!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V2 Regenerated</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/v2/spread_081_v2_opt_0.jpg" alt="spread_081 v2 opt 0">
+          <div class="image-label v2-label"><span class="version">V2 opt_0</span><span>150.2 KB</span></div>
+        </div>
+        <div class="image-cell">
+          <img src="images/v2/spread_081_v2_opt_1.jpg" alt="spread_081 v2 opt 1">
+          <div class="image-label v2-label"><span class="version">V2 opt_1</span><span>141.8 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-comparison">
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v1">V1 Original Prompt</div>
+        <div class="prompt-text">Create a black and white photograph/image: Left page: numbered human figures in line-illustration style, echoing the original. Each face is subtly different, as if generated from the same model with different seeds &mdash; not identical, not unique, but variations. Right page: circular-framed illustration replacing the Caterpillar with a computational presence &mdash; a terminal, a server rack, an abstract pattern of nodes and connections.
+
+Mood and atmosphere: uncanny, intimate, accusatory &mdash; the reader should feel personally addressed...
+
+Portrait orientation, suitable for one page of a book spread.
+
+Style: editorial, documentary, art photography quality. This is for a serious intellectual book...</div>
+      </div>
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v2">V2 Improved Prompt</div>
+        <div class="prompt-text">A clean, flat, black and white illustration divided into two halves. Left half: a grid of 12 human head-and-shoulders portraits arranged in 4 rows of 3, each drawn in simple line art with minimal detail. Each figure has a small number above their head (1 through 12). The figures are nearly identical but with tiny variations &mdash; slightly different hairlines, jaw shapes, or ear positions &mdash; like outputs from a generative model with slightly different random seeds. The style is clinical and diagrammatic, like figures in a psychology textbook. Right half: a large circle containing an abstract network visualization &mdash; glowing nodes connected by thin lines against a solid black background, suggesting a computational system. Below the circle, in clean sans-serif type: a single short question. The entire image is flat digital illustration. NO perspective, NO paper texture, NO page edges, NO book binding shadows. Do not render this as if it is photographed from a physical book.</div>
+      </div>
+    </div>
+
+    <div class="assessment">
+      <h3>Quality Assessment</h3>
+      <p><strong>Photo-of-book problem:</strong> Completely eliminated. Both v2 options are flat digital illustrations with no book binding, no table surface, no perspective artifacts.</p>
+      <p><strong>Face grid:</strong> Much improved. V1 had too-varied faces (glasses, different genders). V2 opts show nearly identical faces with subtle seed-like variations &mdash; exactly the "same model, different seeds" concept.</p>
+      <p><strong>Network circle:</strong> Clean and clear in both v2 opts. V1's network circle was cluttered with garbled labels. V2 shows clean abstract nodes and edges.</p>
+      <p><strong>Numbers:</strong> Correctly rendered 1-12 in both v2 opts (v1 had garbled numbers like "S", "3", "1", "10", "13", "19").</p>
+      <p><strong>Text:</strong> opt_1 adds "CAN WE IDENTIFY THE SEED?" below the circle &mdash; a generated question that's thematically relevant and well-rendered.</p>
+      <p class="recommend">Recommended: V2 opt_1 &mdash; Cleaner faces, correct numbering, strong generated question text, perfect flat composition.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ SPREAD 082 ═══════════════════════════════════════════ -->
+<div class="spread-card" id="spread_082">
+  <div class="spread-header">
+    <span class="spread-id">spread_082</span>
+    <span class="spread-theme">"I hardly know, sir, just at present&mdash;at least I know who I was when I got up this morning, but I think I must have been changed several times since then"</span>
+    <span class="badge badge-fixed">Fixed</span>
+  </div>
+  <div class="spread-body">
+    <div class="issue-banner">
+      ISSUE: Original completely misinterpreted the concept &mdash; rendered as human-to-ANIMAL transformation (foxes, wolves, kangaroos) instead of human-to-abstract morphological gradient. Also cluttered with garbled number labels.
+    </div>
+
+    <div class="spec-box">
+      <h3>Design Specification</h3>
+      <div class="spec-row"><span class="spec-label">Approach:</span><span class="spec-value">generated</span></div>
+      <div class="spec-row"><span class="spec-label">Subject:</span><span class="spec-value">Numbered crowd figures from 081, now morphing: each figure subtly different from neighbor, series becoming a gradient. Some figures mid-transformation &mdash; suit dissolving into different posture, number blurring. Effect should feel generative, not degenerative &mdash; metamorphosis, not decay.</span></div>
+      <div class="spec-row"><span class="spec-label">Mood:</span><span class="spec-value">tender, transformative, uncanny but not threatening</span></div>
+      <div class="spec-row"><span class="spec-label">B&amp;W Treatment:</span><span class="spec-value">High contrast line drawing matching 081's style but with deliberate blurring at boundaries &mdash; line work itself becoming a gradient</span></div>
+      <div class="spec-row"><span class="spec-label">Scale:</span><span class="spec-value">full_bleed (16:9 landscape)</span></div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V1 Original (Problem)</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/spread_082_opt_0.jpg" alt="spread_082 v1 opt 0">
+          <div class="image-label v1-label"><span class="version">V1 opt_0</span><span>446.3 KB &bull; WRONG CONCEPT (human&rarr;animal)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison-section">
+      <h3>V2 Regenerated</h3>
+      <div class="image-row">
+        <div class="image-cell">
+          <img src="images/v2/spread_082_v2_opt_0.jpg" alt="spread_082 v2 opt 0">
+          <div class="image-label v2-label"><span class="version">V2 opt_0</span><span>160.9 KB</span></div>
+        </div>
+        <div class="image-cell">
+          <img src="images/v2/spread_082_v2_opt_1.jpg" alt="spread_082 v2 opt 1">
+          <div class="image-label v2-label"><span class="version">V2 opt_1</span><span>165.6 KB</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-comparison">
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v1">V1 Original Prompt</div>
+        <div class="prompt-text">Create a black and white photograph/image: The numbered crowd figures from 081, but now morphing: each figure subtly different from its neighbor, the series becoming a gradient. Some figures are mid-transformation&mdash;a suit dissolving into a different posture, a number blurring between two values. The effect should feel generative, not degenerative&mdash;metamorphosis, not decay.
+
+Mood and atmosphere: tender, transformative, uncanny but not threatening
+
+Black and white treatment: High contrast line drawing matching 081's style but with deliberate blurring at the boundaries...
+
+Landscape orientation, suitable for a book spread.
+
+Style: editorial, documentary, art photography quality. This is for a serious intellectual book...</div>
+      </div>
+      <div class="prompt-box">
+        <div class="prompt-header prompt-header-v2">V2 Improved Prompt</div>
+        <div class="prompt-text">A panoramic black and white line drawing showing a sequence of human figures standing in a row, like a police lineup or a series of paper dolls. There are approximately 20 figures total, stretching from left to right across the full width. On the far left, the figures are clearly human &mdash; standing straight, wearing suits, each with a number tag. Moving rightward, each successive figure is subtly different from its neighbor: posture shifts slightly, clothing details blur, proportions stretch or compress. By the center, the figures are in mid-transformation &mdash; outlines becoming fluid, a sleeve dissolving into abstract marks, a face losing definition. On the far right, the figures have become abstract shapes that merely suggest human form &mdash; like a morphological gradient from representation to abstraction. The drawing style is clean pen-and-ink throughout, with the line work itself becoming progressively looser and more gestural from left to right. Think of a scientific morphological series. The tone should feel generative and transformative &mdash; metamorphosis, not horror. Flat composition on white background. No page edges. No book elements.</div>
+      </div>
+    </div>
+
+    <div class="assessment">
+      <h3>Quality Assessment</h3>
+      <p><strong>Concept accuracy:</strong> Completely fixed. V1 interpreted "morphing" as human-to-animal transformation (foxes, wolves, kangaroos in suits). V2 correctly renders a morphological gradient from clear human figures to abstracted line forms. The concept is now: representation &rarr; abstraction, not human &rarr; animal.</p>
+      <p><strong>Gradient quality:</strong> Both v2 opts show the progressive loosening of line work from left to right. opt_1 executes this more cleanly &mdash; the leftmost figures are crisp and suited, the rightmost are gestural marks.</p>
+      <p><strong>Style match:</strong> The "scientific morphological series" framing worked perfectly. Both opts look like they could appear in a biology textbook or a taxonomy illustration.</p>
+      <p><strong>Tone:</strong> Both correctly feel "generative and transformative" rather than horror or decay. The mood is contemplative, exactly matching the "tender, transformative" specification.</p>
+      <p class="recommend">Recommended: V2 opt_1 &mdash; Cleaner gradient, better execution of the representation-to-abstraction arc, more figures visible.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ FINAL SUMMARY ═══════════════════════════════════════════ -->
+<div class="summary-box" style="margin-top: 3rem;">
+  <h2>Final Recommendations Summary</h2>
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.8rem;">
+    <thead>
+      <tr style="border-bottom: 1px solid var(--border);">
+        <th style="text-align: left; padding: 0.5rem;">Spread</th>
+        <th style="text-align: left; padding: 0.5rem;">Issue</th>
+        <th style="text-align: center; padding: 0.5rem;">Status</th>
+        <th style="text-align: center; padding: 0.5rem;">Pick</th>
+        <th style="text-align: left; padding: 0.5rem;">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid rgba(51,51,51,0.5);">
+        <td style="padding: 0.5rem; font-weight: 600;">018</td>
+        <td style="padding: 0.5rem;">Photo of book + 3D blocks</td>
+        <td style="padding: 0.5rem; text-align: center;"><span class="badge badge-fixed">Fixed</span></td>
+        <td style="padding: 0.5rem; text-align: center; font-weight: 600; color: var(--green);">opt_1</td>
+        <td style="padding: 0.5rem; color: var(--dim);">Flat Tufte-like diagram, exactly as specified</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(51,51,51,0.5);">
+        <td style="padding: 0.5rem; font-weight: 600;">022</td>
+        <td style="padding: 0.5rem;">Photo of book + garbled chat text</td>
+        <td style="padding: 0.5rem; text-align: center;"><span class="badge badge-improved">Improved</span></td>
+        <td style="padding: 0.5rem; text-align: center; font-weight: 600; color: var(--green);">opt_1</td>
+        <td style="padding: 0.5rem; color: var(--dim);">Clean diptych. Text inherent to concept &mdash; handled as abstract marks</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(51,51,51,0.5);">
+        <td style="padding: 0.5rem; font-weight: 600;">066</td>
+        <td style="padding: 0.5rem;">Photo of book page</td>
+        <td style="padding: 0.5rem; text-align: center;"><span class="badge badge-fixed">Fixed</span></td>
+        <td style="padding: 0.5rem; text-align: center; font-weight: 600; color: var(--green);">opt_1</td>
+        <td style="padding: 0.5rem; color: var(--dim);">Dramatic dissolution, Weingart halftone aesthetic achieved</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(51,51,51,0.5);">
+        <td style="padding: 0.5rem; font-weight: 600;">074</td>
+        <td style="padding: 0.5rem;">Photo of book + garbled signs</td>
+        <td style="padding: 0.5rem; text-align: center;"><span class="badge badge-improved">Improved</span></td>
+        <td style="padding: 0.5rem; text-align: center; font-weight: 600; color: var(--green);">opt_0</td>
+        <td style="padding: 0.5rem; color: var(--dim);">Authentic press photo. Signs show abstract marks not garbled words</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(51,51,51,0.5);">
+        <td style="padding: 0.5rem; font-weight: 600;">075</td>
+        <td style="padding: 0.5rem;">AI slop &mdash; garbled text labels</td>
+        <td style="padding: 0.5rem; text-align: center;"><span class="badge badge-improved">Improved</span></td>
+        <td style="padding: 0.5rem; text-align: center; font-weight: 600; color: var(--green);">opt_1</td>
+        <td style="padding: 0.5rem; color: var(--dim);">Text eliminated. Still more modern than true Tenniel. May need v3.</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(51,51,51,0.5);">
+        <td style="padding: 0.5rem; font-weight: 600;">080</td>
+        <td style="padding: 0.5rem;">Obvious data overlay + wrong orientation</td>
+        <td style="padding: 0.5rem; text-align: center;"><span class="badge badge-fixed">Fixed</span></td>
+        <td style="padding: 0.5rem; text-align: center; font-weight: 600; color: var(--green);">opt_1</td>
+        <td style="padding: 0.5rem; color: var(--dim);">Landscape, dramatic barrel, subtle data-in-water texture</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(51,51,51,0.5);">
+        <td style="padding: 0.5rem; font-weight: 600;">081</td>
+        <td style="padding: 0.5rem;">Photo of open book with binding</td>
+        <td style="padding: 0.5rem; text-align: center;"><span class="badge badge-fixed">Fixed</span></td>
+        <td style="padding: 0.5rem; text-align: center; font-weight: 600; color: var(--green);">opt_1</td>
+        <td style="padding: 0.5rem; color: var(--dim);">Flat illustration, correct numbers, strong generated question</td>
+      </tr>
+      <tr>
+        <td style="padding: 0.5rem; font-weight: 600;">082</td>
+        <td style="padding: 0.5rem;">Wrong concept (human&rarr;animal)</td>
+        <td style="padding: 0.5rem; text-align: center;"><span class="badge badge-fixed">Fixed</span></td>
+        <td style="padding: 0.5rem; text-align: center; font-weight: 600; color: var(--green);">opt_1</td>
+        <td style="padding: 0.5rem; color: var(--dim);">Correct morphological gradient: representation &rarr; abstraction</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem;">
+    <p style="margin-bottom: 0.5rem;"><strong style="color: var(--green);">5 of 8 fully fixed</strong> &mdash; photo-of-book artifact eliminated, concept accurately rendered</p>
+    <p style="margin-bottom: 0.5rem;"><strong style="color: var(--yellow);">3 of 8 significantly improved</strong> &mdash; major quality gains but some residual issues (text inherent to concept, style not fully Tenniel)</p>
+    <p><strong>Key takeaway:</strong> The single most impactful change was removing the "for a serious intellectual book" phrasing and adding explicit anti-book constraints. Cultural reference anchoring (naming specific photographers, designers, artists) was the second most effective technique.</p>
+  </div>
+</div>
+
+<div style="text-align: center; padding: 2rem; color: var(--dim); font-size: 0.7rem;">
+  Generated by regenerate_images_v2.py &bull; Model: gemini-3.1-flash-image-preview &bull; 2026-03-04
+</div>
+
+</body>
+</html>
