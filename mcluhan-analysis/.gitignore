@@ -20,3 +20,6 @@ source/*.pdf
 
 # Rendered pages (large PNGs, not needed with docs/images/)
 rendered/
+
+# Spread export screenshots (regenerable via source/export_spreads.py)
+output/spread_exports/*.png

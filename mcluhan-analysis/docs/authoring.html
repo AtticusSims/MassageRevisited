@@ -369,6 +369,7 @@
       font-size: 14px;
       line-height: 1.65;
       letter-spacing: 0.01em;
+      overflow: hidden;
     }
 
     .spread-caption-text {
@@ -1227,16 +1228,17 @@ function renderSpreadLayout(spread, optionId) {
   const imageApproach = spec?.image_direction?.approach || 'none';
 
   const frame = document.getElementById('spreadFrame');
+
+  // Reset — rebuild inner structure if destroyed by full_bleed_image / text_over_image
+  frame.className = 'spread-frame';
+  frame.innerHTML = `
+    <div class="gutter-line" id="gutterLine"></div>
+    <div class="spread-page left" id="pageLeft"></div>
+    <div class="spread-page right" id="pageRight"></div>
+  `;
   const left = document.getElementById('pageLeft');
   const right = document.getElementById('pageRight');
   const gutter = document.getElementById('gutterLine');
-
-  // Reset
-  frame.className = 'spread-frame';
-  left.className = 'spread-page left';
-  right.className = 'spread-page right';
-  left.innerHTML = '';
-  right.innerHTML = '';
 
   // Tone
   if (tone === 'dark') frame.classList.add('tone-dark');
@@ -1277,25 +1279,34 @@ function renderSpreadLayout(spread, optionId) {
   // Layout-specific rendering
   switch (layoutType) {
     case 'full_bleed_typography':
-      left.innerHTML = `<div class="display-zone">${displayEl}</div>`;
-      right.innerHTML = `
-        <div class="display-zone">${''}</div>
-        ${bodyEl ? `<div class="body-zone">${bodyEl}</div>` : ''}
-        ${captionEl ? `<div class="caption-zone">${captionEl}</div>` : ''}
-      `;
-      // For full bleed typography, the display text should span both pages
-      // We split it roughly
       if (opt.display_text) {
         const words = opt.display_text.split(/\s+/);
-        const mid = Math.ceil(words.length / 2);
-        const leftWords = words.slice(0, mid).join(' ');
-        const rightWords = words.slice(mid).join(' ');
-        left.innerHTML = `<div class="display-zone">${buildDisplayText(leftWords, displayScale, colorTreatment, tone)}</div>`;
-        right.innerHTML = `
-          <div class="display-zone">${buildDisplayText(rightWords, displayScale, colorTreatment, tone)}</div>
-          ${bodyEl ? `<div class="body-zone">${bodyEl}</div>` : ''}
-          ${captionEl ? `<div class="caption-zone">${captionEl}</div>` : ''}
-        `;
+        if (words.length <= 2) {
+          // Short text (1-2 words): center across entire spread, don't split
+          frame.innerHTML = `
+            <div class="gutter-line ${gutterTreatment}" id="gutterLine"></div>
+            <div style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;padding:40px;">
+              ${buildDisplayText(opt.display_text, displayScale, colorTreatment, tone)}
+            </div>
+            ${bodyEl ? `<div style="position:absolute;bottom:60px;right:60px;max-width:40%;text-align:right">${bodyEl}</div>` : ''}
+            ${captionEl ? `<div style="position:absolute;bottom:30px;right:60px;max-width:38%;text-align:right">${captionEl}</div>` : ''}
+          `;
+        } else {
+          // Multi-word: split across pages
+          const mid = Math.ceil(words.length / 2);
+          const leftWords = words.slice(0, mid).join(' ');
+          const rightWords = words.slice(mid).join(' ');
+          left.innerHTML = `<div class="display-zone">${buildDisplayText(leftWords, displayScale, colorTreatment, tone)}</div>`;
+          right.innerHTML = `
+            <div class="display-zone">${buildDisplayText(rightWords, displayScale, colorTreatment, tone)}</div>
+            ${bodyEl ? `<div class="body-zone">${bodyEl}</div>` : ''}
+            ${captionEl ? `<div class="caption-zone">${captionEl}</div>` : ''}
+          `;
+        }
+      } else {
+        // No display text — show body/caption centered
+        left.innerHTML = bodyEl ? `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:60px">${bodyEl}</div>` : '';
+        right.innerHTML = captionEl ? `<div style="display:flex;align-items:flex-end;justify-content:flex-end;height:100%;padding:60px">${captionEl}</div>` : '';
       }
       break;
 
@@ -1319,7 +1330,7 @@ function renderSpreadLayout(spread, optionId) {
       break;
 
     case 'split_asymmetric':
-      left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;';
+      left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;overflow:hidden;';
       left.innerHTML = `
         ${displayEl}
         ${bodyEl ? `<div style="margin-top:24px">${bodyEl}</div>` : ''}
@@ -1357,7 +1368,7 @@ function renderSpreadLayout(spread, optionId) {
 
     case 'image_dominant':
       left.innerHTML = imgEl || buildImageElement(sid, 'image', 'height:100%');
-      right.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;';
+      right.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;overflow:hidden;';
       right.innerHTML = `
         ${displayEl}
         ${bodyEl ? `<div style="margin-top:20px">${bodyEl}</div>` : ''}
@@ -1410,20 +1421,26 @@ function renderSpreadLayout(spread, optionId) {
       `;
       break;
 
-    case 'diagram_with_text':
-      left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:40px;';
+    case 'diagram_with_text': {
+      // Determine what text goes on the left page
+      const leftHasCaption = (!displayEl && !bodyEl && captionEl);
+      left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:40px;overflow:hidden;';
       left.innerHTML = `
-        ${displayEl}
-        ${bodyEl ? `<div style="margin-top:20px">${bodyEl}</div>` : ''}
+        ${displayEl || ''}
+        ${bodyEl ? `<div style="margin-top:${displayEl ? '20px' : '0'}">${bodyEl}</div>` : ''}
+        ${leftHasCaption ? captionEl : ''}
+        ${captionEl && !leftHasCaption ? `<div style="margin-top:16px">${captionEl}</div>` : ''}
+        ${quoteEl ? `<div style="margin-top:20px">${quoteEl}</div>` : ''}
       `;
+      // Right page: image/diagram, or placeholder — never duplicate text already on left
       right.style.cssText = 'display:flex;align-items:center;justify-content:center;padding:40px;';
-      right.innerHTML = `
-        ${needsImage
-          ? `<div style="width:100%;height:80%;">${buildImageElement(sid, imageSubject, 'height:100%')}</div>`
-          : `<div style="text-align:center">${quoteEl || captionEl || ''}</div>`
-        }
-      `;
+      if (needsImage) {
+        right.innerHTML = `<div style="width:100%;height:80%;">${buildImageElement(sid, imageSubject, 'height:100%')}</div>`;
+      } else {
+        right.innerHTML = `<div class="image-placeholder" style="width:80%;height:60%;display:flex;align-items:center;justify-content:center;font-size:13px;opacity:0.4;">diagram / data visualization</div>`;
+      }
       break;
+    }
 
     case 'text_with_specific_image':
       // Text on left, specific referenced image on right
@@ -1540,17 +1557,29 @@ function buildQuotationText(text, attr, source, color, tone) {
 }
 
 function getTextColor(colorTreatment, tone, role) {
-  if (colorTreatment === 'white_on_black' || tone === 'dark') {
+  // Determine if background is dark or light based on BOTH tone and color treatment.
+  // Priority: tone overrides color_treatment for bg darkness; color_treatment is a styling hint.
+  // Dark backgrounds: dark, high_contrast
+  // Light backgrounds: light, balanced
+  // Mixed/reversed: use color_treatment as primary signal
+  const darkBg = (tone === 'dark' || tone === 'high_contrast');
+  const lightBg = (tone === 'light' || tone === 'balanced');
+
+  // Explicit color treatment takes precedence for mixed/reversed
+  if (colorTreatment === 'white_on_black' || colorTreatment === 'reversed' || darkBg) {
     if (role === 'display') return 'color:#fff';
     if (role === 'body') return 'color:rgba(255,255,255,0.88)';
     return 'color:rgba(255,255,255,0.65)';
   }
-  if (colorTreatment === 'black_on_white' || tone === 'light') {
+  if (colorTreatment === 'black_on_white' || lightBg) {
     if (role === 'display') return 'color:#000';
     if (role === 'body') return 'color:rgba(0,0,0,0.78)';
     return 'color:rgba(0,0,0,0.55)';
   }
-  return '';
+  // mixed color treatment on unknown tone — default dark text
+  if (role === 'display') return 'color:#111';
+  if (role === 'body') return 'color:rgba(0,0,0,0.75)';
+  return 'color:rgba(0,0,0,0.5)';
 }
 
 // ===== Scale spread to fit viewport =====
