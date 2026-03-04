@@ -6,7 +6,7 @@
   <title>The Model is the Massage — Authoring Review</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
     /* ===== Reset & Variables ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -28,10 +28,10 @@
       --selected: rgba(232, 168, 56, 0.15);
       --selected-border: #e8a838;
       /* Book fonts */
-      --font-display: 'Urbanist', sans-serif;
-      --font-body: 'Urbanist', sans-serif;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-body: 'Inter', sans-serif;
       --font-caption: 'Cormorant Garamond', serif;
-      --font-graphic: 'Bebas Neue', 'Urbanist', sans-serif;
+      --font-graphic: 'Bebas Neue', 'Space Grotesk', sans-serif;
     }
     html, body {
       height: 100%; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -104,28 +104,40 @@
     .render-tab:hover { background: var(--bg-hover); }
     .render-tab.active { background: var(--bg-card); color: var(--accent); border-color: var(--border); }
 
-    /* Top pane: rendered spread */
+    /* Top pane: rendered spread — takes most of the vertical space */
     .render-top-pane {
-      flex: 1; display: flex; flex-direction: column; min-height: 0;
+      flex: 3; display: flex; flex-direction: column; min-height: 0;
     }
     .render-viewport {
       flex: 1; display: flex; align-items: center; justify-content: center;
       padding: 12px; overflow: auto;
     }
 
-    /* Bottom pane: original / wireframe */
+    /* Bottom pane: original / wireframe — collapsible reference */
     .render-bottom-pane {
-      flex: 1; display: flex; flex-direction: column; min-height: 0;
+      flex: 2; display: flex; flex-direction: column; min-height: 0;
       border-top: 2px solid var(--border);
+      transition: flex 0.2s ease;
+    }
+    .render-bottom-pane.collapsed {
+      flex: 0 0 32px;
+    }
+    .render-bottom-pane.collapsed .render-bottom-viewport {
+      display: none;
     }
     .render-bottom-viewport {
       flex: 1; display: flex; align-items: center; justify-content: center;
       padding: 8px; overflow: auto; position: relative;
     }
+    .collapse-btn {
+      background: none; border: none; color: var(--text-muted); cursor: pointer;
+      font-size: 10px; padding: 2px 6px; border-radius: 3px;
+    }
+    .collapse-btn:hover { background: var(--bg-hover); color: var(--accent); }
 
     /* ===== The Book Spread ===== */
     .spread-frame {
-      width: 1120px; height: 700px;
+      width: 1060px; height: 936px;
       background: #fff; color: #000;
       position: relative; overflow: hidden;
       box-shadow: 0 8px 40px rgba(0,0,0,0.5);
@@ -137,6 +149,12 @@
     }
     .spread-frame.tone-mixed {
       background: #f5f5f0; color: #1a1a1a;
+    }
+    .spread-frame.tone-high_contrast {
+      background: #000; color: #fff;
+    }
+    .spread-frame.tone-balanced {
+      background: #f0f0f0; color: #111;
     }
     .spread-page {
       width: 50%; height: 100%; position: relative; overflow: hidden;
@@ -300,16 +318,19 @@
     /* ===== Typography in Spread ===== */
     .spread-display-text {
       font-family: var(--font-display);
-      font-weight: 900;
+      font-weight: 700;
       line-height: 0.95;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.03em;
     }
     .spread-display-text.scale-architectural { font-size: 72px; }
     .spread-display-text.scale-monumental { font-size: 60px; }
+    .spread-display-text.scale-headline { font-size: 52px; }
     .spread-display-text.scale-large { font-size: 48px; }
-    .spread-display-text.scale-medium { font-size: 36px; }
-    .spread-display-text.scale-small { font-size: 24px; }
-    .spread-display-text.scale-caption { font-size: 18px; }
+    .spread-display-text.scale-subhead { font-size: 36px; }
+    .spread-display-text.scale-medium { font-size: 32px; }
+    .spread-display-text.scale-body { font-size: 24px; }
+    .spread-display-text.scale-small { font-size: 20px; }
+    .spread-display-text.scale-caption { font-size: 16px; }
 
     .spread-body-text {
       font-family: var(--font-body);
@@ -721,12 +742,13 @@
         </div>
       </div>
       <!-- BOTTOM PANE: Original / Wireframe -->
-      <div class="render-bottom-pane">
+      <div class="render-bottom-pane" id="bottomPane">
         <div class="render-pane-header">
           <div class="render-tabs">
             <div class="render-tab active" data-view="original" onclick="switchBottomView('original')">Original</div>
             <div class="render-tab" data-view="wireframe" onclick="switchBottomView('wireframe')">Wireframe</div>
           </div>
+          <button class="collapse-btn" onclick="toggleBottomPane()" id="collapseBtn" title="Collapse/expand reference pane">▼</button>
         </div>
         <div class="render-bottom-viewport" id="bottomViewport">
           <div class="bottom-view active" id="originalView">
@@ -844,6 +866,15 @@ function switchBottomView(view) {
   );
   document.getElementById('originalView').className = view === 'original' ? 'bottom-view active' : 'bottom-view';
   document.getElementById('wireframeView').className = view === 'wireframe' ? 'bottom-view active' : 'bottom-view';
+}
+
+function toggleBottomPane() {
+  const pane = document.getElementById('bottomPane');
+  const btn = document.getElementById('collapseBtn');
+  pane.classList.toggle('collapsed');
+  btn.textContent = pane.classList.contains('collapsed') ? '▲' : '▼';
+  // Re-scale spread after layout shift
+  setTimeout(scaleSpread, 250);
 }
 
 // ===== Render Spread =====
@@ -1043,6 +1074,8 @@ function renderSpreadLayout(spread, optionId) {
   // Tone
   if (tone === 'dark') frame.classList.add('tone-dark');
   else if (tone === 'mixed') frame.classList.add('tone-mixed');
+  else if (tone === 'high_contrast') frame.classList.add('tone-high_contrast');
+  else if (tone === 'balanced') frame.classList.add('tone-balanced');
 
   // Layout class
   frame.classList.add(`layout-${layoutType}`);
@@ -1067,7 +1100,7 @@ function renderSpreadLayout(spread, optionId) {
 
   // Image element — use real image if available, otherwise placeholder
   const needsImage = ['full_bleed_image', 'split_asymmetric', 'split_symmetric',
-    'text_dominant', 'image_dominant', 'text_over_image', 'dense_collage'].includes(layoutType)
+    'text_dominant', 'image_dominant', 'text_over_image', 'dense_collage', 'text_with_specific_image'].includes(layoutType)
     && imageApproach !== 'typography_only' && imageApproach !== 'none';
 
   const sid = spread.spread_id;
@@ -1225,6 +1258,17 @@ function renderSpreadLayout(spread, optionId) {
       `;
       break;
 
+    case 'text_with_specific_image':
+      // Text on left, specific referenced image on right
+      left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;';
+      left.innerHTML = `
+        ${displayEl}
+        ${bodyEl ? `<div style="margin-top:20px">${bodyEl}</div>` : ''}
+        ${captionEl ? `<div style="margin-top:16px">${captionEl}</div>` : ''}
+      `;
+      right.innerHTML = imgEl || `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:40px">${quoteEl || displayEl}</div>`;
+      break;
+
     default:
       // Fallback: simple split
       left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;';
@@ -1350,8 +1394,8 @@ function scaleSpread() {
 
   const vw = viewport.clientWidth - 32;
   const vh = viewport.clientHeight - 32;
-  const sw = 1120;
-  const sh = 700;
+  const sw = 1060;
+  const sh = 936;
   const scale = Math.min(vw / sw, vh / sh, 1);
   wrapper.style.transform = `scale(${scale})`;
 }
