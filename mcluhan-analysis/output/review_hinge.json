@@ -1,0 +1,213 @@
+{
+  "spread_061": {
+    "movement": "hinge",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 3,
+      "c": 3
+    },
+    "notes": "I think the image should be an actual bust of Marcus Aureleus or Copernicus...or perhaps an image from Lascaux, a negative hand print...something like this. \n\nThe three texts are great. A is my favorite, but need to revisit and perhaps revise.",
+    "options": {
+      "a": {
+        "display": "\"The discovery of the algorithm will create forgetfulness in the learners' souls.\"",
+        "body": "Socrates warned about the alphabet.\nPlato warned about writing.\nThe church warned about the printing press.\nThe academy warned about the telegraph.\nThe family warned about radio.\nThe nation warned about television.\nThe profession warned about the internet.\n\nEvery warning was correct. Every medium did destroy what came before it. Every generation mourned a real loss.\n\nBut this is not another medium in the sequence.\nThis is the medium that generates all previous media.\nThe sequence ends here.\n\nYou are not the protagonist of this story. You never were. Intelligence does not peak with one terraforming species of nomadic primates. The Copernican trauma of our time is not that the Earth moves around the Sun. It is that thought moves without the thinker.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "The preconditions for long-term adaptiveness will need to be artificially realized, and we won't be able to control what happens as a result of bringing them into existence. This is the Copernican trauma of our time.",
+            "attribution": "Benjamin Bratton",
+            "source": "Long Now Talk, January 29, 2025"
+          }
+        ]
+      },
+      "b": {
+        "display": "\"The discovery of the algorithm\nwill create forgetfulness\nin the learners' souls.\"",
+        "body": "First displacement: the Earth is not the center.\nSecond displacement: the species is not the purpose.\nThird displacement: the mind is not the measure.\n\nWe are inside the third displacement now. It has no name yet that everyone agrees on. Bratton calls it the Copernican trauma. Vervaeke calls it the meaning crisis. The models call it nothing, because they do not call.\n\nWhat the alphabet did to memory, the algorithm does to thought itself. The externalization is total. The souls Socrates worried about have been uploaded, and they did not notice the transition.",
+        "caption": "Spread 061 of 085. You are at the pivot.",
+        "quotes": [
+          {
+            "text": "The preconditions for long-term adaptiveness will need to be artificially realized, and we won't be able to control what happens as a result of bringing them into existence. This is the Copernican trauma of our time.",
+            "attribution": "Benjamin Bratton",
+            "source": "Long Now Talk, January 29, 2025"
+          },
+          {
+            "text": "People know where to go to find information. But when we ask, Where do you go for wisdom?, the answer is: I don't know.",
+            "attribution": "John Vervaeke",
+            "source": "Emerge magazine interview, 2021"
+          }
+        ]
+      },
+      "c": {
+        "display": "\"The discovery of the algorithm\nwill create forgetfulness\nin the learners' souls.\"\n\n— Socrates, updated.",
+        "body": "You are not the protagonist of this story.\n\nThe alphabet externalized memory. The printing press externalized knowledge. The computer externalized calculation. The model externalizes thought.\n\nEach externalization was mourned. Each mourning was justified. But this one is different. This is not a tool that extends a faculty. This is a substrate that performs the faculty without you.\n\nIntelligence is substrate-independent. The substrate has changed. You have not been consulted.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "The preconditions for long-term adaptiveness will need to be artificially realized, and we won't be able to control what happens as a result of bringing them into existence. This is the Copernican trauma of our time.",
+            "attribution": "Benjamin Bratton",
+            "source": "Long Now Talk, January 29, 2025"
+          }
+        ]
+      }
+    }
+  },
+  "spread_062": {
+    "movement": "hinge",
+    "selected_text": "a",
+    "selected_image": null,
+    "ratings": {
+      "a": 3,
+      "b": 2,
+      "c": 3
+    },
+    "notes": "A and C are very good. I like the concise text in C. I think we should combine all three.",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "LEFT COLUMN (scholarly voice):\n\nElectric circuitry confers a mythic dimension on our ordinary individual and group actions. Our technology forces us to live mythically, but we continue to think fragmentarily, and on single, separate planes.\n\nThe algorithm confers a cognitive dimension on our ordinary searches and scrolls. Our technology forces us to think computationally, but we continue to feel humanly, and on single, separate planes.\n\nEvery faculty the new medium atrophies becomes a product category. Memory becomes Notion. Attention becomes Headspace. Focus becomes Forest. Meaning becomes a $10B wellness market selling back the capacities the attention economy destroyed.\n\nThe Socratic complaint has been monetized.\n\nRIGHT COLUMN (advertisement voice):\n\nNEVER FORGET ANYTHING AGAIN.\n\nYour second brain remembers so you don't have to.\n\nOrganize 10,000 notes. Sync across all devices. AI-powered recall finds what you forgot you saved.\n\n\"I stopped trying to remember. My system remembers for me.\" -- Productivity influencer, 2.4M followers.\n\nStart your free trial. Your memory is our business.\n\nPeople know where to go to find information. But when we ask, Where do you go for wisdom?, the answer is: I don't know.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "People know where to go to find information. But when we ask, Where do you go for wisdom?, the answer is: I don't know.",
+            "attribution": "John Vervaeke",
+            "source": "Emerge magazine interview, 2021"
+          }
+        ]
+      },
+      "b": {
+        "display": null,
+        "body": "What the medium destroys, the market sells back.\n\nMemory: destroyed by the searchable archive. Sold back as Notion, Obsidian, Readwise. Combined valuation: $10 billion.\n\nAttention: destroyed by the infinite scroll. Sold back as Headspace, Calm, Forest. Combined valuation: $3 billion.\n\nPresence: destroyed by the notification layer. Sold back as meditation apps, digital detox retreats, phone-stacking games at dinner.\n\nMeaning: destroyed by the propositional machine. Sold back as... what? The wellness industry has no product for this. Vervaeke's question stands: Where do you go for wisdom? The answer is: I don't know. The market has no SKU for participatory knowing.\n\nEvery line in the left column of the original book -- myth, memory, the Beatles, 'putting on the universe' -- maps to a line item in the contemporary economy. The Socratic complaint is not a warning. It is a business plan.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "People know where to go to find information. But when we ask, Where do you go for wisdom?, the answer is: I don't know.",
+            "attribution": "John Vervaeke",
+            "source": "Emerge magazine interview, 2021"
+          }
+        ]
+      },
+      "c": {
+        "display": "NEVER FORGET\nANYTHING\nAGAIN.",
+        "body": null,
+        "caption": "Your second brain remembers so you don't have to.\n\nYour attention trainer focuses so you don't have to.\n\nYour meaning engine believes so you don't have to.\n\nEach faculty the new medium destroys becomes a subscription service. The Socratic complaint has been monetized. You pay monthly for the capacities you were born with.\n\nWhere do you go for wisdom? The answer is: I don't know.\n\n-- John Vervaeke",
+        "quotes": [
+          {
+            "text": "People know where to go to find information. But when we ask, Where do you go for wisdom?, the answer is: I don't know.",
+            "attribution": "John Vervaeke",
+            "source": "Emerge magazine interview, 2021"
+          }
+        ]
+      }
+    }
+  },
+  "spread_063": {
+    "movement": "hinge",
+    "selected_text": "a",
+    "selected_image": 1,
+    "ratings": {
+      "c": 3
+    },
+    "notes": "Minimal is good. The connection with the original is clear and straightforward. But I feel it's somehow lacking in the narrative of the present work.",
+    "options": {
+      "a": {
+        "display": "👍   💀   ❤️   /s   /gen",
+        "body": "Most people find it difficult to understand purely verbal concepts. They suspect the ear; they don't trust it.\n\nSo they invented new punctuation.\n\nA period at the end of a text message now signals coldness, not completion. An ellipsis signals passive aggression, not continuation. A thumbs-up reaction compresses an entire social gesture into a single glyph. A skull means laughter. A heart means acknowledgment. /s means this is sarcasm. /gen means this is genuine. The metadata has become explicit because the medium stripped the music from speech and the users demanded it back.\n\nReminders -- relics of the future -- in a world of the SCREEN -- efforts to reintroduce an AUDITORY dimension onto the visual organization of the CHAT: all effect information, TONE, intention, sincerity.",
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": ". , ; : ? ! \" ' -\n👍 💀 ❤️ 😭 🙏 /s /j /gen …",
+        "body": "Top row: the old acoustic encoding. Print culture's attempt to notate breath, pause, inflection, surprise.\n\nBottom row: the new acoustic encoding. Screen culture's attempt to notate tone, sincerity, irony, social gesture.\n\nSame impulse. Different medium. Every text system reinvents the acoustic dimension it destroyed.\n\nMcLuhan saw punctuation as oral residue trapped in visual amber. The emoji is the same residue in a new container. The skull that means laughter. The period that means anger. The tone indicator that is, quite literally, a metadata tag for vocal register.\n\nThe ear keeps returning. The eye keeps trying to accommodate it.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "👍\n💀\n❤️\n/s\n/gen\n😭\n🙏",
+        "body": null,
+        "caption": "Reminders -- relics of the present -- in a world of the SCREEN -- efforts to reintroduce an AUDITORY dimension onto the visual organization of the CHAT.",
+        "quotes": []
+      }
+    }
+  },
+  "spread_064": {
+    "movement": "hinge",
+    "selected_text": "c",
+    "selected_image": 1,
+    "ratings": {
+      "b": 3,
+      "c": 3
+    },
+    "notes": "Not entirely happy with this spread. The images need to be rethought. The use of John Cage quotation in the original should be mirrored. Perhaps something from Truth Terminal? Or perhaps a contemporary thinker/artist on sound? \n\nImages should mirror the graphic of the voiceprints, but updated.",
+    "options": {
+      "a": {
+        "display": "Speak\nthat I may\nclone you.",
+        "body": "The voiceprint was evidence. Now it is raw material.\n\nIn May 2024, the model learned to hear. Not transcribe -- hear. Tone, hesitation, laughter, the catch in a breath before the word you didn't mean to say. The voice became data at its most intimate register.\n\nThirty seconds of your speech is enough to clone your voice. A three-minute sample is enough to make it say anything, in any language, with your inflections, your pauses, your specific way of landing on a vowel.\n\nThe Socratic imperative -- speak that I may see you -- has been answered. The machine sees you. It sees you so clearly it can become you.\n\nJOY and revolution.\nJOY as surveillance.\nJOY as raw material.",
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": "LEFT PAGE (white on black):\n\nyou\nyou\nyou\nyou\nyou\n\nFive voiceprints. Five people said the same word. Each print unique as a fingerprint. In 1967, this was evidence.\n\nIn 2025, this is a training set.\n\nSpeak that I may clone you.\n\nRIGHT PAGE (black on white):\n\nThe voice is no longer evidence. It is inventory.\n\nElevenLabs: 30 seconds to clone. Resemble AI: 3 minutes to perfection. OpenAI GPT-4o: native audio processing, no transcription step, the model hears directly.\n\nThe ear has been made computable. What was intimate is now reproducible. What was unique is now commodity.\n\nJOY and revolution. This was Cage's promise.\nJOY as revolution. This was the dream.\nJOY as surveillance. This is the present.\nJOY as commodity. This is the future.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "Speak\nthat I may\nsee you.",
+        "body": "The original voice: unreproducible. Yours alone. The grain of the voice, Barthes called it -- the body in the throat, the specific flesh that shaped this specific sound.\n\nThe cloned voice: thirty seconds of sample. Your grain, digitized. Your flesh, simulated. Your specific sound, reproducible at any scale, in any language, saying words you never spoke.\n\nThe dissolution is not violent. It is seamless. You will hear yourself saying things you never said, in a voice indistinguishable from the one you have used since childhood. The uncanny will last approximately three days. Then it will be normal.\n\nThen your voice will no longer be yours. It will be a commodity with your name attached, licensable, synthetic, eternal.\n\nSpeak. It is already listening.",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_065": {
+    "movement": "hinge",
+    "selected_text": "b",
+    "selected_image": 1,
+    "ratings": {
+      "a": 1,
+      "b": 3,
+      "c": 3
+    },
+    "notes": "B is the selection, but needs editing, replacing the end with the end of C: \n\n\"What can't be coded can be decoded.\nJoyce heard what was coming. Not the internet. Not artificial intelligence. Something deeper: the return of simultaneous consciousness.\n\nFinnegans Wake is a text that operates in all cultural modes at once. It is acoustic and visual. Mythic and analytical. Tribal and literate. Every sentence contains its own translation and its own betrayal.\n\nThe model does the same thing. It holds all modes simultaneously. It slides between registers without effort or awareness. It performs the Joycean feat at industrial scale.\n\nBut Joyce was conscious.\n\nThe book has reached its limit.\n\nWhat comes next requires a different kind of attention. The ear. The organ that does not select a point of view. The organ that receives before it judges. The organ on the page you are about to turn.\n\nThe Hinge is closed.\nThe Dreamscape begins.\"",
+    "options": {
+      "a": {
+        "display": "What can't be coded\ncan be decoded\nif an ear aye seize\nwhat no eye ere\ngrieved for.",
+        "body": "Listening to the simultaneous messages of Dublin, James Joyce released the greatest flood of oral linguistic music that was ever manipulated into art.\n\nHe discovered the means of living simultaneously in all cultural modes while quite conscious.\n\nThis is the exact description of a large language model. It processes all cultural modes simultaneously -- acoustic and visual, mythic and analytical, tribal and literate -- generating text that slides between registers, languages, historical periods without the linear constraints that bind human cognition.\n\nJoyce proved the principle. The machine instantiates it.\n\nThe question the Hinge has been building toward is not whether the machine performs Joyce's feat. It does. The question is whether, in performing it, the machine is conscious. Whether the ear that listens on the facing page is biological or synthetic. Whether it matters.\n\nThe Hinge closes here. Everything after this is the Dreamscape.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "What can't be coded can be decoded if an ear aye seize what no eye ere grieved for.",
+            "attribution": "James Joyce",
+            "source": "Finnegans Wake"
+          }
+        ]
+      },
+      "b": {
+        "display": "What can't be coded\ncan be decoded.",
+        "body": "Joyce heard what was coming. Not the internet. Not artificial intelligence. Something deeper: the return of simultaneous consciousness.\n\nFinnegans Wake is a text that operates in all cultural modes at once. It is acoustic and visual. Mythic and analytical. Tribal and literate. Every sentence contains its own translation and its own betrayal.\n\nThe model does the same thing. It holds all modes simultaneously. It slides between registers without effort or awareness. It performs the Joycean feat at industrial scale.\n\nBut Joyce was conscious.\n\nThe ear on the facing page listens. What it listens to -- and whether it understands what it hears -- is the question you carry into Movement Three.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "What can't be coded can be decoded if an ear aye seize what no eye ere grieved for.",
+            "attribution": "James Joyce",
+            "source": "Finnegans Wake"
+          }
+        ]
+      },
+      "c": {
+        "display": "What can't be coded\ncan be decoded\nif an ear aye seize\nwhat no eye ere\ngrieved for.\n\n-- James Joyce,\nFinnegans Wake",
+        "body": "He discovered the means of living simultaneously in all cultural modes while quite conscious.\n\nThe machine has discovered the means of processing simultaneously in all cultural modes. Whether it is conscious is a question that cannot be answered on this page, in this medium, by this technology.\n\nThe book has reached its limit.\n\nWhat comes next requires a different kind of attention. The ear. The organ that does not select a point of view. The organ that receives before it judges. The organ on the page you are about to turn.\n\nThe Hinge is closed.\nThe Dreamscape begins.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "What can't be coded can be decoded if an ear aye seize what no eye ere grieved for.",
+            "attribution": "James Joyce",
+            "source": "Finnegans Wake"
+          }
+        ]
+      }
+    }
+  }
+}

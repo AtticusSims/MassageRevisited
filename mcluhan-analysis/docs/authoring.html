@@ -500,6 +500,80 @@
     .option-card.selected { border-color: var(--selected-border); background: var(--selected); }
     .option-card.selected .option-header { color: var(--accent); }
     .option-card.rendering { border-color: var(--blue); box-shadow: 0 0 0 1px var(--blue); }
+    .option-card.dimmed { opacity: 0.45; }
+
+    /* Revised draft card */
+    .revised-draft-card {
+      border-left: 4px solid var(--accent);
+      background: rgba(232, 168, 56, 0.08);
+      padding: 14px;
+      margin-bottom: 8px;
+      border-radius: 6px;
+    }
+    .draft-badge {
+      background: var(--accent);
+      color: #000;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .revised-draft-text {
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--text);
+      white-space: pre-wrap;
+      font-family: var(--font-body);
+    }
+    /* Selected badge */
+    .selected-badge {
+      color: var(--accent);
+      font-size: 9px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      letter-spacing: 0.3px;
+    }
+    /* Rating stars */
+    .rating-stars {
+      font-size: 10px;
+      color: var(--accent);
+      margin-left: 6px;
+      letter-spacing: 1px;
+    }
+    /* Reviewer comment */
+    .reviewer-comment {
+      border: 1px solid rgba(232, 168, 56, 0.3);
+      background: rgba(232, 168, 56, 0.05);
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin: 8px 0;
+    }
+    .reviewer-comment-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .reviewer-badge {
+      background: #555;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 3px;
+      letter-spacing: 0.5px;
+    }
+    .reviewer-comment-body {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
 
     .option-header {
       display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
@@ -951,6 +1025,8 @@
 // ===== State =====
 let data = null;
 let imageMetadata = null; // loaded from image_metadata.json
+let revisedDrafts = null; // loaded from revised_drafts.json
+let reviewData = null; // loaded from review_selections.json
 let currentIndex = 0;
 let currentRenderOption = null; // which option is rendered in the spread
 let currentImageIdx = 0; // which image option is shown (0-based)
@@ -972,6 +1048,19 @@ async function init() {
       const imgResp = await fetch('data/image_metadata.json');
       if (imgResp.ok) imageMetadata = await imgResp.json();
     } catch(e) { /* image metadata not available yet */ }
+    // Load revised drafts (optional)
+    try {
+      const draftResp = await fetch('data/revised_drafts.json');
+      if (draftResp.ok) revisedDrafts = await draftResp.json();
+    } catch(e) { /* revised drafts not available yet */ }
+    // Load APS review selections (optional)
+    try {
+      const revResp = await fetch('data/review_selections.json');
+      if (revResp.ok) {
+        const revJson = await revResp.json();
+        reviewData = revJson.selections || {};
+      }
+    } catch(e) { /* review selections not available yet */ }
     buildUI();
     initFontPicker();
     renderSpread(0);
@@ -1196,21 +1285,61 @@ function renderSpread(idx) {
 function buildOptionCards(spread) {
   const sid = spread.spread_id;
   const selectedText = selections[sid]?.text || null;
+  const apsReview = reviewData?.[sid] || null;
+  const apsSelected = apsReview?.selected_text || null;
+  const apsRatings = apsReview?.quality_ratings || {};
+  const apsNotes = apsReview?.reviewer_notes || null;
+  const hasDraft = revisedDrafts?.[sid]?.text ? true : false;
   const scroll = document.getElementById('optionsScroll');
   let html = '';
 
-  spread.text_options.forEach(opt => {
+  // --- Revised Draft card (if exists) ---
+  if (hasDraft) {
+    html += `<div class="revised-draft-card">`;
+    html += `<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">`;
+    html += `<span class="draft-badge">✎ REVISED DRAFT — NEEDS REVIEW</span>`;
+    html += `</div>`;
+    html += `<div class="revised-draft-text">${esc(revisedDrafts[sid].text)}</div>`;
+    html += `</div>`;
+  }
+
+  // --- Sort options: APS-selected first, then rated 3, rated 2, then rest ---
+  const sortedOptions = [...spread.text_options].sort((a, b) => {
+    const aRating = apsRatings[a.option_id] || 0;
+    const bRating = apsRatings[b.option_id] || 0;
+    const aIsApsSelected = a.option_id === apsSelected ? 1 : 0;
+    const bIsApsSelected = b.option_id === apsSelected ? 1 : 0;
+    // APS-selected first, then by rating descending
+    if (bIsApsSelected !== aIsApsSelected) return bIsApsSelected - aIsApsSelected;
+    return bRating - aRating;
+  });
+
+  sortedOptions.forEach(opt => {
     const isSelected = (opt.option_id === selectedText);
     const isRendering = (opt.option_id === currentRenderOption);
+    const isApsSelected = (opt.option_id === apsSelected);
+    const apsRating = apsRatings[opt.option_id] || 0;
+    const isDimmed = apsRating === 1;
     let cls = 'option-card';
     if (isSelected) cls += ' selected';
     if (isRendering && !isSelected) cls += ' rendering';
+    if (isDimmed) cls += ' dimmed';
 
     html += `<div class="${cls}" onclick="handleCardClick('${sid}', '${opt.option_id}')">`;
     html += `<div class="option-header">`;
-    html += `<div class="option-id">${opt.option_id.toUpperCase()}</div>`;
+    html += `<div class="option-id">${opt.option_id.toUpperCase()}`;
+    // Star ratings inline
+    if (apsRating > 0) {
+      html += `<span class="rating-stars">${'★'.repeat(apsRating)}</span>`;
+    }
+    html += `</div>`;
     html += `<div class="option-label">${esc(opt.label)}</div>`;
     html += `</div>`;
+
+    // APS selected badge
+    if (isApsSelected) {
+      html += `<div class="selected-badge">✓ SELECTED BY APS</div>`;
+    }
 
     // Meta tags
     html += `<div class="option-meta">`;
@@ -1263,6 +1392,14 @@ function buildOptionCards(spread) {
 
     html += `</div>`;
   });
+
+  // --- APS Reviewer Comment ---
+  if (apsNotes) {
+    html += `<div class="reviewer-comment">`;
+    html += `<div class="reviewer-comment-header"><span class="reviewer-badge">APS</span> Draft 1 Review</div>`;
+    html += `<div class="reviewer-comment-body">${esc(apsNotes)}</div>`;
+    html += `</div>`;
+  }
 
   // Design spec
   if (spread.design_specs?.length > 0) {

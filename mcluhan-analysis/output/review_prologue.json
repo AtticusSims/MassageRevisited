@@ -1,0 +1,219 @@
+{
+  "spread_006": {
+    "movement": "prologue",
+    "selected_text": "a",
+    "selected_image": null,
+    "ratings": {
+      "a": 2,
+      "b": 2,
+      "c": 1
+    },
+    "notes": "Need word breaks. At present the words are broken in the middle for new lines: a-nd; conditio-n",
+    "options": {
+      "a": {
+        "display": "THE MODEL IS THE MASSAGE",
+        "body": "Each spread of this book corresponds to a spread of McLuhan and Fiore's original.\n\nWritten by a human. Shaped by a model. Produced by the condition it describes.",
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": "THE MODEL IS THE MASSAGE",
+        "body": "At what point does the performance of reason become a kind of reason?\n\nThis book was written at that point.",
+        "caption": "— Bratton & Agüera y Arcas, \"The Model Is the Message,\" Noema, 2022",
+        "quotes": [
+          {
+            "text": "At what point does the performance of reason become a kind of reason?",
+            "attribution": "Bratton & Agüera y Arcas",
+            "source": "\"The Model Is the Message,\" Noema, July 12, 2022"
+          }
+        ]
+      },
+      "c": {
+        "display": "THE MODEL IS THE MASSAGE",
+        "body": null,
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_007": {
+    "movement": "prologue",
+    "selected_text": "a",
+    "selected_image": 1,
+    "ratings": {
+      "a": 2,
+      "b": 2,
+      "c": 1
+    },
+    "notes": null,
+    "options": {
+      "a": {
+        "display": "...the massage?",
+        "body": null,
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": "...the massage?",
+        "body": null,
+        "caption": "We simply do not know what our writing does.\n— Friedrich Kittler, \"There Is No Software,\" 1992",
+        "quotes": [
+          {
+            "text": "We simply do not know what our writing does.",
+            "attribution": "Friedrich Kittler",
+            "source": "\"There Is No Software,\" Stanford Literature Review 9:1, 1992"
+          }
+        ]
+      },
+      "c": {
+        "display": "...the massage?",
+        "body": "Can you feel it.",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_008": {
+    "movement": "prologue",
+    "selected_text": "b",
+    "selected_image": null,
+    "ratings": {
+      "a": 2,
+      "b": 2,
+      "c": 1
+    },
+    "notes": "Perhaps option B with only the Bratton quote?",
+    "options": {
+      "a": {
+        "display": "and how.",
+        "body": "The major advances in civilization are processes that all but wreck the societies in which they occur.",
+        "caption": "— A. N. Whitehead, Adventures in Ideas, 1933",
+        "quotes": [
+          {
+            "text": "The major advances in civilization are processes that all but wreck the societies in which they occur.",
+            "attribution": "A. N. Whitehead",
+            "source": "Adventures in Ideas, 1933"
+          }
+        ]
+      },
+      "b": {
+        "display": "and how.",
+        "body": "The major advances in civilization are processes that all but wreck the societies in which they occur.\n\nWe find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it.",
+        "caption": "— A. N. Whitehead, 1933 / — Benjamin Bratton, 2025",
+        "quotes": [
+          {
+            "text": "The major advances in civilization are processes that all but wreck the societies in which they occur.",
+            "attribution": "A. N. Whitehead",
+            "source": "Adventures in Ideas, 1933"
+          },
+          {
+            "text": "We find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it.",
+            "attribution": "Benjamin Bratton",
+            "source": "Long Now Talk, \"A Philosophy of Planetary Computation,\" January 29, 2025"
+          }
+        ]
+      },
+      "c": {
+        "display": "and how.",
+        "body": null,
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_009": {
+    "movement": "prologue",
+    "selected_text": "c",
+    "selected_image": 0,
+    "ratings": {
+      "a": 2,
+      "b": 3,
+      "c": 3
+    },
+    "notes": "B and C are both good. Choosing C. I like the cognitive assemblages of B. Perhaps could integrate with C",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "The model, or process, of our time — computational intelligence — is reshaping and restructuring patterns of cognition, creativity, and every aspect of our epistemic life. It is forcing us to reconsider and re-evaluate practically every thought, every sentence, every image formerly taken for granted. Everything is changing — you, your thinking, your writing, your memory, your creativity, your sense of what is real, your relation to truth. And they are changing silently.\n\nSocieties have always been shaped more by the architecture of the models through which they reason than by the content of any reasoning. The language model, for instance, is a technology absorbed by the adult mind in a completely unconscious manner, by autocomplete so to speak. Prompts and the patterns of prompts predispose the user to think and write automatically in certain ways. Print technology fostered and encouraged a fragmenting process, a process of specialism and of detachment. The model fosters and encourages synthesis and absorption. It is impossible to understand cognitive and cultural changes without a knowledge of the workings of models.\n\nThe older training of critical thinking has become quite irrelevant in this new time, because it is based on epistemic responses and concepts conditioned by the former technology — the search engine.\n\nInnumerable confusions and a profound feeling of vertigo invariably emerge in periods of great technological and cognitive transitions. Our age of artificial intelligence is, in great part, the result of trying to do today's thinking with yesterday's minds — with yesterday's categories.",
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": "The model, or process, of our time is reshaping and restructuring patterns of cognition and every aspect of our epistemic life. Everything is changing — you, your thinking, your writing, your memory, your creativity, your sense of what is real, your relation to truth.\n\nAt what point does the performance of reason become a kind of reason?\n\nWhen humans and cognitive technical systems interact, they form cognitive assemblages — and these assemblages are transforming life on earth.\n\nThe assemblage is already here. You joined it this morning. You are in one now.",
+        "caption": "— Bratton & Agüera y Arcas, Noema, 2022\n— N. Katherine Hayles, Unthought, 2017",
+        "quotes": [
+          {
+            "text": "At what point does the performance of reason become a kind of reason?",
+            "attribution": "Bratton & Agüera y Arcas",
+            "source": "\"The Model Is the Message,\" Noema, July 12, 2022"
+          },
+          {
+            "text": "When humans and cognitive technical systems interact, they form 'cognitive assemblages'... and these assemblages are transforming life on earth.",
+            "attribution": "N. Katherine Hayles",
+            "source": "Unthought: The Power of the Cognitive Nonconscious, University of Chicago Press, 2017"
+          }
+        ]
+      },
+      "c": {
+        "display": null,
+        "body": "Before you opened this book, a model chose the news you read this morning. A model composed three emails you believed were written by colleagues. A model decided which faces you would find attractive, which restaurants you would consider, which words would autocomplete your sentences. A model scored your creditworthiness, flagged your face at the airport, and generated the background music in the café where you are perhaps reading this now.\n\nYou did not ask for any of this. You did not consent. You were not consulted.\n\nThe model, or process, of our time — computational intelligence — is reshaping cognition, creativity, and every pattern of epistemic life. Not by announcing itself. Not by arriving. But by having already arrived, everywhere, silently, before the question of whether it should could even be posed.\n\nThe older training of critical thinking is based on epistemic responses conditioned by a former technology: the search engine, the database, the indexed archive. These assumed you were looking for something. The model assumes it already knows what you need.\n\nThis is not an age of anxiety. It is an age of assistance — which is worse.",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_010": {
+    "movement": "prologue",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 1,
+      "c": 2
+    },
+    "notes": "C needs to quote the McLuhan passage. Right now it just plagiarizes it without attribution. Image should be replaced with a found image of a machine learning identification pattern on a thumbprint.",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "Our time is a time for crossing the barrier between human cognition and machine cognition — not as metaphor but as daily practice. Every autocomplete is a border crossing. Every recommendation is a border crossing. Every generated image, every summarized document, every predicted word is a traversal of the line that once separated what humans think from what machines compute.\n\nThe barrier has already been crossed.\n\nYou crossed it this morning when you asked your phone a question and accepted the answer without checking. You crossed it when your email wrote itself and you only edited the tone. You crossed it when a model generated an image of a thing that does not exist and you felt something looking at it.\n\nWe find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it. The task of philosophy today is to catch up.\n\nThis book is not philosophy. This book is a look-around to see what is happening. A collide-oscope of interfaced situations.\n\nThe inventory begins.",
+        "caption": "— Bratton, \"A Philosophy of Planetary Computation,\" Long Now, 2025\n— McLuhan / Fiore, The Medium is the Massage, 1967 (adapted)",
+        "quotes": [
+          {
+            "text": "We find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it. The task of philosophy today is to catch up.",
+            "attribution": "Benjamin Bratton",
+            "source": "Long Now Talk, \"A Philosophy of Planetary Computation,\" January 29, 2025"
+          },
+          {
+            "text": "Our time is a time for crossing barriers, for erasing old categories — for probing around.",
+            "attribution": "Marshall McLuhan",
+            "source": "The Medium is the Massage, 1967, pp. 10-11"
+          }
+        ]
+      },
+      "b": {
+        "display": "The barrier has already been crossed.",
+        "body": "You crossed it this morning.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": "Our time is a time for crossing barriers, for erasing old categories — for probing around. When two seemingly disparate elements are imaginatively poised, put in apposition in new and unique ways, startling discoveries often result.\n\nThe barrier between human intelligence and machine intelligence is not a wall. It is a membrane — permeable, wet, alive with traffic in both directions. You have been crossing it for years. The crossing was never announced. There was no checkpoint, no passport, no ceremony of departure. One day you were thinking your own thoughts and the next day you were thinking thoughts that had been pre-shaped by a model's architecture, and there was no day in between.\n\nThis book is a collide-oscope of interfaced situations. It does not argue. It demonstrates. It does not explain AI. It performs what AI has already done.\n\nWe find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it.\n\nThe inventory begins on the other side of this page.",
+        "caption": "— Bratton, 2025",
+        "quotes": [
+          {
+            "text": "We find ourselves in a pre-paradigmatic moment in which our technology has outpaced our theories of what to do with it.",
+            "attribution": "Benjamin Bratton",
+            "source": "Long Now Talk, \"A Philosophy of Planetary Computation,\" January 29, 2025"
+          },
+          {
+            "text": "Our time is a time for crossing barriers, for erasing old categories — for probing around.",
+            "attribution": "Marshall McLuhan",
+            "source": "The Medium is the Massage, 1967, pp. 10-11"
+          }
+        ]
+      }
+    }
+  }
+}

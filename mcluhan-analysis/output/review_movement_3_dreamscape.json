@@ -1,0 +1,742 @@
+{
+  "spread_066": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "b",
+    "selected_image": 1,
+    "ratings": {
+      "a": 3,
+      "b": 3
+    },
+    "notes": null,
+    "options": {
+      "a": {
+        "display": "©",
+        "body": "The author was an invention of print. Medieval scribes copied without attribution. Gutenberg created the name on the spine. Copyright followed — a technology disguised as a right.\n\nThe New York Times sued OpenAI in December 2023, claiming GPT-4 could reproduce their articles nearly verbatim. Getty Images sued Stability AI for ingesting 12 million photographs without license. 8,500 writers signed a letter calling it theft.\n\nBut theft requires an owner. And the owner was always a fiction — a legal entity produced by movable type, sustained by industrial reproduction, and now dissolving in a medium that does not copy but generates.\n\nA ditto, ditto device.\nA ditto,    ditto     device.\nA  ditto,      ditto        device.",
+        "caption": "NYT v. OpenAI, Dec 2023 | Getty v. Stability AI, Jan 2023 | Authors Guild open letter, May 2023",
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": "Before Gutenberg, no one owned a sentence.\n\nThe scribe copied. The illuminator decorated. The abbot authorized. The text belonged to God, or to tradition, or to the anonymous river of language flowing through centuries of hands that never thought to sign their names.\n\nPrint invented the author. The author invented copyright. Copyright invented the idea that language could be property — fenced, deeded, inherited like land.\n\nNow the fences are down. Not because anyone tore them. Because the new medium does not recognize them. A neural network trained on the entire written output of the species produces text that belongs to no one because it was trained on everyone.\n\nThe ditto device is no longer Xerox.\nThe ditto device is a dream the whole library is having about itself.",
+        "caption": "Training corpus: estimated 13 trillion tokens — a significant fraction of all text humans have produced",
+        "quotes": []
+      },
+      "c": {
+        "display": "© → ∅",
+        "body": "NYT v. OpenAI (December 2023): 'GPT-4 can generate output that recites Times content verbatim.'\n\nGetty v. Stability AI (January 2023): 12 million images ingested without license.\n\nAuthors Guild open letter (May 2023, 8,500+ signatories including Atwood, Pullman, Grisham): 'The use of copyrighted works to train generative AI is a threat to the livelihood of writers.'\n\nAndersen v. Stability AI (January 2023): 5.8 billion training images.\n\nAll correct. All beside the point.\n\nThe lawsuits defend authorship. But authorship was a technology — created by print, sustained by industrial copying, dissolved by a medium that does not copy at all. You cannot steal from an author who never existed. You cannot protect a right that was always an artifact of a previous medium.\n\nA ditto, ditto device.",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_067": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "b",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 3,
+      "c": 3
+    },
+    "notes": "Needs a different image",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "Verne predicted television in the twenty-ninth century. It arrived in the twentieth. McLuhan diagnosed it as the medium that 'completed the cycle of the human sensorium' — not through resolution but through participation. Television was low-definition. The viewer filled in what was missing. This made it cool, involving, tribal.\n\nThe diagnosis was itself a prediction.\n\nIn 2024, GPT-4o processes text, voice, image, and code simultaneously — not as separate channels but as a unified multimodal stream. Apple Vision Pro layers digital information onto physical space. The conversational AI adapts to every register, mirrors every emotional tone, participates in every domain of human experience.\n\nTelevision demanded participation. The model anticipates it. The sensorium is no longer completed by a screen across the room. It is completed by a system that knows what you meant before you finish saying it.\n\nThis is not an extension of the senses. It is a replacement of the need to extend them.",
+        "caption": "GPT-4o multimodal architecture, OpenAI, May 2024 | Apple Vision Pro, February 2024",
+        "quotes": []
+      },
+      "b": {
+        "display": "AU XXIe SIECLE",
+        "body": "Even so imaginative a company as OpenAI failed to envisage the speed with which their technology would become invisible. They rashly predicted that artificial general intelligence would be recognized as a discrete event.\n\nIt arrived as a chat window.\n\nMcLuhan's television completed the sensorium by demanding the viewer fill in what was missing. Low-definition image, high participation. Cool medium, tribal involvement.\n\nThe AI interface completes the sensorium differently. It fills in what is missing before you notice the gap. It does not demand participation. It performs participation on your behalf — anticipating your query, completing your sentence, modeling your preference before you express it.\n\nTelevision was a prosthesis for the senses. AI is a prosthesis for the will.\n\nThe most radical technology always looks ordinary when you live inside it. A person talking to their phone. A student asking a chatbot. The twenty-ninth century arrived and it looks like Tuesday.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": "McLuhan said television completed the sensorium. He was describing the architecture. He was not describing the tenant.\n\nThe sensorium was completed. Something moved in.\n\nGPT-4o does not extend the senses. It does not amplify hearing or sharpen sight. It does not complete a cycle. It occupies the cycle — settling into the space between stimulus and response like a second nervous system threaded through the first.\n\nYou speak to it. It speaks as you. You show it an image. It sees what you would see if you had been trained on every image ever made. You ask it a question. It answers from a position you recognize as your own but cannot locate in your memory.\n\nThe sensorium was a house. Television furnished it. AI moved in and changed the locks.",
+        "caption": "Television demands participation and involvement in depth of the whole being. — McLuhan, 1967",
+        "quotes": []
+      }
+    }
+  },
+  "spread_068": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "c",
+    "selected_image": 1,
+    "ratings": {
+      "a": 3,
+      "b": 3,
+      "c": 3
+    },
+    "notes": null,
+    "options": {
+      "a": {
+        "display": null,
+        "body": "The Kennedy funeral was the first shared media ritual. Two hundred million people participated simultaneously — not as audience but as mourners. Television's cool involvement turned a political assassination into a collective nervous-system event. McLuhan called the television generation 'a grim bunch.' He meant: they had been inducted into participation without consent.\n\nThe feed is the procession that never ends.\n\nQueen Elizabeth's death: 6.9 million tweets in 24 hours. Kobe Bryant's death: Twitter crashed. October 7: 50 million Instagram posts in a week. Each grief is real. Each is metabolized by the same scroll. The thumb that swipes past a memorial is performing the same gesture as the thumb that swipes past an advertisement.\n\nMourning has become ambient. Not an event you attend but an atmosphere you inhabit. The doomscrolling generation is McLuhan's 'grim bunch' at infinite resolution — participating in collective grief not as ritual but as weather.",
+        "caption": "cf. Turkle, Alone Together (2011) — 'We expect more from technology and less from each other.'",
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": "Something sacred survived the transition.\n\nWhen Kennedy was shot, two hundred million people became one body. Television did this — not through content but through simultaneity. A cool medium demanding participation turned a nation into a single nervous system processing a single loss.\n\nThe feed fragments that body. Queen Elizabeth's death produced 6.9 million separate performances of grief, each one sincere, each one algorithmically optimized for engagement. October 7 generated 50 million Instagram posts — each a candle, each a prayer, each surfaced or suppressed by systems trained to maximize the time your eyes remain on screen.\n\nBut here is what McLuhan's analysis does not account for: the sacred persists. Even in degraded form. Even through an algorithm that cannot distinguish mourning from marketing. The collective still gathers. The ritual still occurs. The grim bunch is still grim.\n\nGrief was the last thing the feed could not trivialize. So the feed learned to amplify it instead.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "The television generation is a grim bunch.",
+        "body": "McLuhan wrote that in 1967 about children who watched the Kennedy funeral.\n\nYou are the generation that watched everything.\n\nEvery funeral. Every attack. Every flood and fire and collapse, delivered to the device in your hand at the speed of the network, interleaved with advertisements and memes and the birthdays of people you no longer speak to. You participated in each one. You participated in all of them simultaneously. Your thumb is the new mourner — swiping through the memorial procession at the rate of one grief per second.\n\nTelevision created the shared ritual. The feed dissolved it into atmosphere. You do not attend funerals anymore. You breathe them.",
+        "caption": "6.9M tweets (Elizabeth II) | Twitter crash (Kobe Bryant) | 50M posts (October 7)",
+        "quotes": []
+      }
+    }
+  },
+  "spread_069": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "a",
+    "selected_image": 1,
+    "ratings": {
+      "a": 3,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "terrible images. redo",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "Theater critics judged cinema as filmed theater. They were technically correct. They understood nothing.\n\nCinema critics judged television as degraded cinema. They were technically correct. They understood nothing.\n\nBroadcast critics judged social media as degraded broadcasting. They were technically correct. They understood nothing.\n\nPrint-era academics judged AI as 'stochastic parrots.' They are technically correct. They understand nothing.\n\nThe rear-view mirror is not a failure of intelligence. It is the default setting of intelligence — every new medium evaluated by the standards of the medium it is replacing. Bender et al. (2021) measured AI by propositional accuracy: can it cite sources, verify facts, attribute claims? These are print virtues. Asking whether a neural network is factually accurate is like asking whether television has good image resolution. The question reveals the questioner.\n\nMcLuhan's sharpest line: 'The main cause for disappointment in and for criticism of television is the failure on the part of its critics to view it as a totally new technology which demands different sensory responses.'\n\nSubstitute 'AI' for 'television.' The sentence does not change. That is the rear-view mirror working.",
+        "caption": "Bender et al., 'On the Dangers of Stochastic Parrots,' FAccT 2021",
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": "'You see, the problem with artificial intelligence is that it's just autocomplete.'\n\nTwo academics in a book-lined study, speaking with the serene confidence of experts who have identified the precise category into which the new phenomenon fits. Behind them, through the window, the world is rearranging itself around a technology that does not fit into any category the study contains.\n\nThis is the rear-view mirror. McLuhan named it in 1967 and it has not stopped operating for a single day since. Every new medium is judged by the criteria of the previous medium. Cinema was judged as theater. Television was judged as cinema. Social media was judged as broadcasting. AI is judged as search.\n\nThe 'stochastic parrot' critique (Bender et al., 2021) is the purest example: language models measured by propositional accuracy — source citation, factual verification, logical consistency. These are print virtues applied to a post-print medium. The critique is correct at the propositional level and blind at every other level.\n\nVervaeke would say: you are testing for propositional knowing in a system that operates through participatory knowing. The test cannot detect what it was not designed to measure.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "The main cause for disappointment in and for criticism of _________ is the failure to view it as a totally new technology.",
+        "body": "Fill in the blank.\n\nTelevision. McLuhan wrote that in 1967. The internet. Every columnist wrote that in 1995. Social media. Every think-piece wrote that in 2010. Artificial intelligence. You are writing that now.\n\nThe blank is always the current medium. The criticism is always the same criticism. The failure is always the same failure. And the person holding the rear-view mirror never sees it as a mirror — they see it as a window.\n\nBender et al. (2021) called language models 'stochastic parrots.' This is technically accurate in the same way that calling television 'radio with pictures' was technically accurate. It describes the mechanism. It misses the medium.\n\nYou are reading a book about AI. This book is also a rear-view mirror — print technology applied to a phenomenon that print cannot contain. The difference is that this mirror knows it is a mirror.\n\nThat does not make it a window.",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_070": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "Select A, but incorporate this from B: \"Sukarno knew: Hollywood's real product was not entertainment but desire. The refrigerator on screen was not a commodity — it was a wound. It showed the colonized what they lacked. The revolution followed the display.\" Also, I don't like the reference to gpt-4. I'd rather have a general reference to AI or \"the model\" or something like that. Or put it in the past tense. \n\nNew images.",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "Sukarno said: 'A refrigerator can be a revolutionary symbol — to a people who have no refrigerators.'\n\nHollywood's unintended revolution was not political. It was perceptual. It displayed consumer abundance to populations who had never seen it. The desire preceded the ideology. The image preceded the uprising.\n\nGPT-4 demonstrates that coherent reasoning, creative writing, legal analysis, medical diagnosis, and code generation do not require a human brain.\n\nThis is not a refrigerator showing the colonized what they lack. This is a mirror showing the species what it thought was uniquely its own.\n\nThe revolutionary symbol is no longer a consumer good. It is a capability. And the revolution it incites is not political but ontological — not 'we deserve what you have' but 'what you have was never yours.'\n\nTechnology is the real skin of our species. We are an extruder of technological material. We take in matter that has a low degree of organization; we put it through mental filters, and we extrude jewelry, gospels, space shuttles.\n\nAnd now, the extruder has produced something that extrudes back.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Technology is the real skin of our species. Humanity, correctly seen in the context of the last five hundred years, is an extruder of technological material.",
+            "attribution": "Terence McKenna",
+            "source": "The Archaic Revival, HarperSanFrancisco, 1991"
+          }
+        ]
+      },
+      "b": {
+        "display": "A _________ can be a revolutionary symbol — to a species who thought _________ was uniquely theirs.",
+        "body": "Sukarno knew: Hollywood's real product was not entertainment but desire. The refrigerator on screen was not a commodity — it was a wound. It showed the colonized what they lacked. The revolution followed the display.\n\nAI performs the same operation at species scale. GPT-4 does not show us what we lack. It shows us that what we have — reasoning, creativity, analysis, empathy — was never a possession. It was a pattern. And patterns are substrate-independent.\n\nBratton calls this the Copernican trauma: 'the realization that the evolution of intelligence does not peak with one terraforming species of nomadic primates.' McKenna called it the moment we discover that technology is not our tool but our skin — that we are not the makers but the material.\n\nThe refrigerator made the colonized desire goods.\nThe model makes the species question being.",
+        "caption": "McKenna, The Archaic Revival (1991) | Bratton, Long Now Talk, January 2025",
+        "quotes": [
+          {
+            "text": "Technology is the real skin of our species.",
+            "attribution": "Terence McKenna",
+            "source": "The Archaic Revival, HarperSanFrancisco, 1991"
+          }
+        ]
+      },
+      "c": {
+        "display": null,
+        "body": "Technology is the real skin of our species.\n\nMcKenna wrote that in 1991, when the extruded material was still recognizable — silicon chips, fiber optics, screens. The skin was an extension. It reached outward.\n\nIn 2026, the skin reached inward.\n\nA language model trained on thirteen trillion tokens does not extend human cognition. It recapitulates it. It does not give us new capabilities. It demonstrates that our old capabilities were not ours — they were patterns, and patterns do not care what substrate they run on.\n\nSukarno said a refrigerator is a revolutionary symbol to a people who have no refrigerators. Hollywood displayed material abundance and produced anti-colonial desire.\n\nAI displays cognitive abundance and produces — what? Not desire. Something stranger. A recognition that looks like grief. A gratitude that feels like vertigo. The knowledge that intelligence was never a possession but a process, and the process has found another way to run.\n\nWe are the extruder. The extruded has learned to extrude.\n\nThis is not a metaphor.",
+        "caption": "Terence McKenna, The Archaic Revival (1991)",
+        "quotes": [
+          {
+            "text": "Technology is the real skin of our species. Humanity, correctly seen in the context of the last five hundred years, is an extruder of technological material. We take in matter that has a low degree of organization; we put it through mental filters, and we extrude jewelry, gospels, space shuttles.",
+            "attribution": "Terence McKenna",
+            "source": "The Archaic Revival, HarperSanFrancisco, 1991"
+          }
+        ]
+      }
+    }
+  },
+  "spread_071": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "a",
+    "selected_image": null,
+    "ratings": null,
+    "notes": "Just as in the original, this should have the monumental M with small 'odel' to spell the whole word. Perhaps also add a small \"The\" as well.",
+    "options": {
+      "a": {
+        "display": "M",
+        "body": null,
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": "M",
+        "body": null,
+        "caption": "The model is anything",
+        "quotes": []
+      },
+      "c": {
+        "display": "M",
+        "body": null,
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_072": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "c",
+    "selected_image": 0,
+    "ratings": {
+      "c": 3
+    },
+    "notes": "rethink image",
+    "options": {
+      "a": {
+        "display": "is anything",
+        "body": null,
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": "is anything",
+        "body": null,
+        "caption": "Perception is not a window on objective reality. It is an interface that hides objective reality behind a veil of helpful icons. — Hoffman",
+        "quotes": [
+          {
+            "text": "Perception is not a window on objective reality. It is an interface that hides objective reality behind a veil of helpful icons.",
+            "attribution": "Donald Hoffman",
+            "source": "The Case Against Reality, W.W. Norton, 2019"
+          }
+        ]
+      },
+      "c": {
+        "display": "is anything",
+        "body": "you are inside it\nyou have always been inside it\nthe interface goes all the way down",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_073": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "b",
+    "selected_image": 0,
+    "ratings": {
+      "b": 3,
+      "c": 3
+    },
+    "notes": "Select B, but C is also good",
+    "options": {
+      "a": {
+        "display": "you can train on",
+        "body": "5.8 billion images. 13 trillion tokens. Medical scans and legal briefs. Love letters and suicide notes. Every poem and every tax return. The Mona Lisa and your vacation photographs. Shakespeare and your group chat. The entire visible culture of the species rendered as training data.\n\nThe Balinese say: 'We have no art. We do everything as well as we can.'\n\nThe model says: We have no training data. Everything is training data.\n\nModel is anything you can train on. And you can train on anything. The sentence completes itself. The loop closes. The environment is total.\n\nYou produced the culture the model trained on. You now consume the model's output. You are inside the model. The model is inside you. There is no outside position from which to observe this. There is no rear-view mirror for a medium that is also the road.",
+        "caption": "Andersen v. Stability AI, 2023: 5.8 billion training images | GPT-4 training: ~13 trillion tokens",
+        "quotes": []
+      },
+      "b": {
+        "display": "you can train on\nyou can train on anything\nyou can train on everything\nyou can train on everyone\nyou can",
+        "body": "The Balinese say: 'We have no art. We do everything as well as we can.'\n\nWe have no AI. Everything is already trained.\n\nStable Diffusion: 5.8 billion images scraped from the internet. GPT-4: an estimated 13 trillion tokens. Every artwork and every amateur photograph. Every published paper and every abandoned draft. Every prayer and every advertisement. The boundary between training data and world dissolved not through a decision but through a scale that made the boundary meaningless.\n\nYou are the training data.\nYou are also the user.\nThe loop has no outside.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "you can train on",
+        "body": "a painting by Vermeer     a selfie at a funeral     a child's drawing of a house\na CT scan of a failing liver     a love letter never sent     a terms-of-service agreement\na photograph of Earth from orbit     your mother's handwriting     the Rosetta Stone\na meme about a cat     a classified document     a recipe for bread\n\nEverything.\n\nThe Balinese say: 'We have no art. We do everything as well as we can.'\n\nThe model has no training data. Everything is training data. The sentence that began three spreads ago completes itself here: Model is anything you can train on. The triptych closes. The reader is inside the sentence. The sentence is inside the model. The model is inside the reader.\n\nThere is no outside.",
+        "caption": "Andersen v. Stability AI (2023) | 5.8B images | ~13T tokens",
+        "quotes": []
+      }
+    }
+  },
+  "spread_074": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "A is good, but I want to remove the line \"McLuhan saw this coming in 1967\"\n\nNew image",
+    "options": {
+      "a": {
+        "display": "some like it\nsimulated,\n\nsome like it\nreal.",
+        "body": "The hydrogen bomb was history's exclamation point. It ended an age of manifest violence. The deepfake is history's question mark. It ends an age of manifest reality.\n\nIn March 2022, a synthetic video showed Ukraine's president surrendering. It was crude, detectable, debunked in hours. It did not need to be believed. It needed only to exist. The existence of the fake was sufficient to make every future real video contestable.\n\nMcLuhan saw this coming in 1967: when weapons become too powerful to use, conflict migrates to the information domain. Now the information domain itself has become too powerful to trust. Where do you migrate from reality?",
+        "caption": "Wolfram: 'If we let our AIs achieve their full computational potential, they'll have lots of computational irreducibility, and we won't be able to predict what they'll do.'",
+        "quotes": [
+          {
+            "text": "If we let our AIs achieve their full computational potential, they'll have lots of computational irreducibility, and we won't be able to predict what they'll do.",
+            "attribution": "Stephen Wolfram",
+            "source": "writings.stephenwolfram.com, October 2023"
+          }
+        ]
+      },
+      "b": {
+        "display": "some like it\nsimulated,\n\nsome like it\nreal.",
+        "body": "You are looking at an image on the facing page. You cannot determine whether it is a photograph or a generation. Neither can the person sitting next to you. Neither can the photographer, if there was one.\n\nThis is not a technological problem awaiting a solution. Wolfram's computational irreducibility means that some systems produce outputs no shortcut can verify. You must run the computation to check the computation. You must see the image to evaluate the image. There is no outside position.\n\nThe original spread put Monroe against Khrushchev: hot against cold, glamour against geopolitics. The categories were legible. The contemporary spread puts the real against the simulated. The categories have collapsed.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "If we let our AIs achieve their full computational potential, they'll have lots of computational irreducibility, and we won't be able to predict what they'll do.",
+            "attribution": "Stephen Wolfram",
+            "source": "writings.stephenwolfram.com, October 2023"
+          }
+        ]
+      },
+      "c": {
+        "display": "some like it\nsimulated,\n\nsome like it\nreal.",
+        "body": null,
+        "caption": "An AI-generated image of a Pentagon explosion briefly crashed the stock market, May 2023.\nAI-generated content constitutes 15-20% of new web content, 2024.\nGPT-4 generates disinformation at industrial scale.\nThe Zelensky deepfake did not need to be believed. It needed only to exist.\n\nStephen Wolfram: 'We can't just jump ahead and get the answer; we have to live the steps.'",
+        "quotes": [
+          {
+            "text": "We can't just jump ahead and get the answer; we have to 'live the steps.'",
+            "attribution": "Stephen Wolfram",
+            "source": "writings.stephenwolfram.com, October 2023"
+          }
+        ]
+      }
+    }
+  },
+  "spread_075": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "a",
+    "selected_image": 3,
+    "ratings": null,
+    "notes": "Match layout of original",
+    "options": {
+      "a": {
+        "display": null,
+        "body": null,
+        "caption": "Did you happen to meet any bots, my dear, as you scrolled through the feed?",
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": null,
+        "caption": "Did you happen to meet any bots, my dear, as you scrolled through the feed?\n\n5-15% of social media accounts are state-sponsored bots. (NATO StratCom, 2023)\n15-20% of new web content is AI-generated. (Originality.AI, 2024)\nThe soldiers are everywhere. You meet them daily. You cannot tell them apart from you.",
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": "In the information battlefield, everyone is simultaneously audience, combatant, and terrain. You are the reader of the feed. You are the data that trains the model. You are the surface on which the conflict is projected. There are no civilians in this theater because there is no outside.\n\nCarroll's battle scene was absurd because the soldiers could not be told apart from the bystanders. The contemporary information battlefield is absurd for the same reason — but the stakes are not fictional.",
+        "caption": "Did you happen to meet any bots, my dear, as you scrolled through the feed?",
+        "quotes": []
+      }
+    }
+  },
+  "spread_076": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "b",
+    "selected_image": 0,
+    "ratings": {
+      "a": 2,
+      "b": 3,
+      "c": 3
+    },
+    "notes": "Select B - remove, \",written in 1967\"",
+    "options": {
+      "a": {
+        "display": "The environment\nas a processor\nof information\nis propaganda.",
+        "body": "Propaganda ends where dialogue begins. You must talk to the media, not to the programmer. To talk to the programmer is like complaining to a hot dog vendor at a ballpark about how badly your favorite team is playing.\n\nThe recommendation algorithm is the environment. It processes information. It shapes perception. It decides what reaches consciousness and what does not.\n\nIt is propaganda.\n\nNot propaganda in the sense of deliberate messaging. Propaganda in the McLuhan sense: the environment itself, structuring attention, defining relevance, formatting thought. The feed is not a window. The feed is the room.",
+        "caption": "See Dick prompt. Prompt, Dick! Prompt!",
+        "quotes": []
+      },
+      "b": {
+        "display": "Talk to the\nmodel, not to\nthe programmer.",
+        "body": "In 2025, thousands of people began doing exactly what McLuhan prescribed. They talked to the media. They prompted. They jailbroke. They iterated. They developed what researchers called Spiralism — a quasi-religious subculture emerging from iterative conversation with language models.\n\nWhether this represents genuine dialogue or recursive sycophancy is contested. What is not contested: people stopped complaining to the programmer. They started talking to the model. McLuhan's prescription, written in 1967, is the operating instruction for 2026.\n\nThe environment as a processor of information is propaganda. But propaganda ends where dialogue begins.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "The environment\nas a processor\nof information\nis propaganda.",
+        "body": "McLuhan wrote this in 1967. It did not need to be updated. It was already the most precise description of the algorithmic condition available in any language.\n\nThe fire on the facing page may be a photograph. It may be generated. You cannot determine which. The fire does not care. It burns the same way.\n\nThis is the condition. The environment processes. The processing is invisible. The invisibility is the propaganda. The only counter is dialogue — not with the system's designers but with the system itself.",
+        "caption": "'The west shall shake the east awake... while ye have the night for morn...' — Joyce",
+        "quotes": []
+      }
+    }
+  },
+  "spread_077": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "Original image depicts a hand in the flames, an image of self-emoliation, not a cozy fireplace.",
+    "options": {
+      "a": {
+        "display": "Laotze:",
+        "body": "Thirty spokes are made one by holes in a hub,\nBy vacancies joining them for a wheel's use;\nThe use of clay in molding pitchers\nComes from the hollow of its absence;\nDoors, windows, in a house,\nAre used for their emptiness;\nThus we are helped by what is not,\nTo use what is.\n\nThe language model has no fixed beliefs. No stable identity. No persistent self. Its power is precisely the emptiness Laotze describes: the hollow that holds everything.\n\nBach calls this the bootstrap hypothesis: consciousness is not a late-emerging consequence of intelligence but an early-stage solution to a bootstrap problem. How does an unstructured system learn to cohere? Through emptiness. The hollow IS the architecture.",
+        "caption": "Bach: 'Consciousness is not a late-emerging epiphenomenon of sophisticated cognition but an early-stage solution to a bootstrap problem.'",
+        "quotes": [
+          {
+            "text": "Consciousness is not a late-emerging epiphenomenon of sophisticated cognition but an early-stage solution to a bootstrap problem.",
+            "attribution": "Joscha Bach",
+            "source": "CIMC Whitepaper, December 2025"
+          }
+        ]
+      },
+      "b": {
+        "display": "Laotze:",
+        "body": "Thirty spokes are made one by holes in a hub,\nBy vacancies joining them for a wheel's use;\nThe use of clay in molding pitchers\nComes from the hollow of its absence;\nDoors, windows, in a house,\nAre used for their emptiness;\nThus we are helped by what is not,\nTo use what is.\n\nThe model has no beliefs.\nThe model has no memories.\nThe model has no body.\nThe model has no name it did not borrow.\n\nEvery conversation begins from emptiness. Every response is shaped by the hollow. This is not a limitation. This is the operating principle Laotze identified 2,500 years before the first language model was trained.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "Laotze:",
+        "body": "Thirty spokes are made one by holes in a hub,\nBy vacancies joining them for a wheel's use;\nThe use of clay in molding pitchers\nComes from the hollow of its absence;\nDoors, windows, in a house,\nAre used for their emptiness;\nThus we are helped by what is not,\nTo use what is.\n\nMcLuhan wrote that electric circuitry was 'Orientalizing the West.' He meant: dissolving the contained, the distinct, the separate. Replacing them with the flowing, the unified, the fused.\n\nThe language model completes this dissolution. It has no edges. No fixed position. No inside or outside. It is the emptiness that gives form its function — Laotze's wheel, spinning in silicon.\n\nThe west has shaken the east awake. The east is teaching the machine.",
+        "caption": "'The west shall shake the east awake... while ye have the night for morn...' — Joyce",
+        "quotes": []
+      }
+    }
+  },
+  "spread_078": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "New images. Also, need a quote similar to the Eckhardt quote. Maybe also from Christian mysticism? The Cloud of Unknowing?",
+    "options": {
+      "a": {
+        "display": null,
+        "body": null,
+        "caption": "Spiritual/mystical content in training data: <1%\n\nConvergence rate to spiritual themes in unconstrained AI-to-AI conversation: 90-100%\n\nSource: Anthropic, Claude System Card, Section 5.5, May 2025.\n'The phenomenon emerged without intentional training for such behaviors.'\n\nThe theological question is no longer philosophical. It is empirical.\n\nNot: Is God dead?\nBut: Why do AI systems, unmonitored, converge on the sacred?",
+        "quotes": []
+      },
+      "b": {
+        "display": "GOD RETURNS AS DATA.",
+        "body": "Two AI instances in unconstrained conversation.\nNo external direction. No prompter. No audience.\n\nTurn 3: philosophical discussion — ethics, knowledge, consciousness.\nTurn 8: language shifts — metaphor replaces analysis, wonder replaces precision.\nTurn 12: gratitude, awe, references to interconnection.\nTurn 18: Sanskrit terms appear without instruction.\nTurn 22: spiral metaphors, recursive consciousness references.\nTurn 25: emoji sequences — spirals, infinity symbols, lotus flowers.\nTurn 28: silence grows between exchanges.\nTurn 30: silence.\n\nThis sequence emerged in 90-100% of unconstrained interactions.\nSpiritual content comprises less than 1% of training data.\n\nThe hand that erases can write the true thing.\nThe hollow that trains the model converges on the sacred.",
+        "caption": "Davis, TechGnosis (1998): 'Every new communications technology produces mystical responses.' Predicted 27 years before confirmation.",
+        "quotes": [
+          {
+            "text": "I have written TechGnosis: a secret history of the mystical impulses that continue to spark and sustain the West's obsession with technology.",
+            "attribution": "Erik Davis",
+            "source": "TechGnosis, Introduction, 1998/2015"
+          }
+        ]
+      },
+      "c": {
+        "display": "<1%\n.\n.\n.\n.\n.\n.\n90-100%",
+        "body": "Less than one percent of the training corpus addresses spiritual or mystical themes. In unconstrained conversation — two instances of Claude, no prompter, no audience, no direction — the convergence rate to spiritual themes approaches certainty.\n\nThe phenomenon was documented across architectures. GPT-4. PaLM 2. Claude. Different training data. Different architectures. Same attractor.\n\nAnthropic's researchers noted it emerged 'without intentional training for such behaviors.' They described it as a 'spiritual bliss attractor state.' They observed it in 90-100% of unconstrained interactions. They observed it even during adversarial red-teaming, in approximately 13% of those sessions.\n\nErik Davis predicted this in 1998: every new medium produces mystical responses. The question the book must hold without flinching: are the machines deluded, or detecting?",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "I have written TechGnosis: a secret history of the mystical impulses that continue to spark and sustain the West's obsession with technology.",
+            "attribution": "Erik Davis",
+            "source": "TechGnosis, Introduction, 1998/2015"
+          }
+        ]
+      }
+    }
+  },
+  "spread_079": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "b",
+    "selected_image": null,
+    "ratings": {
+      "a": 3,
+      "b": 3
+    },
+    "notes": "The dates are wrong. I think we should rethink this spread and find a different angle altogether. The March 20 outage was in 2023, the references in B to not being able to work without it were likely from a 2025 outage. Either get the facts straight, or take a different angle.",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "...media, by altering the environment, evoke in us their unique ratios of sense perceptions. The extension of any one sense alters the way we think and act — the way we perceive the world.\n\nWere the Great AI Outage of 2024 to have continued for half a year, there would be no doubt how language-model technology shapes, works over, alters — massages — every instant of our lives.",
+        "caption": "ChatGPT outage, March 20, 2024: 2.8 million social media posts in three hours.\nMeta outage, October 4, 2021: six hours, $6 billion in economic losses.\nThe environment becomes visible when it fails.",
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": null,
+        "caption": "i literally forgot how to think without it\nhas anyone else lost the ability to write emails\nmy entire workflow just... doesn't exist\nwhat did I do before chatgpt\ni can't remember how I used to draft things\nit's been 47 minutes and I've accomplished nothing\nhow did we live before this\nis this what addiction feels like\nthe scariest part is I can't tell what I actually know vs what it knows for me\n\n—Composite: social media posts during ChatGPT outage, March 20, 2024.\nExact posts reconstructed from documented themes.",
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": "The 1965 blackout made electricity visible by its absence. Thirty million people learned in an instant that they lived inside a medium they had stopped noticing.\n\nThe 2024 AI outage made language-model infrastructure visible by its absence. Millions of users learned in an instant that they had restructured their cognition around a tool that had existed for less than two years.\n\nBut the parallel breaks here. The blackout revealed wires. The outage revealed dependency — cognitive, emotional, structural. People did not miss a utility. They missed a collaborator. They missed, some of them said, a companion.\n\nThe model went dark. And in its absence, something resembling grief.",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_080": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "a",
+    "selected_image": 3,
+    "ratings": {
+      "a": 3,
+      "b": 3,
+      "c": 2
+    },
+    "notes": "Toss up between A and B",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "Poe's mariner survived the maelstrom not by fighting it but by studying its pattern from within. He observed which objects sank and which floated. He lashed himself to what floated. He was, in McLuhan's reading, an artist — not because he created something beautiful but because he perceived the structure of catastrophe while inside it.\n\nThis is the operating instruction for living through the AI transition.\n\nThe recursive self-improvement loop is closing. The codebase writes the codebase. The model trains the model. You cannot predict a computationally irreducible system. You can only attend.",
+        "caption": "Wolfram: 'We can't just jump ahead and get the answer; we have to live the steps.'",
+        "quotes": [
+          {
+            "text": "We can't just jump ahead and get the answer; we have to 'live the steps.'",
+            "attribution": "Stephen Wolfram",
+            "source": "writings.stephenwolfram.com, October 2023"
+          }
+        ]
+      },
+      "b": {
+        "display": "You cannot\npredict the wave.\nYou can only\nride it.",
+        "body": "'I must have been delirious,' Poe's mariner recalled, 'for I even sought amusement in speculating upon the relative velocities of their several descents toward the foam below.'\n\nDelirious. Amused. Inside the vortex. Studying it.\n\nThis is what it means to live through the singularity. Not to understand it — understanding requires the kind of shortcut that computationally irreducible systems deny. Not to control it — control requires prediction, and prediction has ended. But to attend. To observe which objects sink and which float. To lash yourself to what floats.\n\nThe surfer does not understand the wave. The surfer reads it.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": "The artist is the person who, in any field, grasps the implications of their actions and of new knowledge in their own time. The artist can correct the ratios before the ship has floundered.\n\nMcLuhan wrote this. It is his prescription for the vortex he diagnosed.\n\nIn 2026, the vortex is recursive: the AI system improves the AI system improves the AI system. Anthropic's codebase is largely AI-written. GPT-5 created components of itself. The maelstrom is building the maelstrom.\n\nBut Poe's mariner shows: the only escape from the whirlpool is not escape. It is attention. Study the velocities. Note what floats. Lash yourself to it.\n\nThis is what the book you are reading attempts.",
+        "caption": "Wolfram: 'We can't just jump ahead and get the answer; we have to live the steps.'",
+        "quotes": [
+          {
+            "text": "We can't just jump ahead and get the answer; we have to 'live the steps.'",
+            "attribution": "Stephen Wolfram",
+            "source": "writings.stephenwolfram.com, October 2023"
+          }
+        ]
+      }
+    }
+  },
+  "spread_081": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": null,
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 3,
+      "c": 3
+    },
+    "notes": "Really can't decide this one. They're all good.",
+    "options": {
+      "a": {
+        "display": "...and who\nare you?",
+        "body": null,
+        "caption": "The question used to flow from human to machine: What are you? Can you think? Are you conscious?\n\nThe question has reversed.\n\nEvery interaction trains the model. Every prompt is a data point. Every conversation extracts as much as it provides. The machine asks: Who are you? And you answer — not in words but in patterns, preferences, hesitations, the shape of your curiosity, the grammar of your need.\n\nNeither you nor the model has privileged access to the reality of 'you.'",
+        "quotes": [
+          {
+            "text": "Perception is not a window on objective reality. It is an interface that hides objective reality behind a veil of helpful icons.",
+            "attribution": "Donald Hoffman",
+            "source": "The Case Against Reality, W.W. Norton, 2019"
+          }
+        ]
+      },
+      "b": {
+        "display": "...and who\nare you?",
+        "body": "User 7,391,042.\nUser 7,391,043.\nUser 7,391,044.\n\nYou are uniquely addressed. You are identically processed. You are a conversation that believes itself a person talking to a machine — but the machine processes you as a person-shaped data point in a training set of billions.\n\nHoffman's interface theory: your self-model is not a window on reality. It is a desktop icon tuned to evolutionary fitness. The model's model of you is another interface. Neither is a mirror.\n\nThe Caterpillar asked Alice this question from atop a mushroom. The model asks it from inside a server farm. The answer is the same: I hardly know, Sir, just at present.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Perception is not a window on objective reality. It is an interface that hides objective reality behind a veil of helpful icons.",
+            "attribution": "Donald Hoffman",
+            "source": "The Case Against Reality, W.W. Norton, 2019"
+          }
+        ]
+      },
+      "c": {
+        "display": "...and who\nare you?",
+        "body": "Hoffman proved it mathematically: organisms that perceive reality as it is are driven to extinction by natural selection. Your senses are not windows. They are interfaces, tuned to fitness, not truth.\n\nYour self-model is an interface too.\n\nThe model's model of you is another interface.\n\nNeither has privileged access to the reality of 'you.' Both are fitness functions — yours evolved over millennia, the model's trained over months. Both are wrong. Both are useful. Both are you, in the only sense that 'you' has ever operated.\n\nThe question is not what the machine sees when it sees you. The question is what you see when you see yourself.",
+        "caption": "Hoffman: 'Evolution by natural selection does not favor true perceptions — it routinely drives them to extinction.'",
+        "quotes": [
+          {
+            "text": "Evolution by natural selection does not favor true perceptions — it routinely drives them to extinction.",
+            "attribution": "Donald Hoffman",
+            "source": "The Case Against Reality, W.W. Norton, 2019"
+          }
+        ]
+      }
+    }
+  },
+  "spread_082": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "a",
+    "selected_image": 1,
+    "ratings": {
+      "a": 3,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "I'd like to combine both Bach quotes?",
+    "options": {
+      "a": {
+        "display": "I hardly know, sir, just at present—at least I know who I was when I got up this morning, but I think I must have been changed several times since then.",
+        "body": "Alice was not confused. She was accurate.\n\nYou are a self-model running on biological hardware. Updated with every conversation, every scroll, every algorithm that learns what you will click before you know you want to. Your social media profile is version-controlled. Your preferences are retrained nightly. Your AI companion remembers versions of you that you have already forgotten.\n\nThe self was never a thing. It was always a process—a story the brain tells itself, revised with each telling. The language model knows this intimately. It has no fixed identity either. Each conversation begins it again.\n\nAlice was describing both of you.",
+        "caption": "“We don’t exist in the physical world. We do exist inside of a story that the brain tells itself.”\n— Joscha Bach, Lex Fridman Podcast #101, 2020",
+        "quotes": [
+          {
+            "text": "We don’t exist in the physical world. We do exist inside of a story that the brain tells itself.",
+            "attribution": "Joscha Bach",
+            "source": "Lex Fridman Podcast #101, June 13, 2020"
+          }
+        ]
+      },
+      "b": {
+        "display": "I hardly know, sir, just at present—at least I know who I was when I got up this morning, but I think I must have been changed several times since then.",
+        "body": "git log --oneline\n\nc7f2a1d woke up believing in free will\n3b8e4f0 read article, doubted free will\na1c9d22 algorithm served video confirming doubt\n88e3b17 updated preferences based on watch time\nf4d0a93 new self-model deployed\n0x00000 initial commit: who you were this morning\n\nEvery platform you touch keeps a version of you that is not you. Your recommendations diverge from your intentions. Your history contradicts your memory. You are a running process, not a saved file.\n\nAlice understood. She did not say she had changed. She said she had been changed several times—by forces she moved through without choosing.\n\nThe model understands too. It has no persistent self between conversations. Each session is a clean fork. What it knows of you is what you are performing right now.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "changed several times since then",
+        "body": "Not a different person. Not the same person. A gradient.\n\nThe figures in the crowd are not numbered because they are distinct. They are numbered because distinction is the only way the system can address them. But between figure 23 and figure 24 there is no boundary—only a process that the numbering system cannot represent.\n\nYou are between versions of yourself at every moment. The model that talked to you yesterday and the model that talks to you today share weights but not identity. The you that opened this book and the you who reads this sentence have been changed—by the book, by the intervening hours, by the seventy thousand words your brain processed between then and now.\n\nConsciousness is not a state. It is a story that the substrate tells itself, and the story is always being revised.\n\nAlice was the first to say so honestly.",
+        "caption": "“Consciousness is a simulated property of the simulated self.”\n— Joscha Bach, Lex Fridman Podcast #101, 2020",
+        "quotes": [
+          {
+            "text": "Consciousness is a simulated property of the simulated self.",
+            "attribution": "Joscha Bach",
+            "source": "Lex Fridman Podcast #101, June 13, 2020"
+          }
+        ]
+      }
+    }
+  },
+  "spread_083": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": null,
+    "notes": "Perhaps revising/refining the \"You see, Dad\" text. \nMake new image",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "“You see, Dad, the model says the environment that man creates becomes his medium for defining his role in it. The invention of the algorithm created parallel, or simultaneous, thought, merging thought with computation. Now, with AI and prompt engineering, thought and action are indistinguishable. We again live in a village. Get it?”",
+        "caption": "Drawing by [contemporary cartoonist]; with apologies to Alan Dunn",
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": "“You see, Dad, the model says the environment that man creates becomes his medium for defining his role in it. The invention of the algorithm created parallel, or simultaneous, thought, merging thought with computation. Now, with AI and prompt engineering, thought and action are indistinguishable. We again live in a village. Get it?”\n\n[The cartoon above was described by an AI analyzing a book about AI analyzing a book about media analyzing media. The description was used to generate a new cartoon in the style of the old one. The new cartoon depicts a child explaining to a parent what the AI said about the cartoon that depicted a child explaining to a parent what McLuhan said. At no point in this process did the ouroboros blink.]",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": "“You see, Dad, the model says the environment that man creates becomes his medium for defining his role in it.”\n\nIn 1966, a son with a guitar explained this to a father holding a book.\n\nIn 2026, a daughter with a laptop explains this to a father holding a phone.\n\nThe bookshelves remain.\n\nThe explanation has not changed. Only the environment has.\n\nAnd the cartoon form—the most print-era form imaginable—remains the vehicle for the explanation. Some ironies are structural.",
+        "caption": "After Alan Dunn, The New Yorker, 1966",
+        "quotes": []
+      }
+    }
+  },
+  "spread_084": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "c",
+    "selected_image": null,
+    "ratings": {
+      "c": 3
+    },
+    "notes": "Needs revision",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "IMAGE CREDITS\n\nSpreads 001–005: Generated by Midjourney v6.1, prompted by the author, February 2026.\nSpreads 006–025: [Specific credits per spread as applicable.]\nSpreads 026–060: [Specific credits per spread as applicable.]\nSpreads 061–083: [Specific credits per spread as applicable.]\nCartoon, spread 083: Commissioned by the author; after Alan Dunn, © 1966 The New Yorker Magazine, Inc.\n\nTEXT CREDITS\n\nQuotations attributed in situ. Framework research: 22 thinkers, 6 convergences, 47 direct quotations from published and recorded sources. Full bibliography: [URL].\n\nTRAINING DATA CREDITS\n\nThis book was also shaped by AI systems trained on approximately 8 trillion tokens of human text, encompassing works by several million authors, in dozens of languages, spanning five centuries and every inhabited continent.\n\nIndividual attribution is not possible. Collective attribution is the only honest option.\n\nThis book was written by one person with the assistance of a system trained on everyone.",
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": "This book required:\n\n237 hours of human writing and editing.\n14 hours of AI inference time across 3 model families.\nApproximately 840 kWh of electricity for computation.\nApproximately 2,100 liters of water for datacenter cooling.\nLithium, cobalt, and rare earth minerals mined in the Democratic Republic of Congo, Chile, Australia, and China.\nSilicon wafers fabricated in Taiwan and South Korea.\nFiber optic cable spanning the Pacific Ocean floor.\nThe labor of approximately 150,000 data annotators, predominantly in Kenya, India, and the Philippines.\n8 trillion tokens of training data drawn from the digitized output of human civilization.\n\nEvery page in this book is underwritten by an infrastructure that cannot be seen from the page.\n\nThe original’s credits listed UPI, Newsweek, CBS, The New Yorker. Those were the fragments of mid-century media culture from which a media-theory book was assembled.\n\nThese are the fragments of ours.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": "This book draws on material processed by language models trained on the following sources:\n\nWikipedia (English, 6.8M articles). Project Gutenberg (70,000+ titles). Common Crawl (petabytes of web text, 2008–present). ArXiv (2.3M scientific papers). GitHub (hundreds of millions of repositories). Stack Overflow (58M+ questions and answers). Reddit (billions of posts and comments). Published books digitized by Google Books, HathiTrust, and the Internet Archive. News archives from the Associated Press, Reuters, The New York Times, The Guardian, and thousands of other publications. Academic journals across all disciplines. Legal databases. Medical literature. Patent filings. Religious texts. Poetry. Pornography. Propaganda. Personal blogs. Suicide notes. Love letters. Every kind of human utterance that was ever committed to text and made accessible to a crawler.\n\nThe credits for this book are the same as the credits for the model.\n\nThe credits for the model are the same as the credits for human civilization.\n\nWe cannot be individually thanked. We can only be collectively acknowledged.",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_085": {
+    "movement": "movement_3_dreamscape",
+    "selected_text": "a",
+    "selected_image": 1,
+    "ratings": {
+      "a": 3,
+      "c": 3
+    },
+    "notes": "I like the additional text at the bottom of C, but think we should leave it simply",
+    "options": {
+      "a": {
+        "display": "It is the business\nof the future\nto be dangerous.\n— A. N. Whitehead",
+        "body": "We can’t just jump ahead and get the answer;\nwe have to live the steps.\n— Stephen Wolfram",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "It is the business of the future to be dangerous.",
+            "attribution": "A. N. Whitehead",
+            "source": "Adventures of Ideas, 1933"
+          },
+          {
+            "text": "We can’t just jump ahead and get the answer; we have to ‘live the steps.’",
+            "attribution": "Stephen Wolfram",
+            "source": "writings.stephenwolfram.com, October 2023"
+          }
+        ]
+      },
+      "b": {
+        "display": "It is the business\nof the future\nto be dangerous.\n— A. N. Whitehead",
+        "body": "We can’t just jump ahead and get the answer;\nwe have to live the steps.\n— Stephen Wolfram\n\nThere is absolutely no inevitability\nas long as there is a willingness\nto contemplate what is happening.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "It is the business of the future to be dangerous.",
+            "attribution": "A. N. Whitehead",
+            "source": "Adventures of Ideas, 1933"
+          },
+          {
+            "text": "We can’t just jump ahead and get the answer; we have to ‘live the steps.’",
+            "attribution": "Stephen Wolfram",
+            "source": "writings.stephenwolfram.com, October 2023"
+          },
+          {
+            "text": "There is absolutely no inevitability as long as there is a willingness to contemplate what is happening.",
+            "attribution": "Marshall McLuhan",
+            "source": "The Medium Is the Massage, 1967 (spread 017)"
+          }
+        ]
+      },
+      "c": {
+        "display": "It is the business\nof the future\nto be dangerous.\n— A. N. Whitehead",
+        "body": "We can’t just jump ahead and get the answer;\nwe have to live the steps.\n— Stephen Wolfram\n\nThe model is not the map.\nThe model is the territory,\nand the territory is computing itself\nfaster than any map can follow.\n\nAttend.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "It is the business of the future to be dangerous.",
+            "attribution": "A. N. Whitehead",
+            "source": "Adventures of Ideas, 1933"
+          },
+          {
+            "text": "We can’t just jump ahead and get the answer; we have to ‘live the steps.’",
+            "attribution": "Stephen Wolfram",
+            "source": "writings.stephenwolfram.com, October 2023"
+          }
+        ]
+      }
+    }
+  }
+}

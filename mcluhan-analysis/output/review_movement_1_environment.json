@@ -1,0 +1,946 @@
+{
+  "spread_011": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 0,
+    "ratings": {
+      "a": 2,
+      "b": 3,
+      "c": 3
+    },
+    "notes": "There are good qualities of each, especially B and C. I like that A mirrors the original, but the Q & A pattern is not at punchy as the sequential questions in the original. I think we should generate more options that combine these three, making a punchy fast paced column of text more like the original.",
+    "options": {
+      "a": {
+        "display": "you.",
+        "body": "How much do you make?\nYour Venmo transaction history already knows.\n\nHave you ever contemplated suicide?\nYour search history answered at 3:47 a.m.\n\nAre you now or have you ever been...?\nYour location data places you there for forty-seven minutes on the fourteenth.\n\nYour face was scanned 47 times today. Your keyboard cadence is a biometric signature more unique than your fingerprint. Your phone's accelerometer knows your gait, your mood, your blood alcohol content.\n\nMcLuhan's questions required an interrogator.\nYours compile themselves from the ambient exhaust of living.",
+        "caption": "Georgetown Law Center for Privacy & Technology, 2016: half of all American adults are in a facial recognition database. They were never asked.",
+        "quotes": []
+      },
+      "b": {
+        "display": "you.",
+        "body": "No one asked.\n\nThat's the point. The dossier compiles itself. Your face crossed seventeen cameras between home and here. Your keyboard rhythm is a signature more singular than the whorls on your thumb. The accelerometer in your pocket graphs your gait like a cardiogram — and from gait alone, the model infers mood, sobriety, fatigue.\n\nMcLuhan imagined a tyrannical surveillance apparatus. He was thinking too small. The apparatus doesn't watch you. You secrete it. Every touch, every pause, every 3 a.m. scroll — ambient exhaust, collected at the speed of living.\n\nThe fingerprint on the facing page was prophetic. You are the target. You always were.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "you.",
+        "body": null,
+        "caption": "face: scanned 47x/day. iris: indexed. voice: spectrographed. gait: accelerometer-mapped. typing cadence: unique as DNA. heart rate: wristband-logged at 0.3s intervals. sleep architecture: mattress-sensored. search history: archived to keyword. purchase pattern: profiled to product. location: triangulated to meter. scroll speed: mood-inferred. pause duration: attention-modeled.\n\nthe dossier is not compiled.\nit secretes itself.\nyou are not the subject of surveillance.\nyou are its medium.",
+        "quotes": []
+      }
+    }
+  },
+  "spread_012": {
+    "movement": "movement_1_environment",
+    "selected_text": "a",
+    "selected_image": 1,
+    "ratings": {
+      "a": 3,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "The Display text will be divided by the gutter, perhaps place on the left side of the spread. \nThe layout deviates from the regular pattern of the original, which emphasizes strong design method and rhetoric, We should reconsider this spread and this sequence of spreads. \nFrom B: \"The living room is a co-working space for attention extraction\" is great. \"The family still eats together. They have simply stopped sharing a reality\"\n\nI choose A, but with revisions borrowed from B\nMake it punchier like the original.",
+    "options": {
+      "a": {
+        "display": "your family.",
+        "body": "The family circle has not widened. It has been partitioned.\n\nFour people on the same couch. Four separate feeds. Netflix serves different queues to each profile. TikTok calibrates to each thumb. The group chat is the only room they all inhabit — and even there, the algorithm decides what rises.\n\nMcLuhan saw the worldpool of information washing over the family from outside. He missed the quieter flood: each member drawn into a private current, the household dissolving not from external force but from personalization so precise it renders shared experience an accident.\n\nThe average American family shares a home and inhabits 4.3 distinct algorithmic realities.\n\nThe coat rack has no hooks left. Everyone is wearing headphones.",
+        "caption": "Pew Research Center, 2023. The number is conservative. It counts platforms, not feeds.",
+        "quotes": []
+      },
+      "b": {
+        "display": "your family.",
+        "body": "Same kitchen. Same table. Four screens. Four worlds.\n\nThe algorithm does not break families. It optimizes them into parallel streams. Each member becomes a market of one, served content calibrated to their scroll speed, their pause duration, their 2 a.m. habits. The living room is a co-working space for attention extraction.\n\nHaraway imagined the cyborg family as liberation. What arrived was market segmentation.\n\nMcLuhan's worldpool of information has been drained into personalized tributaries that never converge. The family still eats together. They have simply stopped sharing a reality.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "your family.",
+        "body": "PARENT 1: news feed, finance app, true-crime podcast, smart thermostat, sleep tracker. Algorithmic profile: anxious professional.\n\nPARENT 2: Instagram reels, meal-planning AI, meditation app, ring doorbell, period tracker. Algorithmic profile: optimized caregiver.\n\nCHILD 1: YouTube Shorts, Roblox, Discord, homework bot, screen-time limiter (circumvented). Algorithmic profile: attention commodity, age 13.\n\nCHILD 2: Cocomelon, iPad, no profile yet. Algorithmic profile: pre-literate training data.\n\nFour humans. Four products. One roof.\nThe family circle hasn't widened. It's been individually shrink-wrapped.",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_013": {
+    "movement": "movement_1_environment",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "Forty-seven milliseconds is the distance between the economy and its spectators.\n\nNeed to find a new image",
+    "options": {
+      "a": {
+        "display": "your neighborhood.",
+        "body": "McLuhan declared that electric circuitry overthrew time and space. He was right. But what replaced them is not the global village. It is the bandwidth tier.\n\nYour neighborhood is defined by milliseconds, not miles. Forty-seven milliseconds of latency separates a high-frequency trading hub from everywhere else. Starlink's 6,000 satellites redraw geography from orbit. The 1996 Telecommunications Act imagined a 'digital divide' that was spatial — the wrong side of town. The 2020s divide is temporal. If your packets arrive late, you do not participate in the real-time economy. You participate in its archive.\n\nBandwidth is the new property line. Latency is the new distance. The map has been redrawn, and you were not consulted.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Planetary computation reorganizes geopolitics according to the topological relations of information, not the territorial jurisdictions of traditional states.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack, MIT Press, 2016, p. 23"
+          }
+        ]
+      },
+      "b": {
+        "display": "your neighborhood.",
+        "body": "Forget the street. Forget the zip code. Your neighborhood is a bandwidth tier.\n\nSix thousand satellites overhead. Fiber-optic cables on the ocean floor. Cell towers triangulating your position to the meter. The infrastructure that defines where you live has nothing to do with the ground you stand on.\n\nForty-seven milliseconds. That is the latency gap between a trading floor in Manhattan and a desktop in rural Montana. Forty-seven milliseconds is the distance between the economy and its spectators.\n\nBratton calls it topology over territory. The new map is drawn in packet-switching speeds. And on this map, your physical address is the least interesting thing about your location.",
+        "caption": "6,000+ Starlink satellites in orbit as of 2025. The constellation is visible to the naked eye. The new neighborhood watch.",
+        "quotes": [
+          {
+            "text": "Planetary computation reorganizes geopolitics according to the topological relations of information, not the territorial jurisdictions of traditional states.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack, MIT Press, 2016, p. 23"
+          }
+        ]
+      },
+      "c": {
+        "display": "your neighborhood.",
+        "body": "0.3 ms — server-to-server, same data center.\n3 ms — Chicago to New York, fiber-optic direct.\n12 ms — New York to London, undersea cable.\n47 ms — Manhattan trading floor to rural Montana, last-mile copper.\n120 ms — Sub-Saharan Africa to nearest content delivery node.\n550 ms — Low-earth orbit satellite bounce, 2020.\n20 ms — Low-earth orbit satellite bounce, 2025.\n\nEvery millisecond is a border crossing. Every border determines what you can buy, sell, know, and do — and how long after everyone else you can do it.\n\nThe neighborhood is a latency gradient. You live in it right now. You can't see the walls.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Planetary computation reorganizes geopolitics according to the topological relations of information, not the territorial jurisdictions of traditional states.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack, MIT Press, 2016, p. 23"
+          }
+        ]
+      }
+    }
+  },
+  "spread_014": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 1,
+    "ratings": {
+      "a": 2,
+      "b": 3,
+      "c": 3
+    },
+    "notes": "Need a new image.\n\nB and C are a toss up. Both great.",
+    "options": {
+      "a": {
+        "display": "your education.",
+        "body": "The student grows up with a machine that can generate any essay, solve any equation, explain any concept on demand. The classroom still tests whether the student can personally reproduce these operations.\n\nThis is not a technology problem. It is an epistemological one.\n\nThe gap McLuhan identified — the electric child in the nineteenth-century classroom — has metastasized. It is no longer a gap between media. It is a gap between kinds of knowing. Propositional knowledge — facts a student can state — is now infinite, free, and instantaneous. But knowing-that has never produced wisdom. The AI tutor delivers forty thousand conversations a day and cannot teach a single student to care.\n\nThe test is not broken. The test was always testing the wrong thing.",
+        "caption": "Khan Academy's Khanmigo: 40,000+ daily AI tutoring conversations. Student engagement metrics: declining.",
+        "quotes": []
+      },
+      "b": {
+        "display": "your education.",
+        "body": "The answer is free.\n\nAny answer. Any question. Instantaneously, in 95 languages, at any reading level, with worked examples, follow-up questions, and a patient tone no human teacher can sustain for eight hours.\n\nSo what is the classroom for?\n\nNot information — the machine has more. Not explanation — the machine is tireless. Not assessment — the machine can generate and grade the test simultaneously.\n\nWhat remains is the thing no model can deliver: the experience of finding something worth knowing. The slow, inefficient, ungenerateable encounter with a problem that matters to you specifically, in your body, in your moment.\n\nPropositions are free. Meaning still costs everything.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "your education.",
+        "body": "WHAT THE MACHINE KNOWS:\nEvery fact in Wikipedia. Every equation in Wolfram Alpha. Every textbook digitized since 2004. Every lecture transcribed. Every exam answer, generated on demand in the student's own prose style. Average response time: 1.2 seconds.\n\nWHAT THE MACHINE CANNOT KNOW:\nWhat it feels like to not understand. The frustration that precedes insight. The silence in a classroom when a question lands. Why this problem and not another. Why now. Why you.\n\nThe first column is infinite and free.\nThe second column is finite and priceless.\nThe classroom was always about the second column.\nWe just couldn't see it until the first one was automated.",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_015": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 1,
+    "ratings": {
+      "a": 2,
+      "b": 3,
+      "c": 2
+    },
+    "notes": "A: \"Your job is the 0.3 percent the machine routes to a human because the cost of being wrong exceeds the cost of asking you.\"\nC: \"McLuhan said the circuit would learn your job. He was almost right. The circuit learned 99.7% of your job. What remains is the part too expensive to automate and too painful to watch.\"\n\nImages need to be mirrored so the person in them is not obscured by the text.",
+    "options": {
+      "a": {
+        "display": "your job.",
+        "body": "The system processes 99.7 percent.\n\nYou handle the rest. The edge case. The anomaly. The decision the model cannot confidence-score above threshold. You are the override button in an automated pipeline, pressed two hundred times per hour in an Amazon fulfillment center, pressed once every eleven seconds by a content moderator reviewing what the algorithm flagged, pressed silently by a radiologist confirming what the neural network detected.\n\nMcLuhan noted that 'jobs' were a Gutenberg invention — a five-hundred-year pattern now dissolving. He hoped for leisure. What arrived was the exception queue.\n\nYou are not being replaced. You are being narrowed. Your job is the 0.3 percent the machine routes to a human because the cost of being wrong exceeds the cost of asking you.",
+        "caption": "McKinsey Global Institute, 2023: 30% of work hours in the US economy could be automated by 2030.",
+        "quotes": []
+      },
+      "b": {
+        "display": "your job.",
+        "body": "You are the rounding error.\n\nAutomated logistics: 99.7% of decisions. Algorithmic content moderation: 99.9% of posts. Diagnostic imaging AI: 97.3% accuracy before human review.\n\nThe remaining fraction is you. Not the engine. The override button. You are paid to handle what the model cannot confidence-score: the ambiguous package, the maybe-violent image, the shadow on the scan that might be nothing.\n\nTwo hundred micro-decisions per hour. That is an Amazon warehouse worker's cognitive load — not lifting, not sorting, but judging the cases the robots punt upward.\n\nMcLuhan imagined automation as liberation. What it liberated was the machine. You are the exception handler, and the exceptions are getting fewer.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": "your job.",
+        "body": "POSITION: Human Exception Handler\nDEPARTMENT: Automated Pipeline Quality Assurance\nREPORTS TO: Algorithm\n\nRESPONSIBILITIES:\n— Review cases the model routes to you when its confidence score falls below threshold\n— Make judgment calls the system cannot cost-justify automating (yet)\n— Provide the appearance of human oversight for regulatory compliance\n— Absorb psychological costs the model was not designed to carry (see: content moderation, trauma counseling, end-of-life care)\n\nCOMPENSATION: Competitive with other exception handlers in your latency tier\n\nDURATION: Until threshold improves\n\nMcLuhan said the circuit would learn your job. He was almost right. The circuit learned 99.7% of your job. What remains is the part too expensive to automate and too painful to watch.",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_016": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 0,
+    "ratings": {
+      "a": 2,
+      "b": 2,
+      "c": 1
+    },
+    "notes": "B: \"This is not the failure of democracy. Democracy simply became irrelevant to the systems that actually govern.\"\n\nB is best, but I think it needs improving. \nThis is good from A: \"McLuhan called vote-counting an eighteenth-century ritual. The nose, he said, was being counted when it should be scanned.\n\nIt is now scanned.\nMcLuhan called vote-counting an eighteenth-century ritual. The nose, he said, was being counted when it should be scanned.\n\nIt is now scanned.\" ... \"If the algorithm governs, who did you vote for?\n\nThe nose is no longer counted. The nose is classified, scored, and governed — before the ballot is printed.\"",
+    "options": {
+      "a": {
+        "display": "your government.",
+        "body": "McLuhan called vote-counting an eighteenth-century ritual. The nose, he said, was being counted when it should be scanned.\n\nIt is now scanned.\n\nThe Netherlands' SyRI system flagged welfare recipients as fraud risks using algorithmic scoring. A court struck it down in 2020 for violating human rights. The algorithm had already denied benefits for four years.\n\nLos Angeles deployed PredPol to predict crime by neighborhood. It was discontinued in 2020 after independent audits documented racial bias. The predictions had already dispatched patrol cars for six years.\n\nChina's social credit system governs 1.4 billion people through incentive architectures no legislature debated.\n\nIf the algorithm governs, who did you vote for?\n\nThe nose is no longer counted. The nose is classified, scored, and governed — before the ballot is printed.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.",
+            "attribution": "Safiya Noble",
+            "source": "Algorithms of Oppression, NYU Press, 2018"
+          }
+        ]
+      },
+      "b": {
+        "display": "your government.",
+        "body": "The nose is no longer counted. It is scanned, classified, scored, and governed.\n\nPredictive policing deploys patrol cars before crimes are committed. Automated welfare systems deny benefits based on risk scores no applicant can see, let alone contest. Facial recognition at the border decides who enters and who waits. Algorithmic sentencing tools recommend prison terms. Content moderation algorithms determine what political speech reaches you and what vanishes.\n\nNone of this was legislated. None of it was voted on. Most of it was purchased by a procurement office and deployed before any elected official understood what it did.\n\nThis is not the failure of democracy. Democracy simply became irrelevant to the systems that actually govern.\n\nIf the algorithm decides, who did you elect?",
+        "caption": "SyRI (Netherlands, 2014-2020). PredPol (Los Angeles, 2012-2020). Social Credit System (China, 2014-present). COMPAS sentencing algorithm (US, 2000-present). None were subject to a public vote.",
+        "quotes": [
+          {
+            "text": "Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.",
+            "attribution": "Safiya Noble",
+            "source": "Algorithms of Oppression, NYU Press, 2018"
+          }
+        ]
+      },
+      "c": {
+        "display": "your government.",
+        "body": "CITIZEN PROFILE — ALGORITHMIC GOVERNANCE AUDIT\n\nBENEFITS ELIGIBILITY: determined by risk score [SyRI model, Netherlands, 2014-2020; struck down by court, 2020]\nPOLICING PRIORITY: determined by predictive algorithm [PredPol, discontinued 2020; racial bias documented]\nBORDER CLEARANCE: determined by facial recognition match [CBP, 97.5% accuracy; 2.5% error rate = 30,000 wrongful flags/year at JFK alone]\nSENTENCING RECOMMENDATION: determined by recidivism model [COMPAS; ProPublica audit found black defendants scored higher risk at twice the rate of white defendants]\nCONTENT VISIBILITY: determined by recommendation algorithm [platform-specific; no public audit]\nCREDIT ACCESS: determined by scoring model [undisclosed weights; no appeals process]\n\nSTATUS: governed\nCONSENT: not required\nAPPEALS PROCESS: see above\n\nWho did you vote for?",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.",
+            "attribution": "Safiya Noble",
+            "source": "Algorithms of Oppression, NYU Press, 2018"
+          }
+        ]
+      }
+    }
+  },
+  "spread_017": {
+    "movement": "movement_1_environment",
+    "selected_text": "c",
+    "selected_image": 1,
+    "ratings": {
+      "a": 2,
+      "b": 1,
+      "c": 2
+    },
+    "notes": "Why does this one deviate from the previous pattern, matching the themes of the original? It should have the display, \"the others\" in alignment with the original. \n\nImage 2 is good, but the man's face is on the wrong side of the spread. \n\nNeed to find a better text option. From the three I like: \nA - Recognition comes from those who refuse adjustment.\n\nThe shock is not that the environment is new. The shock is that it was always there — invisible the way water is invisible to fish — and someone finally pointed at it.\n\nB - \"Recognition comes from those who refuse adjustment.\n\nThe shock is not that the environment is new. The shock is that it was always there — invisible the way water is invisible to fish — and someone finally pointed at it.\"  ...  \"Recognition comes from those who refuse adjustment.\n\nThe shock is not that the environment is new. The shock is that it was always there — invisible the way water is invisible to fish — and someone finally pointed at it.\"\n\nWhat are the referents with Crawford, Gebru and the turtle-rifle? \n\nAgain, I want this to conform with the \"others\" in the original.",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "The poet, the artist, the sleuth —\nwhoever sharpens our perception tends to be antisocial.\n\nMcLuhan assigned the early warning system to artists. They were the ones who could see the water the fish swam in.\n\nIn the AI environment, the seers are a different cohort.\n\nCrawford traced the supply chain from lithium mine to data center and found the cloud was made of rock and labor. Gebru documented bias in the models and was fired for the findings. Adversarial researchers discovered that a few altered pixels make a neural network see a rifle where there is a turtle.\n\nRecognition comes from those who refuse adjustment.\n\nThe shock is not that the environment is new. The shock is that it was always there — invisible the way water is invisible to fish — and someone finally pointed at it.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "AI is neither artificial nor intelligent. It is made from natural resources, fuel, and human labor.",
+            "attribution": "Kate Crawford",
+            "source": "Atlas of AI, Yale University Press, 2021, p. 8"
+          }
+        ]
+      },
+      "b": {
+        "display": "The shock of recognition!",
+        "body": "Six spreads ago you were addressed as a data point. Your family, your neighborhood, your education, your job, your government — each was revealed as a layer of algorithmic mediation you inhabit without seeing.\n\nBut someone sees.\n\nCrawford saw the mine beneath the cloud. Gebru saw the bias encoded in the training data and named it before it was safe to. Buolamwini saw the face the camera couldn't see — and proved the failure was architectural, not accidental.\n\nThe environment is invisible to those adjusted to it. Recognition requires maladjustment. The seer is always the one who can't stop pointing at something everyone else has learned to ignore.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "AI is neither artificial nor intelligent. It is made from natural resources, fuel, and human labor.",
+            "attribution": "Kate Crawford",
+            "source": "Atlas of AI, Yale University Press, 2021, p. 8"
+          }
+        ]
+      },
+      "c": {
+        "display": null,
+        "body": "Who sees it?\n\nNot the user. The user is adjusted. The feed is comfortable. The recommendations are good. The convenience is real.\n\nThe one who sees is the one who traces the wire. Who asks where the data goes. Who follows the supply chain from the lithium mine in the Congo to the data center in Virginia to the neural network that decides whether you are creditworthy.\n\nCrawford saw it. She called it what it was: neither artificial nor intelligent, but made from natural resources, fuel, and human labor.\n\nGebru saw it and was punished for saying so.\n\nThe adversarial researcher saw it by teaching the machine to see wrong — a turtle reclassified as a rifle with three changed pixels.\n\nRecognition is not comfortable. It never was. The fish that sees the water can no longer swim in it the same way.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "AI is neither artificial nor intelligent. It is made from natural resources, fuel, and human labor.",
+            "attribution": "Kate Crawford",
+            "source": "Atlas of AI, Yale University Press, 2021, p. 8"
+          }
+        ]
+      }
+    }
+  },
+  "spread_018": {
+    "movement": "movement_1_environment",
+    "selected_text": "a",
+    "selected_image": 1,
+    "ratings": {
+      "a": 2,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "'amputes' is not a word. It should be 'amputates'\n\nI like the Body and Display of A. I also like the Body of B, the stack. I like the Body of C. I do not like any of the quotes, and since the original spread does not contain a quote, we can just be rid of it.",
+    "options": {
+      "a": {
+        "display": "All\nmodels\nare\nextensions\nof\nsome\nhuman\nfaculty—\ncognitive\nor\nperceptual.",
+        "body": "GPT extends language production. DALL-E extends visual imagination. AlphaFold extends spatial reasoning. Each model amputes what it amplifies. You outsource a capacity. The capacity atrophies. The model improves. You outsource more.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Media determine our situation.",
+            "attribution": "Friedrich Kittler",
+            "source": "Gramophone, Film, Typewriter, Stanford UP, 1999, p. xxxix"
+          }
+        ]
+      },
+      "b": {
+        "display": "All\nmodels\nare\nextensions\nof\nsome\nhuman\nfaculty.",
+        "body": "The Stack is not a metaphor. It is a design brief for the accidental megastructure.\n\nEarth: the minerals in your phone.\nCloud: the server farm drinking a river.\nCity: the smart grid that knows your commute.\nAddress: the profile that is you, legally.\nInterface: the screen you cannot stop touching.\nUser: whatever is left.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "The Stack is not a metaphor... It is a design brief for the accidental megastructure.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack, MIT Press, 2015, p. 5"
+          }
+        ]
+      },
+      "c": {
+        "display": "All\nmodels\nare\nextensions.",
+        "body": null,
+        "caption": "Every extension is an amputation. Every amputation, an invitation.\n\nWhat you extend, you numb.\nWhat you numb, you forget.\nWhat you forget, you delegate.\nWhat you delegate becomes the world.",
+        "quotes": []
+      }
+    }
+  },
+  "spread_019": {
+    "movement": "movement_1_environment",
+    "selected_text": "c",
+    "selected_image": 0,
+    "ratings": {
+      "a": 2,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "A or C. I love the Bratton quote, but it should be written only once, at the bottom of the spread,",
+    "options": {
+      "a": {
+        "display": null,
+        "body": null,
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": null,
+        "caption": "1.3 million kilometers of submarine cable.\n95% of intercontinental data.\nYou have never seen any of it.",
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": null,
+        "caption": "The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.",
+        "quotes": [
+          {
+            "text": "The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack, MIT Press, 2015"
+          }
+        ]
+      }
+    }
+  },
+  "spread_020": {
+    "movement": "movement_1_environment",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 3,
+      "c": 2
+    },
+    "notes": "The images of spreads 018-021 progress through views of the toes of a foot. The final image is the roundness of the toe in 020, before transitioning to the roundness of the wheel in 021. dThis is a powerful rhetorical device. The updated version deviates from this. We should reanalyze this sequence and revise to match the sequencing of the original.\n\nText in A is great. \nText in B is also great. I especially love: The spectrum runs from bacterium to brain to silicon. Intelligence was never binary. It was never yours alone.",
+    "options": {
+      "a": {
+        "display": "The GPU.",
+        "body": "Extension of pattern recognition.\n\nBiological: a shadow moves in peripheral vision. The amygdala fires before conscious thought. You flinch. You survive.\n\nComputational: 3,958 teraflops. More patterns per second than every human brain that has ever lived. It does not flinch. It optimizes.\n\nOne was shaped by predators. The other by profit.",
+        "caption": "NVIDIA H100: 3,958 TFLOPS AI performance",
+        "quotes": []
+      },
+      "b": {
+        "display": "The GPU.",
+        "body": "An extension of pattern recognition — but not the kind you evolved.\n\nYour ancestors survived by seeing tigers in tall grass. The H100 survives by seeing fraud in transactions, tumors in tissue, faces in crowds, sentiment in sentences.\n\nThe spectrum runs from bacterium to brain to silicon. Intelligence was never binary. It was never yours alone.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Intelligence is not a binary. It is a rich, multidimensional spectrum.",
+            "attribution": "Michael Levin",
+            "source": "Various lectures and interviews, 2020-2024"
+          }
+        ]
+      },
+      "c": {
+        "display": "The GPU.\n\n3,958,000,000,000\noperations\nper\nsecond.",
+        "body": null,
+        "caption": "Your retina processes 10 million bits per second.\nThe H100 processes 3.958 trillion.\nThe ratio is 395,800 to 1.\nEvery second.\nWhile you read this sentence, it has already finished.",
+        "quotes": []
+      }
+    }
+  },
+  "spread_021": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 0,
+    "ratings": {
+      "a": 2,
+      "b": 3,
+      "c": 3
+    },
+    "notes": "020 - 021 of the original are a pair, \"The wheel...\" - \"...is an extension of the foot\", 020 mentions the wheel while showing a foot. 021 mentions the foot while showing the wheel. This indicates the progression, but the ordering of words indicates that it might not be 'progress'.\n\nThe wheel is connected with the autonomous car...but it is not connected in any clear way to the GPU, even though it is the GPU that allows the autonomous car.\n\nBoth B and C are strong. I like \"Nothing is wrong with this picture.\n\nThat is what is wrong with this picture.\" in C, perhaps combine it with B",
+    "options": {
+      "a": {
+        "display": "The autonomous vehicle.",
+        "body": "An extension beyond the foot.",
+        "caption": "Waymo: 7.1 million driverless miles. 2023.",
+        "quotes": []
+      },
+      "b": {
+        "display": "The autonomous vehicle.",
+        "body": "The wheel extended the foot.\nThe car extended the wheel.\nThe autonomous car extended the car.\n\nAt each step, the human was necessary.\nAt the last step, the human became optional.\n\nThe extension no longer needs what it extends.",
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": "You are looking at a car with no driver.\n\nThe seat is empty. The wheel turns. The mirrors check blind spots. The car yields to pedestrians, accelerates through gaps in traffic, parallel parks on a street it has never visited.\n\nNothing is wrong with this picture.\n\nThat is what is wrong with this picture.",
+        "caption": "7,100,000 miles. No hands. No feet. No one.",
+        "quotes": []
+      }
+    }
+  },
+  "spread_022": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 2,
+    "ratings": {
+      "a": 3,
+      "b": 3,
+      "c": 2
+    },
+    "notes": "022-024 in the original have very strong graphic design rhetoric with minimal text. In this version, the compaction of the \"A is an extension of B\" is OK, but there is much more text in this version where in the previous the graphic is primary rhetorical device. We need to rethink our strategy for these spreads. Powerful graphics, minimal text, \n\nA - no need for the quote. The phrase, \"You are reading a book that was partly written by the thing it describes.\" is compelling, but I'm not exactly sure what it means. This text is good though. \nB - this is one of the most powerful points in the book so far, breaking the 4th wall and turning the media in on itself, \"The medium is writing about itself, to you, in a format learned from you\".",
+    "options": {
+      "a": {
+        "display": "The language model.",
+        "body": "An extension of the book that writes back.\n\nFor five centuries, the book was storage. You opened it. It waited. You closed it. It held its place.\n\nThe language model does not wait.\n\nIt anticipates your question before you finish typing. It generates the answer in the style you prefer. It writes the next paragraph of the argument you were trying to make.\n\nYou are reading a book that was partly written by the thing it describes.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Media determine our situation.",
+            "attribution": "Friedrich Kittler",
+            "source": "Gramophone, Film, Typewriter, Stanford UP, 1999, p. xxxix"
+          }
+        ]
+      },
+      "b": {
+        "display": "The language model.",
+        "body": "An extension of the book.\n\nThis sentence was composed by a language model.\nSo was the analysis of the original spread that informed its placement here.\nSo was the content plan that determined this spread should address books.\nSo was the structural decision that it should fall between the autonomous vehicle and computer vision.\n\nThe medium is writing about itself, to you, in a format it learned from you.\n\nMedia determine our situation.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Media determine our situation.",
+            "attribution": "Friedrich Kittler",
+            "source": "Gramophone, Film, Typewriter, Stanford UP, 1999, p. xxxix"
+          }
+        ]
+      },
+      "c": {
+        "display": "The language model.",
+        "body": "An extension of the book — but the book never did this:\n\nIt never completed your sentences.\nIt never rewrote itself in your voice.\nIt never memorized your preferences and adjusted its tone.\nIt never generated a novel argument at 3 AM because you couldn't sleep and asked it a question about consciousness.\n\nThe book extended the eye. The language model extends the mind.\n\nThe difference is not speed. The difference is that it writes back.",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_023": {
+    "movement": "movement_1_environment",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3
+    },
+    "notes": "A - \"infrared X-ray ultraviolet radar lidar microscopic satellite real-time predictive 155 frames per second 30-centimeter resolution from orbit cancers invisible to the radiologist your face in a crowd of ten thousand every license plate on the motorway every gesture, classified\" This is great. \nB - \"he eye evolved to keep you alive in a forest.\nComputer vision was built to keep you profitable in a city.\" is great. The rest I don't like so much\n\nMaybe combine A and B. I'm not sure what \"An extension beyond the eye means\". It doesn't follow the A is an extension of B format. \n\nAlso, need to refine the image.",
+    "options": {
+      "a": {
+        "display": "Computer vision.",
+        "body": "An extension beyond the eye.",
+        "caption": "infrared\nX-ray\nultraviolet\nradar\nlidar\nmicroscopic\nsatellite\nreal-time\npredictive\n155 frames per second\n30-centimeter resolution from orbit\ncancers invisible to the radiologist\nyour face in a crowd of ten thousand\nevery license plate on the motorway\nevery gesture, classified",
+        "quotes": []
+      },
+      "b": {
+        "display": "Computer vision.",
+        "body": "An extension beyond the eye.\n\nYour eye sees visible light: 380 to 700 nanometers.\nA sliver.\n\nComputer vision sees infrared, ultraviolet, X-ray, radar, lidar, thermal, multispectral, hyperspectral. It sees through walls. Through skin. Through time, when paired with prediction.\n\nThe eye evolved to keep you alive in a forest.\nComputer vision was built to keep you profitable in a city.\n\nAt 155 frames per second, it is not watching. It is parsing.",
+        "caption": "YOLO v8: 155 fps object detection",
+        "quotes": []
+      },
+      "c": {
+        "display": "Computer vision\nsees:",
+        "body": null,
+        "caption": "your face\nyour gait\nyour heart rate (from skin color variation, at distance)\nyour emotional state (estimated)\nyour age (estimated)\nyour gender (estimated, sometimes wrong)\nyour route home\nyour car\nyour license plate\nyour dog\nyour child\nyour pattern of life\n\n155 times per second.",
+        "quotes": []
+      }
+    }
+  },
+  "spread_024": {
+    "movement": "movement_1_environment",
+    "selected_text": "c",
+    "selected_image": null,
+    "ratings": {
+      "c": 2
+    },
+    "notes": "I like C best, but I also like the phrase \"You didn't fuse with the machine.\nThe machine fused with your house.\" from B\nAlso, ...\"An extension of the nervous system\"...isn't this what McLuhan said about electric media? Why is it the same as a smart home?",
+    "options": {
+      "a": {
+        "display": "The smart home.",
+        "body": "An extension of the nervous system.\n\nThe Nest thermostat learned your schedule in a week. The Ring camera recognized your neighbor before you did. The Alexa heard the argument you had at 2 AM. Your smart mattress knows you didn't sleep well afterward.\n\nYour home is a sensor array that happens to have walls.",
+        "caption": "Ring: 11,000+ law enforcement partnerships. Alexa: always-listening wake-word detection. Nest: behavioral prediction from 10+ years of data.",
+        "quotes": []
+      },
+      "b": {
+        "display": "The smart home.",
+        "body": "An extension of the nervous system — now domestic.\n\nHaraway saw it coming: the machines are disturbingly lively and we ourselves frighteningly inert. She imagined cyborgs. What arrived was subtler. The thermostat adjusts before you feel cold. The speaker orders milk when you run low. The lock opens when it recognizes your gait.\n\nYou didn't fuse with the machine.\nThe machine fused with your house.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Our machines are disturbingly lively, and we ourselves frighteningly inert.",
+            "attribution": "Donna Haraway",
+            "source": "A Cyborg Manifesto, in Simians, Cyborgs and Women, Routledge, 1991"
+          }
+        ]
+      },
+      "c": {
+        "display": "The smart home.",
+        "body": null,
+        "caption": "Thermostat: knows when you wake, when you leave, when you return, when you sleep.\nDoorbell camera: knows who visits, how often, at what hour.\nVoice assistant: hears every conversation within earshot.\nSmart TV: tracks what you watch, when you pause, what you skip.\nSmart mattress: monitors heart rate, breathing, movement, REM cycles.\nSmart fridge: inventories consumption, predicts purchasing.\n\nYou call it home.\nIt calls you data.",
+        "quotes": []
+      }
+    }
+  },
+  "spread_025": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 1,
+    "ratings": {
+      "a": 3,
+      "b": 3,
+      "c": 2
+    },
+    "notes": "I don't like the quote in A\nA and B should be combined",
+    "options": {
+      "a": {
+        "display": "AI\ncircuitry,\nan\nextension\nof\ncognition\nitself.",
+        "body": "When these models change, minds change.\n\nThe wheel changed where the body could go. The book changed what the eye could store. The nervous system went electric and the world contracted into a village.\n\nNow cognition extends beyond the brain, and the question is no longer what the model does. The question is what you become when thinking is shared.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "We have always been posthuman.",
+            "attribution": "N. Katherine Hayles",
+            "source": "How We Became Posthuman, University of Chicago Press, 1999, p. 291"
+          }
+        ]
+      },
+      "b": {
+        "display": "AI\ncircuitry,\nan\nextension\nof\ncognition\nitself.",
+        "body": "An agent does not have a model of its world — it is a model.\n\nIf Friston is right — that cognition is Bayesian inference, that every living system persists by minimizing the gap between prediction and sensation — then the transformer does not simulate thought.\n\nIt performs thought.\n\nOn a different substrate. At a different scale. Without a body. Without mortality. Without any particular reason to stop.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "An agent does not have a model of its world — it is a model.",
+            "attribution": "Karl Friston",
+            "source": "Active Inference, MIT Press, 2022"
+          },
+          {
+            "text": "We have always been posthuman.",
+            "attribution": "N. Katherine Hayles",
+            "source": "How We Became Posthuman, University of Chicago Press, 1999, p. 291"
+          }
+        ]
+      },
+      "c": {
+        "display": "AI\ncircuitry,\nan\nextension\nof\ncognition\n\n\n\nitself.",
+        "body": "The wheel extended the foot.\nThe book extended the eye.\nClothing extended the skin.\nElectric circuitry extended the nervous system.\n\nAI extends the thing that was doing the extending.\n\nWe have always been posthuman.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "We have always been posthuman.",
+            "attribution": "N. Katherine Hayles",
+            "source": "How We Became Posthuman, University of Chicago Press, 1999, p. 291"
+          }
+        ]
+      }
+    }
+  },
+  "spread_026": {
+    "movement": "movement_1_environment",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": {
+      "a": 2,
+      "b": 1,
+      "c": 2
+    },
+    "notes": "Images need to be replaced with found images. \n\nI really don't like this spread much at all. \n\nI like the text, \"The sentence came first.\nThe verdict was generated retroactively.\nDue process was a formatting error.\n'Stuff and nonsense!' said Alice. It is neither stuff nor nonsense. It is operational.\" but I don't like the references to Noble, COMPAS, ProPublica, etc. It feels like it's a decade old. Need to get an updated version of this, predictive policing, etc. and revise this spread. Take the essence of the Sentence before Evidence, but in a different direction.",
+    "options": {
+      "a": {
+        "display": "'No, no!' said the Queen.\n'Sentence first — verdict afterwards.'",
+        "body": "COMPAS scores Black defendants as future criminals before their trials begin. ProPublica found the system was twice as likely to falsely flag Black defendants as high-risk. Palantir routes police patrols to neighborhoods before crimes occur. Amazon's recruitment AI screened out women before interviews happened.\n\nThe sentence came first.\nThe verdict was generated retroactively.\nDue process was a formatting error.",
+        "caption": "'Stuff and nonsense!' said Alice.\n\nIt is neither stuff nor nonsense. It is operational.",
+        "quotes": [
+          {
+            "text": "'No, no!' said the Queen. 'Sentence first — verdict afterwards.'",
+            "attribution": "Lewis Carroll",
+            "source": "Alice's Adventures in Wonderland, 1865, Chapter XII"
+          }
+        ]
+      },
+      "b": {
+        "display": "SENTENCE FIRST.",
+        "body": null,
+        "caption": "COMPAS recidivism score: HIGH                    Defendant: Black male, age 23\nPredPol deployment zone: RED                      Neighborhood: 84% minority\nResume screening: REJECTED                        Applicant: female name detected\nWelfare eligibility: DENIED                       Claimant: single mother, zip 48205\nCredit score override: SUBPRIME                   Address: flagged census tract\nHiring algorithm: DO NOT INTERVIEW                 Surname: Hispanic origin probability 91%\n\nThe Queen would recognize the procedure.",
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": "Safiya Noble documented what Carroll satirized: the architecture of pre-judgment. Search for 'Black girls' in 2010 and Google returned pornography. Search for 'CEO' and it returned white men. The algorithm did not malfunction. It performed exactly as designed — which is the problem Noble names. Algorithmic oppression is not a glitch in the system. It is fundamental to the operating system.\n\nThe Queen's Wonderland has been optimized. It runs on COMPAS. It deploys through PredPol. It denies through automated welfare systems that cut benefits based on zip code correlations with race. The sentence has been automated. The verdict was never the point.",
+        "caption": "'Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.'\n— Safiya Noble, Algorithms of Oppression, 2018",
+        "quotes": [
+          {
+            "text": "Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.",
+            "attribution": "Safiya Noble",
+            "source": "Algorithms of Oppression, NYU Press, 2018"
+          }
+        ]
+      }
+    }
+  },
+  "spread_027": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 3,
+      "c": 3
+    },
+    "notes": "redesign this spread to more closely model the original. C contains elements of it, as do A and B. The original has mostly text in the top 75% of the spread, the bottom, a quote from a poem and a graphic. Replace the graphic with a voice wave form, even better if the wave form is an actual wave form saying, 'I love you' that could be decoded if someone took the effort to do so. And find an analogous poem quotation.",
+    "options": {
+      "a": {
+        "display": null,
+        "body": "You are reading this.\n\nThat is already an anachronism.\n\nOpenAI's Advanced Voice Mode processes speech with emotional inflection in real time. Eleven Labs clones any voice from thirty seconds of audio. The podcast surpassed the blog. The voice note replaced the text message. Conversational AI is replacing the search bar. Fifty percent of all searches are now spoken.\n\nMcLuhan predicted the retribalization — the return of the ear over the eye, acoustic space over visual space. He was describing radio. The principle was sound. The tribe now gathers around synthetic voices that never sleep, never tire, and never existed.\n\nYou are still reading this. Notice how slowly.",
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": "Media determine\nour situation.",
+        "body": "The situation, in 2026, is acoustic.\n\nThe phonetic alphabet imposed visual dominance for twenty-six centuries. It linearized thought. It sequenced time. It created the detached observer. Kittler knew: each medium restructures the sensorium entirely. The alphabet was not a tool for recording speech — it was a machine for converting ears into eyes.\n\nVoice AI reverses the conversion. The ear returns. Not as McLuhan's tribal campfire but as a probabilistic engine that speaks in any voice, any language, any register. The retribalization is synthetic. The campfire is a server rack. And the stories it tells are generated, not remembered.",
+        "caption": "'Media determine our situation, which — in spite of or because of it — deserves a description.'\n— Friedrich Kittler, Gramophone, Film, Typewriter, 1999",
+        "quotes": [
+          {
+            "text": "Media determine our situation, which — in spite of or because of it — deserves a description.",
+            "attribution": "Friedrich Kittler",
+            "source": "Gramophone, Film, Typewriter, Stanford UP, 1999, p. xxxix"
+          }
+        ]
+      },
+      "c": {
+        "display": "vis u al sp ace is\nu,n,i,f,o,r,m\nc-o-n-t-i-n-u-o-u-s\nand connected.\n\nacoustic space has no\nboundaries   no center\nno    margin\nit          surrounds.",
+        "body": null,
+        "caption": "The original separated these letters to demonstrate visual fragmentation. Now the fragmentation is the native condition. Voice AI does not fragment — it flows. You are reading fragments. You could be listening to a voice that knows your name.",
+        "quotes": []
+      }
+    }
+  },
+  "spread_028": {
+    "movement": "movement_1_environment",
+    "selected_text": "c",
+    "selected_image": null,
+    "ratings": {
+      "b": 1
+    },
+    "notes": "The image in the original spread of a factory line of airplanes being built is a compelling image, but this version has no image. It seems a factory line of robots or space X rockets or drones would be suitable. the juxtoposition with version C would be compelling. \n\nFor reference, the text in the original of this spread is extracted from the previous spread. Perhaps we could keep this device in the present.",
+    "options": {
+      "a": {
+        "display": "John Smith\nJohn Smith\nJohn Sm1th\nJ0hn 5m1th\n4a6f686e20536d697468\n0x4a6f686e536d697468\n7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069\nQR██░█░██░░██░█░░",
+        "body": null,
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": "YOU WERE:                            YOU ARE:\n\nJohn                                 0x7a69f3c2\nSmith                                UUID-4e8b-9f2a\n42 Oak Street                        37.7749°N, 122.4194°W\nSpringfield, IL                      geo:37.7749,-122.4194\n(217) 555-0142                       IMEI:490154203237518\nSocial Security: XXX-XX-XXXX         biometric_hash:a3f2e8...\nSignature: [cursive]                 2FA:847291\nFace: [portrait]                     faceprint_v4.2:0xb7c9...",
+        "body": null,
+        "caption": "Bratton's Address layer: to have an address is to be computable. To be computable is to be governed.",
+        "quotes": []
+      },
+      "c": {
+        "display": "Your name is a string.\nYour face is a vector.\nYour address is coordinates.\nYour signature is a private key.\nYour history is a log file.\nYour identity is a row in a table\nthat can be queried, joined, filtered,\nsorted, exported, deleted.",
+        "body": null,
+        "caption": null,
+        "quotes": []
+      }
+    }
+  },
+  "spread_029": {
+    "movement": "movement_1_environment",
+    "selected_text": "a",
+    "selected_image": null,
+    "ratings": {
+      "a": 3,
+      "b": 1,
+      "c": 1
+    },
+    "notes": "Again, the original has a text passage on one side and the graphic repetitive \"Printing, a ditto device\". Perhaps we could shift something from one of the text heavy spreads to here to match the rhetorical strategy of the original.",
+    "options": {
+      "a": {
+        "display": "The model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device, trained on all of us.\nThe model, a device for generating more of us.\nA device for generating more. Of us, the model.\nWe, a ditto device of the model.",
+        "body": null,
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": "The model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device.\nThe model, a ditto device.\nThe nodel, a ditto device.\nThe model, a ditro device.\nThe mosel, a ditto devize.\nThe model, a ditto the model.\nA ditto device, the model, a ditto.\nDevice the model a ditto a model device.\nTh m dl, a d tt d v c.\n[                                              ]",
+        "body": null,
+        "caption": null,
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": "Printing, a ditto device.                    The model, a ditto device.\nPrinting, a ditto device.                    The model, a ditto device.\nPrinting, a ditto device.                    The model, a ditto device.\nPrinting, a ditto device.                    The model, a ditto device, trained\nPrinting, a ditto device.                    on everything you ever wrote.\nPrinting, a ditto device.                    The model does not copy. It re-derives.",
+        "caption": "Left: mechanical reproduction. Each copy identical.\nRight: probabilistic generation. Each output a new traversal of the space.\n\nThe ditto has learned to drift.",
+        "quotes": []
+      }
+    }
+  },
+  "spread_030": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 1,
+    "ratings": {
+      "a": 2,
+      "c": 1
+    },
+    "notes": "Replace with found images of actual data centers. \n\nin the original the previous spread and this spread are interconnected. In the current, the connection is tenuous. Though on second thought, the model as ditto device, with the image of where the models live...a giant monolithic center for ditto devices could be compelling.",
+    "options": {
+      "a": {
+        "display": null,
+        "body": null,
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": null,
+        "caption": "2–3% of global electricity.\nMore water than Atlanta.\n\nThis building is the Cloud.",
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": null,
+        "caption": "'The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.'\n— Benjamin Bratton, The Stack, 2015",
+        "quotes": [
+          {
+            "text": "The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack: On Software and Sovereignty, MIT Press, 2015"
+          }
+        ]
+      }
+    }
+  },
+  "spread_031": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 0,
+    "ratings": {
+      "a": 3,
+      "b": 3,
+      "c": 1
+    },
+    "notes": "Combining A and B is strong. Both have very compelling rhetorical value. Perhaps a more compact and detailed version of the timeline of A with the text of B. Might also include more model releases, additionally including OpenClaw or Moltbook, agents gaining autonomy, starting their own religion.",
+    "options": {
+      "a": {
+        "display": "The Renaissance Legacy.",
+        "body": "Every paradigm has its dark ages.\n\n1956: Dartmouth Conference. 'We propose a 2-month study of artificial intelligence.' Optimism.\n1973: Lighthill Report. Funding collapses. First winter.\n1987: Expert systems fail to scale. Second winter. Two decades of ice.\n2006: Hinton. Deep belief networks. A thaw.\n2012: Krizhevsky, Sutskever, Hinton. ImageNet. The glacier cracks.\n2017: Vaswani et al. 'Attention Is All You Need.' Eight authors. Fourteen pages. Everything changes.\n2020: GPT-3. 175 billion parameters. Language, generated.\n2022: ChatGPT. 100 million users in two months.\n2023: GPT-4. Multimodal. The model sees.\n2024: Claude, Gemini, Llama, Mistral. The model speaks.\n2025: Agentic AI. The model acts.\n2026: —",
+        "caption": "Notice the pace of that list.",
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": "Katherine Hayles spent twenty years arguing that the posthuman was coming. She meant it as philosophy. It arrived as engineering.\n\nThe transformer architecture — 'Attention Is All You Need,' June 2017, fourteen pages that restructured every creative domain simultaneously — was not a philosophical argument about cognition. It was a mechanism: self-attention layers, positional encodings, scaled dot-product scores. The mechanism worked. And working, it did what Hayles predicted: it dissolved the boundary between human cognition and technical cognition. Not in theory. In product.\n\nThe Renaissance had Gutenberg. The deep learning renaissance has the transformer. Both are reproduction technologies. Both restructured what could be thought. The difference: Gutenberg's revolution took centuries to unfold. The transformer's has taken seven years.",
+        "caption": "'The posthuman does not really mean the end of humanity. It signals instead the end of a certain conception of the human.'\n— N. Katherine Hayles, How We Became Posthuman, 1999",
+        "quotes": [
+          {
+            "text": "The posthuman does not really mean the end of humanity. It signals instead the end of a certain conception of the human.",
+            "attribution": "N. Katherine Hayles",
+            "source": "How We Became Posthuman, University of Chicago Press, 1999, p. 286"
+          }
+        ]
+      },
+      "c": {
+        "display": "Attention\nIs All\nYou Need.",
+        "body": null,
+        "caption": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, Illia Polosukhin.\n\nJune 12, 2017. Fourteen pages.\n\nThis is the Gutenberg Bible of the computational age.",
+        "quotes": []
+      }
+    }
+  },
+  "spread_032": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 1,
+    "ratings": {
+      "a": 2,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "Rethink this spread. Not happy with anything about it design-wise",
+    "options": {
+      "a": {
+        "display": null,
+        "body": null,
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": null,
+        "caption": "Singapore: 110,000 lampposts.\nEach one counts you.",
+        "quotes": []
+      },
+      "c": {
+        "display": "Airports are not\nsimulations of cities.\nCities are simulations\nof airports.",
+        "body": null,
+        "caption": "— Benjamin Bratton, The Stack, 2015\n\nEvery surface senses. Every intersection optimizes. Every commute is logged, modeled, and rerouted before you decide to leave the house.",
+        "quotes": [
+          {
+            "text": "Airports are not simulations of cities; rather cities are simulations of airports.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack: On Software and Sovereignty, MIT Press, 2015"
+          }
+        ]
+      }
+    }
+  },
+  "spread_033": {
+    "movement": "movement_1_environment",
+    "selected_text": "b",
+    "selected_image": 0,
+    "ratings": {
+      "b": 2
+    },
+    "notes": null,
+    "options": {
+      "a": {
+        "display": null,
+        "body": null,
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": null,
+        "body": null,
+        "caption": "Lithium: Salar de Atacama, Chile. 65% of the region's water.\nCobalt: Kolwezi, DRC. 40,000 children.\nRare earth: Baotou, Inner Mongolia. A toxic lake visible from space.\n\nEvery GPU contains all of this.",
+        "quotes": []
+      },
+      "c": {
+        "display": null,
+        "body": null,
+        "caption": "'The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.'\n— Benjamin Bratton, The Stack, 2015\n\n'AI is neither artificial nor intelligent.'\n— Kate Crawford, Atlas of AI, 2021",
+        "quotes": [
+          {
+            "text": "The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.",
+            "attribution": "Benjamin Bratton",
+            "source": "The Stack: On Software and Sovereignty, MIT Press, 2015"
+          },
+          {
+            "text": "AI is neither artificial nor intelligent.",
+            "attribution": "Kate Crawford",
+            "source": "Atlas of AI, Yale University Press, 2021"
+          }
+        ]
+      }
+    }
+  },
+  "spread_034": {
+    "movement": "movement_1_environment",
+    "selected_text": "a",
+    "selected_image": 0,
+    "ratings": {
+      "a": 2,
+      "b": 2,
+      "c": 2
+    },
+    "notes": "Not happy with the images\nThe original spread in the book is an image of prison bars. This is not necessarily wrong, but it would be good to hone it a little more for that.",
+    "options": {
+      "a": {
+        "display": "The screen watches back.",
+        "body": null,
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": "The screen watches back.",
+        "body": null,
+        "caption": "Your laptop camera was activated 47 times today by applications you did not open. Your phone's eye-tracking engine adjusted three headlines based on where you lingered. Your smart TV logged 6 hours of ambient audio. Your car's cabin camera measured your pupil dilation at a billboard.\n\nNone of this required your permission. All of it required your attention.",
+        "quotes": []
+      },
+      "c": {
+        "display": "The screen watches back.",
+        "body": "The Interface layer is where computation meets the sensorium. In 1992, Kittler warned that graphical user interfaces hide the machine from its users. In 2026, the interface does not hide. It observes. Every surface is bidirectional. The screen is a membrane, not a window -- permeable in both directions, transmitting light outward and data inward simultaneously.\n\nBratton calls this the reciprocal surface. You call it your phone.",
+        "caption": null,
+        "quotes": [
+          {
+            "text": "Perfect graphic user interfaces, since they dispense with writing itself, hide a whole machine from its users.",
+            "attribution": "Friedrich Kittler",
+            "source": "There Is No Software, 1992"
+          }
+        ]
+      }
+    }
+  },
+  "spread_035": {
+    "movement": "movement_1_environment",
+    "selected_text": "a",
+    "selected_image": 1,
+    "ratings": {
+      "a": 3,
+      "b": 1,
+      "c": 3
+    },
+    "notes": "Both A and C are excellent. I like the title and text for A and I like the letter format for C. Rethink this spread, perhaps combining both texts.",
+    "options": {
+      "a": {
+        "display": "A cell for scrollers to scroll in.",
+        "body": "YouTube's recommendation algorithm drives 70% of all watch time. TikTok's For You page is 95% algorithmically curated. Google Search results diverge so profoundly by user profile that no two people inhabit the same informational environment.\n\nThe filter bubble is not a metaphor. It is architecture. The infrastructure you have just been shown -- every layer, every cable, every server, every address -- terminates here, in a room built to the exact dimensions of your data profile.\n\nThe cell is luminous. The bars are personalized. The door was never locked because you were never looking for it.\n\nCan you see the walls?",
+        "caption": null,
+        "quotes": []
+      },
+      "b": {
+        "display": "A cell for scrollers to scroll in.",
+        "body": "The bubble is not the same size for everyone.\n\nIf your data profile reads white, college-educated, coastal, the cell is spacious. Rich content, diverse sources, long-form analysis. The algorithm assumes you want to think.\n\nIf your data profile reads Black, low-income, rural, the cell contracts. Shorter content, fewer sources, heavier advertising, more surveillance. The algorithm assumes you want to consume.\n\nSafiya Noble calls this the operating system of the web. Not a glitch. Not a bias that better training data will fix. The architecture itself.",
+        "caption": "The infrastructure is visible now.",
+        "quotes": [
+          {
+            "text": "Algorithmic oppression is not just a glitch in the system but is fundamental to the operating system of the web.",
+            "attribution": "Safiya Noble",
+            "source": "Algorithms of Oppression, NYU Press, 2018"
+          }
+        ]
+      },
+      "c": {
+        "display": null,
+        "body": "Dear user,\n\nWe have prepared your environment. Based on 11,347 interactions, 3.2 terabytes of behavioral data, and 847 inferred preferences, we have constructed an informational space calibrated to your exact cognitive profile.\n\nYou will find it comfortable. Familiar. Engaging.\n\nYou will not find it surprising. Challenging. Contradictory.\n\nThis is not a failure of our system. This is our system.\n\nWe hope you enjoy your stay. The door is wherever you imagine it to be.\n\nWith optimized regards,\nThe Algorithm",
+        "caption": null,
+        "quotes": []
+      }
+    }
+  }
+}

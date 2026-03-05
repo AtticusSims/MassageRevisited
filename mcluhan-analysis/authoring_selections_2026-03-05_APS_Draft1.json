@@ -1,0 +1,826 @@
+{
+  "version": "2.1",
+  "exported": "2026-03-05T09:11:03.562Z",
+  "spread_range": "spread_001-spread_085",
+  "total_spreads": 85,
+  "fonts": {
+    "display": "'Space Grotesk', sans-serif",
+    "body": "'Inter', sans-serif",
+    "caption": "'Source Serif 4', serif"
+  },
+  "selections": {
+    "spread_006": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": {
+        "a": 2,
+        "b": 2,
+        "c": 1
+      },
+      "reviewer_notes": "Need word breaks. At present the words are broken in the middle for new lines: a-nd; conditio-n"
+    },
+    "spread_007": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 2,
+        "b": 2,
+        "c": 1
+      },
+      "reviewer_notes": null
+    },
+    "spread_008": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": {
+        "a": 2,
+        "b": 2,
+        "c": 1
+      },
+      "reviewer_notes": "Perhaps option B with only the Bratton quote?"
+    },
+    "spread_009": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 2,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "B and C are both good. Choosing C. I like the cognitive assemblages of B. Perhaps could integrate with C"
+    },
+    "spread_010": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 1,
+        "c": 2
+      },
+      "reviewer_notes": "C needs to quote the McLuhan passage. Right now it just plagiarizes it without attribution. Image should be replaced with a found image of a machine learning identification pattern on a thumbprint."
+    },
+    "spread_011": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 2,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "There are good qualities of each, especially B and C. I like that A mirrors the original, but the Q & A pattern is not at punchy as the sequential questions in the original. I think we should generate more options that combine these three, making a punchy fast paced column of text more like the original."
+    },
+    "spread_012": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "The Display text will be divided by the gutter, perhaps place on the left side of the spread. \nThe layout deviates from the regular pattern of the original, which emphasizes strong design method and rhetoric, We should reconsider this spread and this sequence of spreads. \nFrom B: \"The living room is a co-working space for attention extraction\" is great. \"The family still eats together. They have simply stopped sharing a reality\"\n\nI choose A, but with revisions borrowed from B\nMake it punchier like the original."
+    },
+    "spread_013": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "Forty-seven milliseconds is the distance between the economy and its spectators.\n\nNeed to find a new image"
+    },
+    "spread_014": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 2,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "Need a new image.\n\nB and C are a toss up. Both great."
+    },
+    "spread_015": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 2,
+        "b": 3,
+        "c": 2
+      },
+      "reviewer_notes": "A: \"Your job is the 0.3 percent the machine routes to a human because the cost of being wrong exceeds the cost of asking you.\"\nC: \"McLuhan said the circuit would learn your job. He was almost right. The circuit learned 99.7% of your job. What remains is the part too expensive to automate and too painful to watch.\"\n\nImages need to be mirrored so the person in them is not obscured by the text."
+    },
+    "spread_016": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 2,
+        "b": 2,
+        "c": 1
+      },
+      "reviewer_notes": "B: \"This is not the failure of democracy. Democracy simply became irrelevant to the systems that actually govern.\"\n\nB is best, but I think it needs improving. \nThis is good from A: \"McLuhan called vote-counting an eighteenth-century ritual. The nose, he said, was being counted when it should be scanned.\n\nIt is now scanned.\nMcLuhan called vote-counting an eighteenth-century ritual. The nose, he said, was being counted when it should be scanned.\n\nIt is now scanned.\" ... \"If the algorithm governs, who did you vote for?\n\nThe nose is no longer counted. The nose is classified, scored, and governed — before the ballot is printed.\""
+    },
+    "spread_017": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 2,
+        "b": 1,
+        "c": 2
+      },
+      "reviewer_notes": "Why does this one deviate from the previous pattern, matching the themes of the original? It should have the display, \"the others\" in alignment with the original. \n\nImage 2 is good, but the man's face is on the wrong side of the spread. \n\nNeed to find a better text option. From the three I like: \nA - Recognition comes from those who refuse adjustment.\n\nThe shock is not that the environment is new. The shock is that it was always there — invisible the way water is invisible to fish — and someone finally pointed at it.\n\nB - \"Recognition comes from those who refuse adjustment.\n\nThe shock is not that the environment is new. The shock is that it was always there — invisible the way water is invisible to fish — and someone finally pointed at it.\"  ...  \"Recognition comes from those who refuse adjustment.\n\nThe shock is not that the environment is new. The shock is that it was always there — invisible the way water is invisible to fish — and someone finally pointed at it.\"\n\nWhat are the referents with Crawford, Gebru and the turtle-rifle? \n\nAgain, I want this to conform with the \"others\" in the original."
+    },
+    "spread_018": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 2,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "'amputes' is not a word. It should be 'amputates'\n\nI like the Body and Display of A. I also like the Body of B, the stack. I like the Body of C. I do not like any of the quotes, and since the original spread does not contain a quote, we can just be rid of it."
+    },
+    "spread_019": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 2,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "A or C. I love the Bratton quote, but it should be written only once, at the bottom of the spread,"
+    },
+    "spread_020": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 2
+      },
+      "reviewer_notes": "The images of spreads 018-021 progress through views of the toes of a foot. The final image is the roundness of the toe in 020, before transitioning to the roundness of the wheel in 021. dThis is a powerful rhetorical device. The updated version deviates from this. We should reanalyze this sequence and revise to match the sequencing of the original.\n\nText in A is great. \nText in B is also great. I especially love: The spectrum runs from bacterium to brain to silicon. Intelligence was never binary. It was never yours alone."
+    },
+    "spread_021": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 2,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "020 - 021 of the original are a pair, \"The wheel...\" - \"...is an extension of the foot\", 020 mentions the wheel while showing a foot. 021 mentions the foot while showing the wheel. This indicates the progression, but the ordering of words indicates that it might not be 'progress'.\n\nThe wheel is connected with the autonomous car...but it is not connected in any clear way to the GPU, even though it is the GPU that allows the autonomous car.\n\nBoth B and C are strong. I like \"Nothing is wrong with this picture.\n\nThat is what is wrong with this picture.\" in C, perhaps combine it with B"
+    },
+    "spread_022": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 2,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 2
+      },
+      "reviewer_notes": "022-024 in the original have very strong graphic design rhetoric with minimal text. In this version, the compaction of the \"A is an extension of B\" is OK, but there is much more text in this version where in the previous the graphic is primary rhetorical device. We need to rethink our strategy for these spreads. Powerful graphics, minimal text, \n\nA - no need for the quote. The phrase, \"You are reading a book that was partly written by the thing it describes.\" is compelling, but I'm not exactly sure what it means. This text is good though. \nB - this is one of the most powerful points in the book so far, breaking the 4th wall and turning the media in on itself, \"The medium is writing about itself, to you, in a format learned from you\"."
+    },
+    "spread_023": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3
+      },
+      "reviewer_notes": "A - \"infrared X-ray ultraviolet radar lidar microscopic satellite real-time predictive 155 frames per second 30-centimeter resolution from orbit cancers invisible to the radiologist your face in a crowd of ten thousand every license plate on the motorway every gesture, classified\" This is great. \nB - \"he eye evolved to keep you alive in a forest.\nComputer vision was built to keep you profitable in a city.\" is great. The rest I don't like so much\n\nMaybe combine A and B. I'm not sure what \"An extension beyond the eye means\". It doesn't follow the A is an extension of B format. \n\nAlso, need to refine the image."
+    },
+    "spread_024": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": {
+        "c": 2
+      },
+      "reviewer_notes": "I like C best, but I also like the phrase \"You didn't fuse with the machine.\nThe machine fused with your house.\" from B\nAlso, ...\"An extension of the nervous system\"...isn't this what McLuhan said about electric media? Why is it the same as a smart home?"
+    },
+    "spread_025": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 2
+      },
+      "reviewer_notes": "I don't like the quote in A\nA and B should be combined"
+    },
+    "spread_026": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 2,
+        "b": 1,
+        "c": 2
+      },
+      "reviewer_notes": "Images need to be replaced with found images. \n\nI really don't like this spread much at all. \n\nI like the text, \"The sentence came first.\nThe verdict was generated retroactively.\nDue process was a formatting error.\n'Stuff and nonsense!' said Alice. It is neither stuff nor nonsense. It is operational.\" but I don't like the references to Noble, COMPAS, ProPublica, etc. It feels like it's a decade old. Need to get an updated version of this, predictive policing, etc. and revise this spread. Take the essence of the Sentence before Evidence, but in a different direction."
+    },
+    "spread_027": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "redesign this spread to more closely model the original. C contains elements of it, as do A and B. The original has mostly text in the top 75% of the spread, the bottom, a quote from a poem and a graphic. Replace the graphic with a voice wave form, even better if the wave form is an actual wave form saying, 'I love you' that could be decoded if someone took the effort to do so. And find an analogous poem quotation."
+    },
+    "spread_028": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": {
+        "b": 1
+      },
+      "reviewer_notes": "The image in the original spread of a factory line of airplanes being built is a compelling image, but this version has no image. It seems a factory line of robots or space X rockets or drones would be suitable. the juxtoposition with version C would be compelling. \n\nFor reference, the text in the original of this spread is extracted from the previous spread. Perhaps we could keep this device in the present."
+    },
+    "spread_029": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": {
+        "a": 3,
+        "b": 1,
+        "c": 1
+      },
+      "reviewer_notes": "Again, the original has a text passage on one side and the graphic repetitive \"Printing, a ditto device\". Perhaps we could shift something from one of the text heavy spreads to here to match the rhetorical strategy of the original."
+    },
+    "spread_030": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 2,
+        "c": 1
+      },
+      "reviewer_notes": "Replace with found images of actual data centers. \n\nin the original the previous spread and this spread are interconnected. In the current, the connection is tenuous. Though on second thought, the model as ditto device, with the image of where the models live...a giant monolithic center for ditto devices could be compelling."
+    },
+    "spread_031": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 1
+      },
+      "reviewer_notes": "Combining A and B is strong. Both have very compelling rhetorical value. Perhaps a more compact and detailed version of the timeline of A with the text of B. Might also include more model releases, additionally including OpenClaw or Moltbook, agents gaining autonomy, starting their own religion."
+    },
+    "spread_032": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 2,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "Rethink this spread. Not happy with anything about it design-wise"
+    },
+    "spread_033": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "b": 2
+      },
+      "reviewer_notes": null
+    },
+    "spread_034": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 2,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "Not happy with the images\nThe original spread in the book is an image of prison bars. This is not necessarily wrong, but it would be good to hone it a little more for that."
+    },
+    "spread_035": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 1,
+        "c": 3
+      },
+      "reviewer_notes": "Both A and C are excellent. I like the title and text for A and I like the letter format for C. Rethink this spread, perhaps combining both texts."
+    },
+    "spread_036": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 1
+      },
+      "reviewer_notes": "Combine A and B."
+    },
+    "spread_037": {
+      "selected_text": null,
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": null,
+      "reviewer_notes": "This spread needs to be redone I think. The central visual of 'transformer attention' is not at all compelling as the text makes it out to be"
+    },
+    "spread_038": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 2,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "Wow. All of the texts are quite good. Lean towards C, but B is quite powerful as well. \n\nMight want to find a good found image, perhaps google earth, that shows such a chip like building compound."
+    },
+    "spread_039": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 3
+      },
+      "reviewer_notes": "For the image, we should replace it with a found image of an AI designed work, for example, the rocket engine or other recent futuristic looking industrial products. \n\nA is stonger, but the Hui quote should be replaced by the quote in C. If possible, try to integrate the last part of C in to A: \"This is what Hui calls a cosmotechnical problem: the question is not whether the generated environment works but whether it constitutes a genuine way of knowing the world, or merely an efficient way of reproducing one culture's assumptions at planetary scale.\""
+    },
+    "spread_040": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 2,
+        "b": 1
+      },
+      "reviewer_notes": "This needs to be reconsidered. Option A rewrites the cartoon caption of the original as \"It isn't that I don't like current events. I just can't tell which ones are real.\" This is quite good. The original spread shows the cartoon on the left and an image of a train track on the right. perhaps it would be better to maintain this text-minimal juxtoposition and let the graphics do the work of communicating the idea. Options for the right side image are a) something metaphorical as in the original or b) an example of a satirical deep fake such as Trump in Dor Brothers shorts or even something like Trump kissing Obama. Or for a) we could maintain the original cartoon, and for b) we could have a deep fake image with the updated \"don't know what's real\" caption."
+    },
+    "spread_041": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "We need to consider the design of the sequence of 040-041 which has a clear progression: rail image-> modified rail image -> rear view mirror depicting an older, idealized form of transporation. \n\nAll texts are excellent. C is compelling, but I like the Lanier thread in B and the railway reference in A. Perhaps trying to merge the best of three."
+    },
+    "spread_042": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "Both A and B are strong. Favor A. \nImage needs to be improved. The text in C should be the caption for the image, and the image should be refined based on this image."
+    },
+    "spread_043": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 3
+      },
+      "reviewer_notes": "Is the 'training on generated data' problem still an issue? Haven't heard much about this recently and I know that a lot of training is taking place with synthetic data. \nA is great. C is poetic and short and works well with the image, more metaphorical, less explicit, similar to the spread in the original.\n\nNeed to verify the importance of this spread"
+    },
+    "spread_044": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 2,
+        "b": 3,
+        "c": 2
+      },
+      "reviewer_notes": "Images not showing in interface, but I think we should make this custom. This spread is poetic, and care needs to be taken in the layout. \nThe quote is doubled: fix"
+    },
+    "spread_045": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 1
+      },
+      "reviewer_notes": "B is good, but I like A, especially: \"The rear-view mirror is not a phase. It is the permanent condition of a species that can only perceive the new through the lens of what it replaces.\"\n\nPerhaps another version should be proposed\n\nThe image makes the text hard to read."
+    },
+    "spread_046": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": null,
+      "reviewer_notes": "Image not showing. Should use a found image, something brutalist and monumental."
+    },
+    "spread_047": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": null,
+      "reviewer_notes": null
+    },
+    "spread_048": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": null,
+      "reviewer_notes": "The image should be an expansion of the image in 046, just as the original spreads. There should be a caption describing the image and a pithy commentary as in the original. The theme is the imposition of the old on the new. The original image depicts neo-classical architecture on waterworks. The current image should evoke this."
+    },
+    "spread_049": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "c": 3
+      },
+      "reviewer_notes": "Replace image with the depiction of the model as a monstrous entity, with it's face as a smiley emoji. (Shoggoths among us)\nhttps://drive.google.com/file/d/1TVorJ-y3FjHNN67kagcze8deA9YkMyQ1/view?usp=sharing\n\nDifficult call between A and C, leaning to A"
+    },
+    "spread_050": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": null,
+      "reviewer_notes": "In the original, there is a reoccurrence of the foot, which previously evoked the 'wheel is extension of the foot' idea. We should choose an image that continues this. Image 2 accidentally evokes something interesting...the reflection of a human form in the glossiness of the page displayed. We definitely need a new image, and should carefully consider the original graphic and the rhetorical and narrative structure in which it site."
+    },
+    "spread_051": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": null,
+      "reviewer_notes": "The current spread diverges significantly from the original, and it is not clear the connection. The original begins with a sort of non-sequiter, listing names and activities of an older era, then discussion of humor in the modern era, then about Faraday (who is depicted in the image), then about professionalism and amateurism. \n\nNeed to reconsider this. \n\nIf we want education to be the focus, then how about how AI empowers us all to do things as amateurs, leaving professionals behind (many breakthroughs are now being made by amateurs through vibe coding). Big revision required."
+    },
+    "spread_052": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": {
+        "a": 2,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "Need an image to reflect the original design"
+    },
+    "spread_053": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 1,
+        "b": 2,
+        "c": 3
+      },
+      "reviewer_notes": "I like C. But the images and design must be reconsidered. The current are garbage."
+    },
+    "spread_054": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": null,
+      "reviewer_notes": null
+    },
+    "spread_055": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 2
+      },
+      "reviewer_notes": "Each text option is good, but I like A. \n\nneed a new image. My thoughts: a photograph of a baby's face, maybe 1-5 years old, candid, serene but with deep contrast and a bit gritty"
+    },
+    "spread_056": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": {
+        "b": 2,
+        "c": 3
+      },
+      "reviewer_notes": "No image OK? Perhaps can be supplemented with found image. The original shows students in protest. Perhaps an image of recent student walkouts in protest of ICE raids in the US."
+    },
+    "spread_057": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3
+      },
+      "reviewer_notes": "Text A is great. But we should not reference 'M2' as this is the meta-structure of the book. Change text from \"The acceleration M2 has been documenting is not directionless\" to \"The acceleration is not directionless\"\n\nFor the image, perhaps a found image (or image we take) of massive construction of futuristic buildings in a Chinese city (perhaps Zhuhai from the Macau waterfront)?"
+    },
+    "spread_058": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3
+      },
+      "reviewer_notes": "I checked this number and it's much larger, somewhere in the range of 10^15 tokens per year\n\nhttps://grok.com/share/bGVnYWN5_e572041f-7960-4a36-867d-94fccedea438\n\nGreat caption in C. Integrate this into the selected one. \nBoth A and B are great. See if we can get the best of both in a new version."
+    },
+    "spread_059": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": null
+    },
+    "spread_060": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "Good image, needs to be recreated because of \"book\" gutter"
+    },
+    "spread_061": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "I think the image should be an actual bust of Marcus Aureleus or Copernicus...or perhaps an image from Lascaux, a negative hand print...something like this. \n\nThe three texts are great. A is my favorite, but need to revisit and perhaps revise."
+    },
+    "spread_062": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 3
+      },
+      "reviewer_notes": "A and C are very good. I like the concise text in C. I think we should combine all three."
+    },
+    "spread_063": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "c": 3
+      },
+      "reviewer_notes": "Minimal is good. The connection with the original is clear and straightforward. But I feel it's somehow lacking in the narrative of the present work."
+    },
+    "spread_064": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "Not entirely happy with this spread. The images need to be rethought. The use of John Cage quotation in the original should be mirrored. Perhaps something from Truth Terminal? Or perhaps a contemporary thinker/artist on sound? \n\nImages should mirror the graphic of the voiceprints, but updated."
+    },
+    "spread_065": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 1,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "B is the selection, but needs editing, replacing the end with the end of C: \n\n\"What can't be coded can be decoded.\nJoyce heard what was coming. Not the internet. Not artificial intelligence. Something deeper: the return of simultaneous consciousness.\n\nFinnegans Wake is a text that operates in all cultural modes at once. It is acoustic and visual. Mythic and analytical. Tribal and literate. Every sentence contains its own translation and its own betrayal.\n\nThe model does the same thing. It holds all modes simultaneously. It slides between registers without effort or awareness. It performs the Joycean feat at industrial scale.\n\nBut Joyce was conscious.\n\nThe book has reached its limit.\n\nWhat comes next requires a different kind of attention. The ear. The organ that does not select a point of view. The organ that receives before it judges. The organ on the page you are about to turn.\n\nThe Hinge is closed.\nThe Dreamscape begins.\""
+    },
+    "spread_066": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3
+      },
+      "reviewer_notes": null
+    },
+    "spread_067": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "Needs a different image"
+    },
+    "spread_068": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": null
+    },
+    "spread_069": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "terrible images. redo"
+    },
+    "spread_070": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "Select A, but incorporate this from B: \"Sukarno knew: Hollywood's real product was not entertainment but desire. The refrigerator on screen was not a commodity — it was a wound. It showed the colonized what they lacked. The revolution followed the display.\" Also, I don't like the reference to gpt-4. I'd rather have a general reference to AI or \"the model\" or something like that. Or put it in the past tense. \n\nNew images."
+    },
+    "spread_071": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": null,
+      "reviewer_notes": "Just as in the original, this should have the monumental M with small 'odel' to spell the whole word. Perhaps also add a small \"The\" as well."
+    },
+    "spread_072": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "c": 3
+      },
+      "reviewer_notes": "rethink image"
+    },
+    "spread_073": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "Select B, but C is also good"
+    },
+    "spread_074": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "A is good, but I want to remove the line \"McLuhan saw this coming in 1967\"\n\nNew image"
+    },
+    "spread_075": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 3,
+      "quality_ratings": null,
+      "reviewer_notes": "Match layout of original"
+    },
+    "spread_076": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 2,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "Select B - remove, \",written in 1967\""
+    },
+    "spread_077": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "Original image depicts a hand in the flames, an image of self-emoliation, not a cozy fireplace."
+    },
+    "spread_078": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "New images. Also, need a quote similar to the Eckhardt quote. Maybe also from Christian mysticism? The Cloud of Unknowing?"
+    },
+    "spread_079": {
+      "selected_text": "b",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3
+      },
+      "reviewer_notes": "The dates are wrong. I think we should rethink this spread and find a different angle altogether. The March 20 outage was in 2023, the references in B to not being able to work without it were likely from a 2025 outage. Either get the facts straight, or take a different angle."
+    },
+    "spread_080": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 3,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 2
+      },
+      "reviewer_notes": "Toss up between A and B"
+    },
+    "spread_081": {
+      "selected_text": null,
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": {
+        "a": 3,
+        "b": 3,
+        "c": 3
+      },
+      "reviewer_notes": "Really can't decide this one. They're all good."
+    },
+    "spread_082": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "b": 2,
+        "c": 2
+      },
+      "reviewer_notes": "I'd like to combine both Bach quotes?"
+    },
+    "spread_083": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 0,
+      "quality_ratings": null,
+      "reviewer_notes": "Perhaps revising/refining the \"You see, Dad\" text. \nMake new image"
+    },
+    "spread_084": {
+      "selected_text": "c",
+      "selected_design": null,
+      "selected_image": null,
+      "quality_ratings": {
+        "c": 3
+      },
+      "reviewer_notes": "Needs revision"
+    },
+    "spread_085": {
+      "selected_text": "a",
+      "selected_design": null,
+      "selected_image": 1,
+      "quality_ratings": {
+        "a": 3,
+        "c": 3
+      },
+      "reviewer_notes": "I like the additional text at the bottom of C, but think we should leave it simply"
+    }
+  }
+}
