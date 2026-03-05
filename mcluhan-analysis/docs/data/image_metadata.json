@@ -1187,6 +1187,348 @@
     "_correction_note": "CORRECTED 2026-03-05: Previous images (lithium mining pools) were based on incorrect analysis. Original images backed up to docs/data/backups/spread_033_image_metadata_backup.json. Original image files still at docs/images/spread_033_opt_0.jpg and spread_033_opt_1.jpg. New images need to be generated: AI-distorted human face (latent-space artifacts, StyleGAN boundaries, or diffusion intermediates).",
     "options": [
       {
+        "file": "spread_033_v2_opt_0.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "extreme close-up portrait of a human face, frontal view, dramatic chiaroscuro lighting, deep shadows, high contrast, studio photography, sharp features, intense gaze, black and white, monochrome, fine art portrait, 8k, highly detailed",
+        "license": "open_model",
+        "size_kb": 1077.4,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "low_step_count",
+          "steps": 6,
+          "cfg_scale": 7.0,
+          "seed": 42,
+          "strength": null,
+          "bw_contrast": 2.0,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_1.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "extreme close-up portrait of a human face, frontal view, dramatic chiaroscuro lighting, deep shadows, high contrast, studio photography, sharp features, intense gaze, black and white, monochrome, fine art portrait, 8k, highly detailed",
+        "license": "open_model",
+        "size_kb": 1199.9,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "low_step_count",
+          "steps": 10,
+          "cfg_scale": 7.0,
+          "seed": 42,
+          "strength": null,
+          "bw_contrast": 1.8,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_2.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "extreme close-up portrait of a human face, frontal view, dramatic chiaroscuro lighting, deep shadows, high contrast, studio photography, sharp features, intense gaze, black and white, monochrome, fine art portrait, 8k, highly detailed",
+        "license": "open_model",
+        "size_kb": 1156.0,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "low_step_count",
+          "steps": 14,
+          "cfg_scale": 7.0,
+          "seed": 42,
+          "strength": null,
+          "bw_contrast": 1.8,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_3.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "human face emerging from deep shadow, half-illuminated, dramatic side lighting, one eye visible, features dissolving into darkness, high contrast black and white, cinematic portrait, film noir, fine art photography, 8k",
+        "license": "open_model",
+        "size_kb": 914.9,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "low_step_count",
+          "steps": 8,
+          "cfg_scale": 7.0,
+          "seed": 49,
+          "strength": null,
+          "bw_contrast": 2.0,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_4.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "human face emerging from deep shadow, half-illuminated, dramatic side lighting, one eye visible, features dissolving into darkness, high contrast black and white, cinematic portrait, film noir, fine art photography, 8k",
+        "license": "open_model",
+        "size_kb": 803.4,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "low_step_count",
+          "steps": 12,
+          "cfg_scale": 7.0,
+          "seed": 49,
+          "strength": null,
+          "bw_contrast": 1.8,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_5.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "portrait of a human face seen through curved glass, slightly distorted reflection, warped features, elongated face, dramatic black and white, high contrast, fine art photography, surreal portrait, unsettling beauty, 8k",
+        "license": "open_model",
+        "size_kb": 976.2,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "low_step_count",
+          "steps": 8,
+          "cfg_scale": 7.0,
+          "seed": 55,
+          "strength": null,
+          "bw_contrast": 2.0,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_6.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "portrait of a human face seen through curved glass, slightly distorted reflection, warped features, elongated face, dramatic black and white, high contrast, fine art photography, surreal portrait, unsettling beauty, 8k",
+        "license": "open_model",
+        "size_kb": 975.6,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "low_step_count",
+          "steps": 12,
+          "cfg_scale": 7.0,
+          "seed": 55,
+          "strength": null,
+          "bw_contrast": 1.8,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_7.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "ethereal human face, flowing organic forms, features melting and reforming, surreal portrait, dramatic chiaroscuro, deep blacks and bright highlights, black and white, monochrome, fine art, dreamlike quality, 8k",
+        "license": "open_model",
+        "size_kb": 949.7,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "low_step_count",
+          "steps": 10,
+          "cfg_scale": 7.0,
+          "seed": 63,
+          "strength": null,
+          "bw_contrast": 2.0,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_8.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "ethereal human face, flowing organic forms, features melting and reforming, surreal portrait, dramatic chiaroscuro, deep blacks and bright highlights, black and white, monochrome, fine art, dreamlike quality, 8k",
+        "license": "open_model",
+        "size_kb": 952.7,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "img2img_renoise",
+          "steps": 50,
+          "cfg_scale": 8.0,
+          "seed": 100,
+          "strength": 0.75,
+          "bw_contrast": 1.8,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_9.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "ethereal human face, flowing organic forms, features melting and reforming, surreal portrait, dramatic chiaroscuro, deep blacks and bright highlights, black and white, monochrome, fine art, dreamlike quality, 8k",
+        "license": "open_model",
+        "size_kb": 823.4,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "img2img_renoise",
+          "steps": 50,
+          "cfg_scale": 8.0,
+          "seed": 101,
+          "strength": 0.85,
+          "bw_contrast": 2.0,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_10.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "portrait of a human face seen through curved glass, slightly distorted reflection, warped features, elongated face, dramatic black and white, high contrast, fine art photography, surreal portrait, unsettling beauty, 8k",
+        "license": "open_model",
+        "size_kb": 948.5,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "img2img_renoise",
+          "steps": 50,
+          "cfg_scale": 7.0,
+          "seed": 102,
+          "strength": 0.65,
+          "bw_contrast": 1.8,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_11.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "ethereal human face, flowing organic forms, features melting and reforming, surreal portrait, dramatic chiaroscuro, deep blacks and bright highlights, black and white, monochrome, fine art, dreamlike quality, 8k",
+        "license": "open_model",
+        "size_kb": 904.4,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "img2img_renoise",
+          "steps": 50,
+          "cfg_scale": 8.0,
+          "seed": 103,
+          "strength": 0.75,
+          "bw_contrast": 1.8,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_12.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "extreme close-up portrait of a human face, frontal view, dramatic chiaroscuro lighting, deep shadows, high contrast, studio photography, sharp features, intense gaze, black and white, monochrome, fine art portrait, 8k, highly detailed",
+        "license": "open_model",
+        "size_kb": 762.7,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "img2img_renoise",
+          "steps": 50,
+          "cfg_scale": 8.0,
+          "seed": 104,
+          "strength": 0.85,
+          "bw_contrast": 2.0,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_13.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "human face emerging from deep shadow, half-illuminated, dramatic side lighting, one eye visible, features dissolving into darkness, high contrast black and white, cinematic portrait, film noir, fine art photography, 8k",
+        "license": "open_model",
+        "size_kb": 767.4,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "img2img_renoise",
+          "steps": 50,
+          "cfg_scale": 9.0,
+          "seed": 105,
+          "strength": 0.9,
+          "bw_contrast": 2.2,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_14.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "extreme close-up portrait of a human face, frontal view, dramatic chiaroscuro lighting, deep shadows, high contrast, studio photography, sharp features, intense gaze, black and white, monochrome, fine art portrait, 8k, highly detailed",
+        "license": "open_model",
+        "size_kb": 591.2,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "extreme_cfg",
+          "steps": 12,
+          "cfg_scale": 20.0,
+          "seed": 42,
+          "strength": null,
+          "bw_contrast": 2.0,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_15.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "ethereal human face, flowing organic forms, features melting and reforming, surreal portrait, dramatic chiaroscuro, deep blacks and bright highlights, black and white, monochrome, fine art, dreamlike quality, 8k",
+        "license": "open_model",
+        "size_kb": 582.4,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "extreme_cfg",
+          "steps": 12,
+          "cfg_scale": 25.0,
+          "seed": 63,
+          "strength": null,
+          "bw_contrast": 2.2,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_16.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "extreme close-up portrait of a human face, frontal view, dramatic chiaroscuro lighting, deep shadows, high contrast, studio photography, sharp features, intense gaze, black and white, monochrome, fine art portrait, 8k, highly detailed",
+        "license": "open_model",
+        "size_kb": 938.3,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "full_generation",
+          "steps": 50,
+          "cfg_scale": 7.0,
+          "seed": 42,
+          "strength": null,
+          "bw_contrast": 1.8,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
+        "file": "spread_033_v2_opt_17.jpg",
+        "source": "generated_local",
+        "model": "juggernautXL_ragnarokBy (SDXL)",
+        "prompt": "portrait of a human face seen through curved glass, slightly distorted reflection, warped features, elongated face, dramatic black and white, high contrast, fine art photography, surreal portrait, unsettling beauty, 8k",
+        "license": "open_model",
+        "size_kb": 787.0,
+        "_generation_params": {
+          "checkpoint": "juggernautXL_ragnarokBy.safetensors",
+          "vae": "sdxl_vae.safetensors",
+          "technique": "full_generation",
+          "steps": 50,
+          "cfg_scale": 7.0,
+          "seed": 55,
+          "strength": null,
+          "bw_contrast": 1.8,
+          "resolution": "1024x1024 -> 2400x1600"
+        }
+      },
+      {
         "file": "spread_033_opt_0.jpg",
         "source": "generated",
         "model": "gemini-3.1-flash-image-preview",
@@ -1205,16 +1547,21 @@
         "_status": "DEPRECATED — generated from incorrect analysis. See backups/spread_033_image_metadata_backup.json. Keep file for reference but do not use."
       }
     ],
-    "generated_at": "2026-03-03T20:22:31Z",
-    "search_query": null,
+    "generated_at": "2026-03-05T04:30:08.442303+00:00",
     "_new_image_direction": {
       "approach": "generated",
       "subject": "A human face processed through AI distortion — latent-space interpolation, StyleGAN boundary artifacts, or diffusion model denoising at an intermediate step. Recognizably human but perceptually wrong: stretched, warped, features displaced. The contemporary funhouse mirror. Not horror, not glitch-art — uncanny, intimate, philosophically provocative.",
       "mood": "Uncanny, intimate, philosophically provocative. The distortion should feel like a different kind of seeing, not a malfunction.",
       "bw_treatment": "High contrast black and white. Deep blacks, bright highlights in the curved forms of the face.",
-      "scale": "full_bleed",
-      "awaiting_generation": true
-    }
+      "scale": "full_bleed"
+    },
+    "_generation_complete": true,
+    "_generation_techniques": [
+      "low_step_count",
+      "img2img_renoise",
+      "extreme_cfg",
+      "full_generation"
+    ]
   },
   "spread_035": {
     "approach": "found",
