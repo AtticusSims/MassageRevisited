@@ -1,0 +1,39 @@
+{
+  "_backup_info": {
+    "reason": "spread_032 text (Dewey quote on compartmentalization) was not extracted by VLM pipeline — OCR returned empty due to inverted/mirrored text orientation. Content plan wrongly mapped 'The City layer: computation at urban scale' onto this spread.",
+    "backed_up_at": "2026-03-05",
+    "report": "docs/reports/spread_033_analysis_report.md (Section 8: Spread 032 Addendum)",
+    "original_theme": "The City layer: computation at urban scale",
+    "replaced_with": "The compartment trap: when division masquerades as nature"
+  },
+  "spread_id": "spread_032",
+  "movement": "movement_1_environment",
+  "theme": "The City layer: computation at urban scale",
+  "text_options": [
+    {
+      "option_id": "a",
+      "label": "Pure silence — overlay image speaks",
+      "word_count": 0
+    },
+    {
+      "option_id": "b",
+      "label": "Sensor count: the city as data point",
+      "word_count": 11
+    },
+    {
+      "option_id": "c",
+      "label": "Bratton's city-as-simulation",
+      "word_count": 50
+    }
+  ],
+  "design_specs": [
+    {
+      "spec_id": "1",
+      "label": "Full-bleed image with computational overlay",
+      "layout_type": "image_dominant",
+      "image_approach": "combination",
+      "subject": "City street with sensor overlay visualization"
+    }
+  ],
+  "dependency_flags": ["spread_031", "spread_033"]
+}

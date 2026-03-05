@@ -226,4 +226,92 @@ This is the most thorough option but also the most disruptive. It could reveal t
 
 ---
 
+---
+
+## 8. Spread 032 Addendum — Second Misidentification
+
+**Added:** 2026-03-05 (same session)
+
+### The Error
+
+The VLM pipeline also failed to extract the text from spread_032 (book pages 54-55). The text is printed inverted/mirrored, which caused OCR to return empty. The spread was classified as `image_dominant` with theme `visual_rhetoric`, and the content plan mapped **"The City layer: computation at urban scale"** onto it.
+
+### The correct page content
+
+**Visual:** Two dense geometric grids spanning the top half of both pages — repeating cells of black rectangles and white triangles creating an optical illusion of three-dimensional compartments. The cells resemble office cubicles, filing-cabinet drawers, or prison cells.
+
+**Text (inverted/mirrored in original):**
+
+> "....compartmentalization of occupations and interests bring about a separation of that mode of activity commonly called 'practice' from insight, of imagination from executive 'doing.' Each of these activities is then assigned its own place in which it must abide. Those who write the anatomy of experience then suppose that these divisions inhere in the very constitution of human nature."
+> — John Dewey
+
+### Why this matters
+
+Dewey's quote is the **hinge** in the 031-032-033 argument sequence:
+
+| Spread | Original Argument | Sequence Function |
+|--------|-------------------|-------------------|
+| **031** | Renaissance perspective = detached observer, "A piazza for everything and everything in its piazza" | **The diagnosis:** Perspective creates detachment |
+| **032** | Dewey: Compartmentalization is mistaken for human nature | **The consequence:** Detachment produces artificial divisions |
+| **033** | Visual space vs. acoustic space; electric circuitry recreates the "primitive" | **The alternative:** Acoustic space dissolves the compartments |
+
+The geometric grid image *visually performs* Dewey's argument — rigid cells, each "assigned its own place in which it must abide." The VLM correctly described the grid but missed its thematic connection to the unextracted Dewey quote.
+
+### New theme
+
+**"The compartment trap: when division masquerades as nature"**
+
+### Contemporary mapping
+
+Dewey's 1916 critique maps precisely onto AI research history:
+
+- **Computer vision** was separated from **NLP** was separated from **robotics** was separated from **reasoning** — each "assigned its own place" (its own conferences, journals, graduate programs)
+- Researchers assumed these divisions reflected the actual structure of intelligence — "supposed that these divisions inhere in the very constitution" of cognition
+- The transformer architecture collapsed the compartments: a single model now processes text, images, audio, video, and code in the same latent space
+- The compartments were never properties of intelligence — they were properties of our institutional organization
+
+### Text options written
+
+Three options, each pairing Dewey with complementary historical thinkers:
+
+| Option | Label | Approach | Companion Thinker |
+|--------|-------|----------|-------------------|
+| **a** | "Dewey diagnoses the foundation model" | Full Dewey quote + term-by-term mapping to AI sub-fields | Dewey alone (his language is sufficient) |
+| **b** | "Whitehead's fallacy, Dewey's trap" | Pairs Dewey's compartmentalization with Whitehead's "fallacy of misplaced concreteness" | Alfred North Whitehead (1929) + Michael Polanyi (1966) |
+| **c** | "The grid that learned to dream" | List-format enumeration of AI sub-fields with building numbers, then sudden dissolution | Dewey (minimally — the structure speaks) |
+
+### Image direction
+
+The existing geometric grid images are DEPRECATED (they show city sensor overlays). New image direction:
+
+- A geometric compartmentalization grid — rigid cells on the left — dissolving rightward into continuous, integrated space
+- The transition from compartmentalized to integrated should feel organic (ice melting, not glass shattering)
+- High contrast black and white
+- Awaiting generation
+
+### Backup locations
+
+| Data | Backup File |
+|------|------------|
+| Authoring text options | `docs/data/backups/spread_032_authoring_backup.json` |
+| Image metadata | `docs/data/backups/spread_032_image_metadata_backup.json` |
+| Per-spread analysis | `docs/data/backups/spread_032_analysis_backup.json` |
+| Original image files | `docs/images/spread_032.jpg`, `spread_032_opt_0.jpg`, `spread_032_opt_1.jpg` (kept on disk) |
+
+### Impact on Stack sequence
+
+The Stack loses a second dedicated layer spread (City, after Earth). The remaining Stack spreads:
+
+| Spread | Layer | Status |
+|--------|-------|--------|
+| 028 | Address | Unchanged |
+| 030 | Cloud | Unchanged (could absorb Earth references) |
+| ~~032~~ | ~~City~~ | **Replaced** with Dewey/compartmentalization |
+| ~~033~~ | ~~Earth~~ | **Replaced** with McLuhan visual/acoustic space |
+| 034 | Interface | Unchanged |
+
+The Stack sequence goes from 5 dedicated spreads to 3. This is acceptable — Bratton's framework was a useful organizing device for the content plan, but the actual McLuhan content on these pages takes priority. The City and Earth layer themes can be referenced briefly in adjacent spreads (030 Cloud, 034 Interface) without requiring dedicated spreads.
+
+---
+
 *This report is separate from the main authoring schema and website. It is intended as a planning document for editorial review.*

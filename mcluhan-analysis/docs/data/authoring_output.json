@@ -2474,86 +2474,103 @@
     {
       "spread_id": "spread_032",
       "movement": "movement_1_environment",
-      "theme": "The City layer: computation at urban scale",
+      "theme": "The compartment trap: when division masquerades as nature",
       "text_options": [
         {
           "option_id": "a",
-          "label": "Pure silence — overlay image speaks",
+          "label": "Dewey diagnoses the foundation model",
           "display_text": null,
-          "body_text": null,
+          "body_text": "\"....compartmentalization of occupations and interests bring about a separation of that mode of activity commonly called ‘practice’ from insight, of imagination from executive ‘doing.’ Each of these activities is then assigned its own place in which it must abide. Those who write the anatomy of experience then suppose that these divisions inhere in the very constitution of human nature.\"\n— John Dewey\n\nFor fifty years, artificial intelligence obeyed Dewey’s diagnosis perfectly. Computer vision was separated from natural language processing. Robotics was separated from reasoning. Machine learning was separated from symbolic logic. Each was assigned its own place — its own conferences, its own journals, its own graduate programs — in which it must abide.\n\nThose who wrote the anatomy of intelligence then supposed that these divisions inhered in the very constitution of cognition itself. Vision was one module. Language was another. Reasoning was a third. The compartments were not organizational convenience but ontological truth.\n\nThe transformer dissolved the compartments. A single architecture now processes text, images, audio, video, and code in the same latent space. GPT-4 does not separate seeing from reading from reasoning — it does all three simultaneously, in the same weights, through the same attention mechanism.\n\nThe divisions did not inhere in the very constitution of intelligence. They inhered in the very constitution of our departments.",
           "caption_text": null,
-          "quotations_used": [],
-          "voice_register": "monumental",
-          "rhetorical_strategy": "demonstration",
-          "rationale": "No text at all. The composite image — a normal city street with a semi-transparent overlay revealing sensor coverage, WiFi fields, camera sight lines, and data flows — must carry the argument entirely. The reader looks at a street they might walk down every day and sees, for the first time, the computational layer they inhabit without knowing. M1's mission is to make the invisible visible; this spread does it literally, through image alone. The silence after the text-dense 031 provides essential rhythmic breathing room. Trust the overlay technique to do the work of a thousand words.",
-          "word_count": 0
+          "quotations_used": [
+            {
+              "text": "compartmentalization of occupations and interests bring about a separation of that mode of activity commonly called ‘practice’ from insight, of imagination from executive ‘doing.’ Each of these activities is then assigned its own place in which it must abide. Those who write the anatomy of experience then suppose that these divisions inhere in the very constitution of human nature.",
+              "attribution": "John Dewey",
+              "source": "Democracy and Education, 1916 / Art as Experience, 1934"
+            }
+          ],
+          "voice_register": "philosophical",
+          "rhetorical_strategy": "quotation_and_transformation",
+          "rationale": "Opens with the full Dewey quote, then maps it term-by-term onto the history of AI research. The key rhetorical move is structural: Dewey’s language (‘assigned its own place in which it must abide’) is echoed exactly for AI sub-fields (‘its own conferences, its own journals, its own graduate programs’). The closing line inverts Dewey’s punchline: ‘did not inhere in the very constitution of intelligence... inhered in the very constitution of our departments.’ This makes the parallel explicit and gives the spread a strong final sentence. The approach trusts Dewey’s own language to carry the argument — the contemporary commentary shows that his 1916 diagnosis applies with uncanny precision to a field he could not have imagined.",
+          "word_count": 230
         },
         {
           "option_id": "b",
-          "label": "Sensor count: the city as data point",
+          "label": "Whitehead’s fallacy, Dewey’s trap",
           "display_text": null,
-          "body_text": null,
-          "caption_text": "Singapore: 110,000 lampposts.\nEach one counts you.",
-          "quotations_used": [],
-          "voice_register": "sardonic",
-          "rhetorical_strategy": "defamiliarization",
-          "rationale": "Two lines. A statistic and an accusation. Singapore's Smart Nation initiative turned every lamppost into a sensor — counting pedestrians, measuring air quality, recording sound levels. The reader learns the number (110,000) and then receives the second-person address: 'Each one counts you.' The verb 'counts' is deliberately ambiguous — it both quantifies (counts you as a number) and values (each one counts you as significant, as data worth collecting). The brevity is the rhetoric: the less said, the more the image-overlay must do. Set small, bottom corner, the same whispered-statistic approach as spread 030.",
-          "word_count": 11
+          "body_text": "“Those who write the anatomy of experience then suppose that these divisions inhere in the very constitution of human nature.”\n— John Dewey\n\n“The fallacy of misplaced concreteness.”\n— Alfred North Whitehead\n\nTwo philosophers, thirteen years apart, named the same error. Dewey called it compartmentalization: the mistake of treating institutional divisions as natural facts. Whitehead called it the fallacy of misplaced concreteness: the mistake of treating abstractions as if they were the things themselves.\n\nAI committed both. We separated vision from language from reasoning — Dewey’s compartments. Then we treated each compartment as a natural kind of intelligence — Whitehead’s fallacy. The computer vision community didn’t just study vision separately; it assumed vision WAS separate. The natural language processing community didn’t just study language in isolation; it assumed language could BE isolated.\n\nMichael Polanyi would have seen through it immediately. His ‘tacit dimension’ — the knowledge that cannot be articulated, that crosses every boundary, that integrates perception with action with judgment — was precisely what the compartments suppressed. A radiologist reading an X-ray uses vision AND language AND reasoning AND embodied experience simultaneously. To separate these was not analysis but amputation.\n\nThe foundation model is the Frankensteinian reversal: the amputated limbs reattached, the compartments collapsed, the divisions that ‘inhered in the very constitution of intelligence’ revealed as scars of our own making.",
+          "caption_text": null,
+          "quotations_used": [
+            {
+              "text": "Those who write the anatomy of experience then suppose that these divisions inhere in the very constitution of human nature.",
+              "attribution": "John Dewey",
+              "source": "Democracy and Education, 1916 / Art as Experience, 1934"
+            },
+            {
+              "text": "The fallacy of misplaced concreteness.",
+              "attribution": "Alfred North Whitehead",
+              "source": "Process and Reality, 1929"
+            }
+          ],
+          "voice_register": "scholarly",
+          "rhetorical_strategy": "triangulation",
+          "rationale": "Pairs Dewey with Whitehead and Polanyi — three early-to-mid 20th century thinkers who each diagnosed the same error from different angles. Dewey named the institutional mechanism (compartmentalization), Whitehead named the philosophical error (misplaced concreteness), Polanyi named what was lost (tacit knowledge). The triangulation gives the argument intellectual depth and demonstrates that the compartmentalization of AI was not a novel mistake but a very old one. The closing metaphor — ‘amputated limbs reattached’ — echoes McLuhan’s own language about media as extensions/amputations of the body.",
+          "word_count": 240
         },
         {
           "option_id": "c",
-          "label": "Bratton's city-as-simulation",
-          "display_text": "Airports are not\nsimulations of cities.\nCities are simulations\nof airports.",
-          "body_text": null,
-          "caption_text": "— Benjamin Bratton, The Stack, 2015\n\nEvery surface senses. Every intersection optimizes. Every commute is logged, modeled, and rerouted before you decide to leave the house.",
+          "label": "The grid that learned to dream",
+          "display_text": null,
+          "body_text": "“Each of these activities is then assigned its own place in which it must abide.”\n— John Dewey\n\nVision: convolutional neural networks. Building 34.\nLanguage: recurrent neural networks. Building 40.\nReasoning: symbolic AI. Philosophy department, third floor.\nRobotics: actuators and sensors. The engineering annex.\nSpeech: hidden Markov models. The signal processing lab.\nCreativity: not a research area.\n\nEach assigned its own place. Each abiding.\n\nUntil a single architecture — sixty-five lines of Python defining multi-head self-attention — dissolved every wall simultaneously. Not by solving each problem separately and combining the solutions, but by discovering that the problems were never separate. That vision and language and reasoning and creativity were not distinct mental organs but different frequencies of the same signal.\n\nDewey saw it in 1916: the compartments are not nature but habit. The anatomy we imposed on experience was our own organizational chart, projected onto the mind and mistaken for its structure.\n\nThe foundation model is not intelligent because it integrated the compartments. It is intelligent because the compartments were never real.",
+          "caption_text": null,
           "quotations_used": [
             {
-              "text": "Airports are not simulations of cities; rather cities are simulations of airports.",
-              "attribution": "Benjamin Bratton",
-              "source": "The Stack: On Software and Sovereignty, MIT Press, 2015"
+              "text": "Each of these activities is then assigned its own place in which it must abide.",
+              "attribution": "John Dewey",
+              "source": "Democracy and Education, 1916 / Art as Experience, 1934"
             }
           ],
-          "voice_register": "confrontational",
-          "rhetorical_strategy": "provocation",
-          "rationale": "Uses Bratton's most compact and disorienting formulation about the City layer. The inversion (airports simulate cities becomes cities simulate airports) defamiliarizes urban space by revealing its computational logic: the city, like the airport, is a managed flow system where every body is tracked, every movement predicted, every anomaly flagged. The three sentences below the attribution escalate from observation ('every surface senses') through optimization ('every intersection optimizes') to pre-emption ('rerouted before you decide to leave'). The escalation from passive sensing to active pre-emption mirrors the spread's visual logic: first you see the normal city, then you see the overlay, then you realize the overlay is in charge.",
-          "word_count": 50
+          "voice_register": "lyrical",
+          "rhetorical_strategy": "enumeration_and_dissolution",
+          "rationale": "Uses a list structure — five AI sub-fields, each with its building, its location, its technology — to perform compartmentalization visually on the page. The reader sees the compartments as a literal inventory before they dissolve. The pivot (‘Until a single architecture’) is sudden and complete. The closing argument is the strongest version of the thesis: ‘the compartments were never real.’ This option is more stylistically bold than (a) or (b) — the list format, the short sentences, the building numbers — creating a distinctive page rhythm. ‘Creativity: not a research area’ is the sardonic kicker in the list: the one thing compartmentalization couldn’t even assign a compartment to.",
+          "word_count": 195
         }
       ],
       "design_specs": [
         {
           "spec_id": "1",
-          "label": "Full-bleed image with computational overlay",
+          "label": "Geometric grid with dissolution: compartments breaking open",
           "layout": {
-            "type": "image_dominant",
-            "description": "Full-bleed composite image: a recognizable city street photograph with a semi-transparent overlay revealing the invisible computational infrastructure — sensor coverage radii, WiFi signal fields, camera sight lines as cone shapes, data flow lines connecting lampposts to central nodes. The overlay should feel like an X-ray of the city's nervous system. If text is used, it is minimal and positioned at the bottom edge.",
-            "left_page": "Left half of the full-bleed composite. The 'normal' street is more visible on this side — buildings, pedestrians, vehicles. The overlay begins to appear but is subtle.",
-            "right_page": "Right half of the composite. The overlay intensifies — sensor cones multiply, data flow lines densify, the 'normal' city recedes beneath the computational layer. The reader's eye moves left to right from city-as-seen to city-as-computed.",
+            "type": "text_with_specific_image",
+            "description": "Top half: geometric grid pattern echoing the original’s compartmentalization motif — rigid cells, high contrast black and white, optical illusion of depth. On the right side, the grid begins to dissolve: cells merge, walls blur, compartment boundaries become permeable. Bottom half: the Dewey quote and contemporary commentary. The dissolution of the grid from left to right performs the argument: compartmentalization yielding to integration.",
+            "left_page": "Dense geometric grid (rigid, intact compartments) above the opening Dewey quote. The visual order is absolute — every cell in its place.",
+            "right_page": "Grid begins dissolving — cells merging, walls thinning, boundaries blurring into continuous space. Contemporary text continues below. The dissolution is the argument made visual.",
             "gutter_treatment": "continuous",
             "orientation": "landscape"
           },
           "typography": {
-            "display_face": "If Bratton quotation is used: condensed sans-serif (Helvetica Neue Condensed), set large enough to be readable over the image but not large enough to dominate it",
-            "body_face": "Small sans-serif for caption text, if used",
-            "display_scale": "subhead",
-            "color_treatment": "white_on_black",
-            "special_treatment": "Any text should be reversed out (white) against the darker portions of the image. The text competes with the overlay graphics for attention — this visual competition IS the spread's argument about the City layer competing with the city-as-experienced for primacy."
+            "display_face": "None — the Dewey quote is set as body text, not display. The philosophical register demands sustained reading, not display impact.",
+            "body_face": "Serif, medium weight, justified. Standard book typography — matching the scholarly tone of the Dewey quote. 10-11pt.",
+            "display_scale": null,
+            "color_treatment": "black_on_white",
+            "special_treatment": "Consider printing the Dewey quote in a slightly different orientation or with subtle rotational shift — echoing the original’s inverted text as a nod to the reader’s disorientation. But the text must remain legible: the argument requires sustained reading."
           },
           "image_direction": {
-            "approach": "combination",
-            "subject": "Base layer: a recognizable urban street — not futuristic, not spectacular, deliberately ordinary. A street the reader might walk down. Overlay layer: semi-transparent visualization showing sensor coverage radii (circles around lampposts), camera sight lines (cone shapes), WiFi fields (concentric waves), data flow lines (connecting nodes). The overlay should use a slightly different graphic language than the photograph — vector lines on photographic texture — to make the two layers distinguishable but inseparable.",
-            "mood": "layered, urban, surveillance-ambient — the mood should be quotidian rather than dystopian, because the point is that the computation is normal, not exceptional",
-            "bw_treatment": "The photograph: soft grayscale, slightly desaturated, mid-contrast. The overlay: crisp white vector lines and shapes against the gray photograph. The two layers should be distinguishable but merged — the computation is inside the city, not on top of it.",
-            "scale": "full_bleed"
+            "approach": "generated",
+            "subject": "A geometric grid of compartments — high contrast black and white cells resembling office cubicles, prison cells, or filing-cabinet drawers seen from above. On the left side, the grid is rigid and complete. Moving rightward, the walls between cells begin to dissolve, blur, and merge — cells bleeding into each other, boundaries becoming permeable, the rigid structure yielding to continuous space. The transition from compartmentalized to integrated should feel organic, not broken — like ice melting, not glass shattering. This is Dewey’s insight made visual: the compartments were never load-bearing walls, just partitions.",
+            "mood": "Architectural, institutional, dissolving. The left side should feel like a bureaucratic grid — cold, efficient, totalizing. The right side should feel like liberation or integration — the same space, freed from artificial division.",
+            "bw_treatment": "High contrast black and white. The grid should be crisp and geometric on the left, softening and blurring as it dissolves rightward.",
+            "scale": "top_half"
           },
-          "density": "dense",
+          "density": "moderate",
           "tone": "balanced",
-          "svg_wireframe": "<svg viewBox=\"0 0 640 400\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Helvetica, Arial, sans-serif\">\n<defs>\n  <pattern id=\"hatch\" width=\"6\" height=\"6\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\">\n    <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"6\" stroke=\"#666\" stroke-width=\"1\"/>\n  </pattern>\n</defs>\n<rect width=\"640\" height=\"400\" fill=\"#222222\"/>\n<rect x=\"0.5\" y=\"0.5\" width=\"639\" height=\"399\" fill=\"none\" stroke=\"#333333\" stroke-width=\"1.5\" rx=\"2\"/>\n<rect x=\"0\" y=\"0\" width=\"640\" height=\"28\" fill=\"#333\"/>\n<text x=\"16\" y=\"18\" font-size=\"11\" font-family=\"monospace\" fill=\"#DDD\" font-weight=\"700\">spread_032</text>\n<text x=\"110\" y=\"18\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#DDD\">image_dominant</text>\n<text x=\"624\" y=\"18\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#DDD\" text-anchor=\"end\">Full-bleed image with computational overlay</text>\n\n<rect x=\"8\" y=\"36\" width=\"624\" height=\"348\" rx=\"0\" fill=\"#555555\" stroke=\"#777777\" stroke-width=\"1\"/>\n<rect x=\"8\" y=\"36\" width=\"624\" height=\"348\" rx=\"0\" fill=\"url(#hatch)\" opacity=\"0.4\"/>\n<text x=\"320.0\" y=\"213.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#333\" text-anchor=\"middle\" font-weight=\"600\">FULL-BLEED IMAGE</text>\n<rect x=\"32\" y=\"52\" width=\"192.0\" height=\"32\" rx=\"4\" fill=\"#3A3A3A\" stroke=\"#555555\" stroke-width=\"1\"/>\n<text x=\"128.0\" y=\"71.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#555555\" text-anchor=\"middle\">DISPLAY</text>\n<rect x=\"340\" y=\"340\" width=\"280\" height=\"32\" rx=\"4\" fill=\"#3A3A3A\" stroke=\"#555555\" stroke-width=\"1\"/>\n<text x=\"480.0\" y=\"359.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#555555\" text-anchor=\"middle\">CAPTION</text>\n<circle cx=\"22\" cy=\"392\" r=\"3\" fill=\"#666\" opacity=\"0.5\"/>\n<circle cx=\"32\" cy=\"392\" r=\"3\" fill=\"#666\" opacity=\"0.5\"/>\n<circle cx=\"42\" cy=\"392\" r=\"3\" fill=\"#666\" opacity=\"0.5\"/>\n<text x=\"54\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#666\" opacity=\"0.6\">dense</text>\n<text x=\"624\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#666\" opacity=\"0.6\" text-anchor=\"end\">balanced | white_on_black</text>\n</svg>",
-          "rationale": "The original accumulated city images to show the urban environment as media artifact. This design does the same but adds a literal layer: the computational infrastructure that the original could not have imagined. The overlay technique is the design's core innovation — it performs M1's mission (making the invisible visible) through a simple visual device that the reader immediately understands. The gradient from normal (left) to computed (right) allows the reader to experience the defamiliarization progressively. The continuous gutter treatment ensures the city flows as a single environment, not two halves — because the computation is everywhere, without borders."
+          "svg_wireframe": "<svg viewBox=\"0 0 640 400\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Helvetica, Arial, sans-serif\">\n<rect width=\"640\" height=\"400\" fill=\"#f5f5f5\"/>\n<rect x=\"0.5\" y=\"0.5\" width=\"639\" height=\"399\" fill=\"none\" stroke=\"#555\" stroke-width=\"1.5\" rx=\"2\"/>\n<rect x=\"0\" y=\"0\" width=\"640\" height=\"28\" fill=\"#333\"/>\n<text x=\"16\" y=\"18\" font-size=\"11\" font-family=\"monospace\" fill=\"#DDD\" font-weight=\"700\">spread_032</text>\n<text x=\"110\" y=\"18\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#DDD\">text_with_specific_image</text>\n<text x=\"624\" y=\"18\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#DDD\" text-anchor=\"end\">The compartment trap</text>\n\n<!-- Grid zone (top half) -->\n<rect x=\"8\" y=\"36\" width=\"304\" height=\"170\" rx=\"0\" fill=\"#ddd\" stroke=\"#999\" stroke-width=\"1\"/>\n<!-- Rigid grid cells -->\n<line x1=\"84\" y1=\"36\" x2=\"84\" y2=\"206\" stroke=\"#333\" stroke-width=\"1.5\"/>\n<line x1=\"160\" y1=\"36\" x2=\"160\" y2=\"206\" stroke=\"#333\" stroke-width=\"1.5\"/>\n<line x1=\"236\" y1=\"36\" x2=\"236\" y2=\"206\" stroke=\"#333\" stroke-width=\"1.5\"/>\n<line x1=\"8\" y1=\"92\" x2=\"312\" y2=\"92\" stroke=\"#333\" stroke-width=\"1.5\"/>\n<line x1=\"8\" y1=\"149\" x2=\"312\" y2=\"149\" stroke=\"#333\" stroke-width=\"1.5\"/>\n<text x=\"160\" y=\"125\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#666\" text-anchor=\"middle\">RIGID COMPARTMENTS</text>\n\n<!-- Dissolving grid (right) -->\n<rect x=\"320\" y=\"36\" width=\"312\" height=\"170\" rx=\"0\" fill=\"#ddd\" stroke=\"#999\" stroke-width=\"1\"/>\n<line x1=\"396\" y1=\"36\" x2=\"396\" y2=\"206\" stroke=\"#999\" stroke-width=\"1\" stroke-dasharray=\"4,4\" opacity=\"0.7\"/>\n<line x1=\"472\" y1=\"36\" x2=\"475\" y2=\"206\" stroke=\"#bbb\" stroke-width=\"0.5\" stroke-dasharray=\"6,6\" opacity=\"0.4\"/>\n<line x1=\"320\" y1=\"92\" x2=\"632\" y2=\"95\" stroke=\"#999\" stroke-width=\"0.5\" stroke-dasharray=\"8,8\" opacity=\"0.3\"/>\n<text x=\"476\" y=\"125\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#888\" text-anchor=\"middle\">DISSOLVING → INTEGRATED</text>\n\n<!-- Text zone (bottom half) -->\n<rect x=\"8\" y=\"214\" width=\"304\" height=\"170\" rx=\"2\" fill=\"#fff\" stroke=\"#ccc\" stroke-width=\"0.5\"/>\n<text x=\"20\" y=\"232\" font-size=\"8\" font-family=\"serif\" fill=\"#333\">\"....compartmentalization of occupations</text>\n<text x=\"20\" y=\"244\" font-size=\"8\" font-family=\"serif\" fill=\"#333\">and interests bring about a separation</text>\n<text x=\"20\" y=\"256\" font-size=\"8\" font-family=\"serif\" fill=\"#333\">of that mode of activity commonly called</text>\n<text x=\"20\" y=\"268\" font-size=\"8\" font-family=\"serif\" fill=\"#333\">'practice' from insight...\" — J. Dewey</text>\n<text x=\"160\" y=\"360\" font-size=\"7\" font-family=\"sans-serif\" fill=\"#888\" text-anchor=\"middle\">DEWEY QUOTE + COMMENTARY</text>\n\n<rect x=\"320\" y=\"214\" width=\"312\" height=\"170\" rx=\"2\" fill=\"#fff\" stroke=\"#ccc\" stroke-width=\"0.5\"/>\n<text x=\"332\" y=\"232\" font-size=\"8\" font-family=\"serif\" fill=\"#333\">For fifty years, AI obeyed Dewey's</text>\n<text x=\"332\" y=\"244\" font-size=\"8\" font-family=\"serif\" fill=\"#333\">diagnosis perfectly. Computer vision</text>\n<text x=\"332\" y=\"256\" font-size=\"8\" font-family=\"serif\" fill=\"#333\">was separated from NLP. Robotics from</text>\n<text x=\"332\" y=\"268\" font-size=\"8\" font-family=\"serif\" fill=\"#333\">reasoning. The transformer dissolved</text>\n<text x=\"332\" y=\"280\" font-size=\"8\" font-family=\"serif\" fill=\"#333\">the compartments.</text>\n<text x=\"476\" y=\"360\" font-size=\"7\" font-family=\"sans-serif\" fill=\"#888\" text-anchor=\"middle\">CONTEMPORARY TEXT CONTINUED</text>\n\n<circle cx=\"22\" cy=\"392\" r=\"3\" fill=\"#AAA\" opacity=\"0.5\"/>\n<text x=\"34\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#AAA\" opacity=\"0.6\">moderate density</text>\n<text x=\"624\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#AAA\" opacity=\"0.6\" text-anchor=\"end\">balanced | black_on_white | grid dissolving L→R</text>\n</svg>",
+          "rationale": "The design echoes the original’s two-zone layout (grid above, text below) while updating it: the original’s grid was static (all compartments intact), representing the problem Dewey diagnosed. The contemporary version adds dissolution — compartments merging from left to right — representing the solution that foundation models enacted. The visual transition performs the three-spread argument: 031 (perspective as detachment) → 032 (compartmentalization as consequence, now dissolving) → 033 (acoustic space as the integrated alternative). The Dewey quote anchors the bottom half in historical authority; the contemporary commentary extends it. The serif typography respects the scholarly register of the source material."
         }
       ],
       "selected_text": null,
       "selected_design": null,
-      "reviewer_notes": null,
+      "reviewer_notes": "CORRECTED 2026-03-05: This spread was previously misidentified by the VLM pipeline. The original theme ('The City layer: computation at urban scale') was based on incorrect analysis — OCR failed to extract the Dewey quote (printed inverted/mirrored). The correct content is Dewey’s argument about compartmentalization. See docs/reports/spread_033_analysis_report.md (Section 8). Previous data backed up to docs/data/backups/spread_032_authoring_backup.json",
       "dependency_flags": [
         "spread_031",
         "spread_033"
