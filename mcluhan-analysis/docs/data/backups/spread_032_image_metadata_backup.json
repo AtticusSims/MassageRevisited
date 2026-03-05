@@ -1,0 +1,31 @@
+{
+  "_backup_info": {
+    "reason": "spread_032 images were generated based on incorrect analysis (city sensor overlay instead of geometric compartmentalization grid)",
+    "backed_up_at": "2026-03-05",
+    "report": "docs/reports/spread_033_analysis_report.md (Section 8: Spread 032 Addendum)",
+    "note": "Original image files are still at docs/images/spread_032.jpg, spread_032_opt_0.jpg, spread_032_opt_1.jpg"
+  },
+  "spread_032": {
+    "approach": "combination",
+    "selected": 0,
+    "options": [
+      {
+        "file": "spread_032_opt_0.jpg",
+        "source": "generated",
+        "model": "gemini-3.1-flash-image-preview",
+        "prompt": "Create a black and white photograph/image: Base layer: a recognizable urban street -- not futuristic, not spectacular, deliberately ordinary. Overlay layer: semi-transparent visualization showing sensor coverage radii, camera sight lines, WiFi fields, data flow lines.",
+        "license": "synthetic",
+        "size_kb": 315.5
+      },
+      {
+        "file": "spread_032_opt_1.jpg",
+        "source": "generated",
+        "model": "gemini-3.1-flash-image-preview",
+        "prompt": "Create a black and white photograph/image: Base layer: a recognizable urban street -- not futuristic, not spectacular, deliberately ordinary. Overlay layer: semi-transparent visualization showing sensor coverage radii, camera sight lines, WiFi fields, data flow lines.",
+        "license": "synthetic",
+        "size_kb": 279.8
+      }
+    ],
+    "generated_at": "2026-03-03T19:53:57Z"
+  }
+}

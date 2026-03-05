@@ -1,0 +1,26 @@
+{
+  "_backup_info": {
+    "reason": "spread_032 per-spread analysis was based on incorrect VLM output (Qwen3-VL returned empty OCR due to inverted/mirrored text orientation, missing the Dewey quote entirely)",
+    "backed_up_at": "2026-03-05",
+    "report": "docs/reports/spread_033_analysis_report.md (Section 8: Spread 032 Addendum)"
+  },
+  "id": "spread_032",
+  "analysis": {
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "",
+      "display_text": ""
+    },
+    "themes": {
+      "original_themes": ["visual_rhetoric"],
+      "contemporary_domain_candidates": ["attention_and_cognition", "post_literacy_and_language"]
+    }
+  },
+  "content_plan": {
+    "contemporary_plan": {
+      "theme": "The City layer: computation at urban scale",
+      "argument": "The original accumulated city images, showing the urban environment as media artifact. The contemporary version reveals the computational layer beneath the city surface."
+    }
+  }
+}

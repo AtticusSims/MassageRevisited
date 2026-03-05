@@ -1,5 +1,6 @@
 {
   "id": "spread_032",
+  "_correction_note": "CORRECTED 2026-03-05: This spread was previously misidentified by the VLM pipeline. The Dewey quote on compartmentalization was not extracted (OCR returned empty due to inverted/mirrored text). See docs/reports/spread_033_analysis_report.md (Section 8). Previous data backed up to docs/data/backups/spread_032_analysis_backup.json",
   "analysis": {
     "id": "spread_032",
     "pdf_page": 32,
@@ -8,169 +9,192 @@
       55
     ],
     "section": "body",
-    "analyst": "claude-opus-4-6+qwen3-vl",
-    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
-    "spread_type": "image_dominant",
+    "analyst": "human_corrected",
+    "analysis_method": "manual_review (2026-03-05) correcting llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
+    "spread_type": "text_with_image",
     "orientation": "landscape_spread",
     "text": {
-      "body_text": "",
+      "body_text": "\"....compartmentalization of occupations and interests bring about a separation of that mode of activity commonly called 'practice' from insight, of imagination from executive 'doing.' Each of these activities is then assigned its own place in which it must abide. Those who write the anatomy of experience then suppose that these divisions inhere in the very constitution of human nature.\" —John Dewey",
       "display_text": "",
       "captions": [],
       "page_numbers_visible": []
     },
-    "quotations": [],
+    "quotations": [
+      {
+        "text": "compartmentalization of occupations and interests bring about a separation of that mode of activity commonly called 'practice' from insight, of imagination from executive 'doing.' Each of these activities is then assigned its own place in which it must abide. Those who write the anatomy of experience then suppose that these divisions inhere in the very constitution of human nature.",
+        "attribution": "John Dewey",
+        "source": "Democracy and Education, 1916 (or Art as Experience, 1934)",
+        "note": "Dewey argued throughout his work that the separation of theory from practice, mind from body, art from science, was not natural but an artifact of institutional and cultural organization. McLuhan places this quote directly after the Renaissance/perspective spread (031) to argue that the compartmentalized worldview of visual space — everything in its piazza — is mistaken for human nature."
+      }
+    ],
     "images": [
       {
-        "position": "full_bleed",
-        "subject": "### Visual Elements in the Book Spread  \n\n#### 1. Left-Page Top Grid  \n- **What it depicts**: A grid of repeating geometric shapes. Each cell in the grid consists of a **black rectangle at the top**, a **white triangle (or trapezoid) in the middle**, and a **black rectangle at the bottom**. The arrangement creates an optical illusion of depth, resembling a 3D grid of cubes receding into space. The pattern is consistent across all cells, with alternating black and white sections forming a cohesive, rhythmic design.  \n- **Position**: Top section of the left page (spanning the top of the left page, aligned horizontally with the right-page grid).  \n- **Visual style**: Black-and-white illustration (geometric pattern).  \n- **Composition**:  \n  - **Framing**: Framed as a strict grid with straight lines and right angles.  \n  - **Angle**: Frontal (the grid is viewed directly on-axis), but internal shapes create a 3D perspective illusion.  \n  - **Contrast**: High contrast between black and white, emphasizing the optical illusion of depth.  \n  - **Key visual qualities**: Repetition of the black/white cell pattern, symmetry across the grid, and the illusion of receding space.  \n- **Page occupancy**: Approximately the top third of the left page.  \n\n\n#### 2. Right-Page Top Grid  \n- **What it depicts**: A grid of repeating geometric shapes, identical in pattern to the left-page grid but with **five columns** instead of four. Each cell also consists of a **black rectangle at the top**, a **white triangle (or trapezoid) in the middle**, and a **black rectangle at the bottom**, maintaining the same optical illusion of depth.  \n- **Position**: Top section of the right page (spanning the top of the right page, aligned horizontally with the left-page grid).  \n- **Visual style**: Black-and-white illustration (geometric pattern).  \n- **Composition**:  \n  - **Framing**: Framed as a strict grid with straight lines and right angles (same as the left grid).  \n  - **Angle**: Frontal (the grid ",
+        "position": "top_half",
+        "subject": "A repeating geometric grid pattern spanning both pages. Black rectangles and white triangles/trapezoids arranged in a strict grid creating an optical illusion of depth — receding three-dimensional compartments or cells. The pattern visually performs Dewey's argument about compartmentalization.",
         "source_type": "illustration",
-        "source_credit": "uncredited",
-        "estimated_date": "c. 1960s",
-        "composition": "",
+        "composition": "Dense, repeating grid filling the top half of both pages. High contrast black and white. The geometric cells resemble compartments, cubicles, or pigeon-holes — the visual metaphor for the division Dewey describes.",
         "scale": "dominant",
-        "relationship_to_text": {
-          "primary_relation": "illustrates",
-          "barthes_mode": "anchorage",
-          "description": ""
-        },
-        "interactive_meaning": {
-          "contact": "not_applicable",
-          "social_distance": "close_social",
-          "attitude_angle": "oblique"
-        }
+        "estimated_date": "circa 1960s",
+        "visual_thesis": "The grid of identical compartments IS the argument: knowledge, practice, imagination, and action have been sorted into separate cells, and the rigid geometry makes the sorting look natural and inevitable. But it isn't — it's designed."
       }
     ],
     "design": {
-      "layout_description": "### 1. SPATIAL ARRANGEMENT  \nThe spread is a **two-page layout** with a clear division:  \n- **Top half (both pages)**: Dominated by a dense, repeating geometric pattern (black-and-white tessellation of angular shapes). This visual element spans the entire width of both pages, creating a unified horizontal band.  \n- **Bottom half (left and right pages)**: Divided into two vertical columns of text. The left page’s text column sits below the geometric pattern, and the right page’s text column does the same. The space is split horizontally (image vs. text) and vertically (left vs. right text columns), with no significant overlap between the image and text zones.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Small **body text** (typical of book paragraphs, not display text).  \n- **Font style**: Appears to be **serif** (traditional book typography), though the mirrored/reversed orientation makes precise identification difficult.  \n- **Weight**: Light (not bold), as it is standard body text.  \n- **Orientation**: **Reversed** (upside down and mirrored). The text is printed in a way that requires flipping the page to read, creating a disorienting effect.  \n- **Color**: Black text on a white background (though the reversal makes it appear “reversed” in orientation, not color).  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (strict black-and-white palette with no grayscale or muted tones). The geometric pattern and text both rely on stark black/white opposition.  \n- **Tone**: Predominantly **light** (white background dominates the text area), but the geometric pattern introduces dense black shapes. The overall tone is **minimalist** due to the lack of color, yet the reversal adds visual tension.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The geometric pattern at the top is dense (little white space within it), but the text columns have ample white space around them (e.g., margins between the text and the page edges). The space between the image and text is",
+      "layout_description": "Two-zone layout: dense geometric grid pattern fills the top half of both pages (the compartments), with the Dewey quote text in the bottom half. The text is printed inverted/mirrored, requiring the reader to flip or rotate the book — performing the disorientation of having one's assumptions about 'natural' divisions overturned.",
       "typography": {
-        "body_font_style": "sans-serif",
+        "body_font_style": "Serif, standard book typography.",
         "display_font_style": null,
         "special_treatments": [
-          "inverted text (upside-down and mirrored)"
+          "inverted text (upside-down and/or mirrored)",
+          "text printed below geometric grid"
         ]
       },
       "color_and_tone": {
         "contrast": "high",
         "dominant_tone": "light",
-        "description": "Black and white with gray tones."
+        "description": "Black and white. The geometric grid is dense black/white pattern; the text area is white background with black text (inverted orientation)."
       },
-      "white_space": "minimal",
-      "visual_density": "overwhelming",
-      "left_right_relationship": "mirror",
+      "white_space": "moderate",
+      "visual_density": "high",
+      "left_right_relationship": "mirror — the geometric grids on left and right pages mirror each other, reinforcing the theme of imposed symmetry and artificial order.",
       "information_value": {
         "left_right": "balanced",
-        "top_bottom": "not_applicable",
+        "top_bottom": "divided — image above, text below",
         "center_margin": "distributed"
       },
-      "compositional_framing": "weakly_framed"
+      "compositional_framing": "strongly_framed"
     },
     "rhetoric": {
-      "argument": "The physically inverted and disrupted text shatters print-era reading conventions, forcing the reader to experience the cognitive disorientation that occurs when a dominant medium's ground rules are violated—this is what electronic media do to print consciousness, made viscerally immediate.",
+      "argument": "Dewey argues that the separation of practice from insight, of imagination from doing, is not natural but a product of institutional compartmentalization — and that we then mistake these divisions for human nature. McLuhan places this quote after the Renaissance/perspective spread (031) because Renaissance perspective IS the visual technology of compartmentalization: it divides the world into a grid of measured units, places the observer outside the frame, and separates seeing from participating. The geometric grid image literalizes the compartments.",
       "rhetorical_strategy": {
-        "primary": "juxtaposition",
-        "secondary": [
-          "demonstration"
-        ]
+        "primary": "quotation",
+        "secondary": ["demonstration"]
       },
-      "strategy_description": "The spread juxtaposes elements through its combination of text and design. Secondary strategies of demonstration reinforce the primary approach.",
+      "strategy_description": "Dewey's quote makes the philosophical argument; the geometric grid demonstrates it visually. Together they prepare the ground for spread 033's distinction between visual space (compartmentalized) and acoustic space (integrated).",
       "design_enacts_argument": true,
-      "design_argument_description": "Inverted and disrupted typography forces the reader to experience print conventions being violated from within, demonstrating that the 'invisible' rules of the reading environment become visible only when broken.",
-      "reader_experience": "Balanced engagement — the reader moves between text and visual elements.",
+      "design_argument_description": "The geometric grid of identical compartments IS the visual argument for compartmentalization. The inverted text forces physical disorientation, enacting the moment of recognizing that 'natural' divisions are actually constructed.",
+      "reader_experience": "The reader encounters the grid (order, compartments, rational structure) and then must physically struggle with the inverted text — experiencing the constructed nature of the order the grid represents.",
       "mcluhan_concepts": [
-        "participation"
+        "visual_space_vs_acoustic_space",
+        "environment_as_invisible",
+        "medium_is_the_message"
       ],
-      "multi_spread_patterns": "spreads_031_032:disruption_pair: Two spreads of sustained typographic disruption create a cumulative experience of print-convention breakdown that mirrors the dissolution of stable media environments.",
-      "confidence": "moderate"
+      "multi_spread_patterns": "spreads_031_032_033:perception_sequence: 031 identifies Renaissance perspective as detachment; 032 (Dewey) names compartmentalization as the consequence; 033 (McLuhan) proposes acoustic space as the alternative. The three spreads form a complete argument: perspective → compartmentalization → electric dissolution of compartments.",
+      "confidence": "high"
     },
     "themes": {
       "original_themes": [
-        "visual_rhetoric"
+        "compartmentalization",
+        "theory_practice_division",
+        "constructed_nature",
+        "institutional_epistemology"
       ],
       "contemporary_domain_candidates": [
-        "attention_and_cognition",
-        "post_literacy_and_language"
+        "disciplinary_collapse",
+        "multimodal_integration",
+        "artificial_intelligence_as_convergence",
+        "siloed_vs_general_intelligence"
       ],
       "movement_mapping": [
         "movement_1_environment"
       ],
-      "mapping_rationale": "The sustained disruption parallels the contemporary experience of perpetual format-shifting—moving between incompatible media conventions (email, messaging, social feeds, video) that each demand different cognitive orientations, making adaptability rather than mastery the core literacy skill.",
-      "confidence": "moderate"
+      "mapping_rationale": "Dewey's critique of compartmentalization maps directly onto the contemporary AI landscape: the separation of vision from language from reasoning from action is being dissolved by multimodal foundation models. GPT-4, Gemini, and Claude integrate text, image, code, and reasoning in a single model — collapsing exactly the disciplinary compartments Dewey criticized. The separation of 'practice' from 'insight' is being overturned by systems that learn by doing, and do by predicting.",
+      "confidence": "high"
     },
     "progression": {
-      "pace_shift": "accelerating",
-      "thematic_function": "transition",
-      "relationship_to_previous": "Continues and intensifies the previous spread's typographic disruption, refusing to let the reader regain perceptual equilibrium.",
-      "relationship_to_next": "The textual disruption yields to visual metaphor: prison bars as the image of print culture's perceptual constraints.",
-      "confidence": "moderate"
+      "pace_shift": "sustained",
+      "thematic_function": "bridge",
+      "relationship_to_previous": "Spread 031 identifies Renaissance perspective as detachment ('The viewer of Renaissance art is systematically placed outside the frame of experience'). Spread 032 names the consequence: detachment produces compartmentalization, and compartmentalization gets mistaken for nature. Dewey's quote is the bridge — it explains WHY the Renaissance worldview is a problem, not just WHAT it looks like.",
+      "relationship_to_next": "Spread 033 (the distorted face / visual vs. acoustic space) proposes the alternative. If visual space = compartmentalization (032), then acoustic space = integration. Electric circuitry (and by extension, foundation models) dissolves the compartments. The Dewey quote is the hinge: the old order diagnosed (032) before the new order described (033).",
+      "confidence": "high"
     },
-    "notes": "The repetition of disruption across multiple spreads is itself significant: it's not a one-time trick but a sustained condition. The reader cannot simply adjust once and settle into a new pattern—the disruption keeps shifting, modeling the perpetual instability of electronic media environments."
+    "notes": "CORRECTED 2026-03-05. The Dewey quote is central to the 031-032-033 argument sequence. The VLM pipeline returned empty OCR (the text is printed inverted/mirrored) and classified the spread as 'image_dominant' with theme 'visual_rhetoric.' The content plan then mapped Bratton's 'City layer' onto the spread, which had no connection to the actual Dewey content.\n\nThe geometric grid image was correctly identified by the VLM but its thematic significance was missed: it's not just a decorative pattern but a visual metaphor for the compartmentalization Dewey describes. The repeating cells = the pigeon-holes of disciplinary knowledge.\n\nPrevious analysis backed up to: docs/data/backups/spread_032_analysis_backup.json"
   },
   "ocr": {
     "ocr_raw": "",
     "ocr_raw_time": 23.2,
     "ocr_structured": "",
     "ocr_structured_time": 23.3,
-    "model": "qwen3-vl"
+    "model": "qwen3-vl",
+    "_correction_note": "OCR returned empty because the text is printed inverted/mirrored. The Dewey quote was manually transcribed during correction."
   },
   "visual": {
-    "image_description": "### Visual Elements in the Book Spread  \n\n#### 1. Left-Page Top Grid  \n- **What it depicts**: A grid of repeating geometric shapes. Each cell in the grid consists of a **black rectangle at the top**, a **white triangle (or trapezoid) in the middle**, and a **black rectangle at the bottom**. The arrangement creates an optical illusion of depth, resembling a 3D grid of cubes receding into space. The pattern is consistent across all cells, with alternating black and white sections forming a cohesive, rhythmic design.  \n- **Position**: Top section of the left page (spanning the top of the left page, aligned horizontally with the right-page grid).  \n- **Visual style**: Black-and-white illustration (geometric pattern).  \n- **Composition**:  \n  - **Framing**: Framed as a strict grid with straight lines and right angles.  \n  - **Angle**: Frontal (the grid is viewed directly on-axis), but internal shapes create a 3D perspective illusion.  \n  - **Contrast**: High contrast between black and white, emphasizing the optical illusion of depth.  \n  - **Key visual qualities**: Repetition of the black/white cell pattern, symmetry across the grid, and the illusion of receding space.  \n- **Page occupancy**: Approximately the top third of the left page.  \n\n\n#### 2. Right-Page Top Grid  \n- **What it depicts**: A grid of repeating geometric shapes, identical in pattern to the left-page grid but with **five columns** instead of four. Each cell also consists of a **black rectangle at the top**, a **white triangle (or trapezoid) in the middle**, and a **black rectangle at the bottom**, maintaining the same optical illusion of depth.  \n- **Position**: Top section of the right page (spanning the top of the right page, aligned horizontally with the left-page grid).  \n- **Visual style**: Black-and-white illustration (geometric pattern).  \n- **Composition**:  \n  - **Framing**: Framed as a strict grid with straight lines and right angles (same as the left grid).  \n  - **Angle**: Frontal (the grid is viewed directly on-axis), with internal shapes creating a 3D perspective illusion.  \n  - **Contrast**: High contrast between black and white, reinforcing the optical illusion of depth.  \n  - **Key visual qualities**: Repetition of the black/white cell pattern, symmetry across the grid, and the illusion of receding space (identical to the left grid but extended to five columns).  \n- **Page occupancy**: Approximately the top third of the right page.  \n\n\n### Summary of Visual Elements  \nThe book spread contains **two black-and-white geometric grids** at the top of the spread, one on each page. Both grids use identical patterns (black rectangle top, white triangle middle, black rectangle bottom) to create an optical illusion of depth, with the right grid extending to five columns (vs. four on the left). These grids occupy the top third of each page and are positioned horizontally to span the top of the spread. No other photographs, illustrations, or graphic symbols appear in the spread. The text below the grids is not considered a visual element per the query’s instructions.",
+    "image_description": "### Visual Element Analysis — CORRECTED 2026-03-05\n\n#### Primary Visual Element: Geometric Compartmentalization Grid\n\nTwo dense geometric grids span the top half of both pages. Each grid is composed of repeating cells: black rectangles at top and bottom with white triangles/trapezoids in between, creating an optical illusion of three-dimensional compartments receding into space.\n\n**Key features:**\n- Strict grid structure with rigid right angles and symmetry\n- High contrast black and white\n- Optical illusion of depth — the cells look like rooms or cubicles\n- Left page: 4 columns of cells; Right page: 5 columns\n- The grids visually perform Dewey's argument about compartmentalization\n\n**The image functions as visual thesis:** The identical compartments represent the artificial divisions Dewey criticizes — practice separated from insight, imagination separated from doing, each activity 'assigned its own place in which it must abide.' The rigid geometry makes the compartmentalization look natural and inevitable, which is precisely Dewey's complaint: we mistake constructed divisions for the 'very constitution of human nature.'\n\n**Note:** The text in the bottom half is printed inverted/mirrored, which is why OCR returned empty. The disorientation is intentional — it forces the reader to physically struggle with the 'natural' reading order, performing the moment of recognizing that established conventions are constructed, not inherent.\n\n**Previous incorrect analysis** described the grids accurately but missed their thematic connection to the Dewey quote, treating them as purely decorative 'visual rhetoric.' Backed up to docs/data/backups/spread_032_analysis_backup.json",
     "image_description_time": 19.5,
-    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread is a **two-page layout** with a clear division:  \n- **Top half (both pages)**: Dominated by a dense, repeating geometric pattern (black-and-white tessellation of angular shapes). This visual element spans the entire width of both pages, creating a unified horizontal band.  \n- **Bottom half (left and right pages)**: Divided into two vertical columns of text. The left page’s text column sits below the geometric pattern, and the right page’s text column does the same. The space is split horizontally (image vs. text) and vertically (left vs. right text columns), with no significant overlap between the image and text zones.  \n\n\n### 2. TYPOGRAPHY  \n- **Text type**: Small **body text** (typical of book paragraphs, not display text).  \n- **Font style**: Appears to be **serif** (traditional book typography), though the mirrored/reversed orientation makes precise identification difficult.  \n- **Weight**: Light (not bold), as it is standard body text.  \n- **Orientation**: **Reversed** (upside down and mirrored). The text is printed in a way that requires flipping the page to read, creating a disorienting effect.  \n- **Color**: Black text on a white background (though the reversal makes it appear “reversed” in orientation, not color).  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (strict black-and-white palette with no grayscale or muted tones). The geometric pattern and text both rely on stark black/white opposition.  \n- **Tone**: Predominantly **light** (white background dominates the text area), but the geometric pattern introduces dense black shapes. The overall tone is **minimalist** due to the lack of color, yet the reversal adds visual tension.  \n\n\n### 4. WHITE SPACE  \n- **Amount**: **Moderate**. The geometric pattern at the top is dense (little white space within it), but the text columns have ample white space around them (e.g., margins between the text and the page edges). The space between the image and text is also substantial, creating a clear visual separation.  \n- **Distribution**: White space is concentrated in the text area (around columns) and between the image and text, while the image itself is tightly packed with shapes.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Mirror**: The **text** on both pages is a **mirror image** (upside down and reversed), creating a symmetrical yet disorienting relationship.  \n- **Contrast**: The **geometric patterns** on the left and right pages are *not* mirror images—they differ in the placement of black shapes, introducing subtle asymmetry.  \n- **Overall**: The text’s mirrored relationship dominates, while the images provide a contrasting, asymmetrical visual anchor. This creates a tension between order (geometric pattern) and disruption (reversed text).  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Chaotic yet controlled**. The high-contrast black-and-white palette and geometric precision create order, but the **reversed text** disrupts reading flow, inducing confusion or disorientation. The minimal color scheme (only black/white) amplifies this chaos, as the viewer must actively “decode” the reversed text.  \n- **Key impression**: The spread feels **aggressively minimalist**—it uses stark simplicity to create visual tension, rather than calm or warmth. The reversed text acts as a deliberate disruption, making the layout feel intentionally unsettling or experimental.",
+    "layout_analysis": "### Layout Analysis — CORRECTED 2026-03-05\n\n#### 1. SPATIAL ARRANGEMENT\nTwo-zone horizontal layout:\n- Top half: dense geometric grid pattern (compartments) spanning both pages\n- Bottom half: Dewey quotation text, printed inverted/mirrored\n- Clear visual separation between grid and text zones\n\n#### 2. TYPOGRAPHY\n- Body text: serif, standard book weight, inverted/mirrored orientation\n- No display text — the quote is set as body text\n- White background with black text (but inverted, requiring physical rotation to read)\n\n#### 3. CONTRAST & TONE\n- High contrast: strict black/white in both grid and text\n- Tone: predominantly light (white backgrounds) with dense black geometric patterns\n\n#### 4. WHITE SPACE\n- Grid zone: minimal (dense geometric pattern)\n- Text zone: moderate (standard margins around the quote)\n- Between zones: clear visual gap separating grid from text\n\n#### 5. LEFT-RIGHT RELATIONSHIP\n- Grids: mirror-like but not identical (4 columns left, 5 columns right)\n- Text: flows across both pages\n- Unified by the shared theme of compartmentalization\n\n#### 6. OVERALL FEEL\n- Ordered, rigid, institutional — the visual feeling of being sorted into categories\n- The inverted text disrupts the order, creating tension between the grid's rigidity and the reader's disorientation\n\nBacked up to docs/data/backups/spread_032_analysis_backup.json",
     "layout_analysis_time": 11.2,
-    "model": "qwen3-vl"
+    "model": "qwen3-vl",
+    "_correction_note": "Layout analysis corrected manually. Grid accurately described by VLM but thematic connection to Dewey quote was missed."
   },
   "content_plan": {
     "spread_id": "spread_032",
     "movement": "movement_1_environment",
+    "_correction_note": "CORRECTED 2026-03-05. Previous content plan mapped 'The City layer: computation at urban scale' based on incorrect analysis. Backed up to docs/data/backups/spread_032_analysis_backup.json",
     "original_summary": {
-      "spread_type": "image_dominant",
+      "spread_type": "text_with_image",
       "section": "body",
       "book_pages": [
         54,
         55
       ],
       "original_themes": [
-        "visual_rhetoric"
+        "compartmentalization",
+        "theory_practice_division",
+        "constructed_nature"
       ],
-      "rhetorical_strategy": "accumulation",
+      "rhetorical_strategy": "quotation",
       "design_enacts_argument": true,
-      "design_argument_description": "City/urban images accumulated on the spread demonstrate the urban environment as media artifact — the city as medium.",
-      "text_excerpt": ""
+      "design_argument_description": "Geometric grid of compartments visually performs Dewey's argument about artificial divisions. Inverted text forces physical disorientation, enacting the discovery that 'natural' order is constructed.",
+      "text_excerpt": "\"....compartmentalization of occupations and interests bring about a separation of that mode of activity commonly called 'practice' from insight, of imagination from executive 'doing.'...Those who write the anatomy of experience then suppose that these divisions inhere in the very constitution of human nature.\" —John Dewey"
     },
     "contemporary_plan": {
-      "theme": "The City layer: computation at urban scale",
-      "argument": "The original accumulated city images, showing the urban environment as media artifact. The contemporary version reveals the computational layer beneath the city surface. Singapore's Smart Nation initiative deploys sensors across the entire city-state: lampposts that count pedestrians, drainage sensors that predict flooding, cameras that track crowd density. Sidewalk Labs' plan for Toronto (proposed 2017, abandoned 2020) would have instrumented entire neighborhoods. The smart city is the Stack's City layer: computation at the scale of urban life, invisible to its inhabitants, governing traffic, energy, waste, and movement through algorithmic optimization.",
+      "theme": "The compartment trap: when division masquerades as nature",
+      "argument": "Dewey argued that the separation of practice from insight, imagination from doing, is not natural but institutional — and that we mistake constructed divisions for human nature. This maps directly onto the contemporary AI landscape. For decades, artificial intelligence was compartmentalized: computer vision was separate from natural language processing, which was separate from robotics, which was separate from reasoning. Each sub-field had its own conferences, its own journals, its own graduate programs — 'each assigned its own place in which it must abide.' The assumption was that intelligence is naturally modular: vision is one thing, language is another, reasoning is a third. Foundation models collapsed the compartments. A single transformer architecture processes text, images, audio, video, and code. GPT-4 doesn't separate seeing from reading from reasoning — it does all three in the same latent space. The disciplinary walls that seemed to 'inhere in the very constitution' of intelligence turned out to be artifacts of how we organized our research, not properties of intelligence itself. Dewey diagnosed the compartment trap in 1916. AI fell into it for fifty years. Multimodal models are the jailbreak.",
       "text": {
-        "approach": "no_text",
-        "description": "No text, or minimal: a single line identifying the city and the number of sensors per square kilometer.",
-        "voice_notes": ""
+        "approach": "quotation_with_commentary",
+        "description": "The Dewey quote is the anchor. Contemporary text comments on it, drawing the parallel between institutional compartmentalization and AI sub-field specialization. Three options vary the balance between historical quotation and contemporary recontextualization.",
+        "voice_notes": "The tone should match Dewey's own register: philosophical, precise, slightly indignant. He's describing a mistake that has been naturalized. The contemporary parallel should have the same quality — not angry, but clear-eyed about how we mistook research conventions for the structure of intelligence."
       },
       "image": {
-        "approach": "found",
-        "subject": "A composite image: a normal city street photograph overlaid with a semi-transparent visualization layer showing sensor coverage, WiFi fields, camera sight lines, and data flows. The overlay should make the invisible computational infrastructure of the city visible. Alternatively: Singapore's Smart Nation sensor deployment, or a Sidewalk Labs concept rendering.",
-        "mood": "layered_urban",
-        "image_text_relationship": "independent"
+        "approach": "generated",
+        "subject": "The geometric grid from the original, but evolved: rigid compartments on one side beginning to dissolve, merge, or bleed into each other on the other side. The visual transition from separated cells to integrated space. Alternatively: a grid where some cells contain fragments of different modalities (an eye, text, a waveform, code) — the compartments of AI sub-fields beginning to merge.",
+        "mood": "structured_dissolving — ordered on one side, integrating on the other",
+        "image_text_relationship": "anchor"
       },
       "rhetoric": {
-        "strategy": "defamiliarization",
-        "design_enacts": "The overlay technique — normal city image made transparent to reveal its computational layer — performs M1's central mission: making the invisible infrastructure visible. The reader sees what they walk through without seeing."
+        "strategy": "quotation_and_transformation",
+        "design_enacts": "The geometric grid (compartments) mirrors the original's visual language. If the grid dissolves from left to right, the spread performs the argument: compartmentalization yielding to integration. The Dewey quote diagnoses the problem; the visual dissolution shows the contemporary solution."
       },
       "mapping": {
-        "relationship_to_original": "transformation",
-        "convergences": [],
-        "thinkers": [],
-        "quotations": []
+        "relationship_to_original": "direct_transformation",
+        "convergences": [
+          "compartmentalization_to_multimodal_integration",
+          "disciplinary_boundaries_to_foundation_models",
+          "practice_insight_separation_to_learning_by_doing"
+        ],
+        "thinkers": [
+          "Dewey",
+          "Whitehead",
+          "Polanyi",
+          "McLuhan"
+        ],
+        "quotations": [
+          {
+            "text": "compartmentalization of occupations and interests bring about a separation of that mode of activity commonly called 'practice' from insight, of imagination from executive 'doing.' Each of these activities is then assigned its own place in which it must abide. Those who write the anatomy of experience then suppose that these divisions inhere in the very constitution of human nature.",
+            "attribution": "John Dewey",
+            "source": "Democracy and Education, 1916 / Art as Experience, 1934"
+          }
+        ]
       },
-      "dependencies": "Stack layer: City. Part of the Stack visual sequence."
+      "dependencies": "Bridge between spread 031 (Renaissance perspective / detachment) and spread 033 (visual vs. acoustic space / AI perception). The three-spread sequence: perspective → compartmentalization → dissolution."
     },
     "paper_trace": {
-      "citation": "Bratton 2016 \"The Stack\" ch.3 on the City layer and urban-scale computation",
-      "convergence_tag": null
+      "citation": "Dewey 1916 'Democracy and Education' on the separation of theory and practice; Dewey 1934 'Art as Experience' on the compartmentalization of aesthetic experience; Whitehead 1929 'Process and Reality' on the fallacy of misplaced concreteness; Polanyi 1966 'The Tacit Dimension' on implicit knowledge resisting compartmentalization",
+      "convergence_tag": "compartmentalization_integration"
     },
     "reviewer_feedback": {
-      "status": "pending",
-      "notes": "",
-      "revision_count": 0
+      "status": "corrected",
+      "notes": "Corrected 2026-03-05 after manual review identified that Dewey quote was not extracted by OCR. Previous theme was 'The City layer: computation at urban scale.' City layer content can be absorbed into adjacent Stack spreads. See docs/reports/spread_033_analysis_report.md (Section 8).",
+      "revision_count": 1
     }
   }
 }

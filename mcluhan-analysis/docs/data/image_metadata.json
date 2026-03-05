@@ -713,27 +713,39 @@
     "generated_at": "2026-03-03T19:50:55Z"
   },
   "spread_032": {
-    "approach": "combination",
-    "selected": 0,
+    "approach": "generated",
+    "selected": null,
+    "_correction_note": "CORRECTED 2026-03-05: Previous images (city sensor overlay) were based on incorrect analysis. Original images backed up to docs/data/backups/spread_032_image_metadata_backup.json. Original image files still at docs/images/spread_032.jpg, spread_032_opt_0.jpg, spread_032_opt_1.jpg. New images need to be generated: geometric compartment grid dissolving from rigid to integrated.",
     "options": [
       {
         "file": "spread_032_opt_0.jpg",
         "source": "generated",
         "model": "gemini-3.1-flash-image-preview",
-        "prompt": "Create a black and white photograph/image: Base layer: a recognizable urban street — not futuristic, not spectacular, deliberately ordinary. A street the reader might walk down. Overlay layer: semi-transparent visualization showing sensor coverage radii (circles around lampposts), camera sight lines (cone shapes), WiFi fields (concentric waves), data flow lines (connecting nodes). The overlay should use a slightly different graphic language than the photograph — vector lines on photographic text",
+        "prompt": "Create a black and white photograph/image: Base layer: a recognizable urban street -- not futuristic, not spectacular, deliberately ordinary. Overlay layer: semi-transparent visualization showing sensor coverage radii, camera sight lines, WiFi fields, data flow lines.",
         "license": "synthetic",
-        "size_kb": 315.5
+        "size_kb": 315.5,
+        "_status": "DEPRECATED — generated from incorrect analysis (city sensor overlay). See backups/spread_032_image_metadata_backup.json. Keep file for reference but do not use."
       },
       {
         "file": "spread_032_opt_1.jpg",
         "source": "generated",
         "model": "gemini-3.1-flash-image-preview",
-        "prompt": "Create a black and white photograph/image: Base layer: a recognizable urban street — not futuristic, not spectacular, deliberately ordinary. A street the reader might walk down. Overlay layer: semi-transparent visualization showing sensor coverage radii (circles around lampposts), camera sight lines (cone shapes), WiFi fields (concentric waves), data flow lines (connecting nodes). The overlay should use a slightly different graphic language than the photograph — vector lines on photographic text",
+        "prompt": "Create a black and white photograph/image: Base layer: a recognizable urban street -- not futuristic, not spectacular, deliberately ordinary. Overlay layer: semi-transparent visualization showing sensor coverage radii, camera sight lines, WiFi fields, data flow lines.",
         "license": "synthetic",
-        "size_kb": 279.8
+        "size_kb": 279.8,
+        "_status": "DEPRECATED — generated from incorrect analysis (city sensor overlay). See backups/spread_032_image_metadata_backup.json. Keep file for reference but do not use."
       }
     ],
-    "generated_at": "2026-03-03T19:53:57Z"
+    "generated_at": "2026-03-03T19:53:57Z",
+    "search_query": null,
+    "_new_image_direction": {
+      "approach": "generated",
+      "subject": "A geometric grid of compartments — high contrast black and white cells resembling office cubicles, prison cells, or filing-cabinet drawers. On the left side, the grid is rigid and complete. Moving rightward, walls dissolve, blur, and merge — cells bleeding into each other, boundaries becoming permeable. Transition from compartmentalized to integrated space.",
+      "mood": "Architectural, institutional, dissolving. Left = bureaucratic grid. Right = liberation/integration.",
+      "bw_treatment": "High contrast black and white. Crisp geometric on left, softening and blurring rightward.",
+      "scale": "top_half",
+      "awaiting_generation": true
+    }
   },
   "spread_034": {
     "approach": "combination",
