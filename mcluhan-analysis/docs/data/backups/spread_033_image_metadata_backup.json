@@ -1,0 +1,32 @@
+{
+  "_backup_info": {
+    "reason": "spread_033 images were generated based on incorrect analysis (lithium mining instead of distorted face)",
+    "backed_up_at": "2026-03-05",
+    "report": "docs/reports/spread_033_analysis_report.md",
+    "note": "Original image files are still at docs/images/spread_033_opt_0.jpg and spread_033_opt_1.jpg"
+  },
+  "spread_033": {
+    "approach": "found",
+    "selected": 0,
+    "options": [
+      {
+        "file": "spread_033_opt_0.jpg",
+        "source": "generated",
+        "model": "gemini-3.1-flash-image-preview",
+        "prompt": "Create a black and white photograph/image: A lithium mining landscape — the Salar de Atacama's evaporation pools from aerial view preferred. The turquoise and white geometric pools against the desert landscape are strikingly beautiful in a way that ironizes the extraction they represent. Alternatively: the cobalt mines of Kolwezi, DRC, showing artisanal miners in a vast terraced excavation. The key quality: documentary realism. This is not a metaphor. This is the actual ground beneath the Cloud.",
+        "license": "synthetic",
+        "size_kb": 316.0
+      },
+      {
+        "file": "spread_033_opt_1.jpg",
+        "source": "generated",
+        "model": "gemini-3.1-flash-image-preview",
+        "prompt": "Create a black and white photograph/image: A lithium mining landscape — the Salar de Atacama's evaporation pools from aerial view preferred. The turquoise and white geometric pools against the desert landscape are strikingly beautiful in a way that ironizes the extraction they represent. Alternatively: the cobalt mines of Kolwezi, DRC, showing artisanal miners in a vast terraced excavation. The key quality: documentary realism. This is not a metaphor. This is the actual ground beneath the Cloud.",
+        "license": "synthetic",
+        "size_kb": 215.5
+      }
+    ],
+    "generated_at": "2026-03-03T20:22:31Z",
+    "search_query": "A lithium mining landscape — the Salar de Atacama's evaporation pools from aerial view preferred. The turquoise and white geometric pools against the desert landscape are strikingly beautiful in a way"
+  }
+}

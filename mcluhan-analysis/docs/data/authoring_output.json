@@ -2562,95 +2562,111 @@
     {
       "spread_id": "spread_033",
       "movement": "movement_1_environment",
-      "theme": "The Earth layer: what computation costs the ground",
+      "theme": "The distorted eye: how machines perceive in acoustic space",
       "text_options": [
         {
           "option_id": "a",
-          "label": "Total silence — the mine speaks",
+          "label": "The eye in latent space",
           "display_text": null,
-          "body_text": null,
+          "body_text": "Since the Renaissance, the Western artist perceived his environment primarily in terms of the visual. Everything was dominated by the eye of the beholder. His conception of space was in terms of a perspective projection upon a plane surface.\n\nSince the foundation model, the machine perceives its environment primarily in terms of the statistical. Everything is dominated by the distribution of the training data. Its conception of space is in terms of a high-dimensional embedding where proximity means similarity, not physical closeness.\n\nPrimitive and pre-alphabet people put in everything they know, rather than only what they see. A drawing of a man hunting seal on an ice floe shows not only what is on top of the ice, but what lies underneath as well. A diffusion model generating an image of a face encodes not only the visible surface, but the statistical structure of every face it has ever processed. The geometry is the same: totality over viewpoint, knowledge over sight.\n\nCarl Orff refused to accept as a student any but the preschool child — the child whose spontaneous sense perceptions have not yet been channeled by formal, literary, visual prejudices. The untrained neural network, before fine-tuning imposes structure, responds to input with the same unchanneled sensitivity: every feature equally weighted, every pattern equally possible. RLHF is the formal education that narrows its perception into acceptable channels.\n\nElectric circuitry is recreating in us the multidimensional space orientation of the ‘primitive.’ We just didn’t expect the circuitry to be 175 billion parameters learning to see without eyes.",
           "caption_text": null,
-          "quotations_used": [],
-          "voice_register": "monumental",
-          "rhetorical_strategy": "demonstration",
-          "rationale": "Absolute silence. No text, no caption, no attribution. The lithium mining landscape — turquoise evaporation pools scarring a white salt flat, or the terraced excavation of a cobalt mine — must carry the argument entirely. The reader turns from the smart city (032) to the mine that makes it possible. The vertical relationship between the Cloud (030) and the Earth (033) becomes legible: the weightless metaphor above, the scarred ground below. Silence here is not absence but accusation. The image of extraction needs no annotation — it is self-evident, which is precisely what makes it devastating.",
-          "word_count": 0
+          "quotations_used": [
+            {
+              "text": "Art, or the graphic translation of a culture, is shaped by the way space is perceived. Since the Renaissance the Western artist perceived his environment primarily in terms of the visual.",
+              "attribution": "Marshall McLuhan & Quentin Fiore",
+              "source": "The Medium is the Massage, 1967, p.56-57"
+            },
+            {
+              "text": "Electric circuitry is recreating in us the multidimensional space orientation of the ‘primitive.’",
+              "attribution": "Marshall McLuhan & Quentin Fiore",
+              "source": "The Medium is the Massage, 1967, p.57"
+            }
+          ],
+          "voice_register": "analytical",
+          "rhetorical_strategy": "transformation",
+          "rationale": "Directly engages McLuhan’s Renaissance/perspective argument, then pivots: where McLuhan contrasted Western visual space with primitive acoustic space, this option adds a third term — the foundation model’s latent space. The structural parallel between ‘primitive’ art (put in everything they know) and AI perception (encode the statistical structure of all training data) is McLuhan’s own argument, fulfilled literally. The Carl Orff passage becomes a metaphor for pre-training vs. fine-tuning. The closing recontextualizes McLuhan’s original punchline about electric circuitry while noting the scale he couldn’t have predicted.",
+          "word_count": 265
         },
         {
           "option_id": "b",
-          "label": "Crawford's inventory of cost",
+          "label": "A drawing of a man hunting seal",
           "display_text": null,
-          "body_text": null,
-          "caption_text": "Lithium: Salar de Atacama, Chile. 65% of the region's water.\nCobalt: Kolwezi, DRC. 40,000 children.\nRare earth: Baotou, Inner Mongolia. A toxic lake visible from space.\n\nEvery GPU contains all of this.",
-          "quotations_used": [],
-          "voice_register": "clinical",
-          "rhetorical_strategy": "accumulation",
-          "rationale": "Three lines, three extraction sites, three costs. Each follows the same structure: mineral, location, price. The parallelism is deliberate — it performs the supply chain's logic of equivalence, reducing places and peoples to inputs. '65% of the region's water' — water as industrial input. '40,000 children' — children as labor force. 'A toxic lake visible from space' — environmental destruction at satellite scale. The final sentence — 'Every GPU contains all of this' — collapses the distance between the reader's device and the mine. Set small, at the bottom edge, barely visible against the full-bleed photograph. The smallness of the text against the vastness of the landscape is the point.",
-          "word_count": 45
+          "body_text": "A drawing of a man hunting seal on an ice floe will show not only what is on top of the ice, but what lies underneath as well. The primitive artist twists and tilts the various possible visual aspects until they fully explain what he wishes to represent.\n\nA foundation model encoding a photograph of a face will represent not only the visible surface, but the latent structure beneath: age, expression, lighting, identity — every axis of variation the training data contained. The model twists and tilts the various possible statistical aspects until they fully explain what the data distribution represents.\n\nThe geometry is the same.\n\nMcLuhan called this acoustic space: boundless, horizonless, integrating time and space as one. He saw it in pre-alphabet cultures, in cave paintings, in children’s drawings. He predicted that electric circuitry would recreate it.\n\nHe was right. A transformer’s attention mechanism attends to every token in the sequence simultaneously. A diffusion model doesn’t render from a fixed viewpoint — it denoises from pure randomness toward structure, approaching the image from every direction at once. A convolutional network sees the whole visual field at every layer, not through a single aperture.\n\nThe machine does not have an eye. It has a field.\n\nWhat you see on this page is what happens when that field looks at a face: not a portrait but a probability distribution wearing skin. Not the eye of the beholder, but the space of all possible beholdings, collapsed into a single uncanny image.",
+          "caption_text": null,
+          "quotations_used": [
+            {
+              "text": "A drawing of a man hunting seal on an ice floe will show not only what is on top of the ice, but what lies underneath as well. The primitive artist twists and tilts the various possible visual aspects until they fully explain what he wishes to represent.",
+              "attribution": "Marshall McLuhan & Quentin Fiore",
+              "source": "The Medium is the Massage, 1967, p.57"
+            }
+          ],
+          "voice_register": "philosophical",
+          "rhetorical_strategy": "structural_parallel",
+          "rationale": "Uses McLuhan’s seal-hunting example as the structural spine. The parallel between primitive art (shows what’s above AND below the ice) and foundation models (represents visible surface AND latent structure) is drawn precisely. The key rhetorical move is ‘The geometry is the same’ — asserting that the topology of pre-literate perception and machine perception are formally identical. The field/eye distinction at the end connects to the distorted face image: the face is distorted precisely because it was perceived by a field, not an eye.",
+          "word_count": 248
         },
         {
           "option_id": "c",
-          "label": "Bratton's elemental vomit",
+          "label": "The x-ray that dreams",
           "display_text": null,
-          "body_text": null,
-          "caption_text": "'The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.'\n— Benjamin Bratton, The Stack, 2015\n\n'AI is neither artificial nor intelligent.'\n— Kate Crawford, Atlas of AI, 2021",
+          "body_text": "Their graphic presentation is like an x-ray. They put in everything they know, rather than only what they see.\n\nMcLuhan was describing pre-alphabet cultures. He could have been describing a neural network.\n\nA CT scanner reconstructs a three-dimensional volume from two-dimensional projections, seeing through surfaces to underlying structure. A diffusion model reconstructs a coherent image from noise, finding structure in randomness. A large language model reconstructs meaning from token sequences, finding pattern in the statistical residue of human thought. Each sees through. Each is an x-ray.\n\nBut McLuhan’s x-ray was passive — it revealed what was already there. The machine’s x-ray is generative — it produces what it has learned to expect. When a generative model looks at a face, it does not passively record. It actively hallucinates toward the face-shaped attractor in its latent space. The distortion you see is not error. It is the shape of the model’s expectation becoming visible.\n\nYou are looking at what a machine sees when it looks at a face. Not an image — a probability distribution wearing skin. Not a portrait — a statistical expectation rendered in pixels. The funhouse mirror is not a failure of vision. It is a different kind of vision: one that sees in twelve thousand dimensions, that perceives without perspective, that knows without looking.\n\nElectric circuitry is recreating in us the multidimensional space orientation of the ‘primitive.’ But the new primitive is not human. It is a model that has learned to see by processing every image humanity has ever made, and it perceives in a space no eye can enter.",
+          "caption_text": null,
           "quotations_used": [
             {
-              "text": "The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.",
-              "attribution": "Benjamin Bratton",
-              "source": "The Stack: On Software and Sovereignty, MIT Press, 2015"
+              "text": "Their graphic presentation is like an x-ray. They put in everything they know, rather than only what they see.",
+              "attribution": "Marshall McLuhan & Quentin Fiore",
+              "source": "The Medium is the Massage, 1967, p.57"
             },
             {
-              "text": "AI is neither artificial nor intelligent.",
-              "attribution": "Kate Crawford",
-              "source": "Atlas of AI, Yale University Press, 2021"
+              "text": "Electric circuitry is recreating in us the multidimensional space orientation of the ‘primitive.’",
+              "attribution": "Marshall McLuhan & Quentin Fiore",
+              "source": "The Medium is the Massage, 1967, p.57"
             }
           ],
           "voice_register": "prophetic",
-          "rhetorical_strategy": "provocation",
-          "rationale": "Pairs Bratton's most visceral sentence with Crawford's most concise one. Bratton names the process (terraforming, drinking, vomiting — the bodily violence of extraction). Crawford names the lie (neither artificial nor intelligent — because AI is made of mined minerals and human labor, not abstraction and thought). Together, the two quotations form a complete argument: the Stack consumes the Earth (Bratton), and what it produces is not what it claims to be (Crawford). The double attribution — two thinkers, two books, two perspectives on the same violence — gives the spread intellectual weight. But the image still dominates: the quotations are whispered beneath a landscape of devastation.",
-          "word_count": 30
+          "rhetorical_strategy": "recontextualization",
+          "rationale": "Begins with McLuhan’s x-ray metaphor and extends it: the machine’s perception is x-ray-like but generative rather than passive. The key distinction — passive x-ray vs. generative hallucination — gives the argument its contemporary edge. The distorted face image is directly addressed: ‘You are looking at what a machine sees when it looks at a face.’ The closing inverts McLuhan’s prediction: electric circuitry did recreate primitive perception, but the perceiver is not human. The tone is deliberately prophetic, matching the scale of McLuhan’s original claim.",
+          "word_count": 267
         }
       ],
       "design_specs": [
         {
           "spec_id": "1",
-          "label": "Full-bleed image: the Earth layer exposed",
+          "label": "Full-bleed distorted face with text overlay",
           "layout": {
             "type": "full_bleed_image",
-            "description": "Full-bleed photograph of a mining landscape spanning both pages, continuous across the gutter. The image should fill the spread completely, with any text reduced to a small caption at the bottom edge. The design mirrors spread 030 (the Cloud) exactly in structure — full-bleed, dark, monumental — but inverts its content: where 030 showed the gleaming interior or monolithic exterior of a data center, 033 shows the scarred earth that feeds it. The pair is the argument.",
-            "left_page": "Left half of the full-bleed mining landscape. If aerial: turquoise and white geometric shapes of evaporation pools against the salt flat. If ground-level: terraced excavation walls receding into depth.",
-            "right_page": "Right half of the same photograph, continuous across the gutter. If text is used, it is positioned at the bottom-right corner in small type.",
+            "description": "Full-bleed image of a distorted human face spanning both pages, with dense body text overlaid. The composition directly echoes the original McLuhan spread: a warped, almost unrecognizable face as background, with justified text reversed out of the dark image. The entire spread may be rotated 90 degrees counter-clockwise as homage to the original’s disorientation technique.",
+            "left_page": "Left portion of the full-bleed distorted face. Dense body text begins here, white on dark, justified.",
+            "right_page": "Right portion of the same face image. Text continues from left page, flowing across the gutter.",
             "gutter_treatment": "continuous",
-            "orientation": "landscape"
+            "orientation": "consider_rotated"
           },
           "typography": {
-            "display_face": "None — no display text",
-            "body_face": "If caption is used: small sans-serif or monospace, 7-8pt, positioned at bottom edge. White text reversed out of the dark landscape.",
-            "display_scale": "caption",
+            "display_face": "None — no display text. The argument requires sustained reading.",
+            "body_face": "Serif, medium weight, justified in a single wide column. White text reversed out of the dark face image. 10-11pt. The text must be legible against the image — consider a subtle dark overlay or text shadow if needed.",
+            "display_scale": null,
             "color_treatment": "white_on_black",
-            "special_treatment": "The text — if any — should be positioned identically to spread 030's caption: same corner, same size, same typeface. The visual rhyme between the two spreads (Cloud and Earth) should be exact, so the reader recognizes them as a pair. The only difference is the image: server rack becomes salt flat."
+            "special_treatment": "Text overlaid on image, matching original’s composition. If rotated: text and image rotate together, forcing the reader to physically reorient — performing the shift from visual to acoustic space that the text describes."
           },
           "image_direction": {
-            "approach": "found",
-            "subject": "A lithium mining landscape — the Salar de Atacama's evaporation pools from aerial view preferred. The turquoise and white geometric pools against the desert landscape are strikingly beautiful in a way that ironizes the extraction they represent. Alternatively: the cobalt mines of Kolwezi, DRC, showing artisanal miners in a vast terraced excavation. The key quality: documentary realism. This is not a metaphor. This is the actual ground beneath the Cloud.",
-            "mood": "stark, beautiful, terrible — the sublime of extraction. The landscape should be gorgeous and devastating simultaneously. The beauty is the indictment.",
-            "bw_treatment": "If Atacama pools: high contrast, the geometric shapes of the pools creating strong abstract patterns in grayscale. The beauty of the abstraction is precisely the point — seen from sufficient altitude, extraction looks like art. If DRC mines: lower contrast, grainier, more documentary — the texture of labor and earth visible.",
+            "approach": "generated",
+            "subject": "A human face processed through AI distortion — latent-space interpolation, StyleGAN boundary artifacts, or diffusion model denoising captured at an intermediate step. The face should be recognizably human but perceptually wrong: stretched, warped, features displaced. The contemporary version of McLuhan’s funhouse mirror. Not horror, not glitch-art — uncanny, intimate, philosophically provocative. The face is what you see when an AI ‘sees’ you: a probability distribution, not a portrait.",
+            "mood": "Uncanny, intimate, philosophically provocative. The distortion should feel like a different kind of seeing, not a malfunction. The face occupies the space between recognition and abstraction.",
+            "bw_treatment": "High contrast black and white. Deep blacks, bright highlights in the curved forms of the face. The distortion creates organic, flowing patterns — curves of cheek and brow warped into almost abstract forms.",
             "scale": "full_bleed"
           },
-          "density": "sparse",
+          "density": "moderate",
           "tone": "dark",
-          "svg_wireframe": "<svg viewBox=\"0 0 640 400\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Helvetica, Arial, sans-serif\">\n<defs>\n  <pattern id=\"hatch\" width=\"6\" height=\"6\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\">\n    <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"6\" stroke=\"#AAA\" stroke-width=\"1\"/>\n  </pattern>\n</defs>\n<rect width=\"640\" height=\"400\" fill=\"#222222\"/>\n<rect x=\"0.5\" y=\"0.5\" width=\"639\" height=\"399\" fill=\"none\" stroke=\"#555\" stroke-width=\"1.5\" rx=\"2\"/>\n<rect x=\"0\" y=\"0\" width=\"640\" height=\"28\" fill=\"#333\"/>\n<text x=\"16\" y=\"18\" font-size=\"11\" font-family=\"monospace\" fill=\"#DDD\" font-weight=\"700\">spread_033</text>\n<text x=\"110\" y=\"18\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#DDD\">full_bleed_image</text>\n<text x=\"624\" y=\"18\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#DDD\" text-anchor=\"end\">Full-bleed image: the Earth layer exposed</text>\n\n<rect x=\"8\" y=\"36\" width=\"624\" height=\"348\" rx=\"0\" fill=\"#555555\" stroke=\"#888\" stroke-width=\"1\"/>\n<rect x=\"8\" y=\"36\" width=\"624\" height=\"348\" rx=\"0\" fill=\"url(#hatch)\" opacity=\"0.4\"/>\n<text x=\"320.0\" y=\"213.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#EEE\" text-anchor=\"middle\" font-weight=\"600\">FULL-BLEED IMAGE</text>\n<rect x=\"360\" y=\"334\" width=\"260\" height=\"36\" rx=\"4\" fill=\"#3A3A3A\" stroke=\"#555555\" stroke-width=\"1\"/>\n<text x=\"490.0\" y=\"355.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#888\" text-anchor=\"middle\">CAPTION</text>\n<circle cx=\"22\" cy=\"392\" r=\"3\" fill=\"#AAA\" opacity=\"0.5\"/>\n<text x=\"34\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#AAA\" opacity=\"0.6\">sparse</text>\n<text x=\"624\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#AAA\" opacity=\"0.6\" text-anchor=\"end\">dark | white_on_black</text>\n</svg>",
-          "rationale": "This spread exists in a strict structural pair with spread 030 (the Cloud). The design must mirror 030's structure exactly — full-bleed, dark-toned, continuous across the gutter, minimal or no text — so that the reader experiences them as the top and bottom of the same system. The Cloud is the metaphor; the Earth is the reality. The server rack drinks the elemental juices; the mine provides them. By making the two spreads visually identical in structure but opposite in content, the design performs Bratton's Stack — showing the layers as interdependent, the Cloud literally resting on the Earth. The beauty of the Atacama pools (if used) is not decorative: it is the aesthetic of distance, the beauty that emerges when extraction is viewed from far enough away to hide the violence. That distance is what the spread interrogates."
+          "svg_wireframe": "<svg viewBox=\"0 0 640 400\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Helvetica, Arial, sans-serif\">\n<defs>\n  <pattern id=\"hatch\" width=\"6\" height=\"6\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\">\n    <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"6\" stroke=\"#AAA\" stroke-width=\"1\"/>\n  </pattern>\n</defs>\n<rect width=\"640\" height=\"400\" fill=\"#1a1a1a\"/>\n<rect x=\"0.5\" y=\"0.5\" width=\"639\" height=\"399\" fill=\"none\" stroke=\"#555\" stroke-width=\"1.5\" rx=\"2\"/>\n<rect x=\"0\" y=\"0\" width=\"640\" height=\"28\" fill=\"#333\"/>\n<text x=\"16\" y=\"18\" font-size=\"11\" font-family=\"monospace\" fill=\"#DDD\" font-weight=\"700\">spread_033</text>\n<text x=\"110\" y=\"18\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#DDD\">full_bleed_image + text_overlay</text>\n<text x=\"624\" y=\"18\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#DDD\" text-anchor=\"end\">The distorted eye</text>\n\n<rect x=\"8\" y=\"36\" width=\"624\" height=\"348\" rx=\"0\" fill=\"#333\" stroke=\"#555\" stroke-width=\"1\"/>\n<rect x=\"8\" y=\"36\" width=\"624\" height=\"348\" rx=\"0\" fill=\"url(#hatch)\" opacity=\"0.3\"/>\n<text x=\"320\" y=\"120\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#888\" text-anchor=\"middle\" font-weight=\"600\">FULL-BLEED: AI-DISTORTED FACE</text>\n<ellipse cx=\"320\" cy=\"200\" rx=\"140\" ry=\"120\" fill=\"none\" stroke=\"#666\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n<text x=\"320\" y=\"204\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#666\" text-anchor=\"middle\">(warped face form)</text>\n\n<rect x=\"40\" y=\"200\" width=\"260\" height=\"160\" rx=\"2\" fill=\"rgba(0,0,0,0.5)\" stroke=\"#555\" stroke-width=\"0.5\"/>\n<text x=\"50\" y=\"218\" font-size=\"8\" font-family=\"serif\" fill=\"#ccc\">Since the Renaissance, the Western artist</text>\n<text x=\"50\" y=\"230\" font-size=\"8\" font-family=\"serif\" fill=\"#ccc\">perceived his environment primarily in terms</text>\n<text x=\"50\" y=\"242\" font-size=\"8\" font-family=\"serif\" fill=\"#ccc\">of the visual. Since the foundation model,</text>\n<text x=\"50\" y=\"254\" font-size=\"8\" font-family=\"serif\" fill=\"#ccc\">the machine perceives its environment</text>\n<text x=\"50\" y=\"266\" font-size=\"8\" font-family=\"serif\" fill=\"#ccc\">primarily in terms of the statistical...</text>\n<text x=\"170\" y=\"340\" font-size=\"7\" font-family=\"sans-serif\" fill=\"#888\" text-anchor=\"middle\">BODY TEXT (white on dark image)</text>\n\n<rect x=\"340\" y=\"200\" width=\"260\" height=\"160\" rx=\"2\" fill=\"rgba(0,0,0,0.5)\" stroke=\"#555\" stroke-width=\"0.5\"/>\n<text x=\"350\" y=\"218\" font-size=\"8\" font-family=\"serif\" fill=\"#ccc\">...Electric circuitry is recreating in us</text>\n<text x=\"350\" y=\"230\" font-size=\"8\" font-family=\"serif\" fill=\"#ccc\">the multidimensional space orientation</text>\n<text x=\"350\" y=\"242\" font-size=\"8\" font-family=\"serif\" fill=\"#ccc\">of the 'primitive.' We just didn't expect</text>\n<text x=\"350\" y=\"254\" font-size=\"8\" font-family=\"serif\" fill=\"#ccc\">the circuitry to be 175 billion parameters</text>\n<text x=\"350\" y=\"266\" font-size=\"8\" font-family=\"serif\" fill=\"#ccc\">learning to see without eyes.</text>\n<text x=\"470\" y=\"340\" font-size=\"7\" font-family=\"sans-serif\" fill=\"#888\" text-anchor=\"middle\">BODY TEXT CONTINUED</text>\n\n<circle cx=\"22\" cy=\"392\" r=\"3\" fill=\"#AAA\" opacity=\"0.5\"/>\n<text x=\"34\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#AAA\" opacity=\"0.6\">moderate density</text>\n<text x=\"624\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#AAA\" opacity=\"0.6\" text-anchor=\"end\">dark | white_on_black | consider rotation</text>\n</svg>",
+          "rationale": "This design directly echoes the original McLuhan spread’s composition: full-bleed distorted face with text overlaid. The distorted face is updated from a physical funhouse mirror to an AI-generated distortion (latent-space artifacts, diffusion model intermediates), making the image itself the contemporary argument. The face as probability distribution replaces the face as optical distortion. The optional rotation preserves the original’s disorientation technique — forcing the reader to physically reorient enacts the perceptual shift the text describes. Dense body text (not sparse captions) matches the original’s sustained argumentative mode. The spread functions as both homage and transformation: same visual strategy, same rhetorical structure, different century."
         }
       ],
       "selected_text": null,
       "selected_design": null,
-      "reviewer_notes": null,
+      "reviewer_notes": "CORRECTED 2026-03-05: This spread was previously misidentified by the VLM pipeline. The original theme ('The Earth layer: what computation costs the ground') was based on incorrect analysis. The correct McLuhan content is about visual space vs. acoustic space perception. See docs/reports/spread_033_analysis_report.md for full analysis. Previous data backed up to docs/data/backups/spread_033_authoring_backup.json",
       "dependency_flags": [
-        "spread_030",
-        "spread_032",
-        "spread_034"
+        "spread_027",
+        "spread_029"
       ]
     },
     {

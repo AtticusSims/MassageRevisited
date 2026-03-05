@@ -1,0 +1,65 @@
+{
+  "_backup_info": {
+    "reason": "spread_033 per-spread analysis was based on incorrect VLM output (Qwen3-VL misidentified rotated content)",
+    "backed_up_at": "2026-03-05",
+    "report": "docs/reports/spread_033_analysis_report.md",
+    "note": "Gemini-2.5-pro correctly identified the image as a human eye and noted the rotation, but this was not propagated"
+  },
+  "id": "spread_033",
+  "analysis": {
+    "id": "spread_033",
+    "pdf_page": 33,
+    "book_pages": [56, 57],
+    "section": "body",
+    "analyst": "claude-opus-4-6+qwen3-vl",
+    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
+    "spread_type": "image_dominant",
+    "orientation": "landscape_spread",
+    "text": {
+      "body_text": "",
+      "display_text": "",
+      "captions": [],
+      "page_numbers_visible": []
+    },
+    "quotations": [],
+    "images": [
+      {
+        "position": "full_bleed",
+        "subject": "An abstracted, extreme close-up photograph of a human eye.",
+        "source_type": "art_photograph",
+        "composition": "Extreme close-up that renders the subject abstract.",
+        "scale": "full_bleed",
+        "estimated_date": "circa 1960s"
+      }
+    ],
+    "themes": {
+      "original_themes": ["visual_rhetoric"],
+      "contemporary_domain_candidates": ["agency_and_autonomy", "surveillance_and_control"],
+      "movement_mapping": ["movement_1_environment"]
+    }
+  },
+  "ocr": {
+    "ocr_raw": "",
+    "ocr_raw_time": 23.2,
+    "ocr_structured": "",
+    "ocr_structured_time": 23.2,
+    "model": "qwen3-vl"
+  },
+  "content_plan": {
+    "spread_id": "spread_033",
+    "movement": "movement_1_environment",
+    "original_summary": {
+      "spread_type": "image_dominant",
+      "section": "body",
+      "book_pages": [56, 57],
+      "original_themes": ["visual_rhetoric"],
+      "rhetorical_strategy": "demonstration",
+      "design_enacts_argument": true,
+      "text_excerpt": ""
+    },
+    "contemporary_plan": {
+      "theme": "The Earth layer: what computation costs the ground",
+      "argument": "The original's dark landscape image evoked nature as the ground beneath all human media. The contemporary version shows what computation has done to that ground."
+    }
+  }
+}

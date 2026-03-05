@@ -1182,28 +1182,39 @@
     "search_query": "The title page of 'Attention Is All You Need' (Vaswani et al., 2017) — presented as the founding document of the transformer era, the contemporary equivalent of a Renaissance treatise. Alternatively: "
   },
   "spread_033": {
-    "approach": "found",
-    "selected": 0,
+    "approach": "generated",
+    "selected": null,
+    "_correction_note": "CORRECTED 2026-03-05: Previous images (lithium mining pools) were based on incorrect analysis. Original images backed up to docs/data/backups/spread_033_image_metadata_backup.json. Original image files still at docs/images/spread_033_opt_0.jpg and spread_033_opt_1.jpg. New images need to be generated: AI-distorted human face (latent-space artifacts, StyleGAN boundaries, or diffusion intermediates).",
     "options": [
       {
         "file": "spread_033_opt_0.jpg",
         "source": "generated",
         "model": "gemini-3.1-flash-image-preview",
-        "prompt": "Create a black and white photograph/image: A lithium mining landscape — the Salar de Atacama's evaporation pools from aerial view preferred. The turquoise and white geometric pools against the desert landscape are strikingly beautiful in a way that ironizes the extraction they represent. Alternatively: the cobalt mines of Kolwezi, DRC, showing artisanal miners in a vast terraced excavation. The key quality: documentary realism. This is not a metaphor. This is the actual ground beneath the Cloud.",
+        "prompt": "Create a black and white photograph/image: A lithium mining landscape — the Salar de Atacama’s evaporation pools from aerial view preferred.",
         "license": "synthetic",
-        "size_kb": 316.0
+        "size_kb": 316.0,
+        "_status": "DEPRECATED — generated from incorrect analysis. See backups/spread_033_image_metadata_backup.json. Keep file for reference but do not use."
       },
       {
         "file": "spread_033_opt_1.jpg",
         "source": "generated",
         "model": "gemini-3.1-flash-image-preview",
-        "prompt": "Create a black and white photograph/image: A lithium mining landscape — the Salar de Atacama's evaporation pools from aerial view preferred. The turquoise and white geometric pools against the desert landscape are strikingly beautiful in a way that ironizes the extraction they represent. Alternatively: the cobalt mines of Kolwezi, DRC, showing artisanal miners in a vast terraced excavation. The key quality: documentary realism. This is not a metaphor. This is the actual ground beneath the Cloud.",
+        "prompt": "Create a black and white photograph/image: A lithium mining landscape — the Salar de Atacama’s evaporation pools from aerial view preferred.",
         "license": "synthetic",
-        "size_kb": 215.5
+        "size_kb": 215.5,
+        "_status": "DEPRECATED — generated from incorrect analysis. See backups/spread_033_image_metadata_backup.json. Keep file for reference but do not use."
       }
     ],
     "generated_at": "2026-03-03T20:22:31Z",
-    "search_query": "A lithium mining landscape — the Salar de Atacama's evaporation pools from aerial view preferred. The turquoise and white geometric pools against the desert landscape are strikingly beautiful in a way"
+    "search_query": null,
+    "_new_image_direction": {
+      "approach": "generated",
+      "subject": "A human face processed through AI distortion — latent-space interpolation, StyleGAN boundary artifacts, or diffusion model denoising at an intermediate step. Recognizably human but perceptually wrong: stretched, warped, features displaced. The contemporary funhouse mirror. Not horror, not glitch-art — uncanny, intimate, philosophically provocative.",
+      "mood": "Uncanny, intimate, philosophically provocative. The distortion should feel like a different kind of seeing, not a malfunction.",
+      "bw_treatment": "High contrast black and white. Deep blacks, bright highlights in the curved forms of the face.",
+      "scale": "full_bleed",
+      "awaiting_generation": true
+    }
   },
   "spread_035": {
     "approach": "found",

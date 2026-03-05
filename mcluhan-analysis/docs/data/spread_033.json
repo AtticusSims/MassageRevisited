@@ -1,5 +1,6 @@
 {
   "id": "spread_033",
+  "_correction_note": "CORRECTED 2026-03-05: This spread was previously misidentified by the VLM pipeline. See docs/reports/spread_033_analysis_report.md. Previous data backed up to docs/data/backups/spread_033_analysis_backup.json",
   "analysis": {
     "id": "spread_033",
     "pdf_page": 33,
@@ -8,12 +9,12 @@
       57
     ],
     "section": "body",
-    "analyst": "claude-opus-4-6+qwen3-vl",
-    "analysis_method": "llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
-    "spread_type": "image_dominant",
-    "orientation": "landscape_spread",
+    "analyst": "human_corrected",
+    "analysis_method": "manual_review (2026-03-05) correcting llm_primary_human_reviewed + gemini_visual(gemini-2.5-pro)",
+    "spread_type": "image_with_text",
+    "orientation": "rotated_90_ccw",
     "text": {
-      "body_text": "",
+      "body_text": "Art, or the graphic translation of a culture, is shaped by the way space is perceived. Since the Renaissance the Western artist perceived his environment primarily in terms of the visual. Everything was dominated by the eye of the beholder. His conception of space was in terms of a perspective projection upon a plane surface consisting of formal units of spatial measurement. He accepted the dominance of the vertical and the horizontal — of symmetry — as an absolute condition of order. This view is deeply embedded in the consciousness of Western art.\n\nPrimitive and pre-alphabet people integrate time and space as one and live in an acoustic, horizonless, boundless, olfactory space, rather than in visual space. Their graphic presentation is like an x-ray. They put in everything they know, rather than only what they see. A drawing of a man hunting seal on an ice floe will show not only what is on top of the ice, but what lies underneath as well. The primitive artist twists and tilts the various possible visual aspects until they fully explain what he wishes to represent.\n\n(Carl Orff, the noted contemporary German composer, has refused to accept as a student any but the preschool child — the child whose spontaneous sense perceptions have not yet been channeled by formal, literary, visual prejudices.)\n\nElectric circuitry is recreating in us the multidimensional space orientation of the 'primitive.'",
       "display_text": "",
       "captions": [],
       "page_numbers_visible": []
@@ -22,36 +23,38 @@
     "images": [
       {
         "position": "full_bleed",
-        "subject": "An abstracted, extreme close-up photograph of a human eye. The image is high-contrast black and white, showing the curved forms of the iris and a bright reflection on the cornea against the dark pupil. The overall effect is a fluid, organic, and somewhat disorienting pattern.",
+        "subject": "A human face, heavily distorted as though reflected in a curved or funhouse mirror. The face is stretched horizontally into a wide, flattened, almost unrecognizable form. Curves of cheek and brow, a dark oval that could be mouth or eye, parallel lines suggesting lips or facial creases — all warped by extreme horizontal distortion.",
         "source_type": "art_photograph",
-        "composition": "Extreme close-up that renders the subject abstract. The image is characterized by soft focus, high contrast, and large, curving forms that span the entire spread. The lighting creates a bright, blown-out highlight against deep blacks, giving the image a liquid quality.",
+        "composition": "Full-bleed spanning both pages. The distorted face fills the frame entirely. The image serves as background for overlaid text. High contrast black and white with organic flowing curves created by the facial distortion.",
         "scale": "full_bleed",
         "estimated_date": "circa 1960s",
         "interactive_meaning": {
           "contact": "offer",
           "social_distance": "intimate",
           "attitude_angle": "frontal"
-        }
+        },
+        "visual_thesis": "The distorted face IS the argument: the very faculty Western culture trusts most (vision) produces an unrecognizable image. The warped mirror demonstrates that our frameworks for seeing are themselves distorting lenses, not neutral windows."
       }
     ],
     "design": {
-      "layout_description": "The entire spread is rotated 90 degrees counter-clockwise, forcing the reader to turn the book to view it. A single, full-bleed abstract photograph covers both pages. A block of text, also rotated, is overlaid on the lower portion of the image (the right side when oriented for reading), spanning the gutter.",
+      "layout_description": "The entire spread is rotated 90 degrees counter-clockwise, forcing the reader to physically turn the book. A single, full-bleed distorted face photograph covers both pages. Dense body text, also rotated, is overlaid on the image — white text reversed out of the dark photograph. The text spans both pages across the gutter.",
       "typography": {
         "body_font_style": "Serif, medium weight, justified in a single wide column.",
         "display_font_style": null,
         "special_treatments": [
-          "rotated text",
-          "text overlaid on image"
+          "rotated 90 degrees counter-clockwise",
+          "text overlaid on full-bleed image",
+          "white text reversed out of dark image"
         ]
       },
       "color_and_tone": {
         "contrast": "high",
         "dominant_tone": "dark",
-        "description": "The spread is dominated by the deep blacks and grays of the photograph, punctuated by a stark white highlight. The white text is reversed out of the dark image background."
+        "description": "Deep blacks and grays of the distorted face photograph, with white text reversed out. Bright highlights in the curved forms of the face create organic patterns."
       },
       "white_space": "none",
       "visual_density": "moderate",
-      "left_right_relationship": "Unified. The spread is designed as a single, continuous canvas, with both the image and the text block flowing seamlessly across the gutter.",
+      "left_right_relationship": "Unified. The spread is a single continuous canvas — both the distorted face image and the text block flow across the gutter without interruption.",
       "information_value": {
         "left_right": "not_applicable",
         "top_bottom": "not_applicable",
@@ -60,112 +63,144 @@
       "compositional_framing": "weakly_framed"
     },
     "rhetoric": {
-      "argument": "The continued typographic disruption across multiple spreads creates a cumulative assault on print-era reading habits, arguing through sustained formal experience that the dissolution of stable media conventions is not a momentary glitch but a permanent condition of electronic culture.",
+      "argument": "Western culture since the Renaissance has organized perception around visual space: fixed-point perspective, the dominance of the eye, formal measurement, symmetry. Pre-alphabetic cultures perceived in acoustic space: boundless, horizonless, integrating all senses. Electric circuitry is returning us to the multidimensional space orientation of the 'primitive.' The distorted face image enacts this argument visually — the eye of the beholder produces an unrecognizable image, demonstrating that our perceptual frameworks are distorting lenses.",
       "rhetorical_strategy": {
-        "primary": "juxtaposition",
-        "secondary": []
+        "primary": "demonstration",
+        "secondary": ["juxtaposition"]
       },
-      "strategy_description": "Visual/typographic spread employing juxtaposition through design form rather than textual argument.",
+      "strategy_description": "The spread demonstrates its argument through visual form: the distorted face SHOWS the failure of visual-space perception, while the text EXPLAINS the distinction between visual and acoustic space. The 90-degree rotation ENACTS the perceptual shift by forcing physical reorientation.",
       "design_enacts_argument": true,
-      "design_argument_description": "The dominance of imagery over text demonstrates that visual media communicate differently than print — the spread shows rather than tells.",
-      "reader_experience": "Visual immersion — the reader encounters the spread as image before text.",
+      "design_argument_description": "The distorted face undermines trust in visual perception. The 90-degree rotation breaks habitual reading posture, performing the shift from visual to acoustic space. Together, image and rotation make the reader experience the argument bodily.",
+      "reader_experience": "Disorientation leading to insight — the reader must physically reorient to read, experiencing the perceptual shift the text describes.",
       "mcluhan_concepts": [
-        "medium_is_the_message"
+        "visual_space_vs_acoustic_space",
+        "medium_is_the_message",
+        "retribalization",
+        "electric_media_as_extension"
       ],
       "multi_spread_patterns": null,
-      "confidence": "moderate"
+      "confidence": "high"
     },
     "themes": {
       "original_themes": [
-        "visual_rhetoric"
+        "visual_space_vs_acoustic_space",
+        "perception_and_senses",
+        "primitive_vs_literate",
+        "electric_media_return"
       ],
       "contemporary_domain_candidates": [
-        "agency_and_autonomy",
-        "surveillance_and_control"
+        "machine_perception",
+        "latent_space",
+        "ai_vision",
+        "post_perspectival_perception"
       ],
       "movement_mapping": [
         "movement_1_environment"
       ],
-      "mapping_rationale": "The prison-as-environment metaphor anticipates how digital platforms create similarly invisible enclosures (filter bubbles, algorithmic curation, platform lock-in, Terms of Service) that constrain perception and choice while appearing to expand both—comfortable prisons disguised as playgrounds.",
-      "confidence": "moderate"
+      "mapping_rationale": "McLuhan's argument about visual space vs. acoustic space maps directly onto AI perception: foundation models perceive in high-dimensional latent space (acoustic-like: boundless, horizonless, integrating all information simultaneously) rather than perspectival visual space. The distorted face becomes: what happens when a machine 'sees' you — not a portrait but a probability distribution.",
+      "confidence": "high"
     },
     "progression": {
-      "pace_shift": "accelerating",
-      "thematic_function": "transition",
-      "relationship_to_previous": "The prison bars make visual what the preceding text disruptions demonstrated experientially: print culture constrains perception within invisible bars of linearity and sequence.",
-      "relationship_to_next": "The prison image yields to Joyce's verbal escape—if print is a prison, Joyce's wordplay is the jailbreak.",
-      "confidence": "moderate"
+      "pace_shift": "sustained",
+      "thematic_function": "core_argument",
+      "relationship_to_previous": "Spread 032 (City layer) showed computation at urban scale — the smart city as interface. Spread 033 shifts from the external environment to the internal environment of perception itself: how do we (and machines) actually see?",
+      "relationship_to_next": "Spread 034 (Interface layer) addresses the screen that watches back. Spread 033 prepares this by establishing that perception is not neutral — the interface doesn't just display, it distorts, because all perception involves a framework that shapes what is seen.",
+      "confidence": "high"
     },
-    "notes": "The prison imagery is the book's starkest visual metaphor: print culture doesn't just shape perception, it imprisons it. The bars represent the invisible grid of linearity, sequence, and fixed perspective that literate consciousness mistakes for the natural order of thought. Electronic media don't free us from this prison—they replace it with a different kind of enclosure.\n\n[Gemini visual description] This spread forces the reader to physically rotate the book to engage with it. A full-bleed, high-contrast, abstract photograph of a human eye serves as the background for a rotated block of text. The text discusses the shift from the linear 'visual space' of Western culture to the multi-dimensional 'acoustic space' of primitive and electric cultures, making the reader's physical re-orientation an enactment of the argument."
+    "notes": "CORRECTED 2026-03-05. This is one of McLuhan's most cited and most important arguments — the distinction between visual space (Renaissance, perspectival, literate) and acoustic space (primitive, electric, multisensory). The distorted funhouse-mirror face is not decorative — it is the visual thesis of the spread. The 90-degree rotation forces physical reorientation, making the reader enact the perceptual shift the text describes.\n\nThe Gemini-2.5-pro model correctly identified the image as 'an extreme close-up of a human eye' and noted the rotation, but this correction was not propagated into the content plan. The Qwen3-VL model misidentified the image as 'a motion-blurred circular reflective surface' and returned empty OCR (due to the rotation). The content plan consequently mapped an unrelated theme (Earth layer / lithium mining) onto this spread.\n\nPrevious analysis backed up to: docs/data/backups/spread_033_analysis_backup.json"
   },
   "ocr": {
     "ocr_raw": "",
     "ocr_raw_time": 23.2,
     "ocr_structured": "",
     "ocr_structured_time": 23.2,
-    "model": "qwen3-vl"
+    "model": "qwen3-vl",
+    "_correction_note": "OCR returned empty because the entire spread is rotated 90 degrees counter-clockwise. The text was manually transcribed during correction."
   },
   "visual": {
-    "image_description": "### Visual Element Analysis (Book Spread Image)  \n\n#### 1. **Photograph (Primary Visual Element)**  \n- **What it depicts**: A motion-blurred, circular object with light reflections. The image appears to be a close-up of a reflective surface (e.g., a lens, mirror, or metallic object) distorted by movement or a long exposure. Lighter tones dominate the center, while darker tones radiate outward, creating a sense of depth and fluidity. The blur suggests rapid motion or a deliberate photographic technique to evoke dynamism.  \n- **Position**: Occupies the **top portion of both pages**, spanning the entire width of the spread (full bleed across the top). It sits above the text blocks on the left and right pages.  \n- **Visual style**: **Black and white photograph** with a high-contrast, motion-blurred aesthetic.  \n- **Composition**:  \n  - **Framing**: Tight close-up on the circular shape, with no visible background (the blur obscures context).  \n  - **Angle**: Directly facing the circular object, emphasizing its form.  \n  - **Contrast**: Extreme contrast between the bright center (light reflections) and dark edges (shadows), creating a stark visual hierarchy.  \n  - **Key visual qualities**: Motion blur dominates, lending a sense of speed or fluidity; the circular shape is the focal point, with light and dark gradients guiding the eye.  \n- **Page occupation**: Approximately **1/3 to 1/2 of the page height**, covering the full width of the spread.  \n\n#### 2. **Other Elements**  \n- **No additional photographs, illustrations, or graphic symbols** are present. The rest of the spread consists solely of **text/typography** (which is not a visual/pictorial element per the query’s scope).  \n\n---  \n\n### Summary of Visual Elements  \nThe only visual/pictorial element is the **motion-blurred black-and-white photograph** at the top of the spread. It is a high-contrast, close-up shot of a circular reflective object, spanning both pages and dominating the upper third of the spread. All other content is textual (not analyzed here per the query’s instructions).",
+    "image_description": "### Visual Element Analysis — CORRECTED 2026-03-05\n\n#### Primary Visual Element: Distorted Human Face\n\nThe image is a full-bleed photograph of a human face, heavily distorted as though reflected in a curved or funhouse mirror. The face is stretched horizontally into a wide, flattened, almost unrecognizable form.\n\n**Key features:**\n- Curves of cheek and brow warped into sweeping organic forms\n- A dark oval that could be mouth or eye\n- Parallel lines suggesting lips or facial creases\n- Extreme horizontal distortion rendering the face almost abstract\n- High-contrast black and white\n- Full-bleed, spanning both pages\n\n**The image functions as visual thesis:** The warped face demonstrates that the 'eye of the beholder' — the faculty Western culture trusts most — produces distortion, not truth. Our perceptual frameworks are themselves distorting lenses.\n\n**Note:** The entire spread is rotated 90 degrees counter-clockwise. The reader must physically turn the book, enacting the perceptual shift from visual to acoustic space that the overlaid text describes.\n\n**Previous incorrect analysis** (Qwen3-VL): 'A motion-blurred, circular object with light reflections... appears to be a close-up of a reflective surface (e.g., a lens, mirror, or metallic object) distorted by movement or a long exposure.' This was incorrect — the subject is a human face, not a reflective surface. Backed up to docs/data/backups/spread_033_analysis_backup.json",
     "image_description_time": 8.0,
-    "layout_analysis": "### 1. SPATIAL ARRANGEMENT  \nThe spread features a **top-heavy layout**: a large, blurred black-and-white photograph dominates the upper portion, spanning both pages. Below the image, text is divided into **two vertical columns** (left and right pages), creating a clear visual hierarchy. The space is split into:  \n- **Upper section**: Full-width photographic image (abstract, with motion blur).  \n- **Lower section**: Two text columns (left and right), each containing dense body text.  \nThis division emphasizes the image as a focal point, while the text occupies the remaining space in a balanced, symmetrical manner.  \n\n\n### 2. TYPOGRAPHY  \n- **Text types**: Only **small body text** is visible (no display text, headlines, or captions).  \n- **Font style**: Serif typeface (e.g., Times New Roman or similar), identifiable by subtle serifs on characters.  \n- **Weight/contrast**: Normal weight (not bold or light), ensuring readability against the dark background.  \n- **Color scheme**: **White-on-black** (reversed), creating high contrast for legibility.  \n- **Hierarchy**: No typographic hierarchy (e.g., no larger fonts for emphasis), as the text is uniform in size and weight.  \n\n\n### 3. CONTRAST & TONE  \n- **Contrast**: **High contrast** (black background vs. white text; dark tones in the photograph vs. light highlights).  \n- **Tone**: **Predominantly dark** (black background dominates the text area), with the photograph adding subtle light/dark variations. The overall mood is stark and graphic due to the extreme contrast.  \n\n\n### 4. WHITE SPACE  \n- **Text area**: **Sparse** (text fills most of the lower section, with minimal empty space between lines/columns).  \n- **Image area**: **Moderate** (the photograph contains light/dark gradients, creating organic \"white space\" within the blurred texture).  \n- **Overall**: White space is **moderate**—the text is dense but not packed, while the image’s abstract nature introduces intentional negative space.  \n\n\n### 5. LEFT-RIGHT RELATIONSHIP  \n- **Symmetry**: The left and right text columns are **mirror-like** (same width, same text style, and parallel alignment).  \n- **Flow**: Text flows **continuationally** (each page’s text continues the narrative, with no abrupt breaks between columns).  \n- **Balance**: The layout feels **unified**—the image anchors both columns, and the text’s symmetrical placement reinforces cohesion.  \n\n\n### 6. OVERALL FEEL  \n- **Mood/energy**: **Minimalist and contemplative**. The high contrast, black background, and abstract photograph create a stark, intellectual atmosphere.  \n- **Tone**: Not chaotic (due to clean typography and balanced layout) or aggressive (text is calm, not confrontational). Instead, it feels **academic and introspective**, inviting the reader to engage with the text’s content while being visually drawn to the photograph’s ambiguity.  \n- **Energy**: **Controlled tension**—the blurred image adds depth without overwhelming the text, resulting in a calm yet thought-provoking experience.",
+    "layout_analysis": "### Layout Analysis — CORRECTED 2026-03-05\n\n#### 1. SPATIAL ARRANGEMENT\nThe entire spread is rotated 90 degrees counter-clockwise. When oriented for reading (book turned clockwise), the layout is:\n- A single full-bleed photograph of a distorted human face spans both pages\n- Dense body text is overlaid on the lower/right portion of the image\n- Text flows across the gutter as a continuous block\n- No display text, no captions, no page numbers visible\n\n#### 2. TYPOGRAPHY\n- Body text only: serif, medium weight, justified in a wide column\n- White text reversed out of the dark image (white_on_black)\n- No typographic hierarchy — uniform body text throughout\n- Special treatment: all text rotated 90° CCW with the image\n\n#### 3. CONTRAST & TONE\n- High contrast: deep blacks in the face photograph, bright highlights in curved facial forms\n- White text creates strong contrast against the dark image\n- Overall tone: dark, with organic highlight patterns from facial distortion\n\n#### 4. WHITE SPACE\n- None: the image fills the entire spread edge-to-edge, and text overlays the image\n\n#### 5. LEFT-RIGHT RELATIONSHIP\n- Unified: both image and text flow continuously across the gutter\n- The spread functions as a single canvas, not two separate pages\n\n#### 6. OVERALL FEEL\n- Disorienting (rotation), intimate (close-up face), intellectual (dense argument)\n- The spread demands physical engagement (turning the book) before intellectual engagement (reading the text)\n\n**Previous incorrect analysis** described a 'top-heavy layout' with image above and text below in two columns. The actual layout is a unified, rotated canvas with text overlaid on the image. Backed up to docs/data/backups/spread_033_analysis_backup.json",
     "layout_analysis_time": 12.8,
-    "model": "qwen3-vl"
+    "model": "qwen3-vl",
+    "_correction_note": "Visual analysis corrected manually. Original Qwen3-VL analysis was incorrect (misidentified subject and orientation)."
   },
   "content_plan": {
     "spread_id": "spread_033",
     "movement": "movement_1_environment",
+    "_correction_note": "CORRECTED 2026-03-05. Previous content plan mapped 'The Earth layer: what computation costs the ground' based on incorrect analysis. Backed up to docs/data/backups/spread_033_analysis_backup.json",
     "original_summary": {
-      "spread_type": "image_dominant",
+      "spread_type": "image_with_text",
       "section": "body",
       "book_pages": [
         56,
         57
       ],
       "original_themes": [
-        "visual_rhetoric"
+        "visual_space_vs_acoustic_space",
+        "perception_and_senses",
+        "primitive_vs_literate",
+        "electric_media_return"
       ],
       "rhetorical_strategy": "demonstration",
       "design_enacts_argument": true,
-      "design_argument_description": "A dark landscape/nature image demonstrates the elemental ground of media — nature as the ultimate medium, the environment before human environments.",
-      "text_excerpt": ""
+      "design_argument_description": "A distorted funhouse-mirror face undermines trust in visual perception. Dense text about visual vs. acoustic space is overlaid on the image. The 90-degree rotation forces the reader to physically reorient, performing the shift from visual to acoustic space. The design enacts its own argument.",
+      "text_excerpt": "Art, or the graphic translation of a culture, is shaped by the way space is perceived. Since the Renaissance the Western artist perceived his environment primarily in terms of the visual. [...] Electric circuitry is recreating in us the multidimensional space orientation of the 'primitive.'"
     },
     "contemporary_plan": {
-      "theme": "The Earth layer: what computation costs the ground",
-      "argument": "The original's dark landscape image evoked nature as the ground beneath all human media. The contemporary version shows what computation has done to that ground. The Earth layer of the Stack is extraction: lithium from the Salar de Atacama in Chile (consuming 65% of the region's water), cobalt from artisanal mines in the DRC (where 40,000 children work according to UNICEF), rare earth elements from Inner Mongolia (creating toxic lakes visible from space). Crawford's 'Atlas of AI' maps these material costs: every GPU contains the labor of mines, the water of deserts, the health of communities. The dark landscape of the original becomes a mining landscape — nature not as ground but as resource being consumed.",
+      "theme": "The distorted eye: how machines perceive in acoustic space",
+      "argument": "McLuhan argued that Western culture since the Renaissance organized perception around visual space (fixed-point perspective, the eye of the beholder, formal measurement), while pre-alphabetic cultures perceived in acoustic space (boundless, horizonless, integrating all senses). He predicted that electric circuitry would return us to acoustic space. The contemporary version shows that AI perception fulfills this prediction literally: foundation models perceive in high-dimensional latent space that is structurally closer to McLuhan's acoustic space than to visual space. A diffusion model doesn't see from a fixed viewpoint — it encodes the statistical structure of all possible views. It 'puts in everything it knows, rather than only what it sees,' exactly McLuhan's description of primitive art. The distorted face becomes: what a machine sees when it looks at you — a probability distribution, not a portrait.",
       "text": {
-        "approach": "no_text",
-        "description": "No text, or a single Crawford attribution in small type. The image must carry the argument alone, creating a stark contrast with the previous Cloud spread (030).",
-        "voice_notes": ""
+        "approach": "body_text",
+        "description": "Dense body text overlaid on the full-bleed face image, matching the original's composition. Three text options: (a) 'The eye in latent space' — systematic parallel between Renaissance perspective and foundation model statistics; (b) 'A drawing of a man hunting seal' — uses McLuhan's seal-hunting example as structural spine; (c) 'The x-ray that dreams' — extends McLuhan's x-ray metaphor to generative AI.",
+        "voice_notes": "The text should directly engage McLuhan's original language while transforming it for the AI context. Quotations from the original text should be recontextualized, not merely repeated."
       },
       "image": {
-        "approach": "found",
-        "subject": "A lithium mining landscape — the Salar de Atacama's turquoise evaporation pools from aerial view, or the cobalt mines of Kolwezi, DRC. The image must be documentary: real extraction at real scale, showing environmental transformation. The beauty of the turquoise pools (if using Atacama) ironizes the extraction they represent.",
-        "mood": "stark_beautiful_terrible",
-        "image_text_relationship": "independent"
+        "approach": "generated",
+        "subject": "A human face processed through AI distortion — latent-space interpolation, StyleGAN boundary artifacts, or diffusion model denoising at an intermediate step. Recognizably human but perceptually wrong. The contemporary funhouse mirror: the face as a machine sees it.",
+        "mood": "uncanny_intimate_philosophical",
+        "image_text_relationship": "anchor"
       },
       "rhetoric": {
-        "strategy": "demonstration",
-        "design_enacts": "The spread juxtaposes (through sequential reading) with spread 030: the Cloud above, the mine below. The reader turns from gleaming server racks to scarred earth and understands the vertical relationship: the weightless metaphor rests on material extraction. No text is needed because the contrast between spreads IS the argument."
+        "strategy": "transformation",
+        "design_enacts": "The distorted AI-face updates the original's funhouse-mirror face for the AI era. The image demonstrates machine perception visually — the face is distorted because it has been seen by a system that perceives in latent space, not visual space. Optional 90-degree rotation preserves the original's disorientation technique, forcing the reader to physically enact the perceptual shift the text describes."
       },
       "mapping": {
-        "relationship_to_original": "inversion",
-        "convergences": [],
-        "thinkers": [
-          "Crawford"
+        "relationship_to_original": "direct_transformation",
+        "convergences": [
+          "visual_space_to_latent_space",
+          "primitive_art_to_foundation_model",
+          "electric_circuitry_to_neural_network"
         ],
-        "quotations": []
+        "thinkers": [
+          "McLuhan",
+          "Bratton",
+          "Steyerl",
+          "Crawford_Paglen"
+        ],
+        "quotations": [
+          {
+            "text": "Art, or the graphic translation of a culture, is shaped by the way space is perceived.",
+            "attribution": "Marshall McLuhan & Quentin Fiore",
+            "source": "The Medium is the Massage, 1967"
+          },
+          {
+            "text": "Electric circuitry is recreating in us the multidimensional space orientation of the 'primitive.'",
+            "attribution": "Marshall McLuhan & Quentin Fiore",
+            "source": "The Medium is the Massage, 1967"
+          }
+        ]
       },
-      "dependencies": "Stack layer: Earth. Must be read against spread 030 (Cloud) — the pair is the argument."
+      "dependencies": "Connects to spread_027 (acoustic space / voice AI) and spread_029 (the model as ditto device / 'Until writing was invented, man lived in acoustic space'). This spread provides the core theoretical argument that those spreads reference."
     },
     "paper_trace": {
-      "citation": "Crawford 2021 \"Atlas of AI\" ch.1-2 on rare earth extraction and the material costs of computation",
-      "convergence_tag": null
+      "citation": "McLuhan & Fiore 1967 'The Medium is the Massage' pp.56-57 on visual space vs. acoustic space; Bratton 2015 'The Stack' on computational vision; Steyerl 2009 'In Defense of the Poor Image'; Crawford & Paglen 2019 'Excavating AI'",
+      "convergence_tag": "visual_acoustic_space"
     },
     "reviewer_feedback": {
-      "status": "pending",
-      "notes": "",
-      "revision_count": 0
+      "status": "corrected",
+      "notes": "Corrected 2026-03-05 after manual review identified VLM misidentification. Previous theme was 'The Earth layer: what computation costs the ground' — based on incorrect analysis that failed to identify the distorted face image or extract the rotated text. Earth layer content to be absorbed into spread_030 (Cloud) or spread_032 (City). See docs/reports/spread_033_analysis_report.md",
+      "revision_count": 1
     }
   }
 }

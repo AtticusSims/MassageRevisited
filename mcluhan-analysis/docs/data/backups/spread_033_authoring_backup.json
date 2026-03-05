@@ -1,0 +1,94 @@
+{
+  "_backup_info": {
+    "reason": "spread_033 misidentified by VLM pipeline — theme, text, and images were based on incorrect analysis",
+    "backed_up_at": "2026-03-05",
+    "report": "docs/reports/spread_033_analysis_report.md",
+    "original_theme": "The Earth layer: what computation costs the ground",
+    "replaced_with": "The distorted eye: how machines perceive in acoustic space"
+  },
+  "spread_id": "spread_033",
+  "movement": "movement_1_environment",
+  "theme": "The Earth layer: what computation costs the ground",
+  "text_options": [
+    {
+      "option_id": "a",
+      "label": "Total silence — the mine speaks",
+      "display_text": null,
+      "body_text": null,
+      "caption_text": null,
+      "quotations_used": [],
+      "voice_register": "monumental",
+      "rhetorical_strategy": "demonstration",
+      "rationale": "Absolute silence. No text, no caption, no attribution. The lithium mining landscape — turquoise evaporation pools scarring a white salt flat, or the terraced excavation of a cobalt mine — must carry the argument entirely. The reader turns from the smart city (032) to the mine that makes it possible. The vertical relationship between the Cloud (030) and the Earth (033) becomes legible: the weightless metaphor above, the scarred ground below. Silence here is not absence but accusation. The image of extraction needs no annotation — it is self-evident, which is precisely what makes it devastating.",
+      "word_count": 0
+    },
+    {
+      "option_id": "b",
+      "label": "Crawford's inventory of cost",
+      "display_text": null,
+      "body_text": null,
+      "caption_text": "Lithium: Salar de Atacama, Chile. 65% of the region's water.\nCobalt: Kolwezi, DRC. 40,000 children.\nRare earth: Baotou, Inner Mongolia. A toxic lake visible from space.\n\nEvery GPU contains all of this.",
+      "quotations_used": [],
+      "voice_register": "clinical",
+      "rhetorical_strategy": "accumulation",
+      "rationale": "Three lines, three extraction sites, three costs. Each follows the same structure: mineral, location, price. The parallelism is deliberate — it performs the supply chain's logic of equivalence, reducing places and peoples to inputs. '65% of the region's water' — water as industrial input. '40,000 children' — children as labor force. 'A toxic lake visible from space' — environmental destruction at satellite scale. The final sentence — 'Every GPU contains all of this' — collapses the distance between the reader's device and the mine. Set small, at the bottom edge, barely visible against the full-bleed photograph. The smallness of the text against the vastness of the landscape is the point.",
+      "word_count": 45
+    },
+    {
+      "option_id": "c",
+      "label": "Bratton's elemental vomit",
+      "display_text": null,
+      "body_text": null,
+      "caption_text": "'The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.'\n— Benjamin Bratton, The Stack, 2015\n\n'AI is neither artificial nor intelligent.'\n— Kate Crawford, Atlas of AI, 2021",
+      "quotations_used": [
+        {
+          "text": "The Stack terraforms the host planet by drinking and vomiting its elemental juices and spitting up mobile phones.",
+          "attribution": "Benjamin Bratton",
+          "source": "The Stack: On Software and Sovereignty, MIT Press, 2015"
+        },
+        {
+          "text": "AI is neither artificial nor intelligent.",
+          "attribution": "Kate Crawford",
+          "source": "Atlas of AI, Yale University Press, 2021"
+        }
+      ],
+      "voice_register": "prophetic",
+      "rhetorical_strategy": "provocation",
+      "rationale": "Pairs Bratton's most visceral sentence with Crawford's most concise one. Bratton names the process (terraforming, drinking, vomiting — the bodily violence of extraction). Crawford names the lie (neither artificial nor intelligent — because AI is made of mined minerals and human labor, not abstraction and thought). Together, the two quotations form a complete argument: the Stack consumes the Earth (Bratton), and what it produces is not what it claims to be (Crawford). The double attribution — two thinkers, two books, two perspectives on the same violence — gives the spread intellectual weight. But the image still dominates: the quotations are whispered beneath a landscape of devastation.",
+      "word_count": 30
+    }
+  ],
+  "design_specs": [
+    {
+      "spec_id": "1",
+      "label": "Full-bleed image: the Earth layer exposed",
+      "layout": {
+        "type": "full_bleed_image",
+        "description": "Full-bleed photograph of a mining landscape spanning both pages, continuous across the gutter.",
+        "left_page": "Left half of the full-bleed mining landscape.",
+        "right_page": "Right half of the same photograph, continuous across the gutter.",
+        "gutter_treatment": "continuous",
+        "orientation": "landscape"
+      },
+      "typography": {
+        "display_face": "None — no display text",
+        "body_face": "If caption is used: small sans-serif or monospace, 7-8pt, positioned at bottom edge.",
+        "display_scale": "caption",
+        "color_treatment": "white_on_black"
+      },
+      "image_direction": {
+        "approach": "found",
+        "subject": "A lithium mining landscape — the Salar de Atacama's evaporation pools from aerial view preferred.",
+        "mood": "stark, beautiful, terrible — the sublime of extraction.",
+        "bw_treatment": "high contrast",
+        "scale": "full_bleed"
+      },
+      "density": "sparse",
+      "tone": "dark"
+    }
+  ],
+  "selected_text": null,
+  "selected_design": null,
+  "reviewer_notes": null,
+  "dependency_flags": ["spread_030", "spread_032", "spread_034"]
+}
