@@ -1532,7 +1532,7 @@
     "selected": 0,
     "options": [
       {
-        "file": "spread_054_opt_0.jpg",
+        "file": "spread_054_opt_0.png",
         "source": "generated",
         "model": "gemini-3.1-flash-image-preview",
         "prompt": "Create a black and white photograph/image: Screenshot of the book's own analysis viewer showing the entry for spread_054. Must include: the original McLuhan spread (kiss) visible in the viewer's image panel; the JSON data structure partially legible; the contemporary plan text containing 'The book analyzing itself'; the convergence tag 'recursive_acceleration' visible. The viewer's own interface chrome (navigation, controls) should be visible — the tool is part of the recursion.\n\nMood and atmosp",
