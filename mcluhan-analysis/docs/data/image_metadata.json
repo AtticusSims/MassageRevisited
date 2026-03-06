@@ -71,7 +71,7 @@
   },
   "spread_011": {
     "approach": "graphic_symbol",
-    "selected": 0,
+    "selected": 2,
     "options": [
       {
         "file": "spread_011_opt_0.jpg",
@@ -88,6 +88,14 @@
         "prompt": "Create a black and white photograph/image: Facial recognition wireframe mesh on blank oval — the reader's face as absence, surrounded by radiating data vectors. Echoes and updates the original's fingerprint graphic and Op Art target.\n\nMood and atmosphere: clinical surveillance — precise, cold, diagrammatic. Not dystopian-dramatic but bureaucratically matter-of-fact.\n\nBlack and white treatment: Pure black line work on white. No halftones. The precision of the line work IS the argument: you have b",
         "license": "synthetic",
         "size_kb": 344.8
+      },
+      {
+        "file": "spread_011_opt_2.png",
+        "source": "custom",
+        "model": "manual",
+        "prompt": "Norbert Wiener portrait with face overlay — grayscale treatment",
+        "license": "custom",
+        "size_kb": 196.9
       }
     ],
     "generated_at": "2026-03-03T19:41:56Z"

@@ -1318,11 +1318,18 @@ function buildOptionCards(spread) {
 
   // --- Revised Draft card (if exists) ---
   if (hasDraft) {
+    const draft = revisedDrafts[sid];
     html += `<div class="revised-draft-card">`;
     html += `<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">`;
     html += `<span class="draft-badge">✎ REVISED DRAFT — NEEDS REVIEW</span>`;
     html += `</div>`;
-    html += `<div class="revised-draft-text">${esc(revisedDrafts[sid].text)}</div>`;
+    html += `<div class="revised-draft-text">${esc(draft.text)}</div>`;
+    if (draft.caption) {
+      html += `<div style="margin-top:8px;font-style:italic;color:var(--text-muted);font-size:13px;">Caption: ${esc(draft.caption)}</div>`;
+    }
+    if (draft.image) {
+      html += `<div style="margin-top:6px;color:var(--text-muted);font-size:12px;">Image: ${esc(draft.image)}</div>`;
+    }
     html += `</div>`;
   }
 
@@ -1470,8 +1477,14 @@ function buildOptionCards(spread) {
 
 // ===== Render Spread Layout =====
 function renderSpreadLayout(spread, optionId) {
-  const opt = spread.text_options.find(o => o.option_id === optionId);
+  let opt = spread.text_options.find(o => o.option_id === optionId);
   if (!opt) return;
+
+  // Apply revised draft overrides (caption) if present — use shallow copy to avoid mutation
+  const draft = revisedDrafts?.[spread.spread_id];
+  if (draft?.caption) {
+    opt = { ...opt, caption_text: draft.caption };
+  }
 
   const spec = spread.design_specs?.[0];
   const layoutType = spec?.layout?.type || 'split_asymmetric';
@@ -1887,6 +1900,10 @@ function confirmImageSelection(sid, idx) {
 function selectImage(sid, idx) { previewImage(sid, idx); }
 
 function getImageUrl(sid) {
+  // Check for image override in revised drafts
+  const draft = revisedDrafts?.[sid];
+  if (draft?.image) return `images/${draft.image}`;
+
   // Returns the URL for the currently selected image option, or null
   const meta = imageMetadata?.[sid];
   if (!meta || meta.skipped || !meta.options?.length) return null;

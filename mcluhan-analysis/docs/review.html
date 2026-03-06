@@ -825,12 +825,16 @@ function buildSyntheticOption(spread, revisedText) {
     baseOpt = spread.text_options[0];
   }
 
+  // Check for caption override in revised drafts
+  const draft = revisedDrafts?.[spread.spread_id];
+  const captionText = draft?.caption ?? baseOpt?.caption_text ?? '';
+
   return {
     option_id: 'revised',
     label: 'Revised Draft',
     display_text: baseOpt?.display_text || '',
     body_text: revisedText,
-    caption_text: baseOpt?.caption_text || '',
+    caption_text: captionText,
     quotations_used: baseOpt?.quotations_used || [],
     word_count: revisedText.split(/\s+/).length
   };
@@ -1268,6 +1272,10 @@ function renderSpreadLayout(spread, optionOrId) {
 
 // ===== Image URL & Element Builders =====
 function getImageUrl(sid) {
+  // Check for image override in revised drafts
+  const draft = revisedDrafts?.[sid];
+  if (draft?.image) return `images/${draft.image}`;
+
   const meta = imageMetadata?.[sid];
   if (!meta || meta.skipped || !meta.options?.length) return null;
   const idx = currentImageIdx < meta.options.length ? currentImageIdx : 0;

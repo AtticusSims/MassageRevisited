@@ -16,3 +16,4 @@ Thumbs.db
 # Large binary files
 *.pdf
 mcluhan-analysis/rendered/*.png
+mcluhan-analysis/output/face_overlays/

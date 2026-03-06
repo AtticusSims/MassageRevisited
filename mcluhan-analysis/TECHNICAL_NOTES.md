@@ -693,7 +693,8 @@ This section documents significant deviations from the original project plans an
 
 | Spread | Element | Note |
 |--------|---------|------|
-| spread_011 | Hash string `2d:61:70:3e:43:d1:4a:e9:2d:b0:d1:ca:4f:4a:06:b4:c7:79:51:e5` | Preimage: "You are the fingerprint". The hash appears as the closing element of the revised body text, visually echoing the original spread's fingerprint/bullseye imagery. It represents the reader's identity reduced to a data signature — the "you" of the title rendered as machine-readable output. |
+| spread_011 | Body hash `2d:61:70:3e:43:d1:4a:e9:2d:b0:d1:ca:4f:4a:06:b4:c7:79:51:e5` | SHA-1 preimage: "You are the fingerprint". The hash appears as the closing element of the revised body text, visually echoing the original spread's fingerprint/bullseye imagery. It represents the reader's identity reduced to a data signature — the "you" of the title rendered as machine-readable output. |
+| spread_011 | Caption hash `5e:86:89:60:72:57:b7:58:ee:e2:af:f7:a9:f7:26:cf:98:3d:89:bf` | SHA-1 preimage: "Norbert Wiener (1894 - 1964). Absent-Minded, Child Prodigy, Socially Awkward, Snores Loudly, Public Nose-Picking, Benzedrine Abuser, Vegetarian, Clumsy, Myopic, Pompous, Poor Listener". Captions the Wiener portrait image (spread_011_opt_2.png). The hash encodes a reductive biographical dossier — the man who warned about cybernetic surveillance, himself reduced to a data profile. |
 
 ---
 
