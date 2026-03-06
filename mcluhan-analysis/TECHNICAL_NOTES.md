@@ -687,4 +687,14 @@ This section documents significant deviations from the original project plans an
 
 ---
 
-*Last updated: Session 9 (Phase C complete — content plan generated, validated, and deployed).*
+## 12. Authoring Notes
+
+### 12.1 Easter Eggs & Embedded Details
+
+| Spread | Element | Note |
+|--------|---------|------|
+| spread_011 | Hash string `2d:61:70:3e:43:d1:4a:e9:2d:b0:d1:ca:4f:4a:06:b4:c7:79:51:e5` | Preimage: "You are the fingerprint". The hash appears as the closing element of the revised body text, visually echoing the original spread's fingerprint/bullseye imagery. It represents the reader's identity reduced to a data signature — the "you" of the title rendered as machine-readable output. |
+
+---
+
+*Last updated: Phase 3 authoring (spread revisions in progress).*
