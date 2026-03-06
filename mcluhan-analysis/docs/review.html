@@ -1163,8 +1163,9 @@ function renderSpreadLayout(spread, optionOrId) {
 
     case 'split_asymmetric':
       left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;overflow:hidden;';
-      left.innerHTML = `${displayEl}${bodyEl ? `<div style="margin-top:24px">${bodyEl}</div>` : ''}${captionEl ? `<div style="margin-top:16px">${captionEl}</div>` : ''}${quoteEl ? `<div style="margin-top:20px">${quoteEl}</div>` : ''}`;
-      right.innerHTML = imgEl || `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:40px">${quoteEl || displayEl}</div>`;
+      left.innerHTML = `${displayEl}${bodyEl ? `<div style="margin-top:24px">${bodyEl}</div>` : ''}${quoteEl ? `<div style="margin-top:20px">${quoteEl}</div>` : ''}`;
+      right.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:0;overflow:hidden;';
+      right.innerHTML = (imgEl || `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:40px">${quoteEl || displayEl}</div>`) + (captionEl ? `<div style="padding:8px 20px 12px;text-align:right;">${captionEl}</div>` : '');
       break;
 
     case 'split_symmetric':
@@ -1284,9 +1285,12 @@ function getImageUrl(sid) {
 
 function buildImageElement(sid, subject, style) {
   const url = getImageUrl(sid);
+  // Use contain for custom/override images to avoid cropping
+  const hasOverride = revisedDrafts?.[sid]?.image;
+  const fit = hasOverride ? 'contain' : 'cover';
   if (url) {
     return `<div class="image-zone" ${style ? `style="${style}"` : ''}>
-      <img src="${url}" alt="${esc(subject || 'spread image')}" style="width:100%;height:100%;object-fit:cover;" onerror="this.outerHTML='<div class=image-placeholder>${esc(subject || 'image')}</div>'" />
+      <img src="${url}" alt="${esc(subject || 'spread image')}" style="width:100%;height:100%;object-fit:${fit};" onerror="this.outerHTML='<div class=image-placeholder>${esc(subject || 'image')}</div>'" />
     </div>`;
   }
   return `<div class="image-zone" ${style ? `style="${style}"` : ''}><div class="image-placeholder">${esc(subject || 'image')}</div></div>`;
