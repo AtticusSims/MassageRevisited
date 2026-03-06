@@ -920,27 +920,47 @@
       {
         "file": "spread_012_opt_0.jpg",
         "source": "found_photograph",
-        "description": "3x2 grid montage of grayscale family photographs at riverside",
+        "description": "Grayscale river family photograph",
         "license": "personal",
-        "size_kb": 313.4
+        "size_kb": 377.9
       },
       {
         "file": "spread_012_opt_1.jpg",
         "source": "found_photograph",
-        "description": "2x3 grid montage of grayscale family photographs at riverside",
+        "description": "Grayscale river family photograph",
         "license": "personal",
-        "size_kb": 572.8
+        "size_kb": 383.0
+      },
+      {
+        "file": "spread_012_opt_2.jpg",
+        "source": "found_photograph",
+        "description": "Grayscale river family photograph",
+        "license": "personal",
+        "size_kb": 365.4
+      },
+      {
+        "file": "spread_012_opt_3.jpg",
+        "source": "found_photograph",
+        "description": "Grayscale river family photograph",
+        "license": "personal",
+        "size_kb": 371.4
+      },
+      {
+        "file": "spread_012_opt_4.jpg",
+        "source": "found_photograph",
+        "description": "Grayscale river family photograph",
+        "license": "personal",
+        "size_kb": 380.8
+      },
+      {
+        "file": "spread_012_opt_5.jpg",
+        "source": "found_photograph",
+        "description": "Grayscale river family photograph",
+        "license": "personal",
+        "size_kb": 362.2
       }
     ],
-    "source_images": [
-      "RiverFamily/grayscale/select/river-fam (1).jpg",
-      "RiverFamily/grayscale/select/river-fam (2).jpg",
-      "RiverFamily/grayscale/select/river-fam (3).jpg",
-      "RiverFamily/grayscale/select/river-fam (8).jpg",
-      "RiverFamily/grayscale/select/river-fam (9).jpg",
-      "RiverFamily/grayscale/select/river-fam (10).jpg"
-    ],
-    "generated_at": "2026-03-06T22:00:00Z"
+    "generated_at": "2026-03-06T22:15:00Z"
   },
   "spread_014": {
     "approach": "found",
