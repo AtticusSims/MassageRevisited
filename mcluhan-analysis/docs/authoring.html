@@ -842,6 +842,15 @@
       transition: background 0.15s;
     }
     .pane-resizer:hover, .pane-resizer.active { background: var(--accent); }
+
+    /* ===== Image Toggle ===== */
+    .image-toggle-btn {
+      background: var(--bg-card); border: 1px solid var(--border); color: var(--text-muted);
+      font-size: 10px; padding: 2px 8px; border-radius: 3px; cursor: pointer;
+      white-space: nowrap;
+    }
+    .image-toggle-btn:hover { color: var(--accent); border-color: var(--accent-dim); }
+    .image-toggle-btn.off { color: var(--red); border-color: rgba(231,76,60,0.4); }
   </style>
 </head>
 <body>
@@ -850,7 +859,7 @@
   <!-- Header -->
   <header>
     <div style="display:flex;align-items:center;gap:12px;">
-      <a href="index.html" class="back-link">&larr; Analysis</a>
+      <a href="index.html#workspace" class="back-link">&larr; Analysis</a>
       <h1>Authoring Review</h1>
     </div>
     <div class="header-center">
@@ -888,6 +897,7 @@
         <div class="render-pane-header">
           <span class="pane-label">Rendered</span>
           <span id="renderInfo" style="font-size:10px;color:var(--text-muted)"></span>
+          <button class="image-toggle-btn" id="imageToggleBtn" onclick="toggleImages()" title="Toggle images on/off">Images: ON</button>
         </div>
         <!-- Font Picker -->
         <div class="font-picker-bar">
@@ -1032,6 +1042,7 @@ let currentRenderOption = null; // which option is rendered in the spread
 let currentImageIdx = 0; // which image option is shown (0-based)
 let selections = {};
 let currentBottomView_state = 'original'; // 'original' | 'wireframe' (for bottom pane)
+let imagesEnabled = true; // image toggle state
 
 try {
   const saved = localStorage.getItem('authoring_selections_v2');
@@ -1133,6 +1144,18 @@ function toggleBottomPane() {
   btn.textContent = pane.classList.contains('collapsed') ? '▲' : '▼';
   // Re-scale spread after layout shift
   setTimeout(scaleSpread, 250);
+}
+
+// ===== Image Toggle =====
+function toggleImages() {
+  imagesEnabled = !imagesEnabled;
+  const btn = document.getElementById('imageToggleBtn');
+  btn.textContent = imagesEnabled ? 'Images: ON' : 'Images: OFF';
+  btn.classList.toggle('off', !imagesEnabled);
+  // Re-render current spread
+  if (data && data.spreads[currentIndex] && currentRenderOption) {
+    renderSpreadLayout(data.spreads[currentIndex], currentRenderOption);
+  }
 }
 
 // ===== Font Picker =====
@@ -1872,6 +1895,14 @@ function getImageUrl(sid) {
 }
 
 function buildImageElement(sid, subject, style) {
+  if (!imagesEnabled) {
+    // When images disabled, show contrasting background
+    const frame = document.getElementById('spreadFrame');
+    const isDark = frame && (frame.classList.contains('tone-dark') || frame.classList.contains('tone-high_contrast'));
+    const bg = isDark ? '#333' : '#ccc';
+    const combinedStyle = (style || '') + `;background:${bg};`;
+    return `<div class="image-zone" style="${combinedStyle}"><div class="image-placeholder" style="color:${isDark ? '#888' : '#666'};font-size:11px;">Image hidden</div></div>`;
+  }
   const url = getImageUrl(sid);
   if (url) {
     return `<div class="image-zone" ${style ? `style="${style}"` : ''}>

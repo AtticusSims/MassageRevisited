@@ -700,7 +700,11 @@ function renderVisual(data) {
     html = '<div class="placeholder">No visual analysis data available</div>';
   }
 
+  // Feedback
+  html += buildFeedbackHTML('visual');
+
   el.innerHTML = html;
+  renderFeedbackNotes('visual');
 }
 
 function toggleCollapsible(header) {
@@ -899,64 +903,70 @@ function renderPlanning(data) {
   html += `</div></div>`;
 
   // Reviewer Feedback
-  html += `<div class="section plan-section feedback-section">
-    <div class="section-header">Feedback</div>
-    <div class="feedback-input">
-      <textarea id="feedbackNote" placeholder="Add feedback note..." rows="2"></textarea>
-      <button class="feedback-add-btn" onclick="addFeedbackNote()">Add Note</button>
-    </div>
-    <div id="feedbackNotes"></div>
-  </div>`;
+  html += buildFeedbackHTML('planning');
 
   el.innerHTML = html;
 
   // Load and render existing feedback notes
-  renderFeedbackNotes();
+  renderFeedbackNotes('planning');
 }
 
-// ========== Feedback (localStorage) ==========
-const FEEDBACK_KEY = 'mcluhan_feedback';
+// ========== Feedback (localStorage, section-aware) ==========
+const FEEDBACK_KEYS = {
+  planning: 'mcluhan_feedback',
+  analysis: 'mcluhan_feedback_analysis',
+  visual: 'mcluhan_feedback_visual'
+};
 
-function getFeedbackData() {
+function getFeedbackData(section) {
+  const key = FEEDBACK_KEYS[section || 'planning'] || FEEDBACK_KEYS.planning;
   try {
-    return JSON.parse(localStorage.getItem(FEEDBACK_KEY) || '{}');
+    return JSON.parse(localStorage.getItem(key) || '{}');
   } catch { return {}; }
 }
 
-function addFeedbackNote() {
-  const textarea = document.getElementById('feedbackNote');
+function saveFeedbackData(section, fbData) {
+  const key = FEEDBACK_KEYS[section || 'planning'] || FEEDBACK_KEYS.planning;
+  localStorage.setItem(key, JSON.stringify(fbData));
+}
+
+function addFeedbackNote(section) {
+  section = section || 'planning';
+  const textarea = document.getElementById(`feedbackNote_${section}`);
   const note = textarea.value.trim();
   if (!note) return;
 
   const spreadId = NAV_ITEMS[currentIndex].id;
-  const data = getFeedbackData();
-  if (!data[spreadId]) data[spreadId] = [];
-  data[spreadId].push({
+  const fbData = getFeedbackData(section);
+  if (!fbData[spreadId]) fbData[spreadId] = [];
+  fbData[spreadId].push({
     text: note,
     timestamp: new Date().toISOString()
   });
-  localStorage.setItem(FEEDBACK_KEY, JSON.stringify(data));
+  saveFeedbackData(section, fbData);
   textarea.value = '';
-  renderFeedbackNotes();
+  renderFeedbackNotes(section);
 }
 
-function deleteFeedbackNote(index) {
+function deleteFeedbackNote(index, section) {
+  section = section || 'planning';
   const spreadId = NAV_ITEMS[currentIndex].id;
-  const data = getFeedbackData();
-  if (data[spreadId]) {
-    data[spreadId].splice(index, 1);
-    if (data[spreadId].length === 0) delete data[spreadId];
-    localStorage.setItem(FEEDBACK_KEY, JSON.stringify(data));
+  const fbData = getFeedbackData(section);
+  if (fbData[spreadId]) {
+    fbData[spreadId].splice(index, 1);
+    if (fbData[spreadId].length === 0) delete fbData[spreadId];
+    saveFeedbackData(section, fbData);
   }
-  renderFeedbackNotes();
+  renderFeedbackNotes(section);
 }
 
-function renderFeedbackNotes() {
-  const el = document.getElementById('feedbackNotes');
+function renderFeedbackNotes(section) {
+  section = section || 'planning';
+  const el = document.getElementById(`feedbackNotes_${section}`);
   if (!el) return;
   const spreadId = NAV_ITEMS[currentIndex].id;
-  const data = getFeedbackData();
-  const notes = data[spreadId] || [];
+  const fbData = getFeedbackData(section);
+  const notes = fbData[spreadId] || [];
 
   if (notes.length === 0) {
     el.innerHTML = '<div class="no-notes">No feedback notes yet</div>';
@@ -971,11 +981,22 @@ function renderFeedbackNotes() {
       <div class="feedback-note-text">${esc(n.text)}</div>
       <div class="feedback-note-meta">
         <span class="feedback-date">${date}</span>
-        <button class="feedback-delete" onclick="deleteFeedbackNote(${i})">&times;</button>
+        <button class="feedback-delete" onclick="deleteFeedbackNote(${i},'${section}')">&times;</button>
       </div>
     </div>`;
   }
   el.innerHTML = html;
+}
+
+function buildFeedbackHTML(section) {
+  return `<div class="section plan-section feedback-section">
+    <div class="section-header">Feedback</div>
+    <div class="feedback-input">
+      <textarea id="feedbackNote_${section}" placeholder="Add feedback note..." rows="2"></textarea>
+      <button class="feedback-add-btn" onclick="addFeedbackNote('${section}')">Add Note</button>
+    </div>
+    <div id="feedbackNotes_${section}"></div>
+  </div>`;
 }
 
 // ========== Overview Modal ==========
@@ -1099,14 +1120,18 @@ function renderOverview() {
   html += `<div class="section overview-section">
     <div class="section-header">Review Status Dashboard</div>`;
   const reviewData = getReviewData();
-  const feedbackData = getFeedbackData();
+  const fbPlanning = getFeedbackData('planning');
+  const fbAnalysis = getFeedbackData('analysis');
+  const fbVisual = getFeedbackData('visual');
   let approved = 0, flagged = 0, pending = 0, withNotes = 0;
   for (const item of NAV_ITEMS) {
     const s = (reviewData[item.id] && reviewData[item.id].status) || 'pending';
     if (s === 'approved') approved++;
     else if (s === 'flagged') flagged++;
     else pending++;
-    if (feedbackData[item.id] && feedbackData[item.id].length) withNotes++;
+    if ((fbPlanning[item.id] && fbPlanning[item.id].length) ||
+        (fbAnalysis[item.id] && fbAnalysis[item.id].length) ||
+        (fbVisual[item.id] && fbVisual[item.id].length)) withNotes++;
   }
   html += `<div class="dashboard-stats">
     <div class="dash-stat"><span class="dash-num approved">${approved}</span><span class="dash-label">Approved</span></div>
@@ -1125,66 +1150,65 @@ function renderOverview() {
   el.innerHTML = html;
 }
 
-// ========== Export Revision Prompt ==========
+// ========== Export Review Feedback (JSON download) ==========
 function exportRevisionPrompt() {
   const reviewData = getReviewData();
-  const feedbackData = getFeedbackData();
+  const fbPlanning = getFeedbackData('planning');
+  const fbAnalysis = getFeedbackData('analysis');
+  const fbVisual = getFeedbackData('visual');
 
-  let prompt = '# Content Plan Revision Prompt\n\n';
-  prompt += `Generated: ${new Date().toISOString()}\n\n`;
+  const output = {
+    version: "1.0",
+    exported: new Date().toISOString(),
+    total_spreads: NAV_ITEMS.length,
+    sections: {},
+    review_status: {}
+  };
 
-  // Summary
+  // Build per-section feedback
+  const sections = { analysis: fbAnalysis, visual: fbVisual, planning: fbPlanning };
+  for (const [sectionName, fbData] of Object.entries(sections)) {
+    const sectionFeedback = {};
+    for (const item of NAV_ITEMS) {
+      const notes = fbData[item.id];
+      if (notes && notes.length > 0) {
+        sectionFeedback[item.id] = notes;
+      }
+    }
+    if (Object.keys(sectionFeedback).length > 0) {
+      output.sections[sectionName] = sectionFeedback;
+    }
+  }
+
+  // Build review status
   let approved = 0, flagged = 0;
   for (const item of NAV_ITEMS) {
-    const s = (reviewData[item.id] && reviewData[item.id].status) || 'pending';
-    if (s === 'approved') approved++;
-    if (s === 'flagged') flagged++;
-  }
-  prompt += `## Summary\n- Approved: ${approved}\n- Flagged: ${flagged}\n- Pending: ${NAV_ITEMS.length - approved - flagged}\n\n`;
-
-  // Flagged spreads with feedback
-  const flaggedSpreads = NAV_ITEMS.filter(n => (reviewData[n.id] && reviewData[n.id].status) === 'flagged');
-  if (flaggedSpreads.length) {
-    prompt += `## Flagged Spreads\n\n`;
-    for (const s of flaggedSpreads) {
-      prompt += `### ${s.id}\n`;
-      const notes = feedbackData[s.id] || [];
-      if (notes.length) {
-        for (const n of notes) {
-          prompt += `- ${n.text}\n`;
-        }
-      } else {
-        prompt += `- (no notes)\n`;
-      }
-      prompt += '\n';
+    const status = (reviewData[item.id] && reviewData[item.id].status) || 'pending';
+    if (status !== 'pending') {
+      output.review_status[item.id] = status;
     }
+    if (status === 'approved') approved++;
+    if (status === 'flagged') flagged++;
   }
 
-  // All spreads with feedback notes (including non-flagged)
-  const withNotes = NAV_ITEMS.filter(n => feedbackData[n.id] && feedbackData[n.id].length > 0 && (reviewData[n.id] && reviewData[n.id].status) !== 'flagged');
-  if (withNotes.length) {
-    prompt += `## Other Spreads with Notes\n\n`;
-    for (const s of withNotes) {
-      prompt += `### ${s.id} (${(reviewData[s.id] && reviewData[s.id].status) || 'pending'})\n`;
-      const notes = feedbackData[s.id] || [];
-      for (const n of notes) {
-        prompt += `- ${n.text}\n`;
-      }
-      prompt += '\n';
-    }
-  }
+  output.summary = {
+    approved,
+    flagged,
+    pending: NAV_ITEMS.length - approved - flagged,
+    spreads_with_notes: new Set([
+      ...Object.keys(output.sections.analysis || {}),
+      ...Object.keys(output.sections.visual || {}),
+      ...Object.keys(output.sections.planning || {})
+    ]).size
+  };
 
-  // Copy to clipboard
-  navigator.clipboard.writeText(prompt).then(() => {
-    const btn = document.querySelector('.export-btn');
-    const orig = btn.textContent;
-    btn.textContent = 'Copied!';
-    setTimeout(() => { btn.textContent = orig; }, 2000);
-  }).catch(() => {
-    // Fallback: open in new window
-    const w = window.open('', '_blank');
-    w.document.write('<pre>' + prompt.replace(/</g, '&lt;') + '</pre>');
-  });
+  const blob = new Blob([JSON.stringify(output, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `review_feedback_${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
 }
 
 // ========== Analysis Rendering ==========
@@ -1475,7 +1499,11 @@ function renderAnalysis(s) {
     </div>`;
   }
 
+  // Feedback
+  html += buildFeedbackHTML('analysis');
+
   el.innerHTML = html;
+  renderFeedbackNotes('analysis');
 }
 
 function esc(str) {
@@ -1659,6 +1687,10 @@ function showDetail(type, id) {
 function handleHash() {
   const hash = window.location.hash.slice(1);
   if (!hash) return false;
+  if (hash === 'workspace') {
+    enterReview();
+    return true;
+  }
   const slashIdx = hash.indexOf('/');
   if (slashIdx === -1) return false;
   const type = hash.substring(0, slashIdx);
