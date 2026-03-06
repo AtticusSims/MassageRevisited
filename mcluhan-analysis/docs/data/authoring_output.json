@@ -726,33 +726,33 @@
       "design_specs": [
         {
           "spec_id": "1",
-          "label": "Rotated household",
+          "label": "Algorithmic household",
           "layout": {
-            "type": "full_bleed_typography",
-            "description": "Entire spread rotated 90 degrees clockwise, requiring the reader to turn the book sideways — exactly as in the original at this position. The rotation IS the argument: the algorithmic family forces constant reorientation.",
-            "left_page": "Display text 'your family.' and body text, all rotated 90 degrees. Text runs vertically from what is now the 'bottom' to the 'top' of the turned page.",
-            "right_page": "Image of a family on a couch, shot from behind, each member on a different device with visibly different screen content. Also rotated 90 degrees. The screens glow — they are the only light sources.",
-            "gutter_treatment": "continuous",
+            "type": "split_asymmetric",
+            "description": "Left page: text-dominant with display heading and body text. Right page: grayscale family photographs — figures gathered at a riverside, each captured in separate frames.",
+            "left_page": "Display 'your family.' at top-left in large sans-serif, followed by body text below. Generous top margin.",
+            "right_page": "Full-page grayscale family photograph from the RiverFamily series. Multiple image options available for selection.",
+            "gutter_treatment": "divided",
             "orientation": "landscape"
           },
           "typography": {
-            "display_face": "Helvetica Neue Bold",
+            "display_face": "Helvetica Neue Bold or equivalent geometric sans-serif",
             "body_face": "For options A/B: clean sans-serif (Aktiv Grotesk or similar). For option C: monospaced (for the inventory format), with 'algorithmic profile' labels in a contrasting weight.",
-            "display_scale": "headline",
+            "display_scale": "architectural",
             "color_treatment": "black_on_white",
-            "special_treatment": "Entire spread rotated 90 degrees clockwise. This must be specified in production — the printer rotates the content, not the page."
+            "special_treatment": "Option C: all-lowercase, minimal punctuation, each biometric datum on its own line."
           },
           "image_direction": {
             "approach": "found",
-            "subject": "Family of four seated together on a couch, photographed from behind. Each person holds a different device. Each screen shows visibly different content — different color palettes, different interfaces. The screens are the brightest elements in the frame.",
-            "mood": "Intimate alienation — warmth of domestic space, coldness of separated attention. The lighting should come primarily from the screens, casting each family member in a slightly different color temperature.",
-            "bw_treatment": "Consider allowing the screen glows to remain in subtle color (blue, green, warm white, pink) against an otherwise black-and-white or desaturated image — the color IS the algorithmic differentiation.",
+            "subject": "Grayscale family photographs — figures gathered at a riverside, posing together yet each captured in separate frames. The grayscale treatment echoes the original spread's aesthetic while fragmenting the family unit across separate compositions.",
+            "mood": "clinical_surveillance — intimate yet observed. The grayscale treatment removes warmth, creating documentary distance.",
+            "bw_treatment": "Full grayscale conversion. High contrast black and white.",
             "scale": "full_bleed"
           },
           "density": "moderate",
-          "tone": "dark",
-          "rationale": "The rotation is non-negotiable — it mirrors the original's exact design move at this spread position and physically enacts the disruption the text describes. The behind-the-couch photograph inverts the original's group portrait: in 1967, the family faced outward together; in 2026, they face separate screens. The glow differentiation (each screen a different color) makes the algorithmic segmentation visible at a glance.",
-          "svg_wireframe": "<svg viewBox=\"0 0 640 400\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Helvetica, Arial, sans-serif\">\n<defs>\n  <pattern id=\"hatch\" width=\"6\" height=\"6\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\">\n    <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"6\" stroke=\"#AAA\" stroke-width=\"1\"/>\n  </pattern>\n</defs>\n<rect width=\"640\" height=\"400\" fill=\"#222222\"/>\n<rect x=\"0.5\" y=\"0.5\" width=\"639\" height=\"399\" fill=\"none\" stroke=\"#555\" stroke-width=\"1.5\" rx=\"2\"/>\n<rect x=\"0\" y=\"0\" width=\"640\" height=\"28\" fill=\"#333\"/>\n<text x=\"16\" y=\"18\" font-size=\"11\" font-family=\"monospace\" fill=\"#DDD\" font-weight=\"700\">spread_012</text>\n<text x=\"110\" y=\"18\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#DDD\">full_bleed_typography</text>\n<text x=\"624\" y=\"18\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#DDD\" text-anchor=\"end\">Rotated household</text>\n\n<rect x=\"16\" y=\"56\" width=\"608\" height=\"174.0\" rx=\"6\" fill=\"#3A3A3A\" stroke=\"#555555\" stroke-width=\"1\"/>\n<text x=\"320.0\" y=\"146.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#888\" text-anchor=\"middle\">DISPLAY TEXT</text>\n<rect x=\"32\" y=\"76\" width=\"576\" height=\"16.8\" rx=\"2\" fill=\"#EEEEEE\" opacity=\"0.15\"/>\n<rect x=\"32\" y=\"110\" width=\"546\" height=\"16.8\" rx=\"2\" fill=\"#EEEEEE\" opacity=\"0.15\"/>\n<rect x=\"32\" y=\"144\" width=\"516\" height=\"16.8\" rx=\"2\" fill=\"#EEEEEE\" opacity=\"0.15\"/>\n<rect x=\"336\" y=\"279.6\" width=\"288\" height=\"69.60000000000001\" rx=\"4\" fill=\"#3A3A3A\" stroke=\"#555555\" stroke-width=\"1\"/>\n<text x=\"480.0\" y=\"317.40000000000003\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#888\" text-anchor=\"middle\">BODY</text>\n<circle cx=\"22\" cy=\"392\" r=\"3\" fill=\"#AAA\" opacity=\"0.5\"/>\n<circle cx=\"32\" cy=\"392\" r=\"3\" fill=\"#AAA\" opacity=\"0.5\"/>\n<text x=\"44\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#AAA\" opacity=\"0.6\">moderate</text>\n<text x=\"624\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#AAA\" opacity=\"0.6\" text-anchor=\"end\">dark | black_on_white</text>\n</svg>"
+          "tone": "high_contrast",
+          "rationale": "The split_asymmetric layout mirrors spread_011, creating visual continuity across the 'you → your family' sequence. The grayscale river family photographs replace the original's coat rack image, offering multiple compositions of family togetherness that can be read against the text's argument about algorithmic separation.",
+          "svg_wireframe": "<svg viewBox=\"0 0 640 400\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Helvetica, Arial, sans-serif\">\n<defs>\n  <pattern id=\"hatch\" width=\"6\" height=\"6\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\">\n    <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"6\" stroke=\"#666\" stroke-width=\"1\"/>\n  </pattern>\n</defs>\n<rect width=\"640\" height=\"400\" fill=\"#F5F5F5\"/>\n<rect x=\"0.5\" y=\"0.5\" width=\"639\" height=\"399\" fill=\"none\" stroke=\"#333333\" stroke-width=\"1.5\" rx=\"2\"/>\n<rect x=\"0\" y=\"0\" width=\"640\" height=\"28\" fill=\"#F0F0F0\"/>\n<text x=\"16\" y=\"18\" font-size=\"11\" font-family=\"monospace\" fill=\"#444\" font-weight=\"700\">spread_012</text>\n<text x=\"110\" y=\"18\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#444\">split_asymmetric</text>\n<text x=\"624\" y=\"18\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#444\" text-anchor=\"end\">Algorithmic household</text>\n<line x1=\"320\" y1=\"0\" x2=\"320\" y2=\"400\" stroke=\"#AAA\" stroke-width=\"2.5\"/>\n<rect x=\"16\" y=\"44\" width=\"236.8\" height=\"30\" rx=\"4\" fill=\"#E0E0E0\" stroke=\"#BDBDBD\" stroke-width=\"1\"/>\n<text x=\"134.4\" y=\"62.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#555555\" text-anchor=\"middle\">DISPLAY</text>\n<rect x=\"16\" y=\"86\" width=\"296.0\" height=\"174.0\" rx=\"4\" fill=\"#E0E0E0\" stroke=\"#BDBDBD\" stroke-width=\"1\"/>\n<text x=\"164.0\" y=\"176.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#555555\" text-anchor=\"middle\">BODY TEXT</text>\n<rect x=\"328.0\" y=\"36\" width=\"304.0\" height=\"348\" rx=\"0\" fill=\"#999999\" stroke=\"#777777\" stroke-width=\"1\"/>\n<rect x=\"328.0\" y=\"36\" width=\"304.0\" height=\"348\" rx=\"0\" fill=\"url(#hatch)\" opacity=\"0.4\"/>\n<text x=\"480.0\" y=\"213.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#333\" text-anchor=\"middle\" font-weight=\"600\">IMAGE</text>\n<circle cx=\"22\" cy=\"392\" r=\"3\" fill=\"#666\" opacity=\"0.5\"/>\n<circle cx=\"32\" cy=\"392\" r=\"3\" fill=\"#666\" opacity=\"0.5\"/>\n<text x=\"44\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#666\" opacity=\"0.6\">moderate</text>\n<text x=\"624\" y=\"395\" font-size=\"8\" font-family=\"sans-serif\" fill=\"#666\" opacity=\"0.6\" text-anchor=\"end\">high_contrast | black_on_white</text>\n</svg>"
         }
       ],
       "dependency_flags": [
