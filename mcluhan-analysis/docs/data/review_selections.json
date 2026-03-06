@@ -67,13 +67,13 @@
     "spread_011": {
       "selected_text": "b",
       "selected_design": null,
-      "selected_image": 0,
+      "selected_image": 2,
       "quality_ratings": {
         "a": 2,
         "b": 3,
         "c": 3
       },
-      "reviewer_notes": "There are good qualities of each, especially B and C. I like that A mirrors the original, but the Q & A pattern is not at punchy as the sequential questions in the original. I think we should generate more options that combine these three, making a punchy fast paced column of text more like the original."
+      "reviewer_notes": "There are good qualities of each, especially B and C. I like that A mirrors the original, but the Q & A pattern is not at punchy as the sequential questions in the original. I think we should generate more options that combine these three, making a punchy fast paced column of text more like the original.\n\n[APS — Image Note] Norbert Wiener — father of cybernetics, photographed c. 1950s. This image has been processed through a dlib 68-point facial landmark detection pipeline, overlaying a geometric wireframe mesh that maps the mathematical topology of his face. The green connection lines trace the extended landmark graph across jaw, brows, nose bridge, and cheekbones, while small red cross markers (\u00d7) pinpoint each of the 68 detected feature coordinates. Yellow measurement lines indicate interpupillary distance and nose-to-chin span in pixels — the kind of biometric dimensioning now standard in facial recognition systems. A green bounding box frames the detected face region. Source portrait: MIT Museum Collections. Overlay generated with dlib's shape predictor and OpenCV.\n\n[APS — Easter Eggs] Two SHA-1 hashes are embedded in this spread. Body text closes with 2d:61:70:3e:43:d1:4a:e9:2d:b0:d1:ca:4f:4a:06:b4:c7:79:51:e5 (preimage: 'You are the fingerprint'). Image caption is 5e:86:89:60:72:57:b7:58:ee:e2:af:f7:a9:f7:26:cf:98:3d:89:bf (preimage: Wiener's biographical dossier — the man who warned about cybernetic surveillance, himself reduced to a data profile). Both hashes are thematically integral: they enact the spread's argument that identity is already computed."
     },
     "spread_012": {
       "selected_text": "a",
