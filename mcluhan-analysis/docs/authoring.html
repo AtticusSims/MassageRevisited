@@ -1661,16 +1661,24 @@ function renderSpreadLayout(spread, optionId) {
       break;
     }
 
-    case 'split_asymmetric':
+    case 'split_asymmetric': {
       left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;overflow:hidden;';
       left.innerHTML = `
         ${displayEl}
         ${bodyEl ? `<div style="margin-top:24px">${bodyEl}</div>` : ''}
         ${quoteEl ? `<div style="margin-top:20px">${quoteEl}</div>` : ''}
       `;
-      right.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:0;overflow:hidden;';
-      right.innerHTML = (imgEl || `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:40px">${quoteEl || displayEl}</div>`) + (captionEl ? `<div style="padding:8px 20px 12px;text-align:right;">${captionEl}</div>` : '');
+      if (captionEl) {
+        right.style.cssText = 'display:flex;flex-direction:column;padding:0;overflow:hidden;';
+        const imgPart = imgEl
+          ? imgEl.replace('height:100%', 'height:auto').replace(/style="([^"]*)"/, 'style="$1;flex:1 1 auto;min-height:0;"')
+          : `<div style="flex:1;display:flex;align-items:center;justify-content:center;padding:40px">${quoteEl || displayEl}</div>`;
+        right.innerHTML = `<div style="flex:1;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center;">${imgPart}</div><div style="flex-shrink:0;padding:6px 20px 10px;text-align:right;font-family:var(--font-body);font-size:12px;letter-spacing:0.02em;">${opt.caption_text ? esc(opt.caption_text) : ''}</div>`;
+      } else {
+        right.innerHTML = imgEl || `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:40px">${quoteEl || displayEl}</div>`;
+      }
       break;
+    }
 
     case 'split_symmetric':
       left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;';
