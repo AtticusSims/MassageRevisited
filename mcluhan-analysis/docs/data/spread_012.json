@@ -161,9 +161,17 @@
       },
       "image": {
         "approach": "found",
-        "subject": "A family seated together on a couch, each absorbed in a different device — phone, tablet, laptop, smartwatch. Shot from behind so we see the screens, not the faces. Each screen shows visibly different content. The composition mirrors the original's group photograph but inverts it: together in space, separated in attention.",
-        "mood": "intimate_alienation",
-        "image_text_relationship": "ironizes"
+        "subject": "A grid or montage of grayscale family photographs — figures gathered at a riverside, posing together yet each captured in separate frames. The grayscale treatment and multiple-image layout echo the original spread's group photograph aesthetic while fragmenting the family unit across separate frames: together in subject, separated in composition.",
+        "mood": "clinical_surveillance",
+        "image_text_relationship": "literalizes",
+        "source_images": [
+          "RiverFamily/grayscale/select/river-fam (1).jpg",
+          "RiverFamily/grayscale/select/river-fam (2).jpg",
+          "RiverFamily/grayscale/select/river-fam (3).jpg",
+          "RiverFamily/grayscale/select/river-fam (8).jpg",
+          "RiverFamily/grayscale/select/river-fam (9).jpg",
+          "RiverFamily/grayscale/select/river-fam (10).jpg"
+        ]
       },
       "rhetoric": {
         "strategy": "disruption",
