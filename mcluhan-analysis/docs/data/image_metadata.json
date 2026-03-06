@@ -919,23 +919,28 @@
     "options": [
       {
         "file": "spread_012_opt_0.jpg",
-        "source": "generated",
-        "model": "gemini-3.1-flash-image-preview",
-        "prompt": "Create a black and white photograph/image: Family of four seated together on a couch, photographed from behind. Each person holds a different device. Each screen shows visibly different content — different color palettes, different interfaces. The screens are the brightest elements in the frame.\n\nMood and atmosphere: Intimate alienation — warmth of domestic space, coldness of separated attention. The lighting should come primarily from the screens, casting each family member in a slightly differ",
-        "license": "synthetic",
-        "size_kb": 181.6
+        "source": "found_photograph",
+        "description": "3x2 grid montage of grayscale family photographs at riverside",
+        "license": "personal",
+        "size_kb": 313.4
       },
       {
         "file": "spread_012_opt_1.jpg",
-        "source": "generated",
-        "model": "gemini-3.1-flash-image-preview",
-        "prompt": "Create a black and white photograph/image: Family of four seated together on a couch, photographed from behind. Each person holds a different device. Each screen shows visibly different content — different color palettes, different interfaces. The screens are the brightest elements in the frame.\n\nMood and atmosphere: Intimate alienation — warmth of domestic space, coldness of separated attention. The lighting should come primarily from the screens, casting each family member in a slightly differ",
-        "license": "synthetic",
-        "size_kb": 204.6
+        "source": "found_photograph",
+        "description": "2x3 grid montage of grayscale family photographs at riverside",
+        "license": "personal",
+        "size_kb": 572.8
       }
     ],
-    "generated_at": "2026-03-03T20:03:20Z",
-    "search_query": "Family of four seated together on a couch, photographed from behind. Each person holds a different device Intimate alienation — warmth of domestic space coldness of separated attention. The lighting s"
+    "source_images": [
+      "RiverFamily/grayscale/select/river-fam (1).jpg",
+      "RiverFamily/grayscale/select/river-fam (2).jpg",
+      "RiverFamily/grayscale/select/river-fam (3).jpg",
+      "RiverFamily/grayscale/select/river-fam (8).jpg",
+      "RiverFamily/grayscale/select/river-fam (9).jpg",
+      "RiverFamily/grayscale/select/river-fam (10).jpg"
+    ],
+    "generated_at": "2026-03-06T22:00:00Z"
   },
   "spread_014": {
     "approach": "found",
