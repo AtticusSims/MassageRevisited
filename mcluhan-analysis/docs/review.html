@@ -1165,12 +1165,14 @@ function renderSpreadLayout(spread, optionOrId) {
       left.style.cssText = 'display:flex;flex-direction:column;justify-content:center;padding:50px 40px;overflow:hidden;';
       left.innerHTML = `${displayEl}${bodyEl ? `<div style="margin-top:24px">${bodyEl}</div>` : ''}${quoteEl ? `<div style="margin-top:20px">${quoteEl}</div>` : ''}`;
       if (captionEl) {
-        // Caption under image: constrain image so caption stays in-page
+        // Caption under image: build directly without .image-zone class (its CSS height:100% overflows)
         right.style.cssText = 'display:flex;flex-direction:column;padding:0;overflow:hidden;';
-        const imgPart = imgEl
-          ? imgEl.replace('height:100%', 'height:auto').replace(/style="([^"]*)"/, 'style="$1;flex:1 1 auto;min-height:0;"')
-          : `<div style="flex:1;display:flex;align-items:center;justify-content:center;padding:40px">${quoteEl || displayEl}</div>`;
-        right.innerHTML = `<div style="flex:1;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center;">${imgPart}</div><div style="flex-shrink:0;padding:6px 20px 10px;text-align:right;font-family:var(--font-body);font-size:12px;letter-spacing:0.02em;">${opt.caption_text ? esc(opt.caption_text) : ''}</div>`;
+        const capImgUrl = getImageUrl(sid);
+        const capFit = revisedDrafts?.[sid]?.image ? 'contain' : 'cover';
+        const capImgHtml = capImgUrl
+          ? `<img src="${capImgUrl}" alt="${esc(imageSubject)}" style="max-width:100%;max-height:100%;object-fit:${capFit};" onerror="this.outerHTML='<div class=image-placeholder>${esc(imageSubject)}</div>'" />`
+          : `<div style="padding:40px">${quoteEl || displayEl}</div>`;
+        right.innerHTML = `<div style="flex:1;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#888;">${capImgHtml}</div><div style="flex-shrink:0;padding:6px 20px 10px;text-align:right;font-family:var(--font-body);font-size:12px;letter-spacing:0.02em;">${opt.caption_text ? esc(opt.caption_text) : ''}</div>`;
       } else {
         right.innerHTML = imgEl || `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:40px">${quoteEl || displayEl}</div>`;
       }
